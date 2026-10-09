@@ -18,14 +18,15 @@ from contenu_grandes_1 import GRANDES as G1, L  # noqa: E402
 from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 
-VERSION = "20261009d"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261009e"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://ah6259.github.io/mosquees-tunisie/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
 NOUVELLES = ["tr", "id", "ur", "de", "es"]
 NOM_LANGUE = {"fr": "Français", "ar": "العربية", "en": "English", "tr": "Türkçe", "id": "Bahasa Indonesia", "ur": "اردو", "de": "Deutsch", "es": "Español"}
 CSP = ("default-src 'self'; script-src 'self' https://gc.zgo.at https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; "
        "font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://cdnjs.cloudflare.com https://prix-eaux-tunisie.goatcounter.com; "
-       "frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com; object-src 'none'; base-uri 'self'; "
+       "frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com "
+       "https://maps.mail.ru https://overpass-api.de https://overpass.kumi.systems https://overpass.private.coffee https://overpass.openstreetmap.fr https://nominatim.openstreetmap.org; object-src 'none'; base-uri 'self'; "
        "form-action 'self' https://formspree.io https://docs.google.com")
 GRANDES = G1 + G2 + G3
 VILLES = {

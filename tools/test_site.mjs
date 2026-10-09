@@ -305,5 +305,80 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check("page vidéo : pas d'écran d'entrée, ligne « voix de cheikh Ali El Barrak », lecture → Al-Fâtiha officielle, pause → arrêt",
     avant && joue && !d.querySelector("#recitation-lecteur iframe"));
 }
+// ---- 9. mosquées du monde entier (demande d'Ahmed du 09/10/2026) : OpenStreetMap lu en direct hors de Tunisie, une couleur par pays,
+//         « Chercher une ville du monde » (Nominatim). Faux serveurs : le 1er répond « vide + erreur cachée ».
+{
+  const { w, d, js } = await page();
+  const M = w.MOSQUEES_MONDE, L = w.MOSQUEES_LIEUX, MO = w.MOSQUEES_MONDE_LIEUX;
+  const total0 = d.getElementById("mq-total").textContent, filtres0 = d.getElementById("mq-filtres").textContent;
+  const tunisien = L.find(l => /^osm-n\d+$/.test(l.i));
+  const ZONE = [
+    { type: "area", id: 3600192756, tags: { admin_level: "2", "ISO3166-1": "DZ", name: "الجزائر", "name:fr": "Algérie", "name:en": "Algeria" } },
+    { type: "node", id: 101, lat: 36.7853, lon: 3.0606, tags: { amenity: "place_of_worship", religion: "muslim", name: "جامع كتشاوة", "name:fr": "Mosquée Ketchaoua" } },
+    { type: "way", id: 202, center: { lat: 36.73, lon: 3.13 }, tags: { amenity: "place_of_worship", religion: "muslim", place_of_worship: "musalla" } },
+    { type: "node", id: 303, lat: 36.70, lon: 3.10, tags: { amenity: "place_of_worship", religion: "christian", name: "Église" } },
+    { type: "node", id: 404, lat: 36.71, lon: 3.20, tags: { amenity: "place_of_worship", religion: "muslim", name: "Mosquée près de la frontière", "addr:country": "MA" } },
+    { type: "node", id: +tunisien.i.slice(5), lat: tunisien.a, lon: tunisien.o, tags: { amenity: "place_of_worship", religion: "muslim", name: "déjà connue" } }];
+  const appels = [], corps = [];
+  w.fetch = async (url, o) => { appels.push(String(url)); corps.push(o && o.body ? String(o.body.get("data")) : "");
+    return appels.length === 1 ? { ok: true, json: async () => ({ elements: [], remark: "runtime error: Query timed out in \"query\"" }) }
+      : { ok: true, json: async () => ({ elements: ZONE }) }; };
+  const els = await M.lireZone(36.6, 2.9, 36.9, 3.3);
+  check("monde : 1er serveur (mail.ru) « vide + erreur cachée » → réponse du 2e (overpass-api.de) ; requête = lieux de prière musulmans + pays du centre (is_in)",
+    /maps\.mail\.ru/.test(appels[0]) && /overpass-api\.de/.test(appels[1]) && els.length === ZONE.length
+    && /nwr\["amenity"="place_of_worship"\]\["religion"="muslim"\]\(36\.6000,2\.9000,36\.9000,3\.3000\)/.test(corps[0]) && /is_in\(36\.7500,3\.1000\)/.test(corps[0]) && /out center tags 2000/.test(corps[0]));
+  const n1 = M.ajouterZone(els), n2 = M.ajouterZone(els);
+  const k = MO.find(l => l.i === "osm-n101"), s = MO.find(l => l.i === "osm-w202"), f = MO.find(l => l.i === "osm-n404");
+  check(`monde : 3 lieux ajoutés (${n1}), puis 0 (pas de doublon : ${n2}) ; église écartée ; mosquée tunisienne déjà connue jamais ajoutée en double`,
+    n1 === 3 && n2 === 0 && !MO.some(l => l.i === "osm-n303") && !MO.some(l => l.i === tunisien.i) && L.filter(l => l.i === tunisien.i).length === 1);
+  check("monde : nom dans la langue de la page (name:fr), salle de prière (musalla), pays du centre (DZ), addr:country respecté (MA)",
+    !!k && w.MOSQUEES_NOM(k) === "Mosquée Ketchaoua" && k.t === "m" && k.pays === "DZ" && !!s && s.t === "s" && s.pays === "DZ" && !!f && f.pays === "MA");
+  const teinte = c => +((/^hsl\((\d+)/.exec(c) || [])[1]);
+  const interdite = h => (h >= 140 && h <= 225) || (h >= 18 && h <= 50);                 // vert / bleu / orange / or de la Tunisie
+  const codes = ["DZ", "TR", "MA", "LY", "EG", "FR", "DE", "ID", "PK", "SA", "GB", "US", "NG", "SN", "BD", "MY", "IR", "IQ", "SY", "ES"];
+  check(`monde : couleur du pays stable (${k && k.c}), Algérie ≠ Turquie (${M.couleurPays("TR")}) ≠ Maroc, jamais les couleurs de la Tunisie`,
+    !!k && k.c === M.couleurPays("DZ") && k.c === M.couleurPays("DZ") && s.c === k.c && f.c === M.couleurPays("MA")
+    && new Set([M.couleurPays("DZ"), M.couleurPays("TR"), M.couleurPays("MA"), M.couleurPays("LY")]).size === 4
+    && codes.every(c => !interdite(teinte(M.couleurPays(c)))));
+  check("monde : le compteur du haut et les filtres restent ceux de la Tunisie", d.getElementById("mq-total").textContent === total0 && d.getElementById("mq-filtres").textContent === filtres0);
+  M.legende();
+  const leg = d.getElementById("mq-pays");
+  check("monde : légende « Couleur = pays » sous la carte : Tunisie, Algérie (2), Maroc (nom traduit), avec leurs couleurs",
+    !leg.hidden && /Couleur = pays/.test(leg.textContent) && /Tunisie/.test(leg.querySelector('[data-pays="TN"]').textContent)
+    && /Algérie\s*2/.test(leg.querySelector('[data-pays="DZ"]').textContent) && /Maroc/.test(leg.querySelector('[data-pays="MA"]').textContent)
+    && leg.querySelector('[data-pays="DZ"] i').style.background !== leg.querySelector('[data-pays="MA"] i').style.background);
+  const b = w.MOSQUEES_BULLE(k);
+  check("monde : bulle simple (nom, type, pays, itinéraire, OpenStreetMap), sans page ni vote", /Mosquée Ketchaoua/.test(b) && /Algérie/.test(b)
+    && b.includes("google.com/maps/dir/?api=1&destination=36.7853,3.0606") && b.includes("openstreetmap.org/node/101") && /lu en direct/.test(b) && !/data-ok=|mq-bulle-page/.test(b));
+  check("monde : la recherche par nom trouve aussi les mosquées étrangères déjà chargées (« ketchaoua »)", (w.MOSQUEES_CHERCHER("ketchaoua") || []).some(l => l.i === "osm-n101"));
+  check("monde : sans nom → « Salle de prière — Algérie »", w.MOSQUEES_NOM(s) === "Salle de prière — Algérie");
+  // tous les serveurs : les 2 premiers en panne → le 3e
+  const appels2 = [];
+  w.fetch = async (url) => { appels2.push(String(url)); if (appels2.length <= 2) throw new Error("panne"); return { ok: true, json: async () => ({ elements: [ZONE[1]] }) }; };
+  const els2 = await M.lireZone(41, 28.9, 41.1, 29.1);
+  check("monde : les 2 premiers serveurs en panne → le 3e (kumi.systems) répond", els2.length === 1 && /overpass\.kumi\.systems/.test(appels2[2]));
+  // « Chercher une ville du monde » : Nominatim seulement à la validation (Entrée ou bouton), jamais à chaque frappe
+  const nomi = [];
+  w.fetch = async (url) => { nomi.push(String(url)); return { ok: true, json: async () => [{ lat: "39.92", lon: "32.85", display_name: "Ankara, Türkiye" }] }; };
+  const q = d.getElementById("mq-q");
+  q.value = "Ankara"; q.dispatchEvent(new w.Event("input", { bubbles: true }));
+  await new Promise(r => setTimeout(r, 350));
+  const avant = nomi.length, bouton = d.querySelector("#mq-resultats [data-ville-monde]");
+  q.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Enter", bubbles: true }));
+  await new Promise(r => setTimeout(r, 30));
+  check("ville du monde : rien envoyé pendant la frappe ; bouton « Chercher une ville du monde » ; Entrée → 1 requête Nominatim (format json, limit 1) ; carte centrée annoncée",
+    avant === 0 && !!bouton && /Chercher une ville du monde/.test(bouton.textContent) && nomi.length === 1
+    && /^https:\/\/nominatim\.openstreetmap\.org\/search\?format=json&q=Ankara&limit=1/.test(nomi[0]) && /Carte centrée sur : Ankara, Türkiye \(recherche Nominatim/.test(d.getElementById("mq-info").textContent));
+  q.value = "Ankara"; q.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Enter", bubbles: true }));
+  await new Promise(r => setTimeout(r, 30));
+  check("ville du monde : la même ville n'est pas redemandée à Nominatim (mémoire)", nomi.length === 1);
+  M.zoneTxt("Ailleurs dans le monde : zoomez sur une région, ou cherchez une ville, pour voir ses mosquées.");
+  check("monde : message de zone sous la carte (#mq-zone) ; aucune erreur JS", /zoomez sur une région/.test(d.getElementById("mq-zone").textContent) && js.length === 0);
+  const csp = p => (/connect-src([^;]*)/.exec(lire(p)) || [])[1] || "";
+  check("CSP (accueil, À propos, une page de mosquée) : connect-src autorise les 5 serveurs OpenStreetMap et Nominatim",
+    ["index.html", "a-propos/index.html", "mosquee/zitouna/index.html"].every(p => M.OVERPASS.every(u => csp(p).includes(new URL(u).origin)) && csp(p).includes("https://nominatim.openstreetmap.org")));
+  const { d: ap } = await page("a-propos/index.html");
+  check("À propos : « Ailleurs dans le monde » (OpenStreetMap en direct) et Nominatim dans les sources", /Ailleurs dans le monde/.test(ap.querySelector('.sources[data-l="fr"]').textContent) && /Nominatim/.test(ap.querySelector('.sources[data-l="fr"]').textContent));
+}
 console.log(`\n${erreurs ? erreurs + " PROBLÈME(S)" : "TOUT PASSE"} (${total} vérifications)`);
 process.exit(erreurs ? 1 : 0);

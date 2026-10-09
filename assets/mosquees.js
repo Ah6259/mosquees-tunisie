@@ -3,7 +3,9 @@
    Données : donnees/lieux.js (window.MOSQUEES, fabriqué par tools/construire.py depuis OpenStreetMap + Wikidata, tous les 3 mois)
    et donnees/signales.js (window.MOSQUEES_SIGNALES, lieux signalés par les visiteurs, publiés toutes les 2 h par tools/lieux_priere.py).
    Signaler / « c'est vrai » / « n'existe plus » : même Google Forms que les prix du site Prix des Eaux, format propre
-   LIEU-PRIERE / LIEU-PRIERE-OK / LIEU-PRIERE-KO, avec un jeton anonyme du navigateur (le robot des prix ignore ces lignes). */
+   LIEU-PRIERE / LIEU-PRIERE-OK / LIEU-PRIERE-KO, avec un jeton anonyme du navigateur (le robot des prix ignore ces lignes).
+   Hors de Tunisie (09/10/2026) : mosquées du monde lues en direct dans OpenStreetMap (Overpass), une couleur par pays ;
+   « Chercher une ville du monde » par Nominatim. Les pages d'histoire restent pour la Tunisie. */
 (function () {
   const FORM = "https://docs.google.com/forms/d/e/1FAIpQLSd7sR4KmzqrCi-Yjw0WV9SmT_3sZfKJtPmkGnDjMRHl4Q78PA/formResponse";
   const CH = { marque: "entry.897098257", format: "entry.1939823394", lieu: "entry.506707149", date: "entry.1622032670" };
@@ -30,10 +32,13 @@
       vis: true, statut: p.statut, ok: p.ok || 0, date: p.date });
   });
   window.MOSQUEES_LIEUX = LIEUX;            // pour les tests
+  const MONDE = [], PAYS = {};              // mosquées hors de Tunisie lues en direct ; étiquettes des pays (OpenStreetMap)
+  window.MOSQUEES_MONDE_LIEUX = MONDE;
 
   // ---- nom affiché : le nom dans la langue choisie s'il existe, sinon arabe + français (demande d'Ahmed)
   function noms(l) {
     const lg = document.documentElement.lang, n = l.n || {};
+    if (l.monde) return { p: n[lg] || l.nom || "", s: "" };        // ailleurs dans le monde : name:<langue>, sinon name
     let p = n[lg];
     if (!p) p = lg === "ar" || lg === "ur" ? (n.ar || n.fr || n.en) : (n.fr || n.en || n.ar);
     const second = p && n.ar && p !== n.ar && lg !== "ar" ? n.ar : (p && lg === "ar" && n.fr && p !== n.fr ? n.fr : "");
@@ -46,7 +51,11 @@
     const v = ar ? (l.v[1] || l.v[0]) : (l.v[0] || l.v[1]), r = ar ? (l.v[3] || l.v[2]) : (l.v[2] || l.v[3]);
     return v + (r && r !== v ? " (" + r + ")" : "");
   }
-  function titre(l) { const n = noms(l); return n.p || (nomT(l.t) + (ville(l) ? " — " + ville(l) : "")); }
+  function titre(l) {
+    const n = noms(l);
+    if (!n.p && l.monde) return nomT(l.t) + " — " + nomPays(l.pays);
+    return n.p || (nomT(l.t) + (ville(l) ? " — " + ville(l) : ""));
+  }
   window.MOSQUEES_NOM = titre;
 
   // ---- recherche : sans accents, sans voyelles arabes, alif / ya / ta marbouta unifiés
@@ -59,7 +68,7 @@
   function chercher(q) {
     const mots = normaliser(q).split(" ").filter(Boolean);
     if (!mots.length) return null;
-    return LIEUX.filter(l => mots.every(m => l._q.includes(m)));
+    return LIEUX.concat(MONDE).filter(l => mots.every(m => l._q.includes(m)));     // Tunisie + mosquées du monde déjà chargées
   }
   window.MOSQUEES_CHERCHER = chercher;
 
@@ -76,7 +85,7 @@
   let seulementPages = false, requete = "", ici = null, carte = null, calque = null;
   const marqueurs = {};
   function visibles() {
-    const trouves = requete ? chercher(requete) || [] : LIEUX;
+    const trouves = requete ? chercher(requete) || [] : LIEUX.concat(MONDE);
     return trouves.filter(l => actifs.has(l.t) && (!seulementPages || l.p));
   }
   function filtres() {
@@ -92,6 +101,9 @@
   function bulle(l) {
     const n = noms(l), racine = document.documentElement.dataset.racine || "";
     const osm = /^osm-[nwr]\d+$/.test(l.i) ? `https://www.openstreetmap.org/${{ n: "node", w: "way", r: "relation" }[l.i[4]]}/${l.i.slice(5)}` : "";
+    if (l.monde) return `<div class="mq-bulle"><b>${esc(titre(l))}</b><br><span>${nomT(l.t)} · ${esc(nomPays(l.pays))}</span>
+      <br><a href="${itineraire(l)}" target="_blank" rel="noopener">${L2("Itinéraire (Google Maps)", "الطريق (خرائط Google)", "Directions (Google Maps)")}</a>${osm ? ` · <a href="${osm}" target="_blank" rel="noopener">OpenStreetMap</a>` : ""}
+      <br><small>${L2("Source : OpenStreetMap, lu en direct", "المصدر: OpenStreetMap، مقروء مباشرة", "Source: OpenStreetMap, read live")}</small></div>`;
     return `<div class="mq-bulle"><b>${esc(titre(l))}</b>${n.s ? `<br><span lang="ar">${esc(n.s)}</span>` : ""}<br>
       <span>${nomT(l.t)}${ville(l) && n.p ? " · " + esc(ville(l)) : ""}${l.r === "i" ? " · " + L2("ibadite", "إباضي", "Ibadi") : ""}</span>
       ${l.vis ? `<br><small>${L2(...(STATUT[l.statut] || STATUT.signale))}</small>` : ""}
@@ -106,6 +118,11 @@
     calque.clearLayers();
     const v = visibles();
     v.forEach(l => {
+      if (l.monde) {                        // ailleurs dans le monde : la couleur du pays
+        marqueurs[l.i] = L.circleMarker([l.a, l.o], { radius: l.t === "s" ? 4 : 5, color: "#fff", weight: 1.2, fillColor: l.c, fillOpacity: .92 })
+          .bindPopup(() => bulle(l)).addTo(calque);
+        return;
+      }
       marqueurs[l.i] = L.circleMarker([l.a, l.o], { radius: l.p ? 7 : (l.vis ? 6 : 5), color: l.p ? "#F2B33D" : "#fff", weight: l.p ? 3 : 1.5,
         fillColor: l.vis ? "#D9822B" : TYPES[l.t].c, fillOpacity: l.statut === "signale" ? .6 : .92 }).bindPopup(() => bulle(l)).addTo(calque);
     });
@@ -127,14 +144,17 @@
     }).join("") + "</ol>";
   }
 
-  function rechercher() {
+  // valide = recherche validée (touche Entrée) : si rien n'est trouvé, la ville est cherchée dans le monde (Nominatim, 1 requête)
+  function rechercher(valide) {
     requete = $("mq-q").value.trim();
     const v = visibles();
     if (!requete) { $("mq-info").textContent = ""; liste("", null); dessiner(); return; }
     const tri = v.slice().sort((a, b) => (b.p ? 1 : 0) - (a.p ? 1 : 0) || (ici ? distance(ici, a) - distance(ici, b) : titre(a).localeCompare(titre(b))));
     $("mq-info").textContent = L2("{n} lieux trouvés", "{n} مكانًا", "{n} places found").replace("{n}", v.length);
     liste(L2("Résultats", "النتائج", "Results"), tri, !!ici);
+    $("mq-resultats").insertAdjacentHTML("beforeend", `<p class="mq-monde-q"><button type="button" class="chipbtn" data-ville-monde>${L2("Chercher une ville du monde", "ابحث عن مدينة في العالم", "Search for a town anywhere in the world")} : « ${esc(requete)} »</button></p>`);
     chargerLeaflet(() => dessiner(true));
+    if (valide === true && !v.length) chercherVille(requete);
   }
   window.MOSQUEES_RECHERCHER = rechercher;
 
@@ -150,9 +170,151 @@
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">contributeurs OpenStreetMap</a>' }).addTo(carte);
     calque = L.layerGroup().addTo(carte);
+    const message = L.control({ position: "topright" });     // le message de zone, posé aussi SUR la carte (comme Points d'eau)
+    message.onAdd = () => { bulleZone = L.DomUtil.create("div", "mq-zone-carte"); bulleZone.hidden = true; L.DomEvent.disableClickPropagation(bulleZone); return bulleZone; };
+    message.addTo(carte);
+    let attenteMonde = null;
+    carte.on("moveend", () => { clearTimeout(attenteMonde); attenteMonde = setTimeout(chargerMonde, 600); });
     dessiner(!!requete);
     voirDemande();
   }
+
+  // ---- Le monde entier (demande d'Ahmed du 09/10/2026 : « si le visiteur cherche une mosquée dans un autre pays, il doit la trouver »).
+  // Méthode de Points d'eau : la Tunisie est déjà chargée (robot trimestriel + visiteurs) ; ailleurs, les lieux de prière musulmans
+  // d'OpenStreetMap de la zone affichée sont lus EN DIRECT (zoom ≥ 9) auprès des 5 copies d'OpenStreetMap (règle commune) :
+  // les 2 premières en même temps (la plus rapide gagne), puis les autres une par une ; 25 s au plus chacune.
+  // Couleur par pays : la même requête demande le pays du centre de la zone (is_in) ; un lieu qui porte addr:country garde son pays.
+  const OVERPASS = ["https://maps.mail.ru/osm/tools/overpass/api/interpreter", "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter", "https://overpass.private.coffee/api/interpreter",
+    "https://overpass.openstreetmap.fr/api/interpreter"];
+  const NOMINATIM = "https://nominatim.openstreetmap.org/search";
+  const TUNISIE = { s: 30.1, n: 37.6, o: 7.4, e: 11.7 };
+  const ZOOM_MONDE = 9, zonesLues = [];
+  const codePays = t => { const c = String((t || {})["ISO3166-1"] || (t || {})["ISO3166-1:alpha2"] || "").toUpperCase(); return /^[A-Z]{2}$/.test(c) ? c : ""; };
+  // couleur stable calculée depuis le code ISO ; jamais les teintes de la Tunisie (vert, bleu, orange, or)
+  // voisins de la Tunisie et pays proches : teintes choisies pour que deux pays voisins ne se ressemblent pas ; les autres : hachage
+  const VOISINS = { DZ: [0, 45], LY: [86, 33], MA: [280, 45], EG: [330, 45], ML: [300, 38], NE: [128, 30], TR: [300, 40], SY: [58, 35],
+    IQ: [260, 50], IR: [12, 45], SA: [100, 33], JO: [344, 45], FR: [246, 55], ES: [344, 45], IT: [100, 33], DE: [58, 35], BE: [0, 45], PT: [86, 33] };
+  const TEINTES = [0, 12, 58, 72, 86, 100, 114, 128, 246, 260, 274, 288, 302, 316, 330, 344];
+  function couleurPays(c) {
+    if (!c) return "hsl(0, 0%, 45%)";
+    if (VOISINS[c]) return `hsl(${VOISINS[c][0]}, 68%, ${VOISINS[c][1]}%)`;
+    let h = 7; for (const ch of c) h = (h * 31 + ch.charCodeAt(0)) % 10007;
+    return `hsl(${TEINTES[h % TEINTES.length]}, 68%, ${[40, 52][Math.floor(h / TEINTES.length) % 2]}%)`;
+  }
+  function nomPays(c) {
+    if (!c) return L2("Pays non précisé", "بلد غير محدّد", "Country not specified");
+    const lg = document.documentElement.lang, t = PAYS[c] || {};
+    let intl = "";
+    try { intl = new Intl.DisplayNames([lg], { type: "region" }).of(c); } catch (x) { /* navigateur ancien */ }
+    return t["name:" + lg] || (intl && intl !== c ? intl : "") || t["name:en"] || t.name || c;
+  }
+  function versLieu(el, centre) {
+    const tags = el.tags || {};
+    const lat = el.lat !== undefined ? el.lat : (el.center || {}).lat, lon = el.lon !== undefined ? el.lon : (el.center || {}).lon;
+    if (lat === undefined || lon === undefined || tags.amenity !== "place_of_worship" || tags.religion !== "muslim") return null;
+    const pays = /^[A-Z]{2}$/.test(String(tags["addr:country"] || "").toUpperCase()) ? tags["addr:country"].toUpperCase() : centre;
+    if (pays === "TN") return null;                      // la Tunisie vient de nos données (lieux retirés compris)
+    const n = {};
+    ["fr", "ar", "en", "tr", "id", "ur", "de", "es"].forEach(l => { if (tags["name:" + l]) n[l] = String(tags["name:" + l]).slice(0, 80); });
+    const l = { i: "osm-" + el.type[0] + el.id, a: +(+lat).toFixed(6), o: +(+lon).toFixed(6),
+      t: ["musalla", "prayer_room", "prayer_hall"].includes(tags.place_of_worship) ? "s" : "m",
+      n, nom: String(tags.name || "").slice(0, 80), pays, c: couleurPays(pays), monde: true };
+    l._q = normaliser(Object.values(n).join(" ") + " " + l.nom);
+    return l;
+  }
+  function ajouterZone(elements) {
+    let centre = "";
+    elements.filter(e => e.type === "area").forEach(a => { const c = codePays(a.tags); if (c) { PAYS[c] = a.tags; centre = centre || c; } });
+    const connus = new Set(LIEUX.map(l => l.i).concat(MONDE.map(l => l.i)));
+    let n = 0;
+    elements.forEach(el => { if (el.type === "area") return; const l = versLieu(el, centre); if (l && !connus.has(l.i)) { MONDE.push(l); connus.add(l.i); n++; } });
+    return n;
+  }
+  async function essai(url, q) {
+    const arret = window.AbortController ? new AbortController() : null, minuterie = arret && setTimeout(() => arret.abort(), 25000);
+    try {
+      const r = await fetch(url, { method: "POST", body: new URLSearchParams({ data: q }), signal: arret && arret.signal });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const d = await r.json();
+      if (/error|timed out/i.test(String(d.remark || ""))) throw new Error(d.remark);   // erreur cachée : serveur suivant
+      return d.elements || [];
+    } finally { clearTimeout(minuterie); }
+  }
+  async function lireZone(s, o, n, e) {
+    const bb = [s, o, n, e].map(x => x.toFixed(4)).join(",");
+    const q = `[out:json][timeout:25];is_in(${((s + n) / 2).toFixed(4)},${((o + e) / 2).toFixed(4)})->.p;area.p["admin_level"="2"];out tags;`
+      + `nwr["amenity"="place_of_worship"]["religion"="muslim"](${bb});out center tags 2000;`;
+    try { return await Promise.any(OVERPASS.slice(0, 2).map(u => essai(u, q))); } catch (x) { /* les deux ont échoué */ }
+    for (const url of OVERPASS.slice(2)) { try { return await essai(url, q); } catch (x) { /* serveur suivant */ } }
+    throw new Error("OpenStreetMap injoignable");
+  }
+  const isoN = x => (typeof iso === "function" ? iso(x) : String(x));     // nombre isolé dans un texte arabe
+  let bulleZone = null;
+  const zoneTxt = (t, err) => {
+    const z = $("mq-zone"); if (z) { z.textContent = t; z.className = "aide mq-zone" + (err ? " err" : ""); }
+    if (bulleZone) { bulleZone.textContent = t; bulleZone.hidden = !t; bulleZone.classList.toggle("err", !!err); }
+  };
+  // légende « couleur = pays » : la Tunisie puis les pays déjà chargés
+  function legende() {
+    const box = $("mq-pays");
+    if (!box) return;
+    if (!MONDE.length) { box.innerHTML = ""; box.hidden = true; return; }
+    const compte = {};
+    MONDE.forEach(l => { compte[l.pays] = (compte[l.pays] || 0) + 1; });
+    box.hidden = false;
+    box.innerHTML = `<span class="mq-pays-titre">${L2("Couleur = pays :", "اللون = البلد:", "Colour = country:")}</span> `
+      + `<span class="mq-pays-chip" data-pays="TN"><i style="background:${TYPES.m.c}"></i>${esc(nomPays("TN"))}</span>`
+      + Object.keys(compte).sort((a, b) => compte[b] - compte[a]).map(c =>
+        `<span class="mq-pays-chip" data-pays="${esc(c)}"><i style="background:${couleurPays(c)}"></i>${esc(nomPays(c))} <b>${isoN(compte[c])}</b></span>`).join("");
+  }
+  async function chargerMonde() {
+    if (!carte) return;
+    const b = carte.getBounds();
+    const dedans = b.getSouth() >= TUNISIE.s && b.getNorth() <= TUNISIE.n && b.getWest() >= TUNISIE.o && b.getEast() <= TUNISIE.e
+      && LIEUX.some(l => b.contains([l.a, l.o]));                    // Tunisie : déjà chargée
+    if (dedans) { zoneTxt(""); return; }
+    if (carte.getZoom() < ZOOM_MONDE) { zoneTxt(L2("Ailleurs dans le monde : zoomez sur une région, ou cherchez une ville, pour voir ses mosquées.", "في باقي العالم: قرّب الخريطة على منطقة، أو ابحث عن مدينة، لرؤية مساجدها.", "Elsewhere in the world: zoom in on a region, or search for a town, to see its mosques.")); return; }
+    if (zonesLues.some(z => z.contains(b))) return;
+    const zone = b.pad(0.25);
+    zoneTxt(L2("Recherche des mosquées de cette zone…", "جارٍ البحث عن مساجد هذه المنطقة…", "Looking for the mosques in this area…"));
+    try {
+      const n = ajouterZone(await lireZone(zone.getSouth(), zone.getWest(), zone.getNorth(), zone.getEast()));
+      zonesLues.push(zone); dessiner(); legende(); if (ici && !requete) proches();
+      const total = LIEUX.concat(MONDE).filter(l => zone.contains([l.a, l.o])).length;
+      zoneTxt(total ? L2("{n} lieux de prière dans cette zone.", "{n} مكان صلاة في هذه المنطقة.", "{n} places of prayer in this area.").replace("{n}", isoN(total))
+        : L2("Aucun lieu de prière connu ici dans OpenStreetMap.", "لا يوجد مكان صلاة معروف هنا في OpenStreetMap.", "No known place of prayer here in OpenStreetMap."));
+      return n;
+    } catch (x) {
+      zoneTxt(L2("OpenStreetMap ne répond pas pour le moment : réessayez dans un instant.", "OpenStreetMap لا يستجيب الآن: أعد المحاولة بعد قليل.", "OpenStreetMap is not responding right now: try again in a moment."), true);
+    }
+  }
+  // « Chercher une ville du monde » : Nominatim (OpenStreetMap), UNE requête par recherche validée, jamais à chaque frappe
+  const villesVues = {};
+  let villeEnCours = false;
+  async function chercherVille(q) {
+    q = String(q || "").trim().slice(0, 60);
+    if (!q || villeEnCours) return;
+    const info = $("mq-info");
+    villeEnCours = true;
+    info.textContent = L2("Recherche de la ville dans le monde…", "جارٍ البحث عن المدينة في العالم…", "Looking for the town in the world…");
+    try {
+      let r = villesVues[q.toLowerCase()];
+      if (!r) {
+        const rep = await fetch(NOMINATIM + "?" + new URLSearchParams({ format: "json", q, limit: "1", "accept-language": document.documentElement.lang }), { headers: { Accept: "application/json" } });
+        if (!rep.ok) throw new Error("HTTP " + rep.status);
+        r = villesVues[q.toLowerCase()] = ((await rep.json()) || [])[0] || { vide: true };
+      }
+      if (r.vide || !isFinite(+r.lat) || !isFinite(+r.lon)) { info.textContent = L2("Aucune ville trouvée dans le monde pour ce nom.", "لم يُعثر على مدينة بهذا الاسم في العالم.", "No town with this name was found in the world."); return; }
+      requete = ""; $("mq-q").value = ""; liste("", null);
+      info.textContent = L2("Carte centrée sur : {l} (recherche Nominatim, © contributeurs OpenStreetMap).", "الخريطة متمركزة على: {l} (بحث Nominatim، © مساهمو OpenStreetMap).", "Map centred on: {l} (Nominatim search, © OpenStreetMap contributors).")
+        .replace("{l}", String(r.display_name || q).slice(0, 120));
+      chargerLeaflet(() => { dessiner(); carte.setView([+r.lat, +r.lon], 12); $("mq-carte").scrollIntoView && $("mq-carte").scrollIntoView({ behavior: "smooth", block: "center" }); });
+    } catch (x) {
+      info.textContent = L2("La recherche de ville ne répond pas pour le moment : réessayez dans un instant.", "البحث عن المدن لا يستجيب الآن: أعد المحاولة بعد قليل.", "The town search is not responding right now: try again in a moment.");
+    } finally { villeEnCours = false; }
+  }
+  window.MOSQUEES_MONDE = { versLieu, ajouterZone, lireZone, chargerMonde, couleurPays, nomPays, legende, chercherVille, zoneTxt, OVERPASS };   // pour les tests
   const apresLeaflet = [];
   function chargerLeaflet(fin) {
     if (fin) apresLeaflet.push(fin);
@@ -165,7 +327,7 @@
     js.onload = suite; document.head.appendChild(js);
   }
   function voirSurCarte(id) {
-    const l = LIEUX.find(x => x.i === id || x.p === "mosquee/" + id + "/");
+    const l = LIEUX.concat(MONDE).find(x => x.i === id || x.p === "mosquee/" + id + "/");
     if (!l) return false;
     if (!actifs.has(l.t)) actifs.add(l.t);
     seulementPages = false; filtres();
@@ -201,6 +363,7 @@
       envoyer(ok ? "LIEU-PRIERE-OK" : "LIEU-PRIERE-KO", id, "|" + jeton).then(() => { v.parentNode.innerHTML = `<small>${L2("Merci ! Pris en compte dans 2 heures environ.", "شكرًا! يُحتسب خلال ساعتين تقريبًا.", "Thank you! Counted within about 2 hours.")}</small>`; }, () => {});
       return;
     }
+    if (e.target.closest("[data-ville-monde]")) { chercherVille($("mq-q").value); return; }
     const voir = e.target.closest("[data-voir]");
     if (voir) { fermerSig(); voirSurCarte(voir.dataset.voir); return; }
     const lien = e.target.closest('a[href$="#signaler"]');
@@ -208,7 +371,7 @@
   });
   let attente = null;
   $("mq-q").addEventListener("input", () => { clearTimeout(attente); attente = setTimeout(rechercher, 250); });
-  $("mq-q").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); clearTimeout(attente); rechercher(); } });
+  $("mq-q").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); clearTimeout(attente); rechercher(true); } });
   $("mq-autour").addEventListener("click", () => {
     $("mq-autour-txt").textContent = L2("Recherche de votre position…", "جارٍ تحديد موقعك…", "Finding your position…");
     maPosition(p => {
@@ -315,7 +478,7 @@
   });
 
   filtres();
-  document.addEventListener("langue", () => { filtres(); if (requete) rechercher(); else proches(); if (carte) dessiner(); if (!pop.hidden) derniers(); });
+  document.addEventListener("langue", () => { filtres(); legende(); if (requete) rechercher(); else proches(); if (carte) dessiner(); if (!pop.hidden) derniers(); });
   if (new URLSearchParams(location.search).get("lieu")) chargerLeaflet();
   else if ("IntersectionObserver" in window) {
     const o = new IntersectionObserver(es => { if (es.some(x => x.isIntersecting)) { o.disconnect(); chargerLeaflet(); } });

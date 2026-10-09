@@ -15,6 +15,9 @@ SABOTAGES = [
     ("assets/page.js", '<button class="partager"', '<button class="x-partager"', "bouton Partager retiré", SITE),
     ("mosquee/zitouna/index.html", "reconstruite en 864", "reconstruite en 964", "date fausse dans la page de la Zitouna", SITE),
     ("assets/langues.js", '"Autour de moi": "Yakınımda",', "", "une traduction turque manque", SITE),
+    ("assets/mosquees.js", "pays, c: couleurPays(pays), monde: true", 'pays, c: couleurPays(""), monde: true', "couleur par pays cassée (tous les pays en gris)", SITE),
+    ("assets/mosquees.js", 'if (/error|timed out/i.test(String(d.remark || "")))', "if (false)", "erreur cachée d'OpenStreetMap acceptée (pas de serveur suivant)", SITE),
+    ("assets/mosquees.js", "if (valide === true && !v.length) chercherVille", "if (!v.length) chercherVille", "Nominatim appelé à chaque frappe", SITE),
     ("tools/lieux_priere.py", "if ko >= seuil and ko > ok:", "if False:", "le robot ne retire plus un lieu « n'existe plus »", ROBOT),
     ("tools/lieux_priere.py", 'TUNISIE = (30.1, 37.6, 7.4, 11.7)', 'TUNISIE = (-90, 90, -180, 180)', "le robot accepte un lieu hors de Tunisie", ROBOT),
 ]
