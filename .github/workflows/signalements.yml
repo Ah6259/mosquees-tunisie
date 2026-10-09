@@ -1,0 +1,48 @@
+# Mosquées et salles de prière signalées par les visiteurs (même Google Forms que les prix du site Prix des Eaux, format LIEU-PRIERE) :
+# publiées toutes les 2 h. Un tableau illisible ne change rien (anciens lieux gardés). En cas d'échec : alerte (issue « alerte-robot »).
+name: Signalements des lieux de prière
+on:
+  schedule:
+    - cron: "15 7-21/2 * * *"     # 8h15 à 22h15, heure de Tunis
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: robot
+  cancel-in-progress: false
+env:
+  TZ: Africa/Tunis
+  PYTHONIOENCODING: utf-8
+jobs:
+  lieux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Tests du robot (rien n'est publié si un test échoue)
+        run: |
+          python tools/test_lieux.py
+      - name: Lire les signalements et publier
+        run: |
+          python tools/signalements_lieux.py
+      - name: Enregistrer
+        run: |
+          git config user.name "robot-mosquees"
+          git config user.email "robot-mosquees@users.noreply.github.com"
+          git add donnees/signales.js
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Lieux de prière signalés mis à jour ($(date +%d/%m/%Y\ %Hh%M))"
+          git pull -q --rebase --autostash
+          git push
+      - name: Alerte
+        if: failure()
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh label create alerte-robot --color B60205 --force >/dev/null 2>&1 || true
+          titre="Mosquées : robot des signalements en échec"
+          corps="Journal : ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          n=$(gh issue list --label alerte-robot --state open --search "$titre in:title" --json number -q '.[0].number')
+          if [ -n "$n" ]; then gh issue comment "$n" --body "Toujours vrai le $(date +%d/%m/%Y). $corps"; else gh issue create --title "$titre" --body "$corps" --label alerte-robot; fi

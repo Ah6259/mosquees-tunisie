@@ -1,0 +1,410 @@
+{
+ "zitouna": [
+  {
+   "fichier": "assets/photos/zitouna-1.jpg",
+   "w": 1000,
+   "h": 655,
+   "source": "https://commons.wikimedia.org/wiki/File:MinaretMosqueeZitounaTunis.JPG",
+   "licence": "CC BY-SA 3.0",
+   "auteur": "Citizen59",
+   "commons": "MinaretMosqueeZitounaTunis.JPG"
+  },
+  {
+   "fichier": "assets/photos/zitouna-2.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Minaret_zitouna_(44957).jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Noomen9",
+   "commons": "Minaret zitouna (44957).jpg"
+  },
+  {
+   "fichier": "assets/photos/zitouna-3.jpg",
+   "w": 750,
+   "h": 1000,
+   "source": "https://commons.wikimedia.org/wiki/File:%D8%A8%D8%A7%D8%A8_%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85_%D8%A8%D8%AC%D8%A7%D9%85%D8%B9_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86%D8%A9.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Wildtunis",
+   "commons": "باب الإمام بجامع الزيتونة.jpg"
+  }
+ ],
+ "kairouan": [
+  {
+   "fichier": "assets/photos/kairouan-1.jpg",
+   "w": 1000,
+   "h": 563,
+   "source": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Moschee_Kairouan_20260719_17.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Z thomas",
+   "commons": "Große Moschee Kairouan 20260719 17.jpg"
+  },
+  {
+   "fichier": "assets/photos/kairouan-2.jpg",
+   "w": 1000,
+   "h": 769,
+   "source": "https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Kairouan,_vue_d%27ensemble.jpg",
+   "licence": "CC BY-SA 2.0",
+   "auteur": "weetoon66",
+   "commons": "Grande Mosquée de Kairouan, vue d'ensemble.jpg"
+  },
+  {
+   "fichier": "assets/photos/kairouan-3.jpg",
+   "w": 563,
+   "h": 1000,
+   "source": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Moschee_Kairouan_20260719_14.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Z thomas",
+   "commons": "Große Moschee Kairouan 20260719 14.jpg"
+  }
+ ],
+ "sousse": [
+  {
+   "fichier": "assets/photos/sousse-1.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Sousse_Grosse_Moschee.JPG",
+   "licence": "CC BY-SA 3.0",
+   "auteur": "BishkekRocks",
+   "commons": "Sousse Grosse Moschee.JPG"
+  },
+  {
+   "fichier": "assets/photos/sousse-2.jpg",
+   "w": 1000,
+   "h": 667,
+   "source": "https://commons.wikimedia.org/wiki/File:Sousse_(146)_(7996071145).jpg",
+   "licence": "CC BY-SA 2.0",
+   "auteur": "János Korom",
+   "commons": "Sousse (146) (7996071145).jpg"
+  },
+  {
+   "fichier": "assets/photos/sousse-3.jpg",
+   "w": 712,
+   "h": 1000,
+   "source": "https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Sousse,_30_septembre_2013,_(42).jpg",
+   "licence": "CC BY-SA 3.0",
+   "auteur": "Habib M'henni",
+   "commons": "Grande Mosquée de Sousse, 30 septembre 2013, (42).jpg"
+  }
+ ],
+ "mahdia": [
+  {
+   "fichier": "assets/photos/mahdia-1.jpg",
+   "w": 1000,
+   "h": 664,
+   "source": "https://commons.wikimedia.org/wiki/File:VueGrandeMosqueMahdia.JPG",
+   "licence": "CC BY-SA 3.0",
+   "auteur": "Citizen59",
+   "commons": "VueGrandeMosqueMahdia.JPG"
+  },
+  {
+   "fichier": "assets/photos/mahdia-2.jpg",
+   "w": 1000,
+   "h": 665,
+   "source": "https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Mahdia.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Hamed Gamaoun",
+   "commons": "Great Mosque of Mahdia.jpg"
+  },
+  {
+   "fichier": "assets/photos/mahdia-3.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_Mahdia.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Wildtunis",
+   "commons": "Grande Mosquée Mahdia.jpg"
+  }
+ ],
+ "sfax": [
+  {
+   "fichier": "assets/photos/sfax-1.jpg",
+   "w": 1000,
+   "h": 688,
+   "source": "https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Sfax_01.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "IssamBarhoumi",
+   "commons": "Grande Mosquée de Sfax 01.jpg"
+  },
+  {
+   "fichier": "assets/photos/sfax-2.jpg",
+   "w": 1000,
+   "h": 664,
+   "source": "https://commons.wikimedia.org/wiki/File:Grande_mosqu%C3%A9e_de_sfax.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Noomen9",
+   "commons": "Grande mosquée de sfax.jpg"
+  },
+  {
+   "fichier": "assets/photos/sfax-3.jpg",
+   "w": 539,
+   "h": 800,
+   "source": "https://commons.wikimedia.org/wiki/File:Inscription,_Grande_Mosqu%C3%A9e_de_Sfax.jpg",
+   "licence": "CC BY-SA 2.0",
+   "auteur": "Dennis G. Jarvis",
+   "commons": "Inscription, Grande Mosquée de Sfax.jpg"
+  }
+ ],
+ "trois-portes": [
+  {
+   "fichier": "assets/photos/trois-portes-1.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://commons.wikimedia.org/wiki/File:Kairouan,_4_f%C3%A9vrier_2024,_ZVE04273.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Habib M'henni",
+   "commons": "Kairouan, 4 février 2024, ZVE04273.jpg"
+  },
+  {
+   "fichier": "assets/photos/trois-portes-2.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_des_Trois_Portes_4.JPG",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "IssamBarhoumi",
+   "commons": "Mosquée des Trois Portes 4.JPG"
+  },
+  {
+   "fichier": "assets/photos/trois-portes-3.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_des_Trois_Portes_02.JPG",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "IssamBarhoumi",
+   "commons": "Mosquée des Trois Portes 02.JPG"
+  }
+ ],
+ "youssef-dey": [
+  {
+   "fichier": "assets/photos/youssef-dey-1.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Youssef_Dey_-Vue_d%27en_Haut.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Wildtunis",
+   "commons": "Mosquée Youssef Dey -Vue d'en Haut.jpg"
+  },
+  {
+   "fichier": "assets/photos/youssef-dey-2.jpg",
+   "w": 1000,
+   "h": 664,
+   "source": "https://commons.wikimedia.org/wiki/File:Les_arcades_de_la_mosqu%C3%A9e_sidi_youssef.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Noomen9",
+   "commons": "Les arcades de la mosquée sidi youssef.jpg"
+  },
+  {
+   "fichier": "assets/photos/youssef-dey-3.jpg",
+   "w": 1000,
+   "h": 667,
+   "source": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Sidi_Youssef_46.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Noomen9",
+   "commons": "Mosquée Sidi Youssef 46.jpg"
+  }
+ ],
+ "hammouda-pacha": [
+  {
+   "fichier": "assets/photos/hammouda-pacha-1.jpg",
+   "w": 750,
+   "h": 1000,
+   "source": "https://commons.wikimedia.org/wiki/File:Minaret_Mosqu%C3%A9e_Hamouda_Pacha-_Vue_depuis_la_Rue_sidi_Ben_Arous.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Wildtunis",
+   "commons": "Minaret Mosquée Hamouda Pacha- Vue depuis la Rue sidi Ben Arous.jpg"
+  },
+  {
+   "fichier": "assets/photos/hammouda-pacha-2.jpg",
+   "w": 1000,
+   "h": 664,
+   "source": "https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_%C3%A0_la_salle_de_pri%C3%A8re_2.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Noomen9",
+   "commons": "Entrée à la salle de prière 2.jpg"
+  },
+  {
+   "fichier": "assets/photos/hammouda-pacha-3.jpg",
+   "w": 1000,
+   "h": 664,
+   "source": "https://commons.wikimedia.org/wiki/File:Les_arabesques_de_la_mosqu%C3%A9e_hamouda_pacha.JPG",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Noomen9",
+   "commons": "Les arabesques de la mosquée hamouda pacha.JPG"
+  }
+ ],
+ "sidi-mahrez": [
+  {
+   "fichier": "assets/photos/sidi-mahrez-1.jpg",
+   "w": 1000,
+   "h": 727,
+   "source": "https://commons.wikimedia.org/wiki/File:Tunis_Bab_Souika_1899.jpg",
+   "licence": "Public domain",
+   "auteur": "Photochrom, auteur inconnu (vers 1900)",
+   "commons": "Tunis Bab Souika 1899.jpg"
+  },
+  {
+   "fichier": "assets/photos/sidi-mahrez-2.jpg",
+   "w": 1000,
+   "h": 664,
+   "source": "https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_Mosqu%C3%A9e_Sidi_Mahrez.JPG",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Noomen9",
+   "commons": "Entrée Mosquée Sidi Mahrez.JPG"
+  },
+  {
+   "fichier": "assets/photos/sidi-mahrez-3.jpg",
+   "w": 664,
+   "h": 1000,
+   "source": "https://commons.wikimedia.org/wiki/File:La_porte_d%27entr%C3%A9e_de_la_mosqu%C3%A9e.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Noomen9",
+   "commons": "La porte d'entrée de la mosquée.jpg"
+  }
+ ],
+ "sidi-sahbi": [
+  {
+   "fichier": "assets/photos/sidi-sahbi-1.jpg",
+   "w": 1000,
+   "h": 684,
+   "source": "https://commons.wikimedia.org/wiki/File:Mosque_of_the_Barber_(Mausoleum_of_Sidi_Sahabi).jpg",
+   "licence": "CC BY-SA 2.0",
+   "auteur": "Dennis G. Jarvis",
+   "commons": "Mosque of the Barber (Mausoleum of Sidi Sahabi).jpg"
+  },
+  {
+   "fichier": "assets/photos/sidi-sahbi-2.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://commons.wikimedia.org/wiki/File:Kairouan,_4_f%C3%A9vrier_2024,_ZVE04360.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Habib M'henni",
+   "commons": "Kairouan, 4 février 2024, ZVE04360.jpg"
+  },
+  {
+   "fichier": "assets/photos/sidi-sahbi-3.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://commons.wikimedia.org/wiki/File:Kairouan,_4_f%C3%A9vrier_2024,_ZVE04355.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Habib M'henni",
+   "commons": "Kairouan, 4 février 2024, ZVE04355.jpg"
+  }
+ ],
+ "testour": [
+  {
+   "fichier": "assets/photos/testour-1.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Testour_27.JPG",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "IssamBarhoumi",
+   "commons": "Grande Mosquée de Testour 27.JPG"
+  },
+  {
+   "fichier": "assets/photos/testour-2.jpg",
+   "w": 1000,
+   "h": 667,
+   "source": "https://commons.wikimedia.org/wiki/File:Grand_Mosqu%C3%A9e_de_tastour.jpg",
+   "licence": "CC BY-SA 3.0",
+   "auteur": "Mahdi Chaker",
+   "commons": "Grand Mosquée de tastour.jpg"
+  },
+  {
+   "fichier": "assets/photos/testour-3.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Testour_08.JPG",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "IssamBarhoumi",
+   "commons": "Grande Mosquée de Testour 08.JPG"
+  }
+ ],
+ "malik-ibn-anas": [
+  {
+   "fichier": "assets/photos/malik-ibn-anas-1.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Tunis_Mosqu%C3%A9e_Abidine_3.jpg",
+   "licence": "Public domain",
+   "auteur": "Rais67",
+   "commons": "Tunis Mosquée Abidine 3.jpg"
+  },
+  {
+   "fichier": "assets/photos/malik-ibn-anas-2.jpg",
+   "w": 750,
+   "h": 1000,
+   "source": "https://commons.wikimedia.org/wiki/File:Tunis_Mosqu%C3%A9e_Abidine_2.jpg",
+   "licence": "Public domain",
+   "auteur": "Rais67",
+   "commons": "Tunis Mosquée Abidine 2.jpg"
+  },
+  {
+   "fichier": "assets/photos/malik-ibn-anas-3.jpg",
+   "w": 1000,
+   "h": 665,
+   "source": "https://commons.wikimedia.org/wiki/File:Tunisie_Carthage_Mosquee_01.JPG",
+   "licence": "CC BY 2.5",
+   "auteur": "Calips",
+   "commons": "Tunisie Carthage Mosquee 01.JPG"
+  }
+ ],
+ "monastir": [
+  {
+   "fichier": "assets/photos/monastir-1.jpg",
+   "w": 1000,
+   "h": 665,
+   "source": "https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Monastir.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Hamed Gamaoun",
+   "commons": "Great Mosque of Monastir.jpg"
+  },
+  {
+   "fichier": "assets/photos/monastir-2.jpg",
+   "w": 1000,
+   "h": 665,
+   "source": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_de_la_Sa%C3%AFda.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "Hn Khaoula",
+   "commons": "Mosquée de la Saïda.jpg"
+  },
+  {
+   "fichier": "assets/photos/monastir-3.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Mesjed_de_la_Sa%C3%AFda_01.JPG",
+   "licence": "CC BY-SA 3.0",
+   "auteur": "Fehmi bouguezzi",
+   "commons": "Mesjed de la Saïda 01.JPG"
+  }
+ ],
+ "kasbah": [
+  {
+   "fichier": "assets/photos/kasbah-1.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Tunis_Mosqu%C3%A9_Kasbah.JPG",
+   "licence": "Public domain",
+   "auteur": "Rais67",
+   "commons": "Tunis Mosqué Kasbah.JPG"
+  },
+  {
+   "fichier": "assets/photos/kasbah-2.jpg",
+   "w": 1000,
+   "h": 777,
+   "source": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_de_la_Kasbah_avec_son_drapeau_blanc.jpg",
+   "licence": "CC BY-SA 4.0",
+   "auteur": "IssamBarhoumi",
+   "commons": "Mosquée de la Kasbah avec son drapeau blanc.jpg"
+  }
+ ],
+ "fadhloun": [
+  {
+   "fichier": "assets/photos/fadhloun-1.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://commons.wikimedia.org/wiki/File:Tunisie_Jema%C3%A2_Fadhloun_5.jpg",
+   "licence": "CC0",
+   "auteur": "M.Rais",
+   "commons": "Tunisie Jemaâ Fadhloun 5.jpg"
+  }
+ ]
+}

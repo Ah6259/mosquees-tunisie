@@ -1,0 +1,33 @@
+# À chaque modification publiée : tous les tests (+ sabotage volontaire et scénarios de panne). En cas d'échec, GitHub envoie un e-mail.
+name: Tests
+on:
+  push:
+    branches: [main, "entretien-tests/**"]
+  workflow_dispatch:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: npm install --no-save --no-package-lock jsdom
+      - name: Fichiers des robots valides (YAML)
+        run: |
+          pip install pyyaml
+          python -c "import yaml,glob;[yaml.safe_load(open(f,encoding='utf-8')) for f in glob.glob('.github/workflows/*.yml')]"
+      - name: Pages à jour (construites par tools/construire.py)
+        run: |
+          python tools/construire.py
+          git diff --exit-code -- . ':!node_modules'
+      - run: node tools/test_site.mjs
+      - run: node tools/test_sw.mjs
+      - run: node tools/test_avis.mjs
+      - name: Page vidéo
+        run: |
+          if [ -f tools/test_video.mjs ] && [ -f video/index.html ]; then node tools/test_video.mjs; fi
+      - run: python tools/test_lieux.py
+      - run: python tools/test_sabotage.py

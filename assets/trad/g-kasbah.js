@@ -1,0 +1,84 @@
+/* GÉNÉRÉ par tools/construire.py (textes : tools/contenu_grandes_*.py) — traductions turc, indonésien, ourdou, allemand, espagnol
+   de cette page, ajoutées à window.TRADUCTIONS (assets/langues.js) ; clé = texte français exact. */
+(function (T) {
+  Object.assign(T.tr = T.tr || {}, {
+"1231-1235 · Hafsides": "1231-1235 · Hafsîler",
+"Construite par le fondateur de la dynastie hafside sur la place de la Kasbah, elle possède l'un des plus beaux minarets de Tunis, dans le style almohade de Marrakech et de Séville.": "Hafsî hanedanının kurucusu tarafından Kasba meydanında yapıldı; Marakeş ve Sevilla'daki Muvahhid üslubunda, Tunus'un en güzel minarelerinden birine sahiptir.",
+"Début de la construction (Abou Zakariya Yahya)": "İnşaata başlanır (Ebu Zekeriya Yahya)",
+"Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "1231-1235 yılları arasında, daha önce Sevilla valiliği yapmış olan Hafsî hanedanının kurucusu Ebu Zekeriya Yahya'nın emriyle yapıldı. Önce Kasba'da oturan hükümdarların saray camisiydi, sonra şehrin cuma camilerinden biri oldu; Tunus'ta Zeytune'den sonra yapılan ilk camidir. Osmanlı döneminde burada Hanefî mezhebine göre namaz kılındı.",
+"Fin de la construction de la mosquée": "Caminin inşası tamamlanır",
+"La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "Tunus Medinesi UNESCO Dünya Mirası listesine alınır",
+"La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "Genişliğinden daha derin olan harim, Hafsî başlıklı mermer sütunlar üzerinde 7 sahın ve 9 bölümden oluşur; mihrabın üstünde oyma alçıdan mukarnaslı bir kubbe vardır. 1233'te yapılan kare minare, koyu sarı taştan bir baklava ağıyla kaplıdır: Zeytune'nin bugünkü minaresine örnek olmuştur.",
+"Le minaret est terminé": "Minare tamamlanır",
+"Mosquée Hammouda Pacha": "Hammude Paşa Camii",
+"Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Sidi Mahrez Camii (Muhammed Bey Camii)",
+"Mosquée Youssef Dey": "Yusuf Dayı Camii",
+"Mosquée Zitouna": "Zeytune Camii",
+"Mosquée de la Kasbah (Tunis)": "Kasba Camii (Tunus)",
+"Tunis": "Tunus"
+});
+  Object.assign(T.id = T.id || {}, {
+"1231-1235 · Hafsides": "1231-1235 · Hafsiyah",
+"Construite par le fondateur de la dynastie hafside sur la place de la Kasbah, elle possède l'un des plus beaux minarets de Tunis, dans le style almohade de Marrakech et de Séville.": "Dibangun oleh pendiri dinasti Hafsiyah di alun-alun Kasbah, masjid ini memiliki salah satu menara terindah di Tunis, bergaya Muwahhidun seperti di Marrakesh dan Sevilla.",
+"Début de la construction (Abou Zakariya Yahya)": "Pembangunan dimulai (Abu Zakariya Yahya)",
+"Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "Dibangun pada 1231-1235 atas perintah Abu Zakariya Yahya, pendiri dinasti Hafsiyah, yang pernah menjadi gubernur Sevilla. Awalnya masjid istana para penguasa yang tinggal di Kasbah, kemudian menjadi salah satu masjid Jumat kota; masjid pertama yang dibangun di Tunis setelah Zitouna. Pada masa Utsmaniyah, salat di sini mengikuti mazhab Hanafi.",
+"Fin de la construction de la mosquée": "Masjid selesai dibangun",
+"La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "Medina Tunis menjadi Warisan Dunia UNESCO",
+"La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "Ruang salatnya, lebih dalam daripada lebarnya, memiliki 7 lorong dan 9 baris di atas tiang marmer berkepala Hafsiyah; mihrab dinaungi kubah muqarnas dari plester berukir. Menara persegi yang dibangun sejak 1233 dilapisi jaringan belah ketupat dari batu oker: menara ini menjadi teladan bagi menara Zitouna yang sekarang.",
+"Le minaret est terminé": "Menara selesai",
+"Mosquée Hammouda Pacha": "Masjid Hammouda Pacha",
+"Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Masjid Sidi Mahrez (Masjid Mohamed Bey)",
+"Mosquée Youssef Dey": "Masjid Youssef Dey",
+"Mosquée Zitouna": "Masjid Al-Zaytuna",
+"Mosquée de la Kasbah (Tunis)": "Masjid Kasbah (Tunis)",
+"Tunis": "Tunis"
+});
+  Object.assign(T.ur = T.ur || {}, {
+"1231-1235 · Hafsides": "⁦1231-1235⁩ · حفصی",
+"Construite par le fondateur de la dynastie hafside sur la place de la Kasbah, elle possède l'un des plus beaux minarets de Tunis, dans le style almohade de Marrakech et de Séville.": "حفصی خاندان کے بانی نے اسے قصبہ چوک پر بنوایا؛ اس کا مینار تونس کے خوبصورت ترین میناروں میں سے ہے، مراکش اور اشبیلیہ کے موحدی طرز پر۔",
+"Début de la construction (Abou Zakariya Yahya)": "تعمیر کا آغاز (ابو زکریا یحییٰ)",
+"Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "یہ ⁦1231⁩ء سے ⁦1235⁩ء تک حفصی خاندان کے بانی ابو زکریا یحییٰ کے حکم سے تعمیر ہوئی، جو اشبیلیہ کے گورنر رہ چکے تھے۔ پہلے یہ قصبہ میں رہنے والے حکمرانوں کی شاہی مسجد تھی، پھر شہر کی جامع مساجد میں سے ایک بن گئی؛ یہ زیتونہ کے بعد تونس میں بننے والی پہلی مسجد تھی۔ عثمانی دور میں یہاں حنفی مسلک کے مطابق نماز ہونے لگی۔",
+"Fin de la construction de la mosquée": "مسجد کی تعمیر مکمل",
+"La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "تونس کا مدینہ یونیسکو عالمی ورثہ قرار",
+"La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "نماز کا ہال، جو چوڑائی سے زیادہ گہرا ہے، حفصی سرستونوں والے سنگ مرمر کے ستونوں پر ⁦7⁩ راہداریوں اور ⁦9⁩ صفوں پر مشتمل ہے؛ محراب پر تراشے ہوئے پلستر کا مقرنس گنبد ہے۔ ⁦1233⁩ء میں بننے والا مربع مینار زرد پتھر کے معین جال سے ڈھکا ہے: یہی زیتونہ کے موجودہ مینار کا نمونہ بنا۔",
+"Le minaret est terminé": "مینار مکمل",
+"Mosquée Hammouda Pacha": "مسجد حمودہ پاشا",
+"Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "جامع سیدی محرز (جامع محمد بے)",
+"Mosquée Youssef Dey": "یوسف دای مسجد",
+"Mosquée Zitouna": "جامع زیتونہ",
+"Mosquée de la Kasbah (Tunis)": "جامع قصبہ (تونس)",
+"Tunis": "تونس"
+});
+  Object.assign(T.de = T.de || {}, {
+"1231-1235 · Hafsides": "1231-1235 · Hafsiden",
+"Construite par le fondateur de la dynastie hafside sur la place de la Kasbah, elle possède l'un des plus beaux minarets de Tunis, dans le style almohade de Marrakech et de Séville.": "Vom Begründer der Hafsiden-Dynastie am Kasbah-Platz errichtet, besitzt sie eines der schönsten Minarette von Tunis im almohadischen Stil von Marrakesch und Sevilla.",
+"Début de la construction (Abou Zakariya Yahya)": "Baubeginn (Abu Zakariya Yahya)",
+"Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "Sie wurde von 1231 bis 1235 auf Befehl von Abu Zakariya Yahya errichtet, dem Begründer der Hafsiden-Dynastie, der Statthalter von Sevilla gewesen war. Zunächst Hofmoschee der in der Kasbah residierenden Herrscher, wurde sie später eine der Freitagsmoscheen der Stadt; sie war die erste nach der Zitouna in Tunis errichtete Moschee. In osmanischer Zeit betete man hier nach hanafitischem Ritus.",
+"Fin de la construction de la mosquée": "Die Moschee wird vollendet",
+"La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "Die Medina von Tunis wird UNESCO-Welterbe",
+"La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "Der Gebetssaal, tiefer als breit, hat 7 Schiffe und 9 Joche auf Marmorsäulen mit hafsidischen Kapitellen; über dem Mihrab erhebt sich eine Muqarnas-Kuppel aus geschnitztem Stuck. Das quadratische, schon 1233 errichtete Minarett ist mit einem Rautennetz aus ockerfarbenem Stein überzogen: Es diente als Vorbild für das heutige Minarett der Zitouna.",
+"Le minaret est terminé": "Das Minarett wird vollendet",
+"Mosquée Hammouda Pacha": "Hammouda-Pascha-Moschee",
+"Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Sidi-Mahrez-Moschee (Mohamed-Bey-Moschee)",
+"Mosquée Youssef Dey": "Youssef-Dey-Moschee",
+"Mosquée Zitouna": "Ez-Zitouna-Moschee",
+"Mosquée de la Kasbah (Tunis)": "Kasbah-Moschee (Tunis)",
+"Tunis": "Tunis"
+});
+  Object.assign(T.es = T.es || {}, {
+"1231-1235 · Hafsides": "1231-1235 · hafsíes",
+"Construite par le fondateur de la dynastie hafside sur la place de la Kasbah, elle possède l'un des plus beaux minarets de Tunis, dans le style almohade de Marrakech et de Séville.": "Construida por el fundador de la dinastía hafsí en la plaza de la Kasbah, posee uno de los alminares más bellos de Túnez, en el estilo almohade de Marrakech y Sevilla.",
+"Début de la construction (Abou Zakariya Yahya)": "Comienzo de la construcción (Abu Zakariya Yahya)",
+"Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "Fue levantada de 1231 a 1235 por orden de Abu Zakariya Yahya, fundador de la dinastía hafsí, que había sido gobernador de Sevilla. Primero mezquita de la corte de los soberanos instalados en la Kasbah, pasó después a ser una de las mezquitas del viernes de la ciudad; fue la primera construida en Túnez después de la Zitouna. En época otomana se rezaba allí según el rito hanafí.",
+"Fin de la construction de la mosquée": "Se termina la mezquita",
+"La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "La medina de Túnez, inscrita como Patrimonio Mundial de la UNESCO",
+"La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "La sala de oración, más profunda que ancha, tiene 7 naves y 9 tramos sobre columnas de mármol con capiteles hafsíes; el mihrab está coronado por una cúpula de mocárabes de yeso tallado. El alminar cuadrado, construido ya en 1233, está cubierto por una red de rombos de piedra ocre: sirvió de modelo al alminar actual de la Zitouna.",
+"Le minaret est terminé": "Se termina el alminar",
+"Mosquée Hammouda Pacha": "Mezquita de Hammouda Pachá",
+"Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Mezquita Sidi Mahrez (mezquita de Mohamed Bey)",
+"Mosquée Youssef Dey": "Mezquita de Youssef Dey",
+"Mosquée Zitouna": "Mezquita Zitouna",
+"Mosquée de la Kasbah (Tunis)": "Mezquita de la Kasbah (Túnez)",
+"Tunis": "Túnez"
+});
+})(window.TRADUCTIONS = window.TRADUCTIONS || {});
