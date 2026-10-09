@@ -17,6 +17,8 @@
   (adapter l'ancre du sabotage dans le même commit si un texte visé change).
 - Robot des données lent (~5 min, réseau) : ne le relancer que si nécessaire.
 - **« Tunisie et monde » (09/10/2026, demande d'Ahmed : que les visiteurs sachent que la carte couvre le monde)** : nom affiché
-  (en-tête, pied de page, manifeste) « Mosquées — Tunisie et monde / مساجد تونس والعالم » (adresse du site inchangée)
+  (en-tête, pied de page, manifeste) « Mosquées de Tunisie et du monde / مساجد تونس والعالم » (adresse du site inchangée)
   + bandeau `.monde-bande` juste au-dessus de la carte : « 🌍 Le monde entier est sur la carte », villes d'exemple (`data-ville-ex`,
   La Mecque, Istanbul, Paris, Le Caire → recherche Nominatim, une requête par appui) et « Voir le monde » (`data-monde-vue`).
+  Nom SANS tiret (demande d'Ahmed du 09/10) ; sur téléphone il passe sur 2-3 lignes (`.logo-nom`, media 560 px) pour n'être jamais caché
+  sous les boutons ; titre de partage (og:title) « Mosquées de Tunisie et du monde : … ».

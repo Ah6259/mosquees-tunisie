@@ -57,7 +57,7 @@ const MENU_SITE = [
       <div class="wrap">
         <a class="logo" href="${racine || "./"}">
           <img class="logo-mark" src="${racine}assets/logo.svg" alt="" width="34" height="34">
-          <span class="logo-nom">${T("Mosquées — Tunisie et monde", "مساجد تونس والعالم", "Mosques — Tunisia and world")}
+          <span class="logo-nom">${T("Mosquées de Tunisie et du monde", "مساجد تونس والعالم", "Mosques of Tunisia and the world")}
             <small>${T("Gratuit · carte, photos, histoire", "مجاني · خريطة، صور، تاريخ", "Free · map, photos, history")}</small></span>
         </a>
         <div class="entete-boutons">
@@ -72,7 +72,7 @@ const MENU_SITE = [
     const p = document.getElementById("pied");
     if (p) p.innerHTML = `
       <div class="wrap">
-        <div class="pied-logo"><img src="${racine}assets/logo.svg" alt="" width="24" height="24"> ${T("Mosquées — Tunisie et monde", "مساجد تونس والعالم", "Mosques — Tunisia and world")}</div>
+        <div class="pied-logo"><img src="${racine}assets/logo.svg" alt="" width="24" height="24"> ${T("Mosquées de Tunisie et du monde", "مساجد تونس والعالم", "Mosques of Tunisia and the world")}</div>
         <nav>
           <a href="${racine || "./"}">${T("Carte des mosquées", "خريطة المساجد", "Map of mosques")}</a>
           <a href="${racine}grandes-mosquees/">${T("Grandes mosquées et mosquées historiques", "الجوامع الكبرى والمساجد التاريخية", "Great and historic mosques")}</a>

@@ -6,7 +6,7 @@
    religieuses, Muhammad Junagarhi, Frank Bubenheim, Isa García). */
 window.TRADUCTIONS = window.TRADUCTIONS || {};
 window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
- "Mosquées — Tunisie et monde": "Camiler — Tunus ve dünya",
+ "Mosquées de Tunisie et du monde": "Tunus ve dünya camileri",
  "Le monde entier est sur la carte": "Tüm dünya haritada",
  "Exemples :": "Örnekler:",
  "La Mecque": "Mekke",
@@ -205,7 +205,7 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Tunus dışında, haritada gösterilen bölge (tam konumunuz değil) camilerini okumak için OpenStreetMap sunucularına gönderilir; dünyada aranan bir şehir Nominatim'e gönderilir."
 });
 window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
- "Mosquées — Tunisie et monde": "Masjid — Tunisia dan dunia",
+ "Mosquées de Tunisie et du monde": "Masjid Tunisia dan dunia",
  "Le monde entier est sur la carte": "Seluruh dunia ada di peta",
  "Exemples :": "Contoh:",
  "La Mecque": "Mekah",
@@ -404,7 +404,7 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Di luar Tunisia, area yang tampil di peta (bukan posisi tepat Anda) dikirim ke server OpenStreetMap untuk membaca masjid-masjidnya; kota yang dicari di dunia dikirim ke Nominatim."
 });
 window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
- "Mosquées — Tunisie et monde": "مساجد — تیونس اور دنیا",
+ "Mosquées de Tunisie et du monde": "تیونس اور دنیا کی مساجد",
  "Le monde entier est sur la carte": "پوری دنیا نقشے پر ہے",
  "Exemples :": "مثالیں:",
  "La Mecque": "مکہ مکرمہ",
@@ -603,7 +603,7 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "تیونس سے باہر، نقشے پر دکھایا گیا علاقہ (آپ کا عین مقام نہیں) اس کی مساجد پڑھنے کے لیے OpenStreetMap کے سرورز کو بھیجا جاتا ہے؛ دنیا میں تلاش کیا گیا شہر Nominatim کو بھیجا جاتا ہے۔"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
- "Mosquées — Tunisie et monde": "Moscheen — Tunesien & Welt",
+ "Mosquées de Tunisie et du monde": "Moscheen Tunesien & Welt",
  "Le monde entier est sur la carte": "Die ganze Welt ist auf der Karte",
  "Exemples :": "Beispiele:",
  "La Mecque": "Mekka",
@@ -802,7 +802,7 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Außerhalb Tunesiens wird das auf der Karte gezeigte Gebiet (nicht Ihre genaue Position) an die OpenStreetMap-Server gesendet, um seine Moscheen zu lesen; eine weltweit gesuchte Stadt wird an Nominatim gesendet."
 });
 window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
- "Mosquées — Tunisie et monde": "Mezquitas — Túnez y el mundo",
+ "Mosquées de Tunisie et du monde": "Mezquitas de Túnez y del mundo",
  "Le monde entier est sur la carte": "El mundo entero está en el mapa",
  "Exemples :": "Ejemplos:",
  "La Mecque": "La Meca",

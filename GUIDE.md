@@ -8,3 +8,5 @@
    uniquement des vidéos de la chaîne officielle, intégration autorisée.
 4. **Relancer un robot** : GitHub → Actions → choisir le robot → « Run workflow » (marche aussi depuis l'application du téléphone).
 5. **Après toute modification** : tests (voir CLAUDE.md), commit, push ; vérifier le site sur le téléphone.
+6. **Le monde entier** (09/10/2026) : au-dessus de la carte, le bandeau « 🌍 Le monde entier est sur la carte » ; changer les villes
+   d'exemple : boutons `data-ville-ex` de `index.html` (le texte affiché + la ville en anglais pour la recherche).

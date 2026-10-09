@@ -1,8 +1,11 @@
-# Mosquées en Tunisie — مساجد تونس
+# Mosquées de Tunisie et du monde (مساجد تونس والعالم)
+
+Nom affiché sur le site depuis le 09/10/2026 (avant : « Mosquées en Tunisie ») ; l'adresse ne change pas.
 
 Site gratuit : https://ah6259.github.io/mosquees-tunisie/
 - carte de toutes les mosquées et salles de prière de Tunisie (OpenStreetMap + Wikidata + signalements des visiteurs),
-  recherche par nom ou par ville, « Autour de moi » ;
+  recherche par nom ou par ville, « Autour de moi » ; et les mosquées du monde entier (bandeau « Le monde entier est sur la carte »,
+  villes d'exemple, « Voir le monde ») ;
 - une page complète par grande mosquée (Zitouna, Kairouan, Sousse, Mahdia, Sfax, Trois Portes, Youssef Dey, Hammouda Pacha,
   Sidi Mahrez, Sidi Sahbi, Testour, Mâlik ibn Anas, Fadhloun/Djerba, Kasbah, Monastir) et une page pour chaque autre mosquée
   ayant une fiche Wikidata ;
