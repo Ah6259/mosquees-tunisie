@@ -1,6 +1,6 @@
 {
   "id": "/mosquees-tunisie/",
-  "name": "Mosquées en Tunisie",
+  "name": "Mosquées — Tunisie et monde",
   "short_name": "Mosquées",
   "description": "Gratuit : la carte de toutes les mosquées et salles de prière de Tunisie, et l'histoire des grandes mosquées (Zitouna, Kairouan, Sousse…), en 8 langues.",
   "start_url": "./",
@@ -11,8 +11,21 @@
   "theme_color": "#0E6B4C",
   "background_color": "#F4F7F3",
   "icons": [
-    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

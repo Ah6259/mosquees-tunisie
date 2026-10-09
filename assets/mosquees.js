@@ -395,6 +395,10 @@
       return;
     }
     if (e.target.closest("[data-ville-monde]")) { chercherVille($("mq-q").value); return; }
+    // bandeau « Le monde entier est sur la carte » : villes d'exemple et vue du monde (09/10/2026)
+    const ex = e.target.closest("[data-ville-ex]");
+    if (ex) { chercherVille(ex.dataset.villeEx); return; }
+    if (e.target.closest("[data-monde-vue]")) { chargerLeaflet(() => { carte.setView([25, 15], 2); $("mq-carte").scrollIntoView && $("mq-carte").scrollIntoView({ behavior: "smooth", block: "center" }); }); return; }
     const voir = e.target.closest("[data-voir]");
     if (voir) { fermerSig(); voirSurCarte(voir.dataset.voir); return; }
     const lien = e.target.closest('a[href$="#signaler"]');

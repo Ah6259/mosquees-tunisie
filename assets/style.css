@@ -451,3 +451,18 @@ html[dir="rtl"] .mq-resume{padding:0 14px 0 0}
 .mq-pays-chip b{color:var(--doux)}
 .mq-monde-q{margin:10px 0 0}
 .mq-monde-q .chipbtn{font-size:13.5px;max-width:100%;white-space:normal;text-align:start}
+
+/* ---- « Le monde entier est sur la carte » (09/10/2026) ---- */
+.monde-bande{margin:12px 0 10px;padding:12px 14px;border-radius:14px;background:rgba(31,107,160,.07);border:1.5px solid rgba(31,107,160,.25)}
+.monde-titre{margin:0 0 4px;font-size:16px}
+.monde-txt{margin:0 0 8px;font-size:14px}
+.monde-ex{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0}
+.monde-ex-t{font-size:13.5px;font-weight:700}
+.monde-bande .chipbtn{font:inherit;font-size:13.5px;font-weight:700;border:1.5px solid var(--ligne);background:var(--carte);color:var(--texte);border-radius:999px;padding:6px 11px;cursor:pointer}
+.monde-bande .monde-vue{border-style:dashed}
+.monde-form{margin:0 0 8px}
+.monde-etiquette{display:block;font-size:13.5px;font-weight:700;margin:0 0 4px}
+.monde-champ{display:flex;gap:6px}
+.monde-champ .btn-principal{width:auto;flex:none;margin:0;padding-inline:16px}
+.monde-champ input{flex:1;min-width:0;font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--ligne);border-radius:12px;background:var(--carte);color:var(--texte)}
+.monde-info{margin:8px 0 0}.monde-info:empty{display:none}

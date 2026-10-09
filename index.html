@@ -35,7 +35,7 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Noto+Kufi+Arabic:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=20261009f">
+<link rel="stylesheet" href="assets/style.css?v=20261009g">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Où trouver la mosquée la plus proche en Tunisie ?","acceptedAnswer":{"@type":"Answer","text":"Sur la carte gratuite Mosquées en Tunisie : touchez « Autour de moi » pour voir les mosquées et salles de prière les plus proches, ou cherchez par nom ou par ville. Les lieux viennent d'OpenStreetMap et des signalements des visiteurs."}},
@@ -43,11 +43,11 @@
 {"@type":"Question","name":"Une mosquée manque sur la carte : comment l'ajouter ?","acceptedAnswer":{"@type":"Answer","text":"Touchez « Signaler une mosquée ou une salle de prière », placez le repère sur la carte, confirmez la position et envoyez. Le lieu est publié automatiquement en moins de deux heures, « à confirmer » jusqu'à ce qu'un autre visiteur le confirme."}}
 ]}
 </script>
-<script src="assets/langues.js?v=20261009f"></script>
-<script src="assets/trad/accueil.js?v=20261009f"></script>
-<script src="assets/page.js?v=20261009f"></script>
-<script src="assets/recitation.js?v=20261009f"></script>
-<script src="assets/avis.js?v=20261009f" defer></script>
+<script src="assets/langues.js?v=20261009g"></script>
+<script src="assets/trad/accueil.js?v=20261009g"></script>
+<script src="assets/page.js?v=20261009g"></script>
+<script src="assets/recitation.js?v=20261009g"></script>
+<script src="assets/avis.js?v=20261009g" defer></script>
 </head>
 <body>
 <header class="entete" id="entete"></header>
@@ -73,6 +73,8 @@
     </div>
     <div class="mq-filtres" id="mq-filtres"></div>
     <p class="mq-ligne"><button type="button" class="btn-principal mq-autour" id="mq-autour"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7"/></svg><span data-l="fr">Autour de moi</span><span data-l="ar">حولي</span><span data-l="en">Near me</span></button> <span id="mq-autour-txt" class="aide"></span></p>
+    <!-- le monde entier est sur la carte (demande d'Ahmed du 09/10/2026 : que les visiteurs le voient) -->
+    <div class="monde-bande" id="mq-monde"><p class="monde-titre"><span aria-hidden="true">🌍</span> <b><span data-l="fr">Le monde entier est sur la carte</span><span data-l="ar">العالم كله على الخريطة</span><span data-l="en">The whole world is on the map</span></b></p><p class="monde-txt"><span data-l="fr">Ailleurs qu'en Tunisie : tapez une ville dans la recherche ci-dessus, ou touchez un exemple.</span><span data-l="ar">خارج تونس: اكتب اسم مدينة في خانة البحث أعلاه، أو المس مثالًا.</span><span data-l="en">Outside Tunisia: type a town in the search box above, or tap an example.</span></p><p class="monde-ex"><span class="monde-ex-t"><span data-l="fr">Exemples :</span><span data-l="ar">أمثلة:</span><span data-l="en">Examples:</span></span> <button type="button" class="chipbtn" data-ville-ex="Mecca, Saudi Arabia"><span data-l="fr">La Mecque</span><span data-l="ar">مكة المكرمة</span><span data-l="en">Mecca</span></button><button type="button" class="chipbtn" data-ville-ex="Istanbul, Turkey"><span data-l="fr">Istanbul</span><span data-l="ar">إسطنبول</span><span data-l="en">Istanbul</span></button><button type="button" class="chipbtn" data-ville-ex="Paris, France"><span data-l="fr">Paris</span><span data-l="ar">باريس</span><span data-l="en">Paris</span></button><button type="button" class="chipbtn" data-ville-ex="Cairo, Egypt"><span data-l="fr">Le Caire</span><span data-l="ar">القاهرة</span><span data-l="en">Cairo</span></button><button type="button" class="chipbtn monde-vue" data-monde-vue><span aria-hidden="true">🌍</span> <span data-l="fr">Voir le monde</span><span data-l="ar">عرض العالم</span><span data-l="en">See the world</span></button></p></div>
     <div id="mq-carte" class="mq-carte" role="region" aria-label="Carte des mosquées de Tunisie"></div>
     <p id="mq-zone" class="aide mq-zone" role="status" aria-live="polite"></p>
     <p id="mq-pays" class="mq-pays" hidden></p>
@@ -188,9 +190,9 @@
   </div>
 </div>
 <footer id="pied"></footer>
-<script src="donnees/lieux.js?v=20261009f"></script>
-<script src="donnees/signales.js?v=20261009f"></script>
-<script src="assets/mosquees.js?v=20261009f"></script>
+<script src="donnees/lieux.js?v=20261009g"></script>
+<script src="donnees/signales.js?v=20261009g"></script>
+<script src="assets/mosquees.js?v=20261009g"></script>
 <script data-goatcounter="https://prix-eaux-tunisie.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

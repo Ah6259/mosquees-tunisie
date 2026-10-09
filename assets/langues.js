@@ -6,6 +6,15 @@
    religieuses, Muhammad Junagarhi, Frank Bubenheim, Isa García). */
 window.TRADUCTIONS = window.TRADUCTIONS || {};
 window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
+ "Mosquées — Tunisie et monde": "Camiler — Tunus ve dünya",
+ "Le monde entier est sur la carte": "Tüm dünya haritada",
+ "Exemples :": "Örnekler:",
+ "La Mecque": "Mekke",
+ "Istanbul": "İstanbul",
+ "Paris": "Paris",
+ "Le Caire": "Kahire",
+ "Voir le monde": "Dünyayı gör",
+ "Ailleurs qu'en Tunisie : tapez une ville dans la recherche ci-dessus, ou touchez un exemple.": "Tunus dışında: yukarıdaki arama kutusuna bir şehir yazın veya bir örneğe dokunun.",
  "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "Şeyh Ali El Barrak'ın sesiyle (Fâtiha Suresi), resmî kanalından.",
  "Accueil": "Ana sayfa",
  "À propos": "Hakkında",
@@ -196,6 +205,15 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Tunus dışında, haritada gösterilen bölge (tam konumunuz değil) camilerini okumak için OpenStreetMap sunucularına gönderilir; dünyada aranan bir şehir Nominatim'e gönderilir."
 });
 window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
+ "Mosquées — Tunisie et monde": "Masjid — Tunisia dan dunia",
+ "Le monde entier est sur la carte": "Seluruh dunia ada di peta",
+ "Exemples :": "Contoh:",
+ "La Mecque": "Mekah",
+ "Istanbul": "Istanbul",
+ "Paris": "Paris",
+ "Le Caire": "Kairo",
+ "Voir le monde": "Lihat dunia",
+ "Ailleurs qu'en Tunisie : tapez une ville dans la recherche ci-dessus, ou touchez un exemple.": "Di luar Tunisia: ketik nama kota di kotak pencarian di atas, atau ketuk salah satu contoh.",
  "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "Dengan suara Syekh Ali El Barrak (Surah Al-Fatihah), dari kanal resminya.",
  "Accueil": "Beranda",
  "À propos": "Tentang",
@@ -386,6 +404,15 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Di luar Tunisia, area yang tampil di peta (bukan posisi tepat Anda) dikirim ke server OpenStreetMap untuk membaca masjid-masjidnya; kota yang dicari di dunia dikirim ke Nominatim."
 });
 window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
+ "Mosquées — Tunisie et monde": "مساجد — تیونس اور دنیا",
+ "Le monde entier est sur la carte": "پوری دنیا نقشے پر ہے",
+ "Exemples :": "مثالیں:",
+ "La Mecque": "مکہ مکرمہ",
+ "Istanbul": "استنبول",
+ "Paris": "پیرس",
+ "Le Caire": "قاہرہ",
+ "Voir le monde": "دنیا دیکھیں",
+ "Ailleurs qu'en Tunisie : tapez une ville dans la recherche ci-dessus, ou touchez un exemple.": "تیونس کے علاوہ: اوپر تلاش کے خانے میں کسی شہر کا نام لکھیں، یا کسی مثال کو چھوئیں۔",
  "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "شیخ علی البراق کی آواز میں (سورۂ فاتحہ)، ان کے سرکاری چینل سے۔",
  "Accueil": "صفحۂ اول",
  "À propos": "تعارف",
@@ -576,6 +603,15 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "تیونس سے باہر، نقشے پر دکھایا گیا علاقہ (آپ کا عین مقام نہیں) اس کی مساجد پڑھنے کے لیے OpenStreetMap کے سرورز کو بھیجا جاتا ہے؛ دنیا میں تلاش کیا گیا شہر Nominatim کو بھیجا جاتا ہے۔"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
+ "Mosquées — Tunisie et monde": "Moscheen — Tunesien und die Welt",
+ "Le monde entier est sur la carte": "Die ganze Welt ist auf der Karte",
+ "Exemples :": "Beispiele:",
+ "La Mecque": "Mekka",
+ "Istanbul": "Istanbul",
+ "Paris": "Paris",
+ "Le Caire": "Kairo",
+ "Voir le monde": "Die Welt ansehen",
+ "Ailleurs qu'en Tunisie : tapez une ville dans la recherche ci-dessus, ou touchez un exemple.": "Außerhalb Tunesiens: Geben Sie oben im Suchfeld eine Stadt ein oder tippen Sie auf ein Beispiel.",
  "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "Mit der Stimme von Scheich Ali El Barrak (Sure Al-Fatiha), von seinem offiziellen Kanal.",
  "Accueil": "Startseite",
  "À propos": "Über uns",
@@ -766,6 +802,15 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Außerhalb Tunesiens wird das auf der Karte gezeigte Gebiet (nicht Ihre genaue Position) an die OpenStreetMap-Server gesendet, um seine Moscheen zu lesen; eine weltweit gesuchte Stadt wird an Nominatim gesendet."
 });
 window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
+ "Mosquées — Tunisie et monde": "Mezquitas — Túnez y el mundo",
+ "Le monde entier est sur la carte": "El mundo entero está en el mapa",
+ "Exemples :": "Ejemplos:",
+ "La Mecque": "La Meca",
+ "Istanbul": "Estambul",
+ "Paris": "París",
+ "Le Caire": "El Cairo",
+ "Voir le monde": "Ver el mundo",
+ "Ailleurs qu'en Tunisie : tapez une ville dans la recherche ci-dessus, ou touchez un exemple.": "Fuera de Túnez: escriba una ciudad en el buscador de arriba o toque un ejemplo.",
  "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "Con la voz del jeque Ali El Barrak (sura Al-Fátiha), desde su canal oficial.",
  "Accueil": "Inicio",
  "À propos": "Acerca de",
