@@ -293,5 +293,17 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const { d: s2 } = await page("index.html", { lang: "xx", stockage: { langue: "ar", "recitation-mosquees": "non" } });
   check("?lang=xx inconnu ignoré ; choix « arabe » fait sur un autre de nos sites → arabe", s2.documentElement.lang === "ar" && s2.documentElement.dir === "rtl");
 }
+// ---- page vidéo : sans son ; Al-Fâtiha (chaîne officielle) démarre et s'arrête avec la vidéo, sans écran d'entrée (09/10/2026)
+{
+  const { w, d } = await page("video/index.html", { stockage: { langue: "fr" } });
+  const v = d.querySelector("video.video-lecteur");
+  const avant = !d.getElementById("entree") && /voix de cheikh Ali El Barrak/.test((d.querySelector(".video-recitation") || {}).textContent || "");
+  v.dispatchEvent(new w.Event("play"));
+  const f = d.querySelector("#recitation-lecteur iframe");
+  const joue = !!f && /youtube-nocookie\.com\/embed\/ygnfUhIY09w\?/.test(f.src);
+  v.dispatchEvent(new w.Event("pause"));
+  check("page vidéo : pas d'écran d'entrée, ligne « voix de cheikh Ali El Barrak », lecture → Al-Fâtiha officielle, pause → arrêt",
+    avant && joue && !d.querySelector("#recitation-lecteur iframe"));
+}
 console.log(`\n${erreurs ? erreurs + " PROBLÈME(S)" : "TOUT PASSE"} (${total} vérifications)`);
 process.exit(erreurs ? 1 : 0);

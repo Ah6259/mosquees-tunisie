@@ -437,3 +437,6 @@ html[dir="rtl"] .mq-resume{padding:0 14px 0 0}
 .mq-filtres .chipbtn[data-pages][aria-pressed="true"]{border-color:#F2B33D;background:#FDF1D6}
 .sig-bar h2{white-space:normal;min-width:0;line-height:1.25}
 .sig-bar h2{flex:1}
+
+/* page vidéo : la récitation de cheikh Ali El Barrak accompagne la vidéo (09/10/2026) */
+.video-recitation{margin:8px auto 0;max-width:420px;text-align:center;font-size:14px;font-weight:600;color:var(--doux,#5b6b66)}

@@ -37,7 +37,7 @@ for (const v of VIDEOS) {
   const f = join(root, "assets/video", v + ".mp4"), existe = existsSync(f);
   const buf = existe ? readFileSync(f) : Buffer.alloc(0), [w, h] = existe ? dimensions(buf) : [0, 0];
   check(`vidéo ${v}.mp4 présente, ≤ 8 Mo, 1080 × 1920 (${(buf.length / 1e6).toFixed(1)} Mo, ${w} × ${h})`, existe && buf.length <= 8e6 && w === 1080 && h === 1920);
-  check(`vidéo ${v}.mp4 : piste son présente (musique de fond), débit > 0`, existe && debitSon(buf) > 0);
+  check(`vidéo ${v}.mp4 : SANS son (la récitation de cheikh Ali El Barrak est jouée par la page, depuis la chaîne officielle)`, existe && !buf.includes(Buffer.from("mp4a")));
 }
 const jpeg = f => existsSync(join(root, f)) && readFileSync(join(root, f)).subarray(0, 2).toString("hex") === "ffd8";
 check("couverture et aperçu JPEG de la page vidéo", jpeg("assets/video/couverture.jpg") && jpeg("assets/video/apercu-video.jpg"));

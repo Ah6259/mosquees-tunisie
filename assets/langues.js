@@ -6,6 +6,7 @@
    religieuses, Muhammad Junagarhi, Frank Bubenheim, Isa García). */
 window.TRADUCTIONS = window.TRADUCTIONS || {};
 window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
+ "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "Şeyh Ali El Barrak'ın sesiyle (Fâtiha Suresi), resmî kanalından.",
  "Accueil": "Ana sayfa",
  "À propos": "Hakkında",
  "À propos et méthode": "Hakkında ve yöntem",
@@ -180,6 +181,7 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "Entrer sans le son": "Sessiz gir"
 });
 window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
+ "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "Dengan suara Syekh Ali El Barrak (Surah Al-Fatihah), dari kanal resminya.",
  "Accueil": "Beranda",
  "À propos": "Tentang",
  "À propos et méthode": "Tentang dan metode",
@@ -354,6 +356,7 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Entrer sans le son": "Masuk tanpa suara"
 });
 window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
+ "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "شیخ علی البراق کی آواز میں (سورۂ فاتحہ)، ان کے سرکاری چینل سے۔",
  "Accueil": "صفحۂ اول",
  "À propos": "تعارف",
  "À propos et méthode": "تعارف اور طریقۂ کار",
@@ -528,6 +531,7 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Entrer sans le son": "آواز کے بغیر داخل ہوں"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
+ "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "Mit der Stimme von Scheich Ali El Barrak (Sure Al-Fatiha), von seinem offiziellen Kanal.",
  "Accueil": "Startseite",
  "À propos": "Über uns",
  "À propos et méthode": "Über uns und Methode",
@@ -702,6 +706,7 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Entrer sans le son": "Ohne Ton eintreten"
 });
 window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
+ "Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.": "Con la voz del jeque Ali El Barrak (sura Al-Fátiha), desde su canal oficial.",
  "Accueil": "Inicio",
  "À propos": "Acerca de",
  "À propos et méthode": "Acerca de y método",

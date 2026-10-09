@@ -146,10 +146,26 @@
     document.querySelectorAll("[data-video]").forEach(b => b.setAttribute("aria-pressed", String(enCours && b.dataset.video === p.v)));
   });
 
+  // page video/ (décision d'Ahmed, 09/10/2026) : la vidéo de présentation n'a PAS de son ; la récitation (Al-Fâtiha, chaîne
+  // officielle) démarre avec la vidéo et s'arrête avec elle. Pas d'écran d'entrée sur cette page (le bouton « lecture » suffit).
+  const FATIHA = "ygnfUhIY09w";
+  function brancherVideo(v) {
+    const ligne = document.createElement("p");
+    ligne.className = "video-recitation";
+    const ecrireLigne = () => { ligne.textContent = L2("Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.", "بصوت الشيخ علي البراق (سورة الفاتحة)، من قناته الرسمية.", "With the voice of Sheikh Ali El Barrak (Surah Al-Fatiha), from his official channel."); };
+    ecrireLigne(); document.addEventListener("langue", ecrireLigne);
+    v.insertAdjacentElement("afterend", ligne);
+    v.addEventListener("play", () => lancer(FATIHA, v.currentTime < 1 ? 0 : v.currentTime));
+    v.addEventListener("pause", () => { if (enCours) arreter(false); });
+  }
+  window.RECITATION.brancherVideo = brancherVideo;
+
   document.addEventListener("langue", () => { bouton(); textesBoite(); });
   document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       bouton();
+      const v = document.querySelector("video.video-lecteur");
+      if (v) { brancherVideo(v); return; }                                      // page vidéo : récitation jouée avec la vidéo
       if (new URLSearchParams(location.search).get("son") === "0") return;     // lien sans écran d'entrée (captures, partage)
       const c = choix();
       if (c === null) ecran();
