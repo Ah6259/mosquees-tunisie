@@ -1,0 +1,40 @@
+{
+ "site": "https://ah6259.github.io/mosquees-tunisie/",
+ "logo": "assets/logo.svg",
+ "defaut": "fr",
+ "modele": "a-propos/index.html",
+ "nom": {
+  "fr": "Mosquées en Tunisie",
+  "ar": "مساجد تونس",
+  "en": "Mosques in Tunisia"
+ },
+ "partager": {
+  "fr": "Partager la vidéo",
+  "ar": "شارك الفيديو",
+  "en": "Share the video"
+ },
+ "pages": [
+  {
+   "chemin": "video/",
+   "video": "presentation",
+   "couverture": "couverture.jpg",
+   "apercu": "apercu-video.jpg",
+   "site": "",
+   "titre": {
+    "fr": "Vidéo de présentation",
+    "ar": "الفيديو التقديمي",
+    "en": "Presentation video"
+   },
+   "description": {
+    "fr": "Vidéo de présentation : la carte gratuite de toutes les mosquées de Tunisie et l'histoire des grandes mosquées.",
+    "ar": "فيديو تقديمي: الخريطة المجانية لكل مساجد تونس وتاريخ الجوامع الكبرى.",
+    "en": "Presentation video: the free map of every mosque in Tunisia and the history of the great mosques."
+   },
+   "bouton": {
+    "fr": "Ouvrir le site",
+    "ar": "افتح الموقع",
+    "en": "Open the website"
+   }
+  }
+ ]
+}

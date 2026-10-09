@@ -18,7 +18,7 @@ from contenu_grandes_1 import GRANDES as G1, L  # noqa: E402
 from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 
-VERSION = "20261009a"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261009b"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://ah6259.github.io/mosquees-tunisie/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
 NOUVELLES = ["tr", "id", "ur", "de", "es"]
@@ -502,6 +502,10 @@ def main():
     ecrire_trad()
     chemins = [""] + ["grandes-mosquees/"] + gabarits + sorted(grandes_chemins) + sorted(p for p in set(pages.values()) if p not in grandes_chemins)
     sitemap(chemins)
+    # page vidéo (video/) tirée de la page À propos (mêmes en-tête, CSP, ?v=) : outil vidéos d'Ahmed ; s'ajoute au sitemap
+    if os.path.exists(os.path.join(ICI, "page_video.json")):
+        from page_video import pages_video
+        pages_video(RACINE)
     print(f"{len(GRANDES)} grandes mosquées, {n_fiches} autres pages de mosquées, {len(chemins)} adresses dans le sitemap, version {VERSION}")
 
 

@@ -246,6 +246,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     d.querySelectorAll("[data-fr]").forEach(o => ajouter(o.dataset.fr, p));
     d.querySelectorAll("[data-ph-fr]").forEach(o => ajouter(o.dataset.phFr, p));
     d.querySelectorAll("img[data-alt-ar]").forEach(o => ajouter(o.dataset.altFr || o.alt, p));
+    d.querySelectorAll("[data-vfr]").forEach(o => ajouter(o.dataset.vfr, p));
   }
   const lit = s => JSON.parse('"' + s + '"');
   for (const f of readdirSync(join(root, "assets")).filter(f => f.endsWith(".js") && f !== "langues.js")) {

@@ -175,6 +175,8 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "Écouter la récitation de cheikh Ali El Barrak": "Şeyh Ali el-Berrak'ın tilavetini dinle",
  "La carte de toutes les mosquées du pays et l'histoire de ses grandes mosquées.": "Ülkedeki bütün camilerin haritası ve büyük camilerinin tarihi.",
  "Entrer avec la récitation de cheikh Ali El Barrak": "Şeyh Ali el-Berrak'ın tilavetiyle gir",
+ "Ouvrir le site": "Siteyi aç",
+ "Partager la vidéo": "Videoyu paylaş",
  "Entrer sans le son": "Sessiz gir"
 });
 window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
@@ -347,6 +349,8 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Écouter la récitation de cheikh Ali El Barrak": "Dengarkan tilawah Syekh Ali El Barrak",
  "La carte de toutes les mosquées du pays et l'histoire de ses grandes mosquées.": "Peta semua masjid di negeri ini dan sejarah masjid-masjid besarnya.",
  "Entrer avec la récitation de cheikh Ali El Barrak": "Masuk dengan tilawah Syekh Ali El Barrak",
+ "Ouvrir le site": "Buka situs",
+ "Partager la vidéo": "Bagikan video",
  "Entrer sans le son": "Masuk tanpa suara"
 });
 window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
@@ -519,6 +523,8 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Écouter la récitation de cheikh Ali El Barrak": "شیخ علی البراق کی تلاوت سنیں",
  "La carte de toutes les mosquées du pays et l'histoire de ses grandes mosquées.": "ملک کی تمام مساجد کا نقشہ اور اس کی بڑی مساجد کی تاریخ۔",
  "Entrer avec la récitation de cheikh Ali El Barrak": "شیخ علی البراق کی تلاوت کے ساتھ داخل ہوں",
+ "Ouvrir le site": "ویب سائٹ کھولیں",
+ "Partager la vidéo": "ویڈیو شیئر کریں",
  "Entrer sans le son": "آواز کے بغیر داخل ہوں"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
@@ -691,6 +697,8 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Écouter la récitation de cheikh Ali El Barrak": "Rezitation von Scheich Ali El Barrak hören",
  "La carte de toutes les mosquées du pays et l'histoire de ses grandes mosquées.": "Die Karte aller Moscheen des Landes und die Geschichte seiner großen Moscheen.",
  "Entrer avec la récitation de cheikh Ali El Barrak": "Mit der Rezitation von Scheich Ali El Barrak eintreten",
+ "Ouvrir le site": "Website öffnen",
+ "Partager la vidéo": "Video teilen",
  "Entrer sans le son": "Ohne Ton eintreten"
 });
 window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
@@ -863,5 +871,7 @@ window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Écouter la récitation de cheikh Ali El Barrak": "Escuchar la recitación del jeque Ali El Barrak",
  "La carte de toutes les mosquées du pays et l'histoire de ses grandes mosquées.": "El mapa de todas las mezquitas del país y la historia de sus grandes mezquitas.",
  "Entrer avec la récitation de cheikh Ali El Barrak": "Entrar con la recitación del jeque Ali El Barrak",
+ "Ouvrir le site": "Abrir el sitio",
+ "Partager la vidéo": "Compartir el vídeo",
  "Entrer sans le son": "Entrar sin sonido"
 });
