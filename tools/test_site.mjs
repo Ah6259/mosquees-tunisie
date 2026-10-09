@@ -182,7 +182,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const m = d.getElementById("mq-mini");
     if (!m || !(+m.dataset.lat > 30 && +m.dataset.lat < 37.6 && +m.dataset.lon > 7.4 && +m.dataset.lon < 11.7)) manque.push(s + " carte");
     if (!/"@type": "Mosque"/.test(lire(`mosquee/${s}/index.html`))) manque.push(s + " JSON-LD");
-    if (!d.querySelector('a[href="https://www.google.com/maps/dir/?api=1&destination=' + m.dataset.lat + "," + m.dataset.lon + '"]')) manque.push(s + " itinéraire");
+    if (![...d.querySelectorAll("a")].some(x => x.getAttribute("href") === "https://www.google.com/maps/dir/?api=1&destination=" + m.dataset.lat + "," + m.dataset.lon)) manque.push(s + " itinéraire");
   }
   check(`les ${GRANDES.length} grandes mosquées : photo locale créditée (Commons), histoire, architecture, ≥ 3 dates, carte en Tunisie, documents, sources Wikidata, itinéraire ${manque.join(" | ")}`, !manque.length);
   const { d } = await page("mosquee/zitouna/index.html");
