@@ -603,7 +603,7 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "تیونس سے باہر، نقشے پر دکھایا گیا علاقہ (آپ کا عین مقام نہیں) اس کی مساجد پڑھنے کے لیے OpenStreetMap کے سرورز کو بھیجا جاتا ہے؛ دنیا میں تلاش کیا گیا شہر Nominatim کو بھیجا جاتا ہے۔"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
- "Mosquées — Tunisie et monde": "Moscheen — Tunesien und die Welt",
+ "Mosquées — Tunisie et monde": "Moscheen — Tunesien & Welt",
  "Le monde entier est sur la carte": "Die ganze Welt ist auf der Karte",
  "Exemples :": "Beispiele:",
  "La Mecque": "Mekka",
