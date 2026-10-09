@@ -324,10 +324,23 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     return appels.length === 1 ? { ok: true, json: async () => ({ elements: [], remark: "runtime error: Query timed out in \"query\"" }) }
       : { ok: true, json: async () => ({ elements: ZONE }) }; };
   const els = await M.lireZone(36.6, 2.9, 36.9, 3.3);
-  check("monde : 1er serveur (mail.ru) « vide + erreur cachée » → réponse du 2e (overpass-api.de) ; requête = lieux de prière musulmans + pays du centre (is_in)",
+  check("monde : 1er serveur (mail.ru) « vide + erreur cachée » → réponse du 2e (overpass-api.de) ; requête = lieux de prière musulmans de la zone",
     /maps\.mail\.ru/.test(appels[0]) && /overpass-api\.de/.test(appels[1]) && els.length === ZONE.length
-    && /nwr\["amenity"="place_of_worship"\]\["religion"="muslim"\]\(36\.6000,2\.9000,36\.9000,3\.3000\)/.test(corps[0]) && /is_in\(36\.7500,3\.1000\)/.test(corps[0]) && /out center tags 2000/.test(corps[0]));
-  const n1 = M.ajouterZone(els), n2 = M.ajouterZone(els);
+    && /nwr\["amenity"="place_of_worship"\]\["religion"="muslim"\]\(36\.6000,2\.9000,36\.9000,3\.3000\)/.test(corps[0]) && /out center tags 2000/.test(corps[0]));
+  // pays du centre : demande séparée (is_in) ; serveur sans « zones » (erreur cachée) → serveur suivant ; tout Overpass en panne → Nominatim
+  const ap = [];
+  w.fetch = async (url, o) => { ap.push(String(url) + " " + (o && o.body ? String(o.body.get("data")) : ""));
+    return /mail\.ru/.test(url) ? { ok: true, json: async () => ({ elements: [], remark: "runtime error: open64: 2 No such file or directory area_blocks.bin" }) }
+      : { ok: true, json: async () => ({ elements: [ZONE[0]] }) }; };
+  const pDZ = await w.MOSQUEES_MONDE.lirePays(36.75, 3.1), nAp = ap.length, pDZ2 = await w.MOSQUEES_MONDE.lirePays(36.76, 3.11);
+  const ap2 = [];
+  w.fetch = async (url) => { ap2.push(String(url)); if (!/nominatim/.test(url)) throw new Error("panne");
+    return { ok: true, json: async () => ({ address: { country_code: "tr" } }) }; };
+  const pTR = await w.MOSQUEES_MONDE.lirePays(41.01, 28.98);
+  check(`monde : pays du centre par is_in (${pDZ}), gardé en mémoire (pas de 2e demande : ${nAp} → ${ap.length}) ; Overpass en panne → Nominatim reverse (${pTR})`,
+    pDZ === "DZ" && pDZ2 === "DZ" && ap.length === nAp && /is_in\(36\.7500,3\.1000\)/.test(ap[0]) && pTR === "TR"
+    && ap2.filter(u => /nominatim\.openstreetmap\.org\/reverse\?format=json&lat=41\.0100&lon=28\.9800&zoom=3/.test(u)).length === 1 && ap2.length === 6);
+  const n1 = M.ajouterZone(els, ""), n2 = M.ajouterZone(els, "DZ");
   const k = MO.find(l => l.i === "osm-n101"), s = MO.find(l => l.i === "osm-w202"), f = MO.find(l => l.i === "osm-n404");
   check(`monde : 3 lieux ajoutés (${n1}), puis 0 (pas de doublon : ${n2}) ; église écartée ; mosquée tunisienne déjà connue jamais ajoutée en double`,
     n1 === 3 && n2 === 0 && !MO.some(l => l.i === "osm-n303") && !MO.some(l => l.i === tunisien.i) && L.filter(l => l.i === tunisien.i).length === 1);
@@ -377,8 +390,8 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const csp = p => (/connect-src([^;]*)/.exec(lire(p)) || [])[1] || "";
   check("CSP (accueil, À propos, une page de mosquée) : connect-src autorise les 5 serveurs OpenStreetMap et Nominatim",
     ["index.html", "a-propos/index.html", "mosquee/zitouna/index.html"].every(p => M.OVERPASS.every(u => csp(p).includes(new URL(u).origin)) && csp(p).includes("https://nominatim.openstreetmap.org")));
-  const { d: ap } = await page("a-propos/index.html");
-  check("À propos : « Ailleurs dans le monde » (OpenStreetMap en direct) et Nominatim dans les sources", /Ailleurs dans le monde/.test(ap.querySelector('.sources[data-l="fr"]').textContent) && /Nominatim/.test(ap.querySelector('.sources[data-l="fr"]').textContent));
+  const { d: apr } = await page("a-propos/index.html");
+  check("À propos : « Ailleurs dans le monde » (OpenStreetMap en direct) et Nominatim dans les sources", /Ailleurs dans le monde/.test(apr.querySelector('.sources[data-l="fr"]').textContent) && /Nominatim/.test(apr.querySelector('.sources[data-l="fr"]').textContent));
 }
 console.log(`\n${erreurs ? erreurs + " PROBLÈME(S)" : "TOUT PASSE"} (${total} vérifications)`);
 process.exit(erreurs ? 1 : 0);

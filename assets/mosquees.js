@@ -183,7 +183,7 @@
   // Méthode de Points d'eau : la Tunisie est déjà chargée (robot trimestriel + visiteurs) ; ailleurs, les lieux de prière musulmans
   // d'OpenStreetMap de la zone affichée sont lus EN DIRECT (zoom ≥ 9) auprès des 5 copies d'OpenStreetMap (règle commune) :
   // les 2 premières en même temps (la plus rapide gagne), puis les autres une par une ; 25 s au plus chacune.
-  // Couleur par pays : la même requête demande le pays du centre de la zone (is_in) ; un lieu qui porte addr:country garde son pays.
+  // Couleur par pays : le pays du centre de la zone (is_in, sinon Nominatim) ; un lieu qui porte addr:country garde son pays.
   const OVERPASS = ["https://maps.mail.ru/osm/tools/overpass/api/interpreter", "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter", "https://overpass.private.coffee/api/interpreter",
     "https://overpass.openstreetmap.fr/api/interpreter"];
@@ -223,8 +223,8 @@
     l._q = normaliser(Object.values(n).join(" ") + " " + l.nom);
     return l;
   }
-  function ajouterZone(elements) {
-    let centre = "";
+  function ajouterZone(elements, pays) {
+    let centre = pays || "";
     elements.filter(e => e.type === "area").forEach(a => { const c = codePays(a.tags); if (c) { PAYS[c] = a.tags; centre = centre || c; } });
     const connus = new Set(LIEUX.map(l => l.i).concat(MONDE.map(l => l.i)));
     let n = 0;
@@ -241,13 +241,34 @@
       return d.elements || [];
     } finally { clearTimeout(minuterie); }
   }
-  async function lireZone(s, o, n, e) {
-    const bb = [s, o, n, e].map(x => x.toFixed(4)).join(",");
-    const q = `[out:json][timeout:25];is_in(${((s + n) / 2).toFixed(4)},${((o + e) / 2).toFixed(4)})->.p;area.p["admin_level"="2"];out tags;`
-      + `nwr["amenity"="place_of_worship"]["religion"="muslim"](${bb});out center tags 2000;`;
+  async function interroger(q) {
     try { return await Promise.any(OVERPASS.slice(0, 2).map(u => essai(u, q))); } catch (x) { /* les deux ont échoué */ }
     for (const url of OVERPASS.slice(2)) { try { return await essai(url, q); } catch (x) { /* serveur suivant */ } }
     throw new Error("OpenStreetMap injoignable");
+  }
+  function lireZone(s, o, n, e) {
+    const bb = [s, o, n, e].map(x => x.toFixed(4)).join(",");
+    return interroger(`[out:json][timeout:25];nwr["amenity"="place_of_worship"]["religion"="muslim"](${bb});out center tags 2000;`);
+  }
+  // pays du centre de la zone : demande séparée et légère (un serveur sans « zones » ne fait pas échouer la lecture des mosquées),
+  // à défaut Nominatim (pays seulement) ; gardé en mémoire par carré d'environ 20 km
+  const paysVus = {};
+  async function lirePays(lat, lon) {
+    const cle = Math.round(lat * 5) + "," + Math.round(lon * 5);
+    if (paysVus[cle] !== undefined) return paysVus[cle];
+    let c = "";
+    try {
+      const areas = await interroger(`[out:json][timeout:15];is_in(${lat.toFixed(4)},${lon.toFixed(4)})->.p;area.p["admin_level"="2"];out tags;`);
+      areas.forEach(a => { const k = codePays(a.tags); if (k) { PAYS[k] = a.tags; c = c || k; } });
+    } catch (x) { /* Overpass injoignable : Nominatim */ }
+    if (!c) {
+      try {
+        const r = await fetch(NOMINATIM.replace("/search", "/reverse") + "?" + new URLSearchParams({ format: "json", lat: lat.toFixed(4), lon: lon.toFixed(4), zoom: "3" }), { headers: { Accept: "application/json" } });
+        const k = String((((await r.json()) || {}).address || {}).country_code || "").toUpperCase();
+        if (/^[A-Z]{2}$/.test(k)) c = k;
+      } catch (x) { /* pays non précisé */ }
+    }
+    return (paysVus[cle] = c);
   }
   const isoN = x => (typeof iso === "function" ? iso(x) : String(x));     // nombre isolé dans un texte arabe
   let bulleZone = null;
@@ -279,7 +300,17 @@
     const zone = b.pad(0.25);
     zoneTxt(L2("Recherche des mosquées de cette zone…", "جارٍ البحث عن مساجد هذه المنطقة…", "Looking for the mosques in this area…"));
     try {
-      const n = ajouterZone(await lireZone(zone.getSouth(), zone.getWest(), zone.getNorth(), zone.getEast()));
+      const c = zone.getCenter(), enAttente = lirePays(c.lat, c.lng).catch(() => "");
+      const els = await lireZone(zone.getSouth(), zone.getWest(), zone.getNorth(), zone.getEast());
+      // les mosquées s'affichent sans attendre plus de 8 s le pays ; s'il arrive après, elles prennent sa couleur
+      const pays = await Promise.race([enAttente, new Promise(r => setTimeout(() => r(null), 8000))]);
+      const n = ajouterZone(els, pays || "");
+      if (pays === null) enAttente.then(p => {
+        if (!p) return;
+        MONDE.filter(l => !l.pays && zone.contains([l.a, l.o])).forEach(l => { l.pays = p; l.c = couleurPays(p); });
+        if (p === "TN") MONDE.splice(0, MONDE.length, ...MONDE.filter(l => l.pays !== "TN"));     // la Tunisie vient de nos données
+        dessiner(); legende();
+      });
       zonesLues.push(zone); dessiner(); legende(); if (ici && !requete) proches();
       const total = LIEUX.concat(MONDE).filter(l => zone.contains([l.a, l.o])).length;
       zoneTxt(total ? L2("{n} lieux de prière dans cette zone.", "{n} مكان صلاة في هذه المنطقة.", "{n} places of prayer in this area.").replace("{n}", isoN(total))
@@ -314,7 +345,7 @@
       info.textContent = L2("La recherche de ville ne répond pas pour le moment : réessayez dans un instant.", "البحث عن المدن لا يستجيب الآن: أعد المحاولة بعد قليل.", "The town search is not responding right now: try again in a moment.");
     } finally { villeEnCours = false; }
   }
-  window.MOSQUEES_MONDE = { versLieu, ajouterZone, lireZone, chargerMonde, couleurPays, nomPays, legende, chercherVille, zoneTxt, OVERPASS };   // pour les tests
+  window.MOSQUEES_MONDE = { versLieu, ajouterZone, lireZone, lirePays, chargerMonde, couleurPays, nomPays, legende, chercherVille, zoneTxt, OVERPASS };   // pour les tests
   const apresLeaflet = [];
   function chargerLeaflet(fin) {
     if (fin) apresLeaflet.push(fin);
