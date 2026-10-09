@@ -84,7 +84,8 @@
     $("mq-filtres").innerHTML = Object.entries(TYPES).filter(([k]) => n(k) > 0).map(([k, t]) =>
       `<button type="button" class="chipbtn" data-type="${k}" aria-pressed="${actifs.has(k)}"><i style="background:${t.c}"></i>${nomT(k)} <b>${n(k)}</b></button>`).join("")
       + (np ? `<button type="button" class="chipbtn" data-pages aria-pressed="${seulementPages}"><i class="or"></i>${L2("Avec page d'histoire", "لها صفحة تاريخ", "With a history page")} <b>${np}</b></button>` : "");
-    $("mq-total").textContent = LIEUX.length.toLocaleString("fr-FR").replace(/ | /g, " ");
+    const n0 = LIEUX.length.toLocaleString("fr-FR").replace(/ | /g, " ");
+    $("mq-total").textContent = typeof iso === "function" ? iso(n0) : n0;      // nombre isolé dans un texte arabe
   }
 
   const STATUT = { confirme: ["Confirmé par les visiteurs", "أكّده الزوار", "Confirmed by visitors"], signale: ["Signalé par un visiteur, à confirmer", "أضافه زائر، في انتظار التأكيد", "Reported by a visitor, to be confirmed"] };

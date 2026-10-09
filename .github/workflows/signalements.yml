@@ -37,6 +37,11 @@ jobs:
           git commit -m "Lieux de prière signalés mis à jour ($(date +%d/%m/%Y\ %Hh%M))"
           git pull -q --rebase --autostash
           git push
+      - name: Alerte refermée si tout va bien
+        if: success()
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          for n in $(gh issue list --label alerte-robot --state open --search "Mosquées : robot des signalements en échec in:title" --json number -q '.[].number'); do gh issue close "$n" --comment "Réparé : le robot a de nouveau réussi le $(date +%d/%m/%Y)."; done
       - name: Alerte
         if: failure()
         env: { GH_TOKEN: "${{ github.token }}" }
