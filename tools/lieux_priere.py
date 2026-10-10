@@ -19,7 +19,7 @@ Garde-fous (un robot ne peut pas prouver qu'une mosquée existe, il écarte l'in
     « n'existe plus » et qu'elles sont plus nombreuses que les confirmations (3 pour un lieu OpenStreetMap / Wikidata).
 Sortie : donnees/signales.js (window.MOSQUEES_SIGNALES : points des visiteurs, votes sur les lieux connus, lieux retirés)."""
 import hashlib, json, math, re
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -136,12 +136,36 @@ def connus():
     return [{"id": l["id"], "lat": l["lat"], "lon": l["lon"]} for l in d.get("lieux", [])]
 
 
+JOURS_RAFRAICHIR = 7   # « maj » sert de date de référence (30 derniers jours) et de battement de cœur : rafraîchie au moins chaque semaine
+
+
+def doit_ecrire(texte, aujourdhui=None):
+    """Audit des robots du 10/10/2026 : on ne réécrit le fichier (donc pas de commit ni de publication) que si son contenu
+    change AUTREMENT que par la date « maj », ou si cette date a plus de JOURS_RAFRAICHIR jours."""
+    try:
+        ancien = SORTIE.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return True
+    motif = re.compile(r'"maj":"([^"]*)"')
+    if motif.sub('"maj":""', ancien, count=1) != motif.sub('"maj":""', texte, count=1):
+        return True
+    m = motif.search(ancien)
+    try:
+        vieux = date.fromisoformat(m.group(1)[:10])
+    except (AttributeError, ValueError):
+        return True
+    return ((aujourdhui or date.today()) - vieux).days >= JOURS_RAFRAICHIR
+
+
 def ecrire(reponses, maintenant=None):
     points, votes, retires, rejets = calculer(reponses, connus())
-    SORTIE.write_text("// GÉNÉRÉ par tools/lieux_priere.py (via signalements_lieux.py, toutes les 2 h) — lieux signalés par les visiteurs\n"
+    texte = ("// GÉNÉRÉ par tools/lieux_priere.py (via signalements_lieux.py, toutes les 2 h) — lieux signalés par les visiteurs\n"
                       "window.MOSQUEES_SIGNALES = " + json.dumps({"maj": maintenant or datetime.now().isoformat(timespec="minutes"),
                                                                   "points": points, "votes": votes, "retires": retires},
-                                                                 ensure_ascii=False, separators=(",", ":")) + ";\n",
-                      encoding="utf-8", newline="\n")
+                                                                 ensure_ascii=False, separators=(",", ":")) + ";\n")
+    if doit_ecrire(texte):
+        SORTIE.write_text(texte, encoding="utf-8", newline="\n")
+    else:
+        print("Aucun changement : fichier non réécrit (pas de commit).")
     print(f"Lieux de prière signalés : {len(points)} publiés, {len(votes)} lieux connus avec des votes, {len(retires)} retirés, {len(rejets)} rejet(s)")
     return points, votes, retires

@@ -22,3 +22,5 @@
   La Mecque, Istanbul, Paris, Le Caire → recherche Nominatim, une requête par appui) et « Voir le monde » (`data-monde-vue`).
   Nom SANS tiret (demande d'Ahmed du 09/10) ; sur téléphone il passe sur 2-3 lignes (`.logo-nom`, media 560 px) pour n'être jamais caché
   sous les boutons ; titre de partage (og:title) « Mosquées de Tunisie et du monde : … ».
+
+- **10/10/2026 (audit des robots)** : `signalements.yml` (toutes les 2 h) ne commite plus que si un lieu signalé change (ou une fois par semaine : `doit_ecrire` de `tools/lieux_priere.py`) ; `tests.yml` ignore les envois qui ne changent que des `.md`.
