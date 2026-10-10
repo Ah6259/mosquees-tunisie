@@ -2,7 +2,7 @@
 
 Nom affiché sur le site depuis le 09/10/2026 (avant : « Mosquées en Tunisie ») ; l'adresse ne change pas.
 
-Site gratuit : https://ah6259.github.io/mosquees-tunisie/
+Site gratuit : https://mosquees.clicvia.com/
 - carte de toutes les mosquées et salles de prière de Tunisie (OpenStreetMap + Wikidata + signalements des visiteurs),
   recherche par nom ou par ville, « Autour de moi » ; et les mosquées du monde entier (bandeau « Le monde entier est sur la carte »,
   villes d'exemple, « Voir le monde ») ;

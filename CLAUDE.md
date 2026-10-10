@@ -24,3 +24,5 @@
   sous les boutons ; titre de partage (og:title) « Mosquées de Tunisie et du monde : … ».
 
 - **10/10/2026 (audit des robots)** : `signalements.yml` (toutes les 2 h) ne commite plus que si un lieu signalé change (ou une fois par semaine : `doit_ecrire` de `tools/lieux_priere.py`) ; `tests.yml` ignore les envois qui ne changent que des `.md`.
+
+- **Adresse depuis le 11/10/2026 : https://mosquees.clicvia.com/** (domaine clicvia.com d'Ahmed, ligne DNS `CNAME mosquees → ah6259.github.io` nuage gris, fichier `CNAME`). L'ancienne adresse ah6259.github.io/mosquees-tunisie/ redirige seule. Site à la racine « / » : `BASE_SITE` de assets/page.js (sw.js, vidéo) ; GoatCounter garde le préfixe `/mosquees-tunisie`. Si l'outil vidéo réécrit le bloc VIDEO_SITE, remettre `"base": BASE_SITE` et l'ORIGINE mosquees.clicvia.com.

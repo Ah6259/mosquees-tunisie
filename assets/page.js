@@ -97,7 +97,7 @@ const MENU_SITE = [
     document.querySelectorAll(".langues-bouton").forEach(b => b.addEventListener("click", () => liste(b.getAttribute("aria-expanded") !== "true")));
     // bouton Partager (règle commune) : menu de partage du téléphone, sinon WhatsApp, avec la page vidéo + l'adresse du site
     document.querySelectorAll(".partager").forEach(b => b.addEventListener("click", () => {
-      try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: "partage" + location.pathname.replace("/mosquees-tunisie/", "/"), title: "Partage", event: true }); } catch (e) {}
+      try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: "partage" + location.pathname.replace(/^\/mosquees-tunisie\//, "/"), title: "Partage", event: true }); } catch (e) {}
       return window.partagerLien();
     }));
     document.querySelectorAll("[data-maj]").forEach(x => x.textContent = MAJ);
@@ -196,7 +196,7 @@ document.addEventListener("copy", e => {
 /* Installation sur le téléphone : service worker PRUDENT (sw.js : réseau d'abord pour les pages et les données). */
 if ("serviceWorker" in navigator && location.protocol === "https:") {
   window.addEventListener("load", () => {
-    try { navigator.serviceWorker.register("/mosquees-tunisie/sw.js", { scope: "/mosquees-tunisie/" }).catch(() => {}); } catch (e) { /* rien : le site marche sans */ }
+    try { navigator.serviceWorker.register(BASE_SITE + "sw.js", { scope: BASE_SITE }).catch(() => {}); } catch (e) { /* rien : le site marche sans */ }
   });
 }
 
@@ -208,11 +208,16 @@ document.addEventListener("click", e => {
 });
 
 /* >>> vidéo de présentation : page video/ partagée par le bouton « Partager » (outil vidéos d'Ahmed) */
-window.VIDEO_SITE = {"base": "/mosquees-tunisie/", "defaut": "fr", "nom": {"fr": "Mosquées en Tunisie", "ar": "مساجد تونس", "en": "Mosques in Tunisia"}};
+/* Adresse du site (11/10/2026) : mosquees.clicvia.com (racine « / ») ; l'ancienne adresse ah6259.github.io/mosquees-tunisie/ redirige
+   vers elle. BASE_SITE = dossier du site selon l'adresse ; GoatCounter garde le préfixe /mosquees-tunisie (compteur commun). */
+var BASE_SITE = /\.github\.io$/.test(location.hostname) ? "/mosquees-tunisie/" : "/";
+window.goatcounter = window.goatcounter || {};
+window.goatcounter.path = function (p) { return BASE_SITE === "/" ? "/mosquees-tunisie" + p : p; };
+window.VIDEO_SITE = {"base": BASE_SITE, "defaut": "fr", "nom": {"fr": "Mosquées en Tunisie", "ar": "مساجد تونس", "en": "Mosques in Tunisia"}};
 /* Bouton « Partager » : partage un LIEN vers la page vidéo du site (vidéo de présentation + gros bouton « Ouvrir le site »)
    + l'adresse du site dans le texte. Menu de partage du téléphone, sinon WhatsApp. Réglages : window.VIDEO_SITE. */
 (function () {
-  var S = window.VIDEO_SITE, ORIGINE = "https://ah6259.github.io";
+  var S = window.VIDEO_SITE, ORIGINE = S.base === "/" ? "https://mosquees.clicvia.com" : "https://ah6259.github.io";
   function langue() { return document.documentElement.lang || S.defaut; }
   function M(o) { return o[langue()] || (window.T && window.T(o.fr, o.ar, o.en)) || o[S.defaut] || o.fr; }
   window.pageVideo = function () {

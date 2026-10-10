@@ -15,7 +15,7 @@ const root = process.argv[2] ? resolve(process.argv[2]) : join(dirname(fileURLTo
 const lire = f => readFileSync(join(root, f), "utf8");
 let erreurs = 0, total = 0;
 const check = (d, ok) => { total++; if (ok) console.log("OK   " + d); else { erreurs++; console.log("FAIL " + d); } };
-const BASE = "https://ah6259.github.io/mosquees-tunisie/";
+const BASE = "https://mosquees.clicvia.com/";
 const GRANDES = ["zitouna", "kairouan", "sousse", "mahdia", "sfax", "trois-portes", "youssef-dey", "hammouda-pacha", "sidi-mahrez", "sidi-sahbi", "testour", "malik-ibn-anas", "fadhloun", "kasbah", "monastir"];
 
 const PAGES = [];
@@ -62,12 +62,12 @@ check("CSP : carte (cdnjs, tuiles OpenStreetMap), photos Wikimedia, lecteur yout
   return /script-src[^;]*cdnjs\.cloudflare\.com/.test(h) && /img-src[^;]*tile\.openstreetmap\.org/.test(h) && /img-src[^;]*upload\.wikimedia\.org/.test(h)
     && /frame-src https:\/\/www\.youtube-nocookie\.com/.test(h) && /connect-src[^;]*docs\.google\.com/.test(h) && !/frame-src[^;]*\*/.test(h); })());
 check("installation : manifeste (id unique), icônes, service worker, aperçu < 250 Ko", (() => { const m = JSON.parse(lire("manifest.webmanifest"));
-  return m.id === "/mosquees-tunisie/" && ["assets/icons/icon-192.png", "assets/icons/icon-512.png", "assets/icons/icon-maskable-512.png", "assets/apple-touch-icon.png", "sw.js", "favicon.ico", "assets/og-image-v1.jpg"]
+  return m.id === "/" && ["assets/icons/icon-192.png", "assets/icons/icon-512.png", "assets/icons/icon-maskable-512.png", "assets/apple-touch-icon.png", "sw.js", "favicon.ico", "assets/og-image-v1.jpg"]
     .every(f => existsSync(join(root, f))) && statSync(join(root, "assets/og-image-v1.jpg")).size < 250 * 1024; })());
 {
   const sm = lire("sitemap.xml"), manque = PAGES.filter(p => !p.startsWith("video/") && !sm.includes(`<loc>${BASE}${p.replace(/index\.html$/, "")}</loc>`));
   check(`robots.txt (IA refusées, Google accepté, sitemap) ; sitemap avec TOUTES les pages ${manque.slice(0, 3).join(" ")} ; LICENSE`, /GPTBot/.test(lire("robots.txt")) && /ClaudeBot/.test(lire("robots.txt"))
-    && /User-agent: Googlebot[\s\S]*?Allow: \//.test(lire("robots.txt")) && /mosquees-tunisie\/sitemap\.xml/.test(lire("robots.txt")) && !manque.length && /Tous droits réservés/.test(lire("LICENSE")));
+    && /User-agent: Googlebot[\s\S]*?Allow: \//.test(lire("robots.txt")) && /mosquees\.clicvia\.com\/sitemap\.xml/.test(lire("robots.txt")) && !manque.length && /Tous droits réservés/.test(lire("LICENSE")));
 }
 check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_|sk-[A-Za-z0-9]{20}/.test(PAGES.map(lire).join("") + readdirSync(join(root, "assets")).filter(f => f.endsWith(".js")).map(f => lire("assets/" + f)).join("")));
 
@@ -118,7 +118,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   d.getElementById("mq-sig-ouvrir").click();
   check("barre → fenêtre ouverte : carte pour le repère, « Me localiser (GPS) », « Confirmer cette position », derniers signalés",
     !pop.hidden && !!pop.querySelector("#mq-sig-carte") && /Me localiser/.test(d.getElementById("mq-ma-pos").textContent)
-    && /Confirmer cette position/.test(d.getElementById("mq-pos-ok").textContent) && /soyez le premier/.test(d.getElementById("mq-derniers").textContent));
+    && /Confirmer cette position/.test(d.getElementById("mq-pos-ok").textContent) && /soyez le premier|Derniers lieux signalés/.test(d.getElementById("mq-derniers").textContent));   // vide ou vrais signalements (11/10/2026 : 1er signalement réel)
   d.getElementById("mq-pos-ok").click();
   check("« Confirmer » sans repère : « Placez d'abord le repère », aucune position prise", /Placez d'abord le repère/.test(d.getElementById("mq-pos-txt").textContent) && d.getElementById("mq-pos").value === "");
   d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" }));

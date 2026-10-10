@@ -12,7 +12,7 @@ from lieux_priere import ecrire  # noqa: E402
 
 CSV_URL = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vRI0naKTfS10a5cUe8Fz9lVDlvKaBtz7J56Yk"
            "Bo4oD-Ev2Al78sCw8zAGe3nyjCehhMdJ6c1C-yEXsn/pub?gid=287357703&single=true&output=csv")
-UA = {"User-Agent": "mosquees-tunisie/1.0 (+https://ah6259.github.io/mosquees-tunisie/)"}
+UA = {"User-Agent": "mosquees-tunisie/1.0 (+https://mosquees.clicvia.com/)"}
 
 
 def norm(s):

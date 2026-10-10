@@ -21,7 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SORTIE = ROOT / "donnees" / "mosquees.json"
-UA = {"User-Agent": "mosquees-tunisie/1.0 (+https://ah6259.github.io/mosquees-tunisie/; site non commercial)"}
+UA = {"User-Agent": "mosquees-tunisie/1.0 (+https://mosquees.clicvia.com/; site non commercial)"}
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
 SERVEURS = ["https://maps.mail.ru/osm/tools/overpass/api/interpreter", "https://overpass-api.de/api/interpreter",
             "https://overpass.kumi.systems/api/interpreter", "https://overpass.private.coffee/api/interpreter",
