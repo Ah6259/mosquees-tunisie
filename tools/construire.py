@@ -120,6 +120,7 @@ def document(chemin, titre, description, corps, tete=(), bas=(), image=None, jso
 <meta property="og:image:type" content="image/jpeg">
 {'<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">' + chr(10) if not image else ''}<meta name="twitter:card" content="summary_large_image">
 <meta property="og:type" content="website">
+<meta property="og:url" content="{url}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Noto+Kufi+Arabic:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{r}assets/style.css?v={VERSION}">

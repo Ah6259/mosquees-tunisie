@@ -32,3 +32,4 @@
   sous chaque photo). Fabriquée par `diapo_accueil()` de tools/construire.py entre `<!-- diapo:debut -->` et `<!-- diapo:fin -->` ;
   mouvement dans assets/page.js (`[data-diapo]`, pause au toucher / onglet caché / « moins d'animations ») ; testé par test_site.mjs.
   Même jour : paragraphe d'accueil raccourci (5 lignes → 3 sur téléphone, demande d'Ahmed), 8 langues (index.html + assets/langues.js).
+- **11/10/2026 — aperçu WhatsApp** : `og:url` (adresse canonique) ajouté sur chaque page (sans lui, WhatsApp peut montrer une petite vignette ; règle commune § 14).
