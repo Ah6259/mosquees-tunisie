@@ -106,6 +106,12 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check("accueil : verset 9:18 en arabe + traduction citée (QuranEnc) ; photo du bandeau créditée (auteur + licence)",
     /يَعۡمُرُ مَسَٰجِدَ ٱللَّهِ/.test(d.querySelector(".mq-verset-ar").textContent) && !!d.querySelector('.mq-verset-source a[href="https://quranenc.com/"]')
     && /Z thomas/.test(d.querySelector(".hero figcaption").textContent) && /CC BY-SA 4\.0/.test(d.querySelector(".hero figcaption").textContent));
+  const vues = [...d.querySelectorAll(".hero [data-diapo] .diapo-vue")], leg = [...d.querySelectorAll(".hero [data-diapo] .diapo-legende")];
+  check(`accueil : la photo du bandeau fait défiler les ${GRANDES.length} grandes mosquées (Kairouan d'abord, fichier présent, lien vers sa page, une légende créditée par photo, une seule visible)`,
+    vues.length === GRANDES.length && leg.length === vues.length && /kairouan/.test(vues[0].getAttribute("href"))
+    && vues.every(a => existsSync(join(root, a.querySelector("img").getAttribute("src"))) && existsSync(join(root, a.getAttribute("href"), "index.html")))
+    && leg.every(f => /CC BY|CC0|domaine public|Public domain/i.test(f.textContent) && f.querySelector('a[href^="https://commons.wikimedia.org/"]'))
+    && leg.filter(f => !f.hidden).length === 1 && vues.filter(a => a.classList.contains("actif")).length === 1);
   check("lien vers Points d'eau Tunisie (Le Coran et l'eau) : carte de l'accueil + pied de page", !!d.querySelector('main a[href="https://ah6259.github.io/points-eau-tunisie/coran-et-eau/"]')
     && !!d.querySelector('footer a[href="https://ah6259.github.io/points-eau-tunisie/"]'));
 }

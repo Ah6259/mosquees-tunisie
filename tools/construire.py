@@ -18,7 +18,7 @@ from contenu_grandes_1 import GRANDES as G1, L  # noqa: E402
 from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 
-VERSION = "20261011a"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261011b"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
 NOUVELLES = ["tr", "id", "ur", "de", "es"]
@@ -430,6 +430,25 @@ def page_liste(lieux, pages, photos):
     return len(autres)
 
 
+def diapo_accueil(photos):
+    """Photo du bandeau de l'accueil (entre <!-- diapo:debut --> et <!-- diapo:fin -->) : les grandes mosquées défilent
+    toutes les 3 secondes (demande d'Ahmed du 11/10/2026 : « ça donne une vie au site ») ; Kairouan d'abord ; chaque photo
+    mène à la page de sa mosquée, son crédit (auteur + licence) s'affiche dessous. Sans JavaScript : Kairouan seule."""
+    ordre = sorted(GRANDES, key=lambda g: g["slug"] != "kairouan")
+    vues, legendes = [], []
+    for i, g in enumerate(x for x in ordre if photos.get(x["slug"])):
+        ph = photos[g["slug"]][0]
+        actif = ' actif' if i == 0 else ''
+        cache = '' if i == 0 else ' aria-hidden="true"'
+        lent = '' if i == 0 else ' loading="lazy"'
+        vues.append(f'<a class="diapo-vue{actif}" href="mosquee/{g["slug"]}/" tabindex="{0 if i == 0 else -1}"{cache}>'
+                    f'<img src="{ph["fichier"]}" alt="" width="{ph["w"]}" height="{ph["h"]}"{lent}></a>')
+        legendes.append(f'<figcaption class="diapo-legende{actif}"{"" if i == 0 else " hidden"}><b>{S(g["nom"], "accueil")}</b> '
+                        f'{U("Photo", "صورة", "Photo")} : <a href="{att(ph["source"])}" rel="noopener" target="_blank">{esc(ph["auteur"])}</a>, '
+                        f'{esc(ph["licence"])}</figcaption>')
+    return ('<figure class="illus diapo" data-diapo><span class="cadre-photo">' + "".join(vues) + "</span>" + "".join(legendes) + "</figure>")
+
+
 def grille_accueil(photos):
     """Grille des grandes mosquées de l'accueil (entre les repères <!-- grandes:debut --> et <!-- grandes:fin -->)."""
     return "".join(carte_grande(g, photos, "", "accueil") for g in GRANDES)
@@ -498,6 +517,7 @@ def main():
         t = open(acc, encoding="utf-8").read()
         t2 = re.sub(r"\?v=\d{8}[a-z]", "?v=" + VERSION, t)
         t2 = re.sub(r"<!-- grandes:debut -->.*?<!-- grandes:fin -->", lambda m: "<!-- grandes:debut -->" + grille_accueil(photos) + "<!-- grandes:fin -->", t2, flags=re.S)
+        t2 = re.sub(r"<!-- diapo:debut -->.*?<!-- diapo:fin -->", lambda m: "<!-- diapo:debut -->" + diapo_accueil(photos) + "<!-- diapo:fin -->", t2, flags=re.S)
         if t2 != t:
             open(acc, "w", encoding="utf-8", newline="\n").write(t2)
     ecrire_trad()

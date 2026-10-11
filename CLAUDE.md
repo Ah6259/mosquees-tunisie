@@ -26,3 +26,9 @@
 - **10/10/2026 (audit des robots)** : `signalements.yml` (toutes les 2 h) ne commite plus que si un lieu signalé change (ou une fois par semaine : `doit_ecrire` de `tools/lieux_priere.py`) ; `tests.yml` ignore les envois qui ne changent que des `.md`.
 
 - **Adresse depuis le 11/10/2026 : https://mosquees.clicvia.com/** (domaine clicvia.com d'Ahmed, ligne DNS `CNAME mosquees → ah6259.github.io` nuage gris, fichier `CNAME`). L'ancienne adresse ah6259.github.io/mosquees-tunisie/ redirige seule. Site à la racine « / » : `BASE_SITE` de assets/page.js (sw.js, vidéo) ; GoatCounter garde le préfixe `/mosquees-tunisie`. Si l'outil vidéo réécrit le bloc VIDEO_SITE, remettre `"base": BASE_SITE` et l'ORIGINE mosquees.clicvia.com.
+
+- **11/10/2026 — photo du bandeau qui défile (demande d'Ahmed : « ça donne une vie au site »)** : sur l'accueil, la photo en haut à droite
+  fait défiler les 15 grandes mosquées (fondu, une toutes les 3 s, Kairouan d'abord, clic = page de la mosquée, crédit auteur + licence
+  sous chaque photo). Fabriquée par `diapo_accueil()` de tools/construire.py entre `<!-- diapo:debut -->` et `<!-- diapo:fin -->` ;
+  mouvement dans assets/page.js (`[data-diapo]`, pause au toucher / onglet caché / « moins d'animations ») ; testé par test_site.mjs.
+  Même jour : paragraphe d'accueil raccourci (5 lignes → 3 sur téléphone, demande d'Ahmed), 8 langues (index.html + assets/langues.js).

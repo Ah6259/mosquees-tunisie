@@ -207,6 +207,33 @@ document.addEventListener("click", e => {
   try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: a.dataset.compteur, title: "Lien vers un autre site : " + a.dataset.compteur, event: true }); } catch (x) { /* rien : le lien marche sans */ }
 });
 
+/* Photo du bandeau de l'accueil : les grandes mosquées défilent toutes les 3 secondes (fondu ; demande d'Ahmed du 11/10/2026).
+   Arrêt si le visiteur a demandé moins d'animations, si l'onglet est caché ou pendant qu'on touche la photo. */
+(function () {
+  function diapos() { document.querySelectorAll("[data-diapo]").forEach(function (fig) {
+    var vues = fig.querySelectorAll(".diapo-vue"), legendes = fig.querySelectorAll(".diapo-legende"), n = 0, pause = false;
+    if (vues.length < 2) return;
+    try { if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return; } catch (e) {}
+    function montrer(k) {
+      for (var i = 0; i < vues.length; i++) {
+        var oui = i === k;
+        vues[i].classList.toggle("actif", oui);
+        vues[i].tabIndex = oui ? 0 : -1;
+        if (oui) vues[i].removeAttribute("aria-hidden"); else vues[i].setAttribute("aria-hidden", "true");
+        if (legendes[i]) { legendes[i].hidden = !oui; legendes[i].classList.toggle("actif", oui); }
+      }
+    }
+    ["pointerenter", "touchstart", "focusin"].forEach(function (e) { fig.addEventListener(e, function () { pause = true; }, { passive: true }); });
+    ["pointerleave", "touchend", "focusout"].forEach(function (e) { fig.addEventListener(e, function () { pause = false; }, { passive: true }); });
+    setInterval(function () {
+      if (pause || document.hidden) return;
+      n = (n + 1) % vues.length;
+      montrer(n);
+    }, 3000);
+  }); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", diapos); else diapos();   // page.js est dans <head>
+})();
+
 /* >>> vidéo de présentation : page video/ partagée par le bouton « Partager » (outil vidéos d'Ahmed) */
 /* Adresse du site (11/10/2026) : mosquees.clicvia.com (racine « / ») ; l'ancienne adresse ah6259.github.io/mosquees-tunisie/ redirige
    vers elle. BASE_SITE = dossier du site selon l'adresse ; GoatCounter garde le préfixe /mosquees-tunisie (compteur commun). */

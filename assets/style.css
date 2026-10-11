@@ -116,6 +116,14 @@ html[lang="tr"] [data-l="en"],html[lang="id"] [data-l="en"],html[lang="ur"] [dat
 .illus img{display:block;width:100%;height:auto;aspect-ratio:7/5;object-fit:cover}
 .illus figcaption{margin-top:5px;font-size:9.5px;line-height:1.3;color:rgba(255,255,255,.78);overflow-wrap:anywhere}
 .illus figcaption a{color:inherit}
+/* défilement des grandes mosquées (accueil, 11/10/2026) : photos superposées, fondu, une légende à la fois */
+.diapo .cadre-photo{aspect-ratio:7/5}
+.diapo-vue{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;pointer-events:none}
+.diapo-vue.actif{opacity:1;pointer-events:auto}
+.diapo-vue img{height:100%}
+.diapo-legende{min-height:4.6em}   /* légendes de 2 à 4 lignes : la hauteur ne saute pas d une mosquée à l autre */
+.diapo-legende b{display:block}
+@media (prefers-reduced-motion:reduce){.diapo-vue{transition:none}}
 .credits-photos li{margin-bottom:6px}
 .note-photos{font-size:13px;color:var(--doux);margin:8px 0 0}
 @media (min-width:640px){ .hero .wrap{grid-template-columns:minmax(0,1fr) 210px} .hero .illus{width:210px} .illus figcaption{font-size:11px} }
