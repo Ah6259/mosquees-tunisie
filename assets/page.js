@@ -22,10 +22,37 @@ const MENU_SITE = [
   const CODES = LANGUES.map(x => x[0]), NOUVELLES = ["tr", "id", "ur", "de", "es"], DROITE = ["ar", "ur"];
   const lireCle = k => { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } };
   const nav = (navigator.language || "").slice(0, 2).toLowerCase();
-  let langue = [lireCle("langue-mosquees")].find(l => CODES.includes(l))
-    || ["fr", "ar"].find(l => l === lireCle("langue")) || (CODES.includes(nav) ? nav : "en");
   const demande = new URLSearchParams(location.search).get("lang");
+  // UNE ADRESSE PAR LANGUE (12/10/2026, pour Google) : chaque page existe en français à son adresse d'origine et dans
+  // ar/, en/, tr/, id/, ur/, de/, es/ (tools/pages_langues.py). Sur ces pages (attribut data-fixe), la langue est celle de
+  // l'ADRESSE : choisir une autre langue ouvre l'autre adresse. Un ancien lien « ?lang=ar » ou un choix déjà fait par le
+  // visiteur mène aussi à la bonne adresse. Jamais de changement d'après la langue du téléphone seule (le robot de Google
+  // serait renvoyé vers l'anglais) : on PROPOSE la langue par un petit lien sous l'en-tête. La page video/ (fabriquée à
+  // partir d'À propos, une seule adresse) garde l'ancien fonctionnement.
+  const BASE = /\.github\.io$/.test(location.hostname) ? "/mosquees-tunisie/" : "/";
+  const ici0 = location.pathname.replace(/index\.html$/, "");
+  const adresse = l => BASE + (l === "fr" ? "" : l + "/") + (html.dataset.chemin || "");
+  const LANGUE_ADRESSE = html.lang;                              // langue écrite dans la page par le serveur = celle de l'adresse
+  const FIXE = html.dataset.fixe !== undefined && ici0 === adresse(LANGUE_ADRESSE);
+  const rp = FIXE && html.dataset.racinePages !== undefined ? html.dataset.racinePages : racine;      // liens vers les pages : dans la langue
+  const aller = (l, remplacer) => {
+    const q = new URLSearchParams(location.search); q.delete("lang");
+    const u = adresse(l) + (q.toString() ? "?" + q : "") + location.hash;
+    if (window.allerVers) return window.allerVers(u);            // pour les tests
+    if (remplacer) location.replace(u); else location.assign(u);
+  };
+  const choisie = [lireCle("langue-mosquees")].find(l => CODES.includes(l));
+  let langue = choisie || ["fr", "ar"].find(l => l === lireCle("langue")) || (CODES.includes(nav) ? nav : "en");
   if (CODES.includes(demande)) langue = demande;
+  if (FIXE) {
+    const voulue = CODES.includes(demande) ? demande : choisie;
+    // la page française contient aussi l'arabe et l'anglais (et sait afficher les 5 autres) : en attendant l'autre adresse, elle
+    // se montre déjà dans la langue voulue ; une page de langue (ar/, tr/…) ne contient que sa langue.
+    const origine = html.lang;
+    langue = voulue && origine === "fr" ? voulue : origine;
+    if (voulue && voulue !== origine) aller(voulue, true);
+  }
+  const proposee = FIXE && !choisie && !CODES.includes(demande) ? (CODES.includes(nav) ? nav : "en") : "";
 
   const cle = s => String(s).replace(/\s+/g, " ").trim();
   const trad = (l, fr) => { const t = ((window.TRADUCTIONS || {})[l] || {})[cle(fr)]; return t ? t : null; };
@@ -55,7 +82,7 @@ const MENU_SITE = [
     const e = document.getElementById("entete");
     if (e) e.innerHTML = `
       <div class="wrap">
-        <a class="logo" href="${racine || "./"}">
+        <a class="logo" href="${rp || "./"}">
           <img class="logo-mark" src="${racine}assets/logo.svg" alt="" width="34" height="34">
           <span class="logo-nom">${T("Mosquées de Tunisie et du monde", "مساجد تونس والعالم", "Mosques of Tunisia and the world")}
             <small>${T("Gratuit · carte, photos, histoire", "مجاني · خريطة، صور، تاريخ", "Free · map, photos, history")}</small></span>
@@ -68,17 +95,18 @@ const MENU_SITE = [
         </div>
       </div>
       <nav class="menu" aria-label="${T("Rubriques", "الأبواب", "Sections")}"><div class="wrap">${MENU_SITE.map(([h, fr, ar, en]) =>
-        `<a href="${racine}${h || "./"}"${(h && !h.startsWith("#") ? ici.endsWith("/" + h) : (!h && !racine)) ? ' aria-current="page"' : ""}>${T(fr, ar, en)}</a>`).join("")}</div></nav>`;
+        `<a href="${rp}${h || "./"}"${(h && !h.startsWith("#") ? ici.endsWith("/" + h) : (!h && !rp)) ? ' aria-current="page"' : ""}>${T(fr, ar, en)}</a>`).join("")}</div></nav>`
+      + (proposee && proposee !== LANGUE_ADRESSE ? `<p class="autre-langue"><a href="${adresse(proposee)}" data-lang="${proposee}" lang="${proposee}" dir="${DROITE.includes(proposee) ? "rtl" : "ltr"}" hreflang="${proposee}">${LANGUES.find(x => x[0] === proposee)[2]} →</a></p>` : "");
     const p = document.getElementById("pied");
     if (p) p.innerHTML = `
       <div class="wrap">
         <div class="pied-logo"><img src="${racine}assets/logo.svg" alt="" width="24" height="24"> ${T("Mosquées de Tunisie et du monde", "مساجد تونس والعالم", "Mosques of Tunisia and the world")}</div>
         <nav>
-          <a href="${racine || "./"}">${T("Carte des mosquées", "خريطة المساجد", "Map of mosques")}</a>
-          <a href="${racine}grandes-mosquees/">${T("Grandes mosquées et mosquées historiques", "الجوامع الكبرى والمساجد التاريخية", "Great and historic mosques")}</a>
-          <a href="${racine}#signaler">${T("Signaler une mosquée ou une salle de prière", "أضف مسجدًا أو مصلّى", "Report a mosque or prayer room")}</a>
-          <a href="${racine}a-propos/">${T("À propos et méthode", "من نحن والمنهجية", "About and method")}</a>
-          <a href="${racine}#avis">${T("Votre avis", "رأيك", "Your feedback")}</a>
+          <a href="${rp || "./"}">${T("Carte des mosquées", "خريطة المساجد", "Map of mosques")}</a>
+          <a href="${rp}grandes-mosquees/">${T("Grandes mosquées et mosquées historiques", "الجوامع الكبرى والمساجد التاريخية", "Great and historic mosques")}</a>
+          <a href="${rp}#signaler">${T("Signaler une mosquée ou une salle de prière", "أضف مسجدًا أو مصلّى", "Report a mosque or prayer room")}</a>
+          <a href="${rp}a-propos/">${T("À propos et méthode", "من نحن والمنهجية", "About and method")}</a>
+          <a href="${rp}#avis">${T("Votre avis", "رأيك", "Your feedback")}</a>
           <a href="https://eau.clicvia.com/" target="_blank" rel="noopener" data-compteur="lien-site/points-eau">${T("Points d'eau Tunisie", "نقاط الماء في تونس", "Water Points Tunisia")}</a>
           <a href="https://message.clicvia.com/" target="_blank" rel="noopener" data-compteur="lien-site/le-message">${T("The Message : découvrir l'Islam", "الرسالة: اكتشف الإسلام", "The Message: discover Islam")}</a>
         <a href="https://clicvia.com/" rel="noopener" target="_blank">${T("Tous nos services", "كل خدماتنا", "All our services")}</a>
@@ -88,14 +116,21 @@ const MENU_SITE = [
                "Prayer times and opening to visitors change: ask on site. This website is not an official service.")}</p>
         <p>${T("Lieux : © contributeurs OpenStreetMap (ODbL), Wikidata et visiteurs du site. Textes de Wikipédia sous licence CC BY-SA 4.0. Photos : Wikimedia Commons —",
                "الأماكن: © مساهمو OpenStreetMap ‏(ODbL) وويكي بيانات وزوار الموقع. نصوص ويكيبيديا برخصة CC BY-SA 4.0. الصور: ويكيميديا كومنز —",
-               "Places: © OpenStreetMap contributors (ODbL), Wikidata and site visitors. Wikipedia texts under the CC BY-SA 4.0 licence. Photos: Wikimedia Commons —")} <a href="${racine}a-propos/#photos">${T("crédits", "الحقوق", "credits")}</a>.</p>
+               "Places: © OpenStreetMap contributors (ODbL), Wikidata and site visitors. Wikipedia texts under the CC BY-SA 4.0 licence. Photos: Wikimedia Commons —")} <a href="${rp}a-propos/#photos">${T("crédits", "الحقوق", "credits")}</a>.</p>
         <p>© 2026 Mosquées en Tunisie — ${T("tous droits réservés.", "جميع الحقوق محفوظة.", "all rights reserved.")}</p>
       </div>`;
     // menu défilant (téléphone) : la rubrique de la page reste visible
     const actuel = document.querySelector('.menu [aria-current="page"]');
     if (actuel && actuel.scrollIntoView) try { actuel.scrollIntoView({ block: "nearest", inline: "center" }); } catch (x) {}
     document.querySelectorAll(".langues [data-lang]").forEach(b =>
-      b.addEventListener("click", () => { appliquer(b.dataset.lang); const o = document.querySelector(".langues-bouton"); if (o) o.focus(); }));
+      b.addEventListener("click", () => { choisir(b.dataset.lang); const o = document.querySelector(".langues-bouton"); if (o) o.focus(); }));
+    // lien « English → » proposé sous l'en-tête : un clic = un choix (gardé en mémoire comme avec le bouton de langue)
+    document.querySelectorAll(".autre-langue a").forEach(a => a.addEventListener("click", e => { e.preventDefault(); choisir(a.dataset.lang); }));
+    // lien « Vidéo de présentation » sur l'accueil et À propos des adresses de langue (le bloc vidéo plus bas ne connaît que l'adresse française)
+    if (FIXE && LANGUE_ADRESSE !== "fr" && ["", "a-propos/"].includes(html.dataset.chemin) && !document.getElementById("lien-video")) {
+      const m = document.querySelector("main");
+      if (m) m.insertAdjacentHTML("afterend", `<p id="lien-video" class="lien-video"><a href="${BASE}video/?lang=${html.lang}">${T("Vidéo de présentation", "الفيديو التقديمي", "Presentation video")}</a></p>`);
+    }
     document.querySelectorAll(".langues-bouton").forEach(b => b.addEventListener("click", () => liste(b.getAttribute("aria-expanded") !== "true")));
     // bouton Partager (règle commune) : menu de partage du téléphone, sinon WhatsApp, avec la page vidéo + l'adresse du site
     document.querySelectorAll(".partager").forEach(b => b.addEventListener("click", () => {
@@ -127,9 +162,16 @@ const MENU_SITE = [
     if (u && !u.hidden && !(e.target.closest && e.target.closest(".langues"))) liste(false);
   });
 
+  // choix du visiteur (bouton de langue) : gardé en mémoire ; sur une page à adresse de langue, on ouvre l'adresse de la langue choisie
+  function choisir(l) {
+    try { localStorage.setItem("langue-mosquees", l); if (l === "fr" || l === "ar") localStorage.setItem("langue", l); } catch (e) {}
+    if (!FIXE) return appliquer(l);
+    liste(false);
+    if (l !== LANGUE_ADRESSE) aller(l);
+  }
   function appliquer(l) {
     html.lang = l; html.dir = DROITE.includes(l) ? "rtl" : "ltr";
-    try { localStorage.setItem("langue-mosquees", l); if (l === "fr" || l === "ar") localStorage.setItem("langue", l); } catch (e) {}
+    if (!FIXE) try { localStorage.setItem("langue-mosquees", l); if (l === "fr" || l === "ar") localStorage.setItem("langue", l); } catch (e) {}
     traduirePage(l);
     cadre();
     document.dispatchEvent(new Event("langue"));

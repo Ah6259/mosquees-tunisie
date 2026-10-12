@@ -17,8 +17,9 @@ sys.path.insert(0, ICI)
 from contenu_grandes_1 import GRANDES as G1, L  # noqa: E402
 from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
+import pages_langues as PL  # noqa: E402
 
-VERSION = "20261012b"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261012c"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
 NOUVELLES = ["tr", "id", "ur", "de", "es"]
@@ -41,6 +42,10 @@ VILLES = {
     "monastir": L("Monastir", "المنستير", "Monastir", "Münestir", "Monastir", "منستیر", "Monastir", "Monastir"),
 }
 TRAD = {}          # page -> langue -> {français: traduction}
+# Une vraie page par langue (tools/pages_langues.py) : pour chaque page (dossier depuis la racine, « » = accueil)
+META = {}          # -> langue -> (titre, description[, titre de partage]) ; absent : tiré du <h1> et de l'introduction de la page
+INDEX = {}         # -> langues où la page a un contenu propre (les autres existent pour le visiteur mais ne sont pas proposées à Google)
+CLE_TRAD = {}      # -> nom du fichier assets/trad/<nom>.js de la page
 
 
 # ---------- petits outils ----------
@@ -89,13 +94,14 @@ def est_arabe(s):
 def document(chemin, titre, description, corps, tete=(), bas=(), image=None, jsonld=None, index=True, og_titre=None):
     profondeur = chemin.count("/")
     r = "../" * profondeur
-    url = BASE + chemin.rsplit("index.html", 1)[0]
+    dossier = chemin.rsplit("index.html", 1)[0]
+    url = BASE + dossier
     scripts_tete = ["langues.js"] + list(tete) + ["page.js", "recitation.js"]
     robots = "noai, noimageai" if index else "noindex, noai, noimageai"
     ld = "".join('<script type="application/ld+json">\n' + json.dumps(j, ensure_ascii=False) + "\n</script>\n" for j in (jsonld or []))
-    alt = "".join(f'<link rel="alternate" hreflang="{l}" href="{url}{"" if l == "fr" else "?lang=" + l}">\n' for l in LANGUES)
+    alt = PL.liens_hreflang(BASE, dossier, INDEX.get(dossier, LANGUES))     # une adresse par langue : ar/…, en/…, tr/… (12/10/2026)
     return f"""<!doctype html>
-<html lang="fr" dir="ltr" translate="no" data-racine="{r}">
+<html lang="fr" dir="ltr" translate="no" data-racine="{r}" data-chemin="{dossier}" data-fixe>
 <head>
 <meta charset="utf-8">
 <meta name="google" content="notranslate">
@@ -106,8 +112,7 @@ def document(chemin, titre, description, corps, tete=(), bas=(), image=None, jso
 <title>{att(titre)}</title>
 <meta name="description" content="{att(description)}">
 <link rel="canonical" href="{url}">
-{alt}<link rel="alternate" hreflang="x-default" href="{url}">
-<link rel="icon" href="{r}assets/logo.svg" type="image/svg+xml">
+{alt}<link rel="icon" href="{r}assets/logo.svg" type="image/svg+xml">
 <link rel="manifest" href="{r}manifest.webmanifest">
 <link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -302,6 +307,8 @@ def page_grande(g, photos, wiki_par_qid, r="../../"):
                "address": {"@type": "PostalAddress", "addressLocality": ville["fr"], "addressCountry": "TN"},
                **({"image": BASE + ph[0]["fichier"]} if ph else {}), "sameAs": [f"https://www.wikidata.org/wiki/{g['qid']}"]}]
     image = BASE + ph[0]["fichier"] if ph else None
+    CLE_TRAD[f"mosquee/{slug}/"] = page
+    META[f"mosquee/{slug}/"] = {x: (f"{nom[x]} ({ville[x]}){PL.SUITE_GRANDE[x]} | {PL.SITE[x]}", re.sub(r"\s+", " ", g["intro"][x])[:200]) for x in LANGUES}
     ecrire(f"mosquee/{slug}/index.html", document(f"mosquee/{slug}/index.html", titre, desc, corps, tete=[f"trad/{page}.js"],
                                                    bas=["assets/fiche.js"], image=image, jsonld=jsonld))
 
@@ -371,6 +378,14 @@ def page_fiche(l, chemin, r="../../"):
 </main>"""
     titre = f"{nom}{(' — ' + ville_fr) if ville_fr else ''} | Mosquées en Tunisie"
     desc = (f.get("resume", {}).get("fr") or f.get("resume", {}).get("en") or f"{nom} : mosquée de Tunisie ({ville_fr}). Photo, histoire, carte et liens.")[:200]
+    # autres langues : proposées à Google seulement si Wikidata / Wikipédia donnent un nom ou un résumé dans cette langue
+    INDEX[chemin] = ["fr"] + [x for x in LANGUES[1:] if noms.get(x) or f.get("resume", {}).get(x)]
+    META[chemin] = {}
+    for x in LANGUES[1:]:
+        vx = (ville_ar or ville_fr) if x in ("ar", "ur") else ville_fr
+        nx = noms.get(x) or (noms.get("ar") if x == "ur" else None) or nom
+        META[chemin][x] = (f"{nx}{(' — ' + vx) if vx else ''} | {PL.SITE[x]}",
+                           (f.get("resume", {}).get(x) or PL.FICHE_DESC[x].format(nom=nx, ville=f" ({vx})" if vx else ""))[:200])
     jsonld = [{"@context": "https://schema.org", "@type": "Mosque", "name": nom, "url": BASE + chemin,
                "alternateName": [x for x in (noms.get("ar"), noms.get("en")) if x and x != nom],
                "geo": {"@type": "GeoCoordinates", "latitude": l["lat"], "longitude": l["lon"]},
@@ -389,6 +404,7 @@ def carte_grande(g, photos, r, page):
 
 def page_liste(lieux, pages, photos):
     page = "liste"
+    CLE_TRAD["grandes-mosquees/"] = page
     grandes = "".join(carte_grande(g, photos, "../", page) for g in GRANDES)
     grandes_chemins = {"mosquee/" + g["slug"] + "/" for g in GRANDES}
     autres = [(l, pages[l["id"]]) for l in lieux if l["id"] in pages and pages[l["id"]] not in grandes_chemins]
@@ -518,6 +534,9 @@ def main():
     if os.path.exists(acc):
         t = open(acc, encoding="utf-8").read()
         t2 = re.sub(r"\?v=\d{8}[a-z]", "?v=" + VERSION, t)
+        # même en-tête de langue que les autres pages (langue fixée par l'adresse, liens hreflang vers ar/, en/, tr/…)
+        t2 = re.sub(r'<html lang="fr" dir="ltr" translate="no"[^>]*>', '<html lang="fr" dir="ltr" translate="no" data-racine="" data-chemin="" data-fixe>', t2, count=1)
+        t2 = re.sub(r'(?:<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n)+', lambda m: PL.liens_hreflang(BASE, "", LANGUES), t2, count=1)
         t2 = re.sub(r"<!-- grandes:debut -->.*?<!-- grandes:fin -->", lambda m: "<!-- grandes:debut -->" + grille_accueil(photos) + "<!-- grandes:fin -->", t2, flags=re.S)
         t2 = re.sub(r"<!-- diapo:debut -->.*?<!-- diapo:fin -->", lambda m: "<!-- diapo:debut -->" + diapo_accueil(photos) + "<!-- diapo:fin -->", t2, flags=re.S)
         if t2 != t:
@@ -531,12 +550,31 @@ def main():
         if "mosquee/" + nom + "/" not in garder:
             shutil.rmtree(os.path.join(RACINE, "mosquee", nom))
             print("page retirée :", "mosquee/" + nom + "/")
-    sitemap(chemins)
+    # une vraie page par langue (ar/, en/, tr/, id/, ur/, de/, es/), tirée de chaque page française
+    CLE_TRAD[""] = "accueil"; META[""] = PL.ACCUEIL
+    langues_js = PL.lire_traductions(os.path.join(RACINE, "assets", "langues.js"))
+    for l in LANGUES[1:]:
+        if os.path.isdir(os.path.join(RACINE, l)):
+            shutil.rmtree(os.path.join(RACINE, l))
+    adresses, manque = [], 0
+    for c in chemins:
+        fr = open(os.path.join(RACINE, c, "index.html"), encoding="utf-8").read()
+        langues = INDEX.get(c, LANGUES)
+        adresses.append(c)
+        for l in LANGUES[1:]:
+            trad = {**langues_js.get(l, {}), **TRAD.get(CLE_TRAD.get(c, ""), {}).get(l, {})}
+            texte, m = PL.variante(fr, BASE, c, l, langues, trad, META.get(c, {}).get(l), indexer=l in langues)
+            ecrire(f"{l}/{c}index.html", texte)
+            manque += m
+            if l in langues:
+                adresses.append(f"{l}/{c}")
+    sitemap(adresses)
     # page vidéo (video/) tirée de la page À propos (mêmes en-tête, CSP, ?v=) : outil vidéos d'Ahmed ; s'ajoute au sitemap
     if os.path.exists(os.path.join(ICI, "page_video.json")):
         from page_video import pages_video
         pages_video(RACINE)
-    print(f"{len(GRANDES)} grandes mosquées, {n_fiches} autres pages de mosquées, {len(chemins)} adresses dans le sitemap, version {VERSION}")
+    print(f"{len(GRANDES)} grandes mosquées, {n_fiches} autres pages de mosquées, {len(adresses)} adresses dans le sitemap "
+          f"({len(chemins)} pages en 8 langues, moins les versions sans contenu propre), {manque} texte(s) resté(s) en anglais, version {VERSION}")
 
 
 if __name__ == "__main__":

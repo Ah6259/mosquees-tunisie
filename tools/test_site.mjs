@@ -27,7 +27,16 @@ const PAGES = [];
   }
 })("");
 
-async function page(chemin = "index.html", { stockage = { langue: "fr", "recitation-mosquees": "non" }, lang, recherche = "" } = {}) {
+// Une adresse par langue (12/10/2026) : ar/…, en/…, tr/…, id/…, ur/…, de/…, es/… ; le français garde les adresses d'origine.
+const AUTRES = ["ar", "en", "tr", "id", "ur", "de", "es"];
+const langueDe = p => AUTRES.find(l => p.startsWith(l + "/")) || "fr";
+const PAGES_FR = PAGES.filter(p => langueDe(p) === "fr");
+const PAGES_LANGUE = PAGES.filter(p => langueDe(p) !== "fr");
+const sansIndex = p => /<meta name="robots" content="noindex/.test(lire(p));
+
+async function page(chemin = "index.html", { stockage = { langue: "fr", "recitation-mosquees": "non" }, lang, recherche = "", adresseFr = false } = {}) {
+  const parAdresse = lang && AUTRES.includes(lang) && !chemin.startsWith("video/") && !adresseFr;
+  if (parAdresse) { chemin = lang + "/" + chemin; lang = ""; }
   const dossier = dirname(chemin);
   const html = lire(chemin).replace(/<script[^>]*gc\.zgo\.at[^>]*><\/script>/, "")
     .replace(/<script( defer)? src="((?:\.\.\/)*(?:assets|donnees)\/[^"?]+)(\?[^"]*)?"><\/script>/g, (_, d, f) => `<script>${lire(join(dossier, f).replace(/\\/g, "/"))}</script>`);
@@ -37,6 +46,7 @@ async function page(chemin = "index.html", { stockage = { langue: "fr", "recitat
   const url = BASE + (chemin === "index.html" ? "" : chemin.replace(/index\.html$/, "")) + (q ? "?" + q : "");
   const dom = new JSDOM(html, { url, runScripts: "dangerously", pretendToBeVisual: true, virtualConsole: vc,
     beforeParse(w) { for (const [k, v] of Object.entries(stockage)) w.localStorage.setItem(k, v);
+      w.__allers = []; w.allerVers = u => w.__allers.push(u);
       w.__envois = []; w.IntersectionObserver = class { observe() {} disconnect() {} }; w.open = () => null; } });
   await new Promise(r => setTimeout(r, 80));
   return { w: dom.window, d: dom.window.document, js };
@@ -65,7 +75,8 @@ check("installation : manifeste (id unique), icônes, service worker, aperçu < 
   return m.id === "/" && ["assets/icons/icon-192.png", "assets/icons/icon-512.png", "assets/icons/icon-maskable-512.png", "assets/apple-touch-icon.png", "sw.js", "favicon.ico", "assets/og-image-v1.jpg"]
     .every(f => existsSync(join(root, f))) && statSync(join(root, "assets/og-image-v1.jpg")).size < 250 * 1024; })());
 {
-  const sm = lire("sitemap.xml"), manque = PAGES.filter(p => !p.startsWith("video/") && !sm.includes(`<loc>${BASE}${p.replace(/index\.html$/, "")}</loc>`));
+  const sm = lire("sitemap.xml"), dans = p => sm.includes(`<loc>${BASE}${p.replace(/index\.html$/, "")}</loc>`),
+    manque = PAGES.filter(p => !p.startsWith("video/") && dans(p) === sansIndex(p));
   check(`robots.txt (IA refusées, Google accepté, sitemap) ; sitemap avec TOUTES les pages ${manque.slice(0, 3).join(" ")} ; LICENSE`, /GPTBot/.test(lire("robots.txt")) && /ClaudeBot/.test(lire("robots.txt"))
     && /User-agent: Googlebot[\s\S]*?Allow: \//.test(lire("robots.txt")) && /mosquees\.clicvia\.com\/sitemap\.xml/.test(lire("robots.txt")) && !manque.length && /Tous droits réservés/.test(lire("LICENSE")));
 }
@@ -221,7 +232,8 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
 // ---- 7. toutes les pages : Partager, Votre avis, menu, bouton de récitation
 {
   const manque = [];
-  for (const p of PAGES.filter(x => !x.startsWith("video/"))) {
+  const echantillon = AUTRES.flatMap(l => ["index.html", "a-propos/index.html", "grandes-mosquees/index.html", "mosquee/kairouan/index.html", fiches[0]].map(p => l + "/" + p));
+  for (const p of [...PAGES_FR.filter(x => !x.startsWith("video/")), ...echantillon]) {
     const { d } = await page(p);
     if (d.querySelectorAll("header .partager").length !== 1) manque.push(p + " partager");
     if (!d.querySelector('footer a[href$="#avis"]')) manque.push(p + " avis");
@@ -233,12 +245,12 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
 // ---- 8. huit langues
 {
   const manque = [];
-  for (const p of PAGES) {
+  for (const p of PAGES_FR) {
     const h = lire(p), n = l => (h.match(new RegExp(`data-l="${l}"`, "g")) || []).length;
     if (n("fr") !== n("ar") || n("fr") !== n("en")) manque.push(`${p} (fr ${n("fr")}, ar ${n("ar")}, en ${n("en")})`);
   }
   for (const [a, b] of [["data-fr=", "data-en="], ["data-ph-fr=", "data-ph-en="], ["data-alt-ar=", "data-alt-en="]])
-    for (const p of PAGES) { const h = lire(p); if (h.split(a).length !== h.split(b).length) manque.push(p + " " + b); }
+    for (const p of PAGES_FR) { const h = lire(p); if (h.split(a).length !== h.split(b).length) manque.push(p + " " + b); }
   check(`chaque texte français a sa traduction arabe ET anglaise, sur toutes les pages ${manque.slice(0, 4).join(" | ")}`, !manque.length);
   const NOUVELLES = ["tr", "id", "ur", "de", "es"];
   const TR = (() => { const w = {}; new Function("window", lire("assets/langues.js"))(w);
@@ -246,7 +258,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const cle = s => String(s).replace(/\s+/g, " ").trim();
   const textes = new Map(), structure = [];
   const ajouter = (fr, ou) => { fr = cle(fr || ""); if (fr && !textes.has(fr)) textes.set(fr, ou); };
-  for (const p of PAGES) {
+  for (const p of PAGES_FR) {
     const d = new JSDOM(lire(p)).window.document;
     d.querySelectorAll('[data-l="fr"]').forEach(f => f.tagName === "UL" ? [...f.children].forEach(li => ajouter(li.innerHTML, p)) : ajouter(f.innerHTML, p));
     d.querySelectorAll('[data-l="en"]').forEach(e => { const f = e.previousElementSibling && e.previousElementSibling.previousElementSibling;
@@ -272,14 +284,47 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const balises = []; for (const l of NOUVELLES) for (const [fr, t] of Object.entries(TR[l] || {})) if ((fr.match(/</g) || []).length !== (t.match(/</g) || []).length || (/\{n\}/.test(fr) && !/\{n\}/.test(t)) || (/\{l\}/.test(fr) && !/\{l\}/.test(t))) balises.push(l + " « " + fr.slice(0, 30) + " »");
   check("(a) traductions : mêmes balises HTML et mêmes « {n} » / « {l} » que le français " + balises.slice(0, 4).join(" | "), !balises.length);
   check("CSS : les éléments « en » sont montrés pour tr, id, ur, de, es", NOUVELLES.every(l => lire("assets/style.css").includes(`html[lang="${l}"] [data-l="en"]`)));
-  check("hreflang des 8 langues sur toutes les pages (sauf video/)", PAGES.filter(p => !p.startsWith("video/")).every(p => ["fr", "ar", "en", ...NOUVELLES, "x-default"].every(l => lire(p).includes(`hreflang="${l}"`))));
+  // ---- une adresse par langue : chaque page de langue est écrite dans sa langue, avec sa propre adresse officielle
+  const pbL = [], droite = ["ar", "ur"];
+  for (const p of PAGES_LANGUE) {
+    const h = lire(p), l = langueDe(p), fr = p.slice(l.length + 1), url = BASE + p.replace(/index\.html$/, "");
+    if (!PAGES_FR.includes(fr)) { pbL.push(p + " sans page française"); continue; }
+    if (!new RegExp(`<html lang="${l}" dir="${droite.includes(l) ? "rtl" : "ltr"}"`).test(h)) pbL.push(p + " lang/dir");
+    if (!h.includes(`<link rel="canonical" href="${url}">`) || !h.includes(`<meta property="og:url" content="${url}">`)) pbL.push(p + " adresse officielle");
+    const garde = ["ar", "en"].includes(l) ? l : "en";
+    if (["fr", "ar", "en"].some(x => x !== garde && h.includes(`data-l="${x}"`))) pbL.push(p + " reste d'une autre langue");
+    if ([...h.matchAll(/(?:src|href)="((?:\.\.\/)*)(?:assets|donnees)\//g)].some(m => m[1] !== "../".repeat(p.split("/").length - 1))) pbL.push(p + " chemin des fichiers communs");
+    if (!sansIndex(p) && !h.includes(`hreflang="${l}" href="${url}"`)) pbL.push(p + " hreflang vers elle-même");
+    if (sansIndex(p) && /hreflang=/.test(h)) pbL.push(p + " noindex avec hreflang");
+    if (h.match(/<title>([^<]*)<\/title>/)[1] === lire(fr).match(/<title>([^<]*)<\/title>/)[1] && l !== "en") pbL.push(p + " titre resté en français");
+  }
+  check(`une adresse par langue : ${PAGES_LANGUE.length} pages (7 langues × ${PAGES_FR.filter(p => !p.startsWith("video/")).length}), chacune dans sa langue (lang, sens, titre, adresse officielle, fichiers communs) ${pbL.slice(0, 4).join(" | ")}`,
+    PAGES_LANGUE.length === 7 * PAGES_FR.filter(p => !p.startsWith("video/")).length && !pbL.length);
+  const pbH = [];
+  for (const p of PAGES_FR.filter(x => !x.startsWith("video/"))) {
+    const h = lire(p), dossier = p.replace(/index\.html$/, "");
+    const liens = Object.fromEntries([...h.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)].map(m => [m[1], m[2]]));
+    const attendues = ["fr", ...AUTRES.filter(l => !sansIndex(l + "/" + p))];
+    if (liens.fr !== BASE + dossier || !liens["x-default"] || /[?]lang=/.test(Object.values(liens).join(" "))) pbH.push(p + " français / x-default");
+    if (attendues.some(l => l !== "fr" && liens[l] !== BASE + l + "/" + dossier) || Object.keys(liens).length !== attendues.length + 1) pbH.push(p + " langues");
+    for (const l of attendues.slice(1)) if ([...lire(l + "/" + p).matchAll(/<link rel="alternate"[^>]*>/g)].join("") !== [...h.matchAll(/<link rel="alternate"[^>]*>/g)].join("")) pbH.push(l + "/" + p + " liens différents de la page française");
+  }
+  check(`hreflang : chaque page française et ses versions de langue portent les MÊMES liens (ar/, en/, tr/…), plus aucun « ?lang= » ${pbH.slice(0, 4).join(" | ")}`, !pbH.length);
+  check("accueil, À propos, liste et grandes mosquées : proposés à Google dans les 8 langues ; x-default = anglais",
+    ["index.html", "a-propos/index.html", "grandes-mosquees/index.html", ...grandesPages].every(p => AUTRES.every(l => !sansIndex(l + "/" + p)) && lire(p).includes(`hreflang="x-default" href="${BASE}en/${p.replace(/index\.html$/, "")}"`)));
+  {
+    const sans = PAGES_LANGUE.filter(sansIndex), fr0 = fiches.find(p => sansIndex("de/" + p));
+    check(`autres mosquées : une version sans nom ni résumé dans la langue n'est pas proposée à Google (${sans.length} versions « noindex », hors plan du site)`,
+      sans.length > 100 && sans.every(p => fiches.includes(p.slice(p.indexOf("/") + 1))) && !!fr0 && !lire(fr0).includes('hreflang="de"'));
+  }
 }
 {
   const { w, d, js } = await page("index.html", { lang: "tr", stockage: { "recitation-mosquees": "non" } });
-  check("?lang=tr : turc, de gauche à droite, titre traduit, menu et filtres en turc, mémoire partagée « langue » non touchée",
+  check("adresse tr/ : turc, de gauche à droite, titre traduit, menu et filtres en turc ; une simple visite n'enregistre aucun choix de langue",
     d.documentElement.lang === "tr" && d.documentElement.dir === "ltr" && d.querySelector('h1 [data-l="en"]').textContent === "Tunus camileri: harita ve tarih"
     && [...d.querySelectorAll(".menu a")].some(a => a.textContent === "Harita") && /Cami/.test(d.getElementById("mq-filtres").textContent)
-    && w.localStorage.getItem("langue") === null && w.localStorage.getItem("langue-mosquees") === "tr" && js.length === 0);
+    && w.localStorage.getItem("langue") === null && w.localStorage.getItem("langue-mosquees") === null && w.__allers.length === 0 && js.length === 0
+    && /^Tunus Camileri/.test(d.title) && d.querySelector(".menu a").getAttribute("href") === "./" && d.querySelector(".logo-mark").getAttribute("src") === "../assets/logo.svg");
   const { d: u } = await page("mosquee/kairouan/index.html", { lang: "ur" });
   check("page Kairouan en ourdou : de droite à gauche, histoire traduite (trad/g-kairouan.js)", u.documentElement.dir === "rtl" && /عقبہ بن نافع/.test(u.querySelector('#histoire p [data-l="en"]').textContent));
   const { d: a } = await page("mosquee/sousse/index.html", { lang: "ar" });
@@ -291,15 +336,33 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check("sélecteur compact « FR ▾ » : liste des 8 langues écrites dans leur langue",
     /FR/.test(bouton().textContent) && liste().hidden && [...liste().querySelectorAll("[data-lang]")].map(b => b.textContent).join("|") === "Français|العربية|English|Türkçe|Bahasa Indonesia|اردو|Deutsch|Español");
   bouton().click(); [...liste().querySelectorAll("[data-lang]")].find(b => b.textContent === "Deutsch").click();
-  check("choisir Deutsch : page en allemand, « langue-mosquees » = de, « langue » partagée inchangée (fr)", d.documentElement.lang === "de"
-    && w.localStorage.getItem("langue-mosquees") === "de" && w.localStorage.getItem("langue") === "fr" && d.querySelector('h1 [data-l="en"]').textContent === "Die Moscheen Tunesiens: Karte und Geschichte" && js.length === 0);
-  bouton().click(); liste().querySelector('[data-lang="fr"]').click();
-  const restes = [...d.querySelectorAll('[data-l="en"]')].filter(e => e.dataset.enOrigine !== undefined && e.innerHTML !== e.dataset.enOrigine).length;
-  check("retour en français : plus aucun texte allemand", d.documentElement.lang === "fr" && restes === 0 && !/Karte|Moschee/.test(d.querySelector(".menu").textContent));
-  const { d: s } = await page("index.html", { stockage: { "recitation-mosquees": "non" } });
-  check("sans choix enregistré, téléphone en anglais → anglais", s.documentElement.lang === "en");
-  const { d: s2 } = await page("index.html", { lang: "xx", stockage: { langue: "ar", "recitation-mosquees": "non" } });
-  check("?lang=xx inconnu ignoré ; choix « arabe » fait sur un autre de nos sites → arabe", s2.documentElement.lang === "ar" && s2.documentElement.dir === "rtl");
+  check("choisir Deutsch : ouvre l'adresse de/, « langue-mosquees » = de, « langue » partagée inchangée (fr) ; la page française ne change pas sur place",
+    w.__allers.join() === "/de/" && d.documentElement.lang === "fr" && w.localStorage.getItem("langue-mosquees") === "de" && w.localStorage.getItem("langue") === "fr" && js.length === 0);
+  const { w: wd, d: dd } = await page("index.html", { lang: "de", stockage: { "langue-mosquees": "de", "recitation-mosquees": "non" } });
+  dd.querySelector(".langues-bouton").click(); dd.querySelector('#langues-liste [data-lang="fr"]').click();
+  check("page allemande (de/) : texte allemand écrit dans la page, bouton « DE » ; revenir au français ouvre l'adresse française",
+    dd.documentElement.lang === "de" && dd.querySelector('h1 [data-l="en"]').textContent === "Die Moscheen Tunesiens: Karte und Geschichte" && /DE/.test(dd.querySelector(".langues-bouton").textContent)
+    && /Die Moscheen Tunesiens: Karte und Geschichte/.test(lire("de/index.html")) && wd.__allers.join() === "/" && wd.localStorage.getItem("langue-mosquees") === "fr");
+  const { w: ws, d: s } = await page("index.html", { stockage: { "recitation-mosquees": "non" } });
+  const prop = s.querySelector(".autre-langue a");
+  check("sans choix enregistré, téléphone en anglais : la page reste en français (Google lit la bonne langue) et PROPOSE « English → » (adresse en/)",
+    s.documentElement.lang === "fr" && ws.__allers.length === 0 && !!prop && prop.getAttribute("href") === "/en/" && /English/.test(prop.textContent));
+  prop.click();
+  check("toucher « English → » : choix gardé, adresse en/ ouverte", ws.__allers.join() === "/en/" && ws.localStorage.getItem("langue-mosquees") === "en");
+  const { w: w2, d: s2 } = await page("index.html", { lang: "xx", stockage: { langue: "ar", "recitation-mosquees": "non" } });
+  check("?lang=xx inconnu ignoré : la page française reste française", s2.documentElement.lang === "fr" && w2.__allers.length === 0);
+  const { w: w3 } = await page("mosquee/kairouan/index.html", { lang: "ar", adresseFr: true, recherche: "lieu=x" });
+  const { w: w4 } = await page("grandes-mosquees/index.html", { stockage: { "langue-mosquees": "tr", "recitation-mosquees": "non" } });
+  const { w: w5, d: d5 } = await page("index.html", { lang: "ur", stockage: { "langue-mosquees": "ur", "recitation-mosquees": "non" } });
+  check("ancien lien « ?lang=ar » → adresse ar/ de la même page (le reste de l'adresse est gardé) ; choix déjà fait (turc) → adresse tr/ ; bonne adresse : rien ne bouge, pas de proposition",
+    w3.__allers.join() === "/ar/mosquee/kairouan/?lieu=x" && w4.__allers.join() === "/tr/grandes-mosquees/" && w5.__allers.length === 0 && !d5.querySelector(".autre-langue"));
+  {
+    const { d: c } = await page("index.html", { lang: "es" });
+    const lv = c.getElementById("lien-video");
+    check("adresse es/ : liens du menu et du pied dans la langue, lien vers la vidéo (?lang=es), liens des grandes mosquées dans es/",
+      c.querySelector('.menu a[href="grandes-mosquees/"]') && c.querySelector('footer a[href="a-propos/"]') && !!lv && lv.querySelector("a").getAttribute("href") === "/video/?lang=es"
+      && /href="mosquee\/kairouan\/"/.test(lire("es/index.html")) && /src="\.\.\/donnees\/lieux\.js/.test(lire("es/index.html")));
+  }
 }
 // ---- page vidéo : sans son ; Al-Fâtiha (chaîne officielle) démarre et s'arrête avec la vidéo, sans écran d'entrée (09/10/2026)
 {

@@ -99,7 +99,7 @@
 
   const STATUT = { confirme: ["Confirmé par les visiteurs", "أكّده الزوار", "Confirmed by visitors"], signale: ["Signalé par un visiteur, à confirmer", "أضافه زائر، في انتظار التأكيد", "Reported by a visitor, to be confirmed"] };
   function bulle(l) {
-    const n = noms(l), racine = document.documentElement.dataset.racine || "";
+    const n = noms(l), ds = document.documentElement.dataset, racine = ds.racinePages !== undefined ? ds.racinePages : (ds.racine || "");   // pages : dans la langue de l'adresse
     const osm = /^osm-[nwr]\d+$/.test(l.i) ? `https://www.openstreetmap.org/${{ n: "node", w: "way", r: "relation" }[l.i[4]]}/${l.i.slice(5)}` : "";
     if (l.monde) return `<div class="mq-bulle"><b>${esc(titre(l))}</b><br><span>${nomT(l.t)} · ${esc(nomPays(l.pays))}</span>
       <br><a href="${itineraire(l)}" target="_blank" rel="noopener">${L2("Itinéraire (Google Maps)", "الطريق (خرائط Google)", "Directions (Google Maps)")}</a>${osm ? ` · <a href="${osm}" target="_blank" rel="noopener">OpenStreetMap</a>` : ""}

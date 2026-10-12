@@ -37,3 +37,21 @@
 - **Visibilité Google (12/10/2026, règle commune § 8)** : liens vers nos autres sites en `https://<site>.clicvia.com/` (jamais `ah6259.github.io`), lien « Tous nos services » → https://clicvia.com/ dans le pied de page, `robots.txt` avec ligne Sitemap, `sitemap.xml` daté, JSON-LD sur l'accueil, clé IndexNow `377f054ba9c5ed40d6796adc8d87d1e8.txt` à la racine (ne pas supprimer : robot `indexnow` du portail). Contrôle : `node "outils visibilite/controle.mjs"` (dépôt projets-ahmed). Sitemap envoyé dans Search Console par Ahmed le 12/10/2026.
 
 - **Google + Bing (12/10/2026)** : sitemap envoyé par Ahmed dans Google Search Console et dans Bing Webmaster Tools (site clicvia.com/), indexation de l'accueil demandée. Pour un nouveau site : mêmes gestes, voir `nouveau site - procedure.md` § 4 étape 5 (dépôt projets-ahmed).
+
+- **UNE ADRESSE PAR LANGUE (12/10/2026, visibilité Google — demande d'Ahmed)** : avant, les 8 langues n'apparaissaient que dans
+  le navigateur (`?lang=ar`), Google ne voyait que le français. Maintenant chaque page existe en français à son adresse d'origine
+  ET dans `ar/`, `en/`, `tr/`, `id/`, `ur/`, `de/`, `es/` (861 pages), déjà écrite dans la langue : `<html lang>`, sens, titre,
+  description, texte, adresse officielle, liens hreflang (x-default = anglais). Fabrication : `tools/construire.py` écrit la page
+  française puis `tools/pages_langues.py` (bibliothèque standard seulement) en tire les 7 autres — **ne jamais modifier à la main
+  un fichier de `ar/ … es/`** (refaits et effacés à chaque construction). Liens entre pages : dans le dossier de la langue ;
+  `assets/`, `donnees/`… : à la racine ; `video/` reste une seule page (`?lang=`).
+  - Titres / descriptions : `META` de construire.py (grandes mosquées, fiches), `ACCUEIL` de pages_langues.py, sinon `<h1>` + intro.
+  - Fiches des autres mosquées : une langue sans nom ni résumé Wikidata/Wikipédia existe pour le visiteur mais est `noindex`,
+    hors plan du site et hors hreflang (`INDEX` de construire.py) — pas de pages vides proposées à Google (420 versions).
+  - `assets/page.js` : sur ces pages (`data-fixe`), la langue est celle de l'ADRESSE ; le bouton de langue ouvre l'autre adresse
+    et garde le choix (`langue-mosquees`) ; un ancien lien `?lang=ar` ou un choix déjà fait mène à la bonne adresse ; JAMAIS de
+    changement d'après la langue du téléphone seule (le robot de Google lirait de l'anglais sur la page française) : on propose
+    un lien « English → » sous le menu. `window.allerVers` = crochet des tests.
+  - Nouveau texte français : le traduire dans `assets/langues.js` comme avant ; la construction dit « N texte(s) resté(s) en
+    anglais » (doit être 0). Robot `donnees.yml` : `git add` inclut `ar en tr id ur de es`.
+  - Tests : `test_site.mjs` (langue, adresse officielle, fichiers communs, hreflang identiques, noindex), 4 sabotages.

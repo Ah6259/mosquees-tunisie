@@ -175,17 +175,21 @@ w.close();
 
 // ---- 3. Lien « Votre avis » dans le pied de page de TOUTES les pages ----------------------
 const sansLien = [], fautes = [];
-for (const p of pages) {
+// Une adresse par langue (12/10/2026) : toutes les pages françaises + un échantillon dans chaque langue (ar/, en/, tr/…),
+// où « Votre avis » mène à l'accueil de la langue.
+const AUTRES = ["ar", "en", "tr", "id", "ur", "de", "es"], langueDe = p => AUTRES.find(l => p.startsWith(l + "/")) || "";
+const aOuvrir = pages.filter(p => !langueDe(p) || /^[a-z]{2}\/(index\.html|a-propos\/|grandes-mosquees\/|mosquee\/kairouan\/)/.test(p));
+for (const p of aOuvrir) {
   const ww = await ouvrir(p);
   const pied = ww.document.getElementById("pied") || ww.document.querySelector("footer");
   const liens = pied ? [...pied.querySelectorAll("a[href]")] : [];
   const ok = liens.some(l => { const u = new URL(l.getAttribute("href"), ww.location.href);
-    return u.hash === "#avis" && (u.origin + u.pathname).replace(/index\.html$/, "") === BASE && /Votre avis/.test(l.textContent); });
+    return u.hash === "#avis" && (u.origin + u.pathname).replace(/index\.html$/, "") === BASE + (langueDe(p) ? langueDe(p) + "/" : "") && (langueDe(p) || /Votre avis/.test(l.textContent)); });
   if (!ok) sansLien.push(p);
   if (ww.fautes.length) fautes.push(p + " : " + ww.fautes[0]);
   ww.close();
 }
-check(`pied de page : lien « Votre avis » vers l'accueil#avis sur les ${pages.length} pages` + (sansLien.length ? " — manque : " + sansLien.slice(0, 5).join(", ") : ""), !sansLien.length);
+check(`pied de page : lien « Votre avis » vers l'accueil#avis sur ${aOuvrir.length} pages (françaises + échantillon par langue)` + (sansLien.length ? " — manque : " + sansLien.slice(0, 5).join(", ") : ""), !sansLien.length);
 check("aucune erreur JavaScript sur les pages" + (fautes.length ? " — " + fautes.slice(0, 3).join(" | ") : ""), !fautes.length);
 
 console.log(erreurs ? `\n${erreurs} ÉCHEC(S) sur ${total}` : `\nTout est vert (${total} vérifications).`);
