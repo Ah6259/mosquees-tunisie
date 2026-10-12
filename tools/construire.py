@@ -18,7 +18,7 @@ from contenu_grandes_1 import GRANDES as G1, L  # noqa: E402
 from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 
-VERSION = "20261012a"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261012b"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
 NOUVELLES = ["tr", "id", "ur", "de", "es"]

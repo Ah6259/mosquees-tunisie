@@ -112,7 +112,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     && vues.every(a => existsSync(join(root, a.querySelector("img").getAttribute("src"))) && existsSync(join(root, a.getAttribute("href"), "index.html")))
     && leg.every(f => /CC BY|CC0|domaine public|Public domain/i.test(f.textContent) && f.querySelector('a[href^="https://commons.wikimedia.org/"]'))
     && leg.filter(f => !f.hidden).length === 1 && vues.filter(a => a.classList.contains("actif")).length === 1);
-  check("lien vers Le Message (découvrir l'Islam) : carte de l'accueil + pied de page", !!d.querySelector('main a[href="https://message.clicvia.com/"]')
+  check("lien vers The Message (découvrir l'Islam) : carte de l'accueil + pied de page", !!d.querySelector('main a[href="https://message.clicvia.com/"]')
     && !!d.querySelector('footer a[href="https://message.clicvia.com/"]'));
   check("lien vers Points d'eau Tunisie (Le Coran et l'eau) : carte de l'accueil + pied de page", !!d.querySelector('main a[href="https://eau.clicvia.com/coran-et-eau/"]')
     && !!d.querySelector('footer a[href="https://eau.clicvia.com/"]'));
