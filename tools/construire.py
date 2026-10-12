@@ -18,7 +18,7 @@ from contenu_grandes_1 import GRANDES as G1, L  # noqa: E402
 from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 
-VERSION = "20261011b"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261012a"           # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
 NOUVELLES = ["tr", "id", "ur", "de", "es"]
@@ -467,7 +467,8 @@ def ecrire_trad():
 
 
 def sitemap(chemins):
-    lignes = "".join(f"  <url><loc>{BASE}{c}</loc></url>\n" for c in chemins)
+    maj = f"{VERSION[:4]}-{VERSION[4:6]}-{VERSION[6:8]}"   # date de la dernière modification (tirée de VERSION) : aide Google à repasser
+    lignes = "".join(f"  <url><loc>{BASE}{c}</loc><lastmod>{maj}</lastmod></url>\n" for c in chemins)
     ecrire("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + lignes + "</urlset>\n")
 
 

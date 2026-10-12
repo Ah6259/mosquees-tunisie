@@ -79,7 +79,9 @@ const MENU_SITE = [
           <a href="${racine}#signaler">${T("Signaler une mosquée ou une salle de prière", "أضف مسجدًا أو مصلّى", "Report a mosque or prayer room")}</a>
           <a href="${racine}a-propos/">${T("À propos et méthode", "من نحن والمنهجية", "About and method")}</a>
           <a href="${racine}#avis">${T("Votre avis", "رأيك", "Your feedback")}</a>
-          <a href="https://ah6259.github.io/points-eau-tunisie/" target="_blank" rel="noopener" data-compteur="lien-site/points-eau">${T("Points d'eau Tunisie", "نقاط الماء في تونس", "Water Points Tunisia")}</a>
+          <a href="https://eau.clicvia.com/" target="_blank" rel="noopener" data-compteur="lien-site/points-eau">${T("Points d'eau Tunisie", "نقاط الماء في تونس", "Water Points Tunisia")}</a>
+          <a href="https://message.clicvia.com/" target="_blank" rel="noopener" data-compteur="lien-site/le-message">${T("Le Message : découvrir l'Islam", "الرسالة: اكتشف الإسلام", "The Message: discover Islam")}</a>
+        <a href="https://clicvia.com/" rel="noopener" target="_blank">${T("Tous nos services", "كل خدماتنا", "All our services")}</a>
         </nav>
         <p>${T("Les horaires de prière et l'ouverture aux visiteurs changent : renseignez-vous sur place. Ce site n'est pas un service officiel.",
                "تتغيّر أوقات الصلاة ومواعيد فتح المساجد للزوار: استعلم في عين المكان. هذا الموقع ليس خدمة رسمية.",
