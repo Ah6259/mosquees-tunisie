@@ -33,3 +33,5 @@
   mouvement dans assets/page.js (`[data-diapo]`, pause au toucher / onglet caché / « moins d'animations ») ; testé par test_site.mjs.
   Même jour : paragraphe d'accueil raccourci (5 lignes → 3 sur téléphone, demande d'Ahmed), 8 langues (index.html + assets/langues.js).
 - **11/10/2026 — aperçu WhatsApp** : `og:url` (adresse canonique) ajouté sur chaque page (sans lui, WhatsApp peut montrer une petite vignette ; règle commune § 14).
+
+- **Visibilité Google (12/10/2026, règle commune § 8)** : liens vers nos autres sites en `https://<site>.clicvia.com/` (jamais `ah6259.github.io`), lien « Tous nos services » → https://clicvia.com/ dans le pied de page, `robots.txt` avec ligne Sitemap, `sitemap.xml` daté, JSON-LD sur l'accueil, clé IndexNow `377f054ba9c5ed40d6796adc8d87d1e8.txt` à la racine (ne pas supprimer : robot `indexnow` du portail). Contrôle : `node "outils visibilite/controle.mjs"` (dépôt projets-ahmed). Sitemap envoyé dans Search Console par Ahmed le 12/10/2026.
