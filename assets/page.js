@@ -12,7 +12,7 @@ const MENU_SITE = [
 // Nos deux sites proches, en boutons dans le menu juste après « Signaler un lieu » (demande d'Ahmed du 13/10/2026), ouverts
 // dans la langue du visiteur quand le site l'a (sinon en anglais). Listes à compléter quand ces sites gagnent une langue.
 const LANGUES_MESSAGE = ["en", "fr", "es", "de", "it", "pt", "nl", "zh", "ja", "ko", "hi"];
-const LANGUES_EAU = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"];
+const LANGUES_EAU = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"];   // 15 langues depuis le 13/10/2026
 function sitesProches(l) {
   const eau = LANGUES_EAU.includes(l) ? l : "en";
   return [
