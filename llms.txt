@@ -20,6 +20,11 @@ Langues : 21 langues (une adresse par langue : /en/, /ar/, /tr/…).
 
 Le site compte 121 pages au total ; la liste complète est dans le plan du site : https://mosquees.clicvia.com/sitemap.xml
 
+## Données fraîches (JSON, lisibles par une machine)
+
+Ces fichiers sont produits par les robots du site ; un assistant peut les lire pour répondre avec les données du jour, en citant le site.
+- [Mosquées et salles de prière de Tunisie (OpenStreetMap et Wikidata)](https://mosquees.clicvia.com/donnees/mosquees.json) — mis à jour tous les 3 mois. Champs : lieux[] : lat, lon, type, noms{langue: nom}, ville, wikidata ; maj = date du relevé.
+
 ## À savoir
 
 - Lieux tirés d'OpenStreetMap et de Wikidata ; les pages des grandes mosquées citent leurs sources.
