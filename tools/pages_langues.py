@@ -4,7 +4,7 @@
 Avant : une seule adresse par page, écrite en français ; les 7 autres langues n'apparaissaient qu'après coup, dans le
 navigateur (bouton de langue, « ?lang=ar »). Google ne voyait donc que le français.
 Maintenant : tools/construire.py fabrique la page française (adresse d'origine, inchangée), puis ce module en tire
-  ar/<page>, en/<page>, tr/<page>, id/<page>, ur/<page>, de/<page>, es/<page>
+  ar/<page>, en/<page>, tr/<page>, id/<page>, ur/<page>, de/<page>, es/<page>, it/, pt/, nl/, zh/, ja/, ko/, hi/ (14 dossiers)
 où tout est DÉJÀ dans la langue : <html lang>, sens d'écriture, titre, description, texte de la page (les éléments
 data-l des autres langues sont retirés ; pour tr, id, ur, de, es la traduction — assets/langues.js et assets/trad/*.js,
 clé = texte français — est écrite dans la page), adresse officielle (canonical) et liens hreflang entre les 8 versions.
@@ -13,12 +13,14 @@ sont pris à la racine du site. Aucune dépendance : seulement la bibliothèque 
 import html, json, os, posixpath, re
 from html.parser import HTMLParser
 
-LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
-NOUVELLES = ["tr", "id", "ur", "de", "es"]
+LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]
+NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]
 DROITE = ("ar", "ur")
 COMMUNS = ("assets/", "donnees/", "manifest.webmanifest", "sw.js", "favicon.ico")      # fichiers pris à la racine du site
 SITE = {"fr": "Mosquées en Tunisie", "ar": "مساجد تونس", "en": "Mosques in Tunisia", "tr": "Tunus Camileri", "id": "Masjid di Tunisia",
-        "ur": "تیونس کی مساجد", "de": "Moscheen in Tunesien", "es": "Mezquitas de Túnez"}
+        "ur": "تیونس کی مساجد", "de": "Moscheen in Tunesien", "es": "Mezquitas de Túnez",
+        "it": "Moschee in Tunisia", "pt": "Mesquitas na Tunísia", "nl": "Moskeeën in Tunesië", "zh": "突尼斯的清真寺", "ja": "チュニジアのモスク",
+        "ko": "튀니지의 모스크", "hi": "ट्यूनीशिया की मस्जिदें"}
 # accueil : titre, description, titre de partage (le français reste celui de index.html, écrit à la main)
 ACCUEIL = {
     "ar": ("مساجد تونس: خريطة كل المساجد، صور وتاريخ (مجاني)",
@@ -45,11 +47,17 @@ ACCUEIL = {
 }
 SUITE_GRANDE = {"fr": " : histoire, architecture, photos", "ar": ": التاريخ والعمارة والصور", "en": ": history, architecture, photos",
                 "tr": ": tarih, mimari, fotoğraflar", "id": ": sejarah, arsitektur, foto", "ur": ": تاریخ، فنِ تعمیر، تصاویر",
-                "de": ": Geschichte, Architektur, Fotos", "es": ": historia, arquitectura, fotos"}
+                "de": ": Geschichte, Architektur, Fotos", "es": ": historia, arquitectura, fotos",
+                "it": ": storia, architettura, foto", "pt": ": história, arquitetura, fotos", "nl": ": geschiedenis, architectuur, foto's",
+                "zh": "：历史、建筑、照片", "ja": "：歴史・建築・写真", "ko": ": 역사, 건축, 사진", "hi": ": इतिहास, वास्तुकला, तस्वीरें"}
 FICHE_DESC = {"ar": "{nom}: مسجد في تونس{ville}. صورة وتاريخ وخريطة وروابط.", "en": "{nom}: mosque in Tunisia{ville}. Photo, history, map and links.",
               "tr": "{nom}: Tunus'ta bir cami{ville}. Fotoğraf, tarih, harita ve bağlantılar.", "id": "{nom}: masjid di Tunisia{ville}. Foto, sejarah, peta, dan tautan.",
               "ur": "{nom}: تیونس کی ایک مسجد{ville}۔ تصویر، تاریخ، نقشہ اور روابط۔", "de": "{nom}: Moschee in Tunesien{ville}. Foto, Geschichte, Karte und Links.",
-              "es": "{nom}: mezquita de Túnez{ville}. Foto, historia, mapa y enlaces."}
+              "es": "{nom}: mezquita de Túnez{ville}. Foto, historia, mapa y enlaces.",
+              "it": "{nom}: moschea della Tunisia{ville}. Foto, storia, mappa e link.", "pt": "{nom}: mesquita da Tunísia{ville}. Foto, história, mapa e ligações.",
+              "nl": "{nom}: moskee in Tunesië{ville}. Foto, geschiedenis, kaart en links.", "zh": "{nom}：突尼斯的清真寺{ville}。照片、历史、地图和链接。",
+              "ja": "{nom}：チュニジアのモスク{ville}。写真・歴史・地図・リンク。", "ko": "{nom}: 튀니지의 모스크{ville}. 사진, 역사, 지도, 링크.",
+              "hi": "{nom}: ट्यूनीशिया की एक मस्जिद{ville}। तस्वीर, इतिहास, नक़्शा और लिंक।"}
 VIDES = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 ISOLES = re.compile("[⁦-⁩‎‏]")
 
@@ -242,6 +250,20 @@ def variante(page_fr, base, chemin, l, langues, trad, meta=None, indexer=True):
                 e.poser(nom, "../" * (prof + 1) + cible + m.group(2))
             elif cible.startswith("video/"):
                 e.poser(nom, "../" * (prof + 1) + cible + "?lang=" + l + re.sub(r"^\?[^#]*", "", m.group(2)))
+    # dictionnaires : une page de langue ne charge que le sien (assets/l/<langue>.js) ; l'arabe et l'anglais sont écrits dans la
+    # page (aucun dictionnaire) ; les traductions de la page elle-même (assets/trad/…) sont déjà écrites dans le texte.
+    for parent in [racine] + list(racine.tous()):
+        garder = []
+        for i, e in enumerate(parent.enfants):
+            src = (e.get("src") or "") if e.balise == "script" else ""
+            if "assets/trad/" in src or ("assets/langues.js" in src and l not in NOUVELLES):
+                if garder and garder[-1].balise is None and not garder[-1].brut.strip():
+                    garder.pop()                    # le saut de ligne qui précédait la balise retirée
+                continue
+            if "assets/langues.js" in src:
+                e.poser("src", src.replace("assets/langues.js", f"assets/l/{l}.js"))
+            garder.append(e)
+        parent.enfants = garder
     # titre, description, aperçu de partage
     tete = premier(racine, lambda e: e.balise == "head")
     h1 = premier(racine, lambda e: e.balise == "h1")

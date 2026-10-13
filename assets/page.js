@@ -1,4 +1,5 @@
-/* Mosquées en Tunisie — langue (8 langues : français, arabe, anglais + turc, indonésien, ourdou, allemand, espagnol), en-tête, menu et
+/* Mosquées en Tunisie — langue (15 langues : français, arabe, anglais + turc, indonésien, ourdou, allemand, espagnol, puis
+   italien, portugais, néerlandais, chinois, japonais, coréen, hindi le 13/10/2026), en-tête, menu et
    pied de page communs, partage, protections — repris de Points d'eau Tunisie (même méthode des 8 langues) */
 const MAJ = "09/10/2026";   // date de création ; les lieux sont datés par le robot (donnees/lieux.js)
 // Menu de l'en-tête (toutes les pages)
@@ -18,8 +19,10 @@ const MENU_SITE = [
   const html = document.documentElement;
   const racine = html.dataset.racine || "";
   const LANGUES = [["fr", "FR", "Français"], ["ar", "ع", "العربية"], ["en", "EN", "English"], ["tr", "TR", "Türkçe"],
-    ["id", "ID", "Bahasa Indonesia"], ["ur", "UR", "اردو"], ["de", "DE", "Deutsch"], ["es", "ES", "Español"]];
-  const CODES = LANGUES.map(x => x[0]), NOUVELLES = ["tr", "id", "ur", "de", "es"], DROITE = ["ar", "ur"];
+    ["id", "ID", "Bahasa Indonesia"], ["ur", "UR", "اردو"], ["de", "DE", "Deutsch"], ["es", "ES", "Español"],
+    ["it", "IT", "Italiano"], ["pt", "PT", "Português"], ["nl", "NL", "Nederlands"], ["zh", "中文", "中文"], ["ja", "日本語", "日本語"],
+    ["ko", "한국어", "한국어"], ["hi", "हिन्दी", "हिन्दी"]];
+  const CODES = LANGUES.map(x => x[0]), NOUVELLES = CODES.slice(3), DROITE = ["ar", "ur"];
   const lireCle = k => { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } };
   const nav = (navigator.language || "").slice(0, 2).toLowerCase();
   const demande = new URLSearchParams(location.search).get("lang");

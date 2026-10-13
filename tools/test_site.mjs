@@ -28,7 +28,7 @@ const PAGES = [];
 })("");
 
 // Une adresse par langue (12/10/2026) : ar/…, en/…, tr/…, id/…, ur/…, de/…, es/… ; le français garde les adresses d'origine.
-const AUTRES = ["ar", "en", "tr", "id", "ur", "de", "es"];
+const AUTRES = ["ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"];
 const langueDe = p => AUTRES.find(l => p.startsWith(l + "/")) || "fr";
 const PAGES_FR = PAGES.filter(p => langueDe(p) === "fr");
 const PAGES_LANGUE = PAGES.filter(p => langueDe(p) !== "fr");
@@ -252,8 +252,13 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   for (const [a, b] of [["data-fr=", "data-en="], ["data-ph-fr=", "data-ph-en="], ["data-alt-ar=", "data-alt-en="]])
     for (const p of PAGES_FR) { const h = lire(p); if (h.split(a).length !== h.split(b).length) manque.push(p + " " + b); }
   check(`chaque texte français a sa traduction arabe ET anglaise, sur toutes les pages ${manque.slice(0, 4).join(" | ")}`, !manque.length);
-  const NOUVELLES = ["tr", "id", "ur", "de", "es"];
+  const NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"];
   const TR = (() => { const w = {}; new Function("window", lire("assets/langues.js"))(w);
+    for (const l of NOUVELLES) new Function("window", lire(`assets/l/${l}.js`))(w);          // un dictionnaire d'interface par langue
+    // textes des grandes mosquées dans les 7 langues ajoutées le 13/10/2026 : tools/langues_plus/ (écrits dans les pages de langue)
+    const P = JSON.parse(lire("tools/langues_plus/_francais.json")), frP = [...P.ui, ...P.contenu];
+    for (const l of ["it", "pt", "nl", "zh", "ja", "ko", "hi"]) lire(`tools/langues_plus/${l}.txt`).split(String.fromCharCode(10)).filter(x => x.trim()).forEach(x => {
+      const i = x.indexOf(String.fromCharCode(9)); w.TRADUCTIONS[l][frP[+x.slice(0, i)].replace(/\s+/g, " ").trim()] = x.slice(i + 1); });
     for (const f of readdirSync(join(root, "assets/trad"))) new Function("window", lire("assets/trad/" + f))(w); return w.TRADUCTIONS || {}; })();
   const cle = s => String(s).replace(/\s+/g, " ").trim();
   const textes = new Map(), structure = [];
@@ -298,8 +303,8 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     if (sansIndex(p) && /hreflang=/.test(h)) pbL.push(p + " noindex avec hreflang");
     if (h.match(/<title>([^<]*)<\/title>/)[1] === lire(fr).match(/<title>([^<]*)<\/title>/)[1] && l !== "en") pbL.push(p + " titre resté en français");
   }
-  check(`une adresse par langue : ${PAGES_LANGUE.length} pages (7 langues × ${PAGES_FR.filter(p => !p.startsWith("video/")).length}), chacune dans sa langue (lang, sens, titre, adresse officielle, fichiers communs) ${pbL.slice(0, 4).join(" | ")}`,
-    PAGES_LANGUE.length === 7 * PAGES_FR.filter(p => !p.startsWith("video/")).length && !pbL.length);
+  check(`une adresse par langue : ${PAGES_LANGUE.length} pages (${AUTRES.length} langues × ${PAGES_FR.filter(p => !p.startsWith("video/")).length}), chacune dans sa langue (lang, sens, titre, adresse officielle, fichiers communs) ${pbL.slice(0, 4).join(" | ")}`,
+    PAGES_LANGUE.length === AUTRES.length * PAGES_FR.filter(p => !p.startsWith("video/")).length && !pbL.length);
   const pbH = [];
   for (const p of PAGES_FR.filter(x => !x.startsWith("video/"))) {
     const h = lire(p), dossier = p.replace(/index\.html$/, "");
@@ -333,8 +338,8 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
 {
   const { w, d, js } = await page("index.html");
   const bouton = () => d.querySelector(".langues-bouton"), liste = () => d.getElementById("langues-liste");
-  check("sélecteur compact « FR ▾ » : liste des 8 langues écrites dans leur langue",
-    /FR/.test(bouton().textContent) && liste().hidden && [...liste().querySelectorAll("[data-lang]")].map(b => b.textContent).join("|") === "Français|العربية|English|Türkçe|Bahasa Indonesia|اردو|Deutsch|Español");
+  check("sélecteur compact « FR ▾ » : liste des 15 langues écrites dans leur langue",
+    /FR/.test(bouton().textContent) && liste().hidden && [...liste().querySelectorAll("[data-lang]")].map(b => b.textContent).join("|") === "Français|العربية|English|Türkçe|Bahasa Indonesia|اردو|Deutsch|Español|Italiano|Português|Nederlands|中文|日本語|한국어|हिन्दी");
   bouton().click(); [...liste().querySelectorAll("[data-lang]")].find(b => b.textContent === "Deutsch").click();
   check("choisir Deutsch : ouvre l'adresse de/, « langue-mosquees » = de, « langue » partagée inchangée (fr) ; la page française ne change pas sur place",
     w.__allers.join() === "/de/" && d.documentElement.lang === "fr" && w.localStorage.getItem("langue-mosquees") === "de" && w.localStorage.getItem("langue") === "fr" && js.length === 0);

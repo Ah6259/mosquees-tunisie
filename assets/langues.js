@@ -1,4 +1,5 @@
-/* Traductions des 5 langues ajoutées (turc, indonésien, ourdou, allemand, espagnol) : le site est aussi écrit en français, arabe
+/* Traductions de 5 langues (turc, indonésien, ourdou, allemand, espagnol ; les 7 suivantes — italien, portugais, néerlandais,
+   chinois, japonais, coréen, hindi — sont dans tools/langues_plus/*.txt) : le site est aussi écrit en français, arabe
    et anglais directement dans les pages. Clé = texte FRANÇAIS exact (contenu HTML de l'élément data-l="fr", ou 1er argument de T() / L2()),
    espaces multiples réduits à un seul. Sans traduction : l'anglais s'affiche (repli). Un texte français ajouté ou modifié doit être
    traduit ici dans les 5 langues (tools/test_site.mjs le vérifie). Les textes des pages des grandes mosquées sont dans assets/trad/*.js
@@ -46,7 +47,7 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "Classées par ville. Le point vert signale une photo.": "Şehre göre sıralı. Yeşil nokta fotoğraf olduğunu gösterir.",
  "Grande Mosquée de Kairouan. Photo": "Kayrevan Ulu Camii. Fotoğraf",
  "Les mosquées de Tunisie : la carte et l'histoire": "Tunus camileri: harita ve tarih",
- "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 8 langues, et partout dans le monde.": "Ülkedeki tüm camiler tek haritada, en büyüklerinin tarihiyle. Ücretsiz, 8 dilde ve dünyanın her yerinde.",
+ "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Ülkedeki tüm camiler tek haritada, en büyüklerinin tarihiyle. Ücretsiz, 15 dilde ve dünyanın her yerinde.",
  "lieux de prière sur la carte": "ibadet yeri haritada",
  "Chercher une mosquée ou une ville": "Bir cami veya şehir arayın",
  "Autour de moi": "Yakınımda",
@@ -249,7 +250,7 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Classées par ville. Le point vert signale une photo.": "Diurutkan menurut kota. Titik hijau berarti ada foto.",
  "Grande Mosquée de Kairouan. Photo": "Masjid Agung Kairouan. Foto",
  "Les mosquées de Tunisie : la carte et l'histoire": "Masjid-masjid Tunisia: peta dan sejarah",
- "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 8 langues, et partout dans le monde.": "Semua masjid di negeri ini dalam satu peta, beserta sejarah masjid-masjid terbesarnya. Gratis, dalam 8 bahasa, dan di seluruh dunia.",
+ "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Semua masjid di negeri ini dalam satu peta, beserta sejarah masjid-masjid terbesarnya. Gratis, dalam 15 bahasa, dan di seluruh dunia.",
  "lieux de prière sur la carte": "tempat salat di peta",
  "Chercher une mosquée ou une ville": "Cari masjid atau kota",
  "Autour de moi": "Di sekitar saya",
@@ -452,7 +453,7 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Classées par ville. Le point vert signale une photo.": "شہر کے لحاظ سے ترتیب۔ سبز نقطہ تصویر کی نشاندہی کرتا ہے۔",
  "Grande Mosquée de Kairouan. Photo": "جامع مسجد قیروان۔ تصویر",
  "Les mosquées de Tunisie : la carte et l'histoire": "تیونس کی مساجد: نقشہ اور تاریخ",
- "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 8 langues, et partout dans le monde.": "ملک کی تمام مساجد ایک نقشے پر، اور سب سے بڑی مساجد کی تاریخ۔ مفت، 8 زبانوں میں، اور پوری دنیا میں۔",
+ "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "ملک کی تمام مساجد ایک نقشے پر، اور سب سے بڑی مساجد کی تاریخ۔ مفت، 15 زبانوں میں، اور پوری دنیا میں۔",
  "lieux de prière sur la carte": "عبادت گاہیں نقشے پر",
  "Chercher une mosquée ou une ville": "مسجد یا شہر تلاش کریں",
  "Autour de moi": "میرے آس پاس",
@@ -655,7 +656,7 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Classées par ville. Le point vert signale une photo.": "Nach Ort sortiert. Der grüne Punkt zeigt ein Foto an.",
  "Grande Mosquée de Kairouan. Photo": "Große Moschee von Kairouan. Foto",
  "Les mosquées de Tunisie : la carte et l'histoire": "Die Moscheen Tunesiens: Karte und Geschichte",
- "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 8 langues, et partout dans le monde.": "Alle Moscheen des Landes auf einer Karte und die Geschichte der größten. Kostenlos, in 8 Sprachen und weltweit.",
+ "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Alle Moscheen des Landes auf einer Karte und die Geschichte der größten. Kostenlos, in 15 Sprachen und weltweit.",
  "lieux de prière sur la carte": "Gebetsorte auf der Karte",
  "Chercher une mosquée ou une ville": "Moschee oder Ort suchen",
  "Autour de moi": "In meiner Nähe",
@@ -858,7 +859,7 @@ window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Classées par ville. Le point vert signale une photo.": "Ordenadas por ciudad. El punto verde indica que hay foto.",
  "Grande Mosquée de Kairouan. Photo": "Gran Mezquita de Cairuán. Foto",
  "Les mosquées de Tunisie : la carte et l'histoire": "Las mezquitas de Túnez: el mapa y la historia",
- "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 8 langues, et partout dans le monde.": "Todas las mezquitas del país en un mapa, y la historia de las más grandes. Gratis, en 8 idiomas y en todo el mundo.",
+ "Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Todas las mezquitas del país en un mapa, y la historia de las más grandes. Gratis, en 15 idiomas y en todo el mundo.",
  "lieux de prière sur la carte": "lugares de oración en el mapa",
  "Chercher une mosquée ou une ville": "Buscar una mezquita o una ciudad",
  "Autour de moi": "Cerca de mí",

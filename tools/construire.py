@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Fabrique les pages du site « Mosquées en Tunisie » (pages statiques, bonnes pour Google) :
   - donnees/lieux.js            : tous les lieux de prière pour la carte (depuis donnees/mosquees.json, robot mosquees_donnees.py)
-  - mosquee/<page>/index.html   : une page par GRANDE mosquée (textes : tools/contenu_grandes_*.py, 8 langues)
+  - mosquee/<page>/index.html   : une page par GRANDE mosquée (textes : tools/contenu_grandes_*.py + tools/langues_plus/, 15 langues)
                                   + une page par autre mosquée ayant une fiche Wikidata (photo, noms, année, résumé Wikipédia, carte, liens)
   - grandes-mosquees/index.html : la liste de toutes ces pages
   - <gabarit>/index.html        : pages écrites à la main dans tools/gabarits/<page>.html (À propos…)
@@ -18,12 +18,15 @@ from contenu_grandes_1 import GRANDES as G1, L  # noqa: E402
 from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 import pages_langues as PL  # noqa: E402
+import langues_plus  # noqa: E402
 
-VERSION = "20261012c"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261013a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
-LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"]
-NOUVELLES = ["tr", "id", "ur", "de", "es"]
-NOM_LANGUE = {"fr": "Français", "ar": "العربية", "en": "English", "tr": "Türkçe", "id": "Bahasa Indonesia", "ur": "اردو", "de": "Deutsch", "es": "Español"}
+LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]
+NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]      # toutes sauf fr, ar, en (écrits dans les pages)
+ANCIENNES = ["tr", "id", "ur", "de", "es"]   # celles de assets/langues.js et assets/trad/*.js (affichage sur place de la page française)
+NOM_LANGUE = {"fr": "Français", "ar": "العربية", "en": "English", "tr": "Türkçe", "id": "Bahasa Indonesia", "ur": "اردو", "de": "Deutsch", "es": "Español",
+              "it": "Italiano", "pt": "Português", "nl": "Nederlands", "zh": "中文", "ja": "日本語", "ko": "한국어", "hi": "हिन्दी"}
 CSP = ("default-src 'self'; script-src 'self' https://gc.zgo.at https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; "
        "font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://cdnjs.cloudflare.com https://prix-eaux-tunisie.goatcounter.com; "
        "frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com "
@@ -42,6 +45,27 @@ VILLES = {
     "monastir": L("Monastir", "المنستير", "Monastir", "Münestir", "Monastir", "منستیر", "Monastir", "Monastir"),
 }
 TRAD = {}          # page -> langue -> {français: traduction}
+# Les 7 langues ajoutées le 13/10/2026 : chaque texte (fr, ar, en, tr, id, ur, de, es) des grandes mosquées et des villes reçoit
+# aussi it, pt, nl, zh, ja, ko, hi, pris dans tools/langues_plus/ (clé = texte français).
+PLUS, UI_PLUS = langues_plus.charger()
+
+
+def completer(x):
+    if isinstance(x, dict):
+        if isinstance(x.get("fr"), str) and "ar" in x:
+            for l in langues_plus.PLUS:
+                if x["fr"] not in PLUS[l]:
+                    raise SystemExit(f"tools/langues_plus/{l}.txt : pas de traduction pour « {x['fr'][:60]} »")
+                x[l] = PLUS[l][x["fr"]]
+        else:
+            for v in x.values():
+                completer(v)
+    elif isinstance(x, (list, tuple)):
+        for v in x:
+            completer(v)
+
+
+completer(GRANDES); completer(VILLES)
 # Une vraie page par langue (tools/pages_langues.py) : pour chaque page (dossier depuis la racine, « » = accueil)
 META = {}          # -> langue -> (titre, description[, titre de partage]) ; absent : tiré du <h1> et de l'introduction de la page
 INDEX = {}         # -> langues où la page a un contenu propre (les autres existent pour le visiteur mais ne sont pas proposées à Google)
@@ -477,7 +501,7 @@ def ecrire_trad():
         texte = ("/* GÉNÉRÉ par tools/construire.py (textes : tools/contenu_grandes_*.py) — traductions turc, indonésien, ourdou, allemand, espagnol\n"
                  "   de cette page, ajoutées à window.TRADUCTIONS (assets/langues.js) ; clé = texte français exact. */\n"
                  "(function (T) {\n" + "".join(
-                     f"  Object.assign(T.{l} = T.{l} || {{}}, {json.dumps(par_l.get(l, {}), ensure_ascii=False, indent=0, sort_keys=True)});\n" for l in NOUVELLES)
+                     f"  Object.assign(T.{l} = T.{l} || {{}}, {json.dumps(par_l.get(l, {}), ensure_ascii=False, indent=0, sort_keys=True)});\n" for l in ANCIENNES)
                  + "})(window.TRADUCTIONS = window.TRADUCTIONS || {});\n")
         ecrire(f"assets/trad/{page}.js", texte)
 
@@ -550,9 +574,19 @@ def main():
         if "mosquee/" + nom + "/" not in garder:
             shutil.rmtree(os.path.join(RACINE, "mosquee", nom))
             print("page retirée :", "mosquee/" + nom + "/")
-    # une vraie page par langue (ar/, en/, tr/, id/, ur/, de/, es/), tirée de chaque page française
+    # une vraie page par langue (ar/, en/, tr/ … hi/ : 14 dossiers), tirée de chaque page française
     CLE_TRAD[""] = "accueil"; META[""] = PL.ACCUEIL
     langues_js = PL.lire_traductions(os.path.join(RACINE, "assets", "langues.js"))
+    for l in langues_plus.PLUS:                                   # interface des 7 nouvelles langues : mêmes clés que langues.js
+        langues_js[l] = {k: PLUS[l][k] for k in UI_PLUS}
+    if set(UI_PLUS) != set(langues_js["tr"]):
+        raise SystemExit("tools/langues_plus/_francais.json (« ui ») n'a pas les mêmes textes que assets/langues.js : "
+                         + " | ".join(sorted(set(langues_js["tr"]) ^ set(UI_PLUS))[:5]))
+    for l in NOUVELLES:
+        ecrire(f"assets/l/{l}.js", "/* GÉNÉRÉ par tools/construire.py (assets/langues.js et tools/langues_plus/) — textes d'interface de cette langue,\n"
+               "   chargés seulement par les pages de cette langue ; clé = texte français exact. */\n"
+               f"window.TRADUCTIONS = window.TRADUCTIONS || {{}};\nwindow.TRADUCTIONS.{l} = "
+               + json.dumps(langues_js[l], ensure_ascii=False, indent=0, sort_keys=True) + ";\n")
     for l in LANGUES[1:]:
         if os.path.isdir(os.path.join(RACINE, l)):
             shutil.rmtree(os.path.join(RACINE, l))
@@ -574,7 +608,7 @@ def main():
         from page_video import pages_video
         pages_video(RACINE)
     print(f"{len(GRANDES)} grandes mosquées, {n_fiches} autres pages de mosquées, {len(adresses)} adresses dans le sitemap "
-          f"({len(chemins)} pages en 8 langues, moins les versions sans contenu propre), {manque} texte(s) resté(s) en anglais, version {VERSION}")
+          f"({len(chemins)} pages en {len(LANGUES)} langues, moins les versions sans contenu propre), {manque} texte(s) resté(s) en anglais, version {VERSION}")
 
 
 if __name__ == "__main__":
