@@ -254,10 +254,11 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check(`chaque texte français a sa traduction arabe ET anglaise, sur toutes les pages ${manque.slice(0, 4).join(" | ")}`, !manque.length);
   const NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"];
   const TR = (() => { const w = {}; new Function("window", lire("assets/langues.js"))(w);
-    for (const l of NOUVELLES) new Function("window", lire(`assets/l/${l}.js`))(w);          // un dictionnaire d'interface par langue
+    // on lit les SOURCES des traductions (assets/langues.js, assets/trad/, tools/langues_plus/), pas les fichiers fabriqués
+    // assets/l/<langue>.js : sinon une traduction retirée d'une source ne serait pas vue (sabotage « traduction turque manque »)
     // textes des grandes mosquées dans les 7 langues ajoutées le 13/10/2026 : tools/langues_plus/ (écrits dans les pages de langue)
     const P = JSON.parse(lire("tools/langues_plus/_francais.json")), frP = [...P.ui, ...P.contenu];
-    for (const l of ["it", "pt", "nl", "zh", "ja", "ko", "hi"]) lire(`tools/langues_plus/${l}.txt`).split(String.fromCharCode(10)).filter(x => x.trim()).forEach(x => {
+    for (const l of ["it", "pt", "nl", "zh", "ja", "ko", "hi"]) (w.TRADUCTIONS[l] = w.TRADUCTIONS[l] || {}, lire(`tools/langues_plus/${l}.txt`)).split(String.fromCharCode(10)).filter(x => x.trim()).forEach(x => {
       const i = x.indexOf(String.fromCharCode(9)); w.TRADUCTIONS[l][frP[+x.slice(0, i)].replace(/\s+/g, " ").trim()] = x.slice(i + 1); });
     for (const f of readdirSync(join(root, "assets/trad"))) new Function("window", lire("assets/trad/" + f))(w); return w.TRADUCTIONS || {}; })();
   const cle = s => String(s).replace(/\s+/g, " ").trim();
@@ -288,6 +289,9 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check("(a) chaque texte « en » suit ses textes « fr » et « ar » " + structure.slice(0, 3).join(" | "), !structure.length);
   const balises = []; for (const l of NOUVELLES) for (const [fr, t] of Object.entries(TR[l] || {})) if ((fr.match(/</g) || []).length !== (t.match(/</g) || []).length || (/\{n\}/.test(fr) && !/\{n\}/.test(t)) || (/\{l\}/.test(fr) && !/\{l\}/.test(t))) balises.push(l + " « " + fr.slice(0, 30) + " »");
   check("(a) traductions : mêmes balises HTML et mêmes « {n} » / « {l} » que le français " + balises.slice(0, 4).join(" | "), !balises.length);
+  check("un dictionnaire d'interface par langue (assets/l/<langue>.js), chargé par les pages de cette langue seulement ; aucun pour l'arabe et l'anglais",
+    NOUVELLES.every(l => existsSync(join(root, `assets/l/${l}.js`)) && lire(`${l}/index.html`).includes(`assets/l/${l}.js`) && !lire(`${l}/index.html`).includes("assets/langues.js"))
+    && !/assets\/(l\/|langues\.js)/.test(lire("ar/index.html")) && !/assets\/trad\//.test(lire("tr/mosquee/kairouan/index.html")));
   check("CSS : les éléments « en » sont montrés pour tr, id, ur, de, es", NOUVELLES.every(l => lire("assets/style.css").includes(`html[lang="${l}"] [data-l="en"]`)));
   // ---- une adresse par langue : chaque page de langue est écrite dans sa langue, avec sa propre adresse officielle
   const pbL = [], droite = ["ar", "ur"];
