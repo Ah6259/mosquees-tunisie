@@ -124,7 +124,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     && leg.every(f => /CC BY|CC0|domaine public|Public domain/i.test(f.textContent) && f.querySelector('a[href^="https://commons.wikimedia.org/"]'))
     && leg.filter(f => !f.hidden).length === 1 && vues.filter(a => a.classList.contains("actif")).length === 1);
   check("lien vers The Message (découvrir l'Islam) : carte de l'accueil + pied de page", !!d.querySelector('main a[href="https://message.clicvia.com/"]')
-    && !!d.querySelector('footer a[href="https://message.clicvia.com/"]'));
+    && !!d.querySelector('footer a[href^="https://message.clicvia.com/"]'));
   check("lien vers Points d'eau Tunisie (Le Coran et l'eau) : carte de l'accueil + pied de page", !!d.querySelector('main a[href="https://eau.clicvia.com/coran-et-eau/"]')
     && !!d.querySelector('footer a[href="https://eau.clicvia.com/"]'));
 }
@@ -237,7 +237,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const { d } = await page(p);
     if (d.querySelectorAll("header .partager").length !== 1) manque.push(p + " partager");
     if (!d.querySelector('footer a[href$="#avis"]')) manque.push(p + " avis");
-    if (d.querySelectorAll(".menu a").length !== 4) manque.push(p + " menu");
+    if (d.querySelectorAll(".menu a").length !== 6 || d.querySelectorAll('.menu a.menu-annuaire[target="_blank"][rel="noopener"] img').length !== 2) manque.push(p + " menu");
     if (d.querySelectorAll("header .rec-bouton").length !== 1) manque.push(p + " récitation");
   }
   check(`toutes les pages : Partager et bouton de récitation dans l'en-tête, « Votre avis », menu ${manque.slice(0, 5).join(" | ")}`, !manque.length);
@@ -292,6 +292,13 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check("un dictionnaire d'interface par langue (assets/l/<langue>.js), chargé par les pages de cette langue seulement ; aucun pour l'arabe et l'anglais",
     NOUVELLES.every(l => existsSync(join(root, `assets/l/${l}.js`)) && lire(`${l}/index.html`).includes(`assets/l/${l}.js`) && !lire(`${l}/index.html`).includes("assets/langues.js"))
     && !/assets\/(l\/|langues\.js)/.test(lire("ar/index.html")) && !/assets\/trad\//.test(lire("tr/mosquee/kairouan/index.html")));
+  {   // boutons The Message et Points d'eau dans le menu, après « Signaler un lieu », dans la langue du visiteur (13/10/2026)
+    const liens = async (p, o) => [...(await page(p, o)).d.querySelectorAll(".menu a")].map(a => a.getAttribute("href"));
+    const fr = await liens("index.html"), es = await liens("index.html", { lang: "es" }), tr = await liens("mosquee/kairouan/index.html", { lang: "tr" });
+    check("menu : The Message et Points d'eau juste après « Signaler un lieu », avant « À propos » ; ouverts dans la langue du visiteur (anglais si le site ne l'a pas)",
+      /#signaler$/.test(fr[2]) && fr[3] === "https://message.clicvia.com/?lang=fr" && fr[4] === "https://eau.clicvia.com/" && /a-propos\/$/.test(fr[5])
+      && es[3] === "https://message.clicvia.com/?lang=es" && es[4] === "https://eau.clicvia.com/es/" && /^https:\/\/message\.clicvia\.com\/\?lang=/.test(tr[3]) && /^https:\/\/eau\.clicvia\.com\/tr\/$/.test(tr[4]));
+  }
   check("CSS : les éléments « en » sont montrés pour tr, id, ur, de, es", NOUVELLES.every(l => lire("assets/style.css").includes(`html[lang="${l}"] [data-l="en"]`)));
   // ---- une adresse par langue : chaque page de langue est écrite dans sa langue, avec sa propre adresse officielle
   const pbL = [], droite = ["ar", "ur"];

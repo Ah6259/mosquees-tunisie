@@ -20,7 +20,7 @@ from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 import pages_langues as PL  # noqa: E402
 import langues_plus  # noqa: E402
 
-VERSION = "20261013a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261013b"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]
 NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]      # toutes sauf fr, ar, en (écrits dans les pages)

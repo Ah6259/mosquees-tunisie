@@ -9,6 +9,17 @@ const MENU_SITE = [
   ["#signaler", "Signaler un lieu", "أضف مكانًا", "Report a place"],
   ["a-propos/", "À propos", "من نحن", "About"]
 ];
+// Nos deux sites proches, en boutons dans le menu juste après « Signaler un lieu » (demande d'Ahmed du 13/10/2026), ouverts
+// dans la langue du visiteur quand le site l'a (sinon en anglais). Listes à compléter quand ces sites gagnent une langue.
+const LANGUES_MESSAGE = ["en", "fr", "es", "de", "it", "pt", "nl", "zh", "ja", "ko", "hi"];
+const LANGUES_EAU = ["fr", "ar", "en", "tr", "id", "ur", "de", "es"];
+function sitesProches(l) {
+  const eau = LANGUES_EAU.includes(l) ? l : "en";
+  return [
+    ["https://message.clicvia.com/?lang=" + (LANGUES_MESSAGE.includes(l) ? l : "en"), "The Message", "The Message", "The Message", "logo-le-message.svg", "lien-site/le-message"],
+    ["https://eau.clicvia.com/" + (eau === "fr" ? "" : eau + "/"), "Points d'eau Tunisie", "نقاط الماء في تونس", "Water Points Tunisia", "logo-points-eau.svg", "lien-site/points-eau"]
+  ];
+}
 
 // Huit langues (anglais le 09/10/2026, puis turc, indonésien, ourdou, allemand, espagnol : site pour le monde entier).
 // fr / ar / en sont écrits dans les pages ; les 5 autres viennent de assets/langues.js (window.TRADUCTIONS, clé = texte français),
@@ -97,8 +108,9 @@ const MENU_SITE = [
             `<li><button type="button" data-lang="${l}" lang="${l}" dir="${DROITE.includes(l) ? "rtl" : "ltr"}" aria-pressed="${html.lang === l}">${n}</button></li>`).join("")}</ul></div>
         </div>
       </div>
-      <nav class="menu" aria-label="${T("Rubriques", "الأبواب", "Sections")}"><div class="wrap">${MENU_SITE.map(([h, fr, ar, en]) =>
-        `<a href="${rp}${h || "./"}"${(h && !h.startsWith("#") ? ici.endsWith("/" + h) : (!h && !rp)) ? ' aria-current="page"' : ""}>${T(fr, ar, en)}</a>`).join("")}</div></nav>`
+      <nav class="menu" aria-label="${T("Rubriques", "الأبواب", "Sections")}"><div class="wrap">${[...MENU_SITE.slice(0, 3), ...sitesProches(html.lang), ...MENU_SITE.slice(3)].map(([h, fr, ar, en, logo, compteur]) => logo
+        ? `<a class="menu-annuaire" href="${h}" target="_blank" rel="noopener" data-compteur="${compteur}"><img src="${racine}assets/${logo}" alt="" width="20" height="20">${T(fr, ar, en)}</a>`
+        : `<a href="${rp}${h || "./"}"${(h && !h.startsWith("#") ? ici.endsWith("/" + h) : (!h && !rp)) ? ' aria-current="page"' : ""}>${T(fr, ar, en)}</a>`).join("")}</div></nav>`
       + (proposee && proposee !== LANGUE_ADRESSE ? `<p class="autre-langue"><a href="${adresse(proposee)}" data-lang="${proposee}" lang="${proposee}" dir="${DROITE.includes(proposee) ? "rtl" : "ltr"}" hreflang="${proposee}">${LANGUES.find(x => x[0] === proposee)[2]} →</a></p>` : "");
     const p = document.getElementById("pied");
     if (p) p.innerHTML = `
@@ -110,8 +122,8 @@ const MENU_SITE = [
           <a href="${rp}#signaler">${T("Signaler une mosquée ou une salle de prière", "أضف مسجدًا أو مصلّى", "Report a mosque or prayer room")}</a>
           <a href="${rp}a-propos/">${T("À propos et méthode", "من نحن والمنهجية", "About and method")}</a>
           <a href="${rp}#avis">${T("Votre avis", "رأيك", "Your feedback")}</a>
-          <a href="https://eau.clicvia.com/" target="_blank" rel="noopener" data-compteur="lien-site/points-eau">${T("Points d'eau Tunisie", "نقاط الماء في تونس", "Water Points Tunisia")}</a>
-          <a href="https://message.clicvia.com/" target="_blank" rel="noopener" data-compteur="lien-site/le-message">${T("The Message : découvrir l'Islam", "الرسالة: اكتشف الإسلام", "The Message: discover Islam")}</a>
+          <a href="${sitesProches(html.lang)[1][0]}" target="_blank" rel="noopener" data-compteur="lien-site/points-eau">${T("Points d'eau Tunisie", "نقاط الماء في تونس", "Water Points Tunisia")}</a>
+          <a href="${sitesProches(html.lang)[0][0]}" target="_blank" rel="noopener" data-compteur="lien-site/le-message">${T("The Message : découvrir l'Islam", "الرسالة: اكتشف الإسلام", "The Message: discover Islam")}</a>
         <a href="https://clicvia.com/" rel="noopener" target="_blank">${T("Tous nos services", "كل خدماتنا", "All our services")}</a>
         </nav>
         <p>${T("Les horaires de prière et l'ouverture aux visiteurs changent : renseignez-vous sur place. Ce site n'est pas un service officiel.",
