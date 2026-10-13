@@ -57,7 +57,7 @@
   - Tests : `test_site.mjs` (langue, adresse officielle, fichiers communs, hreflang identiques, noindex), 4 sabotages.
 
 - **15 LANGUES (13/10/2026, demande d'Ahmed : « le plus possible de langues », mêmes langues que The Message)** : aux 8 d'origine
-  (fr, ar, en, tr, id, ur, de, es) s'ajoutent **it, pt, nl, zh, ja, ko, hi**. 123 pages × 15 langues = 1 846 pages ; 690 adresses
+  (fr, ar, en, tr, id, ur, de, es) s'ajoutent **it, pt, nl, zh, ja, ko, hi**, puis (13/10, même jour) **ru, vi, th, tl, sv, ro**. 123 pages × 21 langues = 2 584 pages ; 813 adresses
   proposées à Google (les fiches sans nom ni résumé dans une langue restent `noindex`).
   - Textes des 7 nouvelles langues : `tools/langues_plus/<langue>.txt` (une ligne « numéro<TAB>traduction » par texte français de
     `_francais.json` : 201 textes d'interface + 145 textes des grandes mosquées et des villes) ; module `tools/langues_plus.py`.
@@ -68,5 +68,5 @@
   - Chaque page de langue ne charge que SON dictionnaire d'interface `assets/l/<langue>.js` (fabriqué par construire.py ; la page
     arabe et la page anglaise n'en chargent aucun) : avant, toutes les pages chargeaient les 122 Ko de `langues.js`.
     `assets/trad/*.js` ne contient que les 5 anciennes langues (il ne sert qu'à la page française).
-  - Robot `mosquees_donnees.py` : demande à Wikidata les noms et articles dans les 15 langues.
+  - Robot `mosquees_donnees.py` : demande à Wikidata les noms et articles dans les 21 langues.
   - Traductions écrites par Claude, non relues par des personnes dont c'est la langue : à faire relire quand ce sera possible.

@@ -1,0 +1,346 @@
+0	Mga moske sa Tunisia at sa buong mundo
+1	Nasa mapa ang buong mundo
+2	Mga halimbawa:
+3	Mecca
+4	Istanbul
+5	Paris
+6	Cairo
+7	Tingnan ang mundo
+8	Sa labas ng Tunisia: mag-type ng lungsod sa paghahanap sa itaas, o pindutin ang isang halimbawa.
+9	Sa tinig ni Sheikh Ali El Barrak (surah Al-Fatiha), mula sa kanyang opisyal na channel.
+10	Home
+11	Tungkol dito
+12	Tungkol sa site at pamamaraan
+13	Isang libre at malayang site para makahanap ng moske saanman sa Tunisia at matuklasan ang kasaysayan ng malalaking moske ng bansa.
+14	Saan galing ang mga lugar?
+15	<b>OpenStreetMap</b>, ang malayang mapa na gawa ng mga nag-aambag dito: lahat ng lugar ng pagdarasal ng mga Muslim sa Tunisia, kasama ang lokasyon at pangalan, na muling binabasa ng aming robot tuwing 3 buwan.
+16	<b>Wikidata</b>: para sa mga moskeng may tala roon, ang mga pangalan sa iba't ibang wika, ang taon ng pagkakatatag, ang proteksyon bilang monumento, ang larawan at ang mga artikulo sa Wikipedia.
+17	<b>Ang mga bisita</b>: maaaring iulat ninuman ang isang moske o silid-dasalan na wala pa sa mapa. Awtomatiko itong inilalathala (humigit-kumulang tuwing 2 oras), na «kukumpirmahin pa» hanggang kumpirmahin ito ng ibang bisita.
+18	Ang mga teksto
+19	Kami ang sumulat ng mga pahina ng malalaking moske, batay sa mapagkakatiwalaang sanggunian na nakalista sa ibaba ng bawat pahina (Wikipedia, Qantara, Discover Islamic Art, UNESCO). Ang ibang pahina ay nagpapakita ng buod ng artikulo sa Wikipedia, kasama ang link at lisensya nito (CC BY-SA 4.0). Ang talata ng Qur'an ay nasa Arabe at may kinikilalang salin ng kahulugan nito (QuranEnc).
+20	Paano sinusuri ang isang iniulat na lugar
+21	Tinatanggihan ng robot ang lokasyong nasa labas ng Tunisia o ang uring hindi kilala, inaalis ang mga numero ng telepono at mga link (walang patalastas), at nililimitahan ang bilang ng ulat bawat telepono.
+22	Ang lugar na iniulat nang wala pang 40 m mula sa isang kilalang lugar ay ibinibilang na kumpirmasyon (walang dobleng tala).
+23	Kapag maraming bisita ang nagsabing «wala na ito» (mas marami kaysa sa mga kumpirmasyon), inaalis ang lugar sa mapa.
+24	Ang pagbigkas ng Qur'an
+25	Ito ang tinig ni Sheikh Ali El Barrak (1899-1981), dakilang tagabigkas ng Qur'an mula sa Tunisia. Ang mga video ay galing sa kanyang opisyal na channel sa YouTube at naka-embed lamang (pinatutugtog sa YouTube, sa domain na youtube-nocookie.com): walang kinokopya. Magsisimula lamang ang tunog kapag pinili ninyo; ang bilog na button sa itaas ang nagpapahinto o muling nagpapatugtog nito.
+26	Ang inyong datos
+27	Ang inyong lokasyon ay ginagamit lamang para ipakita ang mga kalapit na lugar, sa loob ng inyong telepono: ipinapadala lamang ito kapag nag-ulat kayo ng lugar (at ang lokasyon lamang ng lugar na iyon). Isang di-nagpapakilalang identifier ng browser ang pumipigil sa isang tao na bumoto nang maraming beses. Di-nagpapakilalang estadistika ng pagbisita, walang cookie. Walang patalastas.
+28	Mga kredito ng larawan
+29	Lahat ng larawan ay galing sa Wikimedia Commons, sa ilalim ng malayang lisensya (CC BY, CC BY-SA, CC0 o pampublikong dominyo). Salamat sa mga may-akda.
+30	Mga larawan ng ibang moske: ipinapakita mula sa Wikimedia Commons, may-akda at lisensya sa ilalim ng bawat larawan.
+31	Malalaking moske
+32	Malalaking moske at makasaysayang moske ng Tunisia
+33	Ang malalaking moske na isinalaysay nang detalyado, at pagkatapos ay lahat ng moske sa Tunisia na may tala sa Wikidata: larawan, kasaysayan at mga link.
+34	pahina ng mga moske
+35	Ang malalaking moske
+36	Iba pang makasaysayang moske
+37	Nakaayos ayon sa lungsod. Ang berdeng tuldok ay nangangahulugang may larawan.
+38	Dakilang Moske ng Kairouan. Larawan
+39	Mga moske ng Tunisia: ang mapa at ang kasaysayan
+40	Lahat ng moske ng bansa sa iisang mapa, at ang kasaysayan ng pinakamalalaki. Libre, sa 21 wika, at saanman sa mundo.
+41	lugar ng pagdarasal sa mapa
+42	Maghanap ng moske o lungsod
+43	Malapit sa akin
+44	Pindutin ang isang tuldok para sa pangalan, ruta at pahina nito. Ang mga gintong tuldok ay may pahina ng kasaysayan. May kulang bang moske o silid-dasalan?
+45	Iulat ito
+46	Mag-ulat ng moske o silid-dasalan
+47	Tingnan
+48	Ang malalaking moske ng Tunisia
+49	Ang kanilang kasaysayan, arkitektura, mga larawan at mapagkakatiwalaang dokumento.
+50	At lahat ng iba pang makasaysayang moske
+51	“Nagtataguyod lamang sa mga masjid ni Allāh ang sinumang sumampalataya kay Allāh at sa Huling Araw, nagbigay ng zakāh, at hindi natakot maliban kay Allāh. Kaya maaasahan ang mga iyon na maging kabilang sa mga napapatnubayan.”
+52	Surah At-Tawbah (9), talata 18 — salin ng kahulugan: Rowwad Translation Center,
+53	Ang pagbigkas ni Sheikh Ali El Barrak
+54	Ang dakilang tagabigkas ng Qur'an mula sa Tunisia (1899-1981), sa pagbasang Qalun, ang gamit sa Tunisia. Pumili ng pagbigkas: tutugtog ito sa maliit na player sa ibaba ng screen.
+55	Juz' 'Amma (buo)
+56	Al-Fatiha
+57	Ya-Sin
+58	Pagbigkas: Sheikh Ali El Barrak (1899-1981), opisyal na channel
+59	Ang tubig sa Qur'an, at ang mga imbakan ng tubig («majel») na bukas sa lahat
+60	Sa aming site na Points d'eau Tunisie: mga talata at hadith tungkol sa tubig, at ang mapa ng mga inuman, bukal at imbakan ng tubig.
+61	Ang inyong opinyon
+62	Lahat ng aming serbisyo
+63	Tuklasin ang Islam at ang Qur'an, sa iba't ibang wika
+64	Sa aming site na The Message: ang mensahe ng Islam na ipinaliwanag nang simple, mga libreng flyer na maipi-print, ang Qur'an na may salin at mga istasyon ng radyo.
+65	The Message: tuklasin ang Islam
+66	May puna, mali, o ideya? Sumulat sa amin: binabasa ang bawat mensahe.
+67	Ang inyong marka (opsyonal)
+68	Napakahusay
+69	Mahusay
+70	Katamtaman
+71	Hindi maganda
+72	Ang inyong mensahe
+73	Ang inyong e-mail (opsyonal, para masagot namin kayo)
+74	Ipadala
+75	Ang inyong opinyon ay ipinapadala sa gumawa ng site (serbisyong Formspree). Walang ipinapadala hangga't hindi pinipindot ang «Ipadala».
+76	Isang moskeng wala sa mapa, isang silid-dasalan sa istasyon, ospital, unibersidad, mall… Tulungan ang iba na makahanap ng mapagdarasalan. Pagkatapos ng awtomatikong pagsusuri, inilalathala ang lugar sa mapa, na «kukumpirmahin pa» hanggang kumpirmahin ito ng ibang bisita.
+77	Uri
+78	Pangalan o palatandaan
+79	Hanapin ang lokasyon ko (GPS)
+80	Hindi laging tumpak ang awtomatikong lokasyon: ilipat ang marker (o pindutin ang mapa) para ilagay ito sa pasukan ng lugar ng pagdarasal, saka kumpirmahin.
+81	Kumpirmahin ang lokasyong ito
+82	Walang personal na impormasyong ipinapadala: ang uri, pangalan ng lugar at lokasyon lamang. Awtomatikong inaalis ang mga numero ng telepono at patalastas. Nawawala ang isang lugar kapag maraming bisita ang nagsabing wala na ito.
+83	— pumili —
+84	Moske
+85	Silid-dasalan
+86	Hal. Zitouna, Kairouan, Sousse…
+87	Ang nagustuhan ninyo, ang kulang, ang maling dapat itama…
+88	pangalan@example.com
+89	Opsyonal
+90	Ang patyo at minaret ng Dakilang Moske ng Kairouan
+91	Larawan
+92	Ruta
+93	Tingnan sa mapa
+94	Pagpapakilala
+95	Kasaysayan
+96	Arkitektura
+97	Papel at impluwensya
+98	Mahahalagang petsa
+99	Pagbisita
+100	Ito ay una sa lahat lugar ng pagdarasal: magsuot ng disenteng damit, hubarin ang sapatos bago pumasok sa bulwagan ng pagdarasal at iwasan ang mga oras ng pagdarasal. Sa ilang malalaking moske, maaaring pumasok sa patyo ang mga bisitang hindi Muslim, ngunit hindi sa bulwagan ng pagdarasal. Nagbabago ang oras ng pagbubukas: magtanong sa mismong lugar.
+101	Sa mapa
+102	Mga dokumento at link
+103	Mga sanggunian
+104	Mga tekstong isinulat ng Mosquées en Tunisie batay sa mga dokumento sa itaas (Wikipedia, Qantara, Discover Islamic Art, UNESCO), sinuri noong 09/10/2026.
+105	Mga larawan: Wikimedia Commons, may-akda at lisensya sa ilalim ng bawat larawan.
+106	Lokasyon: OpenStreetMap (ODbL) at Wikidata.
+107	Iba pang malalaking moske
+108	Lahat ng malalaki at makasaysayang moske
+109	Mga makasaysayang moske
+110	Sipi mula sa Wikipedia
+111	Ang pangalan nito sa iba't ibang wika
+112	Pahinang awtomatikong ginawa mula sa Wikidata (CC0), Wikipedia (CC BY-SA 4.0), Wikimedia Commons at OpenStreetMap (ODbL).
+113	May mali? Itama ito sa Wikidata o OpenStreetMap, o sumulat sa amin (Ang inyong opinyon): muling ginagawa ang pahina tuwing 3 buwan.
+114	Protektadong monumento
+115	Mga larawan
+116	Itinatag noong
+117	Moskeng Ibadi
+118	Isulat muna ang inyong mensahe bago ipadala.
+119	Masyadong mahaba ang mensahe: hanggang {n} karakter lamang.
+120	Salamat! Naipadala na ang inyong opinyon.
+121	Ipinapadala…
+122	Hindi naipadala — suriin ang inyong koneksyon at subukang muli mamaya.
+123	Pranses
+124	Ingles
+125	Arabe
+126	Walang buod ng Wikipedia sa inyong wika: narito ito sa {l}.
+127	May pahina ng kasaysayan
+128	Kinumpirma ng mga bisita
+129	Iniulat ng isang bisita, kukumpirmahin pa
+130	Ibadi
+131	Kasaysayan, mga larawan at dokumento
+132	Ruta (Google Maps)
+133	Totoo ito
+134	Wala na ito
+135	Walang nakitang lugar. Subukan ang ibang pangalan o kalapit na lungsod, o iulat ang lugar kung wala pa ito.
+136	{n} lugar ang nakita
+137	Mga resulta
+138	Pinakamalapit sa inyo
+139	Salamat! Maisasama ito sa loob ng mga 2 oras.
+140	Hinahanap ang inyong lokasyon…
+141	Hindi makuha ang lokasyon: payagan ang pagtukoy ng lokasyon, o maghanap ng lungsod.
+142	Nailagay na ang marker: suriin ito, saka pindutin ang «Kumpirmahin ang lokasyong ito».
+143	Walang lugar na iniulat nitong huling 30 araw: kayo na ang mauna!
+144	Mga pinakabagong lugar na iniulat ng mga bisita
+145	kinumpirma ng {n} bisita
+146	kukumpirmahin pa
+147	iniulat noong
+148	tingnan sa mapa
+149	Hindi makuha ang lokasyon: pindutin na lang ang lugar sa mapa.
+150	Ilagay muna ang marker: «Hanapin ang lokasyon ko (GPS)» o pindutin ang mapa.
+151	✔ Nakumpirma ang lokasyon
+152	Pumili: moske o silid-dasalan.
+153	Ilagay ang marker sa mapa, saka pindutin ang «Kumpirmahin ang lokasyong ito».
+154	Ang lokasyong ito ay wala sa Tunisia.
+155	Salamat! Lalabas ang lugar sa mapa sa loob ng mga 2 oras («kukumpirmahin pa» hanggang kumpirmahin ito ng ibang bisita).
+156	Hindi naipadala — suriin ang inyong koneksyon at subukang muli.
+157	Mapa
+158	Mag-ulat ng lugar
+159	Mga moske sa Tunisia
+160	Libre · mapa, larawan, kasaysayan
+161	Ibahagi ang pahinang ito
+162	Ibahagi
+163	Wika
+164	Mga seksyon
+165	Mapa ng mga moske
+166	Malalaki at makasaysayang moske
+167	Mga mapagkukunan ng tubig sa Tunisia
+168	Nagbabago ang oras ng pagdarasal at ang pagbubukas sa mga bisita: magtanong sa mismong lugar. Ang site na ito ay hindi opisyal na serbisyo.
+169	Mga lugar: © mga nag-aambag sa OpenStreetMap (ODbL), Wikidata at mga bisita ng site. Mga teksto ng Wikipedia sa ilalim ng lisensyang CC BY-SA 4.0. Mga larawan: Wikimedia Commons —
+170	mga kredito
+171	nakalaan ang lahat ng karapatan.
+172	nakalaan ang lahat ng karapatan
+173	Ang site:
+174	Panoorin ang video:
+175	Video ng pagpapakilala
+176	Pagbigkas: Sheikh Ali El Barrak
+177	Ihinto ang pagbigkas
+178	Opisyal na channel
+179	Pagbigkas ng Qur'an ni Sheikh Ali El Barrak
+180	Pakinggan ang pagbigkas ni Sheikh Ali El Barrak
+181	Ang mapa ng lahat ng moske ng bansa at ang kasaysayan ng malalaking moske nito.
+182	Pumasok na may pagbigkas ni Sheikh Ali El Barrak
+183	Buksan ang site
+184	Ibahagi ang video
+185	Pumasok nang walang tunog
+186	Sa ibang bahagi ng mundo: i-zoom ang isang rehiyon, o maghanap ng lungsod, para makita ang mga moske nito.
+187	Hinahanap ang mga moske sa lugar na ito…
+188	{n} lugar ng pagdarasal sa lugar na ito.
+189	Walang kilalang lugar ng pagdarasal dito sa OpenStreetMap.
+190	Hindi sumasagot ang OpenStreetMap sa ngayon: subukang muli maya-maya.
+191	Kulay = bansa:
+192	Hindi tinukoy ang bansa
+193	Pinagmulan: OpenStreetMap, binabasa nang live
+194	Maghanap ng lungsod sa mundo
+195	Hinahanap ang lungsod sa mundo…
+196	Walang nakitang lungsod sa mundo na may ganitong pangalan.
+197	Nakasentro ang mapa sa: {l} (paghahanap sa Nominatim, © mga nag-aambag sa OpenStreetMap).
+198	Hindi sumasagot ang paghahanap ng lungsod sa ngayon: subukang muli maya-maya.
+199	<b>Sa ibang bahagi ng mundo</b>: binabasa nang live ang OpenStreetMap para sa lugar na ipinapakita sa mapa (5 kopya ng OpenStreetMap, ang mga server ng Overpass), bawat bansa ay may sariling kulay. Hinahanap ang isang lungsod sa mundo gamit ang <b>Nominatim</b> (© mga nag-aambag sa OpenStreetMap), kapag kinumpirma lamang ninyo ang paghahanap.
+200	Sa labas ng Tunisia, ang lugar na ipinapakita sa mapa (hindi ang eksakto ninyong lokasyon) ay ipinapadala sa mga server ng OpenStreetMap para mabasa ang mga moske nito; ang lungsod na hinahanap ninyo sa mundo ay ipinapadala sa Nominatim.
+201	Tunis
+202	Kairouan
+203	Sousse
+204	Mahdia
+205	Sfax
+206	Testour
+207	Carthage
+208	Djerba (Midoun)
+209	Monastir
+210	Moske ng Zitouna
+211	698 · muling itinayo noong 864
+212	Ang dakilang moske ng medina ng Tunis, ang pinakamatanda at pinakamalawak sa kabisera. Sa loob ng mahigit isang libong taon, isa rin itong malaking unibersidad ng Islam.
+213	Ayon sa tradisyon, itinatag ang lugar ng pagdarasal noong 698 ni Hassan ibn al-Nu'man, matapos masakop ang Carthage; ayon sa ibang sanggunian, ang nagtatag ay ang gobernador na Umayyad na si Ubayd Allah ibn al-Habhab, bandang 732. Halos walang natira sa unang gusali: lubos na muling itinayo ang moske noong 864 ng emir na Aghlabid na si Abu Ibrahim Ahmad. Pinaganda ito ng bawat sumunod na dinastiya: ang simboryo ng «bahou» sa panahon ng mga Zirid (bandang 990), mga imbakan ng tubig at pintuan sa panahon ng mga Hafsid, ang silangang galeriya noong 1637. Ang kasalukuyang minaret, sa istilong Almohad, ay mula 1894.
+214	Gaya sa Kairouan at Córdoba, isang patyong napalilibutan ng mga galeriya ang nasa harap ng bulwagan ng pagdarasal na «hypostyle»: humigit-kumulang 160 sinaunang haligi, na karamihan ay galing sa Carthage, ang bumubuo ng 15 pasilyo. Ang gitnang pasilyo, na mas malapad, ay patungo sa mihrab, na natatakpan ng simboryo mula ika-9 na siglo. Ang simboryo ng bahou, sa pasukan ng bulwagan, ay salit-salit na batong kulay okre at pulang ladrilyo. Inulit ng minaret ng 1894 ang disenyong hugis-rombo ng minaret ng moske ng Kasbah.
+215	Ang Zitouna ay isa sa pinakamatatandang sentro ng pagtuturo sa mundong Muslim: sumasandal ang bawat iskolar sa isang haligi, habang nakaupo nang pabilog ang kanyang mga mag-aaral sa paligid niya. Dito nahubog ang mga dakilang huristang Maliki gaya ni Ibn Arafa, kapanahon ni Ibn Khaldun. Noong 1958, umalis ang pagtuturo sa moske; ipinagpapatuloy ito ngayon sa Unibersidad ng Ez-Zitouna. Sinasabing hindi kailanman naputol ang pagdarasal dito.
+216	Pagkakatatag ayon sa tradisyon (Hassan ibn al-Nu'man)
+217	Lubos na muling pagtatayo ng mga Aghlabid
+218	Simboryo ng bahou (mga Zirid)
+219	Bagong minaret sa istilong Almohad
+220	Lumipat ang pagtuturo mula sa moske patungo sa unibersidad
+221	Naitala ang medina ng Tunis sa Pandaigdigang Pamana ng UNESCO
+222	Dakilang Moske ng Kairouan (moske ni Uqba)
+223	670 · kasalukuyang anyo mula 836
+224	Ang pinakamatandang moske sa Maghreb, itinatag noong 670 kasabay ng lungsod ng Kairouan. Naging huwaran ito ng lahat ng moske sa Hilagang Aprika at bahagi ito ng Pandaigdigang Pamana ng UNESCO.
+225	Noong 670, itinatag ng mananakop na si Uqba ibn Nafi ang Kairouan at inilagay ang kanyang moske sa gitna ng lungsod. Pinalaki at muling itinayo noong ika-8 at ika-9 na siglo, nakuha nito ang kasalukuyang anyo noong 836 sa ilalim ng emir na Aghlabid na si Ziyadat Allah I. Bandang 862-863, pinahaba ni Abu Ibrahim Ahmad ang bulwagan ng pagdarasal at inihandog ang minbar at ang palamuti ng mihrab. Noong ika-11 siglo, idinagdag ng prinsipeng Zirid na si al-Mu'izz ibn Badis ang maqsura na yari sa kahoy. Matagal na itinuring ang Kairouan bilang ikaapat na banal na lungsod ng Islam.
+226	Isang malawak na parihabang humigit-kumulang 9 000 m²: isang malaking patyong may sahig na bato, mga galeriya, at bulwagan ng pagdarasal na may 17 pasilyo na pinapasan ng daan-daang sinaunang haligi na marmol, granito at porpiri, na magkakaiba lahat. Ang minaret, na humigit-kumulang 31 metro ang taas, ay mula sa unang kalahati ng ika-9 na siglo: isa ito sa pinakamatatandang minaret na nakatayo pa. Ang mihrab mula ika-9 na siglo ay pinalamutian ng mga tisang seramiko na may kinang-metal; sa tabi nito, ang minbar na inukit na kahoy ang pinakamatandang minbar na naingatan sa mundong Muslim.
+227	Ang Kairouan ang naging kabisera ng relihiyon at karunungan ng Ifriqiya: dito isinulat ni Imam Sahnun noong ika-9 na siglo ang Mudawwana, ang saligang akda ng paaralang Maliki na sinusunod sa Tunisia at sa buong Maghreb. Naingatan ng aklatan ng moske ang napakatatandang manuskrito, kabilang ang mga pahina ng tanyag na «Asul na Qur'an».
+228	Itinatag ni Uqba ibn Nafi, kasabay ng lungsod
+229	Muling itinayo ni Ziyadat Allah I: ang kasalukuyang anyo
+230	Minbar at palamuti ng mihrab (Abu Ibrahim Ahmad)
+231	Maqsura na kahoy ni al-Mu'izz ibn Badis (bandang petsang ito)
+232	Naitala ang Kairouan sa Pandaigdigang Pamana ng UNESCO
+233	Dakilang Moske ng Sousse
+234	850-851 · mga Aghlabid
+235	Sa pasukan ng medina, isang moskeng mukhang kuta, itinayo noong 850-851 malapit sa ribat na nagtatanggol sa baybayin. Payak at matatag, bahagi ito ng medina ng Sousse, Pandaigdigang Pamana ng UNESCO.
+236	Itinayo ito noong 850-851 ng emir na Aghlabid na si Abu al-Abbas Muhammad, mga tatlumpung taon pagkatapos ng ribat ng Sousse; isang inskripsiyong Kufic sa mga galeriya ng patyo ang nagpapaalala sa pagtatayo nito. Pinalaki ito sa ilalim ng emir na si Ibrahim II (875-902), nang maging ikalawang lungsod ng Ifriqiya ang Sousse.
+237	Mga pader na may almena, mga toreng panulok na may maliliit na simboryo sa tuktok: mukhang kuta ang moske at wala itong tunay na minaret, marahil dahil ang toreng bantayan ng katabing ribat ang gumanap sa papel na iyon. May 13 pasilyo ang bulwagan ng pagdarasal; ang gitnang pasilyo at ang hanay sa harap ng mihrab, na mas malapad, ay bumubuo ng hugis «T» na minamarkahan ng dalawang simboryo.
+238	Natapos ang katabing ribat ng Sousse
+239	Pagtatayo ng moske (850-851)
+240	Pagpapalaki sa ilalim ni Ibrahim II (875-902)
+241	Naitala ang medina ng Sousse sa Pandaigdigang Pamana ng UNESCO
+242	Dakilang Moske ng Mahdia
+243	916 · mga Fatimid
+244	Itinayo noong 916 ng unang kalipang Fatimid sa kanyang bagong kabisera, sa tabing-dagat. Ang malaki at nakausling portada nito, na hango sa mga arko ng tagumpay, ay kauna-unahan sa arkitektura ng mga moske.
+245	Nang itatag ni Ubayd Allah al-Mahdi ang Mahdia noong 909, ipinatayo niya ang moske malapit sa palasyo ng kalipa, sa isang plataporma na binawi mula sa dagat. Matapos wasakin ng mga Espanyol ang lungsod noong 1554, madalas na binago ang gusali. Mula 1961 hanggang 1965, halos lubos itong muling itinayo ayon sa plano ng ika-10 siglo; orihinal ang malaking portada at ang hilagang portiko.
+246	Isang parihabang humigit-kumulang 85 × 55 metro, may makakapal na pader, at may dalawang parisukat na tore sa gilid na nagsilbing imbakan ng tubig-ulan. Hindi kailanman nagkaroon ng minaret ang moske. Ang dambuhalang portada ay nagbubukas ng isang «daan ng karangalan» patungo sa mihrab, sa dulo ng bulwagang may 9 na pasilyo na ang gitnang pasilyo, na mas mataas, ay patungo sa isang simboryo.
+247	Itinatag ni Ubayd Allah al-Mahdi ang Mahdia
+248	Pagtatayo ng Dakilang Moske
+249	Winasak ng mga Espanyol ang lungsod
+250	Muling pagtatayo ayon sa orihinal na plano (1961-1965)
+251	Dakilang Moske ng Sfax
+252	bandang 850 · mga Aghlabid
+253	Sa puso ng medina ng Sfax, isang moske mula ika-9 na siglo na ang silangang harapan, na inukit sa panahon ng mga Zirid, at ang minaret na ginaya sa Kairouan ay mga obra maestra ng sining ng Ifriqiya.
+254	Itinayo ang unang gusali bandang 850, sa ilalim ng mga Aghlabid, kasabay ng mga pader ng Sfax. Pinaganda ang moske sa panahon ng mga Zirid: dalawang inskripsiyon sa harapan ang may petsang 988 at 1085. Binago noong ika-12 siglo, naibalik ang orihinal nitong sukat noong ika-18 siglo, sa isang malaking pagkukumpuni.
+255	Ang silangang harapan ay may ritmo ng mga pinto at bintanang may arkong hugis-bakal ng kabayo, mga nitso at isang kornisang may ngipin; muling ginamit dito ang isang lapidang Bizantino na may ukit na dalawang paboreal. Ang parisukat na minaret, na mga labinlimang metro ang taas, ay nagpapaalala sa minaret ng Kairouan ngunit mas pino ang palamuti: mga inukit na disko at magandang mabulaklak na sulat-Kufic. Ang bulwagan ng pagdarasal, na hugis-eskuwala, ay may 9 na pasilyo.
+256	Unang gusali, sa ilalim ng mga Aghlabid (bandang petsang ito)
+257	Pagpapaganda ng mga Zirid (inskripsiyon sa harapan)
+258	Ikalawang inskripsiyong may petsa sa harapan
+259	Idineklarang makasaysayang monumento
+260	Moske ng Tatlong Pinto
+261	866 · minaret bandang 1440
+262	Isang maliit na dasalan sa medina ng Kairouan, kilala sa buong mundo dahil sa harapan nito mula 866: ang pinakamatandang inukit at pinalamutiang harapan ng moske sa mundong Islamiko.
+263	Bandang 866, isang mangangalakal na Andalusian na nanirahan sa Kairouan, si Muhammad ibn Khayrun al-Ma'afiri, ang nagpatayo ng dasalang ito ng pook; nakasaad sa inskripsiyon sa harapan ang kanyang pangalan at ang petsa. Bandang 1440, sa panahon ng mga Hafsid, kinumpuni ang moske at nilagyan ng maliit na minaret: ipinapaalala ito ng isang banda ng sulat sa harapan.
+264	Ang harapan, na humigit-kumulang pitong metro ang taas, ay may tatlong arko sa ibabaw ng mga sinaunang haligi; sa itaas, mga banda ng nakaumbok na sulat-Kufic ang sumisipi sa Qur'an (surah 33, talata 70-71) at bumabanggit sa pagkakatatag, sa pagitan ng mga palamuting roseta at dahon ng ubas. Sa loob, isang bulwagan ng pagdarasal na humigit-kumulang 9 × 9 metro, walang patyo, na may tatlong pasilyo sa mga sinaunang haligi.
+265	Itinayo ni Muhammad ibn Khayrun
+266	Pagkukumpuni ng mga Hafsid at maliit na minaret (bandang 1440-1441)
+267	Moske ng Youssef Dey
+268	1612 · mga Ottoman
+269	Ang unang moske ng paaralang Hanafi sa Tunis, itinayo ng Ottoman na dey na si Youssef malapit sa Kasbah. Ang minaret nitong may walong gilid, ang una sa Tunis, ay tanda ng paaralan ng mga Ottoman.
+270	Isang inskripsiyon sa loob ang nagsasabing itinayo ito noong 1612, sa utos ni Youssef Dey, na namahala sa Tunis mula 1610 hanggang 1637. Kinumpuni sa katapusan ng ika-19 na siglo sa ilalim ni Ali Bey, naging sangay ito ng unibersidad ng Zitouna noong 1926. Nakahimlay rito ang dey sa isang mausoleo, ang unang halimbawa sa Tunis ng moskeng may libingan.
+271	Ang bulwagan ng pagdarasal, na napalilibutan ng mga patyo sa tatlong panig, ay may 9 na pasilyo at 7 hanay; may simboryong nakataas sa harap ng mihrab. Ang minbar ay yari sa mamposteriya na binalutan ng may-kulay na marmol, samantalang kahoy ang minbar ng mga moskeng Maliki. Ang minaret na may walong gilid ay nagtatapos sa isang balkonaheng may bubong at bubong na hugis-piramide na may berdeng tisa, gaya ng mausoleo.
+272	Itinayo ni Youssef Dey (inskripsiyon)
+273	Pagkamatay ni Youssef Dey, inilibing sa kanyang mausoleo
+274	Sangay ng unibersidad ng Zitouna
+275	Moske ng Hammouda Pacha
+276	1655 · mga Muradid
+277	Ang ikalawang moskeng Hanafi sa Tunis, itinayo noong 1655 ng bey na si Hammouda Pacha. Ang payat nitong minaret na may walong gilid ay nangingibabaw sa kalye Sidi Ben Arous, sa medina.
+278	Si Hammouda Pacha, bey ng dinastiyang Muradid, ang nagpatayo ng moske noong 1655, sa kanto ng kalye Sidi Ben Arous at kalye ng Kasbah. Gaya ni Youssef Dey bago siya, nagpagawa siya rito ng sarili niyang mausoleo, sa patyo: sinasabing ang libingang ito ang naging inspirasyon, pagkaraan ng mahabang panahon, ng mausoleo ni Pangulong Bourguiba sa Monastir.
+279	Isang gusaling Ottoman mula ika-17 siglo: pintuang marmol, mga bubong na berdeng tisa at tatlong patyo. Ang bulwagan ng pagdarasal, na humigit-kumulang 24 × 17 metro, ay may 7 pasilyo sa 48 haligi; ang mga pader nito ay binalutan ng marmol at inukit na yeso, na may palamuting bulaklak at may-kulay na marmol na may impluwensyang Italyano. Bihira sa Tunis: bumubukas ang patyo sa kalye sa pamamagitan ng malalapad na bintanang may rehas. Ang minaret na may walong gilid ay may balkonahe at bubong na hugis-piramide sa tuktok.
+280	Itinayo ni Hammouda Pacha Bey
+281	Pagkukumpuni (1960-1961)
+282	Moske ng Sidi Mahrez (moske ni Mohamed Bey)
+283	1692-1697 · mga Muradid
+284	Sa mga puti nitong simboryo, na makikita sa sagisag ng lungsod ng Tunis, ito ang tanging moske sa Tunisia na itinayo ayon sa huwaran ng malalaking moske ng Istanbul. Nakaharap ito sa zawiya ni Sidi Mahrez, ang patron ng medina.
+285	Sinimulan ni Mohamed Bey el-Mouradi ang pagtatayo nito sa pagitan ng 1692 at 1697, bilang parangal kay Sidi Mahrez (Mahrez ibn Khalaf, ika-10 siglo), sa pook ng Bab Souika. Dahil sa kaguluhang pampulitika sa katapusan ng ika-17 siglo, hindi natapos ang gawain: hindi kailanman nagkaroon ng minaret ang moske. Kinumpuni ito mula 1984, kasama ang pook ng Bab Souika.
+286	Nakapatong sa isang plataporma, ang parisukat na bulwagan ng pagdarasal (28 metro bawat gilid) ay natatakpan ng malaking gitnang simboryo na halos 16 metro ang diyametro, na napalilibutan ng mga kalahating simboryo at maliliit na simboryo sa mga sulok, gaya ng moske ng Sultan Ahmet sa Istanbul. Mga tisang seramiko ng Iznik, sa kulay asul, berde at «pulang kamatis», ang nagpapalamuti sa mga haligi at sa pader ng mihrab.
+287	Sinimulan ni Mohamed Bey el-Mouradi ang pagtatayo
+288	Natapos ang gawain, walang minaret
+289	Pagkukumpuni kasama ang pook ng Bab Souika
+290	Zawiya ni Sidi Sahbi (mausoleo ng Barbero)
+291	Ika-17 siglo · mga Muradid
+292	Ang mausoleo ni Abu Zama'a al-Balawi, kasamahan ng Propeta ﷺ, na tinatawag ng mga taga-Kairouan na «Sidi Sahbi»: ang patron ng Kairouan. Dahil sa mga patyo nitong nababalutan ng seramiko at inukit na yeso, isa ito sa pinakamagagandang monumento ng lungsod.
+293	Namatay sa labanan si Abu Zama'a al-Balawi noong 654 (taong 34 ng Hijra). Sinasabing dala-dala niya ang ilang hibla ng balbas ng Propeta ﷺ, kaya tinawag itong «mausoleo ng Barbero». Lubos na inayos ang lumang gusali noong ika-17 siglo ng mga bey na Muradid: muling itinayo ni Hammouda Pacha ang zawiya, ang madrasa at ang minaret bandang 1662, at pagkatapos ay muling ginawa ni Mohamed Bey ang simboryo ng mausoleo bandang 1681-1685.
+294	Isang malawak na kompleks sa labas ng mga pader ng medina: patyong pasukan at minaret sa istilong Andalusian, patyong may mga haligi, bulwagang may simboryo, at saka isang patyong ang mga pader ay nababalutan ng makukulay na seramiko at pinong inukit na yeso, na nasa harap ng silid-libingan. Isang madrasa, na may mga silid ng mag-aaral at bulwagan ng pagdarasal, ang bumubuo sa kompleks.
+295	Isa ito sa mga lugar na pinakadinadalaw ng mga Tunisian, lalo na sa pista ng Mawlid; dito rin ginaganap ang mga kasunduan sa kasal at mga pagtutuli. Noong unang panahon, dito nagtitipon ang mga karaban ng Maghreb bago umalis para sa peregrinasyon sa Mecca.
+296	Pagkamatay ni Abu Zama'a al-Balawi (taong 34 ng Hijra)
+297	Zawiya, madrasa at minaret ni Hammouda Pacha (bandang petsang ito)
+298	Bagong simboryo ng mausoleo ni Mohamed Bey (1681-1685)
+299	Dakilang Moske ng Testour
+300	bandang 1630 · mga Andalusian
+301	Itinayo ng mga Andalusian na pinalayas mula sa Espanya sa simula ng ika-17 siglo, pinagsasama nito ang mga tradisyong Tunisian at ang sining na Hispano-Moorish. May orasan ang minaret nito na pabaligtad ang ikot ng mga kamay.
+302	Matapos palayasin ang mga Morisco mula sa Espanya (1609-1614), marami ang nanirahan sa lambak ng Medjerda at muling itinatag ang Testour. Itinayo ang moske sa unang ikatlong bahagi ng ika-17 siglo, marahil bago ang 1631, ni Mohamed Tagharinou, isang Andalusian na nanirahan sa lungsod. Idinagdag noong ika-18 siglo ang ikalawang patyo at isang silid ng paghuhugas (wudu). Noong 2014, muling pinaandar ng mga residente at mga samahan ang orasan ng minaret, na halos tatlong siglong nakahinto.
+303	Ang plano ng bulwagan ng pagdarasal (9 na pasilyo) ay sumusunod sa tradisyon ng Kairouan, ngunit Andalusian ang mga bubong na tisa, ang palamuting stucco at ang minaret. May taas na 22.50 metro, ang minaret ay binubuo ng parisukat na toreng ladrilyo at bato, sa paraang Toledo, at sa ibabaw nito ay toreng may walong gilid na pinalamutian ng seramiko: nagpapaalala ito sa mga kampanaryo ng Aragon. Sa patyo, isang orasang-araw mula 1761 ang nagpapakita noon ng oras ng pagdarasal.
+304	Dumating sa Tunisia ang mga Morisco, na pinalayas mula sa Espanya (1609-1614)
+305	Natapos ang moske (marahil bago ang petsang ito)
+306	Orasang-araw sa patyo
+307	Muling pinaandar ang orasan ng minaret
+308	Moske ng Malik ibn Anas (Carthage)
+309	2003 · makabago
+310	Isang malaking makabagong moske na itinayo sa isang burol ng Carthage, sa gitna ng pook-arkeolohiko. Tanaw mula sa malayo ang minaret nitong 55 metro; makikita ito sa salaping papel na sampung dinar.
+311	Itinayo mula 2000 hanggang 2003 ayon sa plano ng arkitektong si Ayad Sriha, una itong tinawag na «El Abidine». Noong Nobyembre 2012, ipinangalan ito kay Imam Malik ibn Anas (namatay noong 795), tagapagtatag ng paaralang Maliki na sinusunod sa Tunisia. Mula rito isinasahimpapawid ng radyo Zitouna FM ang limang pagdarasal sa araw-araw.
+312	Hango ito sa malalaking moske ng Tunisia: liwasan, patyong 1 500 m² at bulwagan ng pagdarasal na hypostyle na may 64 na haligi na kayang tumanggap ng 1 000 mananampalataya. Ang mihrab na puting marmol na may kalupkop na berde at pula ay may simboryong sampung metro ang diyametro sa itaas. Ang mga pader ay nababalutan ng bato ng Kedhel, inukit na stucco at seramikong may disenyong Andalusian; ang sahig ay nilatagan ng mga alpombra ng Kairouan.
+313	Paglalagay ng unang bato
+314	Pagpapasinaya
+315	Ipinangalan ito kay Imam Malik ibn Anas
+316	Moske ng Fadhloun at mga moskeng Ibadi ng Djerba
+317	Ika-14 na siglo · Djerba
+318	Sa labasan ng Midoun, isang puting moskeng mukhang maliit na kuta, tipikal sa isla ng Djerba, kung saan naninirahan ang isang pamayanang Muslim na Ibadi. Idineklara itong monumento mula 2022 at kabilang sa mga lugar ng Djerba na naitala sa Pandaigdigang Pamana noong 2023.
+319	Itinayo noong ika-14 na siglo, ang moske ng Fadhloun ay kabilang sa mayamang pangkat ng mga moske ng Djerba, na kadalasang Ibadi, na itinayo sa mga bukid at sa baybayin. Sa makakapal nilang pader at maliliit na minaret, marami ang nagsilbi ring himpilan ng bantay: bumuo sila ng ikalawang hanay ng depensa sa likod ng mga kuta sa baybayin.
+320	Ang parisukat na bulwagan ng pagdarasal, na humigit-kumulang 7.5 metro bawat gilid, ay natatakpan ng siyam na maliliit na simboryo na pinapasan ng apat na haligi; ang mihrab ay isang payak na nitso at ang minbar, na yari sa bato, ay may tatlong baitang lamang. Isang pandak na minaret na may dalawang palapag ang nangingibabaw sa bubong. Sa paligid: isang patyong may «mihrab ng tag-init», isang imbakan ng tubig-ulan, dalawang silid para sa pagtuturo ng Qur'an, isang panaderya sa ilalim ng lupa at isang gilingan ng butil.
+321	Ang mga moskeng ito ay maliliit na sentro ng buhay: pagdarasal, pagtuturo ng Qur'an, tinapay at butil para sa pook. Ang maputi at payak nilang arkitektura ay isa sa mga mukha ng Djerba na kinilala ng UNESCO noong 2023.
+322	ika-14 na s.
+323	Pagtatayo ng moske ng Fadhloun (ika-14 na siglo)
+324	Idineklarang monumento (kautusan ng 15 Marso 2022)
+325	Naitala ang Djerba sa Pandaigdigang Pamana ng UNESCO
+326	Moske ng Kasbah (Tunis)
+327	1231-1235 · mga Hafsid
+328	Itinayo ng tagapagtatag ng dinastiyang Hafsid sa plasa ng Kasbah, taglay nito ang isa sa pinakamagagandang minaret ng Tunis, sa istilong Almohad ng Marrakech at Sevilla.
+329	Itinayo ito mula 1231 hanggang 1235 sa utos ni Abu Zakariya Yahya, tagapagtatag ng dinastiyang Hafsid, na dating gobernador ng Sevilla. Noong una ay moske ito ng korte ng mga pinunong nanirahan sa Kasbah, at pagkatapos ay naging isa sa mga moske ng Biyernes ng lungsod; ito ang unang itinayo sa Tunis pagkatapos ng Zitouna. Sa panahon ng mga Ottoman, dito nagdarasal ayon sa paaralang Hanafi.
+330	Ang bulwagan ng pagdarasal, na mas malalim kaysa malapad, ay may 7 pasilyo at 9 na hanay sa mga haliging marmol na may kapitel na Hafsid; ang mihrab ay may simboryong may estalaktita na inukit na yeso. Ang parisukat na minaret, na itinayo noon pang 1233, ay nababalutan ng lambat ng mga rombo na batong kulay okre: naging huwaran ito ng kasalukuyang minaret ng Zitouna.
+331	Simula ng pagtatayo (Abu Zakariya Yahya)
+332	Natapos ang minaret
+333	Natapos ang pagtatayo ng moske
+334	Dakilang Moske ng Monastir
+335	Ika-9 na siglo · pinalaki hanggang ika-18 siglo
+336	Nakaharap sa dagat, katabi ng tanyag na ribat, isang payak at marikit na moskeng bato, na pinalaki sa bawat panahon mula ika-9 na siglo.
+337	Ang kasalukuyang bulwagan ng pagdarasal ay bunga ng apat na yugto: isang maliit na dasalang may bobeda noong ika-9 na siglo, isang pagpapalaki noong ika-11 siglo (panahon ng mga Zirid) kasama ang mihrab, at pagkatapos, sa panahon ng mga Hafsid, isang parisukat na minaret at dalawa pang pasilyo. Idinagdag ang isang panlabas na galeriya noong ika-18 siglo. Noong Oktubre 2013, dahil sa dalawang pagyanig, bahagyang gumuho ang tuktok ng minaret.
+338	Mga harapang batong tinabas, na binibigyang-buhay ng mga balangkas ng pinto at bintana at ng mga arko ng isang galeriya. Walang patyo ang moske sa harap ng bulwagan ng pagdarasal. Ang mihrab mula ika-11 siglo, na may palamuting Zirid at mabulaklak na sulat-Kufic, ay walang simboryo sa itaas, na bihira sa Ifriqiya noong Gitnang Panahon.
+339	ika-9 na s.
+340	Unang dasalang may bobeda (ika-9 na siglo)
+341	ika-11 s.
+342	Pagpapalaki ng mga Zirid at mihrab (ika-11 siglo)
+343	ika-18 s.
+344	Panlabas na galeriya (ika-18 siglo)
+345	Bahagyang gumuho ang tuktok ng minaret matapos ang dalawang lindol

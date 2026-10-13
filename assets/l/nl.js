@@ -156,7 +156,7 @@ window.TRADUCTIONS.nl = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "Tik op een punt voor de naam, de route en de pagina. De gouden punten hebben een geschiedenispagina. Ontbreekt er een moskee of gebedsruimte?",
 "Tous nos services": "Al onze diensten",
 "Toutes les grandes mosquées et mosquées historiques": "Alle grote en historische moskeeën",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Alle moskeeën van het land op één kaart, en de geschiedenis van de grootste. Gratis, in 15 talen, en overal ter wereld.",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "Alle moskeeën van het land op één kaart, en de geschiedenis van de grootste. Gratis, in 21 talen, en overal ter wereld.",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "Alle foto's komen van Wikimedia Commons, onder een vrije licentie (CC BY, CC BY-SA, CC0 of publiek domein). Dank aan de makers.",
 "Très bien": "Zeer goed",
 "Type": "Type",

@@ -156,7 +156,7 @@ window.TRADUCTIONS.id = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "Sentuh titik untuk melihat nama, rute dan halamannya. Titik emas memiliki halaman sejarah. Ada masjid atau musala yang belum ada?",
 "Tous nos services": "Semua layanan kami",
 "Toutes les grandes mosquées et mosquées historiques": "Semua masjid besar dan bersejarah",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Semua masjid di negeri ini dalam satu peta, beserta sejarah masjid-masjid terbesarnya. Gratis, dalam 15 bahasa, dan di seluruh dunia.",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "Semua masjid di negeri ini dalam satu peta, beserta sejarah masjid-masjid terbesarnya. Gratis, dalam 21 bahasa, dan di seluruh dunia.",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "Semua foto berasal dari Wikimedia Commons, dengan lisensi bebas (CC BY, CC BY-SA, CC0 atau domain publik). Terima kasih kepada para pembuatnya.",
 "Très bien": "Sangat baik",
 "Type": "Jenis",

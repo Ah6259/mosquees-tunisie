@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Fabrique les pages du site « Mosquées en Tunisie » (pages statiques, bonnes pour Google) :
   - donnees/lieux.js            : tous les lieux de prière pour la carte (depuis donnees/mosquees.json, robot mosquees_donnees.py)
-  - mosquee/<page>/index.html   : une page par GRANDE mosquée (textes : tools/contenu_grandes_*.py + tools/langues_plus/, 15 langues)
+  - mosquee/<page>/index.html   : une page par GRANDE mosquée (textes : tools/contenu_grandes_*.py + tools/langues_plus/, 21 langues)
                                   + une page par autre mosquée ayant une fiche Wikidata (photo, noms, année, résumé Wikipédia, carte, liens)
   - grandes-mosquees/index.html : la liste de toutes ces pages
   - <gabarit>/index.html        : pages écrites à la main dans tools/gabarits/<page>.html (À propos…)
@@ -20,13 +20,14 @@ from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 import pages_langues as PL  # noqa: E402
 import langues_plus  # noqa: E402
 
-VERSION = "20261013c"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261013d"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
-LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]
-NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]      # toutes sauf fr, ar, en (écrits dans les pages)
+LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
+NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]      # toutes sauf fr, ar, en (écrits dans les pages)
 ANCIENNES = ["tr", "id", "ur", "de", "es"]   # celles de assets/langues.js et assets/trad/*.js (affichage sur place de la page française)
 NOM_LANGUE = {"fr": "Français", "ar": "العربية", "en": "English", "tr": "Türkçe", "id": "Bahasa Indonesia", "ur": "اردو", "de": "Deutsch", "es": "Español",
-              "it": "Italiano", "pt": "Português", "nl": "Nederlands", "zh": "中文", "ja": "日本語", "ko": "한국어", "hi": "हिन्दी"}
+              "it": "Italiano", "pt": "Português", "nl": "Nederlands", "zh": "中文", "ja": "日本語", "ko": "한국어", "hi": "हिन्दी",
+              "ru": "Русский", "vi": "Tiếng Việt", "th": "ไทย", "tl": "Filipino", "sv": "Svenska", "ro": "Română"}
 CSP = ("default-src 'self'; script-src 'self' https://gc.zgo.at https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; "
        "font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://cdnjs.cloudflare.com https://prix-eaux-tunisie.goatcounter.com; "
        "frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com "
@@ -574,7 +575,7 @@ def main():
         if "mosquee/" + nom + "/" not in garder:
             shutil.rmtree(os.path.join(RACINE, "mosquee", nom))
             print("page retirée :", "mosquee/" + nom + "/")
-    # une vraie page par langue (ar/, en/, tr/ … hi/ : 14 dossiers), tirée de chaque page française
+    # une vraie page par langue (ar/, en/, tr/ … ro/ : 20 dossiers), tirée de chaque page française
     CLE_TRAD[""] = "accueil"; META[""] = PL.ACCUEIL
     langues_js = PL.lire_traductions(os.path.join(RACINE, "assets", "langues.js"))
     for l in langues_plus.PLUS:                                   # interface des 7 nouvelles langues : mêmes clés que langues.js

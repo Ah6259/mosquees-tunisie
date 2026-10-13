@@ -156,7 +156,7 @@ window.TRADUCTIONS.ur = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "نام، راستے اور صفحے کے لیے کسی نقطے کو چھوئیں۔ سنہری نقطوں کا تاریخی صفحہ ہے۔ کوئی مسجد یا نماز کی جگہ غائب ہے؟",
 "Tous nos services": "ہماری تمام خدمات",
 "Toutes les grandes mosquées et mosquées historiques": "تمام بڑی اور تاریخی مساجد",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "ملک کی تمام مساجد ایک نقشے پر، اور سب سے بڑی مساجد کی تاریخ۔ مفت، 15 زبانوں میں، اور پوری دنیا میں۔",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "ملک کی تمام مساجد ایک نقشے پر، اور سب سے بڑی مساجد کی تاریخ۔ مفت، 21 زبانوں میں، اور پوری دنیا میں۔",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "تمام تصاویر وکیمیڈیا کامنز سے ہیں، آزاد لائسنس کے تحت (CC BY، CC BY-SA، CC0 یا عوامی ملکیت)۔ ان کے مصنفین کا شکریہ۔",
 "Très bien": "بہت اچھا",
 "Type": "قسم",

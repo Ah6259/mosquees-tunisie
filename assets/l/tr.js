@@ -156,7 +156,7 @@ window.TRADUCTIONS.tr = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "Adı, yol tarifi ve sayfası için bir noktaya dokunun. Altın renkli noktaların tarih sayfası vardır. Bir cami veya mescit mi eksik?",
 "Tous nos services": "Tüm hizmetlerimiz",
 "Toutes les grandes mosquées et mosquées historiques": "Bütün büyük ve tarihî camiler",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Ülkedeki tüm camiler tek haritada, en büyüklerinin tarihiyle. Ücretsiz, 15 dilde ve dünyanın her yerinde.",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "Ülkedeki tüm camiler tek haritada, en büyüklerinin tarihiyle. Ücretsiz, 21 dilde ve dünyanın her yerinde.",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "Bütün fotoğraflar özgür lisanslı (CC BY, CC BY-SA, CC0 veya kamu malı) olarak Wikimedia Commons'tan alınmıştır. Sahiplerine teşekkürler.",
 "Très bien": "Çok iyi",
 "Type": "Tür",

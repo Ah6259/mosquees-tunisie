@@ -38,7 +38,7 @@
 37	Ordinate per città. Il punto verde segnala una foto.
 38	Grande Moschea di Kairouan. Foto
 39	Le moschee della Tunisia: la mappa e la storia
-40	Tutte le moschee del paese su una mappa e la storia delle più grandi. Gratis, in 15 lingue, e ovunque nel mondo.
+40	Tutte le moschee del paese su una mappa e la storia delle più grandi. Gratis, in 21 lingue, e ovunque nel mondo.
 41	luoghi di preghiera sulla mappa
 42	Cercare una moschea o una città
 43	Intorno a me

@@ -1,0 +1,346 @@
+0	Moschei din Tunisia și din lume
+1	Lumea întreagă este pe hartă
+2	Exemple:
+3	Mecca
+4	Istanbul
+5	Paris
+6	Cairo
+7	Vezi lumea
+8	În afara Tunisiei: scrieți un oraș în căutarea de mai sus sau atingeți un exemplu.
+9	Cu vocea șeicului Ali El Barrak (sura Al-Fatiha), de pe canalul său oficial.
+10	Acasă
+11	Despre
+12	Despre site și metodă
+13	Un site gratuit și independent pentru a găsi o moschee oriunde în Tunisia și a descoperi istoria marilor moschei ale țării.
+14	De unde provin locurile?
+15	<b>OpenStreetMap</b>, harta liberă făcută de contribuitorii ei: toate locurile de rugăciune musulmane din Tunisia, cu poziția și numele lor, recitite la fiecare 3 luni de robotul nostru.
+16	<b>Wikidata</b>: pentru moscheile care au acolo o fișă, numele în mai multe limbi, anul întemeierii, protecția ca monument, fotografia și articolele din Wikipedia.
+17	<b>Vizitatorii</b>: oricine poate semnala o moschee sau o sală de rugăciune care lipsește. Ea este publicată automat (cam la fiecare 2 ore), „de confirmat” până când un alt vizitator o confirmă.
+18	Textele
+19	Paginile marilor moschei sunt scrise de noi, pornind de la surse serioase citate în josul fiecărei pagini (Wikipedia, Qantara, Discover Islamic Art, UNESCO). Celelalte pagini arată rezumatul articolului din Wikipedia, citat cu legătura și licența sa (CC BY-SA 4.0). Versetul din Coran este dat în arabă, cu o traducere recunoscută a sensului său (QuranEnc).
+20	Cum este verificat un loc semnalat
+21	Robotul refuză o poziție din afara Tunisiei sau un tip necunoscut, scoate numerele de telefon și legăturile (fără publicitate) și limitează numărul de semnalări pe telefon.
+22	Un loc semnalat la mai puțin de 40 m de un loc deja cunoscut contează ca o confirmare (fără dubluri).
+23	Dacă mai mulți vizitatori spun „nu mai există” (mai mulți decât confirmările), locul este scos de pe hartă.
+24	Recitarea
+25	Vocea este a șeicului Ali El Barrak (1899-1981), mare recitator tunisian al Coranului. Videoclipurile vin de pe canalul său oficial de YouTube și sunt doar integrate (redate la YouTube, prin domeniul youtube-nocookie.com): nimic nu este copiat. Sunetul pornește numai după alegerea dumneavoastră; butonul rotund din antet îl oprește sau îl repornește.
+26	Datele dumneavoastră
+27	Poziția dumneavoastră servește numai la afișarea locurilor apropiate, în telefonul dumneavoastră: ea este trimisă doar dacă semnalați un loc (și atunci doar poziția locului). Un identificator anonim al browserului împiedică aceeași persoană să voteze de mai multe ori. Statistici de vizită anonime, fără cookie-uri. Fără publicitate.
+28	Creditele fotografiilor
+29	Toate fotografiile vin de pe Wikimedia Commons, sub licență liberă (CC BY, CC BY-SA, CC0 sau domeniu public). Mulțumim autorilor lor.
+30	Fotografiile celorlalte moschei: afișate de pe Wikimedia Commons, autorul și licența sub fiecare fotografie.
+31	Mari moschei
+32	Mari moschei și moschei istorice din Tunisia
+33	Marile moschei povestite în detaliu, apoi toate moscheile din Tunisia care au o fișă în Wikidata: fotografie, istorie și legături.
+34	pagini de moschei
+35	Marile moschei
+36	Alte moschei istorice
+37	Ordonate pe orașe. Punctul verde semnalează o fotografie.
+38	Marea Moschee din Kairouan. Foto
+39	Moscheile din Tunisia: harta și istoria
+40	Toate moscheile țării pe o hartă și istoria celor mai mari dintre ele. Gratuit, în 21 de limbi și peste tot în lume.
+41	locuri de rugăciune pe hartă
+42	Căutați o moschee sau un oraș
+43	În jurul meu
+44	Atingeți un punct pentru nume, traseu și pagina lui. Punctele aurii au o pagină de istorie. Lipsește o moschee sau o sală de rugăciune?
+45	Semnalați-o
+46	Semnalați o moschee sau o sală de rugăciune
+47	Vezi
+48	Marile moschei ale Tunisiei
+49	Istoria lor, arhitectura lor, fotografii și documente serioase.
+50	Și toate celelalte moschei istorice
+51	„Ci întrețin moscheile lui Allah doar aceia care cred în Allah și în Ziua de Apoi, împlinesc Rugăciunea [As-Salat], aduc Dania [Az-Zakat] și nu se tem decât de Allah. Poate că aceia vor fi dintre cei bine călăuziți!”
+52	Sura At-Tawba (9), versetul 18 — traducerea sensului: Islam4ro.com,
+53	Recitarea șeicului Ali El Barrak
+54	Marele recitator tunisian al Coranului (1899-1981), în lectura Qalun, cea din Tunisia. Alegeți o recitare: ea se aude în micul player din josul ecranului.
+55	Juz' 'Amma (complet)
+56	Al-Fatiha
+57	Ya-Sin
+58	Recitare: șeicul Ali El Barrak (1899-1981), canal oficial
+59	Apa în Coran și cisternele („majel”) deschise tuturor
+60	Pe site-ul nostru Points d'eau Tunisie: versete și hadisuri despre apă și harta cișmelelor, izvoarelor și cisternelor.
+61	Părerea dumneavoastră
+62	Toate serviciile noastre
+63	Descoperiți Islamul și Coranul, în mai multe limbi
+64	Pe site-ul nostru The Message: mesajul Islamului explicat simplu, pliante gratuite de tipărit, Coranul tradus și posturi de radio.
+65	The Message: descoperiți Islamul
+66	O observație, o greșeală, o idee? Scrieți-ne: fiecare mesaj este citit.
+67	Nota dumneavoastră (opțional)
+68	Foarte bine
+69	Bine
+70	Mediu
+71	Nu prea bine
+72	Mesajul dumneavoastră
+73	E-mailul dumneavoastră (opțional, pentru a vă răspunde)
+74	Trimite
+75	Părerea dumneavoastră este trimisă creatorului site-ului (serviciul Formspree). Nimic nu este trimis fără un clic pe „Trimite”.
+76	O moschee care lipsește de pe hartă, o sală de rugăciune într-o gară, un spital, o universitate, un centru comercial… Ajutați-i pe ceilalți să găsească unde să se roage. După o verificare automată, locul este publicat pe hartă, „de confirmat” până când un alt vizitator îl confirmă.
+77	Tip
+78	Nume sau reper
+79	Localizează-mă (GPS)
+80	Poziția automată nu este întotdeauna exactă: mutați reperul (sau atingeți harta) pentru a-l pune pe intrarea locului de rugăciune, apoi confirmați.
+81	Confirmă această poziție
+82	Nimic personal nu este trimis: doar tipul, numele locului și poziția. Numerele de telefon și publicitatea sunt scoase automat. Un loc dispare dacă mai mulți vizitatori spun că nu mai există.
+83	— alegeți —
+84	Moschee
+85	Sală de rugăciune
+86	Ex.: Zitouna, Kairouan, Sousse…
+87	Ce vă place, ce lipsește, o greșeală de corectat…
+88	nume@example.com
+89	Opțional
+90	Curtea și minaretul Marii Moschei din Kairouan
+91	Foto
+92	Traseu
+93	Vezi pe hartă
+94	Prezentare
+95	Istorie
+96	Arhitectură
+97	Rol și influență
+98	Date importante
+99	Vizitare
+100	Este mai întâi un loc de rugăciune: veniți în ținută decentă, descălțați-vă pentru a intra în sala de rugăciune și evitați orele de rugăciune. În mai multe mari moschei, vizitatorii nemusulmani pot intra în curte, dar nu în sala de rugăciune. Programul se schimbă: informați-vă la fața locului.
+101	Pe hartă
+102	Documente și legături
+103	Surse
+104	Texte redactate de Mosquées en Tunisie pornind de la documentele de mai sus (Wikipedia, Qantara, Discover Islamic Art, UNESCO), verificate la 09.10.2026.
+105	Fotografii: Wikimedia Commons, autorul și licența sub fiecare fotografie.
+106	Poziție: OpenStreetMap (ODbL) și Wikidata.
+107	Alte mari moschei
+108	Toate marile moschei și moscheile istorice
+109	Moschei istorice
+110	Extras din Wikipedia
+111	Numele ei în diferite limbi
+112	Fișă creată automat pornind de la Wikidata (CC0), Wikipedia (CC BY-SA 4.0), Wikimedia Commons și OpenStreetMap (ODbL).
+113	O greșeală? Corectați-o pe Wikidata sau OpenStreetMap, ori scrieți-ne (Părerea dumneavoastră): pagina este refăcută la fiecare 3 luni.
+114	Monument protejat
+115	Fotografii
+116	Întemeiată în
+117	Moschee ibadită
+118	Scrieți mesajul înainte de a trimite.
+119	Mesaj prea lung: cel mult {n} caractere.
+120	Mulțumim! Părerea dumneavoastră a fost trimisă.
+121	Se trimite…
+122	Trimiterea a eșuat — verificați conexiunea și încercați din nou mai târziu.
+123	franceză
+124	engleză
+125	arabă
+126	Nu există un rezumat Wikipedia în limba dumneavoastră: iată-l în {l}.
+127	Cu pagină de istorie
+128	Confirmat de vizitatori
+129	Semnalat de un vizitator, de confirmat
+130	ibadită
+131	Istorie, fotografii și documente
+132	Traseu (Google Maps)
+133	Este adevărat
+134	Nu mai există
+135	Niciun loc găsit. Încercați alt nume sau un oraș apropiat, ori semnalați locul dacă lipsește.
+136	{n} locuri găsite
+137	Rezultate
+138	Cele mai apropiate de dumneavoastră
+139	Mulțumim! Va fi luat în seamă în aproximativ 2 ore.
+140	Se caută poziția dumneavoastră…
+141	Poziție indisponibilă: permiteți localizarea sau căutați un oraș.
+142	Reper pus: verificați-l, apoi „Confirmă această poziție”.
+143	Niciun loc semnalat în ultimele 30 de zile: fiți primul!
+144	Ultimele locuri semnalate de vizitatori
+145	confirmat de {n} vizitatori
+146	de confirmat
+147	semnalat la
+148	vezi pe hartă
+149	Poziție indisponibilă: atingeți mai bine locul pe hartă.
+150	Puneți mai întâi reperul: „Localizează-mă (GPS)” sau atingeți harta.
+151	✔ Poziție confirmată
+152	Alegeți: moschee sau sală de rugăciune.
+153	Puneți reperul pe hartă, apoi „Confirmă această poziție”.
+154	Această poziție nu este în Tunisia.
+155	Mulțumim! Locul va apărea pe hartă în aproximativ 2 ore („de confirmat” până când un alt vizitator îl confirmă).
+156	Trimiterea a eșuat — verificați conexiunea și încercați din nou.
+157	Hartă
+158	Semnalează un loc
+159	Moschei în Tunisia
+160	Gratuit · hartă, fotografii, istorie
+161	Distribuie această pagină
+162	Distribuie
+163	Limbă
+164	Rubrici
+165	Harta moscheilor
+166	Mari moschei și moschei istorice
+167	Puncte de apă în Tunisia
+168	Orele de rugăciune și deschiderea pentru vizitatori se schimbă: informați-vă la fața locului. Acest site nu este un serviciu oficial.
+169	Locuri: © contribuitorii OpenStreetMap (ODbL), Wikidata și vizitatorii site-ului. Texte din Wikipedia sub licența CC BY-SA 4.0. Fotografii: Wikimedia Commons —
+170	credite
+171	toate drepturile rezervate.
+172	toate drepturile rezervate
+173	Site-ul:
+174	Priviți videoclipul:
+175	Videoclip de prezentare
+176	Recitare: șeicul Ali El Barrak
+177	Oprește recitarea
+178	Canal oficial
+179	Recitarea Coranului de către șeicul Ali El Barrak
+180	Ascultați recitarea șeicului Ali El Barrak
+181	Harta tuturor moscheilor țării și istoria marilor ei moschei.
+182	Intrați cu recitarea șeicului Ali El Barrak
+183	Deschide site-ul
+184	Distribuie videoclipul
+185	Intrați fără sunet
+186	În alte părți ale lumii: măriți o regiune sau căutați un oraș pentru a-i vedea moscheile.
+187	Se caută moscheile din această zonă…
+188	{n} locuri de rugăciune în această zonă.
+189	Niciun loc de rugăciune cunoscut aici în OpenStreetMap.
+190	OpenStreetMap nu răspunde deocamdată: încercați din nou peste o clipă.
+191	Culoare = țară:
+192	Țară neprecizată
+193	Sursă: OpenStreetMap, citit în timp real
+194	Căutați un oraș din lume
+195	Se caută orașul în lume…
+196	Niciun oraș găsit în lume cu acest nume.
+197	Hartă centrată pe: {l} (căutare Nominatim, © contribuitorii OpenStreetMap).
+198	Căutarea de orașe nu răspunde deocamdată: încercați din nou peste o clipă.
+199	<b>În alte părți ale lumii</b>: OpenStreetMap este citit în timp real pentru zona afișată pe hartă (5 copii ale OpenStreetMap, serverele Overpass), fiecare țară cu culoarea ei. Un oraș din lume este găsit cu <b>Nominatim</b> (© contribuitorii OpenStreetMap), numai când validați căutarea.
+200	În afara Tunisiei, zona afișată pe hartă (nu poziția dumneavoastră exactă) este trimisă serverelor OpenStreetMap pentru a-i citi moscheile; un oraș căutat în lume este trimis către Nominatim.
+201	Tunis
+202	Kairouan
+203	Sousse
+204	Mahdia
+205	Sfax
+206	Testour
+207	Cartagina
+208	Djerba (Midoun)
+209	Monastir
+210	Moscheea Zitouna
+211	698 · reconstruită în 864
+212	Marea moschee a medinei din Tunis, cea mai veche și cea mai întinsă din capitală. Timp de peste o mie de ani a fost și o mare universitate a islamului.
+213	Potrivit tradiției, locul de rugăciune este întemeiat în 698 de Hassan ibn al-Numan, după cucerirea Cartaginei; alte surse atribuie întemeierea guvernatorului omeiad Ubayd Allah ibn al-Habhab, în jurul anului 732. Din acest prim edificiu nu a rămas aproape nimic: moscheea este reconstruită în întregime în 864 de emirul aghlabid Abu Ibrahim Ahmad. Fiecare dinastie o înfrumusețează apoi: cupola „bahou” sub ziriți (în jurul anului 990), cisterne și porți sub hafsizi, galeria de est în 1637. Minaretul actual, în stil almohad, datează din 1894.
+214	Ca la Kairouan și la Córdoba, o curte înconjurată de galerii precedă o sală de rugăciune „hipostilă”: circa 160 de coloane antice, aduse în mare parte din Cartagina, formează 15 nave. Nava centrală, mai largă, duce la mihrab, acoperit de o cupolă din secolul al IX-lea. Cupola bahou, la intrarea în sală, alternează piatra ocru cu cărămida roșie. Minaretul din 1894 reia decorul în romburi al minaretului moscheii Kasbah.
+215	Zitouna a fost unul dintre cele mai vechi centre de învățământ din lumea musulmană: fiecare învățat se rezema de o coloană, cu elevii așezați în cerc în jurul lui. Aici s-au format mari juriști malikiți, precum Ibn Arafa, contemporan cu Ibn Khaldun. În 1958, învățământul părăsește moscheea; el continuă astăzi la universitatea Ez-Zitouna. Se spune că rugăciunea nu a fost niciodată întreruptă aici.
+216	Întemeiere potrivit tradiției (Hassan ibn al-Numan)
+217	Reconstrucție completă sub aghlabizi
+218	Cupola bahou (ziriți)
+219	Minaret nou în stil almohad
+220	Învățământul trece de la moschee la universitate
+221	Medina din Tunis înscrisă în patrimoniul mondial UNESCO
+222	Marea Moschee din Kairouan (moscheea Uqba)
+223	670 · forma actuală din 836
+224	Cea mai veche moschee din Maghreb, întemeiată în 670 odată cu orașul Kairouan. A servit drept model tuturor moscheilor din Africa de Nord și face parte din patrimoniul mondial UNESCO.
+225	În 670, cuceritorul Uqba ibn Nafi întemeiază Kairouanul și își așază moscheea în centrul orașului. Mărită și reconstruită în secolele al VIII-lea și al IX-lea, ea își capătă forma actuală în 836, sub emirul aghlabid Ziyadat Allah I. Pe la 862-863, Abu Ibrahim Ahmad prelungește sala de rugăciune și dăruiește minbarul și decorul mihrabului. În secolul al XI-lea, prințul zirit al-Muizz ibn Badis adaugă maqsura de lemn. Kairouanul a fost mult timp socotit al patrulea oraș sfânt al islamului.
+226	Un vast patrulater de circa 9 000 m²: o mare curte pavată, galerii și o sală de rugăciune cu 17 nave, susținută de sute de coloane antice de marmură, granit și porfir, toate diferite. Minaretul, înalt de aproximativ 31 de metri, datează din prima jumătate a secolului al IX-lea: este unul dintre cele mai vechi minarete aflate încă în picioare. Mihrabul din secolul al IX-lea este împodobit cu plăci de ceramică cu reflexe metalice; alături, minbarul de lemn sculptat este cel mai vechi minbar păstrat din lumea musulmană.
+227	Kairouanul a fost capitala religioasă și cărturărească a Ifriqiyei: aici a redactat imamul Sahnun, în secolul al IX-lea, Mudawwana, lucrare fondatoare a ritului malikit urmat în Tunisia și în tot Maghrebul. Biblioteca moscheii a păstrat manuscrise foarte vechi, între care file din celebrul „Coran albastru”.
+228	Întemeiere de către Uqba ibn Nafi, odată cu orașul
+229	Reconstrucție de către Ziyadat Allah I: forma actuală
+230	Minbarul și decorul mihrabului (Abu Ibrahim Ahmad)
+231	Maqsura de lemn a lui al-Muizz ibn Badis (în jurul acestei date)
+232	Kairouan înscris în patrimoniul mondial UNESCO
+233	Marea Moschee din Sousse
+234	850-851 · aghlabizi
+235	La intrarea în medină, o moschee cu înfățișare de fortăreață, ridicată în 850-851 lângă ribatul care apăra coasta. Sobră și puternică, ea face parte din medina din Sousse, patrimoniu mondial UNESCO.
+236	Este ridicată în 850-851 de emirul aghlabid Abu al-Abbas Muhammad, la vreo treizeci de ani după ribatul din Sousse; o inscripție cufică, pe galeriile curții, amintește construirea ei. Este mărită sub emirul Ibrahim al II-lea (875-902), când Sousse devine al doilea oraș al Ifriqiyei.
+237	Ziduri crenelate, turnuri de colț încununate de mici cupole: moscheea seamănă cu o fortăreață și nu are un minaret adevărat, fără îndoială pentru că turnul de veghe al ribatului vecin juca acest rol. Sala de rugăciune are 13 nave; nava centrală și traveea mihrabului, mai largi, formează un „T”, marcat de două cupole.
+238	Ribatul din Sousse, aflat alături, este terminat
+239	Construirea moscheii (850-851)
+240	Mărire sub Ibrahim al II-lea (875-902)
+241	Medina din Sousse înscrisă în patrimoniul mondial UNESCO
+242	Marea Moschee din Mahdia
+243	916 · fatimizi
+244	Construită în 916 de primul calif fatimid în noua sa capitală, pe malul mării. Marele ei portal ieșit în afară, inspirat de arcurile de triumf, este o premieră în arhitectura moscheilor.
+245	Când Ubayd Allah al-Mahdi întemeiază Mahdia, în 909, el pune să se construiască moscheea lângă palatul califal, pe o platformă câștigată de la mare. După distrugerea orașului de către spanioli în 1554, edificiul este adesea refăcut. Între 1961 și 1965 este reconstruit aproape în întregime după planul din secolul al X-lea; marele portal și porticul de nord sunt originale.
+246	Un patrulater de circa 85 × 55 de metri, cu ziduri masive, flancat de două turnuri pătrate care serveau drept rezervoare de apă de ploaie. Moscheea nu a avut niciodată minaret. Portalul monumental deschidea un „drum de onoare” spre mihrab, în fundul unei săli cu 9 nave, a cărei navă centrală, mai înaltă, duce la o cupolă.
+247	Întemeierea Mahdiei de către Ubayd Allah al-Mahdi
+248	Construirea Marii Moschei
+249	Orașul este distrus de spanioli
+250	Reconstrucție după planul de origine (1961-1965)
+251	Marea Moschee din Sfax
+252	pe la 850 · aghlabizi
+253	În inima medinei din Sfax, o moschee din secolul al IX-lea, a cărei fațadă de est, sculptată în epoca zirită, și al cărei minaret, după chipul celui din Kairouan, sunt capodopere ale artei din Ifriqiya.
+254	Prima clădire este construită pe la 850, sub aghlabizi, în același timp cu zidurile cetății Sfax. Moscheea este înfrumusețată în epoca zirită: două inscripții de pe fațadă poartă datele 988 și 1085. Modificată în secolul al XII-lea, ea își recapătă dimensiunile de origine în secolul al XVIII-lea, în timpul unor mari lucrări.
+255	Fațada de est este ritmată de uși și ferestre cu arcuri în potcoavă, de nișe și de o cornișă dantelată; o placă bizantină pe care sunt sculptați doi păuni este refolosită aici. Minaretul pătrat, de vreo cincisprezece metri, amintește de cel din Kairouan, dar are un decor mai fin: discuri sculptate și o frumoasă scriere cufică înflorită. Sala de rugăciune, în formă de echer, are 9 nave.
+256	Prima clădire, sub aghlabizi (în jurul acestei date)
+257	Înfrumusețare zirită (inscripție pe fațadă)
+258	A doua inscripție datată de pe fațadă
+259	Clasată monument istoric
+260	Moscheea celor Trei Porți
+261	866 · minaret pe la 1440
+262	Un mic oratoriu din medina Kairouanului, cunoscut în lumea întreagă pentru fațada sa din 866: cea mai veche fațadă de moschee sculptată și decorată din lumea islamică.
+263	Pe la 866, un negustor andaluz stabilit la Kairouan, Muhammad ibn Khayrun al-Maafiri, pune să se construiască acest oratoriu de cartier; inscripția de pe fațadă îi dă numele și data. Pe la 1440, în epoca hafsidă, moscheea este restaurată și primește un mic minaret: o bandă de pe fațadă amintește acest lucru.
+264	Fațada, înaltă de circa șapte metri, se deschide prin trei arcuri pe coloane antice; deasupra, benzi de scriere cufică în relief citează Coranul (sura 33, versetele 70-71) și întemeierea, între frize de rozete și de frunze de viță. În interior, o sală de rugăciune de circa 9 × 9 metri, fără curte, cu trei nave pe coloane antice.
+265	Construire de către Muhammad ibn Khayrun
+266	Restaurare hafsidă și mic minaret (pe la 1440-1441)
+267	Moscheea Youssef Dey
+268	1612 · otomani
+269	Prima moschee de rit hanefit din Tunis, ridicată de deiul otoman Youssef lângă Kasbah. Minaretul ei octogonal, primul din Tunis, semnalează ritul otomanilor.
+270	O inscripție din interior îi datează construirea din 1612, la porunca lui Youssef Dey, care a cârmuit Tunisul din 1610 până în 1637. Restaurată la sfârșitul secolului al XIX-lea, sub Ali Bey, ea devine în 1926 o anexă a universității Zitouna. Deiul odihnește aici într-un mausoleu, primul exemplu din Tunis de moschee funerară.
+271	Sala de rugăciune, înconjurată de curți pe trei laturi, are 9 nave și 7 travee; o cupolă se înalță în fața mihrabului. Minbarul este din zidărie îmbrăcată în marmură colorată, în vreme ce moscheile malikite au un minbar de lemn. Minaretul octogonal se încheie cu un balcon acoperit și un acoperiș piramidal de țigle verzi, ca și mausoleul.
+272	Construire de către Youssef Dey (inscripție)
+273	Moartea lui Youssef Dey, înmormântat în mausoleul său
+274	Anexă a universității Zitouna
+275	Moscheea Hammouda Pacha
+276	1655 · muradizi
+277	A doua moschee hanefită din Tunis, ridicată în 1655 de beiul Hammouda Pacha. Minaretul ei octogonal și zvelt domină strada Sidi Ben Arous, în medină.
+278	Hammouda Pacha, bei din dinastia muradidă, pune să se construiască moscheea în 1655, la colțul străzii Sidi Ben Arous cu strada Kasbah. Ca și Youssef Dey înaintea lui, el își amenajează aici propriul mausoleu, în curte: se spune că acest mormânt l-a inspirat, mult mai târziu, pe cel al președintelui Bourguiba de la Monastir.
+279	Un edificiu otoman din secolul al XVII-lea: poartă de marmură, acoperișuri de țigle verzi și trei curți. Sala de rugăciune, de circa 24 × 17 metri, are 7 nave pe 48 de coloane; zidurile ei sunt îmbrăcate în marmură și ipsos sculptat, cu un decor de flori și de marmură colorată de influență italiană. Lucru rar la Tunis, curtea se deschide spre stradă prin ferestre largi cu grilaj. Minaretul octogonal este încununat de un balcon și de un acoperiș piramidal.
+280	Construire de către Hammouda Pacha Bey
+281	Restaurare (1960-1961)
+282	Moscheea Sidi Mahrez (moscheea Mohamed Bey)
+283	1692-1697 · muradizi
+284	Cu cupolele ei albe, care se regăsesc pe emblema orașului Tunis, este singura moschee tunisiană construită după modelul marilor moschei din Istanbul. Ea se află în fața zawiei lui Sidi Mahrez, sfântul ocrotitor al medinei.
+285	Mohamed Bey el-Mouradi îi începe construirea între 1692 și 1697, în cinstea lui Sidi Mahrez (Mahrez ibn Khalaf, secolul al X-lea), în cartierul Bab Souika. Tulburările politice de la sfârșitul secolului al XVII-lea împiedică încheierea lucrărilor: moscheea nu a primit niciodată minaret. Este restaurată începând din 1984, împreună cu cartierul Bab Souika.
+286	Așezată pe o platformă, sala de rugăciune pătrată (cu latura de 28 de metri) este acoperită de o mare cupolă centrală cu diametrul de aproape 16 metri, înconjurată de semicupole și de mici cupole de colț, ca moscheea Sultan Ahmet din Istanbul. Plăci de ceramică de Iznik, în culorile albastru, verde și „roșu-tomată”, împodobesc stâlpii și peretele mihrabului.
+287	Începutul construirii de către Mohamed Bey el-Mouradi
+288	Sfârșitul lucrărilor, fără minaret
+289	Restaurare împreună cu cartierul Bab Souika
+290	Zawia Sidi Sahbi (mausoleul Bărbierului)
+291	Secolul al XVII-lea · muradizi
+292	Mausoleul lui Abu Zamaa al-Balawi, companion al Profetului ﷺ, pe care locuitorii Kairouanului îl numesc „Sidi Sahbi”: sfântul ocrotitor al Kairouanului. Curțile sale acoperite cu ceramică și ipsos sculptat fac din el unul dintre cele mai frumoase monumente ale orașului.
+293	Abu Zamaa al-Balawi moare în luptă în 654 (anul 34 al Hegirei). Se povestește că purta asupra lui câteva fire din barba Profetului ﷺ, de unde numele de „mausoleul Bărbierului”. Vechiul edificiu este renovat în întregime în secolul al XVII-lea de beii muradizi: Hammouda Pacha reconstruiește zawia, medresa și minaretul pe la 1662, apoi Mohamed Bey reface cupola mausoleului pe la 1681-1685.
+294	Un vast ansamblu în afara zidurilor medinei: curte de intrare și minaret în stil andaluz, patio cu coloane, sală cu cupolă, apoi o curte cu zidurile acoperite de ceramică policromă și de ipsos fin sculptat, care precedă camera funerară. O medresă, cu camerele studenților și sala ei de rugăciune, completează complexul.
+295	Este unul dintre locurile cele mai vizitate de tunisieni, mai ales la sărbătoarea Mawlid; aici se încheie și contracte de căsătorie și se fac circumcizii. Odinioară, caravanele Maghrebului se adunau aici înainte de a pleca în pelerinaj la Mecca.
+296	Moartea lui Abu Zamaa al-Balawi (anul 34 al Hegirei)
+297	Zawia, medresa și minaretul lui Hammouda Pacha (în jurul acestei date)
+298	Cupola nouă a mausoleului, de Mohamed Bey (1681-1685)
+299	Marea Moschee din Testour
+300	pe la 1630 · andaluzi
+301	Ridicată de andaluzii alungați din Spania la începutul secolului al XVII-lea, ea îmbină tradițiile tunisiene cu arta hispano-maură. Minaretul ei poartă un ceas ale cărui ace se învârt invers.
+302	După expulzarea moriscilor din Spania (1609-1614), mulți se așază în valea Medjerdei și reîntemeiază Testourul. Moscheea este ridicată în prima treime a secolului al XVII-lea, probabil înainte de 1631, de Mohamed Tagharinou, un andaluz stabilit în oraș. O a doua curte și o sală de abluțiuni sunt adăugate în secolul al XVIII-lea. În 2014, locuitori și asociații repun în funcțiune ceasul minaretului, oprit de aproape trei secole.
+303	Planul sălii de rugăciune (9 nave) urmează tradiția Kairouanului, dar acoperișurile de țiglă, decorul de stuc și minaretul sunt andaluze. Înalt de 22,50 de metri, minaretul suprapune un turn pătrat din cărămidă și piatră, în maniera din Toledo, și un turn octogonal împodobit cu ceramică: el amintește de clopotnițele din Aragon. În curte, un cadran solar din 1761 arăta ora rugăciunilor.
+304	Moriscii, alungați din Spania (1609-1614), sosesc în Tunisia
+305	Moschee încheiată (probabil înainte de această dată)
+306	Cadranul solar din curte
+307	Ceasul minaretului repus în funcțiune
+308	Moscheea Malik ibn Anas (Cartagina)
+309	2003 · contemporană
+310	O mare moschee modernă ridicată pe o colină a Cartaginei, în inima sitului arheologic. Minaretul ei de 55 de metri se vede de departe; ea apare pe bancnota de zece dinari.
+311	Construită din 2000 până în 2003 după planurile arhitectului Ayad Sriha, ea se numea la început „El Abidine”. În noiembrie 2012 primește numele imamului Malik ibn Anas (mort în 795), întemeietorul școlii malikite urmate în Tunisia. Radio Zitouna FM transmite de aici cele cinci rugăciuni zilnice.
+312	Ea se inspiră din marile moschei tunisiene: esplanadă, curte de 1 500 m² și sală de rugăciune hipostilă cu 64 de coloane, care poate primi 1 000 de credincioși. Mihrabul de marmură albă încrustată cu verde și roșu este încununat de o cupolă cu diametrul de zece metri. Zidurile sunt acoperite cu piatră de Kedhel, stuc sculptat și ceramică cu motive andaluze; podeaua este așternută cu covoare de Kairouan.
+313	Punerea primei pietre
+314	Inaugurare
+315	Primește numele imamului Malik ibn Anas
+316	Moscheea Fadhloun și moscheile ibadite din Djerba
+317	Secolul al XIV-lea · Djerba
+318	La ieșirea din Midoun, o moschee albă cu înfățișare de mică fortăreață, tipică pentru insula Djerba, unde trăiește o comunitate musulmană ibadită. Este clasată monument din 2022 și face parte dintre locurile din Djerba înscrise în patrimoniul mondial în 2023.
+319	Ridicată în secolul al XIV-lea, moscheea Fadhloun aparține bogatului ansamblu al moscheilor din Djerba, adesea ibadite, construite pe câmpuri și pe coastă. Cu zidurile lor groase și micile lor minarete, multe serveau și ca posturi de veghe: ele alcătuiau o a doua linie de apărare în spatele forturilor de pe litoral.
+320	Sala de rugăciune pătrată, cu latura de circa 7,5 metri, este acoperită de nouă mici cupole purtate de patru coloane; mihrabul este o simplă nișă, iar minbarul, de piatră, are doar trei trepte. Un minaret scund, pe două niveluri, domină acoperișul. În jur: o curte cu un „mihrab de vară”, o cisternă de apă de ploaie, două săli pentru învățarea Coranului, o brutărie subterană și o moară de grâne.
+321	Aceste moschei erau mici centre de viață: rugăciune, învățarea Coranului, pâine și grâne pentru cartier. Arhitectura lor albă și lipsită de podoabe este unul dintre chipurile Djerbei recunoscute de UNESCO în 2023.
+322	sec. XIV
+323	Construirea moscheii Fadhloun (secolul al XIV-lea)
+324	Clasată monument (ordin din 15 martie 2022)
+325	Djerba înscrisă în patrimoniul mondial UNESCO
+326	Moscheea Kasbah (Tunis)
+327	1231-1235 · hafsizi
+328	Construită de întemeietorul dinastiei hafside în piața Kasbah, ea are unul dintre cele mai frumoase minarete din Tunis, în stilul almohad din Marrakech și Sevilla.
+329	Este ridicată din 1231 până în 1235 la porunca lui Abu Zakariya Yahya, întemeietorul dinastiei hafside, care fusese guvernator al Sevillei. Mai întâi moschee a curții suveranilor stabiliți la Kasbah, ea devine apoi una dintre moscheile de vineri ale orașului; este prima ridicată la Tunis după Zitouna. În epoca otomană, aici se făcea rugăciunea după ritul hanefit.
+330	Sala de rugăciune, mai adâncă decât lată, are 7 nave și 9 travee pe coloane de marmură cu capiteluri hafside; mihrabul este încununat de o cupolă cu stalactite din ipsos sculptat. Minaretul pătrat, construit încă din 1233, este acoperit de o rețea de romburi din piatră ocru: el a servit drept model minaretului actual al Zitounei.
+331	Începutul construirii (Abu Zakariya Yahya)
+332	Minaretul este terminat
+333	Sfârșitul construirii moscheii
+334	Marea Moschee din Monastir
+335	Secolul al IX-lea · mărită până în secolul al XVIII-lea
+336	Cu fața spre mare, lângă celebrul ribat, o moschee de piatră sobră și elegantă, mărită în fiecare epocă începând din secolul al IX-lea.
+337	Sala de rugăciune actuală este rodul a patru etape: un mic oratoriu boltit în secolul al IX-lea, o mărire în secolul al XI-lea (epoca zirită) cu mihrabul, apoi, în epoca hafsidă, un minaret pătrat și încă două nave. O galerie exterioară este adăugată în secolul al XVIII-lea. În octombrie 2013, două cutremure fac să se prăbușească în parte vârful minaretului.
+338	Fațade din piatră cioplită, însuflețite de ancadramentele ușilor și ferestrelor și de arcurile unei galerii. Moscheea nu are curte în fața sălii de rugăciune. Mihrabul din secolul al XI-lea, cu decor zirit și scriere cufică înflorită, nu este încununat de o cupolă, lucru rar în Ifriqiya medievală.
+339	sec. IX
+340	Primul oratoriu boltit (secolul al IX-lea)
+341	sec. XI
+342	Mărire zirită și mihrab (secolul al XI-lea)
+343	sec. XVIII
+344	Galerie exterioară (secolul al XVIII-lea)
+345	Vârful minaretului se prăbușește în parte după două cutremure

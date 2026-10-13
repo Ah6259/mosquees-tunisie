@@ -4,7 +4,7 @@
 Avant : une seule adresse par page, écrite en français ; les 7 autres langues n'apparaissaient qu'après coup, dans le
 navigateur (bouton de langue, « ?lang=ar »). Google ne voyait donc que le français.
 Maintenant : tools/construire.py fabrique la page française (adresse d'origine, inchangée), puis ce module en tire
-  ar/<page>, en/<page>, tr/<page>, id/<page>, ur/<page>, de/<page>, es/<page>, it/, pt/, nl/, zh/, ja/, ko/, hi/ (14 dossiers)
+  ar/<page>, en/<page>, tr/<page>, id/<page>, ur/<page>, de/<page>, es/<page>, it/, pt/, nl/, zh/, ja/, ko/, hi/, ru/, vi/, th/, tl/, sv/, ro/ (20 dossiers)
 où tout est DÉJÀ dans la langue : <html lang>, sens d'écriture, titre, description, texte de la page (les éléments
 data-l des autres langues sont retirés ; pour tr, id, ur, de, es la traduction — assets/langues.js et assets/trad/*.js,
 clé = texte français — est écrite dans la page), adresse officielle (canonical) et liens hreflang entre les 8 versions.
@@ -13,14 +13,16 @@ sont pris à la racine du site. Aucune dépendance : seulement la bibliothèque 
 import html, json, os, posixpath, re
 from html.parser import HTMLParser
 
-LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]
-NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]
+LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
+NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
 DROITE = ("ar", "ur")
 COMMUNS = ("assets/", "donnees/", "manifest.webmanifest", "sw.js", "favicon.ico")      # fichiers pris à la racine du site
 SITE = {"fr": "Mosquées en Tunisie", "ar": "مساجد تونس", "en": "Mosques in Tunisia", "tr": "Tunus Camileri", "id": "Masjid di Tunisia",
         "ur": "تیونس کی مساجد", "de": "Moscheen in Tunesien", "es": "Mezquitas de Túnez",
         "it": "Moschee in Tunisia", "pt": "Mesquitas na Tunísia", "nl": "Moskeeën in Tunesië", "zh": "突尼斯的清真寺", "ja": "チュニジアのモスク",
-        "ko": "튀니지의 모스크", "hi": "ट्यूनीशिया की मस्जिदें"}
+        "ko": "튀니지의 모스크", "hi": "ट्यूनीशिया की मस्जिदें",
+        "ru": "Мечети Туниса", "vi": "Thánh đường ở Tunisia", "th": "มัสยิดในตูนิเซีย", "tl": "Mga moske sa Tunisia",
+        "sv": "Moskéer i Tunisien", "ro": "Moschei în Tunisia"}
 # accueil : titre, description, titre de partage (le français reste celui de index.html, écrit à la main)
 ACCUEIL = {
     "ar": ("مساجد تونس: خريطة كل المساجد، صور وتاريخ (مجاني)",
@@ -49,7 +51,9 @@ SUITE_GRANDE = {"fr": " : histoire, architecture, photos", "ar": ": التاري
                 "tr": ": tarih, mimari, fotoğraflar", "id": ": sejarah, arsitektur, foto", "ur": ": تاریخ، فنِ تعمیر، تصاویر",
                 "de": ": Geschichte, Architektur, Fotos", "es": ": historia, arquitectura, fotos",
                 "it": ": storia, architettura, foto", "pt": ": história, arquitetura, fotos", "nl": ": geschiedenis, architectuur, foto's",
-                "zh": "：历史、建筑、照片", "ja": "：歴史・建築・写真", "ko": ": 역사, 건축, 사진", "hi": ": इतिहास, वास्तुकला, तस्वीरें"}
+                "zh": "：历史、建筑、照片", "ja": "：歴史・建築・写真", "ko": ": 역사, 건축, 사진", "hi": ": इतिहास, वास्तुकला, तस्वीरें",
+                "ru": ": история, архитектура, фотографии", "vi": ": lịch sử, kiến trúc, hình ảnh", "th": ": ประวัติ สถาปัตยกรรม ภาพถ่าย",
+                "tl": ": kasaysayan, arkitektura, mga larawan", "sv": ": historia, arkitektur, foton", "ro": ": istorie, arhitectură, fotografii"}
 FICHE_DESC = {"ar": "{nom}: مسجد في تونس{ville}. صورة وتاريخ وخريطة وروابط.", "en": "{nom}: mosque in Tunisia{ville}. Photo, history, map and links.",
               "tr": "{nom}: Tunus'ta bir cami{ville}. Fotoğraf, tarih, harita ve bağlantılar.", "id": "{nom}: masjid di Tunisia{ville}. Foto, sejarah, peta, dan tautan.",
               "ur": "{nom}: تیونس کی ایک مسجد{ville}۔ تصویر، تاریخ، نقشہ اور روابط۔", "de": "{nom}: Moschee in Tunesien{ville}. Foto, Geschichte, Karte und Links.",
@@ -57,7 +61,10 @@ FICHE_DESC = {"ar": "{nom}: مسجد في تونس{ville}. صورة وتاريخ
               "it": "{nom}: moschea della Tunisia{ville}. Foto, storia, mappa e link.", "pt": "{nom}: mesquita da Tunísia{ville}. Foto, história, mapa e ligações.",
               "nl": "{nom}: moskee in Tunesië{ville}. Foto, geschiedenis, kaart en links.", "zh": "{nom}：突尼斯的清真寺{ville}。照片、历史、地图和链接。",
               "ja": "{nom}：チュニジアのモスク{ville}。写真・歴史・地図・リンク。", "ko": "{nom}: 튀니지의 모스크{ville}. 사진, 역사, 지도, 링크.",
-              "hi": "{nom}: ट्यूनीशिया की एक मस्जिद{ville}। तस्वीर, इतिहास, नक़्शा और लिंक।"}
+              "hi": "{nom}: ट्यूनीशिया की एक मस्जिद{ville}। तस्वीर, इतिहास, नक़्शा और लिंक।",
+              "ru": "{nom}: мечеть в Тунисе{ville}. Фото, история, карта и ссылки.", "vi": "{nom}: thánh đường ở Tunisia{ville}. Ảnh, lịch sử, bản đồ và đường dẫn.",
+              "th": "{nom}: มัสยิดในตูนิเซีย{ville} ภาพถ่าย ประวัติ แผนที่ และลิงก์", "tl": "{nom}: moske sa Tunisia{ville}. Larawan, kasaysayan, mapa at mga link.",
+              "sv": "{nom}: moské i Tunisien{ville}. Foto, historia, karta och länkar.", "ro": "{nom}: moschee din Tunisia{ville}. Fotografie, istorie, hartă și legături."}
 VIDES = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 ISOLES = re.compile("[⁦-⁩‎‏]")
 

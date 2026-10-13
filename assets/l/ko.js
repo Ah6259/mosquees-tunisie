@@ -156,7 +156,7 @@ window.TRADUCTIONS.ko = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "점을 누르면 이름, 길 찾기, 페이지를 볼 수 있습니다. 금색 점에는 역사 페이지가 있습니다. 모스크나 기도실이 빠져 있나요?",
 "Tous nos services": "모든 서비스",
 "Toutes les grandes mosquées et mosquées historiques": "모든 대모스크와 역사적 모스크",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "전국의 모든 모스크를 지도 한 장에, 그리고 가장 큰 모스크들의 역사를 담았습니다. 무료, 15개 언어, 전 세계 어디서나.",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "전국의 모든 모스크를 지도 한 장에, 그리고 가장 큰 모스크들의 역사를 담았습니다. 무료, 21개 언어, 전 세계 어디서나.",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "모든 사진은 위키미디어 공용에서 가져온 것으로, 자유 라이선스(CC BY, CC BY-SA, CC0 또는 퍼블릭 도메인)를 따릅니다. 작가분들께 감사드립니다.",
 "Très bien": "매우 좋음",
 "Type": "유형",

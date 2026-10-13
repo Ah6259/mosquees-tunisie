@@ -3,7 +3,7 @@
 Relu TOUS LES 3 MOIS par le robot GitHub (workflow donnees.yml). Sources, toutes libres et citées sur le site :
   - OpenStreetMap (ODbL) : tous les lieux de prière musulmans de Tunisie (position, nom) + villes et villages
     (pour la recherche « par ville ») ;
-  - Wikidata (CC0) : noms en 15 langues, date de fondation, patrimoine, photo, articles Wikipédia ;
+  - Wikidata (CC0) : noms en 21 langues, date de fondation, patrimoine, photo, articles Wikipédia ;
   - Wikimedia Commons : la photo (auteur + licence affichés sous chaque photo ; licence libre exigée) ;
   - Wikipédia (CC BY-SA 4.0) : le résumé de l'article dans chaque langue (lien vers l'article, licence citée).
 Règles de propreté (09/10/2026) :
@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SORTIE = ROOT / "donnees" / "mosquees.json"
 UA = {"User-Agent": "mosquees-tunisie/1.0 (+https://mosquees.clicvia.com/; site non commercial)"}
-LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"]
+LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
 SERVEURS = ["https://maps.mail.ru/osm/tools/overpass/api/interpreter", "https://overpass-api.de/api/interpreter",
             "https://overpass.kumi.systems/api/interpreter", "https://overpass.private.coffee/api/interpreter",
             "https://overpass.openstreetmap.fr/api/interpreter"]   # 5 copies d'OpenStreetMap (règle commune § 4)

@@ -177,7 +177,7 @@ w.close();
 const sansLien = [], fautes = [];
 // Une adresse par langue (12/10/2026) : toutes les pages françaises + un échantillon dans chaque langue (ar/, en/, tr/…),
 // où « Votre avis » mène à l'accueil de la langue.
-const AUTRES = ["ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"], langueDe = p => AUTRES.find(l => p.startsWith(l + "/")) || "";
+const AUTRES = ["ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"], langueDe = p => AUTRES.find(l => p.startsWith(l + "/")) || "";
 const aOuvrir = pages.filter(p => !langueDe(p) || /^[a-z]{2}\/(index\.html|a-propos\/|grandes-mosquees\/|mosquee\/kairouan\/)/.test(p));
 for (const p of aOuvrir) {
   const ww = await ouvrir(p);

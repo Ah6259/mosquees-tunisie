@@ -156,7 +156,7 @@ window.TRADUCTIONS.es = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "Toque un punto para ver su nombre, el itinerario y su página. Los puntos dorados tienen una página de historia. ¿Falta una mezquita o una sala de oración?",
 "Tous nos services": "Todos nuestros servicios",
 "Toutes les grandes mosquées et mosquées historiques": "Todas las grandes mezquitas y mezquitas históricas",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Todas las mezquitas del país en un mapa, y la historia de las más grandes. Gratis, en 15 idiomas y en todo el mundo.",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "Todas las mezquitas del país en un mapa, y la historia de las más grandes. Gratis, en 21 idiomas y en todo el mundo.",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "Todas las fotos vienen de Wikimedia Commons, con licencia libre (CC BY, CC BY-SA, CC0 o dominio público). Gracias a sus autores.",
 "Très bien": "Muy bien",
 "Type": "Tipo",

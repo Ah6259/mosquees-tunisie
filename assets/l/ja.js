@@ -156,7 +156,7 @@ window.TRADUCTIONS.ja = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "点をタップすると、名称・経路・ページが表示されます。金色の点には歴史のページがあります。モスクや礼拝室が載っていませんか？",
 "Tous nos services": "すべてのサービス",
 "Toutes les grandes mosquées et mosquées historiques": "すべての大モスクと歴史的モスク",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "国内のすべてのモスクを 1 枚の地図に、そして最も大きなモスクの歴史を。無料、15 言語対応、世界中どこでも。",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "国内のすべてのモスクを 1 枚の地図に、そして最も大きなモスクの歴史を。無料、21 言語対応、世界中どこでも。",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "写真はすべてウィキメディア・コモンズのもので、自由なライセンス（CC BY、CC BY-SA、CC0 またはパブリックドメイン）です。作者の皆さまに感謝します。",
 "Très bien": "とても良い",
 "Type": "種類",

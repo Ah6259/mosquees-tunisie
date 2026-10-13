@@ -1,4 +1,4 @@
-/* Mosquées en Tunisie — langue (15 langues : français, arabe, anglais + turc, indonésien, ourdou, allemand, espagnol, puis
+/* Mosquées en Tunisie — langue (21 langues : français, arabe, anglais + turc, indonésien, ourdou, allemand, espagnol, puis
    italien, portugais, néerlandais, chinois, japonais, coréen, hindi le 13/10/2026), en-tête, menu et
    pied de page communs, partage, protections — repris de Points d'eau Tunisie (même méthode des 8 langues) */
 const MAJ = "09/10/2026";   // date de création ; les lieux sont datés par le robot (donnees/lieux.js)
@@ -11,8 +11,8 @@ const MENU_SITE = [
 ];
 // Nos deux sites proches, en boutons dans le menu juste après « Signaler un lieu » (demande d'Ahmed du 13/10/2026), ouverts
 // dans la langue du visiteur quand le site l'a (sinon en anglais). Listes à compléter quand ces sites gagnent une langue.
-const LANGUES_MESSAGE = ["en", "fr", "es", "de", "it", "pt", "nl", "zh", "ja", "ko", "hi"];
-const LANGUES_EAU = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"];   // 15 langues depuis le 13/10/2026
+const LANGUES_MESSAGE = ["en", "fr", "es", "de", "it", "pt", "nl", "zh", "ja", "ko", "hi", "tr", "id", "ru", "vi", "th", "tl", "sv", "ro"];   // 19 langues (ni arabe ni ourdou : choix d'Ahmed)
+const LANGUES_EAU = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"];   // 21 langues depuis le 13/10/2026
 function sitesProches(l) {
   const eau = LANGUES_EAU.includes(l) ? l : "en";
   return [
@@ -32,7 +32,8 @@ function sitesProches(l) {
   const LANGUES = [["fr", "FR", "Français"], ["ar", "ع", "العربية"], ["en", "EN", "English"], ["tr", "TR", "Türkçe"],
     ["id", "ID", "Bahasa Indonesia"], ["ur", "UR", "اردو"], ["de", "DE", "Deutsch"], ["es", "ES", "Español"],
     ["it", "IT", "Italiano"], ["pt", "PT", "Português"], ["nl", "NL", "Nederlands"], ["zh", "中文", "中文"], ["ja", "日本語", "日本語"],
-    ["ko", "한국어", "한국어"], ["hi", "हिन्दी", "हिन्दी"]];
+    ["ko", "한국어", "한국어"], ["hi", "हिन्दी", "हिन्दी"], ["ru", "RU", "Русский"], ["vi", "VI", "Tiếng Việt"], ["th", "ไทย", "ไทย"],
+    ["tl", "TL", "Filipino"], ["sv", "SV", "Svenska"], ["ro", "RO", "Română"]];
   const CODES = LANGUES.map(x => x[0]), NOUVELLES = CODES.slice(3), DROITE = ["ar", "ur"];
   const lireCle = k => { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } };
   const nav = (navigator.language || "").slice(0, 2).toLowerCase();

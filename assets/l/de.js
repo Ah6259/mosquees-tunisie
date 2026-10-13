@@ -156,7 +156,7 @@ window.TRADUCTIONS.de = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "Tippen Sie auf einen Punkt für Name, Route und Seite. Goldene Punkte haben eine Geschichtsseite. Fehlt eine Moschee oder ein Gebetsraum?",
 "Tous nos services": "Alle unsere Dienste",
 "Toutes les grandes mosquées et mosquées historiques": "Alle großen und historischen Moscheen",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "Alle Moscheen des Landes auf einer Karte und die Geschichte der größten. Kostenlos, in 15 Sprachen und weltweit.",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "Alle Moscheen des Landes auf einer Karte und die Geschichte der größten. Kostenlos, in 21 Sprachen und weltweit.",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "Alle Fotos stammen von Wikimedia Commons unter freier Lizenz (CC BY, CC BY-SA, CC0 oder gemeinfrei). Danke an ihre Urheber.",
 "Très bien": "Sehr gut",
 "Type": "Art",

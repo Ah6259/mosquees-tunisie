@@ -40,7 +40,7 @@ jobs:
           node tools/test_site.mjs
           git config user.name "robot-mosquees"
           git config user.email "robot-mosquees@users.noreply.github.com"
-          git add donnees mosquee grandes-mosquees a-propos sitemap.xml index.html assets/trad assets/l ar en tr id ur de es it pt nl zh ja ko hi   # + une adresse par langue (tools/pages_langues.py)
+          git add donnees mosquee grandes-mosquees a-propos sitemap.xml index.html assets/trad assets/l ar en tr id ur de es it pt nl zh ja ko hi ru vi th tl sv ro   # + une adresse par langue (tools/pages_langues.py)
           if git diff --cached --quiet; then
             git commit --allow-empty -m "Battement de coeur : relevé des mosquées inchangé"
           else

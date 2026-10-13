@@ -156,7 +156,7 @@ window.TRADUCTIONS.zh = {
 "Touchez un point pour son nom, l'itinéraire et sa page. Les points dorés ont une page d'histoire. Il manque une mosquée ou une salle de prière ?": "点击一个点可查看名称、路线和页面。金色的点带有历史介绍页面。缺少某座清真寺或礼拜室？",
 "Tous nos services": "我们的全部服务",
 "Toutes les grandes mosquées et mosquées historiques": "所有大清真寺和历史清真寺",
-"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 15 langues, et partout dans le monde.": "全国所有清真寺都在一张地图上，并介绍其中最大的几座的历史。免费，提供 15 种语言，也适用于世界各地。",
+"Toutes les mosquées du pays sur une carte, et l'histoire des plus grandes. Gratuit, en 21 langues, et partout dans le monde.": "全国所有清真寺都在一张地图上，并介绍其中最大的几座的历史。免费，提供 21 种语言，也适用于世界各地。",
 "Toutes les photos viennent de Wikimedia Commons, sous licence libre (CC BY, CC BY-SA, CC0 ou domaine public). Merci à leurs auteurs.": "所有照片均来自维基共享资源，采用自由许可协议（CC BY、CC BY-SA、CC0 或公有领域）。感谢各位作者。",
 "Très bien": "很好",
 "Type": "类型",

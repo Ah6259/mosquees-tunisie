@@ -216,7 +216,7 @@
     const pays = /^[A-Z]{2}$/.test(String(tags["addr:country"] || "").toUpperCase()) ? tags["addr:country"].toUpperCase() : centre;
     if (pays === "TN") return null;                      // la Tunisie vient de nos données (lieux retirés compris)
     const n = {};
-    ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi"].forEach(l => { if (tags["name:" + l]) n[l] = String(tags["name:" + l]).slice(0, 80); });
+    ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"].forEach(l => { if (tags["name:" + l]) n[l] = String(tags["name:" + l]).slice(0, 80); });
     const l = { i: "osm-" + el.type[0] + el.id, a: +(+lat).toFixed(6), o: +(+lon).toFixed(6),
       t: ["musalla", "prayer_room", "prayer_hall"].includes(tags.place_of_worship) ? "s" : "m",
       n, nom: String(tags.name || "").slice(0, 80), pays, c: couleurPays(pays), monde: true };

@@ -38,7 +38,7 @@
 37	Gerangschikt per stad. De groene stip betekent dat er een foto is.
 38	Grote Moskee van Kairouan. Foto
 39	De moskeeën van Tunesië: de kaart en de geschiedenis
-40	Alle moskeeën van het land op één kaart, en de geschiedenis van de grootste. Gratis, in 15 talen, en overal ter wereld.
+40	Alle moskeeën van het land op één kaart, en de geschiedenis van de grootste. Gratis, in 21 talen, en overal ter wereld.
 41	gebedsplaatsen op de kaart
 42	Een moskee of stad zoeken
 43	In mijn buurt
