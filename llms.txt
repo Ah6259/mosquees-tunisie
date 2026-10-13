@@ -1,0 +1,28 @@
+# Mosques of Tunisia and the world: map, photos and history
+
+> Free map of every mosque and prayer room in Tunisia: search by name or town, find the nearest one. History, photos and documents of the great mosques: Zitouna, Kairouan, Sousse, Mahdia, Sfax, Testour.
+
+Site gratuit et indépendant, publié par Clicvia (https://clicvia.com/), le portail de services pratiques pour la Tunisie. Adresse : https://mosquees.clicvia.com/
+Langues : 21 langues (une adresse par langue : /en/, /ar/, /tr/…).
+
+## Pages principales
+
+- [Great and historic mosques of Tunisia](https://mosquees.clicvia.com/en/grandes-mosquees/) : The great mosques described in detail, then every mosque in Tunisia that has a Wikidata record: photo, history and links.
+- [About and method](https://mosquees.clicvia.com/en/a-propos/) : A free, independent website to find a mosque anywhere in Tunisia and discover the history of the country's great mosques.
+- [Fadhloun Mosque and the Ibadi mosques of Djerba (Djerba (Midoun)): history, architecture, photos](https://mosquees.clicvia.com/en/mosquee/fadhloun/) : On the outskirts of Midoun stands a white mosque that looks like a small fortress, typical of the island of Djerba, home to an Ibadi Muslim community. It has been a listed monument since 2022 and is a
+- [Hammouda Pacha Mosque (Tunis): history, architecture, photos](https://mosquees.clicvia.com/en/mosquee/hammouda-pacha/) : The second Hanafi mosque in Tunis, built in 1655 by Hammouda Pacha Bey. Its slender octagonal minaret overlooks Sidi Ben Arous street in the medina.
+- [Great Mosque of Kairouan (Uqba Mosque) (Kairouan): history, architecture, photos](https://mosquees.clicvia.com/en/mosquee/kairouan/) : The oldest mosque in the Maghreb, founded in 670 together with the city of Kairouan. It served as the model for all the mosques of North Africa and is a UNESCO World Heritage site.
+- [Kasbah Mosque (Tunis) (Tunis): history, architecture, photos](https://mosquees.clicvia.com/en/mosquee/kasbah/) : Built by the founder of the Hafsid dynasty on Kasbah square, it has one of the most beautiful minarets in Tunis, in the Almohad style of Marrakesh and Seville.
+- [Great Mosque of Mahdia (Mahdia): history, architecture, photos](https://mosquees.clicvia.com/en/mosquee/mahdia/) : Built in 916 by the first Fatimid caliph in his new capital, on the seashore. Its great projecting portal, inspired by triumphal arches, was a first in mosque architecture.
+- [Malik ibn Anas Mosque (Carthage) (Carthage): history, architecture, photos](https://mosquees.clicvia.com/en/mosquee/malik-ibn-anas/) : A large modern mosque built on a hill in Carthage, in the heart of the archaeological site. Its 55-metre minaret can be seen from afar; it appears on the ten-dinar banknote.
+- [Great Mosque of Monastir (Monastir): history, architecture, photos](https://mosquees.clicvia.com/en/mosquee/monastir/) : Facing the sea, next to the famous ribat, stands a sober and elegant stone mosque, enlarged in every period since the 9th century.
+- [Great Mosque of Sfax (Sfax): history, architecture, photos](https://mosquees.clicvia.com/en/mosquee/sfax/) : In the heart of the medina of Sfax stands a 9th-century mosque whose eastern façade, carved in the Zirid period, and whose minaret, modelled on Kairouan's, are masterpieces of the art of Ifriqiya.
+
+Le site compte 121 pages au total ; la liste complète est dans le plan du site : https://mosquees.clicvia.com/sitemap.xml
+
+## À savoir
+
+- Lieux tirés d'OpenStreetMap et de Wikidata ; les pages des grandes mosquées citent leurs sources.
+- Site non officiel : en cas de doute, la source officielle indiquée sur la page fait foi.
+- Pour citer : « Mosques of Tunisia and the world: map, photos and history » avec le lien de la page utilisée.
+- Les assistants IA qui répondent à une question en citant leur source sont les bienvenus ; l'aspiration du contenu pour entraîner un modèle n'est pas autorisée (voir robots.txt).
