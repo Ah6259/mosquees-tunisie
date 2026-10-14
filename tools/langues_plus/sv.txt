@@ -71,7 +71,7 @@
 70	Medel
 71	Inte bra
 72	Ditt meddelande
-73	Din e-postadress (frivilligt, så att vi kan svara)
+73	Din e-post (obligatorisk, så att vi kan svara)
 74	Skicka
 75	Din åsikt skickas till webbplatsens skapare (tjänsten Formspree). Ingenting skickas utan ett klick på ”Skicka”.
 76	En moské som saknas på kartan, ett bönerum på en station, ett sjukhus, ett universitet, i ett köpcentrum… Hjälp andra att hitta en plats att be. Efter en automatisk kontroll publiceras platsen på kartan, som ”att bekräfta” tills en annan besökare bekräftar den.
@@ -199,148 +199,151 @@
 198	Stadssökningen svarar inte just nu: försök igen om en stund.
 199	<b>På andra håll i världen</b>: OpenStreetMap läses i realtid för det område som visas på kartan (5 kopior av OpenStreetMap, Overpass-servrarna), varje land med sin färg. En stad i världen hittas med <b>Nominatim</b> (© OpenStreetMaps bidragsgivare), bara när du bekräftar sökningen.
 200	Utanför Tunisien skickas det område som visas på kartan (inte din exakta position) till OpenStreetMaps servrar för att läsa dess moskéer; en stad som du söker i världen skickas till Nominatim.
-201	Tunis
-202	Kairouan
-203	Sousse
-204	Mahdia
-205	Sfax
-206	Testour
-207	Kartago
-208	Djerba (Midoun)
-209	Monastir
-210	Zitouna-moskén
-211	698 · återuppbyggd 864
-212	Den stora moskén i Tunis medina, huvudstadens äldsta och största. I mer än tusen år var den också ett stort islamiskt universitet.
-213	Enligt traditionen grundades böneplatsen år 698 av Hassan ibn al-Numan, efter erövringen av Kartago; andra källor tillskriver grundandet den umayyadiske ståthållaren Ubayd Allah ibn al-Habhab, omkring 732. Av den första byggnaden finns nästan ingenting kvar: moskén byggdes helt om år 864 av den aghlabidiske emiren Abu Ibrahim Ahmad. Varje dynasti förskönade den sedan: ”bahou”-kupolen under ziriderna (omkring 990), cisterner och portar under hafsiderna, den östra gallerian 1637. Dagens minaret, i almohadisk stil, är från 1894.
-214	Liksom i Kairouan och Córdoba ligger en gård omgiven av gallerier framför en bönesal med pelarskog: omkring 160 antika kolonner, till stor del hämtade från Kartago, bildar 15 skepp. Mittskeppet, som är bredare, leder till mihraben, som täcks av en kupol från 800-talet. Bahou-kupolen, vid salens ingång, växlar mellan ockrafärgad sten och rött tegel. Minareten från 1894 tar upp rombmönstret från Kasbah-moskéns minaret.
-215	Zitouna var ett av den muslimska världens äldsta lärosäten: varje lärd satt lutad mot en kolonn, med eleverna i en ring omkring sig. Den utbildade stora malikitiska rättslärda som Ibn Arafa, samtida med Ibn Khaldun. År 1958 lämnade undervisningen moskén; i dag fortsätter den vid universitetet Ez-Zitouna. Det sägs att bönen aldrig har avbrutits här.
-216	Grundande enligt traditionen (Hassan ibn al-Numan)
-217	Fullständig ombyggnad under aghlabiderna
-218	Bahou-kupolen (ziriderna)
-219	Ny minaret i almohadisk stil
-220	Undervisningen flyttar från moskén till universitetet
-221	Tunis medina upptas på UNESCO:s världsarvslista
-222	Stora moskén i Kairouan (Uqba-moskén)
-223	670 · nuvarande form från 836
-224	Maghrebs äldsta moské, grundad år 670 tillsammans med staden Kairouan. Den blev förebild för alla moskéer i Nordafrika och är ett av UNESCO:s världsarv.
-225	År 670 grundar erövraren Uqba ibn Nafi Kairouan och placerar sin moské mitt i staden. Den byggs ut och om under 700- och 800-talen och får sin nuvarande form år 836 under den aghlabidiske emiren Ziyadat Allah I. Omkring 862–863 förlänger Abu Ibrahim Ahmad bönesalen och skänker minbaren och mihrabens utsmyckning. På 1000-talet lägger den ziridiske fursten al-Muizz ibn Badis till maqsuran av trä. Kairouan betraktades länge som islams fjärde heliga stad.
-226	En väldig fyrsiding på omkring 9 000 m²: en stor stenlagd gård, gallerier och en bönesal med 17 skepp som bärs av hundratals antika kolonner av marmor, granit och porfyr, alla olika. Minareten, omkring 31 meter hög, är från första hälften av 800-talet: den är en av de äldsta minareter som ännu står kvar. Mihraben från 800-talet pryds av keramikplattor med metallglans; bredvid står den snidade träminbaren, den äldsta bevarade minbaren i den muslimska världen.
-227	Kairouan var Ifriqiyas religiösa och lärda huvudstad: det var här imam Sahnun på 800-talet skrev Mudawwana, grundverket för den malikitiska rättsskolan som följs i Tunisien och hela Maghreb. Moskéns bibliotek har bevarat mycket gamla handskrifter, bland dem blad ur den berömda ”Blå Koranen”.
-228	Grundad av Uqba ibn Nafi, samtidigt med staden
-229	Ombyggnad under Ziyadat Allah I: den nuvarande formen
-230	Minbar och mihrabens utsmyckning (Abu Ibrahim Ahmad)
-231	Al-Muizz ibn Badis maqsura av trä (omkring detta år)
-232	Kairouan upptas på UNESCO:s världsarvslista
-233	Stora moskén i Sousse
-234	850–851 · aghlabiderna
-235	Vid ingången till medinan står en moské som liknar en fästning, byggd 850–851 nära ribaten som skyddade kusten. Den är stram och kraftfull och ingår i Sousses medina, ett av UNESCO:s världsarv.
-236	Den uppfördes 850–851 av den aghlabidiske emiren Abu al-Abbas Muhammad, ett trettiotal år efter ribaten i Sousse; en kufisk inskrift på gårdens gallerier påminner om bygget. Den byggdes ut under emir Ibrahim II (875–902), när Sousse blev Ifriqiyas andra stad.
-237	Krenelerade murar, hörntorn krönta av små kupoler: moskén liknar en fästning och har ingen riktig minaret, troligen därför att vakttornet i den närliggande ribaten fyllde den uppgiften. Bönesalen har 13 skepp; mittskeppet och travén framför mihraben, som är bredare, bildar ett ”T” som markeras av två kupoler.
-238	Den närliggande ribaten i Sousse står färdig
-239	Moskén byggs (850–851)
-240	Utbyggnad under Ibrahim II (875–902)
-241	Sousses medina upptas på UNESCO:s världsarvslista
-242	Stora moskén i Mahdia
-243	916 · fatimiderna
-244	Byggd år 916 av den förste fatimidiske kalifen i hans nya huvudstad vid havet. Den stora utskjutande portalen, inspirerad av triumfbågar, var den första i sitt slag i moskéarkitekturen.
-245	När Ubayd Allah al-Mahdi grundar Mahdia år 909 låter han bygga moskén nära kalifpalatset, på en plattform som vunnits från havet. Sedan spanjorerna förstört staden 1554 byggs den ofta om. Mellan 1961 och 1965 återuppförs den nästan helt efter 900-talets plan; den stora portalen och den norra portiken är ursprungliga.
-246	En fyrsiding på omkring 85 × 55 meter, med massiva murar, flankerad av två fyrkantiga torn som tjänade som regnvattenbehållare. Moskén har aldrig haft någon minaret. Den monumentala portalen öppnade en ”hedersväg” mot mihraben, längst in i en sal med 9 skepp där det högre mittskeppet leder till en kupol.
-247	Ubayd Allah al-Mahdi grundar Mahdia
-248	Stora moskén byggs
-249	Staden förstörs av spanjorerna
-250	Återuppbyggnad efter den ursprungliga planen (1961–1965)
-251	Stora moskén i Sfax
-252	omkring 850 · aghlabiderna
-253	Mitt i Sfax medina ligger en moské från 800-talet vars östra fasad, skulpterad under ziridisk tid, och minaret efter Kairouans förebild är mästerverk i Ifriqiyas konst.
-254	Den första byggnaden uppfördes omkring 850, under aghlabiderna, samtidigt som Sfax stadsmurar. Moskén förskönades under ziridisk tid: två inskrifter på fasaden bär årtalen 988 och 1085. Den ändrades på 1100-talet och återfick sina ursprungliga mått på 1700-talet, vid ett stort byggnadsarbete.
-255	Den östra fasaden rytmiseras av dörrar och fönster med hästskobågar, nischer och en tandad gesims; en bysantinsk platta med två skulpterade påfåglar har återanvänts där. Den fyrkantiga minareten, ett femtontal meter hög, påminner om Kairouans men har en finare utsmyckning: skulpterade skivor och vacker blommande kufisk skrift. Bönesalen, som är vinkelformad, har 9 skepp.
-256	Första byggnaden, under aghlabiderna (omkring detta år)
-257	Ziridisk utsmyckning (inskrift på fasaden)
-258	Fasadens andra daterade inskrift
-259	Förklarad historiskt byggnadsminne
-260	De tre portarnas moské
-261	866 · minaret omkring 1440
-262	Ett litet bönehus i Kairouans medina, känt över hela världen för sin fasad från 866: den äldsta skulpterade och dekorerade moskéfasaden i den islamiska världen.
-263	Omkring 866 låter en andalusisk köpman som bosatt sig i Kairouan, Muhammad ibn Khayrun al-Maafiri, bygga detta kvartersbönehus; inskriften på fasaden anger hans namn och årtalet. Omkring 1440, under hafsidisk tid, restaureras moskén och får en liten minaret: ett skriftband på fasaden påminner om det.
-264	Fasaden, omkring sju meter hög, öppnar sig i tre bågar på antika kolonner; ovanför citerar band av kufisk skrift i relief Koranen (sura 33, vers 70–71) och nämner grundandet, mellan friser av rosetter och vinblad. Innanför finns en bönesal på omkring 9 × 9 meter, utan gård, med tre skepp på antika kolonner.
-265	Byggd av Muhammad ibn Khayrun
-266	Hafsidisk restaurering och liten minaret (omkring 1440–1441)
-267	Youssef Dey-moskén
-268	1612 · osmanerna
-269	Den första moskén av hanafitisk rit i Tunis, byggd av den osmanske dejen Youssef nära Kasbah. Dess åttkantiga minaret, den första i Tunis, visar osmanernas rit.
-270	En inskrift inne i moskén daterar bygget till 1612, på order av Youssef Dey, som styrde Tunis från 1610 till 1637. Den restaurerades i slutet av 1800-talet under Ali Bey och blev 1926 en filial till Zitouna-universitetet. Dejen vilar där i ett mausoleum, det första exemplet i Tunis på en gravmoské.
-271	Bönesalen, omgiven av gårdar på tre sidor, har 9 skepp och 7 travéer; en kupol reser sig framför mihraben. Minbaren är murad och klädd med färgad marmor, medan de malikitiska moskéerna har en minbar av trä. Den åttkantiga minareten avslutas med en täckt balkong och ett pyramidtak av gröna tegelpannor, liksom mausoleet.
-272	Byggd av Youssef Dey (inskrift)
-273	Youssef Dey dör och begravs i sitt mausoleum
-274	Filial till Zitouna-universitetet
-275	Hammouda Pacha-moskén
-276	1655 · muradiderna
-277	Den andra hanafitiska moskén i Tunis, uppförd 1655 av bejen Hammouda Pacha. Dess smäckra åttkantiga minaret reser sig över gatan Sidi Ben Arous i medinan.
-278	Hammouda Pacha, bej av den muradidiska dynastin, låter bygga moskén 1655, i hörnet av gatan Sidi Ben Arous och Kasbah-gatan. Liksom Youssef Dey före honom låter han anlägga sitt eget mausoleum där, på gården: denna grav sägs långt senare ha inspirerat president Bourguibas mausoleum i Monastir.
-279	En osmansk byggnad från 1600-talet: marmorport, tak av gröna tegelpannor och tre gårdar. Bönesalen, omkring 24 × 17 meter, har 7 skepp på 48 kolonner; väggarna är klädda med marmor och skuren gips, med blomdekor och färgad marmor av italiensk påverkan. Ovanligt för Tunis: gården öppnar sig mot gatan genom breda fönster med galler. Den åttkantiga minareten kröns av en balkong och ett pyramidtak.
-280	Byggd av Hammouda Pacha Bey
-281	Restaurering (1960–1961)
-282	Sidi Mahrez-moskén (Mohamed Bey-moskén)
-283	1692–1697 · muradiderna
-284	Med sina vita kupoler, som återfinns på staden Tunis emblem, är den den enda tunisiska moské som byggts efter förebild av Istanbuls stora moskéer. Den ligger mitt emot Sidi Mahrez zawiya, medinans skyddshelgon.
-285	Mohamed Bey el-Mouradi påbörjar bygget mellan 1692 och 1697, till Sidi Mahrez ära (Mahrez ibn Khalaf, 900-talet), i kvarteret Bab Souika. De politiska oroligheterna i slutet av 1600-talet hindrar att arbetet fullbordas: moskén fick aldrig någon minaret. Den restaureras från 1984, tillsammans med kvarteret Bab Souika.
-286	Den kvadratiska bönesalen (28 meters sida) står på en plattform och täcks av en stor mittkupol på nästan 16 meter i diameter, omgiven av halvkupoler och små hörnkupoler, liksom Sultan Ahmet-moskén i Istanbul. Keramikplattor från Iznik, i blått, grönt och ”tomatrött”, pryder pelarna och mihrabväggen.
-287	Mohamed Bey el-Mouradi påbörjar bygget
-288	Arbetet avslutas, utan minaret
-289	Restaurering tillsammans med kvarteret Bab Souika
-290	Sidi Sahbis zawiya (Barberarens mausoleum)
-291	1600-talet · muradiderna
-292	Mausoleet över Abu Zamaa al-Balawi, följeslagare till Profeten ﷺ, som Kairouans invånare kallar ”Sidi Sahbi”: Kairouans skyddshelgon. Gårdarna, täckta av keramik och skuren gips, gör det till ett av stadens vackraste byggnadsverk.
-293	Abu Zamaa al-Balawi dör i strid år 654 (år 34 efter hijra). Det berättas att han bar med sig några hårstrån ur Profetens ﷺ skägg, därav namnet ”Barberarens mausoleum”. Den gamla byggnaden förnyas helt på 1600-talet av de muradidiska bejerna: Hammouda Pacha bygger om zawiyan, madrasan och minareten omkring 1662, och sedan gör Mohamed Bey om mausoleets kupol omkring 1681–1685.
-294	En stor anläggning utanför medinans murar: entrégård och minaret i andalusisk stil, pelargård, kupolsal och sedan en gård vars väggar täcks av mångfärgad keramik och fint skuren gips, framför gravkammaren. En madrasa, med studentrum och bönesal, fullbordar komplexet.
-295	Det är en av de platser som tunisierna besöker mest, särskilt vid Mawlid-högtiden; här firas också äktenskapskontrakt och omskärelser. Förr samlades Maghrebs karavaner här innan de gav sig av på pilgrimsfärd till Mecka.
-296	Abu Zamaa al-Balawi dör (år 34 efter hijra)
-297	Hammouda Pachas zawiya, madrasa och minaret (omkring detta år)
-298	Ny kupol på mausoleet under Mohamed Bey (1681–1685)
-299	Stora moskén i Testour
-300	omkring 1630 · andalusierna
-301	Byggd av andalusier som fördrivits från Spanien i början av 1600-talet förenar den tunisiska traditioner och spansk-morisk konst. Minareten har en klocka vars visare går baklänges.
-302	Efter att moriskerna fördrivits från Spanien (1609–1614) slår sig många ner i Medjerda-dalen och grundar Testour på nytt. Moskén uppförs under 1600-talets första tredjedel, troligen före 1631, av Mohamed Tagharinou, en andalusier som bosatt sig i staden. En andra gård och en tvagningssal läggs till på 1700-talet. År 2014 satte invånare och föreningar i gång minaretens klocka igen, efter att den stått stilla i nästan tre århundraden.
-303	Bönesalens plan (9 skepp) följer Kairouans tradition, men tegeltaken, stuckdekoren och minareten är andalusiska. Den 22,50 meter höga minareten består av ett fyrkantigt torn av tegel och sten, på Toledo-vis, och ovanpå det ett åttkantigt torn prytt med keramik: den påminner om Aragoniens klocktorn. På gården visade ett solur från 1761 bönetiderna.
-304	Moriskerna, fördrivna från Spanien (1609–1614), kommer till Tunisien
-305	Moskén färdig (troligen före detta år)
-306	Soluret på gården
-307	Minaretens klocka sätts i gång igen
-308	Malik ibn Anas-moskén (Kartago)
-309	2003 · nutida
-310	En stor modern moské byggd på en kulle i Kartago, mitt i det arkeologiska området. Dess 55 meter höga minaret syns på långt håll; moskén finns på tiodinarsedeln.
-311	Den byggdes 2000–2003 efter ritningar av arkitekten Ayad Sriha och hette först ”El Abidine”. I november 2012 fick den namn efter imam Malik ibn Anas (död 795), grundare av den malikitiska skolan som följs i Tunisien. Radiokanalen Zitouna FM sänder de fem dagliga bönerna därifrån.
-312	Den hämtar inspiration från de stora tunisiska moskéerna: förplats, gård på 1 500 m² och bönesal med 64 kolonner som rymmer 1 000 troende. Mihraben av vit marmor med inläggningar i grönt och rött kröns av en kupol på tio meter i diameter. Väggarna är täckta av Kedhel-sten, skuren stuck och keramik med andalusiska mönster; golvet är belagt med mattor från Kairouan.
-313	Första stenen läggs
-314	Invigning
-315	Den får namn efter imam Malik ibn Anas
-316	Fadhloun-moskén och Djerbas ibaditiska moskéer
-317	1300-talet · Djerba
-318	Vid utfarten från Midoun ligger en vit moské som liknar en liten fästning, typisk för ön Djerba, där det lever en ibaditisk muslimsk gemenskap. Den är byggnadsminne sedan 2022 och hör till de platser på Djerba som upptogs på världsarvslistan 2023.
-319	Fadhloun-moskén byggdes på 1300-talet och hör till Djerbas rika samling av moskéer, ofta ibaditiska, som uppförts på fälten och vid kusten. Med sina tjocka murar och små minareter tjänade många också som vaktposter: de bildade en andra försvarslinje bakom kustens fästen.
-320	Den kvadratiska bönesalen, omkring 7,5 meter i sida, täcks av nio små kupoler som bärs av fyra kolonner; mihraben är en enkel nisch och minbaren, av sten, har bara tre steg. En satt minaret i två våningar reser sig över taket. Runt omkring: en gård med en ”sommarmihrab”, en regnvattencistern, två salar för koranundervisning, ett underjordiskt bageri och en sädeskvarn.
-321	Dessa moskéer var små centrum för livet: bön, koranundervisning, bröd och säd åt kvarteret. Deras vita och avskalade arkitektur är ett av de ansikten av Djerba som UNESCO erkände 2023.
-322	1300-t.
-323	Fadhloun-moskén byggs (1300-talet)
-324	Förklarad byggnadsminne (beslut den 15 mars 2022)
-325	Djerba upptas på UNESCO:s världsarvslista
-326	Kasbah-moskén (Tunis)
-327	1231–1235 · hafsiderna
-328	Byggd av den hafsidiska dynastins grundare vid Kasbah-torget har den en av Tunis vackraste minareter, i den almohadiska stilen från Marrakech och Sevilla.
-329	Den uppfördes 1231–1235 på order av Abu Zakariya Yahya, den hafsidiska dynastins grundare, som hade varit ståthållare i Sevilla. Först var den hovmoské för härskarna som bodde i Kasbah, sedan blev den en av stadens fredagsmoskéer; den är den första som uppfördes i Tunis efter Zitouna. Under osmansk tid bad man där enligt den hanafitiska riten.
-330	Bönesalen, som är djupare än den är bred, har 7 skepp och 9 travéer på marmorkolonner med hafsidiska kapitäl; mihraben kröns av en kupol med stalaktiter av skuren gips. Den fyrkantiga minareten, byggd redan 1233, är täckt av ett nät av romber i ockrafärgad sten: den blev förebild för Zitounas nuvarande minaret.
-331	Bygget påbörjas (Abu Zakariya Yahya)
-332	Minareten står färdig
-333	Moskébygget avslutas
-334	Stora moskén i Monastir
-335	800-talet · utbyggd fram till 1700-talet
-336	Vänd mot havet, intill den berömda ribaten, ligger en stram och elegant stenmoské som har byggts ut under varje epok sedan 800-talet.
-337	Dagens bönesal är resultatet av fyra etapper: ett litet välvt bönehus på 800-talet, en utbyggnad på 1000-talet (ziridisk tid) med mihraben, och sedan under hafsidisk tid en fyrkantig minaret och två skepp till. Ett yttre galleri läggs till på 1700-talet. I oktober 2013 får två jordskalv minaretens topp att delvis rasa.
-338	Fasader av huggen sten, som livas upp av dörr- och fönsteromfattningarna och av bågarna i ett galleri. Moskén har ingen gård framför bönesalen. Mihraben från 1000-talet, med ziridisk dekor och blommande kufisk skrift, kröns inte av någon kupol, vilket är ovanligt i det medeltida Ifriqiya.
-339	800-t.
-340	Första välvda bönehuset (800-talet)
-341	1000-t.
-342	Ziridisk utbyggnad och mihrab (1000-talet)
-343	1700-t.
-344	Yttre galleri (1700-talet)
-345	Minaretens topp rasar delvis efter två jordbävningar
+201	Skriv din e-postadress (obligatorisk) så att vi kan svara dig.
+202	Vi har tagit emot det och svarar till adressen:
+203	Skicka ett nytt meddelande
+204	Tunis
+205	Kairouan
+206	Sousse
+207	Mahdia
+208	Sfax
+209	Testour
+210	Kartago
+211	Djerba (Midoun)
+212	Monastir
+213	Zitouna-moskén
+214	698 · återuppbyggd 864
+215	Den stora moskén i Tunis medina, huvudstadens äldsta och största. I mer än tusen år var den också ett stort islamiskt universitet.
+216	Enligt traditionen grundades böneplatsen år 698 av Hassan ibn al-Numan, efter erövringen av Kartago; andra källor tillskriver grundandet den umayyadiske ståthållaren Ubayd Allah ibn al-Habhab, omkring 732. Av den första byggnaden finns nästan ingenting kvar: moskén byggdes helt om år 864 av den aghlabidiske emiren Abu Ibrahim Ahmad. Varje dynasti förskönade den sedan: ”bahou”-kupolen under ziriderna (omkring 990), cisterner och portar under hafsiderna, den östra gallerian 1637. Dagens minaret, i almohadisk stil, är från 1894.
+217	Liksom i Kairouan och Córdoba ligger en gård omgiven av gallerier framför en bönesal med pelarskog: omkring 160 antika kolonner, till stor del hämtade från Kartago, bildar 15 skepp. Mittskeppet, som är bredare, leder till mihraben, som täcks av en kupol från 800-talet. Bahou-kupolen, vid salens ingång, växlar mellan ockrafärgad sten och rött tegel. Minareten från 1894 tar upp rombmönstret från Kasbah-moskéns minaret.
+218	Zitouna var ett av den muslimska världens äldsta lärosäten: varje lärd satt lutad mot en kolonn, med eleverna i en ring omkring sig. Den utbildade stora malikitiska rättslärda som Ibn Arafa, samtida med Ibn Khaldun. År 1958 lämnade undervisningen moskén; i dag fortsätter den vid universitetet Ez-Zitouna. Det sägs att bönen aldrig har avbrutits här.
+219	Grundande enligt traditionen (Hassan ibn al-Numan)
+220	Fullständig ombyggnad under aghlabiderna
+221	Bahou-kupolen (ziriderna)
+222	Ny minaret i almohadisk stil
+223	Undervisningen flyttar från moskén till universitetet
+224	Tunis medina upptas på UNESCO:s världsarvslista
+225	Stora moskén i Kairouan (Uqba-moskén)
+226	670 · nuvarande form från 836
+227	Maghrebs äldsta moské, grundad år 670 tillsammans med staden Kairouan. Den blev förebild för alla moskéer i Nordafrika och är ett av UNESCO:s världsarv.
+228	År 670 grundar erövraren Uqba ibn Nafi Kairouan och placerar sin moské mitt i staden. Den byggs ut och om under 700- och 800-talen och får sin nuvarande form år 836 under den aghlabidiske emiren Ziyadat Allah I. Omkring 862–863 förlänger Abu Ibrahim Ahmad bönesalen och skänker minbaren och mihrabens utsmyckning. På 1000-talet lägger den ziridiske fursten al-Muizz ibn Badis till maqsuran av trä. Kairouan betraktades länge som islams fjärde heliga stad.
+229	En väldig fyrsiding på omkring 9 000 m²: en stor stenlagd gård, gallerier och en bönesal med 17 skepp som bärs av hundratals antika kolonner av marmor, granit och porfyr, alla olika. Minareten, omkring 31 meter hög, är från första hälften av 800-talet: den är en av de äldsta minareter som ännu står kvar. Mihraben från 800-talet pryds av keramikplattor med metallglans; bredvid står den snidade träminbaren, den äldsta bevarade minbaren i den muslimska världen.
+230	Kairouan var Ifriqiyas religiösa och lärda huvudstad: det var här imam Sahnun på 800-talet skrev Mudawwana, grundverket för den malikitiska rättsskolan som följs i Tunisien och hela Maghreb. Moskéns bibliotek har bevarat mycket gamla handskrifter, bland dem blad ur den berömda ”Blå Koranen”.
+231	Grundad av Uqba ibn Nafi, samtidigt med staden
+232	Ombyggnad under Ziyadat Allah I: den nuvarande formen
+233	Minbar och mihrabens utsmyckning (Abu Ibrahim Ahmad)
+234	Al-Muizz ibn Badis maqsura av trä (omkring detta år)
+235	Kairouan upptas på UNESCO:s världsarvslista
+236	Stora moskén i Sousse
+237	850–851 · aghlabiderna
+238	Vid ingången till medinan står en moské som liknar en fästning, byggd 850–851 nära ribaten som skyddade kusten. Den är stram och kraftfull och ingår i Sousses medina, ett av UNESCO:s världsarv.
+239	Den uppfördes 850–851 av den aghlabidiske emiren Abu al-Abbas Muhammad, ett trettiotal år efter ribaten i Sousse; en kufisk inskrift på gårdens gallerier påminner om bygget. Den byggdes ut under emir Ibrahim II (875–902), när Sousse blev Ifriqiyas andra stad.
+240	Krenelerade murar, hörntorn krönta av små kupoler: moskén liknar en fästning och har ingen riktig minaret, troligen därför att vakttornet i den närliggande ribaten fyllde den uppgiften. Bönesalen har 13 skepp; mittskeppet och travén framför mihraben, som är bredare, bildar ett ”T” som markeras av två kupoler.
+241	Den närliggande ribaten i Sousse står färdig
+242	Moskén byggs (850–851)
+243	Utbyggnad under Ibrahim II (875–902)
+244	Sousses medina upptas på UNESCO:s världsarvslista
+245	Stora moskén i Mahdia
+246	916 · fatimiderna
+247	Byggd år 916 av den förste fatimidiske kalifen i hans nya huvudstad vid havet. Den stora utskjutande portalen, inspirerad av triumfbågar, var den första i sitt slag i moskéarkitekturen.
+248	När Ubayd Allah al-Mahdi grundar Mahdia år 909 låter han bygga moskén nära kalifpalatset, på en plattform som vunnits från havet. Sedan spanjorerna förstört staden 1554 byggs den ofta om. Mellan 1961 och 1965 återuppförs den nästan helt efter 900-talets plan; den stora portalen och den norra portiken är ursprungliga.
+249	En fyrsiding på omkring 85 × 55 meter, med massiva murar, flankerad av två fyrkantiga torn som tjänade som regnvattenbehållare. Moskén har aldrig haft någon minaret. Den monumentala portalen öppnade en ”hedersväg” mot mihraben, längst in i en sal med 9 skepp där det högre mittskeppet leder till en kupol.
+250	Ubayd Allah al-Mahdi grundar Mahdia
+251	Stora moskén byggs
+252	Staden förstörs av spanjorerna
+253	Återuppbyggnad efter den ursprungliga planen (1961–1965)
+254	Stora moskén i Sfax
+255	omkring 850 · aghlabiderna
+256	Mitt i Sfax medina ligger en moské från 800-talet vars östra fasad, skulpterad under ziridisk tid, och minaret efter Kairouans förebild är mästerverk i Ifriqiyas konst.
+257	Den första byggnaden uppfördes omkring 850, under aghlabiderna, samtidigt som Sfax stadsmurar. Moskén förskönades under ziridisk tid: två inskrifter på fasaden bär årtalen 988 och 1085. Den ändrades på 1100-talet och återfick sina ursprungliga mått på 1700-talet, vid ett stort byggnadsarbete.
+258	Den östra fasaden rytmiseras av dörrar och fönster med hästskobågar, nischer och en tandad gesims; en bysantinsk platta med två skulpterade påfåglar har återanvänts där. Den fyrkantiga minareten, ett femtontal meter hög, påminner om Kairouans men har en finare utsmyckning: skulpterade skivor och vacker blommande kufisk skrift. Bönesalen, som är vinkelformad, har 9 skepp.
+259	Första byggnaden, under aghlabiderna (omkring detta år)
+260	Ziridisk utsmyckning (inskrift på fasaden)
+261	Fasadens andra daterade inskrift
+262	Förklarad historiskt byggnadsminne
+263	De tre portarnas moské
+264	866 · minaret omkring 1440
+265	Ett litet bönehus i Kairouans medina, känt över hela världen för sin fasad från 866: den äldsta skulpterade och dekorerade moskéfasaden i den islamiska världen.
+266	Omkring 866 låter en andalusisk köpman som bosatt sig i Kairouan, Muhammad ibn Khayrun al-Maafiri, bygga detta kvartersbönehus; inskriften på fasaden anger hans namn och årtalet. Omkring 1440, under hafsidisk tid, restaureras moskén och får en liten minaret: ett skriftband på fasaden påminner om det.
+267	Fasaden, omkring sju meter hög, öppnar sig i tre bågar på antika kolonner; ovanför citerar band av kufisk skrift i relief Koranen (sura 33, vers 70–71) och nämner grundandet, mellan friser av rosetter och vinblad. Innanför finns en bönesal på omkring 9 × 9 meter, utan gård, med tre skepp på antika kolonner.
+268	Byggd av Muhammad ibn Khayrun
+269	Hafsidisk restaurering och liten minaret (omkring 1440–1441)
+270	Youssef Dey-moskén
+271	1612 · osmanerna
+272	Den första moskén av hanafitisk rit i Tunis, byggd av den osmanske dejen Youssef nära Kasbah. Dess åttkantiga minaret, den första i Tunis, visar osmanernas rit.
+273	En inskrift inne i moskén daterar bygget till 1612, på order av Youssef Dey, som styrde Tunis från 1610 till 1637. Den restaurerades i slutet av 1800-talet under Ali Bey och blev 1926 en filial till Zitouna-universitetet. Dejen vilar där i ett mausoleum, det första exemplet i Tunis på en gravmoské.
+274	Bönesalen, omgiven av gårdar på tre sidor, har 9 skepp och 7 travéer; en kupol reser sig framför mihraben. Minbaren är murad och klädd med färgad marmor, medan de malikitiska moskéerna har en minbar av trä. Den åttkantiga minareten avslutas med en täckt balkong och ett pyramidtak av gröna tegelpannor, liksom mausoleet.
+275	Byggd av Youssef Dey (inskrift)
+276	Youssef Dey dör och begravs i sitt mausoleum
+277	Filial till Zitouna-universitetet
+278	Hammouda Pacha-moskén
+279	1655 · muradiderna
+280	Den andra hanafitiska moskén i Tunis, uppförd 1655 av bejen Hammouda Pacha. Dess smäckra åttkantiga minaret reser sig över gatan Sidi Ben Arous i medinan.
+281	Hammouda Pacha, bej av den muradidiska dynastin, låter bygga moskén 1655, i hörnet av gatan Sidi Ben Arous och Kasbah-gatan. Liksom Youssef Dey före honom låter han anlägga sitt eget mausoleum där, på gården: denna grav sägs långt senare ha inspirerat president Bourguibas mausoleum i Monastir.
+282	En osmansk byggnad från 1600-talet: marmorport, tak av gröna tegelpannor och tre gårdar. Bönesalen, omkring 24 × 17 meter, har 7 skepp på 48 kolonner; väggarna är klädda med marmor och skuren gips, med blomdekor och färgad marmor av italiensk påverkan. Ovanligt för Tunis: gården öppnar sig mot gatan genom breda fönster med galler. Den åttkantiga minareten kröns av en balkong och ett pyramidtak.
+283	Byggd av Hammouda Pacha Bey
+284	Restaurering (1960–1961)
+285	Sidi Mahrez-moskén (Mohamed Bey-moskén)
+286	1692–1697 · muradiderna
+287	Med sina vita kupoler, som återfinns på staden Tunis emblem, är den den enda tunisiska moské som byggts efter förebild av Istanbuls stora moskéer. Den ligger mitt emot Sidi Mahrez zawiya, medinans skyddshelgon.
+288	Mohamed Bey el-Mouradi påbörjar bygget mellan 1692 och 1697, till Sidi Mahrez ära (Mahrez ibn Khalaf, 900-talet), i kvarteret Bab Souika. De politiska oroligheterna i slutet av 1600-talet hindrar att arbetet fullbordas: moskén fick aldrig någon minaret. Den restaureras från 1984, tillsammans med kvarteret Bab Souika.
+289	Den kvadratiska bönesalen (28 meters sida) står på en plattform och täcks av en stor mittkupol på nästan 16 meter i diameter, omgiven av halvkupoler och små hörnkupoler, liksom Sultan Ahmet-moskén i Istanbul. Keramikplattor från Iznik, i blått, grönt och ”tomatrött”, pryder pelarna och mihrabväggen.
+290	Mohamed Bey el-Mouradi påbörjar bygget
+291	Arbetet avslutas, utan minaret
+292	Restaurering tillsammans med kvarteret Bab Souika
+293	Sidi Sahbis zawiya (Barberarens mausoleum)
+294	1600-talet · muradiderna
+295	Mausoleet över Abu Zamaa al-Balawi, följeslagare till Profeten ﷺ, som Kairouans invånare kallar ”Sidi Sahbi”: Kairouans skyddshelgon. Gårdarna, täckta av keramik och skuren gips, gör det till ett av stadens vackraste byggnadsverk.
+296	Abu Zamaa al-Balawi dör i strid år 654 (år 34 efter hijra). Det berättas att han bar med sig några hårstrån ur Profetens ﷺ skägg, därav namnet ”Barberarens mausoleum”. Den gamla byggnaden förnyas helt på 1600-talet av de muradidiska bejerna: Hammouda Pacha bygger om zawiyan, madrasan och minareten omkring 1662, och sedan gör Mohamed Bey om mausoleets kupol omkring 1681–1685.
+297	En stor anläggning utanför medinans murar: entrégård och minaret i andalusisk stil, pelargård, kupolsal och sedan en gård vars väggar täcks av mångfärgad keramik och fint skuren gips, framför gravkammaren. En madrasa, med studentrum och bönesal, fullbordar komplexet.
+298	Det är en av de platser som tunisierna besöker mest, särskilt vid Mawlid-högtiden; här firas också äktenskapskontrakt och omskärelser. Förr samlades Maghrebs karavaner här innan de gav sig av på pilgrimsfärd till Mecka.
+299	Abu Zamaa al-Balawi dör (år 34 efter hijra)
+300	Hammouda Pachas zawiya, madrasa och minaret (omkring detta år)
+301	Ny kupol på mausoleet under Mohamed Bey (1681–1685)
+302	Stora moskén i Testour
+303	omkring 1630 · andalusierna
+304	Byggd av andalusier som fördrivits från Spanien i början av 1600-talet förenar den tunisiska traditioner och spansk-morisk konst. Minareten har en klocka vars visare går baklänges.
+305	Efter att moriskerna fördrivits från Spanien (1609–1614) slår sig många ner i Medjerda-dalen och grundar Testour på nytt. Moskén uppförs under 1600-talets första tredjedel, troligen före 1631, av Mohamed Tagharinou, en andalusier som bosatt sig i staden. En andra gård och en tvagningssal läggs till på 1700-talet. År 2014 satte invånare och föreningar i gång minaretens klocka igen, efter att den stått stilla i nästan tre århundraden.
+306	Bönesalens plan (9 skepp) följer Kairouans tradition, men tegeltaken, stuckdekoren och minareten är andalusiska. Den 22,50 meter höga minareten består av ett fyrkantigt torn av tegel och sten, på Toledo-vis, och ovanpå det ett åttkantigt torn prytt med keramik: den påminner om Aragoniens klocktorn. På gården visade ett solur från 1761 bönetiderna.
+307	Moriskerna, fördrivna från Spanien (1609–1614), kommer till Tunisien
+308	Moskén färdig (troligen före detta år)
+309	Soluret på gården
+310	Minaretens klocka sätts i gång igen
+311	Malik ibn Anas-moskén (Kartago)
+312	2003 · nutida
+313	En stor modern moské byggd på en kulle i Kartago, mitt i det arkeologiska området. Dess 55 meter höga minaret syns på långt håll; moskén finns på tiodinarsedeln.
+314	Den byggdes 2000–2003 efter ritningar av arkitekten Ayad Sriha och hette först ”El Abidine”. I november 2012 fick den namn efter imam Malik ibn Anas (död 795), grundare av den malikitiska skolan som följs i Tunisien. Radiokanalen Zitouna FM sänder de fem dagliga bönerna därifrån.
+315	Den hämtar inspiration från de stora tunisiska moskéerna: förplats, gård på 1 500 m² och bönesal med 64 kolonner som rymmer 1 000 troende. Mihraben av vit marmor med inläggningar i grönt och rött kröns av en kupol på tio meter i diameter. Väggarna är täckta av Kedhel-sten, skuren stuck och keramik med andalusiska mönster; golvet är belagt med mattor från Kairouan.
+316	Första stenen läggs
+317	Invigning
+318	Den får namn efter imam Malik ibn Anas
+319	Fadhloun-moskén och Djerbas ibaditiska moskéer
+320	1300-talet · Djerba
+321	Vid utfarten från Midoun ligger en vit moské som liknar en liten fästning, typisk för ön Djerba, där det lever en ibaditisk muslimsk gemenskap. Den är byggnadsminne sedan 2022 och hör till de platser på Djerba som upptogs på världsarvslistan 2023.
+322	Fadhloun-moskén byggdes på 1300-talet och hör till Djerbas rika samling av moskéer, ofta ibaditiska, som uppförts på fälten och vid kusten. Med sina tjocka murar och små minareter tjänade många också som vaktposter: de bildade en andra försvarslinje bakom kustens fästen.
+323	Den kvadratiska bönesalen, omkring 7,5 meter i sida, täcks av nio små kupoler som bärs av fyra kolonner; mihraben är en enkel nisch och minbaren, av sten, har bara tre steg. En satt minaret i två våningar reser sig över taket. Runt omkring: en gård med en ”sommarmihrab”, en regnvattencistern, två salar för koranundervisning, ett underjordiskt bageri och en sädeskvarn.
+324	Dessa moskéer var små centrum för livet: bön, koranundervisning, bröd och säd åt kvarteret. Deras vita och avskalade arkitektur är ett av de ansikten av Djerba som UNESCO erkände 2023.
+325	1300-t.
+326	Fadhloun-moskén byggs (1300-talet)
+327	Förklarad byggnadsminne (beslut den 15 mars 2022)
+328	Djerba upptas på UNESCO:s världsarvslista
+329	Kasbah-moskén (Tunis)
+330	1231–1235 · hafsiderna
+331	Byggd av den hafsidiska dynastins grundare vid Kasbah-torget har den en av Tunis vackraste minareter, i den almohadiska stilen från Marrakech och Sevilla.
+332	Den uppfördes 1231–1235 på order av Abu Zakariya Yahya, den hafsidiska dynastins grundare, som hade varit ståthållare i Sevilla. Först var den hovmoské för härskarna som bodde i Kasbah, sedan blev den en av stadens fredagsmoskéer; den är den första som uppfördes i Tunis efter Zitouna. Under osmansk tid bad man där enligt den hanafitiska riten.
+333	Bönesalen, som är djupare än den är bred, har 7 skepp och 9 travéer på marmorkolonner med hafsidiska kapitäl; mihraben kröns av en kupol med stalaktiter av skuren gips. Den fyrkantiga minareten, byggd redan 1233, är täckt av ett nät av romber i ockrafärgad sten: den blev förebild för Zitounas nuvarande minaret.
+334	Bygget påbörjas (Abu Zakariya Yahya)
+335	Minareten står färdig
+336	Moskébygget avslutas
+337	Stora moskén i Monastir
+338	800-talet · utbyggd fram till 1700-talet
+339	Vänd mot havet, intill den berömda ribaten, ligger en stram och elegant stenmoské som har byggts ut under varje epok sedan 800-talet.
+340	Dagens bönesal är resultatet av fyra etapper: ett litet välvt bönehus på 800-talet, en utbyggnad på 1000-talet (ziridisk tid) med mihraben, och sedan under hafsidisk tid en fyrkantig minaret och två skepp till. Ett yttre galleri läggs till på 1700-talet. I oktober 2013 får två jordskalv minaretens topp att delvis rasa.
+341	Fasader av huggen sten, som livas upp av dörr- och fönsteromfattningarna och av bågarna i ett galleri. Moskén har ingen gård framför bönesalen. Mihraben från 1000-talet, med ziridisk dekor och blommande kufisk skrift, kröns inte av någon kupol, vilket är ovanligt i det medeltida Ifriqiya.
+342	800-t.
+343	Första välvda bönehuset (800-talet)
+344	1000-t.
+345	Ziridisk utbyggnad och mihrab (1000-talet)
+346	1700-t.
+347	Yttre galleri (1700-talet)
+348	Minaretens topp rasar delvis efter två jordbävningar

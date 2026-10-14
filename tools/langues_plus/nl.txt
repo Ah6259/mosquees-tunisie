@@ -71,7 +71,7 @@
 70	Matig
 71	Niet goed
 72	Uw bericht
-73	Uw e-mailadres (optioneel, om u te antwoorden)
+73	Uw e-mailadres (verplicht, zodat we kunnen antwoorden)
 74	Versturen
 75	Uw mening wordt naar de maker van de site gestuurd (dienst Formspree). Er wordt niets verstuurd zonder een klik op ‘Versturen’.
 76	Een moskee die op de kaart ontbreekt, een gebedsruimte in een station, een ziekenhuis, een universiteit, een winkelcentrum… Help anderen een plek te vinden om te bidden. Na een automatische controle wordt de plaats op de kaart gepubliceerd, ‘te bevestigen’ totdat een andere bezoeker ze bevestigt.
@@ -199,148 +199,151 @@
 198	Het zoeken naar steden reageert momenteel niet: probeer het zo dadelijk opnieuw.
 199	<b>Elders in de wereld</b>: OpenStreetMap wordt live gelezen voor het gebied dat op de kaart wordt getoond (5 kopieën van OpenStreetMap, de Overpass-servers), elk land met zijn eigen kleur. Een stad in de wereld wordt gevonden met <b>Nominatim</b> (© OpenStreetMap-bijdragers), alleen wanneer u de zoekopdracht bevestigt.
 200	Buiten Tunesië wordt het gebied dat op de kaart wordt getoond (niet uw exacte positie) naar de servers van OpenStreetMap gestuurd om de moskeeën te lezen; een stad die u in de wereld zoekt, wordt naar Nominatim gestuurd.
-201	Tunis
-202	Kairouan
-203	Sousse
-204	Mahdia
-205	Sfax
-206	Testour
-207	Carthago
-208	Djerba (Midoun)
-209	Monastir
-210	Zitouna-moskee
-211	698 · herbouwd in 864
-212	De grote moskee van de medina van Tunis, de oudste en grootste van de hoofdstad. Meer dan duizend jaar lang was ze ook een grote islamitische universiteit.
-213	Volgens de overlevering werd de gebedsplaats in 698 gesticht door Hassan ibn al-Nu'man, na de inname van Carthago; andere bronnen schrijven de stichting toe aan de Omajjadische gouverneur Ubayd Allah ibn al-Habhab, rond 732. Van dat eerste gebouw is bijna niets over: de moskee werd in 864 volledig herbouwd door de Aghlabidische emir Abu Ibrahim Ahmad. Elke dynastie verfraaide haar daarna: koepel van de ‘bahu’ onder de Ziriden (rond 990), waterreservoirs en poorten onder de Hafsiden, oostelijke galerij in 1637. De huidige minaret, in Almohadische stijl, dateert van 1894.
-214	Net als in Kairouan en Córdoba leidt een door galerijen omgeven binnenplaats naar een ‘hypostiele’ gebedszaal: ongeveer 160 antieke zuilen, grotendeels afkomstig uit Carthago, vormen er 15 beuken. De bredere middenbeuk leidt naar de mihrab, die overkoepeld wordt door een koepel uit de 9e eeuw. De koepel van de bahu, bij de ingang van de zaal, wisselt okerkleurige steen af met rode baksteen. De minaret van 1894 neemt het ruitpatroon over van die van de Kasbah-moskee.
-215	De Zitouna was een van de oudste onderwijscentra van de islamitische wereld: elke geleerde leunde tegen een zuil, met zijn leerlingen in een kring om hem heen. Ze bracht grote malikitische rechtsgeleerden voort, zoals Ibn Arafa, een tijdgenoot van Ibn Khaldun. In 1958 verliet het onderwijs de moskee; het wordt vandaag voortgezet aan de Ez-Zitouna-universiteit. Men zegt dat het gebed er nooit is onderbroken.
-216	Stichting volgens de overlevering (Hassan ibn al-Nu'man)
-217	Volledige herbouw door de Aghlabiden
-218	Koepel van de bahu (Ziriden)
-219	Nieuwe minaret in Almohadische stijl
-220	Het onderwijs verhuist van de moskee naar de universiteit
-221	De medina van Tunis ingeschreven op de Werelderfgoedlijst van UNESCO
-222	Grote Moskee van Kairouan (Uqba-moskee)
-223	670 · huidige vorm uit 836
-224	De oudste moskee van de Maghreb, gesticht in 670 samen met de stad Kairouan. Ze diende als model voor alle moskeeën van Noord-Afrika en staat op de Werelderfgoedlijst van UNESCO.
-225	In 670 sticht de veroveraar Uqba ibn Nafi Kairouan en plaatst hij zijn moskee in het centrum van de stad. Na uitbreidingen en herbouw in de 8e en 9e eeuw krijgt ze in 836 haar huidige vorm onder de Aghlabidische emir Ziyadat Allah I. Rond 862-863 verlengt Abu Ibrahim Ahmad de gebedszaal en schenkt hij de minbar en de decoratie van de mihrab. In de 11e eeuw voegt de Ziridische vorst al-Mu'izz ibn Badis de houten maqsura toe. Kairouan werd lange tijd beschouwd als de vierde heilige stad van de islam.
-226	Een uitgestrekte vierhoek van ongeveer 9 000 m²: een grote geplaveide binnenplaats, galerijen en een gebedszaal met 17 beuken, gedragen door honderden antieke zuilen van marmer, graniet en porfier, die allemaal verschillen. De minaret, ongeveer 31 meter hoog, dateert uit de eerste helft van de 9e eeuw: het is een van de oudste minaretten die nog overeind staan. De mihrab uit de 9e eeuw is versierd met keramische tegels met metaalglans; daarnaast staat de minbar van gesneden hout, de oudste bewaard gebleven minbar van de islamitische wereld.
-227	Kairouan was de religieuze en geleerde hoofdstad van Ifriqiya: hier schreef imam Sahnun in de 9e eeuw de Mudawwana, het basiswerk van de malikitische rechtsschool die in Tunesië en in de hele Maghreb wordt gevolgd. De bibliotheek van de moskee heeft zeer oude handschriften bewaard, waaronder bladen van de beroemde ‘Blauwe Koran’.
-228	Stichting door Uqba ibn Nafi, samen met de stad
-229	Herbouw door Ziyadat Allah I: de huidige vorm
-230	Minbar en decoratie van de mihrab (Abu Ibrahim Ahmad)
-231	Houten maqsura van al-Mu'izz ibn Badis (rond deze datum)
-232	Kairouan ingeschreven op de Werelderfgoedlijst van UNESCO
-233	Grote Moskee van Sousse
-234	850-851 · Aghlabiden
-235	Bij de ingang van de medina staat een moskee die op een vesting lijkt, gebouwd in 850-851 naast de ribat die de kust beschermde. Sober en krachtig maakt ze deel uit van de medina van Sousse, Werelderfgoed van UNESCO.
-236	Ze werd in 850-851 opgetrokken door de Aghlabidische emir Abu al-Abbas Muhammad, een dertigtal jaar na de ribat van Sousse; een Koefische inscriptie op de galerijen van de binnenplaats herinnert aan de bouw. Ze werd uitgebreid onder emir Ibrahim II (875-902), toen Sousse de tweede stad van Ifriqiya werd.
-237	Gekanteelde muren en hoektorens met kleine koepels: de moskee lijkt op een vesting en heeft geen echte minaret, wellicht omdat de wachttoren van de naburige ribat die rol vervulde. De gebedszaal telt 13 beuken; de bredere middenbeuk en de travee van de mihrab vormen een ‘T’, gemarkeerd door twee koepels.
-238	De naburige ribat van Sousse wordt voltooid
-239	Bouw van de moskee (850-851)
-240	Uitbreiding onder Ibrahim II (875-902)
-241	Medina van Sousse ingeschreven op de Werelderfgoedlijst van UNESCO
-242	Grote Moskee van Mahdia
-243	916 · Fatimiden
-244	Gebouwd in 916 door de eerste Fatimidische kalief in zijn nieuwe hoofdstad, aan zee. Het grote, vooruitspringende portaal, geïnspireerd op triomfbogen, is een primeur in de moskeearchitectuur.
-245	Wanneer Ubayd Allah al-Mahdi in 909 Mahdia sticht, laat hij de moskee bouwen bij het kalifale paleis, op een platform dat op de zee is gewonnen. Na de verwoesting van de stad door de Spanjaarden in 1554 wordt het gebouw vaak verbouwd. Tussen 1961 en 1965 wordt het bijna volledig herbouwd volgens het plan uit de 10e eeuw; het grote portaal en de noordelijke zuilengang zijn origineel.
-246	Een vierhoek van ongeveer 85 × 55 meter, met massieve muren, geflankeerd door twee vierkante torens die als regenwaterreservoirs dienden. De moskee heeft nooit een minaret gehad. Het monumentale portaal opende een ‘ereweg’ naar de mihrab, achterin een zaal met 9 beuken waarvan de hogere middenbeuk naar een koepel leidt.
-247	Stichting van Mahdia door Ubayd Allah al-Mahdi
-248	Bouw van de Grote Moskee
-249	De stad wordt verwoest door de Spanjaarden
-250	Herbouw volgens het oorspronkelijke plan (1961-1965)
-251	Grote Moskee van Sfax
-252	rond 850 · Aghlabiden
-253	In het hart van de medina van Sfax staat een moskee uit de 9e eeuw waarvan de oostgevel, in de Ziridische tijd gebeeldhouwd, en de minaret naar het voorbeeld van die van Kairouan meesterwerken zijn van de kunst van Ifriqiya.
-254	Het eerste gebouw wordt rond 850 opgetrokken, onder de Aghlabiden, tegelijk met de stadsmuren van Sfax. De moskee wordt verfraaid in de Ziridische tijd: twee inscripties op de gevel dragen de data 988 en 1085. Na wijzigingen in de 12e eeuw krijgt ze in de 18e eeuw, bij grote werken, haar oorspronkelijke afmetingen terug.
-255	De oostgevel wordt geleed door deuren en vensters met hoefijzerbogen, nissen en een getande kroonlijst; er is een Byzantijnse plaat met twee gebeeldhouwde pauwen in hergebruikt. De vierkante minaret, een vijftiental meter hoog, doet denken aan die van Kairouan maar heeft een fijnere decoratie: gebeeldhouwde schijven en fraai bloemrijk Koefisch schrift. De gebedszaal, in L-vorm, telt 9 beuken.
-256	Eerste gebouw, onder de Aghlabiden (rond deze datum)
-257	Ziridische verfraaiing (inscriptie op de gevel)
-258	Tweede gedateerde inscriptie op de gevel
-259	Beschermd als historisch monument
-260	Moskee van de Drie Deuren
-261	866 · minaret rond 1440
-262	Een klein gebedshuis in de medina van Kairouan, wereldwijd bekend om zijn gevel uit 866: de oudste gebeeldhouwde en versierde moskeegevel van de islamitische wereld.
-263	Rond 866 laat een Andalusische koopman die zich in Kairouan had gevestigd, Muhammad ibn Khayrun al-Ma'afiri, dit buurtgebedshuis bouwen; de inscriptie op de gevel vermeldt zijn naam en de datum. Rond 1440, in de Hafsidische tijd, wordt de moskee gerestaureerd en krijgt ze een kleine minaret: een band op de gevel herinnert daaraan.
-264	De gevel, ongeveer zeven meter hoog, opent met drie bogen op antieke zuilen; daarboven citeren banden met Koefisch schrift in reliëf de Koran (soera 33, verzen 70-71) en de stichting, tussen friezen van rozetten en wijnbladeren. Binnen ligt een gebedszaal van ongeveer 9 × 9 meter, zonder binnenplaats, met drie beuken op antieke zuilen.
-265	Bouw door Muhammad ibn Khayrun
-266	Hafsidische restauratie en kleine minaret (rond 1440-1441)
-267	Youssef Dey-moskee
-268	1612 · Ottomanen
-269	De eerste moskee van de hanafitische rechtsschool in Tunis, gebouwd door de Ottomaanse dey Youssef bij de Kasbah. De achthoekige minaret, de eerste van Tunis, kondigt de rechtsschool van de Ottomanen aan.
-270	Een inscriptie binnenin dateert de bouw in 1612, op bevel van Youssef Dey, die Tunis bestuurde van 1610 tot 1637. Ze werd aan het einde van de 19e eeuw gerestaureerd onder Ali Bey en werd in 1926 een dependance van de Zitouna-universiteit. De dey rust er in een mausoleum, het eerste voorbeeld in Tunis van een grafmoskee.
-271	De gebedszaal, aan drie zijden omgeven door binnenplaatsen, telt 9 beuken en 7 traveeën; voor de mihrab verrijst een koepel. De minbar is van metselwerk bekleed met gekleurd marmer, terwijl malikitische moskeeën een houten minbar hebben. De achthoekige minaret eindigt in een overdekt balkon en een piramidedak van groene dakpannen, net als het mausoleum.
-272	Bouw door Youssef Dey (inscriptie)
-273	Dood van Youssef Dey, begraven in zijn mausoleum
-274	Dependance van de Zitouna-universiteit
-275	Hammouda Pacha-moskee
-276	1655 · Muradiden
-277	De tweede hanafitische moskee van Tunis, in 1655 opgetrokken door bey Hammouda Pacha. De slanke achthoekige minaret steekt uit boven de rue Sidi Ben Arous, in de medina.
-278	Hammouda Pacha, bey van de Muradidische dynastie, laat de moskee in 1655 bouwen, op de hoek van de rue Sidi Ben Arous en de rue de la Kasbah. Net als Youssef Dey vóór hem laat hij er zijn eigen mausoleum inrichten, op de binnenplaats: dat graf zou veel later het mausoleum van president Bourguiba in Monastir hebben geïnspireerd.
-279	Een Ottomaans gebouw uit de 17e eeuw: marmeren poort, daken van groene dakpannen en drie binnenplaatsen. De gebedszaal, ongeveer 24 × 17 meter, telt 7 beuken op 48 zuilen; de muren zijn bekleed met marmer en gesneden stucwerk, met een decoratie van bloemen en gekleurd marmer van Italiaanse invloed. Zeldzaam in Tunis: de binnenplaats opent op de straat met brede getraliede vensters. De achthoekige minaret wordt bekroond door een balkon en een piramidedak.
-280	Bouw door Hammouda Pacha Bey
-281	Restauratie (1960-1961)
-282	Sidi Mahrez-moskee (Mohamed Bey-moskee)
-283	1692-1697 · Muradiden
-284	Met haar witte koepels, die ook op het wapen van de stad Tunis staan, is het de enige Tunesische moskee die naar het model van de grote moskeeën van Istanbul is gebouwd. Ze staat tegenover de zawiya van Sidi Mahrez, de beschermheilige van de medina.
-285	Mohamed Bey el-Mouradi begint de bouw tussen 1692 en 1697, ter ere van Sidi Mahrez (Mahrez ibn Khalaf, 10e eeuw), in de wijk Bab Souika. Door de politieke onrust aan het einde van de 17e eeuw kunnen de werken niet worden voltooid: de moskee heeft nooit een minaret gekregen. Ze wordt vanaf 1984 gerestaureerd, samen met de wijk Bab Souika.
-286	De vierkante gebedszaal (28 meter per zijde) staat op een platform en wordt overdekt door een grote centrale koepel met een diameter van bijna 16 meter, omringd door halfkoepels en kleine hoekkoepels, zoals de Sultan Ahmet-moskee in Istanbul. Keramische tegels uit Iznik, in blauw, groen en ‘tomaatrood’, sieren de pijlers en de muur van de mihrab.
-287	Begin van de bouw door Mohamed Bey el-Mouradi
-288	Einde van de werken, zonder minaret
-289	Restauratie samen met de wijk Bab Souika
-290	Zawiya van Sidi Sahbi (mausoleum van de Barbier)
-291	17e eeuw · Muradiden
-292	Het mausoleum van Abu Zama'a al-Balawi, metgezel van de Profeet ﷺ, die de inwoners van Kairouan ‘Sidi Sahbi’ noemen: de beschermheilige van Kairouan. De binnenplaatsen, bekleed met keramiek en gesneden stucwerk, maken het tot een van de mooiste monumenten van de stad.
-293	Abu Zama'a al-Balawi sneuvelt in 654 (jaar 34 van de hidjra). Men vertelt dat hij enkele haren van de baard van de Profeet ﷺ bij zich droeg, vandaar de naam ‘mausoleum van de Barbier’. Het oude gebouw wordt in de 17e eeuw volledig vernieuwd door de Muradidische beys: Hammouda Pacha herbouwt de zawiya, de madrasa en de minaret rond 1662, daarna vernieuwt Mohamed Bey de koepel van het mausoleum rond 1681-1685.
-294	Een uitgestrekt complex buiten de muren van de medina: toegangshof en minaret in Andalusische stijl, patio met zuilen, koepelzaal, en dan een hof met muren vol veelkleurige keramiek en fijn gesneden stucwerk, dat voorafgaat aan de grafkamer. Een madrasa, met studentenkamers en een gebedszaal, vervolledigt het complex.
-295	Het is een van de plaatsen die de Tunesiërs het meest bezoeken, vooral voor het Mawlid-feest; er worden ook huwelijkscontracten gesloten en besnijdenissen gevierd. Vroeger verzamelden de karavanen van de Maghreb zich hier voordat ze op bedevaart naar Mekka vertrokken.
-296	Dood van Abu Zama'a al-Balawi (jaar 34 van de hidjra)
-297	Zawiya, madrasa en minaret van Hammouda Pacha (rond deze datum)
-298	Nieuwe koepel van het mausoleum door Mohamed Bey (1681-1685)
-299	Grote Moskee van Testour
-300	rond 1630 · Andalusiërs
-301	Gebouwd door de Andalusiërs die in het begin van de 17e eeuw uit Spanje werden verdreven; ze verenigt Tunesische tradities en Spaans-Moorse kunst. De minaret draagt een klok waarvan de wijzers achteruit draaien.
-302	Na de verdrijving van de morisken uit Spanje (1609-1614) vestigen velen zich in de vallei van de Medjerda en stichten ze Testour opnieuw. De moskee wordt in het eerste derde van de 17e eeuw opgetrokken, waarschijnlijk vóór 1631, door Mohamed Tagharinou, een Andalusiër die zich in de stad had gevestigd. In de 18e eeuw worden een tweede binnenplaats en een ruimte voor rituele wassingen toegevoegd. In 2014 brengen inwoners en verenigingen de klok van de minaret, die bijna drie eeuwen had stilgestaan, weer op gang.
-303	Het plan van de gebedszaal (9 beuken) volgt de traditie van Kairouan, maar de pannendaken, het stucdecor en de minaret zijn Andalusisch. De 22,50 meter hoge minaret combineert een vierkante toren van baksteen en steen, in de trant van Toledo, met een achthoekige toren versierd met keramiek: hij doet denken aan de klokkentorens van Aragón. Op de binnenplaats gaf een zonnewijzer uit 1761 de gebedstijden aan.
-304	De morisken, verdreven uit Spanje (1609-1614), komen in Tunesië aan
-305	Moskee voltooid (waarschijnlijk vóór deze datum)
-306	Zonnewijzer op de binnenplaats
-307	De klok van de minaret weer op gang gebracht
-308	Malik ibn Anas-moskee (Carthago)
-309	2003 · hedendaags
-310	Een grote moderne moskee, gebouwd op een heuvel van Carthago, midden in de archeologische site. De minaret van 55 meter is van ver te zien; ze staat afgebeeld op het bankbiljet van tien dinar.
-311	Ze werd van 2000 tot 2003 gebouwd naar de plannen van architect Ayad Sriha en heette eerst ‘El Abidine’. In november 2012 krijgt ze de naam van imam Malik ibn Anas (overleden in 795), stichter van de malikitische rechtsschool die in Tunesië wordt gevolgd. De radiozender Zitouna FM zendt er de vijf dagelijkse gebeden uit.
-312	Ze is geïnspireerd op de grote Tunesische moskeeën: voorplein, binnenplaats van 1 500 m² en hypostiele gebedszaal met 64 zuilen, die plaats biedt aan 1 000 gelovigen. De mihrab van wit marmer, ingelegd met groen en rood, wordt bekroond door een koepel van tien meter doorsnede. De muren zijn bekleed met Kedhel-steen, gesneden stucwerk en keramiek met Andalusische motieven; de vloer is bedekt met tapijten uit Kairouan.
-313	Eerstesteenlegging
-314	Inhuldiging
-315	Ze krijgt de naam van imam Malik ibn Anas
-316	Fadhloun-moskee en ibaditische moskeeën van Djerba
-317	14e eeuw · Djerba
-318	Aan de rand van Midoun staat een witte moskee die op een kleine vesting lijkt, typisch voor het eiland Djerba, waar een ibaditische moslimgemeenschap leeft. Ze is sinds 2022 beschermd als monument en maakt deel uit van de plaatsen op Djerba die in 2023 op de Werelderfgoedlijst zijn ingeschreven.
-319	De Fadhloun-moskee, gebouwd in de 14e eeuw, behoort tot het rijke geheel van de moskeeën van Djerba, vaak ibaditisch, die in de velden en aan de kust zijn gebouwd. Met hun dikke muren en kleine minaretten dienden vele ook als wachtposten: ze vormden een tweede verdedigingslinie achter de forten aan de kust.
-320	De vierkante gebedszaal, ongeveer 7,5 meter per zijde, wordt overdekt door negen kleine koepels die door vier zuilen worden gedragen; de mihrab is een eenvoudige nis en de stenen minbar heeft maar drie treden. Een gedrongen minaret met twee niveaus steekt boven het dak uit. Daaromheen: een binnenplaats met een ‘zomermihrab’, een regenwaterreservoir, twee lokalen voor Koranonderwijs, een ondergrondse bakkerij en een graanmolen.
-321	Deze moskeeën waren kleine centra van het dagelijkse leven: gebed, Koranonderwijs, brood en graan voor de buurt. Hun witte, sobere architectuur is een van de gezichten van Djerba die UNESCO in 2023 heeft erkend.
-322	14e eeuw
-323	Bouw van de Fadhloun-moskee (14e eeuw)
-324	Beschermd als monument (besluit van 15 maart 2022)
-325	Djerba ingeschreven op de Werelderfgoedlijst van UNESCO
-326	Kasbah-moskee (Tunis)
-327	1231-1235 · Hafsiden
-328	Gebouwd door de stichter van de Hafsidische dynastie op het Kasbahplein; ze heeft een van de mooiste minaretten van Tunis, in de Almohadische stijl van Marrakech en Sevilla.
-329	Ze werd van 1231 tot 1235 opgetrokken op bevel van Abu Zakariya Yahya, stichter van de Hafsidische dynastie, die gouverneur van Sevilla was geweest. Eerst was ze de hofmoskee van de vorsten die in de Kasbah woonden, later werd ze een van de vrijdagmoskeeën van de stad; het is de eerste die in Tunis na de Zitouna werd gebouwd. In de Ottomaanse tijd wordt er gebeden volgens de hanafitische rechtsschool.
-330	De gebedszaal, dieper dan breed, telt 7 beuken en 9 traveeën op marmeren zuilen met Hafsidische kapitelen; de mihrab wordt bekroond door een koepel met stalactieten van gesneden stucwerk. De vierkante minaret, al in 1233 gebouwd, is bedekt met een netwerk van ruiten in okerkleurige steen: hij diende als model voor de huidige minaret van de Zitouna.
-331	Begin van de bouw (Abu Zakariya Yahya)
-332	De minaret is voltooid
-333	Einde van de bouw van de moskee
-334	Grote Moskee van Monastir
-335	9e eeuw · uitgebreid tot in de 18e eeuw
-336	Met uitzicht op zee, naast de beroemde ribat, staat een sobere en elegante stenen moskee, die sinds de 9e eeuw in elk tijdperk is uitgebreid.
-337	De huidige gebedszaal is het resultaat van vier fasen: een klein gewelfd gebedshuis in de 9e eeuw, een uitbreiding in de 11e eeuw (Ziridische tijd) met de mihrab, en daarna in de Hafsidische tijd een vierkante minaret en twee extra beuken. In de 18e eeuw wordt een buitengalerij toegevoegd. In oktober 2013 doen twee aardschokken de top van de minaret gedeeltelijk instorten.
-338	Gevels van natuursteen, verlevendigd door de omlijsting van deuren en vensters en door de bogen van een galerij. De moskee heeft geen binnenplaats vóór de gebedszaal. De mihrab uit de 11e eeuw, met Ziridisch decor en bloemrijk Koefisch schrift, heeft geen koepel erboven, wat zeldzaam is in het middeleeuwse Ifriqiya.
-339	9e eeuw
-340	Eerste gewelfde gebedshuis (9e eeuw)
-341	11e eeuw
-342	Ziridische uitbreiding en mihrab (11e eeuw)
-343	18e eeuw
-344	Buitengalerij (18e eeuw)
-345	De top van de minaret stort gedeeltelijk in na twee aardbevingen
+201	Vul uw e-mailadres in (verplicht) zodat we u kunnen antwoorden.
+202	We hebben het ontvangen en antwoorden op het adres:
+203	Nog een bericht sturen
+204	Tunis
+205	Kairouan
+206	Sousse
+207	Mahdia
+208	Sfax
+209	Testour
+210	Carthago
+211	Djerba (Midoun)
+212	Monastir
+213	Zitouna-moskee
+214	698 · herbouwd in 864
+215	De grote moskee van de medina van Tunis, de oudste en grootste van de hoofdstad. Meer dan duizend jaar lang was ze ook een grote islamitische universiteit.
+216	Volgens de overlevering werd de gebedsplaats in 698 gesticht door Hassan ibn al-Nu'man, na de inname van Carthago; andere bronnen schrijven de stichting toe aan de Omajjadische gouverneur Ubayd Allah ibn al-Habhab, rond 732. Van dat eerste gebouw is bijna niets over: de moskee werd in 864 volledig herbouwd door de Aghlabidische emir Abu Ibrahim Ahmad. Elke dynastie verfraaide haar daarna: koepel van de ‘bahu’ onder de Ziriden (rond 990), waterreservoirs en poorten onder de Hafsiden, oostelijke galerij in 1637. De huidige minaret, in Almohadische stijl, dateert van 1894.
+217	Net als in Kairouan en Córdoba leidt een door galerijen omgeven binnenplaats naar een ‘hypostiele’ gebedszaal: ongeveer 160 antieke zuilen, grotendeels afkomstig uit Carthago, vormen er 15 beuken. De bredere middenbeuk leidt naar de mihrab, die overkoepeld wordt door een koepel uit de 9e eeuw. De koepel van de bahu, bij de ingang van de zaal, wisselt okerkleurige steen af met rode baksteen. De minaret van 1894 neemt het ruitpatroon over van die van de Kasbah-moskee.
+218	De Zitouna was een van de oudste onderwijscentra van de islamitische wereld: elke geleerde leunde tegen een zuil, met zijn leerlingen in een kring om hem heen. Ze bracht grote malikitische rechtsgeleerden voort, zoals Ibn Arafa, een tijdgenoot van Ibn Khaldun. In 1958 verliet het onderwijs de moskee; het wordt vandaag voortgezet aan de Ez-Zitouna-universiteit. Men zegt dat het gebed er nooit is onderbroken.
+219	Stichting volgens de overlevering (Hassan ibn al-Nu'man)
+220	Volledige herbouw door de Aghlabiden
+221	Koepel van de bahu (Ziriden)
+222	Nieuwe minaret in Almohadische stijl
+223	Het onderwijs verhuist van de moskee naar de universiteit
+224	De medina van Tunis ingeschreven op de Werelderfgoedlijst van UNESCO
+225	Grote Moskee van Kairouan (Uqba-moskee)
+226	670 · huidige vorm uit 836
+227	De oudste moskee van de Maghreb, gesticht in 670 samen met de stad Kairouan. Ze diende als model voor alle moskeeën van Noord-Afrika en staat op de Werelderfgoedlijst van UNESCO.
+228	In 670 sticht de veroveraar Uqba ibn Nafi Kairouan en plaatst hij zijn moskee in het centrum van de stad. Na uitbreidingen en herbouw in de 8e en 9e eeuw krijgt ze in 836 haar huidige vorm onder de Aghlabidische emir Ziyadat Allah I. Rond 862-863 verlengt Abu Ibrahim Ahmad de gebedszaal en schenkt hij de minbar en de decoratie van de mihrab. In de 11e eeuw voegt de Ziridische vorst al-Mu'izz ibn Badis de houten maqsura toe. Kairouan werd lange tijd beschouwd als de vierde heilige stad van de islam.
+229	Een uitgestrekte vierhoek van ongeveer 9 000 m²: een grote geplaveide binnenplaats, galerijen en een gebedszaal met 17 beuken, gedragen door honderden antieke zuilen van marmer, graniet en porfier, die allemaal verschillen. De minaret, ongeveer 31 meter hoog, dateert uit de eerste helft van de 9e eeuw: het is een van de oudste minaretten die nog overeind staan. De mihrab uit de 9e eeuw is versierd met keramische tegels met metaalglans; daarnaast staat de minbar van gesneden hout, de oudste bewaard gebleven minbar van de islamitische wereld.
+230	Kairouan was de religieuze en geleerde hoofdstad van Ifriqiya: hier schreef imam Sahnun in de 9e eeuw de Mudawwana, het basiswerk van de malikitische rechtsschool die in Tunesië en in de hele Maghreb wordt gevolgd. De bibliotheek van de moskee heeft zeer oude handschriften bewaard, waaronder bladen van de beroemde ‘Blauwe Koran’.
+231	Stichting door Uqba ibn Nafi, samen met de stad
+232	Herbouw door Ziyadat Allah I: de huidige vorm
+233	Minbar en decoratie van de mihrab (Abu Ibrahim Ahmad)
+234	Houten maqsura van al-Mu'izz ibn Badis (rond deze datum)
+235	Kairouan ingeschreven op de Werelderfgoedlijst van UNESCO
+236	Grote Moskee van Sousse
+237	850-851 · Aghlabiden
+238	Bij de ingang van de medina staat een moskee die op een vesting lijkt, gebouwd in 850-851 naast de ribat die de kust beschermde. Sober en krachtig maakt ze deel uit van de medina van Sousse, Werelderfgoed van UNESCO.
+239	Ze werd in 850-851 opgetrokken door de Aghlabidische emir Abu al-Abbas Muhammad, een dertigtal jaar na de ribat van Sousse; een Koefische inscriptie op de galerijen van de binnenplaats herinnert aan de bouw. Ze werd uitgebreid onder emir Ibrahim II (875-902), toen Sousse de tweede stad van Ifriqiya werd.
+240	Gekanteelde muren en hoektorens met kleine koepels: de moskee lijkt op een vesting en heeft geen echte minaret, wellicht omdat de wachttoren van de naburige ribat die rol vervulde. De gebedszaal telt 13 beuken; de bredere middenbeuk en de travee van de mihrab vormen een ‘T’, gemarkeerd door twee koepels.
+241	De naburige ribat van Sousse wordt voltooid
+242	Bouw van de moskee (850-851)
+243	Uitbreiding onder Ibrahim II (875-902)
+244	Medina van Sousse ingeschreven op de Werelderfgoedlijst van UNESCO
+245	Grote Moskee van Mahdia
+246	916 · Fatimiden
+247	Gebouwd in 916 door de eerste Fatimidische kalief in zijn nieuwe hoofdstad, aan zee. Het grote, vooruitspringende portaal, geïnspireerd op triomfbogen, is een primeur in de moskeearchitectuur.
+248	Wanneer Ubayd Allah al-Mahdi in 909 Mahdia sticht, laat hij de moskee bouwen bij het kalifale paleis, op een platform dat op de zee is gewonnen. Na de verwoesting van de stad door de Spanjaarden in 1554 wordt het gebouw vaak verbouwd. Tussen 1961 en 1965 wordt het bijna volledig herbouwd volgens het plan uit de 10e eeuw; het grote portaal en de noordelijke zuilengang zijn origineel.
+249	Een vierhoek van ongeveer 85 × 55 meter, met massieve muren, geflankeerd door twee vierkante torens die als regenwaterreservoirs dienden. De moskee heeft nooit een minaret gehad. Het monumentale portaal opende een ‘ereweg’ naar de mihrab, achterin een zaal met 9 beuken waarvan de hogere middenbeuk naar een koepel leidt.
+250	Stichting van Mahdia door Ubayd Allah al-Mahdi
+251	Bouw van de Grote Moskee
+252	De stad wordt verwoest door de Spanjaarden
+253	Herbouw volgens het oorspronkelijke plan (1961-1965)
+254	Grote Moskee van Sfax
+255	rond 850 · Aghlabiden
+256	In het hart van de medina van Sfax staat een moskee uit de 9e eeuw waarvan de oostgevel, in de Ziridische tijd gebeeldhouwd, en de minaret naar het voorbeeld van die van Kairouan meesterwerken zijn van de kunst van Ifriqiya.
+257	Het eerste gebouw wordt rond 850 opgetrokken, onder de Aghlabiden, tegelijk met de stadsmuren van Sfax. De moskee wordt verfraaid in de Ziridische tijd: twee inscripties op de gevel dragen de data 988 en 1085. Na wijzigingen in de 12e eeuw krijgt ze in de 18e eeuw, bij grote werken, haar oorspronkelijke afmetingen terug.
+258	De oostgevel wordt geleed door deuren en vensters met hoefijzerbogen, nissen en een getande kroonlijst; er is een Byzantijnse plaat met twee gebeeldhouwde pauwen in hergebruikt. De vierkante minaret, een vijftiental meter hoog, doet denken aan die van Kairouan maar heeft een fijnere decoratie: gebeeldhouwde schijven en fraai bloemrijk Koefisch schrift. De gebedszaal, in L-vorm, telt 9 beuken.
+259	Eerste gebouw, onder de Aghlabiden (rond deze datum)
+260	Ziridische verfraaiing (inscriptie op de gevel)
+261	Tweede gedateerde inscriptie op de gevel
+262	Beschermd als historisch monument
+263	Moskee van de Drie Deuren
+264	866 · minaret rond 1440
+265	Een klein gebedshuis in de medina van Kairouan, wereldwijd bekend om zijn gevel uit 866: de oudste gebeeldhouwde en versierde moskeegevel van de islamitische wereld.
+266	Rond 866 laat een Andalusische koopman die zich in Kairouan had gevestigd, Muhammad ibn Khayrun al-Ma'afiri, dit buurtgebedshuis bouwen; de inscriptie op de gevel vermeldt zijn naam en de datum. Rond 1440, in de Hafsidische tijd, wordt de moskee gerestaureerd en krijgt ze een kleine minaret: een band op de gevel herinnert daaraan.
+267	De gevel, ongeveer zeven meter hoog, opent met drie bogen op antieke zuilen; daarboven citeren banden met Koefisch schrift in reliëf de Koran (soera 33, verzen 70-71) en de stichting, tussen friezen van rozetten en wijnbladeren. Binnen ligt een gebedszaal van ongeveer 9 × 9 meter, zonder binnenplaats, met drie beuken op antieke zuilen.
+268	Bouw door Muhammad ibn Khayrun
+269	Hafsidische restauratie en kleine minaret (rond 1440-1441)
+270	Youssef Dey-moskee
+271	1612 · Ottomanen
+272	De eerste moskee van de hanafitische rechtsschool in Tunis, gebouwd door de Ottomaanse dey Youssef bij de Kasbah. De achthoekige minaret, de eerste van Tunis, kondigt de rechtsschool van de Ottomanen aan.
+273	Een inscriptie binnenin dateert de bouw in 1612, op bevel van Youssef Dey, die Tunis bestuurde van 1610 tot 1637. Ze werd aan het einde van de 19e eeuw gerestaureerd onder Ali Bey en werd in 1926 een dependance van de Zitouna-universiteit. De dey rust er in een mausoleum, het eerste voorbeeld in Tunis van een grafmoskee.
+274	De gebedszaal, aan drie zijden omgeven door binnenplaatsen, telt 9 beuken en 7 traveeën; voor de mihrab verrijst een koepel. De minbar is van metselwerk bekleed met gekleurd marmer, terwijl malikitische moskeeën een houten minbar hebben. De achthoekige minaret eindigt in een overdekt balkon en een piramidedak van groene dakpannen, net als het mausoleum.
+275	Bouw door Youssef Dey (inscriptie)
+276	Dood van Youssef Dey, begraven in zijn mausoleum
+277	Dependance van de Zitouna-universiteit
+278	Hammouda Pacha-moskee
+279	1655 · Muradiden
+280	De tweede hanafitische moskee van Tunis, in 1655 opgetrokken door bey Hammouda Pacha. De slanke achthoekige minaret steekt uit boven de rue Sidi Ben Arous, in de medina.
+281	Hammouda Pacha, bey van de Muradidische dynastie, laat de moskee in 1655 bouwen, op de hoek van de rue Sidi Ben Arous en de rue de la Kasbah. Net als Youssef Dey vóór hem laat hij er zijn eigen mausoleum inrichten, op de binnenplaats: dat graf zou veel later het mausoleum van president Bourguiba in Monastir hebben geïnspireerd.
+282	Een Ottomaans gebouw uit de 17e eeuw: marmeren poort, daken van groene dakpannen en drie binnenplaatsen. De gebedszaal, ongeveer 24 × 17 meter, telt 7 beuken op 48 zuilen; de muren zijn bekleed met marmer en gesneden stucwerk, met een decoratie van bloemen en gekleurd marmer van Italiaanse invloed. Zeldzaam in Tunis: de binnenplaats opent op de straat met brede getraliede vensters. De achthoekige minaret wordt bekroond door een balkon en een piramidedak.
+283	Bouw door Hammouda Pacha Bey
+284	Restauratie (1960-1961)
+285	Sidi Mahrez-moskee (Mohamed Bey-moskee)
+286	1692-1697 · Muradiden
+287	Met haar witte koepels, die ook op het wapen van de stad Tunis staan, is het de enige Tunesische moskee die naar het model van de grote moskeeën van Istanbul is gebouwd. Ze staat tegenover de zawiya van Sidi Mahrez, de beschermheilige van de medina.
+288	Mohamed Bey el-Mouradi begint de bouw tussen 1692 en 1697, ter ere van Sidi Mahrez (Mahrez ibn Khalaf, 10e eeuw), in de wijk Bab Souika. Door de politieke onrust aan het einde van de 17e eeuw kunnen de werken niet worden voltooid: de moskee heeft nooit een minaret gekregen. Ze wordt vanaf 1984 gerestaureerd, samen met de wijk Bab Souika.
+289	De vierkante gebedszaal (28 meter per zijde) staat op een platform en wordt overdekt door een grote centrale koepel met een diameter van bijna 16 meter, omringd door halfkoepels en kleine hoekkoepels, zoals de Sultan Ahmet-moskee in Istanbul. Keramische tegels uit Iznik, in blauw, groen en ‘tomaatrood’, sieren de pijlers en de muur van de mihrab.
+290	Begin van de bouw door Mohamed Bey el-Mouradi
+291	Einde van de werken, zonder minaret
+292	Restauratie samen met de wijk Bab Souika
+293	Zawiya van Sidi Sahbi (mausoleum van de Barbier)
+294	17e eeuw · Muradiden
+295	Het mausoleum van Abu Zama'a al-Balawi, metgezel van de Profeet ﷺ, die de inwoners van Kairouan ‘Sidi Sahbi’ noemen: de beschermheilige van Kairouan. De binnenplaatsen, bekleed met keramiek en gesneden stucwerk, maken het tot een van de mooiste monumenten van de stad.
+296	Abu Zama'a al-Balawi sneuvelt in 654 (jaar 34 van de hidjra). Men vertelt dat hij enkele haren van de baard van de Profeet ﷺ bij zich droeg, vandaar de naam ‘mausoleum van de Barbier’. Het oude gebouw wordt in de 17e eeuw volledig vernieuwd door de Muradidische beys: Hammouda Pacha herbouwt de zawiya, de madrasa en de minaret rond 1662, daarna vernieuwt Mohamed Bey de koepel van het mausoleum rond 1681-1685.
+297	Een uitgestrekt complex buiten de muren van de medina: toegangshof en minaret in Andalusische stijl, patio met zuilen, koepelzaal, en dan een hof met muren vol veelkleurige keramiek en fijn gesneden stucwerk, dat voorafgaat aan de grafkamer. Een madrasa, met studentenkamers en een gebedszaal, vervolledigt het complex.
+298	Het is een van de plaatsen die de Tunesiërs het meest bezoeken, vooral voor het Mawlid-feest; er worden ook huwelijkscontracten gesloten en besnijdenissen gevierd. Vroeger verzamelden de karavanen van de Maghreb zich hier voordat ze op bedevaart naar Mekka vertrokken.
+299	Dood van Abu Zama'a al-Balawi (jaar 34 van de hidjra)
+300	Zawiya, madrasa en minaret van Hammouda Pacha (rond deze datum)
+301	Nieuwe koepel van het mausoleum door Mohamed Bey (1681-1685)
+302	Grote Moskee van Testour
+303	rond 1630 · Andalusiërs
+304	Gebouwd door de Andalusiërs die in het begin van de 17e eeuw uit Spanje werden verdreven; ze verenigt Tunesische tradities en Spaans-Moorse kunst. De minaret draagt een klok waarvan de wijzers achteruit draaien.
+305	Na de verdrijving van de morisken uit Spanje (1609-1614) vestigen velen zich in de vallei van de Medjerda en stichten ze Testour opnieuw. De moskee wordt in het eerste derde van de 17e eeuw opgetrokken, waarschijnlijk vóór 1631, door Mohamed Tagharinou, een Andalusiër die zich in de stad had gevestigd. In de 18e eeuw worden een tweede binnenplaats en een ruimte voor rituele wassingen toegevoegd. In 2014 brengen inwoners en verenigingen de klok van de minaret, die bijna drie eeuwen had stilgestaan, weer op gang.
+306	Het plan van de gebedszaal (9 beuken) volgt de traditie van Kairouan, maar de pannendaken, het stucdecor en de minaret zijn Andalusisch. De 22,50 meter hoge minaret combineert een vierkante toren van baksteen en steen, in de trant van Toledo, met een achthoekige toren versierd met keramiek: hij doet denken aan de klokkentorens van Aragón. Op de binnenplaats gaf een zonnewijzer uit 1761 de gebedstijden aan.
+307	De morisken, verdreven uit Spanje (1609-1614), komen in Tunesië aan
+308	Moskee voltooid (waarschijnlijk vóór deze datum)
+309	Zonnewijzer op de binnenplaats
+310	De klok van de minaret weer op gang gebracht
+311	Malik ibn Anas-moskee (Carthago)
+312	2003 · hedendaags
+313	Een grote moderne moskee, gebouwd op een heuvel van Carthago, midden in de archeologische site. De minaret van 55 meter is van ver te zien; ze staat afgebeeld op het bankbiljet van tien dinar.
+314	Ze werd van 2000 tot 2003 gebouwd naar de plannen van architect Ayad Sriha en heette eerst ‘El Abidine’. In november 2012 krijgt ze de naam van imam Malik ibn Anas (overleden in 795), stichter van de malikitische rechtsschool die in Tunesië wordt gevolgd. De radiozender Zitouna FM zendt er de vijf dagelijkse gebeden uit.
+315	Ze is geïnspireerd op de grote Tunesische moskeeën: voorplein, binnenplaats van 1 500 m² en hypostiele gebedszaal met 64 zuilen, die plaats biedt aan 1 000 gelovigen. De mihrab van wit marmer, ingelegd met groen en rood, wordt bekroond door een koepel van tien meter doorsnede. De muren zijn bekleed met Kedhel-steen, gesneden stucwerk en keramiek met Andalusische motieven; de vloer is bedekt met tapijten uit Kairouan.
+316	Eerstesteenlegging
+317	Inhuldiging
+318	Ze krijgt de naam van imam Malik ibn Anas
+319	Fadhloun-moskee en ibaditische moskeeën van Djerba
+320	14e eeuw · Djerba
+321	Aan de rand van Midoun staat een witte moskee die op een kleine vesting lijkt, typisch voor het eiland Djerba, waar een ibaditische moslimgemeenschap leeft. Ze is sinds 2022 beschermd als monument en maakt deel uit van de plaatsen op Djerba die in 2023 op de Werelderfgoedlijst zijn ingeschreven.
+322	De Fadhloun-moskee, gebouwd in de 14e eeuw, behoort tot het rijke geheel van de moskeeën van Djerba, vaak ibaditisch, die in de velden en aan de kust zijn gebouwd. Met hun dikke muren en kleine minaretten dienden vele ook als wachtposten: ze vormden een tweede verdedigingslinie achter de forten aan de kust.
+323	De vierkante gebedszaal, ongeveer 7,5 meter per zijde, wordt overdekt door negen kleine koepels die door vier zuilen worden gedragen; de mihrab is een eenvoudige nis en de stenen minbar heeft maar drie treden. Een gedrongen minaret met twee niveaus steekt boven het dak uit. Daaromheen: een binnenplaats met een ‘zomermihrab’, een regenwaterreservoir, twee lokalen voor Koranonderwijs, een ondergrondse bakkerij en een graanmolen.
+324	Deze moskeeën waren kleine centra van het dagelijkse leven: gebed, Koranonderwijs, brood en graan voor de buurt. Hun witte, sobere architectuur is een van de gezichten van Djerba die UNESCO in 2023 heeft erkend.
+325	14e eeuw
+326	Bouw van de Fadhloun-moskee (14e eeuw)
+327	Beschermd als monument (besluit van 15 maart 2022)
+328	Djerba ingeschreven op de Werelderfgoedlijst van UNESCO
+329	Kasbah-moskee (Tunis)
+330	1231-1235 · Hafsiden
+331	Gebouwd door de stichter van de Hafsidische dynastie op het Kasbahplein; ze heeft een van de mooiste minaretten van Tunis, in de Almohadische stijl van Marrakech en Sevilla.
+332	Ze werd van 1231 tot 1235 opgetrokken op bevel van Abu Zakariya Yahya, stichter van de Hafsidische dynastie, die gouverneur van Sevilla was geweest. Eerst was ze de hofmoskee van de vorsten die in de Kasbah woonden, later werd ze een van de vrijdagmoskeeën van de stad; het is de eerste die in Tunis na de Zitouna werd gebouwd. In de Ottomaanse tijd wordt er gebeden volgens de hanafitische rechtsschool.
+333	De gebedszaal, dieper dan breed, telt 7 beuken en 9 traveeën op marmeren zuilen met Hafsidische kapitelen; de mihrab wordt bekroond door een koepel met stalactieten van gesneden stucwerk. De vierkante minaret, al in 1233 gebouwd, is bedekt met een netwerk van ruiten in okerkleurige steen: hij diende als model voor de huidige minaret van de Zitouna.
+334	Begin van de bouw (Abu Zakariya Yahya)
+335	De minaret is voltooid
+336	Einde van de bouw van de moskee
+337	Grote Moskee van Monastir
+338	9e eeuw · uitgebreid tot in de 18e eeuw
+339	Met uitzicht op zee, naast de beroemde ribat, staat een sobere en elegante stenen moskee, die sinds de 9e eeuw in elk tijdperk is uitgebreid.
+340	De huidige gebedszaal is het resultaat van vier fasen: een klein gewelfd gebedshuis in de 9e eeuw, een uitbreiding in de 11e eeuw (Ziridische tijd) met de mihrab, en daarna in de Hafsidische tijd een vierkante minaret en twee extra beuken. In de 18e eeuw wordt een buitengalerij toegevoegd. In oktober 2013 doen twee aardschokken de top van de minaret gedeeltelijk instorten.
+341	Gevels van natuursteen, verlevendigd door de omlijsting van deuren en vensters en door de bogen van een galerij. De moskee heeft geen binnenplaats vóór de gebedszaal. De mihrab uit de 11e eeuw, met Ziridisch decor en bloemrijk Koefisch schrift, heeft geen koepel erboven, wat zeldzaam is in het middeleeuwse Ifriqiya.
+342	9e eeuw
+343	Eerste gewelfde gebedshuis (9e eeuw)
+344	11e eeuw
+345	Ziridische uitbreiding en mihrab (11e eeuw)
+346	18e eeuw
+347	Buitengalerij (18e eeuw)
+348	De top van de minaret stort gedeeltelijk in na twee aardbevingen

@@ -71,7 +71,7 @@
 70	Così così
 71	Non bene
 72	Il vostro messaggio
-73	La vostra e-mail (facoltativa, per rispondervi)
+73	La vostra e-mail (obbligatoria, per rispondervi)
 74	Invia
 75	La vostra opinione viene inviata al creatore del sito (servizio Formspree). Nulla viene inviato senza un clic su «Invia».
 76	Una moschea che manca sulla mappa, una sala di preghiera in una stazione, un ospedale, un'università, un centro commerciale… Aiutate gli altri a trovare dove pregare. Dopo una verifica automatica, il luogo viene pubblicato sulla mappa, «da confermare» finché un altro visitatore non lo conferma.
@@ -199,148 +199,151 @@
 198	La ricerca della città non risponde in questo momento: riprovate tra un istante.
 199	<b>Altrove nel mondo</b>: OpenStreetMap viene letto in diretta per la zona mostrata sulla mappa (5 copie di OpenStreetMap, i server Overpass), ogni paese con il suo colore. Una città del mondo viene trovata con <b>Nominatim</b> (© contributori di OpenStreetMap), solo quando confermate la ricerca.
 200	Fuori dalla Tunisia, la zona mostrata sulla mappa (non la vostra posizione esatta) viene inviata ai server di OpenStreetMap per leggerne le moschee; una città cercata nel mondo viene inviata a Nominatim.
-201	Tunisi
-202	Kairouan
-203	Susa
-204	Mahdia
-205	Sfax
-206	Testour
-207	Cartagine
-208	Djerba (Midoun)
-209	Monastir
-210	Moschea Zitouna
-211	698 · ricostruita nell'864
-212	La grande moschea della medina di Tunisi, la più antica e la più vasta della capitale. Per oltre mille anni è stata anche una grande università dell'islam.
-213	Secondo la tradizione, il luogo di preghiera fu fondato nel 698 da Hassan ibn al-Nu'man, dopo la presa di Cartagine; altre fonti attribuiscono la fondazione al governatore omayyade Ubayd Allah ibn al-Habhab, verso il 732. Di quel primo edificio non resta quasi nulla: la moschea fu interamente ricostruita nell'864 dall'emiro aghlabide Abu Ibrahim Ahmad. Ogni dinastia la abbellì in seguito: cupola del «bahu» sotto gli Ziridi (verso il 990), cisterne e porte sotto gli Hafsidi, galleria orientale nel 1637. Il minareto attuale, in stile almohade, risale al 1894.
-214	Come a Kairouan e a Cordova, un cortile circondato da gallerie precede una sala di preghiera «ipostila»: circa 160 colonne antiche, in gran parte provenienti da Cartagine, vi formano 15 navate. La navata centrale, più larga, conduce al mihrab, coperto da una cupola del IX secolo. La cupola del bahu, all'ingresso della sala, alterna pietra ocra e mattone rosso. Il minareto del 1894 riprende la decorazione a losanghe di quello della moschea della Kasbah.
-215	La Zitouna è stata uno dei più antichi centri d'insegnamento del mondo musulmano: ogni sapiente si appoggiava a una colonna, con gli allievi seduti in cerchio intorno a lui. Ha formato grandi giuristi malikiti come Ibn Arafa, contemporaneo di Ibn Khaldun. Nel 1958 l'insegnamento lasciò la moschea; prosegue oggi all'Università Ez-Zitouna. Si dice che la preghiera non vi sia mai stata interrotta.
-216	Fondazione secondo la tradizione (Hassan ibn al-Nu'man)
-217	Ricostruzione completa da parte degli Aghlabidi
-218	Cupola del bahu (Ziridi)
-219	Nuovo minareto in stile almohade
-220	L'insegnamento lascia la moschea per l'università
-221	La medina di Tunisi iscritta nel patrimonio mondiale dell'UNESCO
-222	Grande Moschea di Kairouan (moschea di Uqba)
-223	670 · forma attuale dell'836
-224	La più antica moschea del Maghreb, fondata nel 670 insieme alla città di Kairouan. Ha fatto da modello a tutte le moschee del Nord Africa e fa parte del patrimonio mondiale dell'UNESCO.
-225	Nel 670 il conquistatore Uqba ibn Nafi fonda Kairouan e pone la sua moschea al centro della città. Ampliata e ricostruita nell'VIII e nel IX secolo, assume la forma attuale nell'836 sotto l'emiro aghlabide Ziyadat Allah I. Verso l'862-863 Abu Ibrahim Ahmad allunga la sala di preghiera e dona il minbar e la decorazione del mihrab. Nell'XI secolo il principe ziride al-Mu'izz ibn Badis aggiunge la maqsura di legno. Kairouan è stata a lungo considerata la quarta città santa dell'islam.
-226	Un vasto quadrilatero di circa 9 000 m²: un grande cortile lastricato, gallerie e una sala di preghiera di 17 navate sorretta da centinaia di colonne antiche di marmo, granito e porfido, tutte diverse. Il minareto, alto circa 31 metri, risale alla prima metà del IX secolo: è uno dei più antichi minareti ancora in piedi. Il mihrab del IX secolo è ornato di piastrelle di ceramica a lustro metallico; accanto, il minbar di legno intagliato è il più antico minbar conservato del mondo musulmano.
-227	Kairouan fu la capitale religiosa e culturale dell'Ifriqiya: qui l'imam Sahnun redasse nel IX secolo la Mudawwana, opera fondamentale del rito malikita seguito in Tunisia e in tutto il Maghreb. La biblioteca della moschea ha conservato manoscritti molto antichi, tra cui fogli del celebre «Corano blu».
-228	Fondazione da parte di Uqba ibn Nafi, insieme alla città
-229	Ricostruzione di Ziyadat Allah I: la forma attuale
-230	Minbar e decorazione del mihrab (Abu Ibrahim Ahmad)
-231	Maqsura di legno di al-Mu'izz ibn Badis (intorno a questa data)
-232	Kairouan iscritta nel patrimonio mondiale dell'UNESCO
-233	Grande Moschea di Susa
-234	850-851 · Aghlabidi
-235	All'ingresso della medina, una moschea dall'aspetto di fortezza, costruita nell'850-851 vicino al ribat che proteggeva la costa. Sobria e possente, fa parte della medina di Susa, patrimonio mondiale dell'UNESCO.
-236	Fu eretta nell'850-851 dall'emiro aghlabide Abu al-Abbas Muhammad, una trentina d'anni dopo il ribat di Susa; un'iscrizione in cufico, sulle gallerie del cortile, ne ricorda la costruzione. Fu ampliata sotto l'emiro Ibrahim II (875-902), quando Susa divenne la seconda città dell'Ifriqiya.
-237	Mura merlate, torri d'angolo sormontate da piccole cupole: la moschea somiglia a una fortezza e non ha un vero minareto, probabilmente perché la torre di guardia del vicino ribat svolgeva questo ruolo. La sala di preghiera conta 13 navate; la navata centrale e la campata del mihrab, più larghe, formano una «T», segnata da due cupole.
-238	Il vicino ribat di Susa è terminato
-239	Costruzione della moschea (850-851)
-240	Ampliamento sotto Ibrahim II (875-902)
-241	Medina di Susa iscritta nel patrimonio mondiale dell'UNESCO
-242	Grande Moschea di Mahdia
-243	916 · Fatimidi
-244	Costruita nel 916 dal primo califfo fatimide nella sua nuova capitale, in riva al mare. Il suo grande portale sporgente, ispirato agli archi di trionfo, è una novità assoluta nell'architettura delle moschee.
-245	Quando Ubayd Allah al-Mahdi fonda Mahdia nel 909, fa costruire la moschea vicino al palazzo califfale, su una piattaforma strappata al mare. Dopo la distruzione della città da parte degli spagnoli nel 1554, l'edificio viene più volte rimaneggiato. Tra il 1961 e il 1965 è quasi interamente ricostruito secondo la pianta del X secolo; il grande portale e il portico nord sono originali.
-246	Un quadrilatero di circa 85 × 55 metri, dalle mura massicce, affiancato da due torri quadrate che servivano da serbatoi d'acqua piovana. La moschea non ha mai avuto un minareto. Il portale monumentale apriva una «via d'onore» verso il mihrab, in fondo a una sala di 9 navate la cui navata centrale, più alta, conduce a una cupola.
-247	Fondazione di Mahdia da parte di Ubayd Allah al-Mahdi
-248	Costruzione della Grande Moschea
-249	La città viene distrutta dagli spagnoli
-250	Ricostruzione secondo la pianta originale (1961-1965)
-251	Grande Moschea di Sfax
-252	verso l'850 · Aghlabidi
-253	Nel cuore della medina di Sfax, una moschea del IX secolo la cui facciata orientale, scolpita in epoca ziride, e il minareto a immagine di quello di Kairouan sono capolavori dell'arte dell'Ifriqiya.
-254	Il primo edificio viene costruito verso l'850, sotto gli Aghlabidi, insieme alle mura di Sfax. La moschea viene abbellita in epoca ziride: due iscrizioni della facciata portano le date del 988 e del 1085. Modificata nel XII secolo, ritrova le dimensioni originarie nel XVIII secolo, durante grandi lavori.
-255	La facciata orientale è scandita da porte e finestre con archi a ferro di cavallo, nicchie e una cornice dentellata; vi è reimpiegata una lastra bizantina scolpita con due pavoni. Il minareto quadrato, alto una quindicina di metri, ricorda quello di Kairouan ma ha una decorazione più fine: dischi scolpiti e una bella scrittura cufica fiorita. La sala di preghiera, a squadra, conta 9 navate.
-256	Primo edificio, sotto gli Aghlabidi (intorno a questa data)
-257	Abbellimento ziride (iscrizione della facciata)
-258	Seconda iscrizione datata della facciata
-259	Classificata monumento storico
-260	Moschea delle Tre Porte
-261	866 · minareto verso il 1440
-262	Un piccolo oratorio della medina di Kairouan, noto in tutto il mondo per la sua facciata dell'866: la più antica facciata di moschea scolpita e decorata del mondo islamico.
-263	Verso l'866 un mercante andaluso stabilitosi a Kairouan, Muhammad ibn Khayrun al-Ma'afiri, fa costruire questo oratorio di quartiere; l'iscrizione della facciata ne riporta il nome e la data. Verso il 1440, in epoca hafside, la moschea viene restaurata e riceve un piccolo minareto: una fascia della facciata lo ricorda.
-264	La facciata, alta circa sette metri, apre tre archi su colonne antiche; al di sopra, fasce di scrittura cufica in rilievo citano il Corano (sura 33, versetti 70-71) e la fondazione, tra fregi di rosette e foglie di vite. All'interno, una sala di preghiera di circa 9 × 9 metri, senza cortile, a tre navate su colonne antiche.
-265	Costruzione da parte di Muhammad ibn Khayrun
-266	Restauro hafside e piccolo minareto (verso il 1440-1441)
-267	Moschea Youssef Dey
-268	1612 · Ottomani
-269	La prima moschea di rito hanafita di Tunisi, costruita dal dey ottomano Youssef vicino alla Kasbah. Il suo minareto ottagonale, il primo di Tunisi, segnala il rito degli Ottomani.
-270	Un'iscrizione all'interno ne data la costruzione al 1612, per ordine di Youssef Dey, che governò Tunisi dal 1610 al 1637. Restaurata alla fine del XIX secolo sotto Ali Bey, divenne nel 1926 una sede distaccata dell'università della Zitouna. Il dey vi riposa in un mausoleo, primo esempio a Tunisi di moschea funeraria.
-271	La sala di preghiera, circondata da cortili su tre lati, conta 9 navate e 7 campate; una cupola si innalza davanti al mihrab. Il minbar è in muratura rivestita di marmi colorati, mentre le moschee malikite hanno un minbar di legno. Il minareto ottagonale termina con un balcone coperto e un tetto piramidale di tegole verdi, come il mausoleo.
-272	Costruzione da parte di Youssef Dey (iscrizione)
-273	Morte di Youssef Dey, sepolto nel suo mausoleo
-274	Sede distaccata dell'università della Zitouna
-275	Moschea Hammouda Pacha
-276	1655 · Muraditi
-277	La seconda moschea hanafita di Tunisi, eretta nel 1655 dal bey Hammouda Pacha. Il suo sottile minareto ottagonale domina la via Sidi Ben Arous, nella medina.
-278	Hammouda Pacha, bey della dinastia muradita, fa costruire la moschea nel 1655, all'angolo tra via Sidi Ben Arous e via della Kasbah. Come Youssef Dey prima di lui, vi fa sistemare il proprio mausoleo, nel cortile: questa tomba avrebbe ispirato, molto più tardi, quella del presidente Bourguiba a Monastir.
-279	Un edificio ottomano del XVII secolo: porta di marmo, tetti di tegole verdi e tre cortili. La sala di preghiera, di circa 24 × 17 metri, conta 7 navate su 48 colonne; le pareti sono rivestite di marmo e di gesso scolpito, con una decorazione di fiori e marmi colorati d'influenza italiana. Cosa rara a Tunisi, il cortile si apre sulla strada con ampie finestre a grata. Il minareto ottagonale è coronato da un balcone e da un tetto piramidale.
-280	Costruzione da parte di Hammouda Pacha Bey
-281	Restauro (1960-1961)
-282	Moschea Sidi Mahrez (moschea Mohamed Bey)
-283	1692-1697 · Muraditi
-284	Con le sue cupole bianche, che si ritrovano sull'emblema della città di Tunisi, è l'unica moschea tunisina costruita sul modello delle grandi moschee di Istanbul. Sorge di fronte alla zawiya di Sidi Mahrez, santo patrono della medina.
-285	Mohamed Bey el-Mouradi ne avvia la costruzione tra il 1692 e il 1697, in onore di Sidi Mahrez (Mahrez ibn Khalaf, X secolo), nel quartiere di Bab Souika. I disordini politici della fine del XVII secolo impediscono di terminare i lavori: la moschea non ha mai ricevuto un minareto. Viene restaurata a partire dal 1984, insieme al quartiere di Bab Souika.
-286	Posta su una piattaforma, la sala di preghiera quadrata (28 metri di lato) è coperta da una grande cupola centrale di quasi 16 metri di diametro, circondata da semicupole e da piccole cupole d'angolo, come la moschea Sultan Ahmet di Istanbul. Piastrelle di ceramica di Iznik, nei colori blu, verde e «rosso pomodoro», ornano i pilastri e la parete del mihrab.
-287	Inizio della costruzione da parte di Mohamed Bey el-Mouradi
-288	Fine dei lavori, senza minareto
-289	Restauro insieme al quartiere di Bab Souika
-290	Zawiya di Sidi Sahbi (mausoleo del Barbiere)
-291	XVII secolo · Muraditi
-292	Il mausoleo di Abu Zama'a al-Balawi, compagno del Profeta ﷺ, che gli abitanti di Kairouan chiamano «Sidi Sahbi»: il santo patrono di Kairouan. I suoi cortili rivestiti di ceramica e di gesso scolpito ne fanno uno dei più bei monumenti della città.
-293	Abu Zama'a al-Balawi muore in battaglia nel 654 (anno 34 dell'egira). Si racconta che portasse con sé alcuni peli della barba del Profeta ﷺ, da cui il nome di «mausoleo del Barbiere». L'antico edificio viene interamente rinnovato nel XVII secolo dai bey muraditi: Hammouda Pacha ricostruisce la zawiya, la madrasa e il minareto verso il 1662, poi Mohamed Bey rifà la cupola del mausoleo verso il 1681-1685.
-294	Un vasto complesso fuori dalle mura della medina: cortile d'ingresso e minareto in stile andaluso, patio a colonne, sala a cupola, poi un cortile dalle pareti coperte di ceramiche policrome e di gesso finemente scolpito, che precede la camera funeraria. Una madrasa, con le stanze degli studenti e la sala di preghiera, completa il complesso.
-295	È uno dei luoghi più visitati dai tunisini, soprattutto per la festa del Mawlid; vi si celebrano anche contratti di matrimonio e circoncisioni. Un tempo le carovane del Maghreb vi si radunavano prima di partire per il pellegrinaggio alla Mecca.
-296	Morte di Abu Zama'a al-Balawi (anno 34 dell'egira)
-297	Zawiya, madrasa e minareto di Hammouda Pacha (intorno a questa data)
-298	Nuova cupola del mausoleo di Mohamed Bey (1681-1685)
-299	Grande Moschea di Testour
-300	verso il 1630 · Andalusi
-301	Costruita dagli andalusi cacciati dalla Spagna all'inizio del XVII secolo, unisce le tradizioni tunisine e l'arte ispano-moresca. Il suo minareto porta un orologio le cui lancette girano al contrario.
-302	Dopo l'espulsione dei moriscos dalla Spagna (1609-1614), molti si stabiliscono nella valle della Medjerda e rifondano Testour. La moschea viene eretta nel primo terzo del XVII secolo, probabilmente prima del 1631, da Mohamed Tagharinou, un andaluso stabilitosi in città. Un secondo cortile e una sala per le abluzioni vengono aggiunti nel XVIII secolo. Nel 2014 abitanti e associazioni rimettono in funzione l'orologio del minareto, fermo da quasi tre secoli.
-303	La pianta della sala di preghiera (9 navate) segue la tradizione di Kairouan, ma i tetti di tegole, la decorazione in stucco e il minareto sono andalusi. Alto 22,50 metri, il minareto sovrappone una torre quadrata in mattoni e pietre, alla maniera di Toledo, e una torre ottagonale ornata di ceramica: ricorda i campanili dell'Aragona. Nel cortile, una meridiana del 1761 indicava l'ora delle preghiere.
-304	I moriscos, cacciati dalla Spagna (1609-1614), arrivano in Tunisia
-305	Moschea terminata (probabilmente prima di questa data)
-306	Meridiana del cortile
-307	L'orologio del minareto rimesso in funzione
-308	Moschea Malik ibn Anas (Cartagine)
-309	2003 · contemporanea
-310	Una grande moschea moderna costruita su una collina di Cartagine, nel cuore del sito archeologico. Il suo minareto di 55 metri si vede da lontano; compare sulla banconota da dieci dinari.
-311	Costruita dal 2000 al 2003 su progetto dell'architetto Ayad Sriha, si chiamava inizialmente «El Abidine». Nel novembre 2012 prende il nome dell'imam Malik ibn Anas (morto nel 795), fondatore della scuola malikita seguita in Tunisia. La radio Zitouna FM vi trasmette le cinque preghiere quotidiane.
-312	Si ispira alle grandi moschee tunisine: spianata, cortile di 1 500 m² e sala di preghiera ipostila di 64 colonne, che può accogliere 1 000 fedeli. Il mihrab di marmo bianco intarsiato di verde e di rosso è sormontato da una cupola di dieci metri di diametro. Le pareti sono rivestite di pietra di Kedhel, stucco scolpito e ceramiche con motivi andalusi; il pavimento è coperto di tappeti di Kairouan.
-313	Posa della prima pietra
-314	Inaugurazione
-315	Prende il nome dell'imam Malik ibn Anas
-316	Moschea Fadhloun e moschee ibadite di Djerba
-317	XIV secolo · Djerba
-318	All'uscita di Midoun, una moschea bianca dall'aspetto di piccola fortezza, tipica dell'isola di Djerba, dove vive una comunità musulmana ibadita. È classificata monumento dal 2022 e fa parte dei luoghi di Djerba iscritti nel patrimonio mondiale nel 2023.
-319	Costruita nel XIV secolo, la moschea Fadhloun appartiene al ricco insieme delle moschee di Djerba, spesso ibadite, costruite nei campi e sulla costa. Con i loro muri spessi e i piccoli minareti, molte servivano anche da posti di guardia: formavano una seconda linea di difesa dietro i forti del litorale.
-320	La sala di preghiera quadrata, di circa 7,5 metri di lato, è coperta da nove piccole cupole sorrette da quattro colonne; il mihrab è una semplice nicchia e il minbar, in pietra, ha solo tre gradini. Un minareto tozzo a due livelli domina il tetto. Intorno: un cortile con un «mihrab d'estate», una cisterna d'acqua piovana, due sale per l'insegnamento del Corano, un forno sotterraneo e un mulino per il grano.
-321	Queste moschee erano piccoli centri di vita: preghiera, insegnamento del Corano, pane e grano per il quartiere. La loro architettura bianca ed essenziale è uno dei volti di Djerba riconosciuti dall'UNESCO nel 2023.
-322	XIV sec.
-323	Costruzione della moschea Fadhloun (XIV secolo)
-324	Classificata monumento (decreto del 15 marzo 2022)
-325	Djerba iscritta nel patrimonio mondiale dell'UNESCO
-326	Moschea della Kasbah (Tunisi)
-327	1231-1235 · Hafsidi
-328	Costruita dal fondatore della dinastia hafside sulla piazza della Kasbah, possiede uno dei più bei minareti di Tunisi, nello stile almohade di Marrakech e di Siviglia.
-329	Fu eretta dal 1231 al 1235 per ordine di Abu Zakariya Yahya, fondatore della dinastia hafside, che era stato governatore di Siviglia. Dapprima moschea della corte dei sovrani insediati nella Kasbah, divenne poi una delle moschee del venerdì della città; è la prima eretta a Tunisi dopo la Zitouna. In epoca ottomana vi si prega secondo il rito hanafita.
-330	La sala di preghiera, più profonda che larga, conta 7 navate e 9 campate su colonne di marmo con capitelli hafsidi; il mihrab è coronato da una cupola a stalattiti di gesso scolpito. Il minareto quadrato, costruito già nel 1233, è coperto da un reticolo di losanghe in pietra ocra: ha fatto da modello al minareto attuale della Zitouna.
-331	Inizio della costruzione (Abu Zakariya Yahya)
-332	Il minareto è terminato
-333	Fine della costruzione della moschea
-334	Grande Moschea di Monastir
-335	IX secolo · ampliata fino al XVIII
-336	Di fronte al mare, accanto al celebre ribat, una moschea di pietra sobria ed elegante, ampliata in ogni epoca a partire dal IX secolo.
-337	L'attuale sala di preghiera è il risultato di quattro fasi: un piccolo oratorio a volta nel IX secolo, un ampliamento nell'XI secolo (epoca ziride) con il mihrab, poi in epoca hafside un minareto quadrato e altre due navate. Una galleria esterna viene aggiunta nel XVIII secolo. Nell'ottobre 2013 due scosse sismiche fanno crollare in parte la sommità del minareto.
-338	Facciate in pietra da taglio, animate dalle cornici di porte e finestre e dagli archi di una galleria. La moschea non ha un cortile davanti alla sala di preghiera. Il mihrab dell'XI secolo, con decorazione ziride e scrittura cufica fiorita, non è sormontato da una cupola, cosa rara nell'Ifriqiya medievale.
-339	IX sec.
-340	Primo oratorio a volta (IX secolo)
-341	XI sec.
-342	Ampliamento ziride e mihrab (XI secolo)
-343	XVIII sec.
-344	Galleria esterna (XVIII secolo)
-345	La sommità del minareto crolla in parte dopo due terremoti
+201	Scrivete il vostro indirizzo e-mail (obbligatorio) per potervi rispondere.
+202	L’abbiamo ricevuto e vi risponderemo all’indirizzo:
+203	Inviare un altro messaggio
+204	Tunisi
+205	Kairouan
+206	Susa
+207	Mahdia
+208	Sfax
+209	Testour
+210	Cartagine
+211	Djerba (Midoun)
+212	Monastir
+213	Moschea Zitouna
+214	698 · ricostruita nell'864
+215	La grande moschea della medina di Tunisi, la più antica e la più vasta della capitale. Per oltre mille anni è stata anche una grande università dell'islam.
+216	Secondo la tradizione, il luogo di preghiera fu fondato nel 698 da Hassan ibn al-Nu'man, dopo la presa di Cartagine; altre fonti attribuiscono la fondazione al governatore omayyade Ubayd Allah ibn al-Habhab, verso il 732. Di quel primo edificio non resta quasi nulla: la moschea fu interamente ricostruita nell'864 dall'emiro aghlabide Abu Ibrahim Ahmad. Ogni dinastia la abbellì in seguito: cupola del «bahu» sotto gli Ziridi (verso il 990), cisterne e porte sotto gli Hafsidi, galleria orientale nel 1637. Il minareto attuale, in stile almohade, risale al 1894.
+217	Come a Kairouan e a Cordova, un cortile circondato da gallerie precede una sala di preghiera «ipostila»: circa 160 colonne antiche, in gran parte provenienti da Cartagine, vi formano 15 navate. La navata centrale, più larga, conduce al mihrab, coperto da una cupola del IX secolo. La cupola del bahu, all'ingresso della sala, alterna pietra ocra e mattone rosso. Il minareto del 1894 riprende la decorazione a losanghe di quello della moschea della Kasbah.
+218	La Zitouna è stata uno dei più antichi centri d'insegnamento del mondo musulmano: ogni sapiente si appoggiava a una colonna, con gli allievi seduti in cerchio intorno a lui. Ha formato grandi giuristi malikiti come Ibn Arafa, contemporaneo di Ibn Khaldun. Nel 1958 l'insegnamento lasciò la moschea; prosegue oggi all'Università Ez-Zitouna. Si dice che la preghiera non vi sia mai stata interrotta.
+219	Fondazione secondo la tradizione (Hassan ibn al-Nu'man)
+220	Ricostruzione completa da parte degli Aghlabidi
+221	Cupola del bahu (Ziridi)
+222	Nuovo minareto in stile almohade
+223	L'insegnamento lascia la moschea per l'università
+224	La medina di Tunisi iscritta nel patrimonio mondiale dell'UNESCO
+225	Grande Moschea di Kairouan (moschea di Uqba)
+226	670 · forma attuale dell'836
+227	La più antica moschea del Maghreb, fondata nel 670 insieme alla città di Kairouan. Ha fatto da modello a tutte le moschee del Nord Africa e fa parte del patrimonio mondiale dell'UNESCO.
+228	Nel 670 il conquistatore Uqba ibn Nafi fonda Kairouan e pone la sua moschea al centro della città. Ampliata e ricostruita nell'VIII e nel IX secolo, assume la forma attuale nell'836 sotto l'emiro aghlabide Ziyadat Allah I. Verso l'862-863 Abu Ibrahim Ahmad allunga la sala di preghiera e dona il minbar e la decorazione del mihrab. Nell'XI secolo il principe ziride al-Mu'izz ibn Badis aggiunge la maqsura di legno. Kairouan è stata a lungo considerata la quarta città santa dell'islam.
+229	Un vasto quadrilatero di circa 9 000 m²: un grande cortile lastricato, gallerie e una sala di preghiera di 17 navate sorretta da centinaia di colonne antiche di marmo, granito e porfido, tutte diverse. Il minareto, alto circa 31 metri, risale alla prima metà del IX secolo: è uno dei più antichi minareti ancora in piedi. Il mihrab del IX secolo è ornato di piastrelle di ceramica a lustro metallico; accanto, il minbar di legno intagliato è il più antico minbar conservato del mondo musulmano.
+230	Kairouan fu la capitale religiosa e culturale dell'Ifriqiya: qui l'imam Sahnun redasse nel IX secolo la Mudawwana, opera fondamentale del rito malikita seguito in Tunisia e in tutto il Maghreb. La biblioteca della moschea ha conservato manoscritti molto antichi, tra cui fogli del celebre «Corano blu».
+231	Fondazione da parte di Uqba ibn Nafi, insieme alla città
+232	Ricostruzione di Ziyadat Allah I: la forma attuale
+233	Minbar e decorazione del mihrab (Abu Ibrahim Ahmad)
+234	Maqsura di legno di al-Mu'izz ibn Badis (intorno a questa data)
+235	Kairouan iscritta nel patrimonio mondiale dell'UNESCO
+236	Grande Moschea di Susa
+237	850-851 · Aghlabidi
+238	All'ingresso della medina, una moschea dall'aspetto di fortezza, costruita nell'850-851 vicino al ribat che proteggeva la costa. Sobria e possente, fa parte della medina di Susa, patrimonio mondiale dell'UNESCO.
+239	Fu eretta nell'850-851 dall'emiro aghlabide Abu al-Abbas Muhammad, una trentina d'anni dopo il ribat di Susa; un'iscrizione in cufico, sulle gallerie del cortile, ne ricorda la costruzione. Fu ampliata sotto l'emiro Ibrahim II (875-902), quando Susa divenne la seconda città dell'Ifriqiya.
+240	Mura merlate, torri d'angolo sormontate da piccole cupole: la moschea somiglia a una fortezza e non ha un vero minareto, probabilmente perché la torre di guardia del vicino ribat svolgeva questo ruolo. La sala di preghiera conta 13 navate; la navata centrale e la campata del mihrab, più larghe, formano una «T», segnata da due cupole.
+241	Il vicino ribat di Susa è terminato
+242	Costruzione della moschea (850-851)
+243	Ampliamento sotto Ibrahim II (875-902)
+244	Medina di Susa iscritta nel patrimonio mondiale dell'UNESCO
+245	Grande Moschea di Mahdia
+246	916 · Fatimidi
+247	Costruita nel 916 dal primo califfo fatimide nella sua nuova capitale, in riva al mare. Il suo grande portale sporgente, ispirato agli archi di trionfo, è una novità assoluta nell'architettura delle moschee.
+248	Quando Ubayd Allah al-Mahdi fonda Mahdia nel 909, fa costruire la moschea vicino al palazzo califfale, su una piattaforma strappata al mare. Dopo la distruzione della città da parte degli spagnoli nel 1554, l'edificio viene più volte rimaneggiato. Tra il 1961 e il 1965 è quasi interamente ricostruito secondo la pianta del X secolo; il grande portale e il portico nord sono originali.
+249	Un quadrilatero di circa 85 × 55 metri, dalle mura massicce, affiancato da due torri quadrate che servivano da serbatoi d'acqua piovana. La moschea non ha mai avuto un minareto. Il portale monumentale apriva una «via d'onore» verso il mihrab, in fondo a una sala di 9 navate la cui navata centrale, più alta, conduce a una cupola.
+250	Fondazione di Mahdia da parte di Ubayd Allah al-Mahdi
+251	Costruzione della Grande Moschea
+252	La città viene distrutta dagli spagnoli
+253	Ricostruzione secondo la pianta originale (1961-1965)
+254	Grande Moschea di Sfax
+255	verso l'850 · Aghlabidi
+256	Nel cuore della medina di Sfax, una moschea del IX secolo la cui facciata orientale, scolpita in epoca ziride, e il minareto a immagine di quello di Kairouan sono capolavori dell'arte dell'Ifriqiya.
+257	Il primo edificio viene costruito verso l'850, sotto gli Aghlabidi, insieme alle mura di Sfax. La moschea viene abbellita in epoca ziride: due iscrizioni della facciata portano le date del 988 e del 1085. Modificata nel XII secolo, ritrova le dimensioni originarie nel XVIII secolo, durante grandi lavori.
+258	La facciata orientale è scandita da porte e finestre con archi a ferro di cavallo, nicchie e una cornice dentellata; vi è reimpiegata una lastra bizantina scolpita con due pavoni. Il minareto quadrato, alto una quindicina di metri, ricorda quello di Kairouan ma ha una decorazione più fine: dischi scolpiti e una bella scrittura cufica fiorita. La sala di preghiera, a squadra, conta 9 navate.
+259	Primo edificio, sotto gli Aghlabidi (intorno a questa data)
+260	Abbellimento ziride (iscrizione della facciata)
+261	Seconda iscrizione datata della facciata
+262	Classificata monumento storico
+263	Moschea delle Tre Porte
+264	866 · minareto verso il 1440
+265	Un piccolo oratorio della medina di Kairouan, noto in tutto il mondo per la sua facciata dell'866: la più antica facciata di moschea scolpita e decorata del mondo islamico.
+266	Verso l'866 un mercante andaluso stabilitosi a Kairouan, Muhammad ibn Khayrun al-Ma'afiri, fa costruire questo oratorio di quartiere; l'iscrizione della facciata ne riporta il nome e la data. Verso il 1440, in epoca hafside, la moschea viene restaurata e riceve un piccolo minareto: una fascia della facciata lo ricorda.
+267	La facciata, alta circa sette metri, apre tre archi su colonne antiche; al di sopra, fasce di scrittura cufica in rilievo citano il Corano (sura 33, versetti 70-71) e la fondazione, tra fregi di rosette e foglie di vite. All'interno, una sala di preghiera di circa 9 × 9 metri, senza cortile, a tre navate su colonne antiche.
+268	Costruzione da parte di Muhammad ibn Khayrun
+269	Restauro hafside e piccolo minareto (verso il 1440-1441)
+270	Moschea Youssef Dey
+271	1612 · Ottomani
+272	La prima moschea di rito hanafita di Tunisi, costruita dal dey ottomano Youssef vicino alla Kasbah. Il suo minareto ottagonale, il primo di Tunisi, segnala il rito degli Ottomani.
+273	Un'iscrizione all'interno ne data la costruzione al 1612, per ordine di Youssef Dey, che governò Tunisi dal 1610 al 1637. Restaurata alla fine del XIX secolo sotto Ali Bey, divenne nel 1926 una sede distaccata dell'università della Zitouna. Il dey vi riposa in un mausoleo, primo esempio a Tunisi di moschea funeraria.
+274	La sala di preghiera, circondata da cortili su tre lati, conta 9 navate e 7 campate; una cupola si innalza davanti al mihrab. Il minbar è in muratura rivestita di marmi colorati, mentre le moschee malikite hanno un minbar di legno. Il minareto ottagonale termina con un balcone coperto e un tetto piramidale di tegole verdi, come il mausoleo.
+275	Costruzione da parte di Youssef Dey (iscrizione)
+276	Morte di Youssef Dey, sepolto nel suo mausoleo
+277	Sede distaccata dell'università della Zitouna
+278	Moschea Hammouda Pacha
+279	1655 · Muraditi
+280	La seconda moschea hanafita di Tunisi, eretta nel 1655 dal bey Hammouda Pacha. Il suo sottile minareto ottagonale domina la via Sidi Ben Arous, nella medina.
+281	Hammouda Pacha, bey della dinastia muradita, fa costruire la moschea nel 1655, all'angolo tra via Sidi Ben Arous e via della Kasbah. Come Youssef Dey prima di lui, vi fa sistemare il proprio mausoleo, nel cortile: questa tomba avrebbe ispirato, molto più tardi, quella del presidente Bourguiba a Monastir.
+282	Un edificio ottomano del XVII secolo: porta di marmo, tetti di tegole verdi e tre cortili. La sala di preghiera, di circa 24 × 17 metri, conta 7 navate su 48 colonne; le pareti sono rivestite di marmo e di gesso scolpito, con una decorazione di fiori e marmi colorati d'influenza italiana. Cosa rara a Tunisi, il cortile si apre sulla strada con ampie finestre a grata. Il minareto ottagonale è coronato da un balcone e da un tetto piramidale.
+283	Costruzione da parte di Hammouda Pacha Bey
+284	Restauro (1960-1961)
+285	Moschea Sidi Mahrez (moschea Mohamed Bey)
+286	1692-1697 · Muraditi
+287	Con le sue cupole bianche, che si ritrovano sull'emblema della città di Tunisi, è l'unica moschea tunisina costruita sul modello delle grandi moschee di Istanbul. Sorge di fronte alla zawiya di Sidi Mahrez, santo patrono della medina.
+288	Mohamed Bey el-Mouradi ne avvia la costruzione tra il 1692 e il 1697, in onore di Sidi Mahrez (Mahrez ibn Khalaf, X secolo), nel quartiere di Bab Souika. I disordini politici della fine del XVII secolo impediscono di terminare i lavori: la moschea non ha mai ricevuto un minareto. Viene restaurata a partire dal 1984, insieme al quartiere di Bab Souika.
+289	Posta su una piattaforma, la sala di preghiera quadrata (28 metri di lato) è coperta da una grande cupola centrale di quasi 16 metri di diametro, circondata da semicupole e da piccole cupole d'angolo, come la moschea Sultan Ahmet di Istanbul. Piastrelle di ceramica di Iznik, nei colori blu, verde e «rosso pomodoro», ornano i pilastri e la parete del mihrab.
+290	Inizio della costruzione da parte di Mohamed Bey el-Mouradi
+291	Fine dei lavori, senza minareto
+292	Restauro insieme al quartiere di Bab Souika
+293	Zawiya di Sidi Sahbi (mausoleo del Barbiere)
+294	XVII secolo · Muraditi
+295	Il mausoleo di Abu Zama'a al-Balawi, compagno del Profeta ﷺ, che gli abitanti di Kairouan chiamano «Sidi Sahbi»: il santo patrono di Kairouan. I suoi cortili rivestiti di ceramica e di gesso scolpito ne fanno uno dei più bei monumenti della città.
+296	Abu Zama'a al-Balawi muore in battaglia nel 654 (anno 34 dell'egira). Si racconta che portasse con sé alcuni peli della barba del Profeta ﷺ, da cui il nome di «mausoleo del Barbiere». L'antico edificio viene interamente rinnovato nel XVII secolo dai bey muraditi: Hammouda Pacha ricostruisce la zawiya, la madrasa e il minareto verso il 1662, poi Mohamed Bey rifà la cupola del mausoleo verso il 1681-1685.
+297	Un vasto complesso fuori dalle mura della medina: cortile d'ingresso e minareto in stile andaluso, patio a colonne, sala a cupola, poi un cortile dalle pareti coperte di ceramiche policrome e di gesso finemente scolpito, che precede la camera funeraria. Una madrasa, con le stanze degli studenti e la sala di preghiera, completa il complesso.
+298	È uno dei luoghi più visitati dai tunisini, soprattutto per la festa del Mawlid; vi si celebrano anche contratti di matrimonio e circoncisioni. Un tempo le carovane del Maghreb vi si radunavano prima di partire per il pellegrinaggio alla Mecca.
+299	Morte di Abu Zama'a al-Balawi (anno 34 dell'egira)
+300	Zawiya, madrasa e minareto di Hammouda Pacha (intorno a questa data)
+301	Nuova cupola del mausoleo di Mohamed Bey (1681-1685)
+302	Grande Moschea di Testour
+303	verso il 1630 · Andalusi
+304	Costruita dagli andalusi cacciati dalla Spagna all'inizio del XVII secolo, unisce le tradizioni tunisine e l'arte ispano-moresca. Il suo minareto porta un orologio le cui lancette girano al contrario.
+305	Dopo l'espulsione dei moriscos dalla Spagna (1609-1614), molti si stabiliscono nella valle della Medjerda e rifondano Testour. La moschea viene eretta nel primo terzo del XVII secolo, probabilmente prima del 1631, da Mohamed Tagharinou, un andaluso stabilitosi in città. Un secondo cortile e una sala per le abluzioni vengono aggiunti nel XVIII secolo. Nel 2014 abitanti e associazioni rimettono in funzione l'orologio del minareto, fermo da quasi tre secoli.
+306	La pianta della sala di preghiera (9 navate) segue la tradizione di Kairouan, ma i tetti di tegole, la decorazione in stucco e il minareto sono andalusi. Alto 22,50 metri, il minareto sovrappone una torre quadrata in mattoni e pietre, alla maniera di Toledo, e una torre ottagonale ornata di ceramica: ricorda i campanili dell'Aragona. Nel cortile, una meridiana del 1761 indicava l'ora delle preghiere.
+307	I moriscos, cacciati dalla Spagna (1609-1614), arrivano in Tunisia
+308	Moschea terminata (probabilmente prima di questa data)
+309	Meridiana del cortile
+310	L'orologio del minareto rimesso in funzione
+311	Moschea Malik ibn Anas (Cartagine)
+312	2003 · contemporanea
+313	Una grande moschea moderna costruita su una collina di Cartagine, nel cuore del sito archeologico. Il suo minareto di 55 metri si vede da lontano; compare sulla banconota da dieci dinari.
+314	Costruita dal 2000 al 2003 su progetto dell'architetto Ayad Sriha, si chiamava inizialmente «El Abidine». Nel novembre 2012 prende il nome dell'imam Malik ibn Anas (morto nel 795), fondatore della scuola malikita seguita in Tunisia. La radio Zitouna FM vi trasmette le cinque preghiere quotidiane.
+315	Si ispira alle grandi moschee tunisine: spianata, cortile di 1 500 m² e sala di preghiera ipostila di 64 colonne, che può accogliere 1 000 fedeli. Il mihrab di marmo bianco intarsiato di verde e di rosso è sormontato da una cupola di dieci metri di diametro. Le pareti sono rivestite di pietra di Kedhel, stucco scolpito e ceramiche con motivi andalusi; il pavimento è coperto di tappeti di Kairouan.
+316	Posa della prima pietra
+317	Inaugurazione
+318	Prende il nome dell'imam Malik ibn Anas
+319	Moschea Fadhloun e moschee ibadite di Djerba
+320	XIV secolo · Djerba
+321	All'uscita di Midoun, una moschea bianca dall'aspetto di piccola fortezza, tipica dell'isola di Djerba, dove vive una comunità musulmana ibadita. È classificata monumento dal 2022 e fa parte dei luoghi di Djerba iscritti nel patrimonio mondiale nel 2023.
+322	Costruita nel XIV secolo, la moschea Fadhloun appartiene al ricco insieme delle moschee di Djerba, spesso ibadite, costruite nei campi e sulla costa. Con i loro muri spessi e i piccoli minareti, molte servivano anche da posti di guardia: formavano una seconda linea di difesa dietro i forti del litorale.
+323	La sala di preghiera quadrata, di circa 7,5 metri di lato, è coperta da nove piccole cupole sorrette da quattro colonne; il mihrab è una semplice nicchia e il minbar, in pietra, ha solo tre gradini. Un minareto tozzo a due livelli domina il tetto. Intorno: un cortile con un «mihrab d'estate», una cisterna d'acqua piovana, due sale per l'insegnamento del Corano, un forno sotterraneo e un mulino per il grano.
+324	Queste moschee erano piccoli centri di vita: preghiera, insegnamento del Corano, pane e grano per il quartiere. La loro architettura bianca ed essenziale è uno dei volti di Djerba riconosciuti dall'UNESCO nel 2023.
+325	XIV sec.
+326	Costruzione della moschea Fadhloun (XIV secolo)
+327	Classificata monumento (decreto del 15 marzo 2022)
+328	Djerba iscritta nel patrimonio mondiale dell'UNESCO
+329	Moschea della Kasbah (Tunisi)
+330	1231-1235 · Hafsidi
+331	Costruita dal fondatore della dinastia hafside sulla piazza della Kasbah, possiede uno dei più bei minareti di Tunisi, nello stile almohade di Marrakech e di Siviglia.
+332	Fu eretta dal 1231 al 1235 per ordine di Abu Zakariya Yahya, fondatore della dinastia hafside, che era stato governatore di Siviglia. Dapprima moschea della corte dei sovrani insediati nella Kasbah, divenne poi una delle moschee del venerdì della città; è la prima eretta a Tunisi dopo la Zitouna. In epoca ottomana vi si prega secondo il rito hanafita.
+333	La sala di preghiera, più profonda che larga, conta 7 navate e 9 campate su colonne di marmo con capitelli hafsidi; il mihrab è coronato da una cupola a stalattiti di gesso scolpito. Il minareto quadrato, costruito già nel 1233, è coperto da un reticolo di losanghe in pietra ocra: ha fatto da modello al minareto attuale della Zitouna.
+334	Inizio della costruzione (Abu Zakariya Yahya)
+335	Il minareto è terminato
+336	Fine della costruzione della moschea
+337	Grande Moschea di Monastir
+338	IX secolo · ampliata fino al XVIII
+339	Di fronte al mare, accanto al celebre ribat, una moschea di pietra sobria ed elegante, ampliata in ogni epoca a partire dal IX secolo.
+340	L'attuale sala di preghiera è il risultato di quattro fasi: un piccolo oratorio a volta nel IX secolo, un ampliamento nell'XI secolo (epoca ziride) con il mihrab, poi in epoca hafside un minareto quadrato e altre due navate. Una galleria esterna viene aggiunta nel XVIII secolo. Nell'ottobre 2013 due scosse sismiche fanno crollare in parte la sommità del minareto.
+341	Facciate in pietra da taglio, animate dalle cornici di porte e finestre e dagli archi di una galleria. La moschea non ha un cortile davanti alla sala di preghiera. Il mihrab dell'XI secolo, con decorazione ziride e scrittura cufica fiorita, non è sormontato da una cupola, cosa rara nell'Ifriqiya medievale.
+342	IX sec.
+343	Primo oratorio a volta (IX secolo)
+344	XI sec.
+345	Ampliamento ziride e mihrab (XI secolo)
+346	XVIII sec.
+347	Galleria esterna (XVIII secolo)
+348	La sommità del minareto crolla in parte dopo due terremoti
