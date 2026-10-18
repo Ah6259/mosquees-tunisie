@@ -64,9 +64,14 @@
       .replace(/[ً-ْٰـ]/g, "").replace(/[إأآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه").replace(/ؤ/g, "و").replace(/ئ/g, "ي")
       .replace(/[-'’.,()]/g, " ").replace(/\s+/g, " ").trim();
   }
-  LIEUX.forEach(l => { l._q = normaliser(Object.values(l.n || {}).join(" ") + " " + (l.v || []).join(" ")); });
+  // recherche « au son » (règle commune § 11.11, 18/10/2026 : Jerba = Djerba) : même calcul pour ce qu'on tape et pour la liste
+  const son = t => (" " + normaliser(t) + " ").replace(/ e([bcdfgjklmnpqrstvxz])\1/g, " $1").replace(/dj/g, "j").replace(/sh/g, "ch")
+    .replace(/ph/g, "f").replace(/q/g, "k").replace(/ou/g, "u").replace(/w/g, "u").replace(/y/g, "i").replace(/([a-z])\1/g, "$1")
+    .replace(/ (el|al|l|le|la|les) /g, " ").replace(/ (el|al|l|le|la|les) /g, " ")
+    .replace(/([bcdfghjklmnpqrstvxz])[ea](?=[bcdfghjklmnpqrstvxz])/g, "$1").replace(/ +/g, " ").trim();
+  LIEUX.forEach(l => { l._q = son(Object.values(l.n || {}).join(" ") + " " + (l.v || []).join(" ")); });
   function chercher(q) {
-    const mots = normaliser(q).split(" ").filter(Boolean);
+    const mots = son(q).split(" ").filter(Boolean);
     if (!mots.length) return null;
     return LIEUX.concat(MONDE).filter(l => mots.every(m => l._q.includes(m)));     // Tunisie + mosquées du monde déjà chargées
   }
@@ -220,7 +225,7 @@
     const l = { i: "osm-" + el.type[0] + el.id, a: +(+lat).toFixed(6), o: +(+lon).toFixed(6),
       t: ["musalla", "prayer_room", "prayer_hall"].includes(tags.place_of_worship) ? "s" : "m",
       n, nom: String(tags.name || "").slice(0, 80), pays, c: couleurPays(pays), monde: true };
-    l._q = normaliser(Object.values(n).join(" ") + " " + l.nom);
+    l._q = son(Object.values(n).join(" ") + " " + l.nom);
     return l;
   }
   function ajouterZone(elements, pays) {

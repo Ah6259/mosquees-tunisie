@@ -82,3 +82,4 @@
   (400) et limite les originaux (429 « use thumbnail images »). La largeur de l'original est gardée (`w` de la photo). 33 photos
   (jusqu'à 1,1 Mo) passées en vignettes de 18 à 75 Ko. Test dans test_site.mjs ; le test CSP des images (VS.9) couvre aussi
   les fonds de carte et les images citées par les scripts.
+- 18/10/2026 : recherche « au son » (Jerba = Djerba, Houmt = Houmet, Qairouan = Kairouan, lettres doublées…), même calcul pour ce qu'on tape et pour la liste ; test de paires d'écritures.

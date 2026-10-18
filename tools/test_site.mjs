@@ -132,6 +132,10 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
 {
   const { w, d, js } = await page();
   const L = w.MOSQUEES_LIEUX;
+  { const C = w.MOSQUEES_CHERCHER, n = q => (C(q) || []).length;
+    const paires = [["Djerba", "Jerba"], ["Houmet Souk", "Houmt Souk"], ["Kairouan", "Qairouan"], ["Hammamet", "Hamamet"], ["Mosquée Ezzitouna", "Zitouna"]];
+    const diff = paires.filter(([x, y]) => n(x) !== n(y));
+    check("recherche « au son » (§ 11.11) : deux écritures d'un même lieu donnent le même résultat " + JSON.stringify(diff), !diff.length && n("Jerba") > 0); }
   check(`données : au moins 1 500 lieux de prière (${L.length}), positions en Tunisie, au moins 100 avec une page`, L.length >= 1500
     && L.every(l => l.a > 30 && l.a < 37.6 && l.o > 7.4 && l.o < 11.7) && L.filter(l => l.p).length >= 100);
   check("accueil sans erreur JS ; compteur du bandeau = nombre de lieux ; filtres Mosquée et « Avec page d'histoire », aucun à 0",
