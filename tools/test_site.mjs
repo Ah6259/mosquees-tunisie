@@ -132,6 +132,8 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
 {
   const { w, d, js } = await page();
   const L = w.MOSQUEES_LIEUX;
+  check("cartes isolées (règle § 28) : .leaflet-container isolation:isolate, listes de langues au-dessus (z-index ≥ 1000)",
+    /\.leaflet-container\{isolation:isolate/.test(lire("assets/style.css")) && +((lire("assets/style.css").match(/\.langues-liste\{[^}]*z-index:(\d+)/) || [])[1] || 0) >= 1000);
   { const C = w.MOSQUEES_CHERCHER, n = q => (C(q) || []).length;
     const paires = [["Djerba", "Jerba"], ["Houmet Souk", "Houmt Souk"], ["Kairouan", "Qairouan"], ["Hammamet", "Hamamet"], ["Mosquée Ezzitouna", "Zitouna"]];
     const diff = paires.filter(([x, y]) => n(x) !== n(y));
