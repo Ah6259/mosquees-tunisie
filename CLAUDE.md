@@ -70,3 +70,9 @@
     `assets/trad/*.js` ne contient que les 5 anciennes langues (il ne sert qu'à la page française).
   - Robot `mosquees_donnees.py` : demande à Wikidata les noms et articles dans les 21 langues.
   - Traductions écrites par Claude, non relues par des personnes dont c'est la langue : à faire relire quand ce sera possible.
+
+- **Visiteur simulé (18/10/2026, règle générale)** : `python tools/visiteur_simule.py` (outil commun, copie identique dans chaque
+  dépôt, ne pas le modifier ici) + scénarios `tools/scenarios-visiteur.json` (recherches, filtre, « Autour de moi ») ; lancé par
+  `tests.yml`. Première trouvaille : 144 photos de `thumb.wikimedia.org` étaient bloquées par la CSP (`img-src` n'avait que
+  upload.wikimedia.org) -> ajouté dans `tools/construire.py`, index.html, video/ ; test « chaque photo d'un autre site est autorisée
+  par la CSP » dans test_site.mjs. Nouveau serveur d'images = l'ajouter à `img-src`.

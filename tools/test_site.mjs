@@ -68,6 +68,13 @@ for (const p of PAGES) {
 }
 check(`toutes les pages : CSP, noai, pas de traduction auto, iPhone, aucun script en ligne, récitation ${pb.slice(0, 6).join(" | ")}`, !pb.length);
 check(`une seule version ?v= (${[...versions].join(", ")})`, versions.size === 1);
+// 18/10/2026 (visiteur simulé) : 144 photos venaient de thumb.wikimedia.org, absent de la CSP -> photo cassée chez tous les visiteurs
+const imgBloquees = new Set();
+for (const p of PAGES) {
+  const h = lire(p), csp = (/img-src([^;"]*)/.exec(h) || [])[1] || "";
+  for (const m of h.matchAll(/<img[^>]*\ssrc="(https:\/\/[^/"]+)/g)) if (!csp.split(/\s+/).includes(m[1])) imgBloquees.add(p + " -> " + m[1]);
+}
+check(`toutes les pages : chaque photo d'un autre site est autorisée par la CSP (img-src) ${[...imgBloquees].slice(0, 3).join(" | ")}`, !imgBloquees.size);
 check("CSP : carte (cdnjs, tuiles OpenStreetMap), photos Wikimedia, lecteur youtube-nocookie, envoi au formulaire Google", (() => { const h = lire("index.html");
   return /script-src[^;]*cdnjs\.cloudflare\.com/.test(h) && /img-src[^;]*tile\.openstreetmap\.org/.test(h) && /img-src[^;]*upload\.wikimedia\.org/.test(h)
     && /frame-src https:\/\/www\.youtube-nocookie\.com/.test(h) && /connect-src[^;]*docs\.google\.com/.test(h) && !/frame-src[^;]*\*/.test(h); })());

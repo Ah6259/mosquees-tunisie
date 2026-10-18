@@ -29,7 +29,7 @@ NOM_LANGUE = {"fr": "Français", "ar": "العربية", "en": "English", "tr": 
               "it": "Italiano", "pt": "Português", "nl": "Nederlands", "zh": "中文", "ja": "日本語", "ko": "한국어", "hi": "हिन्दी",
               "ru": "Русский", "vi": "Tiếng Việt", "th": "ไทย", "tl": "Filipino", "sv": "Svenska", "ro": "Română"}
 CSP = ("default-src 'self'; script-src 'self' https://gc.zgo.at https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; "
-       "font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://cdnjs.cloudflare.com https://prix-eaux-tunisie.goatcounter.com; "
+       "font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://thumb.wikimedia.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://cdnjs.cloudflare.com https://prix-eaux-tunisie.goatcounter.com; "
        "frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com "
        "https://maps.mail.ru https://overpass-api.de https://overpass.kumi.systems https://overpass.private.coffee https://overpass.openstreetmap.fr https://nominatim.openstreetmap.org; object-src 'none'; base-uri 'self'; "
        "form-action 'self' https://formspree.io https://docs.google.com")
