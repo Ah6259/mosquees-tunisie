@@ -1,0 +1,58 @@
+[
+ {
+  "page": "",
+  "nom": "accueil : nombre de lieux de prière sur la carte",
+  "lire": "#mq-total",
+  "attente": 2500
+ },
+ {
+  "page": "",
+  "nom": "accueil : recherche « Kairouan » (nombre de lieux trouvés)",
+  "attente": 2500,
+  "etapes": [{"sel": "#mq-q", "valeur": "Kairouan"}],
+  "apres": 1200,
+  "lire": "#mq-info"
+ },
+ {
+  "page": "",
+  "nom": "recherche précise « Sidi Bou » (moins de résultats)",
+  "attente": 2500,
+  "etapes": [{"sel": "#mq-q", "valeur": "Sidi Bou"}],
+  "apres": 1200,
+  "lire": "#mq-info",
+  "groupe": "recherche plus large = plus de résultats",
+  "ordre": 1,
+  "croissant": true
+ },
+ {
+  "page": "",
+  "nom": "recherche large « Sidi » (plus de résultats)",
+  "attente": 2500,
+  "etapes": [{"sel": "#mq-q", "valeur": "Sidi"}],
+  "apres": 1200,
+  "lire": "#mq-info",
+  "groupe": "recherche plus large = plus de résultats",
+  "ordre": 2,
+  "croissant": true
+ },
+ {
+  "page": "",
+  "nom": "accueil : filtre « avec page d'histoire » puis recherche « Tunis »",
+  "attente": 2500,
+  "etapes": [{"sel": "#mq-filtres [data-pages]", "clic": true}, {"sel": "#mq-q", "valeur": "Tunis"}],
+  "apres": 1200,
+  "lire": "#mq-info"
+ },
+ {
+  "page": "",
+  "nom": "accueil : « Autour de moi » sans localisation (message clair, pas de bug)",
+  "attente": 2500,
+  "etapes": [{"sel": "#mq-autour", "clic": true}],
+  "apres": 1500
+ },
+ {
+  "page": "grandes-mosquees/",
+  "nom": "page des grandes mosquées (nombre affiché)",
+  "lire": ".mq-compte"
+ }
+]

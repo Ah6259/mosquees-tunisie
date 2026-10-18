@@ -38,3 +38,5 @@ jobs:
           if [ -f tools/test_video.mjs ] && [ -f video/index.html ]; then node tools/test_video.mjs; fi
       - run: python tools/test_lieux.py
       - run: python tools/test_sabotage.py
+      - name: Visiteur simule (comme un visiteur sur telephone, avant le vrai visiteur - regle generale du 18/10/2026)
+        run: python tools/visiteur_simule.py
