@@ -164,13 +164,36 @@ def lire_wikidata():
     return fiches
 
 
+LARGEUR_PHOTO = 960   # 18/10/2026 (VS.7) : vignette de 960 px au lieu du fichier original, lourd
+# Tailles standard de Wikimedia (https://www.mediawiki.org/wiki/Common_thumbnail_sizes) : une vignette d'une autre taille
+# est refusée (400) et les fichiers ORIGINAUX sont limités (429 « use thumbnail images in sizes listed… », vu le 18/10/2026).
+TAILLES_WIKIMEDIA = (20, 40, 60, 120, 250, 330, 500, 960)
+
+
+def largeur_vignette(largeur_origine):
+    """Taille de vignette à demander : 960 px, ou la plus grande taille standard qui ne dépasse pas l'original
+    (une vignette plus large que l'original serait agrandie : plus lourde et floue). 0 = garder l'original."""
+    return max((t for t in TAILLES_WIKIMEDIA if t <= min(largeur_origine or 0, LARGEUR_PHOTO)), default=0)
+
+
+def vignette(url, largeur_origine=0):
+    """Adresse de la photo à afficher : vignette sur thumb.wikimedia.org (le serveur que la CSP autorise et qui répond
+    aux visiteurs) ; l'adresse donnée est gardée si la largeur de l'original est inconnue."""
+    m = re.match(r"https://(?:upload|thumb)\.wikimedia\.org/wikipedia/commons/(?:thumb/)?([0-9a-f]/[0-9a-f]{2})/([^/?]+)", url or "")
+    t = largeur_vignette(largeur_origine)
+    if not m or not t or not re.search(r"\.(jpe?g|png|gif|webp)$", m.group(2), re.I):
+        return url                                   # largeur inconnue ou format à convertir (svg, tif…) : adresse gardée
+    dossier, nom = m.groups()
+    return f"https://thumb.wikimedia.org/wikipedia/commons/thumb/{dossier}/{nom}/{t}px-{nom}"
+
+
 def credits_photos(fichiers):
-    """Auteur, licence et vignette de chaque photo (Wikimedia Commons), 40 par appel. Licence libre exigée."""
+    """Auteur, licence et vignette (960 px au plus) de chaque photo (Wikimedia Commons), 40 par appel. Licence libre exigée."""
     sortie, fichiers = {}, sorted(set(f for f in fichiers if f))
     for i in range(0, len(fichiers), 40):
         titres = "|".join("File:" + f for f in fichiers[i:i + 40])
         d = http("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
-            "action": "query", "titles": titres, "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": 800, "format": "json"}))
+            "action": "query", "titles": titres, "prop": "imageinfo", "iiprop": "url|size|extmetadata", "iiurlwidth": LARGEUR_PHOTO, "format": "json"}))
         norm = {n["to"]: n["from"] for n in d["query"].get("normalized", [])}
         for p in d["query"]["pages"].values():
             ii = (p.get("imageinfo") or [{}])[0]
@@ -179,7 +202,7 @@ def credits_photos(fichiers):
             if not ii.get("thumburl") or not re.search(r"CC|Public domain|domaine public|PD", licence, re.I) or re.search(r"\bNC\b|\bND\b|fair use", licence, re.I):
                 continue                                                   # licence inconnue ou non libre : photo non utilisée
             nom = norm.get(p["title"], p["title"])[5:]
-            sortie[nom.replace("_", " ")] = {"url": ii["thumburl"].split("?")[0], "page": ii.get("descriptionurl", ""), "licence": propre(licence, 40),
+            sortie[nom.replace("_", " ")] = {"url": vignette(ii.get("url", ""), ii.get("width", 0)), "w": ii.get("width", 0), "page": ii.get("descriptionurl", ""), "licence": propre(licence, 40),
                                              "auteur": propre(re.sub(r"<[^>]+>", "", (em.get("Artist") or {}).get("value", "")), 80) or "Wikimedia Commons"}
         time.sleep(0.5)
     return sortie

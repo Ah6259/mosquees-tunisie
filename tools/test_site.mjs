@@ -68,13 +68,52 @@ for (const p of PAGES) {
 }
 check(`toutes les pages : CSP, noai, pas de traduction auto, iPhone, aucun script en ligne, récitation ${pb.slice(0, 6).join(" | ")}`, !pb.length);
 check(`une seule version ?v= (${[...versions].join(", ")})`, versions.size === 1);
-// 18/10/2026 (visiteur simulé) : 144 photos venaient de thumb.wikimedia.org, absent de la CSP -> photo cassée chez tous les visiteurs
-const imgBloquees = new Set();
-for (const p of PAGES) {
-  const h = lire(p), csp = (/img-src([^;"]*)/.exec(h) || [])[1] || "";
-  for (const m of h.matchAll(/<img[^>]*\ssrc="(https:\/\/[^/"]+)/g)) if (!csp.split(/\s+/).includes(m[1])) imgBloquees.add(p + " -> " + m[1]);
+// ---- 18/10/2026 (règle VS.9, tous les sites qui affichent des images d'autres sites) : chaque image d'un autre site est autorisée
+//      par la CSP (img-src) de SA page : balises <img>/<source>, fonds de carte et images citées par les scripts chargés (données
+//      comprises). Sinon l'image est cassée chez tous les visiteurs (vu sur Mosquées : 144 photos de thumb.wikimedia.org bloquées).
+{
+  const pagesHtml = [];
+  (function parcourir(d) {
+    for (const n of readdirSync(join(root, d))) {
+      const p = d ? d + "/" + n : n;
+      if (n.startsWith(".") || ["node_modules", "tools"].includes(n) || /preuves/i.test(n)) continue;
+      if (statSync(join(root, p)).isDirectory()) parcourir(p); else if (n.endsWith(".html")) pagesHtml.push(p);
+    }
+  })("");
+  const imgSrc = h => ((/http-equiv="Content-Security-Policy" content="[^"]*?img-src([^;"]*)/.exec(h) || [])[1] || "").trim().split(/\s+/).filter(Boolean);
+  const permis = (srcs, url) => {
+    let u; try { u = new URL(url.replace(/\{s\}/g, "a").replace(/\{[a-z]+\}/g, "0")); } catch (e) { return false; }
+    return srcs.some(s => s === "*" || s === "https:" || s === u.origin || (s.startsWith("https://*.") && u.protocol === "https:" && u.host.endsWith(s.slice(9))));
+  };
+  const IMG = /https:\/\/[a-z0-9.-]+\.[a-z]{2,}\/[^\s"'`<>()\\]*?\.(?:png|jpe?g|webp|gif|svg|avif)\b/gi;
+  const cache = new Map(), lireJs = f => { if (!cache.has(f)) cache.set(f, existsSync(join(root, f)) ? (lire(f).match(IMG) || []).filter(u => !/\/wiki\//.test(u)) : []); return cache.get(f); };
+  const bloquees = new Set(); let vues = 0;
+  for (const p of pagesHtml) {
+    const h = lire(p), csp = imgSrc(h), dossier = dirname(p);
+    const urls = [...h.matchAll(/<(?:img|source)\b[^>]*?\s(?:src|srcset)="([^"]+)"/g)]
+      .flatMap(m => m[1].split(",").map(x => x.trim().split(/\s+/)[0])).filter(u => /^https:\/\//.test(u));
+    for (const m of h.matchAll(/<script\b[^>]*\ssrc="(?!https?:|\/\/)([^"?#]+)/g))
+      urls.push(...lireJs(m[1].startsWith("/") ? m[1].slice(1) : join(dossier, m[1]).replace(/\\/g, "/")));
+    for (const u of urls) { vues++; if (!permis(csp, u)) bloquees.add(p + " -> " + u.slice(0, 90)); }
+  }
+  check(`chaque image d'un autre site (balise, carte, script, données) est autorisée par la CSP img-src de sa page (${vues} vues, ${pagesHtml.length} pages) ${[...bloquees].slice(0, 3).join(" | ")}`,
+    pagesHtml.length > 0 && !bloquees.size);
 }
-check(`toutes les pages : chaque photo d'un autre site est autorisée par la CSP (img-src) ${[...imgBloquees].slice(0, 3).join(" | ")}`, !imgBloquees.size);
+// 18/10/2026 (VS.7) : photos Wikimedia en vignette sur thumb.wikimedia.org : 960 px, ou la plus grande taille standard qui ne
+// dépasse pas l'original (les autres tailles sont refusées, les fichiers originaux limités par Wikimedia : erreur 429)
+{
+  const TAILLES = [20, 40, 60, 120, 250, 330, 500, 960], attendue = w => Math.max(0, ...TAILLES.filter(t => t <= Math.min(w, 960)));
+  const ph = JSON.parse(lire("donnees/mosquees.json")).lieux.map(l => (l.fiche || {}).photo).filter(Boolean), mal = [];
+  for (const p of ph) {
+    const m = /^https:\/\/thumb\.wikimedia\.org\/wikipedia\/commons\/thumb\/[0-9a-f]\/[0-9a-f]{2}\/([^/]+)\/(\d+)px-\1$/.exec(p.url);
+    if (!m || +m[2] !== attendue(p.w)) mal.push(p.url.slice(0, 90) + " (" + p.w + " px)");
+  }
+  const urls = new Set(ph.map(p => p.url));
+  const pages = PAGES.filter(p => p.startsWith("mosquee/")).flatMap(p => [...lire(p).matchAll(/<img[^>]*\ssrc="(https:\/\/[a-z]+\.wikimedia\.org\/[^"]+)"/g)].map(m => m[1].replace(/&amp;/g, "&")));
+  const autres = pages.filter(u => !urls.has(u));
+  check(`photos Wikimedia : vignette de 960 px (ou plus petite si l'original est plus petit), jamais le fichier original (${ph.length} photos, ${pages.length} dans les pages) ${[...mal, ...autres].slice(0, 3).join(" | ")}`,
+    ph.length >= 50 && ph.every(p => p.w > 0) && !mal.length && pages.length > 0 && !autres.length);
+}
 check("CSP : carte (cdnjs, tuiles OpenStreetMap), photos Wikimedia, lecteur youtube-nocookie, envoi au formulaire Google", (() => { const h = lire("index.html");
   return /script-src[^;]*cdnjs\.cloudflare\.com/.test(h) && /img-src[^;]*tile\.openstreetmap\.org/.test(h) && /img-src[^;]*upload\.wikimedia\.org/.test(h)
     && /frame-src https:\/\/www\.youtube-nocookie\.com/.test(h) && /connect-src[^;]*docs\.google\.com/.test(h) && !/frame-src[^;]*\*/.test(h); })());

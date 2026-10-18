@@ -19,6 +19,7 @@ from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 import pages_langues as PL  # noqa: E402
 import langues_plus  # noqa: E402
+from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 
 VERSION = "20261013e"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
@@ -351,6 +352,8 @@ def page_fiche(l, chemin, r="../../"):
     ville_fr, ville_ar = v.get("fr", ""), v.get("ar", "")
     region = v.get("region_fr", "")
     ph = f.get("photo")
+    if ph:
+        ph = {**ph, "url": vignette(ph["url"], ph.get("w", 0))}   # vignette de 960 px, ou l'original s'il est plus petit
     an = f.get("annee")
     badges = []
     if an:

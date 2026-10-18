@@ -76,3 +76,9 @@
   `tests.yml`. Première trouvaille : 144 photos de `thumb.wikimedia.org` étaient bloquées par la CSP (`img-src` n'avait que
   upload.wikimedia.org) -> ajouté dans `tools/construire.py`, index.html, video/ ; test « chaque photo d'un autre site est autorisée
   par la CSP » dans test_site.mjs. Nouveau serveur d'images = l'ajouter à `img-src`.
+- **Photos plus légères (18/10/2026, VS.7)** : `vignette()` / `largeur_vignette()` de `tools/mosquees_donnees.py` (utilisées aussi par
+  construire.py) : chaque photo Wikimedia est une vignette de **960 px** sur thumb.wikimedia.org ; si l'original est plus petit, la plus
+  grande taille STANDARD qui ne le dépasse pas (500, 330…). Jamais le fichier original : Wikimedia refuse les tailles non standard
+  (400) et limite les originaux (429 « use thumbnail images »). La largeur de l'original est gardée (`w` de la photo). 33 photos
+  (jusqu'à 1,1 Mo) passées en vignettes de 18 à 75 Ko. Test dans test_site.mjs ; le test CSP des images (VS.9) couvre aussi
+  les fonds de carte et les images citées par les scripts.
