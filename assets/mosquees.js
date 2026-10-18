@@ -66,7 +66,7 @@
   }
   // recherche « au son » (règle commune § 11.11, 18/10/2026 : Jerba = Djerba) : même calcul pour ce qu'on tape et pour la liste
   const son = t => (" " + normaliser(t) + " ").replace(/ e([bcdfgjklmnpqrstvxz])\1/g, " $1").replace(/dj/g, "j").replace(/sh/g, "ch")
-    .replace(/ph/g, "f").replace(/q/g, "k").replace(/ou/g, "u").replace(/w/g, "u").replace(/y/g, "i").replace(/([a-z])\1/g, "$1")
+    .replace(/ph/g, "f").replace(/q/g, "k").replace(/ou/g, "u").replace(/w/g, "u").replace(/y/g, "i").replace(/([a-z])\1+/g, "$1")
     .replace(/ (el|al|l|le|la|les) /g, " ").replace(/ (el|al|l|le|la|les) /g, " ")
     .replace(/([bcdfghjklmnpqrstvxz])[ea](?=[bcdfghjklmnpqrstvxz])/g, "$1").replace(/ +/g, " ").trim();
   LIEUX.forEach(l => { l._q = son(Object.values(l.n || {}).join(" ") + " " + (l.v || []).join(" ")); });
