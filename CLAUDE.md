@@ -86,3 +86,7 @@
 - 18/10/2026 : règle commune § 28 : .leaflet-container isolé (les listes qui s'ouvrent passent au-dessus des cartes) ; test.
 
 - **19/10/2026 — Visiteur simulé : contrôle des ESPACES (règle commune § 29)** : nouvelle copie commune installée, 0 anomalie, aucun défaut d'espace sur ce site.
+- **19/10/2026 — Robot « Tests » rouge du 18 au 19/10** : `VERSION` de tools/construire.py changée le 18/10 (recherche au son) sans
+  enregistrer le `sitemap.xml` refait (ses dates `lastmod` viennent de VERSION) -> l'étape « Pages à jour » voyait une différence à
+  chaque envoi. Réparé en enregistrant le sitemap refait. **Règle : après tout changement de VERSION, lancer `python tools/construire.py`
+  et enregistrer TOUS les fichiers changés ; après chaque envoi, regarder le résultat du robot Tests.**
