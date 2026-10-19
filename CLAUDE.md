@@ -84,3 +84,5 @@
   les fonds de carte et les images citées par les scripts.
 - 18/10/2026 : recherche « au son » (Jerba = Djerba, Houmt = Houmet, Qairouan = Kairouan, lettres doublées…), même calcul pour ce qu'on tape et pour la liste ; test de paires d'écritures.
 - 18/10/2026 : règle commune § 28 : .leaflet-container isolé (les listes qui s'ouvrent passent au-dessus des cartes) ; test.
+
+- **19/10/2026 — Visiteur simulé : contrôle des ESPACES (règle commune § 29)** : nouvelle copie commune installée, 0 anomalie, aucun défaut d'espace sur ce site.
