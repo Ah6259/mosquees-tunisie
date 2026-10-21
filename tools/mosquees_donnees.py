@@ -15,6 +15,7 @@ Règles de propreté (09/10/2026) :
 Panne ou réponse suspecte : l'ancien fichier est gardé (code 1 → alerte).
 Sortie : donnees/mosquees.json (lu par tools/construire.py, qui fabrique la carte et les pages).
 Usage : python tools/mosquees_donnees.py"""
+import os
 import json, math, re, sys, time, unicodedata, urllib.parse, urllib.request
 from datetime import date
 from pathlib import Path
@@ -40,12 +41,24 @@ def http(url, data=None, entetes=None, delai=200):
         return json.loads(r.read())
 
 
+# 21/10/2026 (même panne que les annuaires ce jour-là) : serveurs lents -> 10 essais de plusieurs minutes, le robot pouvait être
+# COUPÉ par GitHub avant la fin. Budget TOTAL de temps (OSM_BUDGET_S) : ensuite on s'arrête et l'ancien fichier est gardé.
+DEBUT_OSM = time.monotonic()
+BUDGET_OSM = float(os.environ.get("OSM_BUDGET_S") or 2400)
+
+
+def reste_osm():
+    return BUDGET_OSM - (time.monotonic() - DEBUT_OSM)
+
+
 def overpass(q, minimum, essais=10):
     dernier = None
     for i in range(essais):
+        if reste_osm() < 30:
+            raise RuntimeError(f"OpenStreetMap trop lent : budget de {int(BUDGET_OSM // 60)} min dépassé ({dernier})")
         url = SERVEURS[i % len(SERVEURS)]
         try:
-            d = http(url, urllib.parse.urlencode({"data": q}).encode())
+            d = http(url, urllib.parse.urlencode({"data": q}).encode(), delai=min(200, max(10, reste_osm())))
             rem = str(d.get("remark", ""))
             if "error" in rem.lower() or "timed out" in rem.lower():      # réponse vide + erreur cachée : serveur suivant
                 raise RuntimeError(f"{url} : {rem[:80]}")
@@ -54,7 +67,8 @@ def overpass(q, minimum, essais=10):
             return d
         except Exception as e:
             dernier = e
-            time.sleep(10 * (i + 1))
+            print(f"  essai {i + 1} : {str(e)[:120]}", flush=True)
+            time.sleep(max(0, min(10 * (i + 1), reste_osm() - 30)))
     raise RuntimeError(f"Overpass indisponible : {dernier}")
 
 
