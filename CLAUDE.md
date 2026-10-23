@@ -112,3 +112,6 @@
     et les 15 autres pages sans texte ; encadré « Les mosquées de Djerba » (UNESCO 2023) sur chaque fiche de l'île.
   - **Coran : jamais traduit par nous.** Verset 72:18 en haut de l'accueil (arabe + QuranEnc dans la langue, mêmes traducteurs
     que 9:18) + lien vers le Coran de The Message (`#quran`, dans la langue du visiteur) ; versets de « Construire » : QuranEnc.
+  - **Couleurs de la carte (décision d'Ahmed du 23/10/2026)** : hors de Tunisie, un point garde la COULEUR DE SON PAYS (légende
+    « Étoile jaune… la couleur d'un point indique son pays » sous la carte). Grandes mosquées : étoile jaune, plus grande pour
+    La Mecque, Médine et al-Aqsa. Ne pas passer tous les points en vert.
