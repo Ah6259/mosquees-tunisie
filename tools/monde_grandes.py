@@ -48,6 +48,32 @@ def annee(e):
     return min(ans) if ans else None
 
 
+def telecharger_vignettes(ms):
+    import urllib.request
+    dossier = os.path.join(RACINE, "assets", "monde")
+    os.makedirs(dossier, exist_ok=True)
+    garder = set()
+    for x in ms:
+        f = os.path.join(dossier, x["q"] + ".jpg")
+        garder.add(x["q"] + ".jpg")
+        if not os.path.exists(f) or x["photo"].get("source") != x["photo"]["url"]:
+            for essai in range(4):
+                try:
+                    req = urllib.request.Request(x["photo"]["url"], headers={"User-Agent": "MosqueesTunisie/1.0 (https://mosquees.clicvia.com/)"})
+                    data = urllib.request.urlopen(req, timeout=60).read()
+                    open(f, "wb").write(data)
+                    break
+                except Exception:
+                    time.sleep(5 * (essai + 1))
+            time.sleep(0.4)
+        if os.path.exists(f):
+            x["photo"]["source"] = x["photo"]["url"]
+            x["photo"]["fichier"] = "assets/monde/" + x["q"] + ".jpg"
+    for n in os.listdir(dossier):                                  # photos de mosquées sorties de la liste : retirées
+        if n not in garder:
+            os.remove(os.path.join(dossier, n))
+
+
 def main():
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -115,6 +141,9 @@ def main():
             x["photo"] = {"url": u, "page": ii.get("descriptionurl", ""), "licence": lic[:40],
                           "auteur": re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", (em.get("Artist") or {}).get("value", ""))).strip()[:80] or "Wikimedia Commons"}
         time.sleep(0.5)
+    # vignettes gardées sur le site (assets/monde/<QID>.jpg) : Wikimedia refuse les demandes trop nombreuses d'une même machine
+    # (robot des tests, 23/10/2026 : 3 photos « cassées » sur 128) ; une vignette déjà là n'est pas redemandée
+    telecharger_vignettes([x for x in sortie if x.get("photo")])
     dest = os.path.join(RACINE, "donnees", "monde_grandes.json")
     open(dest, "w", encoding="utf-8", newline="\n").write(json.dumps({"maj": time.strftime("%Y-%m-%d"), "mosquees": sortie}, ensure_ascii=False, indent=0) + "\n")
     print(sum(1 for x in sortie if x["resume"]), "avec un résumé Wikipédia ;", len(sortie), "mosquées,", sum(1 for x in sortie if x.get("an") is not None), "avec une année,", sum(1 for x in sortie if x.get("photo")), "avec photo ->", dest)

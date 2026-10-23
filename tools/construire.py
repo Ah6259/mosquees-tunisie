@@ -711,7 +711,7 @@ def page_monde():
     cartes = []
     for i, m in enumerate(ms):
         ph = m.get("photo")
-        img = f'<img src="{att(ph["url"])}" alt="" loading="lazy" referrerpolicy="no-referrer">' if ph else ""
+        img = (f'<img src="{r}{ph["fichier"]}" alt="" loading="lazy">' if ph.get("fichier") else f'<img src="{att(ph["url"])}" alt="" loading="lazy" referrerpolicy="no-referrer">') if ph else ""
         an = m.get("an")
         an_txt = (f'{-an} {X(nom, "av_jc", page)}' if an < 0 else str(an)) if an is not None else X(nom, "date_inconnue", page)
         liens = []
