@@ -22,7 +22,7 @@ import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
-VERSION = "20261023a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261023b"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
 NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]      # toutes sauf fr, ar, en (écrits dans les pages)

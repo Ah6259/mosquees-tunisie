@@ -74,3 +74,13 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", preparer); else preparer();
   window.MOSQUEES_TRI = { trier };    // pour les tests
 })();
+
+/* Photo de Wikimedia refusée un instant (trop de demandes à la fois : vu le 23/10/2026 sur la page des grandes mosquées du
+   monde, 128 vignettes) : redemandée une fois, un peu plus tard. */
+document.addEventListener("error", e => {
+  const im = e.target;
+  if (!im || im.tagName !== "IMG" || im.dataset.reessai || !/^https:\/\/(thumb|upload)\.wikimedia\.org\//.test(im.src)) return;
+  im.dataset.reessai = "1";
+  const src = im.src;
+  setTimeout(() => { im.src = src + (src.includes("?") ? "&" : "?") + "r=1"; }, 1500 + Math.random() * 1500);
+}, true);
