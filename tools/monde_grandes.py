@@ -84,6 +84,13 @@ def main():
         if q not in vus:
             vus.add(q); ordre.append((q, int(b["liens"]["value"])))
     ordre = ordre[:MAXI]
+    # toujours dans la liste : les mosquées qui ont des histoires sur notre site (ex. al-Qarawiyyin, Cordoue), même moins connues
+    from pages_nouvelles import HISTOIRES_MONDE, QID_GROUPES
+    for q in list(HISTOIRES_MONDE) + list(QID_GROUPES.values()):
+        if q not in {x for x, _ in ordre}:
+            e = entites([q], "sitelinks").get(q, {})
+            ordre.append((q, len(e.get("sitelinks", {})) or 1))
+    ordre.sort(key=lambda x: -x[1])
     ents = entites([q for q, _ in ordre], "labels|descriptions|sitelinks|claims")
     pays_q = sorted({v["id"] for e in ents.values() for v in valeurs(e, "P17")[:1] if isinstance(v, dict)})
     pays = {q: {l: x["value"] for l, x in e.get("labels", {}).items()} for q, e in entites(pays_q, "labels").items()}
@@ -93,7 +100,7 @@ def main():
         e = ents.get(q, {})
         noms = {l: x["value"] for l, x in e.get("labels", {}).items() if l in LANGUES}
         mosquee = any(isinstance(v, dict) and v.get("id") == "Q32815" for v in valeurs(e, "P31"))
-        if not (noms.get("en") or noms.get("fr")) or not (mosquee or q in LIEUX_SAINTS) or q in PAS_MOSQUEES:
+        if not (noms.get("en") or noms.get("fr")) or not (mosquee or q in LIEUX_SAINTS or q in HISTOIRES_MONDE) or q in PAS_MOSQUEES:
             continue                                   # pas une mosquée (mont du Temple, mausolée, monument…)
         p = next((v["id"] for v in valeurs(e, "P17") if isinstance(v, dict)), None)
         img = next((v for v in valeurs(e, "P18") if isinstance(v, str)), None)

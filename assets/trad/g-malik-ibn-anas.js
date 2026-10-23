@@ -13,13 +13,17 @@
 "Grande Mosquée de Sousse": "Susa Ulu Camii",
 "Histoires et récits": "Hikâyeler ve anlatılar",
 "Inauguration": "Açılış",
+"L'imam Malik ibn Anas (mort en 795) enseignait à Médine. Ses élèves venus d'Ifriqiya, puis l'imam Sahnoun de Kairouan, ont répandu son école de droit au Maghreb : c'est toujours l'école malikite que suivent la plupart des Tunisiens. Donner son nom à la grande mosquée de Carthage rappelle ce lien. La mosquée, bâtie en pierre beige de Kedhel, extraite au sud de Tunis, et en marbre jaune et rouge de Chemtou, peut accueillir environ 1 700 fidèles.": "İmam Mâlik bin Enes (ö. 795) Medine'de ders veriyordu. İfrîkıye'den gelen öğrencileri, sonra da Kayrevanlı imam Sahnûn onun fıkıh mezhebini Mağrib'e yaydı: Tunusluların çoğu hâlâ Mâlikî mezhebine uyar. Kartaca'nın ulu camisine onun adını vermek bu bağı hatırlatır. Tunus'un güneyinden çıkarılan bej renkli Kedhel taşı ile Chemtou'nun sarı ve kırmızı mermerinden yapılan cami yaklaşık 1.700 mümin alabilir.",
 "Mosquée Mâlik ibn Anas (Carthage)": "Malik bin Enes Camii (Kartaca)",
 "Mosquée Zitouna": "Zeytune Camii",
 "Pose de la première pierre": "Temel atılır",
+"Pourquoi l'imam Malik ?": "Neden imam Mâlik?",
 "Source :": "Kaynak:",
 "Toutes les histoires des mosquées": "Camilerin bütün hikâyeleri",
 "Une grande mosquée moderne bâtie sur une colline de Carthage, au cœur du site archéologique. Son minaret de 55 mètres se voit de loin ; elle figure sur le billet de dix dinars.": "Kartaca'da, arkeolojik alanın kalbinde bir tepeye kurulmuş büyük, modern bir cami. 55 metrelik minaresi uzaktan görülür; on dinarlık banknotta yer alır.",
-"Une mosquée face aux ruines de Carthage": "Kartaca harabelerine bakan bir cami"
+"Une mosquée face aux ruines de Carthage": "Kartaca harabelerine bakan bir cami",
+"Une mosquée qui a changé de nom": "Adı değişen bir cami",
+"À son ouverture, en 2003, la mosquée de Carthage s'appelait mosquée El Abidine, d'après le nom du président de l'époque, Zine El Abidine Ben Ali. Après la révolution, le 23 novembre 2012, le président Moncef Marzouki, venu y faire la prière du vendredi, annonça qu'elle s'appellerait désormais mosquée Malik ibn Anas, du nom du grand imam de Médine. En juillet 2025, le ministre des Affaires religieuses y a lancé une restauration.": "2003'te açıldığında Kartaca Camii'nin adı, dönemin cumhurbaşkanı Zeynelâbidin bin Ali'nin adına atfen El Abidine Camii'ydi. Devrimden sonra, 23 Kasım 2012'de, orada cuma namazı kılmaya gelen cumhurbaşkanı Münsif Merzûkî, caminin bundan böyle Medine'nin büyük imamının adıyla Mâlik bin Enes Camii olarak anılacağını duyurdu. Temmuz 2025'te din işleri bakanı orada bir restorasyon başlattı."
 });
   Object.assign(T.id = T.id || {}, {
 "2003 · contemporaine": "2003 · kontemporer",
@@ -33,13 +37,17 @@
 "Grande Mosquée de Sousse": "Masjid Raya Sousse",
 "Histoires et récits": "Kisah dan riwayat",
 "Inauguration": "Peresmian",
+"L'imam Malik ibn Anas (mort en 795) enseignait à Médine. Ses élèves venus d'Ifriqiya, puis l'imam Sahnoun de Kairouan, ont répandu son école de droit au Maghreb : c'est toujours l'école malikite que suivent la plupart des Tunisiens. Donner son nom à la grande mosquée de Carthage rappelle ce lien. La mosquée, bâtie en pierre beige de Kedhel, extraite au sud de Tunis, et en marbre jaune et rouge de Chemtou, peut accueillir environ 1 700 fidèles.": "Imam Malik bin Anas (wafat 795) mengajar di Madinah. Murid-muridnya yang datang dari Ifriqiyah, kemudian Imam Sahnun dari Kairouan, menyebarkan mazhab fikihnya di Maghrib: mazhab Maliki inilah yang hingga kini diikuti oleh sebagian besar orang Tunisia. Memberikan namanya kepada masjid agung Kartago mengingatkan pada hubungan ini. Masjid yang dibangun dari batu Kedhel berwarna krem, yang ditambang di selatan Tunis, dan dari marmer kuning dan merah dari Chemtou ini dapat menampung sekitar 1.700 jemaah.",
 "Mosquée Mâlik ibn Anas (Carthage)": "Masjid Malik bin Anas (Kartago)",
 "Mosquée Zitouna": "Masjid Al-Zaytuna",
 "Pose de la première pierre": "Peletakan batu pertama",
+"Pourquoi l'imam Malik ?": "Mengapa Imam Malik?",
 "Source :": "Sumber:",
 "Toutes les histoires des mosquées": "Semua kisah masjid",
 "Une grande mosquée moderne bâtie sur une colline de Carthage, au cœur du site archéologique. Son minaret de 55 mètres se voit de loin ; elle figure sur le billet de dix dinars.": "Masjid modern yang besar di sebuah bukit di Kartago, di jantung situs arkeologi. Menaranya setinggi 55 meter terlihat dari jauh; masjid ini tergambar pada uang kertas sepuluh dinar.",
-"Une mosquée face aux ruines de Carthage": "Masjid yang menghadap reruntuhan Kartago"
+"Une mosquée face aux ruines de Carthage": "Masjid yang menghadap reruntuhan Kartago",
+"Une mosquée qui a changé de nom": "Masjid yang berganti nama",
+"À son ouverture, en 2003, la mosquée de Carthage s'appelait mosquée El Abidine, d'après le nom du président de l'époque, Zine El Abidine Ben Ali. Après la révolution, le 23 novembre 2012, le président Moncef Marzouki, venu y faire la prière du vendredi, annonça qu'elle s'appellerait désormais mosquée Malik ibn Anas, du nom du grand imam de Médine. En juillet 2025, le ministre des Affaires religieuses y a lancé une restauration.": "Saat dibuka pada tahun 2003, masjid Kartago bernama Masjid El Abidine, sesuai nama presiden saat itu, Zine El Abidine Ben Ali. Setelah revolusi, pada 23 November 2012, Presiden Moncef Marzouki, yang datang untuk salat Jumat di sana, mengumumkan bahwa masjid itu selanjutnya akan bernama Masjid Malik bin Anas, sesuai nama imam besar Madinah. Pada Juli 2025, Menteri Urusan Agama memulai pemugaran di sana."
 });
   Object.assign(T.ur = T.ur || {}, {
 "2003 · contemporaine": "⁦2003⁩ · جدید",
@@ -53,13 +61,17 @@
 "Grande Mosquée de Sousse": "جامع الکبیر سوسہ",
 "Histoires et récits": "کہانیاں اور واقعات",
 "Inauguration": "افتتاح",
+"L'imam Malik ibn Anas (mort en 795) enseignait à Médine. Ses élèves venus d'Ifriqiya, puis l'imam Sahnoun de Kairouan, ont répandu son école de droit au Maghreb : c'est toujours l'école malikite que suivent la plupart des Tunisiens. Donner son nom à la grande mosquée de Carthage rappelle ce lien. La mosquée, bâtie en pierre beige de Kedhel, extraite au sud de Tunis, et en marbre jaune et rouge de Chemtou, peut accueillir environ 1 700 fidèles.": "امام مالک بن انس (وفات ⁦795⁩) مدینہ میں درس دیتے تھے۔ افریقیہ سے آنے والے ان کے شاگردوں نے، پھر قیروان کے امام سحنون نے، ان کا فقہی مسلک مغرب میں پھیلایا: زیادہ تر تیونسی آج بھی مالکی مسلک پر ہیں۔ کارتھیج کی جامع مسجد کو ان کا نام دینا اسی تعلق کی یاد دلاتا ہے۔ تیونس کے جنوب سے نکالے گئے بادامی رنگ کے قضال پتھر اور شمتو کے پیلے اور سرخ سنگِ مرمر سے بنی اس مسجد میں تقریباً ⁦1,700⁩ نمازیوں کی گنجائش ہے۔",
 "Mosquée Mâlik ibn Anas (Carthage)": "جامع مالک بن انس (قرطاجنہ)",
 "Mosquée Zitouna": "جامع زیتونہ",
 "Pose de la première pierre": "سنگِ بنیاد",
+"Pourquoi l'imam Malik ?": "امام مالک کیوں؟",
 "Source :": "ماخذ:",
 "Toutes les histoires des mosquées": "مساجد کی تمام کہانیاں",
 "Une grande mosquée moderne bâtie sur une colline de Carthage, au cœur du site archéologique. Son minaret de 55 mètres se voit de loin ; elle figure sur le billet de dix dinars.": "قرطاجنہ کی ایک پہاڑی پر، آثارِ قدیمہ کے مقام کے قلب میں بنی ایک بڑی جدید مسجد۔ اس کا ⁦55⁩ میٹر بلند مینار دور سے نظر آتا ہے؛ یہ دس دینار کے نوٹ پر بنی ہے۔",
-"Une mosquée face aux ruines de Carthage": "قرطاج کے کھنڈرات کے سامنے ایک مسجد"
+"Une mosquée face aux ruines de Carthage": "قرطاج کے کھنڈرات کے سامنے ایک مسجد",
+"Une mosquée qui a changé de nom": "ایک مسجد جس کا نام بدل گیا",
+"À son ouverture, en 2003, la mosquée de Carthage s'appelait mosquée El Abidine, d'après le nom du président de l'époque, Zine El Abidine Ben Ali. Après la révolution, le 23 novembre 2012, le président Moncef Marzouki, venu y faire la prière du vendredi, annonça qu'elle s'appellerait désormais mosquée Malik ibn Anas, du nom du grand imam de Médine. En juillet 2025, le ministre des Affaires religieuses y a lancé une restauration.": "⁦2003⁩ میں افتتاح کے وقت کارتھیج کی مسجد کا نام اس وقت کے صدر زین العابدین بن علی کے نام پر مسجد العابدین تھا۔ انقلاب کے بعد، ⁦23⁩ نومبر ⁦2012⁩ کو، صدر منصف مرزوقی نے، جو وہاں جمعے کی نماز پڑھنے آئے تھے، اعلان کیا کہ اب سے اس کا نام مدینہ کے عظیم امام کے نام پر مسجد مالک بن انس ہو گا۔ جولائی ⁦2025⁩ میں وزیرِ مذہبی امور نے وہاں بحالی کا کام شروع کروایا۔"
 });
   Object.assign(T.de = T.de || {}, {
 "2003 · contemporaine": "2003 · zeitgenössisch",
@@ -73,13 +85,17 @@
 "Grande Mosquée de Sousse": "Große Moschee von Sousse",
 "Histoires et récits": "Geschichten und Erzählungen",
 "Inauguration": "Einweihung",
+"L'imam Malik ibn Anas (mort en 795) enseignait à Médine. Ses élèves venus d'Ifriqiya, puis l'imam Sahnoun de Kairouan, ont répandu son école de droit au Maghreb : c'est toujours l'école malikite que suivent la plupart des Tunisiens. Donner son nom à la grande mosquée de Carthage rappelle ce lien. La mosquée, bâtie en pierre beige de Kedhel, extraite au sud de Tunis, et en marbre jaune et rouge de Chemtou, peut accueillir environ 1 700 fidèles.": "Imam Malik ibn Anas (gestorben 795) lehrte in Medina. Seine Schüler aus Ifriqiya und später Imam Sahnun aus Kairouan verbreiteten seine Rechtsschule im Maghreb: Es ist noch immer die malikitische Schule, der die meisten Tunesier folgen. Der großen Moschee von Karthago seinen Namen zu geben, erinnert an diese Verbindung. Die Moschee, gebaut aus beigem Kedhel-Stein, der südlich von Tunis gebrochen wird, und aus gelbem und rotem Marmor aus Chemtou, kann etwa 1 700 Gläubige aufnehmen.",
 "Mosquée Mâlik ibn Anas (Carthage)": "Malik-ibn-Anas-Moschee (Karthago)",
 "Mosquée Zitouna": "Ez-Zitouna-Moschee",
 "Pose de la première pierre": "Grundsteinlegung",
+"Pourquoi l'imam Malik ?": "Warum Imam Malik?",
 "Source :": "Quelle:",
 "Toutes les histoires des mosquées": "Alle Geschichten der Moscheen",
 "Une grande mosquée moderne bâtie sur une colline de Carthage, au cœur du site archéologique. Son minaret de 55 mètres se voit de loin ; elle figure sur le billet de dix dinars.": "Eine große moderne Moschee auf einem Hügel in Karthago, mitten im archäologischen Gelände. Ihr 55 Meter hohes Minarett ist weithin sichtbar; sie ist auf dem Zehn-Dinar-Schein abgebildet.",
-"Une mosquée face aux ruines de Carthage": "Eine Moschee gegenüber den Ruinen von Karthago"
+"Une mosquée face aux ruines de Carthage": "Eine Moschee gegenüber den Ruinen von Karthago",
+"Une mosquée qui a changé de nom": "Eine Moschee, die ihren Namen wechselte",
+"À son ouverture, en 2003, la mosquée de Carthage s'appelait mosquée El Abidine, d'après le nom du président de l'époque, Zine El Abidine Ben Ali. Après la révolution, le 23 novembre 2012, le président Moncef Marzouki, venu y faire la prière du vendredi, annonça qu'elle s'appellerait désormais mosquée Malik ibn Anas, du nom du grand imam de Médine. En juillet 2025, le ministre des Affaires religieuses y a lancé une restauration.": "Bei ihrer Eröffnung 2003 hieß die Moschee von Karthago El-Abidine-Moschee, nach dem Namen des damaligen Präsidenten Zine El Abidine Ben Ali. Nach der Revolution, am 23. November 2012, verkündete Präsident Moncef Marzouki, der dort zum Freitagsgebet gekommen war, dass sie von nun an Malik-ibn-Anas-Moschee heißen werde, nach dem großen Imam von Medina. Im Juli 2025 hat der Minister für religiöse Angelegenheiten dort eine Restaurierung eingeleitet."
 });
   Object.assign(T.es = T.es || {}, {
 "2003 · contemporaine": "2003 · contemporánea",
@@ -93,12 +109,16 @@
 "Grande Mosquée de Sousse": "Gran Mezquita de Susa",
 "Histoires et récits": "Historias y relatos",
 "Inauguration": "Inauguración",
+"L'imam Malik ibn Anas (mort en 795) enseignait à Médine. Ses élèves venus d'Ifriqiya, puis l'imam Sahnoun de Kairouan, ont répandu son école de droit au Maghreb : c'est toujours l'école malikite que suivent la plupart des Tunisiens. Donner son nom à la grande mosquée de Carthage rappelle ce lien. La mosquée, bâtie en pierre beige de Kedhel, extraite au sud de Tunis, et en marbre jaune et rouge de Chemtou, peut accueillir environ 1 700 fidèles.": "El imán Malik ibn Anas (muerto en 795) enseñaba en Medina. Sus alumnos venidos de Ifriqiya, y después el imán Sahnun de Kairuán, difundieron su escuela de derecho en el Magreb: sigue siendo la escuela malikí la que sigue la mayoría de los tunecinos. Dar su nombre a la gran mezquita de Cartago recuerda ese vínculo. La mezquita, construida en piedra beige de Kedhel, extraída al sur de Túnez, y en mármol amarillo y rojo de Chemtou, puede acoger a unos 1700 fieles.",
 "Mosquée Mâlik ibn Anas (Carthage)": "Mezquita Málik ibn Anas (Cartago)",
 "Mosquée Zitouna": "Mezquita Zitouna",
 "Pose de la première pierre": "Colocación de la primera piedra",
+"Pourquoi l'imam Malik ?": "¿Por qué el imán Malik?",
 "Source :": "Fuente:",
 "Toutes les histoires des mosquées": "Todas las historias de las mezquitas",
 "Une grande mosquée moderne bâtie sur une colline de Carthage, au cœur du site archéologique. Son minaret de 55 mètres se voit de loin ; elle figure sur le billet de dix dinars.": "Una gran mezquita moderna construida sobre una colina de Cartago, en el corazón del sitio arqueológico. Su alminar de 55 metros se ve desde lejos; aparece en el billete de diez dinares.",
-"Une mosquée face aux ruines de Carthage": "Una mezquita frente a las ruinas de Cartago"
+"Une mosquée face aux ruines de Carthage": "Una mezquita frente a las ruinas de Cartago",
+"Une mosquée qui a changé de nom": "Una mezquita que cambió de nombre",
+"À son ouverture, en 2003, la mosquée de Carthage s'appelait mosquée El Abidine, d'après le nom du président de l'époque, Zine El Abidine Ben Ali. Après la révolution, le 23 novembre 2012, le président Moncef Marzouki, venu y faire la prière du vendredi, annonça qu'elle s'appellerait désormais mosquée Malik ibn Anas, du nom du grand imam de Médine. En juillet 2025, le ministre des Affaires religieuses y a lancé une restauration.": "En su apertura, en 2003, la mezquita de Cartago se llamaba mezquita El Abidine, por el nombre del presidente de la época, Zine El Abidine Ben Ali. Tras la revolución, el 23 de noviembre de 2012, el presidente Moncef Marzouki, que había acudido a hacer la oración del viernes, anunció que en adelante se llamaría mezquita Malik ibn Anas, por el nombre del gran imán de Medina. En julio de 2025, el ministro de Asuntos Religiosos inició allí una restauración."
 });
 })(window.TRADUCTIONS = window.TRADUCTIONS || {});

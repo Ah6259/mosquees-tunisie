@@ -198,6 +198,7 @@ window.TRADUCTIONS.nl = {
 "tous droits réservés": "alle rechten voorbehouden",
 "tous droits réservés.": "alle rechten voorbehouden.",
 "voir sur la carte": "op de kaart bekijken",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} gebedsplaatsen in dit gebied (opgeslagen overzicht; de live-opvraging reageert nu niet).",
 "{n} lieux de prière dans cette zone.": "{n} gebedsplaatsen in dit gebied.",
 "{n} lieux trouvés": "{n} plaatsen gevonden",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“En de moskeeën zijn voor Allah, roep dus niemand tezamen met Allah aan! (daarom mag een graf nooit zijn in een moskee).”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.nl = {
 "Écouter la récitation de cheikh Ali El Barrak": "Naar de recitatie van sjeik Ali El Barrak luisteren",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Vul uw e-mailadres in (verplicht) zodat we u kunnen antwoorden.",
 "Écrivez votre message avant d'envoyer.": "Schrijf uw bericht voordat u verstuurt.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Gele ster: grote moskee (groter voor Mekka, Medina en al-Aqsa). Buiten Tunesië geeft de kleur van een punt het land aan.",
 "à confirmer": "te bevestigen",
 "— choisir —": "— kiezen —",
 "✔ Position confirmée": "✔ Positie bevestigd"

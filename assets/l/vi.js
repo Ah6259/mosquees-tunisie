@@ -198,6 +198,7 @@ window.TRADUCTIONS.vi = {
 "tous droits réservés": "đã đăng ký bản quyền",
 "tous droits réservés.": "đã đăng ký bản quyền.",
 "voir sur la carte": "xem trên bản đồ",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} nơi cầu nguyện trong khu vực này (dữ liệu đã lưu; việc đọc trực tiếp hiện không phản hồi).",
 "{n} lieux de prière dans cette zone.": "{n} nơi cầu nguyện trong vùng này.",
 "{n} lieux trouvés": "Tìm thấy {n} địa điểm",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Quả thật, các Masjid là của Allah, vì vậy, các ngươi đừng cầu nguyện cùng với Allah bất kỳ ai.”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.vi = {
 "Écouter la récitation de cheikh Ali El Barrak": "Nghe giọng đọc của sheikh Ali El Barrak",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Hãy nhập địa chỉ email (bắt buộc) để chúng tôi có thể trả lời bạn.",
 "Écrivez votre message avant d'envoyer.": "Hãy viết tin nhắn trước khi gửi.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Ngôi sao vàng: thánh đường lớn (to hơn cho Mecca, Medina và al-Aqsa). Ngoài Tunisia, màu của một điểm cho biết quốc gia của nó.",
 "à confirmer": "chờ xác nhận",
 "— choisir —": "— chọn —",
 "✔ Position confirmée": "✔ Đã xác nhận vị trí"

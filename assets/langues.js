@@ -216,7 +216,9 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "Construire une mosquée": "Cami inşa etmek",
  "Lire le Coran sur notre site The Message": "Kur'an'ı The Message sitemizde okuyun",
  "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Mescitler Allah’ındır. O halde Allah ile birlikte başkasına dua/ibadet etmeyin.”",
- "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Cin Suresi (72), 18. ayet — meal: Rowwad Tercüme Merkezi,"
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Cin Suresi (72), 18. ayet — meal: Rowwad Tercüme Merkezi,",
+ "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "Bu bölgede {n} ibadet yeri (kayıtlı tarama; canlı okuma şu anda yanıt vermiyor).",
+ "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Sarı yıldız: büyük cami (Mekke, Medine ve Mescid-i Aksa için daha büyük). Tunus dışında bir noktanın rengi ülkesini gösterir."
 });
 window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Mosquées de Tunisie et du monde": "Masjid Tunisia dan dunia",
@@ -428,7 +430,9 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Construire une mosquée": "Membangun masjid",
  "Lire le Coran sur notre site The Message": "Baca Al-Qur'an di situs kami The Message",
  "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Dan sesungguhnya masjid-masjid itu adalah untuk Allah. Maka janganlah kamu menyembah apa pun di dalamnya selain Allah.”",
- "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Surah Al-Jinn (72), ayat 18 — terjemahan makna: Kementerian Agama RI,"
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Surah Al-Jinn (72), ayat 18 — terjemahan makna: Kementerian Agama RI,",
+ "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} tempat salat di area ini (data tersimpan; pembacaan langsung sedang tidak merespons).",
+ "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Bintang kuning: masjid besar (lebih besar untuk Makkah, Madinah, dan Al-Aqsa). Di luar Tunisia, warna titik menunjukkan negaranya."
 });
 window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Mosquées de Tunisie et du monde": "تیونس اور دنیا کی مساجد",
@@ -640,7 +644,9 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Construire une mosquée": "مسجد بنانا",
  "Lire le Coran sur notre site The Message": "ہماری ویب سائٹ The Message پر قرآن پڑھیں",
  "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "«اور یہ کہ مسجدیں صرف اللہ ہی کے لئے خاص ہیں پس اللہ تعالیٰ کے ساتھ کسی اور کو نہ پکارو.»",
- "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "سورۃ الجن (⁦72⁩)، آیت ⁦18⁩ — ترجمہ: مولانا محمد جوناگڑھی،"
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "سورۃ الجن (⁦72⁩)، آیت ⁦18⁩ — ترجمہ: مولانا محمد جوناگڑھی،",
+ "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "اس علاقے میں {n} عبادت گاہیں (محفوظ شدہ سروے؛ براہِ راست پڑھائی اس وقت جواب نہیں دے رہی)۔",
+ "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "پیلا ستارہ: بڑی مسجد (مکہ، مدینہ اور مسجد اقصیٰ کے لیے بڑا)۔ تیونس سے باہر کسی نقطے کا رنگ اس کا ملک بتاتا ہے۔"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Mosquées de Tunisie et du monde": "Moscheen Tunesien & Welt",
@@ -852,7 +858,9 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Construire une mosquée": "Eine Moschee bauen",
  "Lire le Coran sur notre site The Message": "Den Koran auf unserer Website The Message lesen",
  "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "„Und die Gebetsstätten gehören doch Allah; so ruft neben Allah niemanden an.“",
- "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Sure Al-Dschinn (72), Vers 18 — Übersetzung der Bedeutung: Frank Bubenheim,"
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Sure Al-Dschinn (72), Vers 18 — Übersetzung der Bedeutung: Frank Bubenheim,",
+ "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} Gebetsorte in diesem Gebiet (gespeicherte Erfassung; die Live-Abfrage antwortet gerade nicht).",
+ "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Gelber Stern: große Moschee (größer für Mekka, Medina und al-Aqsa). Außerhalb Tunesiens zeigt die Farbe eines Punktes sein Land."
 });
 window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Mosquées de Tunisie et du monde": "Mezquitas de Túnez y del mundo",
@@ -1064,5 +1072,7 @@ window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Construire une mosquée": "Construir una mezquita",
  "Lire le Coran sur notre site The Message": "Leer el Corán en nuestro sitio The Message",
  "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Los lugares de culto son para adorar solo a Dios, por lo que no deben invocar a nada ni a nadie junto con Dios.”",
- "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Sura Al-Yinn (72), versículo 18 — traducción del sentido: Isa García,"
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Sura Al-Yinn (72), versículo 18 — traducción del sentido: Isa García,",
+ "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} lugares de oración en esta zona (registro guardado; la lectura en directo no responde por ahora).",
+ "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Estrella amarilla: gran mezquita (más grande para La Meca, Medina y al-Aqsa). Fuera de Túnez, el color de un punto indica su país."
 });

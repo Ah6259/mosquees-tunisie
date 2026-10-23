@@ -394,7 +394,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   {
     const sans = PAGES_LANGUE.filter(sansIndex), fr0 = fiches.find(p => sansIndex("de/" + p));
     check(`autres mosquées : une version sans nom ni résumé dans la langue n'est pas proposée à Google (${sans.length} versions « noindex », hors plan du site)`,
-      sans.length > 100 && sans.every(p => fiches.includes(p.slice(p.indexOf("/") + 1))) && !!fr0 && !lire(fr0).includes('hreflang="de"'));
+      sans.length > 100 && sans.every(p => fiches.includes(p.slice(p.indexOf("/") + 1)) || p.slice(p.indexOf("/") + 1).startsWith("mosquee-monde/")) && !!fr0 && !lire(fr0).includes('hreflang="de"'));
   }
 }
 {
@@ -562,13 +562,30 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     { item: { value: "http://www.wikidata.org/entity/Q1" }, label: { value: "Mosquée B" }, liens: { value: "50" }, date: { value: "1609-01-01T00:00:00Z" }, coord: { value: "Point(28.97 41.0)" } },
     { item: { value: "http://www.wikidata.org/entity/Q1255269" }, label: { value: "Mosquée A" }, liens: { value: "40" }, date: { value: "0670-01-01T00:00:00Z" } }] } };
   w.__wikidata = async () => reponse;
-  R.chercher("Istanbul", true); await new Promise(r => setTimeout(r, 30));
+  R.chercher("Zqxtest", true); await new Promise(r => setTimeout(r, 30));     // mot absent de notre liste du monde : seulement la réponse simulée
   const res = () => [...d.querySelectorAll("#mq-monde-liste-res .mq-monde-res b.mo-nom")].map(b => b.textContent);
   const sel = d.querySelector("#mq-monde-res select[data-tri]");
   const avant = res(); sel.value = "ancien"; sel.dispatchEvent(new w.Event("change")); const apres = res();
   check("recherche du monde : résultats (carte, « Voir sur la carte » ?ll=, « Notre page » pour une mosquée de Tunisie) triables par date",
     avant.join() === "Mosquée B,Mosquée A" && apres.join() === "Mosquée A,Mosquée B" && !!d.querySelector('#mq-monde-res a[href*="?ll=41.00000,28.97000"]')
     && !!d.querySelector('#mq-monde-res a[href="../mosquee/kairouan/"]') && js.length === 0);
+  const pal = R.locales("Palestine").map(r => r.item), mec = R.locales("Mecque").map(r => r.item);
+  check("recherche du monde sans Wikidata : « Palestine » trouve al-Aqsa (pays), « Mecque » la Mosquée sacrée ; chacune a sa page sur notre site",
+    pal.includes("http://www.wikidata.org/entity/Q12192963") && mec.includes("http://www.wikidata.org/entity/Q428858")
+    && R.locales("Palestine").every(r => r.page && existsSync(join(root, r.page, "index.html"))));
+  // pages des grandes mosquées du monde, avec leurs histoires repliées (Médine, La Mecque, al-Aqsa) ; étoiles sur la carte
+  const pageDe = q => (w.MOSQUEES_MONDE_GRANDES.find(g => g.i === "wd-" + q) || {}).p;
+  const saintes = ["Q486080", "Q428858", "Q12192963"].map(pageDe);
+  check("La Mecque, Médine, al-Aqsa : chacune a sa page (photo, présentation, au moins 8 histoires repliées à ouvrir d'un clic)",
+    saintes.every(p => p && existsSync(join(root, p, "index.html")) && (lire(p + "index.html").match(/<details class="hi-histoire"/g) || []).length >= 8
+      && /id="presentation"/.test(lire(p + "index.html"))));
+  {
+    const { w: wh } = await page("index.html");
+    const MG = wh.MOSQUEES_MONDE_LIEUX, EG = wh.MOSQUEES_ESTGRANDE;
+    check("carte : grandes mosquées du monde toujours présentes (sans serveur extérieur) et marquées d'une étoile ; les 15 grandes de Tunisie aussi ; 3 mosquées saintes",
+      MG.filter(l => l.g).length >= 50 && MG.filter(l => l.g).every(EG) && wh.MOSQUEES_LIEUX.filter(l => EG(l)).length === GRANDES.length
+      && wh.MOSQUEES_SAINTES.length === 3 && MG.some(l => l.i === "wd-Q428858") && !!wh.MOSQUEES_CHERCHER("Masjid al-Nabawi").length);
+  }
   // tri des grandes mosquées de Tunisie (accueil)
   const { w: wa, d: da } = await page("index.html", { stockage: { langue: "fr", "recitation-mosquees": "non" } });
   const s = da.querySelector('select[data-tri="mq-grandes-acc"]');

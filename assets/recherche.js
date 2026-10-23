@@ -57,10 +57,11 @@
   const annee = d => { const m = /^(-?)(\d+)-/.exec(d || ""); return m ? (m[1] ? -1 : 1) * +m[2] : null; };
   function carteRes(r, i) {
     const qid = r.item.split("/").pop();
-    const img = r.img ? r.img.replace(/^http:/, "https:") + "?width=330" : "";
+    const img = r.local || (r.img ? r.img.replace(/^http:/, "https:") + "?width=330" : "");
     const pt = /Point\(([-\d.]+) ([-\d.]+)\)/.exec(r.coord || "");
     const liens = [];
-    if (pages[qid]) liens.push(`<a class="btn-principal" href="${rp}${pages[qid]}">${esc(txt("notre_page"))}</a>`);
+    const notre = pages[qid] || r.page || ((window.MOSQUEES_MONDE_GRANDES || []).find(g => g.i === "wd-" + qid) || {}).p;
+    if (notre) liens.push(`<a class="btn-principal" href="${rp}${notre}">${esc(txt("notre_page"))}</a>`);
     if (pt) liens.push(`<a class="chipbtn" href="${rp}?ll=${(+pt[2]).toFixed(5)},${(+pt[1]).toFixed(5)}#carte">${esc(txt("voir_carte"))}</a>`);
     if (r.art) liens.push(`<a class="chipbtn" href="${esc(r.art)}" target="_blank" rel="noopener">${esc(txt("wikipedia"))}</a>`);
     const an = annee(r.date);
@@ -68,29 +69,47 @@
       + `<div>${an !== null ? `<b class="mo-an">${an < 0 ? -an + " " + esc(txt("av_jc")) : an}</b>` : ""}<b class="mo-nom">${esc(r.label)}</b>${r.desc ? `<small>${esc(r.desc)}</small>` : ""}<p class="mq-monde-liens">${liens.join(" ")}</p></div></article>`;
   }
 
+  // grandes mosquées du monde de notre site (donnees/monde_carte.js) : nom ou PAYS dans n'importe quelle langue, sans attendre
+  // Wikidata (23/10/2026 : « Palestine » doit trouver al-Aqsa, même quand Wikidata est saturé)
+  function locales(q) {
+    const m = sans(q).trim();
+    if (m.length < 3) return [];
+    return (window.MOSQUEES_MONDE_GRANDES || []).filter(g => sans(Object.values(g.n || {}).concat(Object.values(g.pn || {}), Object.values(g.d || {})).join(" | ")).includes(m))
+      .sort((a, b) => (b.k || 0) - (a.k || 0))
+      .map(g => ({ item: "http://www.wikidata.org/entity/" + g.i.slice(3), label: (g.n || {})[lg()] || (g.n || {}).en || (g.n || {}).fr,
+        desc: (g.pn || {})[lg()] || (g.pn || {}).en || "", date: g.an === null || g.an === undefined ? "" : (g.an < 0 ? "-" : "") + String(Math.abs(g.an)).padStart(4, "0") + "-01-01",
+        coord: `Point(${g.o} ${g.a})`, local: g.f ? rp + g.f : "", page: g.p }));
+  }
+  function afficher(bloc, res, enCours) {
+    const options = ["connue", "ancien", "recent", "az"].map(o => `<option value="${o}">${esc(txt("t_" + o))}</option>`).join("");
+    bloc.innerHTML = res.length ? `<p class="tri"><label>${esc(txt("trier"))} <select data-tri="mq-monde-liste-res">${options}</select></label></p>`
+      + `<div class="mq-monde-grille" id="mq-monde-liste-res">${res.map(carteRes).join("")}</div>`
+      + (enCours ? `<p class="aide mq-attente">${esc(txt("attente"))}</p>` : "") + `<p class="aide">${esc(txt("source"))}</p>`
+      : `<p class="aide">${esc(txt("aucune"))}</p>`;
+    const sel = bloc.querySelector("select[data-tri]");
+    if (sel && window.MOSQUEES_TRI) sel.addEventListener("change", () => window.MOSQUEES_TRI.trier(sel));
+  }
   async function monde(q) {
     const mot = nettoyer(q), n = ++compteur, bloc = document.getElementById("mq-monde-res");
     if (mot.length < 3) { bloc.innerHTML = `<p class="aide">${esc(txt("court"))}</p>`; return; }
-    bloc.innerHTML = `<p class="aide mq-attente">${esc(txt("attente"))}</p>`;
+    const loc = locales(q);
+    if (loc.length) afficher(bloc, loc, true);
+    else bloc.innerHTML = `<p class="aide mq-attente">${esc(txt("attente"))}</p>`;
     try {
       const url = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(requete(mot, lg()));
       const rep = window.__wikidata ? await window.__wikidata(url) : await (await fetch(url, { headers: { Accept: "application/sparql-results+json" } })).json();
       if (n !== compteur) return;                                    // une recherche plus récente a été lancée
-      const vus = new Set(), res = [];
+      const vus = new Set(loc.map(r => r.item)), res = loc.slice();
       for (const b of rep.results.bindings) {
         const r = Object.fromEntries(Object.entries(b).map(([k, v]) => [k, v.value]));
         if (vus.has(r.item) || /^Q\d+$/.test(r.label || "")) { const v = res.find(x => x.item === r.item); if (v && r.date && (!v.date || r.date < v.date)) v.date = r.date; continue; }   // une seule fois chaque mosquée (la plus ancienne date) ; pas de fiche sans nom
         vus.add(r.item); res.push(r);
-        if (res.length >= 12) break;
+        if (res.length >= Math.max(12, loc.length + 6)) break;
       }
-      const options = ["connue", "ancien", "recent", "az"].map(o => `<option value="${o}">${esc(txt("t_" + o))}</option>`).join("");
-      bloc.innerHTML = res.length ? `<p class="tri"><label>${esc(txt("trier"))} <select data-tri="mq-monde-liste-res">${options}</select></label></p>`
-        + `<div class="mq-monde-grille" id="mq-monde-liste-res">${res.map(carteRes).join("")}</div><p class="aide">${esc(txt("source"))}</p>`
-        : `<p class="aide">${esc(txt("aucune"))}</p>`;
-      const sel = bloc.querySelector("select[data-tri]");
-      if (sel && window.MOSQUEES_TRI) sel.addEventListener("change", () => window.MOSQUEES_TRI.trier(sel));
+      afficher(bloc, res, false);
     } catch (e) {
-      if (n === compteur) bloc.innerHTML = `<p class="aide mq-erreur">${esc(txt("erreur"))}</p>`;
+      if (n === compteur && !loc.length) bloc.innerHTML = `<p class="aide mq-erreur">${esc(txt("erreur"))}</p>`;
+      else if (n === compteur) bloc.querySelector(".mq-attente") && bloc.querySelector(".mq-attente").remove();
     }
   }
 
@@ -116,5 +135,5 @@
   });
   const q0 = new URLSearchParams(location.search).get("q");
   if (q0) { champ.value = q0; chercher(q0, true); }
-  window.MOSQUEES_RECHERCHE = { filtrer, requete, nettoyer, chercher };   // pour les tests
+  window.MOSQUEES_RECHERCHE = { filtrer, requete, nettoyer, chercher, locales };   // pour les tests
 })();

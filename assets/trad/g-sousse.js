@@ -5,7 +5,9 @@
 "850-851 · Aghlabides": "850-851 · Ağlebîler",
 "Agrandissement sous Ibrahim II (875-902)": "II. İbrahim döneminde genişletme (875-902)",
 "Construction de la mosquée (850-851)": "Caminin inşası (850-851)",
+"Devant le mihrab d'origine, une coupole met en valeur l'endroit où se tient l'imam, comme à la Grande Mosquée de Kairouan. À cette époque, ces coupoles étaient rares : on n'en connaît que quelques-unes plus anciennes, à la mosquée al-Aqsa de Jérusalem et à la mosquée des Omeyyades de Damas. Au XIe siècle, les Zirides ajoutèrent la petite tour à coupole d'où le muezzin lançait l'appel.": "Asıl mihrabın önünde bir kubbe, Kayrevan Ulu Camii'nde olduğu gibi imamın durduğu yeri öne çıkarır. O dönemde bu tür kubbeler nadirdi: daha eskilerinden yalnızca birkaçı bilinir, Kudüs'teki Mescid-i Aksâ'da ve Şam'daki Emevî Camii'nde. 11. yüzyılda Zîrîler, müezzinin ezan okuduğu küçük kubbeli kuleyi eklediler.",
 "Elle est élevée en 850-851 par l'émir aghlabide Abou al-Abbas Mohammed, une trentaine d'années après le ribat de Sousse ; une inscription en coufique, sur les galeries de la cour, rappelle sa construction. Elle est agrandie sous l'émir Ibrahim II (875-902), quand Sousse devient la deuxième ville de l'Ifriqiya.": "850-851'de Ağlebî emiri Ebü'l-Abbas Muhammed tarafından, Susa ribatından yaklaşık otuz yıl sonra inşa edildi; avlu revaklarındaki Kûfî bir yazıt yapımını anlatır. Susa'nın İfrîkıye'nin ikinci şehri olduğu emir II. İbrahim (875-902) döneminde genişletildi.",
+"En 851, l'émir aghlabide Abou al-Abbas Muhammad commanda la Grande Mosquée de Sousse. Il en confia la construction à Mudam, un ancien esclave qu'il avait affranchi et qui était devenu son homme de confiance. Sousse grandissait vite, et la petite mosquée du ribat voisin ne suffisait plus aux habitants. Plus tard, la salle de prière fut agrandie vers le sud.": "851'de Ağlebî emiri Ebü'l-Abbas Muhammed, Sûse Ulu Camii'nin yapılmasını emretti. İnşaatı, azat ettiği ve güvendiği adamı hâline gelen eski bir köle olan Müdâm'a emanet etti. Sûse hızla büyüyordu ve yandaki ribatın küçük mescidi artık halka yetmiyordu. Daha sonra namaz salonu güneye doğru genişletildi.",
 "Fait historique": "Tarihî olay",
 "Grande Mosquée de Kairouan (mosquée Okba)": "Kayrevan Ulu Camii (Ukbe Camii)",
 "Grande Mosquée de Mahdia": "Mehdiye Ulu Camii",
@@ -19,6 +21,8 @@
 "Source :": "Kaynak:",
 "Sousse": "Susa",
 "Toutes les histoires des mosquées": "Camilerin bütün hikâyeleri",
+"Un affranchi dirige le chantier": "İnşaatı azatlı bir köle yönetiyor",
+"Une coupole devant le mihrab, comme à Damas": "Şam'daki gibi mihrabın önünde bir kubbe",
 "Une mosquée-forteresse face à la mer": "Denize karşı bir kale-cami",
 "À l'entrée de la médina, une mosquée aux allures de forteresse, bâtie en 850-851 près du ribat qui protégeait la côte. Sobre et puissante, elle fait partie de la médina de Sousse, patrimoine mondial de l'UNESCO.": "Medinenin girişinde, kıyıyı koruyan ribatın yakınında 850-851'de inşa edilmiş, kale görünümlü bir cami. Sade ve güçlü yapısıyla UNESCO Dünya Mirası olan Susa Medinesi'nin parçasıdır."
 });
@@ -26,7 +30,9 @@
 "850-851 · Aghlabides": "850-851 · Aghlabiyah",
 "Agrandissement sous Ibrahim II (875-902)": "Diperluas pada masa Ibrahim II (875-902)",
 "Construction de la mosquée (850-851)": "Pembangunan masjid (850-851)",
+"Devant le mihrab d'origine, une coupole met en valeur l'endroit où se tient l'imam, comme à la Grande Mosquée de Kairouan. À cette époque, ces coupoles étaient rares : on n'en connaît que quelques-unes plus anciennes, à la mosquée al-Aqsa de Jérusalem et à la mosquée des Omeyyades de Damas. Au XIe siècle, les Zirides ajoutèrent la petite tour à coupole d'où le muezzin lançait l'appel.": "Di depan mihrab aslinya, sebuah kubah menonjolkan tempat imam berdiri, seperti di Masjid Agung Kairouan. Pada masa itu, kubah semacam ini jarang ada: hanya sedikit yang lebih tua yang diketahui, di Masjid al-Aqsa di Yerusalem dan di Masjid Umayyah di Damaskus. Pada abad ke-11, Dinasti Zirid menambahkan menara kecil berkubah tempat muazin mengumandangkan azan.",
 "Elle est élevée en 850-851 par l'émir aghlabide Abou al-Abbas Mohammed, une trentaine d'années après le ribat de Sousse ; une inscription en coufique, sur les galeries de la cour, rappelle sa construction. Elle est agrandie sous l'émir Ibrahim II (875-902), quand Sousse devient la deuxième ville de l'Ifriqiya.": "Masjid ini dibangun pada tahun 850-851 oleh emir Aghlabiyah Abu al-Abbas Muhammad, sekitar tiga puluh tahun setelah ribat Sousse; sebuah prasasti Kufi di serambi halaman mencatat pembangunannya. Masjid diperluas pada masa emir Ibrahim II (875-902), ketika Sousse menjadi kota kedua di Ifriqiya.",
+"En 851, l'émir aghlabide Abou al-Abbas Muhammad commanda la Grande Mosquée de Sousse. Il en confia la construction à Mudam, un ancien esclave qu'il avait affranchi et qui était devenu son homme de confiance. Sousse grandissait vite, et la petite mosquée du ribat voisin ne suffisait plus aux habitants. Plus tard, la salle de prière fut agrandie vers le sud.": "Pada tahun 851, emir Aghlabiyah Abu al-Abbas Muhammad memerintahkan pembangunan Masjid Agung Sousse. Ia mempercayakan pembangunannya kepada Mudam, seorang bekas budak yang telah ia merdekakan dan menjadi orang kepercayaannya. Sousse tumbuh dengan cepat, dan masjid kecil di ribat di dekatnya tidak lagi cukup bagi penduduk. Kemudian, ruang salat diperluas ke arah selatan.",
 "Fait historique": "Fakta sejarah",
 "Grande Mosquée de Kairouan (mosquée Okba)": "Masjid Agung Kairouan (Masjid Uqbah)",
 "Grande Mosquée de Mahdia": "Masjid Agung Mahdia",
@@ -40,6 +46,8 @@
 "Source :": "Sumber:",
 "Sousse": "Sousse",
 "Toutes les histoires des mosquées": "Semua kisah masjid",
+"Un affranchi dirige le chantier": "Seorang bekas budak memimpin pembangunan",
+"Une coupole devant le mihrab, comme à Damas": "Kubah di depan mihrab, seperti di Damaskus",
 "Une mosquée-forteresse face à la mer": "Masjid-benteng menghadap laut",
 "À l'entrée de la médina, une mosquée aux allures de forteresse, bâtie en 850-851 près du ribat qui protégeait la côte. Sobre et puissante, elle fait partie de la médina de Sousse, patrimoine mondial de l'UNESCO.": "Di pintu masuk medina berdiri masjid yang mirip benteng, dibangun pada tahun 850-851 dekat ribat yang menjaga pantai. Sederhana dan kokoh, masjid ini bagian dari Medina Sousse, Warisan Dunia UNESCO."
 });
@@ -47,7 +55,9 @@
 "850-851 · Aghlabides": "⁦850-851⁩ · اغالبہ",
 "Agrandissement sous Ibrahim II (875-902)": "ابراہیم دوم کے دور میں توسیع (⁦875-902⁩)",
 "Construction de la mosquée (850-851)": "مسجد کی تعمیر (⁦850-851⁩)",
+"Devant le mihrab d'origine, une coupole met en valeur l'endroit où se tient l'imam, comme à la Grande Mosquée de Kairouan. À cette époque, ces coupoles étaient rares : on n'en connaît que quelques-unes plus anciennes, à la mosquée al-Aqsa de Jérusalem et à la mosquée des Omeyyades de Damas. Au XIe siècle, les Zirides ajoutèrent la petite tour à coupole d'où le muezzin lançait l'appel.": "اصل محراب کے سامنے ایک گنبد اس جگہ کو نمایاں کرتا ہے جہاں امام کھڑے ہوتے ہیں، جیسا کہ قیروان کی جامع مسجد میں ہے۔ اس زمانے میں ایسے گنبد کم یاب تھے: ان سے پرانے صرف چند ہی معلوم ہیں، یروشلم کی مسجدِ اقصیٰ اور دمشق کی اموی مسجد میں۔ گیارہویں صدی میں زیریوں نے گنبد والا وہ چھوٹا برج شامل کیا جہاں سے مؤذن اذان دیتا تھا۔",
 "Elle est élevée en 850-851 par l'émir aghlabide Abou al-Abbas Mohammed, une trentaine d'années après le ribat de Sousse ; une inscription en coufique, sur les galeries de la cour, rappelle sa construction. Elle est agrandie sous l'émir Ibrahim II (875-902), quand Sousse devient la deuxième ville de l'Ifriqiya.": "اسے اغلبی امیر ابو العباس محمد نے ⁦850-851⁩ء میں، سوسہ کے رباط سے تقریباً تیس سال بعد، تعمیر کیا؛ صحن کے دالانوں پر کوفی خط میں ایک کتبہ اس کی تعمیر کی یاد دلاتا ہے۔ امیر ابراہیم دوم (⁦875-902⁩ء) کے دور میں، جب سوسہ افریقیہ کا دوسرا شہر بنا، اس میں توسیع کی گئی۔",
+"En 851, l'émir aghlabide Abou al-Abbas Muhammad commanda la Grande Mosquée de Sousse. Il en confia la construction à Mudam, un ancien esclave qu'il avait affranchi et qui était devenu son homme de confiance. Sousse grandissait vite, et la petite mosquée du ribat voisin ne suffisait plus aux habitants. Plus tard, la salle de prière fut agrandie vers le sud.": "⁦851⁩ میں اغلبی امیر ابو العباس محمد نے سوسہ کی جامع مسجد بنانے کا حکم دیا۔ انہوں نے اس کی تعمیر مدام کے سپرد کی، جو ایک سابق غلام تھا جسے انہوں نے آزاد کیا تھا اور جو ان کا معتمد بن گیا تھا۔ سوسہ تیزی سے بڑھ رہا تھا، اور قریبی رباط کی چھوٹی مسجد اب لوگوں کے لیے کافی نہیں تھی۔ بعد میں نماز کے ہال کو جنوب کی طرف وسیع کیا گیا۔",
 "Fait historique": "تاریخی حقیقت",
 "Grande Mosquée de Kairouan (mosquée Okba)": "جامع مسجد قیروان (مسجد عقبہ)",
 "Grande Mosquée de Mahdia": "جامع الکبیر مہدیہ",
@@ -61,6 +71,8 @@
 "Source :": "ماخذ:",
 "Sousse": "سوسہ",
 "Toutes les histoires des mosquées": "مساجد کی تمام کہانیاں",
+"Un affranchi dirige le chantier": "ایک آزاد کردہ غلام تعمیر کی نگرانی کرتا ہے",
+"Une coupole devant le mihrab, comme à Damas": "محراب کے سامنے گنبد، دمشق کی طرح",
 "Une mosquée-forteresse face à la mer": "سمندر کے سامنے ایک قلعہ نما مسجد",
 "À l'entrée de la médina, une mosquée aux allures de forteresse, bâtie en 850-851 près du ribat qui protégeait la côte. Sobre et puissante, elle fait partie de la médina de Sousse, patrimoine mondial de l'UNESCO.": "مدینہ کے دروازے پر قلعہ نما مسجد، جو ⁦850-851⁩ء میں ساحل کی حفاظت کرنے والے رباط کے قریب بنی۔ سادہ اور مضبوط، یہ یونیسکو کے عالمی ورثے سوسہ کے مدینہ کا حصہ ہے۔"
 });
@@ -68,7 +80,9 @@
 "850-851 · Aghlabides": "850-851 · Aghlabiden",
 "Agrandissement sous Ibrahim II (875-902)": "Erweiterung unter Ibrahim II. (875-902)",
 "Construction de la mosquée (850-851)": "Bau der Moschee (850-851)",
+"Devant le mihrab d'origine, une coupole met en valeur l'endroit où se tient l'imam, comme à la Grande Mosquée de Kairouan. À cette époque, ces coupoles étaient rares : on n'en connaît que quelques-unes plus anciennes, à la mosquée al-Aqsa de Jérusalem et à la mosquée des Omeyyades de Damas. Au XIe siècle, les Zirides ajoutèrent la petite tour à coupole d'où le muezzin lançait l'appel.": "Vor dem ursprünglichen Mihrab hebt eine Kuppel den Ort hervor, an dem der Imam steht, wie in der Großen Moschee von Kairouan. Damals waren solche Kuppeln selten: Man kennt nur einige ältere, in der al-Aqsa-Moschee in Jerusalem und in der Umayyaden-Moschee von Damaskus. Im 11. Jahrhundert fügten die Ziriden den kleinen Kuppelturm hinzu, von dem aus der Muezzin zum Gebet rief.",
 "Elle est élevée en 850-851 par l'émir aghlabide Abou al-Abbas Mohammed, une trentaine d'années après le ribat de Sousse ; une inscription en coufique, sur les galeries de la cour, rappelle sa construction. Elle est agrandie sous l'émir Ibrahim II (875-902), quand Sousse devient la deuxième ville de l'Ifriqiya.": "Sie wurde 850-851 vom aghlabidischen Emir Abu al-Abbas Muhammad errichtet, etwa dreißig Jahre nach dem Ribat von Sousse; eine kufische Inschrift an den Hofgalerien erinnert an ihren Bau. Unter Emir Ibrahim II. (875-902), als Sousse zur zweiten Stadt Ifriqiyas wurde, wurde sie erweitert.",
+"En 851, l'émir aghlabide Abou al-Abbas Muhammad commanda la Grande Mosquée de Sousse. Il en confia la construction à Mudam, un ancien esclave qu'il avait affranchi et qui était devenu son homme de confiance. Sousse grandissait vite, et la petite mosquée du ribat voisin ne suffisait plus aux habitants. Plus tard, la salle de prière fut agrandie vers le sud.": "Im Jahr 851 gab der aghlabidische Emir Abu al-Abbas Muhammad die Große Moschee von Sousse in Auftrag. Den Bau vertraute er Mudam an, einem ehemaligen Sklaven, den er freigelassen hatte und der sein Vertrauensmann geworden war. Sousse wuchs schnell, und die kleine Moschee des benachbarten Ribat reichte den Einwohnern nicht mehr. Später wurde der Gebetssaal nach Süden erweitert.",
 "Fait historique": "Historische Tatsache",
 "Grande Mosquée de Kairouan (mosquée Okba)": "Große Moschee von Kairouan (Uqba-Moschee)",
 "Grande Mosquée de Mahdia": "Große Moschee von Mahdia",
@@ -82,6 +96,8 @@
 "Source :": "Quelle:",
 "Sousse": "Sousse",
 "Toutes les histoires des mosquées": "Alle Geschichten der Moscheen",
+"Un affranchi dirige le chantier": "Ein Freigelassener leitet den Bau",
+"Une coupole devant le mihrab, comme à Damas": "Eine Kuppel vor dem Mihrab, wie in Damaskus",
 "Une mosquée-forteresse face à la mer": "Eine Festungsmoschee am Meer",
 "À l'entrée de la médina, une mosquée aux allures de forteresse, bâtie en 850-851 près du ribat qui protégeait la côte. Sobre et puissante, elle fait partie de la médina de Sousse, patrimoine mondial de l'UNESCO.": "Am Eingang der Medina steht eine festungsartige Moschee, 850-851 nahe dem Ribat errichtet, der die Küste schützte. Schlicht und kraftvoll gehört sie zur Medina von Sousse, einem UNESCO-Welterbe."
 });
@@ -89,7 +105,9 @@
 "850-851 · Aghlabides": "850-851 · aglabíes",
 "Agrandissement sous Ibrahim II (875-902)": "Ampliación bajo Ibrahim II (875-902)",
 "Construction de la mosquée (850-851)": "Construcción de la mezquita (850-851)",
+"Devant le mihrab d'origine, une coupole met en valeur l'endroit où se tient l'imam, comme à la Grande Mosquée de Kairouan. À cette époque, ces coupoles étaient rares : on n'en connaît que quelques-unes plus anciennes, à la mosquée al-Aqsa de Jérusalem et à la mosquée des Omeyyades de Damas. Au XIe siècle, les Zirides ajoutèrent la petite tour à coupole d'où le muezzin lançait l'appel.": "Delante del mihrab original, una cúpula realza el lugar donde se sitúa el imán, como en la Gran Mezquita de Kairuán. En aquella época, estas cúpulas eran raras: solo se conocen algunas más antiguas, en la mezquita al-Aqsa de Jerusalén y en la mezquita de los Omeyas de Damasco. En el siglo XI, los ziríes añadieron la pequeña torre con cúpula desde la que el almuédano lanzaba la llamada.",
 "Elle est élevée en 850-851 par l'émir aghlabide Abou al-Abbas Mohammed, une trentaine d'années après le ribat de Sousse ; une inscription en coufique, sur les galeries de la cour, rappelle sa construction. Elle est agrandie sous l'émir Ibrahim II (875-902), quand Sousse devient la deuxième ville de l'Ifriqiya.": "Fue levantada en 850-851 por el emir aglabí Abu al-Abbas Muhammad, unos treinta años después del ribat de Susa; una inscripción cúfica en las galerías del patio recuerda su construcción. Se amplió bajo el emir Ibrahim II (875-902), cuando Susa se convirtió en la segunda ciudad de Ifriqiya.",
+"En 851, l'émir aghlabide Abou al-Abbas Muhammad commanda la Grande Mosquée de Sousse. Il en confia la construction à Mudam, un ancien esclave qu'il avait affranchi et qui était devenu son homme de confiance. Sousse grandissait vite, et la petite mosquée du ribat voisin ne suffisait plus aux habitants. Plus tard, la salle de prière fut agrandie vers le sud.": "En 851, el emir aglabí Abu al-Abbas Muhammad encargó la Gran Mezquita de Susa. Confió su construcción a Mudam, un antiguo esclavo al que había liberado y que se había convertido en su hombre de confianza. Susa crecía deprisa, y la pequeña mezquita del ribat vecino ya no bastaba a los habitantes. Más tarde, la sala de oración se amplió hacia el sur.",
 "Fait historique": "Hecho histórico",
 "Grande Mosquée de Kairouan (mosquée Okba)": "Gran Mezquita de Cairuán (mezquita de Uqba)",
 "Grande Mosquée de Mahdia": "Gran Mezquita de Mahdía",
@@ -103,6 +121,8 @@
 "Source :": "Fuente:",
 "Sousse": "Susa",
 "Toutes les histoires des mosquées": "Todas las historias de las mezquitas",
+"Un affranchi dirige le chantier": "Un liberto dirige las obras",
+"Une coupole devant le mihrab, comme à Damas": "Una cúpula delante del mihrab, como en Damasco",
 "Une mosquée-forteresse face à la mer": "Una mezquita-fortaleza frente al mar",
 "À l'entrée de la médina, une mosquée aux allures de forteresse, bâtie en 850-851 près du ribat qui protégeait la côte. Sobre et puissante, elle fait partie de la médina de Sousse, patrimoine mondial de l'UNESCO.": "A la entrada de la medina se alza una mezquita con aspecto de fortaleza, construida en 850-851 cerca del ribat que protegía la costa. Sobria y poderosa, forma parte de la medina de Susa, Patrimonio Mundial de la UNESCO."
 });

@@ -1,0 +1,69 @@
+/* GÉNÉRÉ par tools/construire.py (textes : tools/contenu_grandes_*.py) — traductions turc, indonésien, ourdou, allemand, espagnol
+   de cette page, ajoutées à window.TRADUCTIONS (assets/langues.js) ; clé = texte français exact. */
+(function (T) {
+  Object.assign(T.tr = T.tr || {}, {
+"Cheikh Zayed ben Sultan Al Nahyane, fondateur des Émirats arabes unis, voulut une mosquée qui réunisse les styles de tout le monde musulman. Il suivit lui-même le chantier, commencé dans les années 1990. Il mourut en 2004 avant la fin des travaux et fut enterré dans la cour de la mosquée. Celle-ci fut inaugurée en décembre 2007. Elle compte 82 coupoles et plus de 1 000 colonnes, et elle est ouverte aux visiteurs de toutes religions.": "Birleşik Arap Emirlikleri'nin kurucusu Şeyh Zayed bin Sultan Al Nahyan, bütün İslam dünyasının üsluplarını bir araya getiren bir cami istedi. 1990'larda başlayan inşaatı bizzat takip etti. 2004'te çalışmalar bitmeden öldü ve caminin avlusuna gömüldü. Cami Aralık 2007'de açıldı. 82 kubbesi ve 1.000'den fazla sütunu vardır ve her dinden ziyaretçiye açıktır.",
+"Données : Wikidata (CC0), mises à jour tous les 3 mois. L'année est la plus ancienne date de construction connue du bâtiment : pour un édifice devenu mosquée plus tard (comme Sainte-Sophie), c'est celle du bâtiment d'origine. Photos : Wikimedia Commons, auteur et licence sur la page de chaque photo.": "Veriler: Wikidata (CC0), her 3 ayda bir güncellenir. Yıl, binanın bilinen en eski inşa tarihidir: sonradan camiye dönüştürülmüş bir yapı için (Ayasofya gibi) özgün binanın tarihidir. Fotoğraflar: Wikimedia Commons, yazar ve lisans her fotoğrafın sayfasında.",
+"Fait historique": "Tarihî olay",
+"Grandes mosquées du monde": "Dünyanın büyük camileri",
+"Histoires et récits": "Hikâyeler ve anlatılar",
+"La grande salle de prière est couverte d'un seul tapis de plus de 5 600 m², considéré comme le plus grand tapis noué à la main du monde. Il a été dessiné par l'artiste iranien Ali Khaliqi et fabriqué en Iran par environ 1 200 à 1 300 tisserands. Il pèse environ 35 tonnes et compte plus de deux milliards de nœuds ; sa fabrication a pris près de deux ans. Il a été tissé en morceaux, puis assemblé sur place.": "Büyük namaz salonu, dünyanın el ile düğümlenmiş en büyük halısı kabul edilen, 5.600 m²'yi aşan tek bir halıyla kaplıdır. Halıyı İranlı sanatçı Ali Khaliqi tasarladı ve İran'da yaklaşık 1.200 ila 1.300 dokumacı yaptı. Yaklaşık 35 ton ağırlığındadır ve iki milyardan fazla düğüm içerir; yapımı yaklaşık iki yıl sürdü. Parçalar hâlinde dokundu, sonra yerinde birleştirildi.",
+"Le plus grand tapis noué à la main": "El dokuması en büyük halı",
+"Le rêve et la tombe du fondateur": "Kurucunun hayali ve kabri",
+"Source :": "Kaynak:",
+"Toutes les histoires des mosquées": "Camilerin bütün hikâyeleri",
+"Voir sur la carte": "Haritada gör"
+});
+  Object.assign(T.id = T.id || {}, {
+"Cheikh Zayed ben Sultan Al Nahyane, fondateur des Émirats arabes unis, voulut une mosquée qui réunisse les styles de tout le monde musulman. Il suivit lui-même le chantier, commencé dans les années 1990. Il mourut en 2004 avant la fin des travaux et fut enterré dans la cour de la mosquée. Celle-ci fut inaugurée en décembre 2007. Elle compte 82 coupoles et plus de 1 000 colonnes, et elle est ouverte aux visiteurs de toutes religions.": "Syekh Zayed bin Sultan Al Nahyan, pendiri Uni Emirat Arab, menginginkan masjid yang memadukan gaya-gaya dari seluruh dunia Islam. Ia sendiri mengawasi pembangunannya, yang dimulai pada tahun 1990-an. Ia wafat pada tahun 2004 sebelum pekerjaan selesai dan dimakamkan di halaman masjid. Masjid ini diresmikan pada Desember 2007. Masjid ini memiliki 82 kubah dan lebih dari 1.000 tiang, dan terbuka bagi pengunjung dari semua agama.",
+"Données : Wikidata (CC0), mises à jour tous les 3 mois. L'année est la plus ancienne date de construction connue du bâtiment : pour un édifice devenu mosquée plus tard (comme Sainte-Sophie), c'est celle du bâtiment d'origine. Photos : Wikimedia Commons, auteur et licence sur la page de chaque photo.": "Data: Wikidata (CC0), diperbarui setiap 3 bulan. Tahun yang dicantumkan adalah tanggal pembangunan tertua yang diketahui dari bangunan tersebut: untuk bangunan yang kemudian menjadi masjid (seperti Hagia Sophia), tahun itu adalah tahun bangunan aslinya. Foto: Wikimedia Commons, pembuat dan lisensi ada di halaman setiap foto.",
+"Fait historique": "Fakta sejarah",
+"Grandes mosquées du monde": "Masjid-masjid besar dunia",
+"Histoires et récits": "Kisah dan riwayat",
+"La grande salle de prière est couverte d'un seul tapis de plus de 5 600 m², considéré comme le plus grand tapis noué à la main du monde. Il a été dessiné par l'artiste iranien Ali Khaliqi et fabriqué en Iran par environ 1 200 à 1 300 tisserands. Il pèse environ 35 tonnes et compte plus de deux milliards de nœuds ; sa fabrication a pris près de deux ans. Il a été tissé en morceaux, puis assemblé sur place.": "Ruang salat utama ditutupi satu karpet seluas lebih dari 5.600 m², yang dianggap sebagai karpet simpul tangan terbesar di dunia. Karpet ini dirancang oleh seniman Iran Ali Khaliqi dan dibuat di Iran oleh sekitar 1.200 hingga 1.300 penenun. Beratnya sekitar 35 ton dan memiliki lebih dari dua miliar simpul; pembuatannya memakan waktu hampir dua tahun. Karpet ini ditenun dalam beberapa bagian, lalu disatukan di tempat.",
+"Le plus grand tapis noué à la main": "Karpet tenunan tangan terbesar",
+"Le rêve et la tombe du fondateur": "Impian dan makam sang pendiri",
+"Source :": "Sumber:",
+"Toutes les histoires des mosquées": "Semua kisah masjid",
+"Voir sur la carte": "Lihat di peta"
+});
+  Object.assign(T.ur = T.ur || {}, {
+"Cheikh Zayed ben Sultan Al Nahyane, fondateur des Émirats arabes unis, voulut une mosquée qui réunisse les styles de tout le monde musulman. Il suivit lui-même le chantier, commencé dans les années 1990. Il mourut en 2004 avant la fin des travaux et fut enterré dans la cour de la mosquée. Celle-ci fut inaugurée en décembre 2007. Elle compte 82 coupoles et plus de 1 000 colonnes, et elle est ouverte aux visiteurs de toutes religions.": "متحدہ عرب امارات کے بانی شیخ زاید بن سلطان آل نہیان ایک ایسی مسجد چاہتے تھے جو پوری اسلامی دنیا کے طرزِ تعمیر کو یکجا کرے۔ انہوں نے ⁦1990⁩ کی دہائی میں شروع ہونے والی تعمیر کی خود نگرانی کی۔ وہ ⁦2004⁩ میں کام مکمل ہونے سے پہلے فوت ہو گئے اور مسجد کے صحن میں دفن کیے گئے۔ مسجد کا افتتاح دسمبر ⁦2007⁩ میں ہوا۔ اس میں ⁦82⁩ گنبد اور ⁦1,000⁩ سے زیادہ ستون ہیں، اور یہ تمام مذاہب کے زائرین کے لیے کھلی ہے۔",
+"Données : Wikidata (CC0), mises à jour tous les 3 mois. L'année est la plus ancienne date de construction connue du bâtiment : pour un édifice devenu mosquée plus tard (comme Sainte-Sophie), c'est celle du bâtiment d'origine. Photos : Wikimedia Commons, auteur et licence sur la page de chaque photo.": "ڈیٹا: Wikidata (CC⁦0⁩)، ہر ⁦3⁩ ماہ بعد تازہ کیا جاتا ہے۔ سال عمارت کی معلوم قدیم ترین تاریخِ تعمیر ہے: جو عمارت بعد میں مسجد بنی (جیسے آیا صوفیہ)، اس کے لیے اصل عمارت کا سال دیا گیا ہے۔ تصاویر: Wikimedia Commons، ہر تصویر کے صفحے پر مصنف اور لائسنس۔",
+"Fait historique": "تاریخی حقیقت",
+"Grandes mosquées du monde": "دنیا کی بڑی مساجد",
+"Histoires et récits": "کہانیاں اور واقعات",
+"La grande salle de prière est couverte d'un seul tapis de plus de 5 600 m², considéré comme le plus grand tapis noué à la main du monde. Il a été dessiné par l'artiste iranien Ali Khaliqi et fabriqué en Iran par environ 1 200 à 1 300 tisserands. Il pèse environ 35 tonnes et compte plus de deux milliards de nœuds ; sa fabrication a pris près de deux ans. Il a été tissé en morceaux, puis assemblé sur place.": "نماز کا بڑا ہال ⁦5,600⁩ مربع میٹر سے زیادہ کے ایک ہی قالین سے ڈھکا ہے، جسے دنیا کا ہاتھ سے گرہ لگا کر بُنا ہوا سب سے بڑا قالین سمجھا جاتا ہے۔ اسے ایرانی فنکار علی خالقی نے ڈیزائن کیا اور ایران میں تقریباً ⁦1,200⁩ سے ⁦1,300⁩ بُنکروں نے تیار کیا۔ اس کا وزن تقریباً ⁦35⁩ ٹن ہے اور اس میں دو ارب سے زیادہ گرہیں ہیں؛ اس کی تیاری میں تقریباً دو سال لگے۔ اسے ٹکڑوں میں بُنا گیا، پھر موقع پر جوڑا گیا۔",
+"Le plus grand tapis noué à la main": "ہاتھ سے بُنا سب سے بڑا قالین",
+"Le rêve et la tombe du fondateur": "بانی کا خواب اور ان کی قبر",
+"Source :": "ماخذ:",
+"Toutes les histoires des mosquées": "مساجد کی تمام کہانیاں",
+"Voir sur la carte": "نقشے پر دیکھیں"
+});
+  Object.assign(T.de = T.de || {}, {
+"Cheikh Zayed ben Sultan Al Nahyane, fondateur des Émirats arabes unis, voulut une mosquée qui réunisse les styles de tout le monde musulman. Il suivit lui-même le chantier, commencé dans les années 1990. Il mourut en 2004 avant la fin des travaux et fut enterré dans la cour de la mosquée. Celle-ci fut inaugurée en décembre 2007. Elle compte 82 coupoles et plus de 1 000 colonnes, et elle est ouverte aux visiteurs de toutes religions.": "Scheich Zayed bin Sultan Al Nahyan, Gründer der Vereinigten Arabischen Emirate, wollte eine Moschee, die die Stile der gesamten muslimischen Welt vereint. Er verfolgte die Baustelle, die in den 1990er-Jahren begann, selbst. Er starb 2004 vor dem Ende der Arbeiten und wurde im Hof der Moschee begraben. Diese wurde im Dezember 2007 eingeweiht. Sie hat 82 Kuppeln und mehr als 1 000 Säulen und ist für Besucher aller Religionen geöffnet.",
+"Données : Wikidata (CC0), mises à jour tous les 3 mois. L'année est la plus ancienne date de construction connue du bâtiment : pour un édifice devenu mosquée plus tard (comme Sainte-Sophie), c'est celle du bâtiment d'origine. Photos : Wikimedia Commons, auteur et licence sur la page de chaque photo.": "Daten: Wikidata (CC0), alle 3 Monate aktualisiert. Das Jahr ist das älteste bekannte Baudatum des Gebäudes: Bei einem Bauwerk, das erst später zur Moschee wurde (wie die Hagia Sophia), ist es das des ursprünglichen Gebäudes. Fotos: Wikimedia Commons, Urheber und Lizenz auf der Seite jedes Fotos.",
+"Fait historique": "Historische Tatsache",
+"Grandes mosquées du monde": "Große Moscheen der Welt",
+"Histoires et récits": "Geschichten und Erzählungen",
+"La grande salle de prière est couverte d'un seul tapis de plus de 5 600 m², considéré comme le plus grand tapis noué à la main du monde. Il a été dessiné par l'artiste iranien Ali Khaliqi et fabriqué en Iran par environ 1 200 à 1 300 tisserands. Il pèse environ 35 tonnes et compte plus de deux milliards de nœuds ; sa fabrication a pris près de deux ans. Il a été tissé en morceaux, puis assemblé sur place.": "Der große Gebetssaal ist mit einem einzigen Teppich von mehr als 5 600 m² bedeckt, der als größter handgeknüpfter Teppich der Welt gilt. Er wurde vom iranischen Künstler Ali Khaliqi entworfen und im Iran von etwa 1 200 bis 1 300 Knüpfern hergestellt. Er wiegt etwa 35 Tonnen und hat mehr als zwei Milliarden Knoten; seine Herstellung dauerte fast zwei Jahre. Er wurde in Teilen geknüpft und dann vor Ort zusammengesetzt.",
+"Le plus grand tapis noué à la main": "Der größte handgeknüpfte Teppich",
+"Le rêve et la tombe du fondateur": "Der Traum und das Grab des Gründers",
+"Source :": "Quelle:",
+"Toutes les histoires des mosquées": "Alle Geschichten der Moscheen",
+"Voir sur la carte": "Auf der Karte zeigen"
+});
+  Object.assign(T.es = T.es || {}, {
+"Cheikh Zayed ben Sultan Al Nahyane, fondateur des Émirats arabes unis, voulut une mosquée qui réunisse les styles de tout le monde musulman. Il suivit lui-même le chantier, commencé dans les années 1990. Il mourut en 2004 avant la fin des travaux et fut enterré dans la cour de la mosquée. Celle-ci fut inaugurée en décembre 2007. Elle compte 82 coupoles et plus de 1 000 colonnes, et elle est ouverte aux visiteurs de toutes religions.": "El jeque Zayed bin Sultán Al Nahyan, fundador de los Emiratos Árabes Unidos, quiso una mezquita que reuniera los estilos de todo el mundo musulmán. Él mismo siguió las obras, iniciadas en los años noventa. Murió en 2004 antes del final de las obras y fue enterrado en el patio de la mezquita. Esta se inauguró en diciembre de 2007. Tiene 82 cúpulas y más de 1000 columnas, y está abierta a los visitantes de todas las religiones.",
+"Données : Wikidata (CC0), mises à jour tous les 3 mois. L'année est la plus ancienne date de construction connue du bâtiment : pour un édifice devenu mosquée plus tard (comme Sainte-Sophie), c'est celle du bâtiment d'origine. Photos : Wikimedia Commons, auteur et licence sur la page de chaque photo.": "Datos: Wikidata (CC0), actualizados cada 3 meses. El año es la fecha de construcción conocida más antigua del edificio: para un edificio convertido después en mezquita (como Santa Sofía), es la del edificio original. Fotos: Wikimedia Commons, autor y licencia en la página de cada foto.",
+"Fait historique": "Hecho histórico",
+"Grandes mosquées du monde": "Grandes mezquitas del mundo",
+"Histoires et récits": "Historias y relatos",
+"La grande salle de prière est couverte d'un seul tapis de plus de 5 600 m², considéré comme le plus grand tapis noué à la main du monde. Il a été dessiné par l'artiste iranien Ali Khaliqi et fabriqué en Iran par environ 1 200 à 1 300 tisserands. Il pèse environ 35 tonnes et compte plus de deux milliards de nœuds ; sa fabrication a pris près de deux ans. Il a été tissé en morceaux, puis assemblé sur place.": "La gran sala de oración está cubierta por una sola alfombra de más de 5600 m², considerada la mayor alfombra anudada a mano del mundo. Fue diseñada por el artista iraní Ali Khaliqi y fabricada en Irán por unos 1200 a 1300 tejedores. Pesa unas 35 toneladas y tiene más de dos mil millones de nudos; su fabricación llevó casi dos años. Se tejió por partes y luego se ensambló en el lugar.",
+"Le plus grand tapis noué à la main": "La mayor alfombra anudada a mano",
+"Le rêve et la tombe du fondateur": "El sueño y la tumba del fundador",
+"Source :": "Fuente:",
+"Toutes les histoires des mosquées": "Todas las historias de las mezquitas",
+"Voir sur la carte": "Ver en el mapa"
+});
+})(window.TRADUCTIONS = window.TRADUCTIONS || {});

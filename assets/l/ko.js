@@ -198,6 +198,7 @@ window.TRADUCTIONS.ko = {
 "tous droits réservés": "모든 권리 보유",
 "tous droits réservés.": "모든 권리 보유.",
 "voir sur la carte": "지도에서 보기",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "이 지역의 예배 장소 {n}곳 (저장된 조사 자료; 실시간 조회가 지금은 응답하지 않습니다).",
 "{n} lieux de prière dans cette zone.": "이 지역에 예배 장소 {n}곳이 있습니다.",
 "{n} lieux trouvés": "{n}곳을 찾았습니다",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“사원은 하나님의 것이거늘하 나님과 어떤 것도 비유하지 말라”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.ko = {
 "Écouter la récitation de cheikh Ali El Barrak": "셰이크 알리 엘 바라크의 낭송 듣기",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "답변을 드릴 수 있도록 이메일 주소를 입력하세요 (필수).",
 "Écrivez votre message avant d'envoyer.": "보내기 전에 메시지를 입력해 주세요.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "노란 별: 큰 모스크 (메카, 메디나, 알아크사는 더 큰 별). 튀니지 밖에서는 점의 색이 나라를 나타냅니다.",
 "à confirmer": "확인 대기",
 "— choisir —": "— 선택 —",
 "✔ Position confirmée": "✔ 위치가 확인되었습니다"

@@ -198,6 +198,7 @@ window.TRADUCTIONS.ro = {
 "tous droits réservés": "toate drepturile rezervate",
 "tous droits réservés.": "toate drepturile rezervate.",
 "voir sur la carte": "vezi pe hartă",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} locuri de rugăciune în această zonă (inventar salvat; citirea în direct nu răspunde momentan).",
 "{n} lieux de prière dans cette zone.": "{n} locuri de rugăciune în această zonă.",
 "{n} lieux trouvés": "{n} locuri găsite",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Moscheile sunt ale lui Allah și nu chemați pe nimeni împreună cu Allah!”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.ro = {
 "Écouter la récitation de cheikh Ali El Barrak": "Ascultați recitarea șeicului Ali El Barrak",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Scrieți adresa de e-mail (obligatorie) ca să vă putem răspunde.",
 "Écrivez votre message avant d'envoyer.": "Scrieți mesajul înainte de a trimite.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Stea galbenă: moschee mare (mai mare pentru Mecca, Medina și al-Aqsa). În afara Tunisiei, culoarea unui punct arată țara sa.",
 "à confirmer": "de confirmat",
 "— choisir —": "— alegeți —",
 "✔ Position confirmée": "✔ Poziție confirmată"

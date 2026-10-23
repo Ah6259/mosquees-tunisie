@@ -198,6 +198,7 @@ window.TRADUCTIONS.de = {
 "tous droits réservés": "alle Rechte vorbehalten",
 "tous droits réservés.": "alle Rechte vorbehalten.",
 "voir sur la carte": "auf der Karte zeigen",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} Gebetsorte in diesem Gebiet (gespeicherte Erfassung; die Live-Abfrage antwortet gerade nicht).",
 "{n} lieux de prière dans cette zone.": "{n} Gebetsorte in diesem Gebiet.",
 "{n} lieux trouvés": "{n} Orte gefunden",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "„Und die Gebetsstätten gehören doch Allah; so ruft neben Allah niemanden an.“",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.de = {
 "Écouter la récitation de cheikh Ali El Barrak": "Rezitation von Scheich Ali El Barrak hören",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Bitte geben Sie Ihre E-Mail-Adresse ein (Pflichtfeld), damit wir Ihnen antworten können.",
 "Écrivez votre message avant d'envoyer.": "Schreiben Sie Ihre Nachricht vor dem Senden.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Gelber Stern: große Moschee (größer für Mekka, Medina und al-Aqsa). Außerhalb Tunesiens zeigt die Farbe eines Punktes sein Land.",
 "à confirmer": "zu bestätigen",
 "— choisir —": "— wählen —",
 "✔ Position confirmée": "✔ Position bestätigt"

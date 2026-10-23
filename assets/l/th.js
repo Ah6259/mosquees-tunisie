@@ -198,6 +198,7 @@ window.TRADUCTIONS.th = {
 "tous droits réservés": "สงวนลิขสิทธิ์",
 "tous droits réservés.": "สงวนลิขสิทธิ์",
 "voir sur la carte": "ดูบนแผนที่",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "สถานที่ละหมาด {n} แห่งในพื้นที่นี้ (ข้อมูลที่บันทึกไว้ การอ่านแบบสดยังไม่ตอบสนองในขณะนี้)",
 "{n} lieux de prière dans cette zone.": "มีสถานที่ละหมาด {n} แห่งในบริเวณนี้",
 "{n} lieux trouvés": "พบ {n} สถานที่",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“และว่าแท้จริงบรรดามัสยิดนั้นเป็นของอัลลอฮ์ ดังนั้น พวกเจ้าอย่าวิงวอนขอผู้ใดเคียงคู่กับอัลลอฮ์”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.th = {
 "Écouter la récitation de cheikh Ali El Barrak": "ฟังการอ่านของเชคอาลี เอล บาร์รัก",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "กรุณาใส่อีเมลของคุณ (จำเป็น) เพื่อให้เราตอบกลับได้",
 "Écrivez votre message avant d'envoyer.": "โปรดเขียนข้อความก่อนส่ง",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "ดาวสีเหลือง: มัสยิดสำคัญ (ใหญ่กว่าสำหรับมักกะฮ์ มะดีนะฮ์ และอัลอักศอ) นอกตูนิเซีย สีของจุดบอกประเทศ",
 "à confirmer": "รอยืนยัน",
 "— choisir —": "— เลือก —",
 "✔ Position confirmée": "✔ ยืนยันตำแหน่งแล้ว"

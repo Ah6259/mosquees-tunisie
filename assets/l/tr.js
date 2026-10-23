@@ -198,6 +198,7 @@ window.TRADUCTIONS.tr = {
 "tous droits réservés": "tüm hakları saklıdır",
 "tous droits réservés.": "tüm hakları saklıdır.",
 "voir sur la carte": "haritada gör",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "Bu bölgede {n} ibadet yeri (kayıtlı tarama; canlı okuma şu anda yanıt vermiyor).",
 "{n} lieux de prière dans cette zone.": "Bu bölgede {n} ibadet yeri.",
 "{n} lieux trouvés": "{n} yer bulundu",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Mescitler Allah’ındır. O halde Allah ile birlikte başkasına dua/ibadet etmeyin.”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.tr = {
 "Écouter la récitation de cheikh Ali El Barrak": "Şeyh Ali el-Berrak'ın tilavetini dinle",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Size cevap verebilmemiz için e-posta adresinizi yazın (zorunlu).",
 "Écrivez votre message avant d'envoyer.": "Göndermeden önce mesajınızı yazın.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Sarı yıldız: büyük cami (Mekke, Medine ve Mescid-i Aksa için daha büyük). Tunus dışında bir noktanın rengi ülkesini gösterir.",
 "à confirmer": "doğrulanacak",
 "— choisir —": "— seçin —",
 "✔ Position confirmée": "✔ Konum onaylandı"

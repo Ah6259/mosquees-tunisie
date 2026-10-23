@@ -198,6 +198,7 @@ window.TRADUCTIONS.id = {
 "tous droits réservés": "hak cipta dilindungi",
 "tous droits réservés.": "hak cipta dilindungi.",
 "voir sur la carte": "lihat di peta",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} tempat salat di area ini (data tersimpan; pembacaan langsung sedang tidak merespons).",
 "{n} lieux de prière dans cette zone.": "{n} tempat salat di area ini.",
 "{n} lieux trouvés": "{n} tempat ditemukan",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Dan sesungguhnya masjid-masjid itu adalah untuk Allah. Maka janganlah kamu menyembah apa pun di dalamnya selain Allah.”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.id = {
 "Écouter la récitation de cheikh Ali El Barrak": "Dengarkan tilawah Syekh Ali El Barrak",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Tulis alamat email Anda (wajib) agar kami bisa membalas.",
 "Écrivez votre message avant d'envoyer.": "Tulis pesan Anda sebelum mengirim.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Bintang kuning: masjid besar (lebih besar untuk Makkah, Madinah, dan Al-Aqsa). Di luar Tunisia, warna titik menunjukkan negaranya.",
 "à confirmer": "perlu dikonfirmasi",
 "— choisir —": "— pilih —",
 "✔ Position confirmée": "✔ Lokasi dikonfirmasi"

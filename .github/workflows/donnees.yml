@@ -19,7 +19,7 @@ env:
 jobs:
   releve:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90   # 23/10/2026 : + liste mondiale et mosquées autour (dépôt public : minutes gratuites)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,6 +35,8 @@ jobs:
           echo "code=$?" >> "$GITHUB_OUTPUT"
           # grandes mosquées du monde (page grandes-mosquees-du-monde/, 23/10/2026) : si Wikidata ne répond pas, l'ancienne liste reste
           python tools/monde_grandes.py || echo "::warning::liste des grandes mosquées du monde non relue (ancienne gardée)"
+          # mosquées autour de chaque grande mosquée du monde (carte instantanée quand Overpass est saturé)
+          timeout 25m python tools/monde_autour.py || echo "::warning::mosquées autour des grandes mosquées non relues (anciennes gardées)"
       - name: Refaire les pages, tester, enregistrer
         run: |
           python tools/construire.py
@@ -42,7 +44,7 @@ jobs:
           node tools/test_site.mjs
           git config user.name "robot-mosquees"
           git config user.email "robot-mosquees@users.noreply.github.com"
-          git add donnees assets/monde mosquee grandes-mosquees grandes-mosquees-du-monde role-de-la-mosquee histoires-des-mosquees construire-une-mosquee a-propos sitemap.xml index.html assets/trad assets/l ar en tr id ur de es it pt nl zh ja ko hi ru vi th tl sv ro   # + une adresse par langue (tools/pages_langues.py)
+          git add -A donnees assets/monde mosquee mosquee-monde grandes-mosquees grandes-mosquees-du-monde role-de-la-mosquee histoires-des-mosquees construire-une-mosquee a-propos sitemap.xml index.html assets/trad assets/l ar en tr id ur de es it pt nl zh ja ko hi ru vi th tl sv ro   # + une adresse par langue (tools/pages_langues.py)
           if git diff --cached --quiet; then
             git commit --allow-empty -m "Battement de coeur : relevé des mosquées inchangé"
           else

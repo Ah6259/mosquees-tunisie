@@ -165,3 +165,35 @@ DESCRIPTIONS.update({
 # mont du Temple (esplanade), dôme du Rocher (sanctuaire, pas une mosquée), cathédrale d'Ohrid (église aujourd'hui),
 # Beit Al Qur'an (bibliothèque), chapelle de l'Ascension (sanctuaire)
 PAS_MOSQUEES = {"Q193163", "Q172077", "Q164743", "Q630922", "Q773726"}
+
+
+# Histoires des grandes mosquées du monde (pages mosquee-monde/…) : groupe de HISTOIRES_SAINTES / HISTOIRES_MONDE -> QID Wikidata
+QID_GROUPES = {"g_medine": "Q486080", "g_haram": "Q428858", "g_aqsa": "Q12192963"}
+HISTOIRES_MONDE = {}      # QID -> [(clé, nature, sources)] (ajoutées après les recherches du 23/10/2026)
+
+
+def histoires_de(qid):
+    hs = []
+    for g, liste in HISTOIRES_SAINTES:
+        if QID_GROUPES.get(g) == qid:
+            hs += liste
+    return hs + HISTOIRES_MONDE.get(qid, [])
+QID_GROUPES.update({"g_quba": "Q276569", "g_qiblatayn": "Q2334553"})
+
+
+# Histoires ajoutées par les recherches du 23/10/2026 (demande d'Ahmed : « le plus possible d'histoires pour chaque mosquée ») :
+# tools/textes/histoires_sources.json = { clé: {groupe, qid, nature, sources} } ; textes dans tools/textes/base/histoires.json
+def _charger_histoires():
+    import json as _j, os as _o
+    p = _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "textes", "histoires_sources.json")
+    if not _o.path.exists(p):
+        return
+    for cle, x in _j.load(open(p, encoding="utf-8")).items():
+        h = (cle, x["nature"], [tuple(s) for s in x["sources"]])
+        if x["groupe"] in HISTOIRES_TUNISIE or (not x.get("qid") and x["groupe"] in ANNEES_GRANDES):
+            HISTOIRES_TUNISIE.setdefault(x["groupe"], []).append(h)
+        elif x.get("qid"):
+            HISTOIRES_MONDE.setdefault(x["qid"], []).append(h)
+
+
+_charger_histoires()

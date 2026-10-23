@@ -198,6 +198,7 @@ window.TRADUCTIONS.zh = {
 "tous droits réservés": "保留所有权利",
 "tous droits réservés.": "保留所有权利。",
 "voir sur la carte": "在地图上查看",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "此区域有 {n} 个礼拜场所（已保存的记录；实时读取暂时无响应）。",
 "{n} lieux de prière dans cette zone.": "该区域有 {n} 个礼拜场所。",
 "{n} lieux trouvés": "找到 {n} 个地点",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“一切清真寺，都是安拉的，故你们应当祈祷安拉，不要祈祷任何物。”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.zh = {
 "Écouter la récitation de cheikh Ali El Barrak": "收听谢赫阿里·巴拉克的诵读",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "请填写您的电子邮箱（必填），以便我们回复您。",
 "Écrivez votre message avant d'envoyer.": "请先填写留言再发送。",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "黄色星星：大清真寺（麦加、麦地那和阿克萨清真寺的星星更大）。在突尼斯以外，圆点的颜色表示所在国家。",
 "à confirmer": "待确认",
 "— choisir —": "— 请选择 —",
 "✔ Position confirmée": "✔ 位置已确认"

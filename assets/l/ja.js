@@ -198,6 +198,7 @@ window.TRADUCTIONS.ja = {
 "tous droits réservés": "無断転載を禁じます",
 "tous droits réservés.": "無断転載を禁じます。",
 "voir sur la carte": "地図で見る",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "この地域の礼拝所 {n} か所（保存済みの調査。リアルタイムの読み込みは現在応答していません）。",
 "{n} lieux de prière dans cette zone.": "この範囲に {n} か所の礼拝所があります。",
 "{n} lieux trouvés": "{n} か所が見つかりました",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "「また、マスジドはアッラー（だけを崇拝するため）のもの、ということ。ならば、あなた方はアッラーと並べて、何ものにも祈って（崇拝して）はならない。」",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.ja = {
 "Écouter la récitation de cheikh Ali El Barrak": "シャイフ・アリー・エル・バッラークの朗誦を聴く",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "返信のため、メールアドレスを入力してください（必須）。",
 "Écrivez votre message avant d'envoyer.": "送信する前にメッセージを入力してください。",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "黄色い星：大モスク（マッカ、マディーナ、アクサーは大きな星）。チュニジア以外では、点の色はその国を表します。",
 "à confirmer": "確認待ち",
 "— choisir —": "— 選択 —",
 "✔ Position confirmée": "✔ 位置を確認しました"

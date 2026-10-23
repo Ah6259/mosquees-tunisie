@@ -198,6 +198,7 @@ window.TRADUCTIONS.hi = {
 "tous droits réservés": "सर्वाधिकार सुरक्षित",
 "tous droits réservés.": "सर्वाधिकार सुरक्षित।",
 "voir sur la carte": "नक़्शे पर देखें",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "इस क्षेत्र में {n} इबादत की जगहें (सहेजा गया सर्वेक्षण; सीधा पढ़ना अभी जवाब नहीं दे रहा)।",
 "{n} lieux de prière dans cette zone.": "इस इलाक़े में {n} इबादतगाह।",
 "{n} lieux trouvés": "{n} जगहें मिलीं",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“और यह कि मस्जिदें केवल अल्लाह के लिए हैं। अतः अल्लाह के साथ किसी को भी मत पुकारो।”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.hi = {
 "Écouter la récitation de cheikh Ali El Barrak": "शैख़ अली अल-बर्राक़ की तिलावत सुनें",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "अपना ईमेल पता लिखें (अनिवार्य) ताकि हम आपको जवाब दे सकें।",
 "Écrivez votre message avant d'envoyer.": "भेजने से पहले अपना संदेश लिखें।",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "पीला तारा: बड़ी मस्जिद (मक्का, मदीना और अल-अक़्सा के लिए बड़ा)। ट्यूनीशिया के बाहर किसी बिंदु का रंग उसका देश बताता है।",
 "à confirmer": "पुष्टि बाक़ी",
 "— choisir —": "— चुनें —",
 "✔ Position confirmée": "✔ स्थिति की पुष्टि हो गई"

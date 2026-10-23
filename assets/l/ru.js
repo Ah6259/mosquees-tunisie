@@ -198,6 +198,7 @@ window.TRADUCTIONS.ru = {
 "tous droits réservés": "все права защищены",
 "tous droits réservés.": "все права защищены.",
 "voir sur la carte": "показать на карте",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} мест для молитвы в этом районе (сохранённые данные; онлайн-запрос сейчас не отвечает).",
 "{n} lieux de prière dans cette zone.": "Мест молитвы в этой области: {n}.",
 "{n} lieux trouvés": "Найдено мест: {n}",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“И что мечети принадлежат Аллаху, так не призывайте же наряду с Аллахом никого.”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.ru = {
 "Écouter la récitation de cheikh Ali El Barrak": "Слушать чтение шейха Али аль-Баррака",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Укажите ваш адрес e-mail (обязательно), чтобы мы могли ответить.",
 "Écrivez votre message avant d'envoyer.": "Напишите сообщение перед отправкой.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Жёлтая звезда: большая мечеть (крупнее для Мекки, Медины и аль-Аксы). За пределами Туниса цвет точки обозначает страну.",
 "à confirmer": "требует подтверждения",
 "— choisir —": "— выберите —",
 "✔ Position confirmée": "✔ Местоположение подтверждено"

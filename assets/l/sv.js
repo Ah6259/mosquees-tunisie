@@ -198,6 +198,7 @@ window.TRADUCTIONS.sv = {
 "tous droits réservés": "alla rättigheter förbehållna",
 "tous droits réservés.": "alla rättigheter förbehållna.",
 "voir sur la carte": "visa på kartan",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} böneplatser i det här området (sparad kartläggning; direktläsningen svarar inte just nu).",
 "{n} lieux de prière dans cette zone.": "{n} böneplatser i det här området.",
 "{n} lieux trouvés": "{n} platser hittades",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Moskéerna tillhör Gud, tillbe därför inte någon vid Guds sida.”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.sv = {
 "Écouter la récitation de cheikh Ali El Barrak": "Lyssna på schejk Ali El Barraks recitation",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Skriv din e-postadress (obligatorisk) så att vi kan svara dig.",
 "Écrivez votre message avant d'envoyer.": "Skriv ditt meddelande innan du skickar.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Gul stjärna: stor moské (större för Mecka, Medina och al-Aqsa). Utanför Tunisien visar en punkts färg dess land.",
 "à confirmer": "att bekräfta",
 "— choisir —": "— välj —",
 "✔ Position confirmée": "✔ Positionen bekräftad"

@@ -198,6 +198,7 @@ window.TRADUCTIONS.tl = {
 "tous droits réservés": "nakalaan ang lahat ng karapatan",
 "tous droits réservés.": "nakalaan ang lahat ng karapatan.",
 "voir sur la carte": "tingnan sa mapa",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} lugar ng pagdarasal sa lugar na ito (naka-save na talaan; hindi tumutugon ang live na pagbasa sa ngayon).",
 "{n} lieux de prière dans cette zone.": "{n} lugar ng pagdarasal sa lugar na ito.",
 "{n} lieux trouvés": "{n} lugar ang nakita",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Na ang mga masjid ay ukol kay Allāh, kaya huwag kayong manalangin kasama kay Allāh sa isa man.”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.tl = {
 "Écouter la récitation de cheikh Ali El Barrak": "Pakinggan ang pagbigkas ni Sheikh Ali El Barrak",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Isulat ang iyong email (kailangan) para makasagot kami sa iyo.",
 "Écrivez votre message avant d'envoyer.": "Isulat muna ang inyong mensahe bago ipadala.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Dilaw na bituin: malaking moske (mas malaki para sa Mecca, Medina at al-Aqsa). Sa labas ng Tunisia, ang kulay ng tuldok ay tumutukoy sa bansa nito.",
 "à confirmer": "kukumpirmahin pa",
 "— choisir —": "— pumili —",
 "✔ Position confirmée": "✔ Nakumpirma ang lokasyon"

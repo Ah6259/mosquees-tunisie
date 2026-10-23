@@ -198,6 +198,7 @@ window.TRADUCTIONS.pt = {
 "tous droits réservés": "todos os direitos reservados",
 "tous droits réservés.": "todos os direitos reservados.",
 "voir sur la carte": "ver no mapa",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} locais de oração nesta zona (levantamento guardado; a leitura em direto não responde de momento).",
 "{n} lieux de prière dans cette zone.": "{n} locais de oração nesta zona.",
 "{n} lieux trouvés": "{n} locais encontrados",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“E foi-me revelado que as mesquitas são de Allah: então, não invoqueis, com Allah, a ninguém.”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.pt = {
 "Écouter la récitation de cheikh Ali El Barrak": "Ouvir a recitação do xeque Ali El Barrak",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Escreva o seu endereço de e-mail (obrigatório) para podermos responder.",
 "Écrivez votre message avant d'envoyer.": "Escreva a sua mensagem antes de enviar.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Estrela amarela: grande mesquita (maior para Meca, Medina e al-Aqsa). Fora da Tunísia, a cor de um ponto indica o seu país.",
 "à confirmer": "por confirmar",
 "— choisir —": "— escolher —",
 "✔ Position confirmée": "✔ Posição confirmada"

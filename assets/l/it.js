@@ -198,6 +198,7 @@ window.TRADUCTIONS.it = {
 "tous droits réservés": "tutti i diritti riservati",
 "tous droits réservés.": "tutti i diritti riservati.",
 "voir sur la carte": "vedi sulla mappa",
+"{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} luoghi di preghiera in questa zona (rilevamento salvato; la lettura in diretta al momento non risponde).",
 "{n} lieux de prière dans cette zone.": "{n} luoghi di preghiera in questa zona.",
 "{n} lieux trouvés": "{n} luoghi trovati",
 "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“E in verità i masajid sono di Allāh: Non invocate nessuno all’infuori di Allāh.”",
@@ -209,6 +210,7 @@ window.TRADUCTIONS.it = {
 "Écouter la récitation de cheikh Ali El Barrak": "Ascolta la recitazione dello sceicco Ali El Barrak",
 "Écrivez votre adresse e-mail (obligatoire) pour que nous puissions vous répondre.": "Scrivete il vostro indirizzo e-mail (obbligatorio) per potervi rispondere.",
 "Écrivez votre message avant d'envoyer.": "Scrivete il vostro messaggio prima di inviare.",
+"Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Stella gialla: grande moschea (più grande per La Mecca, Medina e al-Aqsa). Fuori dalla Tunisia, il colore di un punto indica il suo paese.",
 "à confirmer": "da confermare",
 "— choisir —": "— scegliere —",
 "✔ Position confirmée": "✔ Posizione confermata"

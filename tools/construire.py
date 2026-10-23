@@ -22,7 +22,7 @@ import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
-VERSION = "20261023c"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261023d"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
 NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]      # toutes sauf fr, ar, en (écrits dans les pages)
@@ -522,7 +522,7 @@ def page_liste(lieux, pages, photos):
     ecrire("grandes-mosquees/index.html", document("grandes-mosquees/index.html",
            "Grandes mosquées et mosquées historiques de Tunisie (photos, histoire) | Mosquées en Tunisie",
            "Zitouna, Grande Mosquée de Kairouan, Sousse, Mahdia, Sfax, Testour… et toutes les mosquées historiques de Tunisie : photos, histoire, architecture et liens. جوامع تونس الكبرى والتاريخية.",
-           corps, tete=[f"trad/{page}.js"], bas=["assets/fiche.js", "assets/recherche.js", "assets/pages.js"]))
+           corps, tete=[f"trad/{page}.js"], bas=["assets/fiche.js", "donnees/monde_carte.js", "assets/recherche.js", "assets/pages.js"]))
     return len(autres)
 
 
@@ -608,9 +608,10 @@ def page_role(credits):
 def histoire_html(h, page, niveau="h3"):
     cle, nature, sources = h
     src = " · ".join(f'<a href="{att(u)}" target="_blank" rel="noopener">{esc(t)}</a>' for t, u in sources)
-    return (f'<article class="hi-histoire"><p class="hi-nature hi-{nature}">{X("histoires", "n_" + nature, page)}</p>'
-            f'<{niveau}>{X("histoires", cle + "_t", page)}</{niveau}><p>{X("histoires", cle + "_r", page)}</p>'
-            f'<p class="hi-source">{X("histoires", "source", page)} {src}</p></article>')
+    # repliée : un clic sur le titre l'ouvre pour la lire (demande d'Ahmed du 23/10/2026)
+    return (f'<details class="hi-histoire"><summary><span class="hi-nature hi-{nature}">{X("histoires", "n_" + nature, page)}</span>'
+            f'<span class="hi-titre-h">{X("histoires", cle + "_t", page)}</span></summary><div class="hi-corps"><p>{X("histoires", cle + "_r", page)}</p>'
+            f'<p class="hi-source">{X("histoires", "source", page)} {src}</p></div></details>')
 
 
 def section_histoires(slug, page, r="../../"):
@@ -625,12 +626,28 @@ def section_histoires(slug, page, r="../../"):
 
 def page_histoires():
     nom, page, r = "histoires", "p-histoires", "../"
-    saintes = "".join(f'<section class="carte hi-groupe" id="{g[2:]}"><h2>{X(nom, g, page)}</h2>'
-                      + "".join(histoire_html(h, page) for h in hs) + "</section>" for g, hs in PN.HISTOIRES_SAINTES)
+    ms = {}
+    src = os.path.join(RACINE, "donnees", "monde_grandes.json")
+    if os.path.exists(src):
+        ms = {m["q"]: m for m in json.load(open(src, encoding="utf-8"))["mosquees"]}
+
+    def titre_g(g):       # titre du groupe, lien vers la page de la mosquée quand elle existe
+        q = PN.QID_GROUPES.get(g)
+        return f'<a href="{r}{chemin_monde(ms[q])}">{X(nom, g, page)}</a>' if q in ms else X(nom, g, page)
+    saintes = "".join(f'<section class="carte hi-groupe" id="{g[2:]}"><h2>{titre_g(g)}</h2>'
+                      + "".join(histoire_html(h, page) for h in PN.histoires_de(PN.QID_GROUPES[g]) if True) + "</section>"
+                      for g, _ in PN.HISTOIRES_SAINTES)
+    deja = set(PN.QID_GROUPES.values())
+    autres_q = [q for q in PN.HISTOIRES_MONDE if q not in deja]
+    autres_q.sort(key=lambda q: -(ms.get(q, {}).get("n", 0)))
+    monde = "".join(f'<section class="carte hi-groupe" id="{q}"><h2>'
+                    + (f'<a href="{r}{chemin_monde(ms[q])}">{noms_spans(ms[q]["noms"])}</a>' if q in ms else q) + "</h2>"
+                    + "".join(histoire_html(h, page) for h in PN.HISTOIRES_MONDE[q]) + "</section>" for q in autres_q)
     tunisie = "".join(f'<section class="carte hi-groupe" id="{g["slug"]}"><h2><a href="{r}mosquee/{g["slug"]}/">{S(g["nom"], page)}</a></h2>'
                       + "".join(histoire_html(h, page) for h in PN.HISTOIRES_TUNISIE[g["slug"]]) + "</section>"
                       for g in GRANDES if g["slug"] in PN.HISTOIRES_TUNISIE)
     sommaire = ("".join(f'<li><a href="#{g[2:]}">{X(nom, g, page)}</a></li>' for g, _ in PN.HISTOIRES_SAINTES)
+                + "".join(f'<li><a class="mq-noms" href="#{q}">{noms_spans(ms[q]["noms"]) if q in ms else q}</a></li>' for q in autres_q)
                 + "".join(f'<li><a href="#{g["slug"]}">{S(g["nom"], page)}</a></li>' for g in GRANDES if g["slug"] in PN.HISTOIRES_TUNISIE))
     corps = f"""
 <section class="hero">
@@ -644,13 +661,15 @@ def page_histoires():
   <nav class="carte pg-sommaire"><ol>{sommaire}</ol></nav>
   <h2 class="hi-titre">{X(nom, "titre_saintes", page)}</h2>
   {saintes}
+  <h2 class="hi-titre">{X(nom, "titre_monde_h", page)}</h2>
+  {monde}
   <h2 class="hi-titre">{X(nom, "titre_tunisie", page)}</h2>
   {tunisie}
   <section class="carte"><p class="aide">{X(nom, "note", page)}</p>
     <ul class="mq-liens"><li><a href="{r}role-de-la-mosquee/">{X("role", "titre", page)}</a></li>
     <li><a href="{r}construire-une-mosquee/">{X("role", "lien_construire", page)}</a></li></ul></section>
 </main>"""
-    return ecrire_page_libre("histoires-des-mosquees/", nom, corps, page)
+    return ecrire_page_libre("histoires-des-mosquees/", nom, corps, page, bas=("assets/fiche.js", "assets/pages.js"))
 
 
 def page_construire():
@@ -699,6 +718,76 @@ def nl_spans(d, classe):
     return f'<span class="{classe}">' + "".join(f'<span class="nl" data-nl="{l}" lang="{l}">{esc(d[l])}</span>' for l in LANGUES if d.get(l)) + "</span>"
 
 
+def chemin_monde(m):
+    """Adresse de la page d'une grande mosquée du monde (une grande mosquée de Tunisie garde SA page)."""
+    tn = {g["qid"]: "mosquee/" + g["slug"] + "/" for g in GRANDES}
+    if m["q"] in tn:
+        return tn[m["q"]]
+    return "mosquee-monde/" + ascii_slug(m["noms"].get("en") or m["noms"].get("fr") or m["q"]) + "-" + m["q"].lower() + "/"
+
+
+def page_mosquee_monde(m, r="../../"):
+    """Page d'une grande mosquée du monde (demande d'Ahmed du 23/10/2026 : « la carte de Médine, de La Mecque, d'al-Aqsa est
+    vide ») : photo, nom dans la langue, pays, année, résumé Wikipédia de la langue, histoires vérifiées, carte, liens."""
+    chemin = chemin_monde(m)
+    page = "m-" + m["q"]
+    noms = m["noms"]
+    nom = noms.get("fr") or noms.get("en")
+    ph = m.get("photo")
+    photo = ""
+    if ph:
+        img = f'{r}{ph["fichier"]}' if ph.get("fichier") else ph["url"]
+        photo = (f'<figure class="mq-photo mq-photo-une"><span class="cadre-photo"><img src="{att(img)}" alt="{att(nom)}" loading="eager"></span>'
+                 f'<figcaption>{U("Photo", "صورة", "Photo")} : <a href="{att(ph["page"])}" target="_blank" rel="noopener">{esc(ph["auteur"])}</a>, {esc(ph["licence"])} — Wikimedia Commons</figcaption></figure>')
+    an = m.get("an")
+    an_txt = (f'{-an} {X("tri", "av_jc", page)}' if an < 0 else str(an)) if an is not None else X("tri", "date_inconnue", page)
+    resumes = "".join(
+        f'<blockquote class="mq-resume" data-rl="{lg}" lang="{lg}" dir="{"rtl" if lg in ("ar", "ur") else "ltr"}"><p>{esc(txt)}</p>'
+        f'<footer>{U("Extrait de Wikipédia", "مقتطف من ويكيبيديا", "Extract from Wikipedia")} (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank" rel="license noopener">CC BY-SA 4.0</a>) — '
+        f'<a href="https://{lg}.wikipedia.org/wiki/{att(m["wiki"][lg].replace(" ", "_"))}" target="_blank" rel="noopener">{esc(m["wiki"][lg])}</a></footer></blockquote>'
+        for lg, txt in ((x, m["resume"][x]) for x in LANGUES if x in m.get("resume", {})))
+    hs = PN.histoires_de(m["q"])
+    histoires = ""
+    if hs:
+        histoires = (f'<section class="carte" id="histoires"><h2>{X("histoires", "section_page", page)}</h2>'
+                     + "".join(histoire_html(h, page) for h in hs)
+                     + f'<p><a href="{r}histoires-des-mosquees/">{X("histoires", "toutes", page)} →</a></p></section>')
+    pos = m.get("pos")
+    corps = f"""
+<section class="hero mq-hero-page">
+  <div class="wrap">
+    <p class="fil"><a href="{r}">{U("Accueil", "الرئيسية", "Home")}</a> › <a href="{r}grandes-mosquees-du-monde/">{X("tri", "monde_menu", page)}</a></p>
+    <h1 class="mq-noms">{noms_spans(noms)}</h1>
+    <p class="intro mq-sous-titre">{nl_spans(m["pays"], "mq-noms") if m.get("pays") else ""} · <span class="mo-an">{an_txt}</span></p>
+  </div>
+</section>
+<main class="wrap chevauche">
+  <section class="carte mq-une">{photo}
+    {f'<div class="mq-actions"><a class="btn-principal" href="https://www.google.com/maps/dir/?api=1&amp;destination={pos[0]},{pos[1]}" target="_blank" rel="noopener">{U("Itinéraire", "الطريق", "Directions")}</a> <a class="chipbtn" href="{r}?ll={pos[0]},{pos[1]}#carte">{X("recherche", "voir_carte", page)}</a></div>' if pos else ""}
+  </section>
+  {f'<section class="carte" id="presentation"><h2>{U("Présentation", "تقديم", "Overview")}</h2><p class="mq-resume-note" id="mq-resume-note"></p>{resumes}</section>' if resumes else ""}
+  {histoires}
+  {f'<section class="carte" id="carte-lieu"><h2>{U("Sur la carte", "على الخريطة", "On the map")}</h2><div class="mq-mini" id="mq-mini" data-lat="{pos[0]}" data-lon="{pos[1]}" role="region" aria-label="{att(nom)}"></div></section>' if pos else ""}
+  <section class="carte" id="documents"><h2>{U("Documents et liens", "وثائق وروابط", "Documents and links")}</h2><ul class="mq-liens">{liens_wiki(m.get("wiki", {}))}
+    <li><a href="https://www.wikidata.org/wiki/{m["q"]}" target="_blank" rel="noopener">Wikidata — {m["q"]}</a></li></ul>
+    <p class="aide">{X("tri", "monde_note", page)}</p>
+    <p><a href="{r}grandes-mosquees-du-monde/">{X("tri", "monde_menu", page)} →</a></p></section>
+</main>"""
+    INDEX[chemin] = ["fr"] + [x for x in LANGUES[1:] if noms.get(x) or m.get("resume", {}).get(x)]
+    META[chemin] = {}
+    for x in LANGUES:
+        nx = noms.get(x) or noms.get("en") or nom
+        px = (m.get("pays") or {}).get(x) or (m.get("pays") or {}).get("en", "")
+        dx = (m.get("resume", {}).get(x) or m.get("desc", {}).get(x) or m.get("resume", {}).get("en") or nx)
+        META[chemin][x] = (f"{nx}{(' — ' + px) if px else ''} | {PL.SITE[x]}", re.sub(r"\s+", " ", dx)[:200])
+    CLE_TRAD[chemin] = page
+    jsonld = [{"@context": "https://schema.org", "@type": "Mosque", "name": nom, "url": BASE + chemin, "sameAs": [f"https://www.wikidata.org/wiki/{m['q']}"],
+               **({"geo": {"@type": "GeoCoordinates", "latitude": pos[0], "longitude": pos[1]}} if pos else {})}]
+    ecrire(chemin + "index.html", document(chemin + "index.html", META[chemin]["fr"][0], META[chemin]["fr"][1], corps,
+                                           tete=[f"trad/{page}.js"], bas=["assets/fiche.js", "assets/pages.js"], jsonld=jsonld))
+    return chemin
+
+
 def page_monde():
     """grandes-mosquees-du-monde/ (demande d'Ahmed du 23/10/2026) : donnees/monde_grandes.json (tools/monde_grandes.py), tri par
     date, nom ou notoriété ; description (résumé Wikipédia) chargée seulement à l'ouverture, depuis donnees/monde/<langue>.json."""
@@ -715,8 +804,7 @@ def page_monde():
         an = m.get("an")
         an_txt = (f'{-an} {X(nom, "av_jc", page)}' if an < 0 else str(an)) if an is not None else X(nom, "date_inconnue", page)
         liens = []
-        if m["q"] in tunisie:
-            liens.append(f'<a class="btn-principal" href="{r}mosquee/{tunisie[m["q"]]}/">{X("recherche", "notre_page", page)}</a>')
+        liens.append(f'<a class="btn-principal" href="{r}{chemin_monde(m)}">{X("recherche", "notre_page", page)}</a>')
         if m.get("pos"):
             liens.append(f'<a class="chipbtn" href="{r}?ll={m["pos"][0]},{m["pos"][1]}#carte">{X("recherche", "voir_carte", page)}</a>')
         cartes.append(
@@ -741,6 +829,22 @@ def page_monde():
             if e:
                 out[m["q"]] = e
         ecrire(f"donnees/monde/{l}.json", json.dumps(out, ensure_ascii=False, separators=(",", ":")) + "\n")
+    # pages des grandes mosquées du monde + leurs points sur la carte de l'accueil (toujours visibles, sans serveur extérieur)
+    pages_m = [page_mosquee_monde(m) for m in ms if m["q"] not in tunisie]
+    import shutil
+    garder_m = {c.split("/")[1] for c in pages_m}
+    for n in os.listdir(os.path.join(RACINE, "mosquee-monde")):      # mosquée sortie de la liste : sa page est retirée
+        if n not in garder_m:
+            shutil.rmtree(os.path.join(RACINE, "mosquee-monde", n))
+    points = [{"i": "wd-" + m["q"], "a": m["pos"][0], "o": m["pos"][1], "n": {k: v for k, v in m["noms"].items()},
+               "pn": m.get("pays", {}), "p": chemin_monde(m), "an": m.get("an"), "f": (m.get("photo") or {}).get("fichier", ""), "k": m["n"],
+               "d": {l: m["desc"][l] for l in ("fr", "en", "ar") if m.get("desc", {}).get(l)}}
+              for m in ms if m.get("pos")]
+    ecrire("donnees/monde_carte.js", "// GÉNÉRÉ par tools/construire.py (donnees/monde_grandes.json) : grandes mosquées du monde, toujours sur la carte\n"
+           "window.MOSQUEES_MONDE_GRANDES = " + json.dumps(points, ensure_ascii=False, separators=(",", ":")) + ";\n"
+           "// les 15 grandes mosquées de Tunisie (étoile jaune sur la carte) et les trois mosquées saintes (étoile plus grande)\n"
+           "window.MOSQUEES_GRANDES_TN = " + json.dumps(["mosquee/" + g["slug"] + "/" for g in GRANDES]) + ";\n"
+           "window.MOSQUEES_SAINTES = [\"wd-Q428858\", \"wd-Q486080\", \"wd-Q12192963\"];\n")
     corps = f"""
 <section class="hero">
   <div class="wrap">
@@ -763,7 +867,7 @@ def page_monde():
     META[chemin] = {x: (f"{t[x]} | {PL.SITE[x]}", dd[x][:200]) for x in LANGUES}
     ecrire(chemin + "index.html", document(chemin + "index.html", META[chemin]["fr"][0], META[chemin]["fr"][1], corps,
                                            bas=["assets/fiche.js", "assets/pages.js"]))
-    return [chemin]
+    return [chemin] + pages_m
 
 
 def PN_construire(credits):
