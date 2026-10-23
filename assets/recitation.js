@@ -167,6 +167,7 @@
       const v = document.querySelector("video.video-lecteur");
       if (v) { brancherVideo(v); return; }                                      // page vidéo : récitation jouée avec la vidéo
       if (new URLSearchParams(location.search).get("son") === "0") return;     // lien sans écran d'entrée (captures, partage)
+      if (navigator.webdriver) return;     // navigateur piloté (contrôle téléphone commun, 23/10/2026) : il doit voir la page, pas l'écran d'entrée
       const c = choix();
       if (c === null) ecran();
       else if (c === "oui") lancer();
