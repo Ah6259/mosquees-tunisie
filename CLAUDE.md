@@ -90,3 +90,25 @@
   enregistrer le `sitemap.xml` refait (ses dates `lastmod` viennent de VERSION) -> l'étape « Pages à jour » voyait une différence à
   chaque envoi. Réparé en enregistrant le sitemap refait. **Règle : après tout changement de VERSION, lancer `python tools/construire.py`
   et enregistrer TOUS les fichiers changés ; après chaque envoi, regarder le résultat du robot Tests.**
+
+- **23/10/2026 — demandes d'Ahmed (même session)** :
+  - **Textes ajoutés en 21 langues : `tools/textes/`** (`tools/textes.py`) : `base/<nom>.json` = fr, ar, en (le français est la
+    référence) ; `<langue>.json` = « nom/clé » → traduction (18 langues). La construction S'ARRÊTE si une traduction manque
+    (`python tools/textes.py` liste les manques ; `MOSQUEES_BROUILLON=1` = brouillon en anglais pour regarder, JAMAIS publié).
+    Changer un texte français = retirer sa clé des 18 fichiers pour la faire retraduire. Plan des pages (photos, vidéos, histoires,
+    organismes, sources) : `tools/pages_nouvelles.py`. Crédits des photos : `python tools/photos_pages.py` → `donnees/photos_pages.json`.
+  - Pages : `role-de-la-mosquee/` (6 époques, 14 photos Commons, 2 vidéos chargées au clic par `assets/pages.js`),
+    `histoires-des-mosquees/` (chaque récit a sa NATURE : Coran, hadith authentique, récit faible, fait, tradition, légende,
+    croyance sans fondement — Tamim ad-Dari = récit faible, « Tu as illuminé l'islam »), `construire-une-mosquee/` (hadiths en arabe
+    + référence + degré ; organismes vérifiés + avertissement ; démarche tunisienne SICAD), `grandes-mosquees-du-monde/`
+    (`python tools/monde_grandes.py` → `donnees/monde_grandes.json`, relancé par le robot trimestriel ; résumés Wikipédia par
+    langue dans `donnees/monde/<langue>.json`, chargés à l'ouverture d'une description). Menu : 3 entrées de plus.
+  - Partie « Histoires et récits » sur les grandes mosquées (`HISTOIRES_TUNISIE`).
+  - Recherche des grandes mosquées (Tunisie + monde, Wikidata en direct) sur `grandes-mosquees/` (`assets/recherche.js`) ;
+    l'accueil accepte `?ll=lat,lon` (carte centrée sur une mosquée du monde).
+  - « Trier » (ancienne / récente / A→Z / connue) sur les listes de grandes mosquées (`assets/pages.js`, `data-an` ;
+    années des 15 grandes : `ANNEES_GRANDES`).
+  - Descriptions écrites par nous (`descriptions.json`, clé = QID ; sources dans `DESCRIPTIONS`) : les 19 mosquées de Djerba
+    et les 15 autres pages sans texte ; encadré « Les mosquées de Djerba » (UNESCO 2023) sur chaque fiche de l'île.
+  - **Coran : jamais traduit par nous.** Verset 72:18 en haut de l'accueil (arabe + QuranEnc dans la langue, mêmes traducteurs
+    que 9:18) + lien vers le Coran de The Message (`#quran`, dans la langue du visiteur) ; versets de « Construire » : QuranEnc.

@@ -6,6 +6,9 @@ const MAJ = "09/10/2026";   // date de création ; les lieux sont datés par le 
 const MENU_SITE = [
   ["", "Carte", "الخريطة", "Map"],
   ["grandes-mosquees/", "Grandes mosquées", "الجوامع الكبرى", "Great mosques"],
+  ["role-de-la-mosquee/", "Rôle de la mosquée", "دور المسجد", "Role of the mosque"],          // pages du 23/10/2026 (demande d'Ahmed)
+  ["histoires-des-mosquees/", "Histoires des mosquées", "قصص المساجد", "Stories of the mosques"],
+  ["construire-une-mosquee/", "Construire une mosquée", "بناء مسجد", "Build a mosque"],
   ["#signaler", "Signaler un lieu", "أضف مكانًا", "Report a place"],
   ["a-propos/", "À propos", "من نحن", "About"]
 ];
@@ -109,7 +112,7 @@ function sitesProches(l) {
             `<li><button type="button" data-lang="${l}" lang="${l}" dir="${DROITE.includes(l) ? "rtl" : "ltr"}" aria-pressed="${html.lang === l}">${n}</button></li>`).join("")}</ul></div>
         </div>
       </div>
-      <nav class="menu" aria-label="${T("Rubriques", "الأبواب", "Sections")}"><div class="wrap">${[...MENU_SITE.slice(0, 3), ...sitesProches(html.lang), ...MENU_SITE.slice(3)].map(([h, fr, ar, en, logo, compteur]) => logo
+      <nav class="menu" aria-label="${T("Rubriques", "الأبواب", "Sections")}"><div class="wrap">${[...MENU_SITE.slice(0, 6), ...sitesProches(html.lang), ...MENU_SITE.slice(6)].map(([h, fr, ar, en, logo, compteur]) => logo
         ? `<a class="menu-annuaire" href="${h}" target="_blank" rel="noopener" data-compteur="${compteur}"><img src="${racine}assets/${logo}" alt="" width="20" height="20">${T(fr, ar, en)}</a>`
         : `<a href="${rp}${h || "./"}"${(h && !h.startsWith("#") ? ici.endsWith("/" + h) : (!h && !rp)) ? ' aria-current="page"' : ""}>${T(fr, ar, en)}</a>`).join("")}</div></nav>`
       + (proposee && proposee !== LANGUE_ADRESSE ? `<p class="autre-langue"><a href="${adresse(proposee)}" data-lang="${proposee}" lang="${proposee}" dir="${DROITE.includes(proposee) ? "rtl" : "ltr"}" hreflang="${proposee}">${LANGUES.find(x => x[0] === proposee)[2]} →</a></p>` : "");
@@ -120,6 +123,9 @@ function sitesProches(l) {
         <nav>
           <a href="${rp || "./"}">${T("Carte des mosquées", "خريطة المساجد", "Map of mosques")}</a>
           <a href="${rp}grandes-mosquees/">${T("Grandes mosquées et mosquées historiques", "الجوامع الكبرى والمساجد التاريخية", "Great and historic mosques")}</a>
+          <a href="${rp}role-de-la-mosquee/">${T("Rôle de la mosquée", "دور المسجد", "Role of the mosque")}</a>
+          <a href="${rp}histoires-des-mosquees/">${T("Histoires des mosquées", "قصص المساجد", "Stories of the mosques")}</a>
+          <a href="${rp}construire-une-mosquee/">${T("Construire une mosquée", "بناء مسجد", "Build a mosque")}</a>
           <a href="${rp}#signaler">${T("Signaler une mosquée ou une salle de prière", "أضف مسجدًا أو مصلّى", "Report a mosque or prayer room")}</a>
           <a href="${rp}a-propos/">${T("À propos et méthode", "من نحن والمنهجية", "About and method")}</a>
           <a href="${rp}#avis">${T("Votre avis", "رأيك", "Your feedback")}</a>
@@ -135,6 +141,8 @@ function sitesProches(l) {
                "Places: © OpenStreetMap contributors (ODbL), Wikidata and site visitors. Wikipedia texts under the CC BY-SA 4.0 licence. Photos: Wikimedia Commons —")} <a href="${rp}a-propos/#photos">${T("crédits", "الحقوق", "credits")}</a>.</p>
         <p>© 2026 Mosquées en Tunisie — ${T("tous droits réservés.", "جميع الحقوق محفوظة.", "all rights reserved.")}</p>
       </div>`;
+    // lien « Lire le Coran sur notre site The Message » (accueil, 23/10/2026) : dans la langue du visiteur (sinon anglais), partie Coran
+    document.querySelectorAll("[data-lien-coran]").forEach(x => { x.href = sitesProches(html.lang)[0][0] + "#quran"; });
     // menu défilant (téléphone) : la rubrique de la page reste visible
     const actuel = document.querySelector('.menu [aria-current="page"]');
     if (actuel && actuel.scrollIntoView) try { actuel.scrollIntoView({ block: "nearest", inline: "center" }); } catch (x) {}

@@ -1,0 +1,312 @@
+{
+ "menu": {
+  "fr": "Rôle de la mosquée",
+  "ar": "دور المسجد",
+  "en": "Role of the mosque"
+ },
+ "titre": {
+  "fr": "Le rôle de la mosquée en islam, du temps du Prophète ﷺ à aujourd'hui",
+  "ar": "دور المسجد في الإسلام، من عهد النبي ﷺ إلى اليوم",
+  "en": "The role of the mosque in Islam, from the time of the Prophet ﷺ to today"
+ },
+ "intro": {
+  "fr": "La mosquée n'a jamais été seulement un lieu de prière. Depuis la première mosquée de Médine, elle est aussi une école, un lieu de conseil, d'accueil et d'entraide. Voici comment ce rôle a évolué à travers le temps.",
+  "ar": "لم يكن المسجد يومًا مكانًا للصلاة فقط. فمنذ أول مسجد في المدينة المنورة، كان أيضًا مدرسة ومكانًا للشورى والاستقبال والتكافل. إليك كيف تطوّر هذا الدور عبر الزمن.",
+  "en": "The mosque has never been only a place of prayer. Since the first mosque in Medina, it has also been a school, a place for counsel, welcome and mutual help. Here is how this role has changed over time."
+ },
+ "meta_titre": {
+  "fr": "Le rôle de la mosquée en islam : histoire, du Prophète ﷺ à aujourd'hui",
+  "ar": "دور المسجد في الإسلام: تاريخه من عهد النبي ﷺ إلى اليوم",
+  "en": "The role of the mosque in Islam: its history from the Prophet ﷺ to today"
+ },
+ "sommaire": {
+  "fr": "Les étapes",
+  "ar": "المراحل",
+  "en": "The stages"
+ },
+ "e1_date": {
+  "fr": "622-632",
+  "ar": "622-632",
+  "en": "622-632"
+ },
+ "e1_titre": {
+  "fr": "Au temps du Prophète ﷺ : la mosquée, cœur de Médine",
+  "ar": "في عهد النبي ﷺ: المسجد قلب المدينة",
+  "en": "In the time of the Prophet ﷺ: the mosque, heart of Medina"
+ },
+ "e1_p1": {
+  "fr": "En arrivant à Médine en 622, le Prophète ﷺ fait d'abord construire une mosquée : à Quba, puis au centre de la ville. Il y travaille lui-même et porte les briques avec ses compagnons. Le bâtiment est simple : des murs de briques crues, des troncs de palmiers pour colonnes, un toit de palmes.",
+  "ar": "لمّا وصل النبي ﷺ إلى المدينة سنة 622، بدأ ببناء مسجد: في قباء، ثم في وسط المدينة. وعمل فيه بنفسه وحمل اللَّبِن مع أصحابه. وكان البناء بسيطًا: جدران من اللَّبِن، وجذوع النخل أعمدة، وسقف من الجريد.",
+  "en": "On arriving in Medina in 622, the Prophet ﷺ first had a mosque built: at Quba, then in the centre of the town. He worked on it himself and carried bricks with his companions. The building was simple: mud-brick walls, palm trunks as columns, a roof of palm leaves."
+ },
+ "e1_p2": {
+  "fr": "Dans cette mosquée, la vie de toute la communauté se rassemble :",
+  "ar": "في هذا المسجد اجتمعت حياة الأمة كلها:",
+  "en": "In this mosque, the life of the whole community came together:"
+ },
+ "e1_l1": {
+  "fr": "la prière, cinq fois par jour, et le sermon du vendredi ;",
+  "ar": "الصلاة خمس مرات في اليوم، وخطبة الجمعة؛",
+  "en": "prayer, five times a day, and the Friday sermon;"
+ },
+ "e1_l2": {
+  "fr": "l'enseignement : on y apprend le Coran et la religion, en cercle autour du Prophète ﷺ ;",
+  "ar": "التعليم: يُتعلَّم فيه القرآن والدين في حلقات حول النبي ﷺ؛",
+  "en": "teaching: the Quran and the religion were learned there, in circles around the Prophet ﷺ;"
+ },
+ "e1_l3": {
+  "fr": "un abri : les compagnons pauvres et sans famille, les « gens de la Suffa », vivent sous un auvent de la mosquée ;",
+  "ar": "المأوى: الصحابة الفقراء ومن لا أهل لهم، « أهل الصُّفّة »، يسكنون تحت سقيفة في المسجد؛",
+  "en": "shelter: poor companions without family, the “people of the Suffa”, lived under a shelter of the mosque;"
+ },
+ "e1_l4": {
+  "fr": "le conseil et les décisions : le Prophète ﷺ y consulte ses compagnons, y reçoit les délégations des tribus et des pays voisins ;",
+  "ar": "الشورى والقرار: يستشير فيه النبي ﷺ أصحابه، ويستقبل فيه وفود القبائل والبلدان المجاورة؛",
+  "en": "counsel and decisions: the Prophet ﷺ consulted his companions there and received the delegations of tribes and neighbouring lands;"
+ },
+ "e1_l5": {
+  "fr": "l'entraide : l'aumône y est apportée et partagée entre ceux qui en ont besoin ;",
+  "ar": "التكافل: تُجمع فيه الصدقات وتوزَّع على المحتاجين؛",
+  "en": "mutual help: alms were brought there and shared among those in need;"
+ },
+ "e1_l6": {
+  "fr": "les soins : après la bataille du Fossé (627), une tente est dressée dans la mosquée pour soigner Sa'd ibn Mu'adh, blessé (rapporté par al-Bukhari) ; selon le biographe Ibn Ishaq, c'était la tente de Rufayda, une femme qui soignait les blessés.",
+  "ar": "العلاج: بعد غزوة الخندق (627) ضُربت خيمة في المسجد لعلاج سعد بن معاذ الجريح (رواه البخاري)؛ وذكر ابن إسحاق أنها كانت خيمة رُفَيدة، امرأة كانت تداوي الجرحى.",
+  "en": "care: after the Battle of the Trench (627), a tent was set up in the mosque to treat the wounded Sa'd ibn Mu'adh (reported by al-Bukhari); according to the biographer Ibn Ishaq, it was the tent of Rufayda, a woman who cared for the wounded."
+ },
+ "e2_date": {
+  "fr": "632-750",
+  "ar": "632-750",
+  "en": "632-750"
+ },
+ "e2_titre": {
+  "fr": "Les califes : chaque ville naît autour de sa grande mosquée",
+  "ar": "عهد الخلفاء: كل مدينة تنشأ حول جامعها",
+  "en": "The caliphs: each town grows around its great mosque"
+ },
+ "e2_p1": {
+  "fr": "Les villes nouvelles se construisent autour de leur grande mosquée : Koufa et Bassora en Irak, Fustat en Égypte (mosquée d'Amr ibn al-As, 641-642), Kairouan en Tunisie (670). Le gouverneur y fait le sermon du vendredi, le juge (cadi) y rend la justice, les nouvelles et les décisions y sont annoncées à tous.",
+  "ar": "تُبنى المدن الجديدة حول جوامعها: الكوفة والبصرة في العراق، والفسطاط في مصر (جامع عمرو بن العاص، 641-642)، والقيروان في تونس (670). فيه يخطب الوالي يوم الجمعة، ويقضي القاضي بين الناس، وتُعلَن الأخبار والقرارات للجميع.",
+  "en": "New towns were built around their great mosque: Kufa and Basra in Iraq, Fustat in Egypt (Mosque of Amr ibn al-As, 641-642), Kairouan in Tunisia (670). The governor gave the Friday sermon there, the judge (qadi) delivered justice there, and news and decisions were announced to everyone."
+ },
+ "e2_p2": {
+  "fr": "Sous les Omeyyades, de grandes mosquées comme celle de Damas (705-715) montrent aussi la beauté et la puissance du nouvel État : mosaïques, cour immense, minarets.",
+  "ar": "وفي العهد الأموي، أظهرت جوامع كبرى مثل جامع دمشق (705-715) جمال الدولة الجديدة وقوّتها: فسيفساء وصحن واسع ومآذن.",
+  "en": "Under the Umayyads, great mosques such as that of Damascus (705-715) also displayed the beauty and power of the new state: mosaics, a vast courtyard, minarets."
+ },
+ "e3_date": {
+  "fr": "IXe-XIIIe siècle",
+  "ar": "القرن التاسع - الثالث عشر",
+  "en": "9th-13th century"
+ },
+ "e3_titre": {
+  "fr": "Mosquées-universités et bibliothèques",
+  "ar": "الجوامع الجامعات والمكتبات",
+  "en": "Mosque-universities and libraries"
+ },
+ "e3_p1": {
+  "fr": "Les cercles d'étude (halaqa) autour d'un savant deviennent de véritables écoles. Fatima al-Fihriya fonde la mosquée al-Qarawiyyin à Fès en 859 ; al-Azhar ouvre au Caire en 970-972 ; à Tunis, la Zitouna forme pendant des siècles juges, savants et lettrés, et à Kairouan la Grande Mosquée est un grand centre du droit malikite.",
+  "ar": "تحوّلت حلقات العلم حول العلماء إلى مدارس حقيقية. أسّست فاطمة الفهرية جامع القرويين بفاس سنة 859، وافتُتح الأزهر بالقاهرة سنة 970-972، وفي تونس كوّن جامع الزيتونة طوال قرون القضاة والعلماء والأدباء، وكان جامع القيروان مركزًا كبيرًا للفقه المالكي.",
+  "en": "Study circles (halaqa) around a scholar became real schools. Fatima al-Fihriya founded the al-Qarawiyyin mosque in Fez in 859; al-Azhar opened in Cairo in 970-972; in Tunis, the Zitouna trained judges, scholars and men of letters for centuries, and in Kairouan the Great Mosque was a major centre of Maliki law."
+ },
+ "e3_p2": {
+  "fr": "On y enseigne le Coran, le hadith et le droit, mais aussi la langue arabe, la grammaire, le calcul et l'astronomie, utile pour l'heure des prières et la direction de La Mecque. Les mosquées ont leurs bibliothèques, enrichies par des dons de livres faits en waqf (bien donné pour toujours au bien commun).",
+  "ar": "يُدرَّس فيها القرآن والحديث والفقه، وكذلك اللغة العربية والنحو والحساب وعلم الفلك النافع لمعرفة أوقات الصلاة واتجاه القبلة. وللجوامع مكتباتها، تُثريها كتب موقوفة (الوقف: مال يُحبَس للنفع العام على الدوام).",
+  "en": "The Quran, hadith and law were taught there, but also the Arabic language, grammar, arithmetic and astronomy, useful for prayer times and the direction of Mecca. Mosques had their libraries, enriched by gifts of books made as waqf (property given for ever to the common good)."
+ },
+ "e4_date": {
+  "fr": "XIIe-XVIIIe siècle",
+  "ar": "القرن الثاني عشر - الثامن عشر",
+  "en": "12th-18th century"
+ },
+ "e4_titre": {
+  "fr": "Les grands ensembles : mosquée, école, hôpital, cuisine des pauvres",
+  "ar": "المجمّعات الكبرى: مسجد ومدرسة ومستشفى ومطعم للفقراء",
+  "en": "The great complexes: mosque, school, hospital, kitchen for the poor"
+ },
+ "e4_p1": {
+  "fr": "Autour de la mosquée, des fondations pieuses (waqf) financent des écoles (madrasas), des hôpitaux (bimaristans), des fontaines, des bains et des cuisines pour les pauvres. À Istanbul, l'ensemble de la Süleymaniye (1550-1557, architecte Sinan) réunit la mosquée, plusieurs écoles, un hôpital, des bains, un caravansérail et une cuisine publique (imaret) qui nourrissait chaque jour étudiants, voyageurs et pauvres.",
+  "ar": "حول المسجد، تموّل الأوقاف المدارس والبيمارستانات (المستشفيات) والسبل والحمّامات ومطاعم الفقراء. وفي إسطنبول يجمع مجمّع السليمانية (1550-1557، المعماري سنان) المسجد وعدة مدارس ومستشفى وحمّامًا وخانًا للمسافرين ومطعمًا عامًا (عِمارة) يُطعم كل يوم الطلبة والمسافرين والفقراء.",
+  "en": "Around the mosque, pious foundations (waqf) funded schools (madrasas), hospitals (bimaristans), fountains, baths and kitchens for the poor. In Istanbul, the Süleymaniye complex (1550-1557, architect Sinan) brought together the mosque, several schools, a hospital, baths, a caravanserai and a public kitchen (imaret) that fed students, travellers and the poor every day."
+ },
+ "e4_p2": {
+  "fr": "En Tunisie aussi, mosquées, médersas et zaouïas accueillent étudiants et voyageurs ; les grandes mosquées de Tunis sont entourées de souks, de bibliothèques et de fondations qui les font vivre.",
+  "ar": "وفي تونس أيضًا، تستقبل الجوامع والمدارس والزوايا الطلبة والمسافرين، وتحيط بجوامع تونس الكبرى الأسواق والمكتبات والأوقاف التي تُحييها.",
+  "en": "In Tunisia too, mosques, madrasas and zawiyas welcomed students and travellers; the great mosques of Tunis are surrounded by souks, libraries and foundations that keep them alive."
+ },
+ "e5_date": {
+  "fr": "XIXe-XXe siècle",
+  "ar": "القرن التاسع عشر - العشرون",
+  "en": "19th-20th century"
+ },
+ "e5_titre": {
+  "fr": "L'école coranique et les grands savants",
+  "ar": "الكُتّاب وكبار العلماء",
+  "en": "The Quranic school and the great scholars"
+ },
+ "e5_p1": {
+  "fr": "Dans chaque quartier, l'école coranique (le kouttab), souvent près de la mosquée, apprend aux enfants à lire, à écrire et à réciter le Coran, sur des planchettes de bois. Les grandes mosquées restent des lieux de savoir : à la Zitouna enseigne par exemple Mohamed Tahar Ben Achour (1879-1973), auteur d'un grand commentaire du Coran.",
+  "ar": "في كل حيّ، يعلّم الكُتّاب، القريب غالبًا من المسجد، الأطفالَ القراءة والكتابة وحفظ القرآن على الألواح الخشبية. وتبقى الجوامع الكبرى منارات للعلم: ففي الزيتونة درّس مثلًا محمد الطاهر بن عاشور (1879-1973)، صاحب تفسير « التحرير والتنوير ».",
+  "en": "In every neighbourhood, the Quranic school (kuttab), often near the mosque, taught children to read, write and recite the Quran on wooden boards. The great mosques remained places of learning: at the Zitouna, for example, Mohamed Tahar Ben Achour (1879-1973) taught; he wrote a major commentary on the Quran."
+ },
+ "e6_date": {
+  "fr": "Aujourd'hui",
+  "ar": "اليوم",
+  "en": "Today"
+ },
+ "e6_titre": {
+  "fr": "Aujourd'hui : un lieu ouvert, au service de tous",
+  "ar": "اليوم: مكان مفتوح في خدمة الجميع",
+  "en": "Today: an open place, serving everyone"
+ },
+ "e6_p1": {
+  "fr": "La mosquée reste d'abord un lieu de prière en commun : les cinq prières, le sermon du vendredi, les prières des deux fêtes et, pendant le Ramadan, les prières de la nuit (tarawih). Beaucoup de mosquées proposent aussi :",
+  "ar": "يبقى المسجد أولًا مكانًا للصلاة الجماعية: الصلوات الخمس، وخطبة الجمعة، وصلاتا العيدين، وصلاة التراويح في رمضان. وتقدّم مساجد كثيرة أيضًا:",
+  "en": "The mosque remains first of all a place of communal prayer: the five prayers, the Friday sermon, the prayers of the two Eids and, during Ramadan, the night prayers (tarawih). Many mosques also offer:"
+ },
+ "e6_l1": {
+  "fr": "des cours de Coran et de langue arabe pour les enfants et les adultes ;",
+  "ar": "دروسًا في القرآن واللغة العربية للأطفال والكبار؛",
+  "en": "Quran and Arabic lessons for children and adults;"
+ },
+ "e6_l2": {
+  "fr": "des repas de rupture du jeûne pendant le Ramadan, ouverts à tous ;",
+  "ar": "موائد إفطار في رمضان مفتوحة للجميع؛",
+  "en": "fast-breaking meals during Ramadan, open to everyone;"
+ },
+ "e6_l3": {
+  "fr": "la collecte de l'aumône de la fin du Ramadan (zakat al-fitr) et une aide aux familles dans le besoin ;",
+  "ar": "جمع زكاة الفطر ومساعدة الأسر المحتاجة؛",
+  "en": "the collection of the end-of-Ramadan alms (zakat al-fitr) and help for families in need;"
+ },
+ "e6_l4": {
+  "fr": "l'accueil des visiteurs qui veulent découvrir l'islam et l'architecture : les grandes mosquées sont aussi des monuments.",
+  "ar": "استقبال الزوار الراغبين في التعرّف على الإسلام وعلى العمارة: فالجوامع الكبرى معالم أيضًا.",
+  "en": "a welcome for visitors who want to discover Islam and architecture: the great mosques are also monuments."
+ },
+ "videos_titre": {
+  "fr": "En vidéo",
+  "ar": "بالفيديو",
+  "en": "On video"
+ },
+ "videos_note": {
+  "fr": "Vidéos de chaînes officielles, lues depuis YouTube sans cookie publicitaire (youtube-nocookie). La vidéo ne se charge que si vous appuyez dessus.",
+  "ar": "مقاطع من قنوات رسمية، تُعرض من يوتيوب دون ملفات تعريف إعلانية (youtube-nocookie). لا يُحمَّل المقطع إلا إذا ضغطت عليه.",
+  "en": "Videos from official channels, played from YouTube without advertising cookies (youtube-nocookie). A video only loads when you tap it."
+ },
+ "lire_video": {
+  "fr": "Lire la vidéo",
+  "ar": "شغّل الفيديو",
+  "en": "Play the video"
+ },
+ "voir_aussi": {
+  "fr": "Pour aller plus loin",
+  "ar": "للمزيد",
+  "en": "To find out more"
+ },
+ "lien_histoires": {
+  "fr": "Histoires des mosquées : les lampes de Tamim ad-Dari, le tronc qui pleura…",
+  "ar": "قصص المساجد: قناديل تميم الداري، الجذع الذي حنّ…",
+  "en": "Stories of the mosques: the lamps of Tamim ad-Dari, the palm trunk that wept…"
+ },
+ "lien_construire": {
+  "fr": "Construire une mosquée : ses bienfaits et qui le fait",
+  "ar": "بناء مسجد: فضله ومن يقوم به",
+  "en": "Building a mosque: its merits and who does it"
+ },
+ "lien_grandes": {
+  "fr": "Les grandes mosquées de Tunisie et du monde",
+  "ar": "الجوامع الكبرى في تونس والعالم",
+  "en": "The great mosques of Tunisia and the world"
+ },
+ "sources_titre": {
+  "fr": "Sources",
+  "ar": "المصادر",
+  "en": "Sources"
+ },
+ "sources_txt": {
+  "fr": "Texte écrit par Mosquées de Tunisie et du monde à partir des recueils de hadith (al-Bukhari), de la biographie du Prophète ﷺ (Ibn Ishaq, Ibn Hicham), de Wikipédia, de l'UNESCO et des sites des institutions citées, vérifiés le 23/10/2026. Photos : Wikimedia Commons, auteur et licence sous chaque image.",
+  "ar": "نص كتبه موقع مساجد تونس والعالم اعتمادًا على كتب الحديث (البخاري) والسيرة النبوية (ابن إسحاق، ابن هشام) وويكيبيديا واليونسكو ومواقع المؤسسات المذكورة، رُوجع في 23/10/2026. الصور: ويكيميديا كومنز، المؤلف والرخصة تحت كل صورة.",
+  "en": "Text written by Mosques of Tunisia and the world from the hadith collections (al-Bukhari), the biography of the Prophet ﷺ (Ibn Ishaq, Ibn Hisham), Wikipedia, UNESCO and the websites of the institutions mentioned, checked on 23/10/2026. Photos: Wikimedia Commons, author and licence under each image."
+ },
+ "ph_e1_a": {
+  "fr": "La cour de la mosquée du Prophète ﷺ à Médine, avec sa coupole et ses arcades : photographie ancienne de Muhammad Sadiq Bey (vers 1880).",
+  "ar": "صحن المسجد النبوي في المدينة المنورة بقبّته وأروقته: صورة قديمة لمحمد صادق بك (نحو 1880).",
+  "en": "The courtyard of the Prophet's Mosque ﷺ in Medina, with its dome and arcades: old photograph by Muhammad Sadiq Bey (around 1880)."
+ },
+ "ph_e1_b": {
+  "fr": "La mosquée de Quba à Médine, la première mosquée de l'islam, en 2024.",
+  "ar": "مسجد قباء في المدينة المنورة، أول مسجد في الإسلام، سنة 2024.",
+  "en": "The Quba Mosque in Medina, the first mosque of Islam, in 2024."
+ },
+ "ph_e2_a": {
+  "fr": "La cour de la Grande Mosquée des Omeyyades à Damas (VIIIe siècle).",
+  "ar": "صحن الجامع الأموي بدمشق (القرن الثامن).",
+  "en": "The courtyard of the Great Umayyad Mosque in Damascus (8th century)."
+ },
+ "ph_e2_b": {
+  "fr": "La cour et le minaret de la Grande Mosquée de Kairouan, fondée en 670.",
+  "ar": "صحن جامع القيروان الكبير ومئذنته، أُسّس سنة 670.",
+  "en": "The courtyard and minaret of the Great Mosque of Kairouan, founded in 670."
+ },
+ "ph_e3_a": {
+  "fr": "Des savants devant les rayonnages d'une bibliothèque : miniature d'al-Wasiti, Maqamat d'al-Hariri (1237).",
+  "ar": "علماء أمام رفوف مكتبة: منمنمة للواسطي من مقامات الحريري (1237).",
+  "en": "Scholars in front of the shelves of a library: miniature by al-Wasiti, Maqamat of al-Hariri (1237)."
+ },
+ "ph_e3_b": {
+  "fr": "Le sermon du vendredi : le prédicateur sur le minbar devant les fidèles. Maqamat d'al-Hariri (1237).",
+  "ar": "خطبة الجمعة: الخطيب على المنبر أمام المصلّين. مقامات الحريري (1237).",
+  "en": "The Friday sermon: the preacher on the minbar before the worshippers. Maqamat of al-Hariri (1237)."
+ },
+ "ph_e3_c": {
+  "fr": "La cour de la mosquée al-Qarawiyyin à Fès, fondée en 859.",
+  "ar": "صحن جامع القرويين بفاس، أُسّس سنة 859.",
+  "en": "The courtyard of the al-Qarawiyyin mosque in Fez, founded in 859."
+ },
+ "ph_e3_d": {
+  "fr": "La salle de prière de la Zitouna à Tunis, avec le mihrab au fond.",
+  "ar": "بيت الصلاة في جامع الزيتونة بتونس، والمحراب في صدره.",
+  "en": "The prayer hall of the Zitouna in Tunis, with the mihrab at the far end."
+ },
+ "ph_e4_a": {
+  "fr": "La mosquée Süleymaniye à Istanbul et les bâtiments de son ensemble, vus du ciel.",
+  "ar": "جامع السليمانية في إسطنبول ومباني مجمّعه، من الجو.",
+  "en": "The Süleymaniye Mosque in Istanbul and the buildings of its complex, seen from the air."
+ },
+ "ph_e4_b": {
+  "fr": "La cour de l'imaret, l'ancienne cuisine publique de la Süleymaniye.",
+  "ar": "صحن العِمارة، المطعم العام القديم في مجمّع السليمانية.",
+  "en": "The courtyard of the imaret, the former public kitchen of the Süleymaniye."
+ },
+ "ph_e5_a": {
+  "fr": "« École arabe en Tunisie » : des enfants autour du maître, avec leurs planchettes. Carte postale du début du XXe siècle.",
+  "ar": "« مدرسة عربية في تونس »: أطفال حول المؤدّب بألواحهم. بطاقة بريدية من أوائل القرن العشرين.",
+  "en": "“Arab school in Tunisia”: children around the teacher, with their boards. Postcard from the early 20th century."
+ },
+ "ph_e5_b": {
+  "fr": "Des étudiants dans la cour de la mosquée al-Azhar au Caire, vers 1875-1900.",
+  "ar": "طلبة في صحن الجامع الأزهر بالقاهرة، نحو 1875-1900.",
+  "en": "Students in the courtyard of the al-Azhar mosque in Cairo, around 1875-1900."
+ },
+ "ph_e6_a": {
+  "fr": "La prière du vendredi à la mosquée Kocatepe, à Ankara.",
+  "ar": "صلاة الجمعة في جامع كوجاتبه بأنقرة.",
+  "en": "Friday prayer at the Kocatepe Mosque in Ankara."
+ },
+ "ph_e6_b": {
+  "fr": "Le repas de rupture du jeûne (iftar) servi dans la mosquée du Prophète ﷺ : dattes, pain, eau et café.",
+  "ar": "مائدة الإفطار في المسجد النبوي: تمر وخبز وماء وقهوة.",
+  "en": "The fast-breaking meal (iftar) served in the Prophet's Mosque ﷺ: dates, bread, water and coffee."
+ },
+ "v_qarawiyyin": {
+  "fr": "La plus ancienne université du monde, al-Qarawiyyin à Fès, restaurée (reportage)",
+  "ar": "ترميم جامع القرويين بفاس، أقدم جامعة في العالم (تقرير)",
+  "en": "Morocco revamps the world's oldest university, al-Qarawiyyin in Fez (report)"
+ },
+ "v_suleymaniye": {
+  "fr": "L'architecte Sinan et la mosquée Süleymaniye (présentation d'histoire de l'art)",
+  "ar": "المعماري سنان وجامع السليمانية (عرض في تاريخ الفن)",
+  "en": "The architect Sinan and the Süleymaniye Mosque (art history talk)"
+ }
+}

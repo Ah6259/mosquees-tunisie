@@ -202,148 +202,154 @@
 201	Escreva o seu endereço de e-mail (obrigatório) para podermos responder.
 202	Recebemo-la e vamos responder para o endereço:
 203	Enviar outra mensagem
-204	Tunes
-205	Cairuão
-206	Sousse
-207	Mahdia
-208	Sfax
-209	Testour
-210	Cartago
-211	Djerba (Midoun)
-212	Monastir
-213	Mesquita Zitouna
-214	698 · reconstruída em 864
-215	A grande mesquita da medina de Tunes, a mais antiga e a mais vasta da capital. Durante mais de mil anos foi também uma grande universidade do islão.
-216	Segundo a tradição, o local de oração foi fundado em 698 por Hassan ibn al-Nu'man, depois da tomada de Cartago; outras fontes atribuem a fundação ao governador omíada Ubayd Allah ibn al-Habhab, por volta de 732. Desse primeiro edifício quase nada resta: a mesquita foi inteiramente reconstruída em 864 pelo emir aglábida Abu Ibrahim Ahmad. Cada dinastia embelezou-a depois: cúpula do «bahu» pelos Zíridas (cerca de 990), cisternas e portas sob os Haféssidas, galeria oriental em 1637. O minarete atual, de estilo almóada, data de 1894.
-217	Como em Cairuão e em Córdova, um pátio rodeado de galerias antecede uma sala de oração «hipostila»: cerca de 160 colunas antigas, em grande parte vindas de Cartago, formam 15 naves. A nave central, mais larga, conduz ao mihrab, coberto por uma cúpula do século IX. A cúpula do bahu, à entrada da sala, alterna pedra ocre e tijolo vermelho. O minarete de 1894 retoma a decoração em losangos do da mesquita da Kasbah.
-218	A Zitouna foi um dos mais antigos centros de ensino do mundo muçulmano: cada sábio encostava-se a uma coluna, com os alunos sentados em círculo à sua volta. Formou grandes juristas maliquitas como Ibn Arafa, contemporâneo de Ibn Khaldun. Em 1958 o ensino saiu da mesquita; prossegue hoje na Universidade Ez-Zitouna. Diz-se que a oração nunca aí foi interrompida.
-219	Fundação segundo a tradição (Hassan ibn al-Nu'man)
-220	Reconstrução completa pelos Aglábidas
-221	Cúpula do bahu (Zíridas)
-222	Novo minarete de estilo almóada
-223	O ensino sai da mesquita para a universidade
-224	A medina de Tunes inscrita no Património Mundial da UNESCO
-225	Grande Mesquita de Cairuão (mesquita de Uqba)
-226	670 · forma atual de 836
-227	A mais antiga mesquita do Magrebe, fundada em 670 com a cidade de Cairuão. Serviu de modelo a todas as mesquitas do Norte de África e faz parte do Património Mundial da UNESCO.
-228	Em 670, o conquistador Uqba ibn Nafi funda Cairuão e coloca a sua mesquita no centro da cidade. Ampliada e reconstruída nos séculos VIII e IX, adquire a forma atual em 836, sob o emir aglábida Ziyadat Allah I. Por volta de 862-863, Abu Ibrahim Ahmad alonga a sala de oração e oferece o minbar e a decoração do mihrab. No século XI, o príncipe zírida al-Mu'izz ibn Badis acrescenta a maqsura de madeira. Cairuão foi durante muito tempo considerada a quarta cidade santa do islão.
-229	Um vasto quadrilátero de cerca de 9 000 m²: um grande pátio lajeado, galerias e uma sala de oração de 17 naves sustentada por centenas de colunas antigas de mármore, granito e pórfiro, todas diferentes. O minarete, com cerca de 31 metros de altura, data da primeira metade do século IX: é um dos mais antigos minaretes ainda de pé. O mihrab do século IX é ornamentado com azulejos de cerâmica de reflexos metálicos; ao lado, o minbar de madeira esculpida é o mais antigo minbar conservado do mundo muçulmano.
-230	Cairuão foi a capital religiosa e erudita da Ifríquia: foi aí que o imã Sahnun redigiu, no século IX, a Mudawwana, obra fundadora do rito maliquita seguido na Tunísia e em todo o Magrebe. A biblioteca da mesquita conservou manuscritos muito antigos, entre os quais folhas do célebre «Alcorão Azul».
-231	Fundação por Uqba ibn Nafi, com a cidade
-232	Reconstrução por Ziyadat Allah I: a forma atual
-233	Minbar e decoração do mihrab (Abu Ibrahim Ahmad)
-234	Maqsura de madeira de al-Mu'izz ibn Badis (por volta desta data)
-235	Cairuão inscrita no Património Mundial da UNESCO
-236	Grande Mesquita de Sousse
-237	850-851 · Aglábidas
-238	À entrada da medina, uma mesquita com ar de fortaleza, construída em 850-851 perto do ribat que protegia a costa. Sóbria e poderosa, faz parte da medina de Sousse, Património Mundial da UNESCO.
-239	Foi erguida em 850-851 pelo emir aglábida Abu al-Abbas Muhammad, cerca de trinta anos depois do ribat de Sousse; uma inscrição em cúfico, nas galerias do pátio, recorda a sua construção. Foi ampliada sob o emir Ibrahim II (875-902), quando Sousse se tornou a segunda cidade da Ifríquia.
-240	Muralhas ameadas, torres de canto encimadas por pequenas cúpulas: a mesquita parece uma fortaleza e não tem um verdadeiro minarete, sem dúvida porque a torre de vigia do ribat vizinho desempenhava esse papel. A sala de oração tem 13 naves; a nave central e o tramo do mihrab, mais largos, formam um «T», marcado por duas cúpulas.
-241	O ribat de Sousse, vizinho, fica concluído
-242	Construção da mesquita (850-851)
-243	Ampliação sob Ibrahim II (875-902)
-244	Medina de Sousse inscrita no Património Mundial da UNESCO
-245	Grande Mesquita de Mahdia
-246	916 · Fatímidas
-247	Construída em 916 pelo primeiro califa fatímida na sua nova capital, à beira-mar. O seu grande portal saliente, inspirado nos arcos de triunfo, é uma novidade na arquitetura das mesquitas.
-248	Quando Ubayd Allah al-Mahdi funda Mahdia em 909, manda construir a mesquita perto do palácio califal, numa plataforma conquistada ao mar. Depois da destruição da cidade pelos espanhóis em 1554, o edifício é várias vezes remodelado. Entre 1961 e 1965 é quase inteiramente reconstruído segundo a planta do século X; o grande portal e o pórtico norte são originais.
-249	Um quadrilátero de cerca de 85 × 55 metros, de muros maciços, ladeado por duas torres quadradas que serviam de reservatórios de água da chuva. A mesquita nunca teve minarete. O portal monumental abria um «caminho de honra» até ao mihrab, ao fundo de uma sala de 9 naves cuja nave central, mais alta, conduz a uma cúpula.
-250	Fundação de Mahdia por Ubayd Allah al-Mahdi
-251	Construção da Grande Mesquita
-252	A cidade é destruída pelos espanhóis
-253	Reconstrução segundo a planta original (1961-1965)
-254	Grande Mesquita de Sfax
-255	cerca de 850 · Aglábidas
-256	No coração da medina de Sfax, uma mesquita do século IX cuja fachada oriental, esculpida na época zírida, e o minarete à imagem do de Cairuão são obras-primas da arte da Ifríquia.
-257	O primeiro edifício é construído por volta de 850, sob os Aglábidas, ao mesmo tempo que as muralhas de Sfax. A mesquita é embelezada na época zírida: duas inscrições da fachada têm as datas de 988 e de 1085. Modificada no século XII, recupera as dimensões originais no século XVIII, durante grandes obras.
-258	A fachada oriental é ritmada por portas e janelas de arcos em ferradura, nichos e uma cornija denteada; nela está reaproveitada uma placa bizantina esculpida com dois pavões. O minarete quadrado, com cerca de quinze metros, lembra o de Cairuão mas tem uma decoração mais fina: discos esculpidos e uma bela escrita cúfica florida. A sala de oração, em esquadria, tem 9 naves.
-259	Primeiro edifício, sob os Aglábidas (por volta desta data)
-260	Embelezamento zírida (inscrição da fachada)
-261	Segunda inscrição datada da fachada
-262	Classificada monumento histórico
-263	Mesquita das Três Portas
-264	866 · minarete cerca de 1440
-265	Um pequeno oratório da medina de Cairuão, conhecido em todo o mundo pela sua fachada de 866: a mais antiga fachada de mesquita esculpida e decorada do mundo islâmico.
-266	Por volta de 866, um comerciante andaluz instalado em Cairuão, Muhammad ibn Khayrun al-Ma'afiri, manda construir este oratório de bairro; a inscrição da fachada dá o seu nome e a data. Por volta de 1440, na época haféssida, a mesquita é restaurada e recebe um pequeno minarete: uma faixa da fachada recorda-o.
-267	A fachada, com cerca de sete metros de altura, abre três arcos sobre colunas antigas; por cima, faixas de escrita cúfica em relevo citam o Alcorão (sura 33, versículos 70-71) e a fundação, entre frisos de rosetas e folhas de videira. No interior, uma sala de oração de cerca de 9 × 9 metros, sem pátio, de três naves sobre colunas antigas.
-268	Construção por Muhammad ibn Khayrun
-269	Restauro haféssida e pequeno minarete (cerca de 1440-1441)
-270	Mesquita Youssef Dey
-271	1612 · Otomanos
-272	A primeira mesquita de rito hanafita de Tunes, construída pelo dey otomano Youssef perto da Kasbah. O seu minarete octogonal, o primeiro de Tunes, assinala o rito dos Otomanos.
-273	Uma inscrição no interior data a sua construção de 1612, por ordem de Youssef Dey, que governou Tunes de 1610 a 1637. Restaurada no fim do século XIX sob Ali Bey, torna-se em 1926 um anexo da universidade da Zitouna. O dey repousa aí num mausoléu, o primeiro exemplo em Tunes de uma mesquita funerária.
-274	A sala de oração, rodeada de pátios em três lados, tem 9 naves e 7 tramos; uma cúpula ergue-se diante do mihrab. O minbar é de alvenaria revestida de mármores de cor, ao passo que as mesquitas maliquitas têm um minbar de madeira. O minarete octogonal termina num balcão coberto e num telhado piramidal de telhas verdes, como o mausoléu.
-275	Construção por Youssef Dey (inscrição)
-276	Morte de Youssef Dey, sepultado no seu mausoléu
-277	Anexo da universidade da Zitouna
-278	Mesquita Hammouda Pacha
-279	1655 · Muradidas
-280	A segunda mesquita hanafita de Tunes, erguida em 1655 pelo bei Hammouda Pacha. O seu fino minarete octogonal domina a rua Sidi Ben Arous, na medina.
-281	Hammouda Pacha, bei da dinastia muradida, manda construir a mesquita em 1655, na esquina da rua Sidi Ben Arous com a rua da Kasbah. Como Youssef Dey antes dele, manda instalar aí o seu próprio mausoléu, no pátio: este túmulo teria inspirado, muito mais tarde, o do presidente Bourguiba em Monastir.
-282	Um edifício otomano do século XVII: porta de mármore, telhados de telhas verdes e três pátios. A sala de oração, de cerca de 24 × 17 metros, tem 7 naves sobre 48 colunas; as paredes são revestidas de mármore e de gesso esculpido, com uma decoração de flores e mármores de cor de influência italiana. Coisa rara em Tunes, o pátio abre-se para a rua por largas janelas gradeadas. O minarete octogonal é rematado por um balcão e um telhado piramidal.
-283	Construção por Hammouda Pacha Bey
-284	Restauro (1960-1961)
-285	Mesquita Sidi Mahrez (mesquita Mohamed Bey)
-286	1692-1697 · Muradidas
-287	Com as suas cúpulas brancas, que se encontram no emblema da cidade de Tunes, é a única mesquita tunisina construída segundo o modelo das grandes mesquitas de Istambul. Fica em frente à zauia de Sidi Mahrez, santo padroeiro da medina.
-288	Mohamed Bey el-Mouradi inicia a sua construção entre 1692 e 1697, em honra de Sidi Mahrez (Mahrez ibn Khalaf, século X), no bairro de Bab Souika. As perturbações políticas do fim do século XVII impedem a conclusão das obras: a mesquita nunca recebeu minarete. É restaurada a partir de 1984, com o bairro de Bab Souika.
-289	Assente numa plataforma, a sala de oração quadrada (28 metros de lado) é coberta por uma grande cúpula central de quase 16 metros de diâmetro, rodeada de semicúpulas e de pequenas cúpulas de canto, como a mesquita Sultan Ahmet de Istambul. Azulejos de cerâmica de Iznik, nas cores azul, verde e «vermelho-tomate», ornamentam os pilares e a parede do mihrab.
-290	Início da construção por Mohamed Bey el-Mouradi
-291	Fim das obras, sem minarete
-292	Restauro com o bairro de Bab Souika
-293	Zauia de Sidi Sahbi (mausoléu do Barbeiro)
-294	Século XVII · Muradidas
-295	O mausoléu de Abu Zama'a al-Balawi, companheiro do Profeta ﷺ, a quem os habitantes de Cairuão chamam «Sidi Sahbi»: o santo padroeiro de Cairuão. Os seus pátios cobertos de cerâmica e de gesso esculpido fazem dele um dos mais belos monumentos da cidade.
-296	Abu Zama'a al-Balawi morre em combate em 654 (ano 34 da Hégira). Conta-se que guardava consigo alguns pelos da barba do Profeta ﷺ, daí o nome de «mausoléu do Barbeiro». O edifício antigo é inteiramente renovado no século XVII pelos beis muradidas: Hammouda Pacha reconstrói a zauia, a madraça e o minarete por volta de 1662, depois Mohamed Bey refaz a cúpula do mausoléu por volta de 1681-1685.
-297	Um vasto conjunto fora das muralhas da medina: pátio de entrada e minarete de estilo andaluz, pátio de colunas, sala com cúpula, depois um pátio de paredes cobertas de cerâmicas policromas e de gesso finamente esculpido, que antecede a câmara funerária. Uma madraça, com os seus quartos de estudantes e a sua sala de oração, completa o complexo.
-298	É um dos locais mais visitados pelos tunisinos, sobretudo na festa do Mawlid; aí se celebram também contratos de casamento e circuncisões. Outrora, as caravanas do Magrebe reuniam-se aqui antes de partir para a peregrinação a Meca.
-299	Morte de Abu Zama'a al-Balawi (ano 34 da Hégira)
-300	Zauia, madraça e minarete de Hammouda Pacha (por volta desta data)
-301	Nova cúpula do mausoléu por Mohamed Bey (1681-1685)
-302	Grande Mesquita de Testour
-303	cerca de 1630 · Andaluzes
-304	Construída pelos andaluzes expulsos de Espanha no início do século XVII, mistura as tradições tunisinas e a arte hispano-mourisca. O seu minarete tem um relógio cujos ponteiros giram ao contrário.
-305	Depois da expulsão dos mouriscos de Espanha (1609-1614), muitos instalam-se no vale da Medjerda e refundam Testour. A mesquita é erguida no primeiro terço do século XVII, provavelmente antes de 1631, por Mohamed Tagharinou, um andaluz instalado na cidade. Um segundo pátio e uma sala de abluções são acrescentados no século XVIII. Em 2014, habitantes e associações voltam a pôr a funcionar o relógio do minarete, parado havia quase três séculos.
-306	A planta da sala de oração (9 naves) segue a tradição de Cairuão, mas os telhados de telha, a decoração em estuque e o minarete são andaluzes. Com 22,50 metros de altura, o minarete sobrepõe uma torre quadrada de tijolo e pedra, à maneira de Toledo, e uma torre octogonal ornamentada com cerâmica: lembra os campanários de Aragão. No pátio, um relógio de sol de 1761 indicava a hora das orações.
-307	Os mouriscos, expulsos de Espanha (1609-1614), chegam à Tunísia
-308	Mesquita concluída (provavelmente antes desta data)
-309	Relógio de sol do pátio
-310	O relógio do minarete volta a funcionar
-311	Mesquita Malik ibn Anas (Cartago)
-312	2003 · contemporânea
-313	Uma grande mesquita moderna construída numa colina de Cartago, no coração do sítio arqueológico. O seu minarete de 55 metros vê-se de longe; figura na nota de dez dinares.
-314	Construída de 2000 a 2003 segundo os planos do arquiteto Ayad Sriha, chamava-se primeiro «El Abidine». Em novembro de 2012 recebe o nome do imã Malik ibn Anas (falecido em 795), fundador da escola maliquita seguida na Tunísia. A rádio Zitouna FM transmite daí as cinco orações diárias.
-315	Inspira-se nas grandes mesquitas tunisinas: esplanada, pátio de 1 500 m² e sala de oração hipostila de 64 colunas, com capacidade para 1 000 fiéis. O mihrab de mármore branco incrustado de verde e vermelho é encimado por uma cúpula de dez metros de diâmetro. As paredes são cobertas de pedra de Kedhel, estuque esculpido e cerâmicas de motivos andaluzes; o chão é coberto de tapetes de Cairuão.
-316	Lançamento da primeira pedra
-317	Inauguração
-318	Recebe o nome do imã Malik ibn Anas
-319	Mesquita Fadhloun e mesquitas ibaditas de Djerba
-320	Século XIV · Djerba
-321	À saída de Midoun, uma mesquita branca com ar de pequena fortaleza, típica da ilha de Djerba, onde vive uma comunidade muçulmana ibadita. Está classificada como monumento desde 2022 e faz parte dos locais de Djerba inscritos no Património Mundial em 2023.
-322	Construída no século XIV, a mesquita Fadhloun pertence ao rico conjunto das mesquitas de Djerba, muitas vezes ibaditas, construídas nos campos e na costa. Com as suas paredes espessas e os seus pequenos minaretes, muitas serviam também de postos de vigia: formavam uma segunda linha de defesa atrás dos fortes do litoral.
-323	A sala de oração quadrada, com cerca de 7,5 metros de lado, é coberta por nove pequenas cúpulas sustentadas por quatro colunas; o mihrab é um simples nicho e o minbar, de pedra, tem apenas três degraus. Um minarete atarracado de dois níveis domina o telhado. À volta: um pátio com um «mihrab de verão», uma cisterna de água da chuva, duas salas de ensino do Alcorão, uma padaria subterrânea e um moinho de cereais.
-324	Estas mesquitas eram pequenos centros de vida: oração, ensino do Alcorão, pão e cereais para o bairro. A sua arquitetura branca e despojada é um dos rostos de Djerba reconhecidos pela UNESCO em 2023.
-325	Séc. XIV
-326	Construção da mesquita Fadhloun (século XIV)
-327	Classificada como monumento (despacho de 15 de março de 2022)
-328	Djerba inscrita no Património Mundial da UNESCO
-329	Mesquita da Kasbah (Tunes)
-330	1231-1235 · Haféssidas
-331	Construída pelo fundador da dinastia haféssida na praça da Kasbah, possui um dos mais belos minaretes de Tunes, no estilo almóada de Marraquexe e de Sevilha.
-332	Foi erguida de 1231 a 1235 por ordem de Abu Zakariya Yahya, fundador da dinastia haféssida, que tinha sido governador de Sevilha. Primeiro mesquita da corte dos soberanos instalados na Kasbah, tornou-se depois uma das mesquitas de sexta-feira da cidade; é a primeira erguida em Tunes depois da Zitouna. Na época otomana, reza-se aí segundo o rito hanafita.
-333	A sala de oração, mais profunda do que larga, tem 7 naves e 9 tramos sobre colunas de mármore com capitéis haféssidas; o mihrab é rematado por uma cúpula de estalactites de gesso esculpido. O minarete quadrado, construído logo em 1233, está coberto por uma rede de losangos em pedra ocre: serviu de modelo ao minarete atual da Zitouna.
-334	Início da construção (Abu Zakariya Yahya)
-335	O minarete fica concluído
-336	Fim da construção da mesquita
-337	Grande Mesquita de Monastir
-338	Século IX · ampliada até ao século XVIII
-339	Em frente ao mar, ao lado do célebre ribat, uma mesquita de pedra sóbria e elegante, ampliada em cada época desde o século IX.
-340	A sala de oração atual resulta de quatro etapas: um pequeno oratório abobadado no século IX, uma ampliação no século XI (época zírida) com o mihrab, depois, na época haféssida, um minarete quadrado e mais duas naves. Uma galeria exterior é acrescentada no século XVIII. Em outubro de 2013, dois abalos sísmicos fazem ruir em parte o topo do minarete.
-341	Fachadas de pedra de cantaria, animadas pelo emolduramento das portas e janelas e pelos arcos de uma galeria. A mesquita não tem pátio diante da sala de oração. O mihrab do século XI, de decoração zírida e escrita cúfica florida, não é encimado por uma cúpula, o que é raro na Ifríquia medieval.
-342	Séc. IX
-343	Primeiro oratório abobadado (século IX)
-344	Séc. XI
-345	Ampliação zírida e mihrab (século XI)
-346	Séc. XVIII
-347	Galeria exterior (século XVIII)
-348	O topo do minarete rui em parte depois de dois sismos
+204	O papel da mesquita
+205	Histórias das mesquitas
+206	Construir uma mesquita
+207	Ler o Alcorão no nosso site The Message
+208	“E foi-me revelado que as mesquitas são de Allah: então, não invoqueis, com Allah, a ninguém.”
+209	Sura Al-Jinn (72), versículo 18 — tradução do sentido: Dr. Helmi Nasr,
+210	Tunes
+211	Cairuão
+212	Sousse
+213	Mahdia
+214	Sfax
+215	Testour
+216	Cartago
+217	Djerba (Midoun)
+218	Monastir
+219	Mesquita Zitouna
+220	698 · reconstruída em 864
+221	A grande mesquita da medina de Tunes, a mais antiga e a mais vasta da capital. Durante mais de mil anos foi também uma grande universidade do islão.
+222	Segundo a tradição, o local de oração foi fundado em 698 por Hassan ibn al-Nu'man, depois da tomada de Cartago; outras fontes atribuem a fundação ao governador omíada Ubayd Allah ibn al-Habhab, por volta de 732. Desse primeiro edifício quase nada resta: a mesquita foi inteiramente reconstruída em 864 pelo emir aglábida Abu Ibrahim Ahmad. Cada dinastia embelezou-a depois: cúpula do «bahu» pelos Zíridas (cerca de 990), cisternas e portas sob os Haféssidas, galeria oriental em 1637. O minarete atual, de estilo almóada, data de 1894.
+223	Como em Cairuão e em Córdova, um pátio rodeado de galerias antecede uma sala de oração «hipostila»: cerca de 160 colunas antigas, em grande parte vindas de Cartago, formam 15 naves. A nave central, mais larga, conduz ao mihrab, coberto por uma cúpula do século IX. A cúpula do bahu, à entrada da sala, alterna pedra ocre e tijolo vermelho. O minarete de 1894 retoma a decoração em losangos do da mesquita da Kasbah.
+224	A Zitouna foi um dos mais antigos centros de ensino do mundo muçulmano: cada sábio encostava-se a uma coluna, com os alunos sentados em círculo à sua volta. Formou grandes juristas maliquitas como Ibn Arafa, contemporâneo de Ibn Khaldun. Em 1958 o ensino saiu da mesquita; prossegue hoje na Universidade Ez-Zitouna. Diz-se que a oração nunca aí foi interrompida.
+225	Fundação segundo a tradição (Hassan ibn al-Nu'man)
+226	Reconstrução completa pelos Aglábidas
+227	Cúpula do bahu (Zíridas)
+228	Novo minarete de estilo almóada
+229	O ensino sai da mesquita para a universidade
+230	A medina de Tunes inscrita no Património Mundial da UNESCO
+231	Grande Mesquita de Cairuão (mesquita de Uqba)
+232	670 · forma atual de 836
+233	A mais antiga mesquita do Magrebe, fundada em 670 com a cidade de Cairuão. Serviu de modelo a todas as mesquitas do Norte de África e faz parte do Património Mundial da UNESCO.
+234	Em 670, o conquistador Uqba ibn Nafi funda Cairuão e coloca a sua mesquita no centro da cidade. Ampliada e reconstruída nos séculos VIII e IX, adquire a forma atual em 836, sob o emir aglábida Ziyadat Allah I. Por volta de 862-863, Abu Ibrahim Ahmad alonga a sala de oração e oferece o minbar e a decoração do mihrab. No século XI, o príncipe zírida al-Mu'izz ibn Badis acrescenta a maqsura de madeira. Cairuão foi durante muito tempo considerada a quarta cidade santa do islão.
+235	Um vasto quadrilátero de cerca de 9 000 m²: um grande pátio lajeado, galerias e uma sala de oração de 17 naves sustentada por centenas de colunas antigas de mármore, granito e pórfiro, todas diferentes. O minarete, com cerca de 31 metros de altura, data da primeira metade do século IX: é um dos mais antigos minaretes ainda de pé. O mihrab do século IX é ornamentado com azulejos de cerâmica de reflexos metálicos; ao lado, o minbar de madeira esculpida é o mais antigo minbar conservado do mundo muçulmano.
+236	Cairuão foi a capital religiosa e erudita da Ifríquia: foi aí que o imã Sahnun redigiu, no século IX, a Mudawwana, obra fundadora do rito maliquita seguido na Tunísia e em todo o Magrebe. A biblioteca da mesquita conservou manuscritos muito antigos, entre os quais folhas do célebre «Alcorão Azul».
+237	Fundação por Uqba ibn Nafi, com a cidade
+238	Reconstrução por Ziyadat Allah I: a forma atual
+239	Minbar e decoração do mihrab (Abu Ibrahim Ahmad)
+240	Maqsura de madeira de al-Mu'izz ibn Badis (por volta desta data)
+241	Cairuão inscrita no Património Mundial da UNESCO
+242	Grande Mesquita de Sousse
+243	850-851 · Aglábidas
+244	À entrada da medina, uma mesquita com ar de fortaleza, construída em 850-851 perto do ribat que protegia a costa. Sóbria e poderosa, faz parte da medina de Sousse, Património Mundial da UNESCO.
+245	Foi erguida em 850-851 pelo emir aglábida Abu al-Abbas Muhammad, cerca de trinta anos depois do ribat de Sousse; uma inscrição em cúfico, nas galerias do pátio, recorda a sua construção. Foi ampliada sob o emir Ibrahim II (875-902), quando Sousse se tornou a segunda cidade da Ifríquia.
+246	Muralhas ameadas, torres de canto encimadas por pequenas cúpulas: a mesquita parece uma fortaleza e não tem um verdadeiro minarete, sem dúvida porque a torre de vigia do ribat vizinho desempenhava esse papel. A sala de oração tem 13 naves; a nave central e o tramo do mihrab, mais largos, formam um «T», marcado por duas cúpulas.
+247	O ribat de Sousse, vizinho, fica concluído
+248	Construção da mesquita (850-851)
+249	Ampliação sob Ibrahim II (875-902)
+250	Medina de Sousse inscrita no Património Mundial da UNESCO
+251	Grande Mesquita de Mahdia
+252	916 · Fatímidas
+253	Construída em 916 pelo primeiro califa fatímida na sua nova capital, à beira-mar. O seu grande portal saliente, inspirado nos arcos de triunfo, é uma novidade na arquitetura das mesquitas.
+254	Quando Ubayd Allah al-Mahdi funda Mahdia em 909, manda construir a mesquita perto do palácio califal, numa plataforma conquistada ao mar. Depois da destruição da cidade pelos espanhóis em 1554, o edifício é várias vezes remodelado. Entre 1961 e 1965 é quase inteiramente reconstruído segundo a planta do século X; o grande portal e o pórtico norte são originais.
+255	Um quadrilátero de cerca de 85 × 55 metros, de muros maciços, ladeado por duas torres quadradas que serviam de reservatórios de água da chuva. A mesquita nunca teve minarete. O portal monumental abria um «caminho de honra» até ao mihrab, ao fundo de uma sala de 9 naves cuja nave central, mais alta, conduz a uma cúpula.
+256	Fundação de Mahdia por Ubayd Allah al-Mahdi
+257	Construção da Grande Mesquita
+258	A cidade é destruída pelos espanhóis
+259	Reconstrução segundo a planta original (1961-1965)
+260	Grande Mesquita de Sfax
+261	cerca de 850 · Aglábidas
+262	No coração da medina de Sfax, uma mesquita do século IX cuja fachada oriental, esculpida na época zírida, e o minarete à imagem do de Cairuão são obras-primas da arte da Ifríquia.
+263	O primeiro edifício é construído por volta de 850, sob os Aglábidas, ao mesmo tempo que as muralhas de Sfax. A mesquita é embelezada na época zírida: duas inscrições da fachada têm as datas de 988 e de 1085. Modificada no século XII, recupera as dimensões originais no século XVIII, durante grandes obras.
+264	A fachada oriental é ritmada por portas e janelas de arcos em ferradura, nichos e uma cornija denteada; nela está reaproveitada uma placa bizantina esculpida com dois pavões. O minarete quadrado, com cerca de quinze metros, lembra o de Cairuão mas tem uma decoração mais fina: discos esculpidos e uma bela escrita cúfica florida. A sala de oração, em esquadria, tem 9 naves.
+265	Primeiro edifício, sob os Aglábidas (por volta desta data)
+266	Embelezamento zírida (inscrição da fachada)
+267	Segunda inscrição datada da fachada
+268	Classificada monumento histórico
+269	Mesquita das Três Portas
+270	866 · minarete cerca de 1440
+271	Um pequeno oratório da medina de Cairuão, conhecido em todo o mundo pela sua fachada de 866: a mais antiga fachada de mesquita esculpida e decorada do mundo islâmico.
+272	Por volta de 866, um comerciante andaluz instalado em Cairuão, Muhammad ibn Khayrun al-Ma'afiri, manda construir este oratório de bairro; a inscrição da fachada dá o seu nome e a data. Por volta de 1440, na época haféssida, a mesquita é restaurada e recebe um pequeno minarete: uma faixa da fachada recorda-o.
+273	A fachada, com cerca de sete metros de altura, abre três arcos sobre colunas antigas; por cima, faixas de escrita cúfica em relevo citam o Alcorão (sura 33, versículos 70-71) e a fundação, entre frisos de rosetas e folhas de videira. No interior, uma sala de oração de cerca de 9 × 9 metros, sem pátio, de três naves sobre colunas antigas.
+274	Construção por Muhammad ibn Khayrun
+275	Restauro haféssida e pequeno minarete (cerca de 1440-1441)
+276	Mesquita Youssef Dey
+277	1612 · Otomanos
+278	A primeira mesquita de rito hanafita de Tunes, construída pelo dey otomano Youssef perto da Kasbah. O seu minarete octogonal, o primeiro de Tunes, assinala o rito dos Otomanos.
+279	Uma inscrição no interior data a sua construção de 1612, por ordem de Youssef Dey, que governou Tunes de 1610 a 1637. Restaurada no fim do século XIX sob Ali Bey, torna-se em 1926 um anexo da universidade da Zitouna. O dey repousa aí num mausoléu, o primeiro exemplo em Tunes de uma mesquita funerária.
+280	A sala de oração, rodeada de pátios em três lados, tem 9 naves e 7 tramos; uma cúpula ergue-se diante do mihrab. O minbar é de alvenaria revestida de mármores de cor, ao passo que as mesquitas maliquitas têm um minbar de madeira. O minarete octogonal termina num balcão coberto e num telhado piramidal de telhas verdes, como o mausoléu.
+281	Construção por Youssef Dey (inscrição)
+282	Morte de Youssef Dey, sepultado no seu mausoléu
+283	Anexo da universidade da Zitouna
+284	Mesquita Hammouda Pacha
+285	1655 · Muradidas
+286	A segunda mesquita hanafita de Tunes, erguida em 1655 pelo bei Hammouda Pacha. O seu fino minarete octogonal domina a rua Sidi Ben Arous, na medina.
+287	Hammouda Pacha, bei da dinastia muradida, manda construir a mesquita em 1655, na esquina da rua Sidi Ben Arous com a rua da Kasbah. Como Youssef Dey antes dele, manda instalar aí o seu próprio mausoléu, no pátio: este túmulo teria inspirado, muito mais tarde, o do presidente Bourguiba em Monastir.
+288	Um edifício otomano do século XVII: porta de mármore, telhados de telhas verdes e três pátios. A sala de oração, de cerca de 24 × 17 metros, tem 7 naves sobre 48 colunas; as paredes são revestidas de mármore e de gesso esculpido, com uma decoração de flores e mármores de cor de influência italiana. Coisa rara em Tunes, o pátio abre-se para a rua por largas janelas gradeadas. O minarete octogonal é rematado por um balcão e um telhado piramidal.
+289	Construção por Hammouda Pacha Bey
+290	Restauro (1960-1961)
+291	Mesquita Sidi Mahrez (mesquita Mohamed Bey)
+292	1692-1697 · Muradidas
+293	Com as suas cúpulas brancas, que se encontram no emblema da cidade de Tunes, é a única mesquita tunisina construída segundo o modelo das grandes mesquitas de Istambul. Fica em frente à zauia de Sidi Mahrez, santo padroeiro da medina.
+294	Mohamed Bey el-Mouradi inicia a sua construção entre 1692 e 1697, em honra de Sidi Mahrez (Mahrez ibn Khalaf, século X), no bairro de Bab Souika. As perturbações políticas do fim do século XVII impedem a conclusão das obras: a mesquita nunca recebeu minarete. É restaurada a partir de 1984, com o bairro de Bab Souika.
+295	Assente numa plataforma, a sala de oração quadrada (28 metros de lado) é coberta por uma grande cúpula central de quase 16 metros de diâmetro, rodeada de semicúpulas e de pequenas cúpulas de canto, como a mesquita Sultan Ahmet de Istambul. Azulejos de cerâmica de Iznik, nas cores azul, verde e «vermelho-tomate», ornamentam os pilares e a parede do mihrab.
+296	Início da construção por Mohamed Bey el-Mouradi
+297	Fim das obras, sem minarete
+298	Restauro com o bairro de Bab Souika
+299	Zauia de Sidi Sahbi (mausoléu do Barbeiro)
+300	Século XVII · Muradidas
+301	O mausoléu de Abu Zama'a al-Balawi, companheiro do Profeta ﷺ, a quem os habitantes de Cairuão chamam «Sidi Sahbi»: o santo padroeiro de Cairuão. Os seus pátios cobertos de cerâmica e de gesso esculpido fazem dele um dos mais belos monumentos da cidade.
+302	Abu Zama'a al-Balawi morre em combate em 654 (ano 34 da Hégira). Conta-se que guardava consigo alguns pelos da barba do Profeta ﷺ, daí o nome de «mausoléu do Barbeiro». O edifício antigo é inteiramente renovado no século XVII pelos beis muradidas: Hammouda Pacha reconstrói a zauia, a madraça e o minarete por volta de 1662, depois Mohamed Bey refaz a cúpula do mausoléu por volta de 1681-1685.
+303	Um vasto conjunto fora das muralhas da medina: pátio de entrada e minarete de estilo andaluz, pátio de colunas, sala com cúpula, depois um pátio de paredes cobertas de cerâmicas policromas e de gesso finamente esculpido, que antecede a câmara funerária. Uma madraça, com os seus quartos de estudantes e a sua sala de oração, completa o complexo.
+304	É um dos locais mais visitados pelos tunisinos, sobretudo na festa do Mawlid; aí se celebram também contratos de casamento e circuncisões. Outrora, as caravanas do Magrebe reuniam-se aqui antes de partir para a peregrinação a Meca.
+305	Morte de Abu Zama'a al-Balawi (ano 34 da Hégira)
+306	Zauia, madraça e minarete de Hammouda Pacha (por volta desta data)
+307	Nova cúpula do mausoléu por Mohamed Bey (1681-1685)
+308	Grande Mesquita de Testour
+309	cerca de 1630 · Andaluzes
+310	Construída pelos andaluzes expulsos de Espanha no início do século XVII, mistura as tradições tunisinas e a arte hispano-mourisca. O seu minarete tem um relógio cujos ponteiros giram ao contrário.
+311	Depois da expulsão dos mouriscos de Espanha (1609-1614), muitos instalam-se no vale da Medjerda e refundam Testour. A mesquita é erguida no primeiro terço do século XVII, provavelmente antes de 1631, por Mohamed Tagharinou, um andaluz instalado na cidade. Um segundo pátio e uma sala de abluções são acrescentados no século XVIII. Em 2014, habitantes e associações voltam a pôr a funcionar o relógio do minarete, parado havia quase três séculos.
+312	A planta da sala de oração (9 naves) segue a tradição de Cairuão, mas os telhados de telha, a decoração em estuque e o minarete são andaluzes. Com 22,50 metros de altura, o minarete sobrepõe uma torre quadrada de tijolo e pedra, à maneira de Toledo, e uma torre octogonal ornamentada com cerâmica: lembra os campanários de Aragão. No pátio, um relógio de sol de 1761 indicava a hora das orações.
+313	Os mouriscos, expulsos de Espanha (1609-1614), chegam à Tunísia
+314	Mesquita concluída (provavelmente antes desta data)
+315	Relógio de sol do pátio
+316	O relógio do minarete volta a funcionar
+317	Mesquita Malik ibn Anas (Cartago)
+318	2003 · contemporânea
+319	Uma grande mesquita moderna construída numa colina de Cartago, no coração do sítio arqueológico. O seu minarete de 55 metros vê-se de longe; figura na nota de dez dinares.
+320	Construída de 2000 a 2003 segundo os planos do arquiteto Ayad Sriha, chamava-se primeiro «El Abidine». Em novembro de 2012 recebe o nome do imã Malik ibn Anas (falecido em 795), fundador da escola maliquita seguida na Tunísia. A rádio Zitouna FM transmite daí as cinco orações diárias.
+321	Inspira-se nas grandes mesquitas tunisinas: esplanada, pátio de 1 500 m² e sala de oração hipostila de 64 colunas, com capacidade para 1 000 fiéis. O mihrab de mármore branco incrustado de verde e vermelho é encimado por uma cúpula de dez metros de diâmetro. As paredes são cobertas de pedra de Kedhel, estuque esculpido e cerâmicas de motivos andaluzes; o chão é coberto de tapetes de Cairuão.
+322	Lançamento da primeira pedra
+323	Inauguração
+324	Recebe o nome do imã Malik ibn Anas
+325	Mesquita Fadhloun e mesquitas ibaditas de Djerba
+326	Século XIV · Djerba
+327	À saída de Midoun, uma mesquita branca com ar de pequena fortaleza, típica da ilha de Djerba, onde vive uma comunidade muçulmana ibadita. Está classificada como monumento desde 2022 e faz parte dos locais de Djerba inscritos no Património Mundial em 2023.
+328	Construída no século XIV, a mesquita Fadhloun pertence ao rico conjunto das mesquitas de Djerba, muitas vezes ibaditas, construídas nos campos e na costa. Com as suas paredes espessas e os seus pequenos minaretes, muitas serviam também de postos de vigia: formavam uma segunda linha de defesa atrás dos fortes do litoral.
+329	A sala de oração quadrada, com cerca de 7,5 metros de lado, é coberta por nove pequenas cúpulas sustentadas por quatro colunas; o mihrab é um simples nicho e o minbar, de pedra, tem apenas três degraus. Um minarete atarracado de dois níveis domina o telhado. À volta: um pátio com um «mihrab de verão», uma cisterna de água da chuva, duas salas de ensino do Alcorão, uma padaria subterrânea e um moinho de cereais.
+330	Estas mesquitas eram pequenos centros de vida: oração, ensino do Alcorão, pão e cereais para o bairro. A sua arquitetura branca e despojada é um dos rostos de Djerba reconhecidos pela UNESCO em 2023.
+331	Séc. XIV
+332	Construção da mesquita Fadhloun (século XIV)
+333	Classificada como monumento (despacho de 15 de março de 2022)
+334	Djerba inscrita no Património Mundial da UNESCO
+335	Mesquita da Kasbah (Tunes)
+336	1231-1235 · Haféssidas
+337	Construída pelo fundador da dinastia haféssida na praça da Kasbah, possui um dos mais belos minaretes de Tunes, no estilo almóada de Marraquexe e de Sevilha.
+338	Foi erguida de 1231 a 1235 por ordem de Abu Zakariya Yahya, fundador da dinastia haféssida, que tinha sido governador de Sevilha. Primeiro mesquita da corte dos soberanos instalados na Kasbah, tornou-se depois uma das mesquitas de sexta-feira da cidade; é a primeira erguida em Tunes depois da Zitouna. Na época otomana, reza-se aí segundo o rito hanafita.
+339	A sala de oração, mais profunda do que larga, tem 7 naves e 9 tramos sobre colunas de mármore com capitéis haféssidas; o mihrab é rematado por uma cúpula de estalactites de gesso esculpido. O minarete quadrado, construído logo em 1233, está coberto por uma rede de losangos em pedra ocre: serviu de modelo ao minarete atual da Zitouna.
+340	Início da construção (Abu Zakariya Yahya)
+341	O minarete fica concluído
+342	Fim da construção da mesquita
+343	Grande Mesquita de Monastir
+344	Século IX · ampliada até ao século XVIII
+345	Em frente ao mar, ao lado do célebre ribat, uma mesquita de pedra sóbria e elegante, ampliada em cada época desde o século IX.
+346	A sala de oração atual resulta de quatro etapas: um pequeno oratório abobadado no século IX, uma ampliação no século XI (época zírida) com o mihrab, depois, na época haféssida, um minarete quadrado e mais duas naves. Uma galeria exterior é acrescentada no século XVIII. Em outubro de 2013, dois abalos sísmicos fazem ruir em parte o topo do minarete.
+347	Fachadas de pedra de cantaria, animadas pelo emolduramento das portas e janelas e pelos arcos de uma galeria. A mesquita não tem pátio diante da sala de oração. O mihrab do século XI, de decoração zírida e escrita cúfica florida, não é encimado por uma cúpula, o que é raro na Ifríquia medieval.
+348	Séc. IX
+349	Primeiro oratório abobadado (século IX)
+350	Séc. XI
+351	Ampliação zírida e mihrab (século XI)
+352	Séc. XVIII
+353	Galeria exterior (século XVIII)
+354	O topo do minarete rui em parte depois de dois sismos

@@ -33,6 +33,8 @@ jobs:
           set +e
           python tools/mosquees_donnees.py
           echo "code=$?" >> "$GITHUB_OUTPUT"
+          # grandes mosquées du monde (page grandes-mosquees-du-monde/, 23/10/2026) : si Wikidata ne répond pas, l'ancienne liste reste
+          python tools/monde_grandes.py || echo "::warning::liste des grandes mosquées du monde non relue (ancienne gardée)"
       - name: Refaire les pages, tester, enregistrer
         run: |
           python tools/construire.py
@@ -40,7 +42,7 @@ jobs:
           node tools/test_site.mjs
           git config user.name "robot-mosquees"
           git config user.email "robot-mosquees@users.noreply.github.com"
-          git add donnees mosquee grandes-mosquees a-propos sitemap.xml index.html assets/trad assets/l ar en tr id ur de es it pt nl zh ja ko hi ru vi th tl sv ro   # + une adresse par langue (tools/pages_langues.py)
+          git add donnees mosquee grandes-mosquees grandes-mosquees-du-monde role-de-la-mosquee histoires-des-mosquees construire-une-mosquee a-propos sitemap.xml index.html assets/trad assets/l ar en tr id ur de es it pt nl zh ja ko hi ru vi th tl sv ro   # + une adresse par langue (tools/pages_langues.py)
           if git diff --cached --quiet; then
             git commit --allow-empty -m "Battement de coeur : relevé des mosquées inchangé"
           else

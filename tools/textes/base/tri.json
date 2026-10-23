@@ -1,0 +1,17 @@
+{
+ "trier": {"fr": "Trier :", "ar": "ترتيب:", "en": "Sort:"},
+ "t_page": {"fr": "Par défaut", "ar": "الترتيب الافتراضي", "en": "Default"},
+ "t_ancien": {"fr": "La plus ancienne d'abord", "ar": "الأقدم أولًا", "en": "Oldest first"},
+ "t_recent": {"fr": "La plus récente d'abord", "ar": "الأحدث أولًا", "en": "Newest first"},
+ "t_az": {"fr": "Par ordre alphabétique", "ar": "حسب الترتيب الأبجدي", "en": "Alphabetical order"},
+ "t_connue": {"fr": "La plus connue d'abord", "ar": "الأشهر أولًا", "en": "Best known first"},
+ "date_inconnue": {"fr": "date inconnue", "ar": "تاريخ غير معروف", "en": "date unknown"},
+ "vers": {"fr": "vers", "ar": "نحو", "en": "c."},
+ "av_jc": {"fr": "av. J.-C.", "ar": "ق.م", "en": "BC"},
+ "monde_menu": {"fr": "Grandes mosquées du monde", "ar": "الجوامع الكبرى في العالم", "en": "Great mosques of the world"},
+ "monde_titre": {"fr": "Les grandes mosquées du monde, de la plus ancienne à la plus récente", "ar": "الجوامع الكبرى في العالم، من الأقدم إلى الأحدث", "en": "The great mosques of the world, from the oldest to the newest"},
+ "monde_intro": {"fr": "Les mosquées les plus connues du monde, selon le nombre d'articles Wikipédia qui leur sont consacrés : triez-les par date de construction, par ordre alphabétique ou de la plus connue à la moins connue.", "ar": "أشهر مساجد العالم حسب عدد مقالات ويكيبيديا المخصّصة لها: رتّبها حسب تاريخ البناء أو أبجديًا أو من الأشهر إلى الأقل شهرة.", "en": "The best-known mosques in the world, according to the number of Wikipedia articles about them: sort them by date of construction, alphabetically or from the best known to the least known."},
+ "monde_note": {"fr": "Données : Wikidata (CC0), mises à jour tous les 3 mois. L'année est la plus ancienne date de construction connue du bâtiment : pour un édifice devenu mosquée plus tard (comme Sainte-Sophie), c'est celle du bâtiment d'origine. Photos : Wikimedia Commons, auteur et licence sur la page de chaque photo.", "ar": "البيانات: ويكي بيانات (CC0)، تُحدَّث كل 3 أشهر. السنة هي أقدم تاريخ معروف لبناء المبنى: فإن صار مسجدًا لاحقًا (مثل آيا صوفيا) فهي سنة المبنى الأصلي. الصور: ويكيميديا كومنز، المؤلف والرخصة في صفحة كل صورة.", "en": "Data: Wikidata (CC0), updated every 3 months. The year is the earliest known construction date of the building: for a building that became a mosque later (such as Hagia Sophia), it is that of the original building. Photos: Wikimedia Commons, author and licence on each photo's page."},
+ "monde_lien": {"fr": "Voir aussi les grandes mosquées du monde", "ar": "انظر أيضًا الجوامع الكبرى في العالم", "en": "See also the great mosques of the world"},
+ "articles": {"fr": "articles Wikipédia", "ar": "مقالة في ويكيبيديا", "en": "Wikipedia articles"}
+}

@@ -7,15 +7,21 @@
 "Début de la construction (Abou Zakariya Yahya)": "İnşaata başlanır (Ebu Zekeriya Yahya)",
 "Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "1231-1235 yılları arasında, daha önce Sevilla valiliği yapmış olan Hafsî hanedanının kurucusu Ebu Zekeriya Yahya'nın emriyle yapıldı. Önce Kasba'da oturan hükümdarların saray camisiydi, sonra şehrin cuma camilerinden biri oldu; Tunus'ta Zeytune'den sonra yapılan ilk camidir. Osmanlı döneminde burada Hanefî mezhebine göre namaz kılındı.",
 "Fin de la construction de la mosquée": "Caminin inşası tamamlanır",
+"Histoires et récits": "Hikâyeler ve anlatılar",
 "La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "Tunus Medinesi UNESCO Dünya Mirası listesine alınır",
 "La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "Genişliğinden daha derin olan harim, Hafsî başlıklı mermer sütunlar üzerinde 7 sahın ve 9 bölümden oluşur; mihrabın üstünde oyma alçıdan mukarnaslı bir kubbe vardır. 1233'te yapılan kare minare, koyu sarı taştan bir baklava ağıyla kaplıdır: Zeytune'nin bugünkü minaresine örnek olmuştur.",
+"Le drapeau blanc de l'appel à la prière": "Ezanın beyaz bayrağı",
 "Le minaret est terminé": "Minare tamamlanır",
 "Mosquée Hammouda Pacha": "Hammude Paşa Camii",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Sidi Mahrez Camii (Muhammed Bey Camii)",
 "Mosquée Youssef Dey": "Yusuf Dayı Camii",
 "Mosquée Zitouna": "Zeytune Camii",
 "Mosquée de la Kasbah (Tunis)": "Kasba Camii (Tunus)",
-"Tunis": "Tunus"
+"Source :": "Kaynak:",
+"Toutes les histoires des mosquées": "Camilerin bütün hikâyeleri",
+"Tradition": "Gelenek",
+"Tunis": "Tunus",
+"À l'heure de la prière, un drapeau blanc est hissé en haut du minaret. On dit qu'il servait de signal aux autres mosquées : la Kasbah, construite vers 1230-1235 par le premier souverain hafside, est au point le plus haut de la médina, près du palais, et les muezzins de la ville lançaient l'appel en le voyant. La coutume a repris ces dernières années.": "Namaz vakti minarenin tepesine beyaz bir bayrak çekilir. Bunun diğer camilere bir işaret olduğu söylenir: ilk Hafsî hükümdarı tarafından 1230-1235 civarında yaptırılan Kasaba Camii, medinenin en yüksek noktasında, sarayın yanındadır ve şehrin müezzinleri bayrağı görünce ezana başlardı. Bu gelenek son yıllarda yeniden başladı."
 });
   Object.assign(T.id = T.id || {}, {
 "1231-1235 · Hafsides": "1231-1235 · Hafsiyah",
@@ -23,15 +29,21 @@
 "Début de la construction (Abou Zakariya Yahya)": "Pembangunan dimulai (Abu Zakariya Yahya)",
 "Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "Dibangun pada 1231-1235 atas perintah Abu Zakariya Yahya, pendiri dinasti Hafsiyah, yang pernah menjadi gubernur Sevilla. Awalnya masjid istana para penguasa yang tinggal di Kasbah, kemudian menjadi salah satu masjid Jumat kota; masjid pertama yang dibangun di Tunis setelah Zitouna. Pada masa Utsmaniyah, salat di sini mengikuti mazhab Hanafi.",
 "Fin de la construction de la mosquée": "Masjid selesai dibangun",
+"Histoires et récits": "Kisah dan riwayat",
 "La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "Medina Tunis menjadi Warisan Dunia UNESCO",
 "La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "Ruang salatnya, lebih dalam daripada lebarnya, memiliki 7 lorong dan 9 baris di atas tiang marmer berkepala Hafsiyah; mihrab dinaungi kubah muqarnas dari plester berukir. Menara persegi yang dibangun sejak 1233 dilapisi jaringan belah ketupat dari batu oker: menara ini menjadi teladan bagi menara Zitouna yang sekarang.",
+"Le drapeau blanc de l'appel à la prière": "Bendera putih penanda azan",
 "Le minaret est terminé": "Menara selesai",
 "Mosquée Hammouda Pacha": "Masjid Hammouda Pacha",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Masjid Sidi Mahrez (Masjid Mohamed Bey)",
 "Mosquée Youssef Dey": "Masjid Youssef Dey",
 "Mosquée Zitouna": "Masjid Al-Zaytuna",
 "Mosquée de la Kasbah (Tunis)": "Masjid Kasbah (Tunis)",
-"Tunis": "Tunis"
+"Source :": "Sumber:",
+"Toutes les histoires des mosquées": "Semua kisah masjid",
+"Tradition": "Tradisi",
+"Tunis": "Tunis",
+"À l'heure de la prière, un drapeau blanc est hissé en haut du minaret. On dit qu'il servait de signal aux autres mosquées : la Kasbah, construite vers 1230-1235 par le premier souverain hafside, est au point le plus haut de la médina, près du palais, et les muezzins de la ville lançaient l'appel en le voyant. La coutume a repris ces dernières années.": "Saat waktu salat tiba, sebuah bendera putih dikibarkan di puncak menara. Konon bendera itu menjadi tanda bagi masjid-masjid lain: Masjid Kasbah, yang dibangun sekitar 1230-1235 oleh penguasa pertama Hafsiyah, berada di titik tertinggi medina, dekat istana, dan para muazin kota mulai mengumandangkan azan begitu melihatnya. Kebiasaan ini dihidupkan kembali dalam beberapa tahun terakhir."
 });
   Object.assign(T.ur = T.ur || {}, {
 "1231-1235 · Hafsides": "⁦1231-1235⁩ · حفصی",
@@ -39,15 +51,21 @@
 "Début de la construction (Abou Zakariya Yahya)": "تعمیر کا آغاز (ابو زکریا یحییٰ)",
 "Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "یہ ⁦1231⁩ء سے ⁦1235⁩ء تک حفصی خاندان کے بانی ابو زکریا یحییٰ کے حکم سے تعمیر ہوئی، جو اشبیلیہ کے گورنر رہ چکے تھے۔ پہلے یہ قصبہ میں رہنے والے حکمرانوں کی شاہی مسجد تھی، پھر شہر کی جامع مساجد میں سے ایک بن گئی؛ یہ زیتونہ کے بعد تونس میں بننے والی پہلی مسجد تھی۔ عثمانی دور میں یہاں حنفی مسلک کے مطابق نماز ہونے لگی۔",
 "Fin de la construction de la mosquée": "مسجد کی تعمیر مکمل",
+"Histoires et récits": "کہانیاں اور واقعات",
 "La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "تونس کا مدینہ یونیسکو عالمی ورثہ قرار",
 "La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "نماز کا ہال، جو چوڑائی سے زیادہ گہرا ہے، حفصی سرستونوں والے سنگ مرمر کے ستونوں پر ⁦7⁩ راہداریوں اور ⁦9⁩ صفوں پر مشتمل ہے؛ محراب پر تراشے ہوئے پلستر کا مقرنس گنبد ہے۔ ⁦1233⁩ء میں بننے والا مربع مینار زرد پتھر کے معین جال سے ڈھکا ہے: یہی زیتونہ کے موجودہ مینار کا نمونہ بنا۔",
+"Le drapeau blanc de l'appel à la prière": "اذان کا سفید جھنڈا",
 "Le minaret est terminé": "مینار مکمل",
 "Mosquée Hammouda Pacha": "مسجد حمودہ پاشا",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "جامع سیدی محرز (جامع محمد بے)",
 "Mosquée Youssef Dey": "یوسف دای مسجد",
 "Mosquée Zitouna": "جامع زیتونہ",
 "Mosquée de la Kasbah (Tunis)": "جامع قصبہ (تونس)",
-"Tunis": "تونس"
+"Source :": "ماخذ:",
+"Toutes les histoires des mosquées": "مساجد کی تمام کہانیاں",
+"Tradition": "روایت (رواج)",
+"Tunis": "تونس",
+"À l'heure de la prière, un drapeau blanc est hissé en haut du minaret. On dit qu'il servait de signal aux autres mosquées : la Kasbah, construite vers 1230-1235 par le premier souverain hafside, est au point le plus haut de la médina, près du palais, et les muezzins de la ville lançaient l'appel en le voyant. La coutume a repris ces dernières années.": "نماز کے وقت مینار کی چوٹی پر ایک سفید جھنڈا لہرایا جاتا ہے۔ کہا جاتا ہے کہ یہ دوسری مساجد کے لیے اشارہ تھا: قصبہ کی مسجد، جو تقریباً ⁦1230-1235⁩ء میں پہلے حفصی حکمران نے بنوائی، مدینہ (پرانے شہر) کے سب سے اونچے مقام پر، محل کے قریب ہے، اور شہر کے مؤذن اسے دیکھ کر اذان شروع کرتے تھے۔ یہ رواج پچھلے چند برسوں میں پھر شروع ہو گیا ہے۔"
 });
   Object.assign(T.de = T.de || {}, {
 "1231-1235 · Hafsides": "1231-1235 · Hafsiden",
@@ -55,15 +73,21 @@
 "Début de la construction (Abou Zakariya Yahya)": "Baubeginn (Abu Zakariya Yahya)",
 "Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "Sie wurde von 1231 bis 1235 auf Befehl von Abu Zakariya Yahya errichtet, dem Begründer der Hafsiden-Dynastie, der Statthalter von Sevilla gewesen war. Zunächst Hofmoschee der in der Kasbah residierenden Herrscher, wurde sie später eine der Freitagsmoscheen der Stadt; sie war die erste nach der Zitouna in Tunis errichtete Moschee. In osmanischer Zeit betete man hier nach hanafitischem Ritus.",
 "Fin de la construction de la mosquée": "Die Moschee wird vollendet",
+"Histoires et récits": "Geschichten und Erzählungen",
 "La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "Die Medina von Tunis wird UNESCO-Welterbe",
 "La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "Der Gebetssaal, tiefer als breit, hat 7 Schiffe und 9 Joche auf Marmorsäulen mit hafsidischen Kapitellen; über dem Mihrab erhebt sich eine Muqarnas-Kuppel aus geschnitztem Stuck. Das quadratische, schon 1233 errichtete Minarett ist mit einem Rautennetz aus ockerfarbenem Stein überzogen: Es diente als Vorbild für das heutige Minarett der Zitouna.",
+"Le drapeau blanc de l'appel à la prière": "Die weiße Fahne des Gebetsrufs",
 "Le minaret est terminé": "Das Minarett wird vollendet",
 "Mosquée Hammouda Pacha": "Hammouda-Pascha-Moschee",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Sidi-Mahrez-Moschee (Mohamed-Bey-Moschee)",
 "Mosquée Youssef Dey": "Youssef-Dey-Moschee",
 "Mosquée Zitouna": "Ez-Zitouna-Moschee",
 "Mosquée de la Kasbah (Tunis)": "Kasbah-Moschee (Tunis)",
-"Tunis": "Tunis"
+"Source :": "Quelle:",
+"Toutes les histoires des mosquées": "Alle Geschichten der Moscheen",
+"Tradition": "Überlieferung",
+"Tunis": "Tunis",
+"À l'heure de la prière, un drapeau blanc est hissé en haut du minaret. On dit qu'il servait de signal aux autres mosquées : la Kasbah, construite vers 1230-1235 par le premier souverain hafside, est au point le plus haut de la médina, près du palais, et les muezzins de la ville lançaient l'appel en le voyant. La coutume a repris ces dernières années.": "Zur Gebetszeit wird oben am Minarett eine weiße Fahne gehisst. Man sagt, sie habe den anderen Moscheen als Signal gedient: Die Kasbah, um 1230-1235 vom ersten hafsidischen Herrscher gebaut, liegt am höchsten Punkt der Medina, nahe dem Palast, und die Muezzine der Stadt riefen zum Gebet, sobald sie sie sahen. Der Brauch wurde in den letzten Jahren wieder aufgenommen."
 });
   Object.assign(T.es = T.es || {}, {
 "1231-1235 · Hafsides": "1231-1235 · hafsíes",
@@ -71,14 +95,20 @@
 "Début de la construction (Abou Zakariya Yahya)": "Comienzo de la construcción (Abu Zakariya Yahya)",
 "Elle est élevée de 1231 à 1235 sur l'ordre d'Abou Zakariya Yahya, fondateur de la dynastie hafside, qui avait été gouverneur de Séville. D'abord mosquée de la cour des souverains installés à la Kasbah, elle devient ensuite l'une des mosquées du vendredi de la ville ; c'est la première élevée à Tunis après la Zitouna. À l'époque ottomane, on y prie selon le rite hanéfite.": "Fue levantada de 1231 a 1235 por orden de Abu Zakariya Yahya, fundador de la dinastía hafsí, que había sido gobernador de Sevilla. Primero mezquita de la corte de los soberanos instalados en la Kasbah, pasó después a ser una de las mezquitas del viernes de la ciudad; fue la primera construida en Túnez después de la Zitouna. En época otomana se rezaba allí según el rito hanafí.",
 "Fin de la construction de la mosquée": "Se termina la mezquita",
+"Histoires et récits": "Historias y relatos",
 "La médina de Tunis inscrite au patrimoine mondial de l'UNESCO": "La medina de Túnez, inscrita como Patrimonio Mundial de la UNESCO",
 "La salle de prière, plus profonde que large, compte 7 nefs et 9 travées sur colonnes de marbre à chapiteaux hafsides ; le mihrab est coiffé d'une coupole à stalactites de plâtre sculpté. Le minaret carré, construit dès 1233, est couvert d'un réseau de losanges en pierre ocre : il a servi de modèle au minaret actuel de la Zitouna.": "La sala de oración, más profunda que ancha, tiene 7 naves y 9 tramos sobre columnas de mármol con capiteles hafsíes; el mihrab está coronado por una cúpula de mocárabes de yeso tallado. El alminar cuadrado, construido ya en 1233, está cubierto por una red de rombos de piedra ocre: sirvió de modelo al alminar actual de la Zitouna.",
+"Le drapeau blanc de l'appel à la prière": "La bandera blanca de la llamada a la oración",
 "Le minaret est terminé": "Se termina el alminar",
 "Mosquée Hammouda Pacha": "Mezquita de Hammouda Pachá",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Mezquita Sidi Mahrez (mezquita de Mohamed Bey)",
 "Mosquée Youssef Dey": "Mezquita de Youssef Dey",
 "Mosquée Zitouna": "Mezquita Zitouna",
 "Mosquée de la Kasbah (Tunis)": "Mezquita de la Kasbah (Túnez)",
-"Tunis": "Túnez"
+"Source :": "Fuente:",
+"Toutes les histoires des mosquées": "Todas las historias de las mezquitas",
+"Tradition": "Tradición",
+"Tunis": "Túnez",
+"À l'heure de la prière, un drapeau blanc est hissé en haut du minaret. On dit qu'il servait de signal aux autres mosquées : la Kasbah, construite vers 1230-1235 par le premier souverain hafside, est au point le plus haut de la médina, près du palais, et les muezzins de la ville lançaient l'appel en le voyant. La coutume a repris ces dernières années.": "A la hora de la oración, se iza una bandera blanca en lo alto del alminar. Se dice que servía de señal a las demás mezquitas: la Kasbah, construida hacia 1230-1235 por el primer soberano hafsí, está en el punto más alto de la medina, cerca del palacio, y los almuédanos de la ciudad lanzaban la llamada al verla. La costumbre se ha recuperado en los últimos años."
 });
 })(window.TRADUCTIONS = window.TRADUCTIONS || {});

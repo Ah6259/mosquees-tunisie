@@ -3,9 +3,12 @@
 (function (T) {
   Object.assign(T.tr = T.tr || {}, {
 "1655 · Mouradites": "1655 · Muradîler",
+"Bâtie en 1655 par Hammouda Pacha Bey, de la dynastie mouradite, c'est la deuxième mosquée hanafite de Tunis, avec un minaret octogonal. Dans sa cour se trouve le mausolée de son fondateur, décoré de marbres de couleur.": "Murâdî hanedanından Hammûde Paşa Bey tarafından 1655'te yaptırılan bu cami, sekizgen minaresiyle Tunus'un ikinci Hanefî camiidir. Avlusunda, kurucusunun renkli mermerlerle süslenmiş türbesi bulunur.",
 "Classée monument historique": "Tarihî anıt olarak tescil",
 "Construction par Hammouda Pacha Bey": "Hammude Paşa Bey tarafından inşa",
+"Fait historique": "Tarihî olay",
 "Hammouda Pacha, bey de la dynastie mouradite, fait construire la mosquée en 1655, à l'angle de la rue Sidi Ben Arous et de la rue de la Kasbah. Comme Youssef Dey avant lui, il y fait aménager son propre mausolée, dans la cour : ce tombeau aurait inspiré, bien plus tard, celui du président Bourguiba à Monastir.": "Muradî hanedanından Hammude Paşa Bey camiyi 1655'te Sidi Ben Arous sokağı ile Kasba sokağının köşesinde yaptırdı. Kendisinden önceki Yusuf Dayı gibi avluda kendi türbesini yaptırdı: bu türbenin çok sonra Monastir'deki Cumhurbaşkanı Burgiba'nın türbesine ilham verdiği söylenir.",
+"Histoires et récits": "Hikâyeler ve anlatılar",
 "La deuxième mosquée hanéfite de Tunis, élevée en 1655 par le bey Hammouda Pacha. Son fin minaret octogonal domine la rue Sidi Ben Arous, dans la médina.": "Tunus'un ikinci Hanefî camisi; 1655'te Hammude Paşa Bey tarafından yaptırıldı. İnce sekizgen minaresi medinedeki Sidi Ben Arous sokağına hâkimdir.",
 "Mosquée Hammouda Pacha": "Hammude Paşa Camii",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Sidi Mahrez Camii (Muhammed Bey Camii)",
@@ -13,14 +16,20 @@
 "Mosquée Zitouna": "Zeytune Camii",
 "Mosquée de la Kasbah (Tunis)": "Kasba Camii (Tunus)",
 "Restauration (1960-1961)": "Onarım (1960-1961)",
+"Source :": "Kaynak:",
+"Toutes les histoires des mosquées": "Camilerin bütün hikâyeleri",
 "Tunis": "Tunus",
-"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "17. yüzyıldan bir Osmanlı yapısı: mermer kapı, yeşil kiremitli çatılar ve üç avlu. Yaklaşık 24 × 17 metrelik harim 48 sütun üzerinde 7 sahınlıdır; duvarları mermer ve oyma alçıyla kaplı, İtalyan etkili çiçek süslemeleri ve renkli mermerlerle bezelidir. Tunus'ta nadir görüldüğü üzere avlu sokağa geniş parmaklıklı pencerelerle açılır. Sekizgen minarenin tepesinde bir şerefe ve piramit çatı vardır."
+"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "17. yüzyıldan bir Osmanlı yapısı: mermer kapı, yeşil kiremitli çatılar ve üç avlu. Yaklaşık 24 × 17 metrelik harim 48 sütun üzerinde 7 sahınlıdır; duvarları mermer ve oyma alçıyla kaplı, İtalyan etkili çiçek süslemeleri ve renkli mermerlerle bezelidir. Tunus'ta nadir görüldüğü üzere avlu sokağa geniş parmaklıklı pencerelerle açılır. Sekizgen minarenin tepesinde bir şerefe ve piramit çatı vardır.",
+"Une mosquée et le tombeau de son fondateur": "Bir cami ve kurucusunun türbesi"
 });
   Object.assign(T.id = T.id || {}, {
 "1655 · Mouradites": "1655 · Muradiyah",
+"Bâtie en 1655 par Hammouda Pacha Bey, de la dynastie mouradite, c'est la deuxième mosquée hanafite de Tunis, avec un minaret octogonal. Dans sa cour se trouve le mausolée de son fondateur, décoré de marbres de couleur.": "Dibangun pada tahun 1655 oleh Hammouda Pasha Bey, dari dinasti Muradiyah, masjid ini adalah masjid Hanafi kedua di Tunis, dengan menara segi delapan. Di halamannya terdapat makam pendirinya, yang dihiasi marmer berwarna.",
 "Classée monument historique": "Ditetapkan sebagai monumen bersejarah",
 "Construction par Hammouda Pacha Bey": "Dibangun oleh Hammouda Pacha Bey",
+"Fait historique": "Fakta sejarah",
 "Hammouda Pacha, bey de la dynastie mouradite, fait construire la mosquée en 1655, à l'angle de la rue Sidi Ben Arous et de la rue de la Kasbah. Comme Youssef Dey avant lui, il y fait aménager son propre mausolée, dans la cour : ce tombeau aurait inspiré, bien plus tard, celui du président Bourguiba à Monastir.": "Hammouda Pacha, bey dari dinasti Muradiyah, membangun masjid ini pada tahun 1655 di sudut jalan Sidi Ben Arous dan jalan Kasbah. Seperti Youssef Dey sebelumnya, ia membangun mausoleumnya sendiri di halaman: makam ini konon mengilhami, jauh kemudian, makam Presiden Bourguiba di Monastir.",
+"Histoires et récits": "Kisah dan riwayat",
 "La deuxième mosquée hanéfite de Tunis, élevée en 1655 par le bey Hammouda Pacha. Son fin minaret octogonal domine la rue Sidi Ben Arous, dans la médina.": "Masjid Hanafi kedua di Tunis, dibangun pada tahun 1655 oleh Hammouda Pacha Bey. Menara segi delapannya yang ramping menjulang di atas jalan Sidi Ben Arous di medina.",
 "Mosquée Hammouda Pacha": "Masjid Hammouda Pacha",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Masjid Sidi Mahrez (Masjid Mohamed Bey)",
@@ -28,14 +37,20 @@
 "Mosquée Zitouna": "Masjid Al-Zaytuna",
 "Mosquée de la Kasbah (Tunis)": "Masjid Kasbah (Tunis)",
 "Restauration (1960-1961)": "Pemugaran (1960-1961)",
+"Source :": "Sumber:",
+"Toutes les histoires des mosquées": "Semua kisah masjid",
 "Tunis": "Tunis",
-"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "Bangunan Utsmaniyah abad ke-17: pintu marmer, atap genteng hijau, dan tiga halaman. Ruang salatnya, sekitar 24 × 17 meter, memiliki 7 lorong di atas 48 tiang; dindingnya berlapis marmer dan plester berukir, dengan hiasan bunga dan marmer berwarna bergaya Italia. Hal yang jarang di Tunis, halamannya terbuka ke jalan lewat jendela-jendela lebar berteralis. Menara segi delapan diakhiri balkon dan atap limas."
+"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "Bangunan Utsmaniyah abad ke-17: pintu marmer, atap genteng hijau, dan tiga halaman. Ruang salatnya, sekitar 24 × 17 meter, memiliki 7 lorong di atas 48 tiang; dindingnya berlapis marmer dan plester berukir, dengan hiasan bunga dan marmer berwarna bergaya Italia. Hal yang jarang di Tunis, halamannya terbuka ke jalan lewat jendela-jendela lebar berteralis. Menara segi delapan diakhiri balkon dan atap limas.",
+"Une mosquée et le tombeau de son fondateur": "Sebuah masjid dan makam pendirinya"
 });
   Object.assign(T.ur = T.ur || {}, {
 "1655 · Mouradites": "⁦1655⁩ · مرادی",
+"Bâtie en 1655 par Hammouda Pacha Bey, de la dynastie mouradite, c'est la deuxième mosquée hanafite de Tunis, avec un minaret octogonal. Dans sa cour se trouve le mausolée de son fondateur, décoré de marbres de couleur.": "مرادی خاندان کے حمودہ پاشا بے نے ⁦1655⁩ء میں اسے بنوایا؛ یہ ہشت پہلو مینار کے ساتھ تیونس شہر کی دوسری حنفی مسجد ہے۔ اس کے صحن میں اس کے بانی کا مزار ہے، جو رنگین سنگِ مرمر سے آراستہ ہے۔",
 "Classée monument historique": "تاریخی یادگار قرار",
 "Construction par Hammouda Pacha Bey": "حمودہ پاشا بے کے ہاتھوں تعمیر",
+"Fait historique": "تاریخی حقیقت",
 "Hammouda Pacha, bey de la dynastie mouradite, fait construire la mosquée en 1655, à l'angle de la rue Sidi Ben Arous et de la rue de la Kasbah. Comme Youssef Dey avant lui, il y fait aménager son propre mausolée, dans la cour : ce tombeau aurait inspiré, bien plus tard, celui du président Bourguiba à Monastir.": "مرادی خاندان کے بے حمودہ پاشا نے ⁦1655⁩ء میں سیدی بن عروس گلی اور قصبہ گلی کے کونے پر یہ مسجد بنوائی۔ اپنے پیش رو یوسف دای کی طرح انہوں نے صحن میں اپنا مقبرہ بنوایا: کہا جاتا ہے کہ اس مقبرے نے بہت بعد منستیر میں صدر بورقیبہ کے مقبرے کو متاثر کیا۔",
+"Histoires et récits": "کہانیاں اور واقعات",
 "La deuxième mosquée hanéfite de Tunis, élevée en 1655 par le bey Hammouda Pacha. Son fin minaret octogonal domine la rue Sidi Ben Arous, dans la médina.": "تونس کی دوسری حنفی مسجد، جسے ⁦1655⁩ء میں حمودہ پاشا بے نے تعمیر کیا۔ اس کا پتلا ہشت پہلو مینار مدینہ کی سیدی بن عروس گلی پر سایہ فگن ہے۔",
 "Mosquée Hammouda Pacha": "مسجد حمودہ پاشا",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "جامع سیدی محرز (جامع محمد بے)",
@@ -43,14 +58,20 @@
 "Mosquée Zitouna": "جامع زیتونہ",
 "Mosquée de la Kasbah (Tunis)": "جامع قصبہ (تونس)",
 "Restauration (1960-1961)": "مرمت (⁦1960-1961⁩)",
+"Source :": "ماخذ:",
+"Toutes les histoires des mosquées": "مساجد کی تمام کہانیاں",
 "Tunis": "تونس",
-"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "سترھویں صدی کی ایک عثمانی عمارت: سنگ مرمر کا دروازہ، سبز کھپریل کی چھتیں اور تین صحن۔ تقریباً ⁦24 × 17⁩ میٹر کے نماز کے ہال میں ⁦48⁩ ستونوں پر ⁦7⁩ راہداریاں ہیں؛ دیواریں سنگ مرمر اور تراشے ہوئے پلستر سے مزین ہیں، اطالوی اثر والے پھولوں اور رنگین سنگ مرمر کی آرائش کے ساتھ۔ تونس میں ایک نادر بات: صحن چوڑی جالی دار کھڑکیوں کے ذریعے گلی کی طرف کھلتا ہے۔ ہشت پہلو مینار پر ایک بالکنی اور مخروطی چھت ہے۔"
+"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "سترھویں صدی کی ایک عثمانی عمارت: سنگ مرمر کا دروازہ، سبز کھپریل کی چھتیں اور تین صحن۔ تقریباً ⁦24 × 17⁩ میٹر کے نماز کے ہال میں ⁦48⁩ ستونوں پر ⁦7⁩ راہداریاں ہیں؛ دیواریں سنگ مرمر اور تراشے ہوئے پلستر سے مزین ہیں، اطالوی اثر والے پھولوں اور رنگین سنگ مرمر کی آرائش کے ساتھ۔ تونس میں ایک نادر بات: صحن چوڑی جالی دار کھڑکیوں کے ذریعے گلی کی طرف کھلتا ہے۔ ہشت پہلو مینار پر ایک بالکنی اور مخروطی چھت ہے۔",
+"Une mosquée et le tombeau de son fondateur": "ایک مسجد اور اس کے بانی کا مقبرہ"
 });
   Object.assign(T.de = T.de || {}, {
 "1655 · Mouradites": "1655 · Muraditen",
+"Bâtie en 1655 par Hammouda Pacha Bey, de la dynastie mouradite, c'est la deuxième mosquée hanafite de Tunis, avec un minaret octogonal. Dans sa cour se trouve le mausolée de son fondateur, décoré de marbres de couleur.": "1655 von Hammouda Pacha Bey aus der Dynastie der Muraditen erbaut, ist sie die zweite hanafitische Moschee von Tunis, mit einem achteckigen Minarett. In ihrem Hof befindet sich das Mausoleum ihres Gründers, geschmückt mit farbigem Marmor.",
 "Classée monument historique": "Unter Denkmalschutz gestellt",
 "Construction par Hammouda Pacha Bey": "Erbaut von Hammouda Pascha Bey",
+"Fait historique": "Historische Tatsache",
 "Hammouda Pacha, bey de la dynastie mouradite, fait construire la mosquée en 1655, à l'angle de la rue Sidi Ben Arous et de la rue de la Kasbah. Comme Youssef Dey avant lui, il y fait aménager son propre mausolée, dans la cour : ce tombeau aurait inspiré, bien plus tard, celui du président Bourguiba à Monastir.": "Hammouda Pascha, Bey der Muraditen-Dynastie, ließ die Moschee 1655 an der Ecke der Straßen Sidi Ben Arous und Kasbah errichten. Wie zuvor Youssef Dey ließ er im Hof sein eigenes Mausoleum anlegen: Dieses Grab soll viel später das von Präsident Bourguiba in Monastir inspiriert haben.",
+"Histoires et récits": "Geschichten und Erzählungen",
 "La deuxième mosquée hanéfite de Tunis, élevée en 1655 par le bey Hammouda Pacha. Son fin minaret octogonal domine la rue Sidi Ben Arous, dans la médina.": "Die zweite hanafitische Moschee von Tunis, 1655 von Hammouda Pascha Bey errichtet. Ihr schlankes achteckiges Minarett überragt die Straße Sidi Ben Arous in der Medina.",
 "Mosquée Hammouda Pacha": "Hammouda-Pascha-Moschee",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Sidi-Mahrez-Moschee (Mohamed-Bey-Moschee)",
@@ -58,14 +79,20 @@
 "Mosquée Zitouna": "Ez-Zitouna-Moschee",
 "Mosquée de la Kasbah (Tunis)": "Kasbah-Moschee (Tunis)",
 "Restauration (1960-1961)": "Restaurierung (1960-1961)",
+"Source :": "Quelle:",
+"Toutes les histoires des mosquées": "Alle Geschichten der Moscheen",
 "Tunis": "Tunis",
-"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "Ein osmanischer Bau des 17. Jahrhunderts: Marmorportal, grün gedeckte Dächer und drei Höfe. Der etwa 24 × 17 Meter große Gebetssaal hat 7 Schiffe auf 48 Säulen; seine Wände sind mit Marmor und geschnitztem Stuck verkleidet, mit Blumendekor und farbigem Marmor italienischen Einflusses. Ungewöhnlich für Tunis öffnet sich der Hof durch breite vergitterte Fenster zur Straße. Das achteckige Minarett trägt einen Balkon und ein Pyramidendach."
+"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "Ein osmanischer Bau des 17. Jahrhunderts: Marmorportal, grün gedeckte Dächer und drei Höfe. Der etwa 24 × 17 Meter große Gebetssaal hat 7 Schiffe auf 48 Säulen; seine Wände sind mit Marmor und geschnitztem Stuck verkleidet, mit Blumendekor und farbigem Marmor italienischen Einflusses. Ungewöhnlich für Tunis öffnet sich der Hof durch breite vergitterte Fenster zur Straße. Das achteckige Minarett trägt einen Balkon und ein Pyramidendach.",
+"Une mosquée et le tombeau de son fondateur": "Eine Moschee und das Grab ihres Gründers"
 });
   Object.assign(T.es = T.es || {}, {
 "1655 · Mouradites": "1655 · muradíes",
+"Bâtie en 1655 par Hammouda Pacha Bey, de la dynastie mouradite, c'est la deuxième mosquée hanafite de Tunis, avec un minaret octogonal. Dans sa cour se trouve le mausolée de son fondateur, décoré de marbres de couleur.": "Construida en 1655 por Hammouda Pachá Bey, de la dinastía muradí, es la segunda mezquita hanafí de Túnez, con un alminar octogonal. En su patio se encuentra el mausoleo de su fundador, decorado con mármoles de colores.",
 "Classée monument historique": "Declarada monumento histórico",
 "Construction par Hammouda Pacha Bey": "Construida por el bey Hammouda Pachá",
+"Fait historique": "Hecho histórico",
 "Hammouda Pacha, bey de la dynastie mouradite, fait construire la mosquée en 1655, à l'angle de la rue Sidi Ben Arous et de la rue de la Kasbah. Comme Youssef Dey avant lui, il y fait aménager son propre mausolée, dans la cour : ce tombeau aurait inspiré, bien plus tard, celui du président Bourguiba à Monastir.": "Hammouda Pachá, bey de la dinastía muradí, mandó construir la mezquita en 1655, en la esquina de la calle Sidi Ben Arous y la calle de la Kasbah. Como Youssef Dey antes que él, hizo construir su propio mausoleo en el patio: esta tumba habría inspirado, mucho después, la del presidente Burguiba en Monastir.",
+"Histoires et récits": "Historias y relatos",
 "La deuxième mosquée hanéfite de Tunis, élevée en 1655 par le bey Hammouda Pacha. Son fin minaret octogonal domine la rue Sidi Ben Arous, dans la médina.": "La segunda mezquita hanafí de Túnez, levantada en 1655 por el bey Hammouda Pachá. Su esbelto alminar octogonal domina la calle Sidi Ben Arous, en la medina.",
 "Mosquée Hammouda Pacha": "Mezquita de Hammouda Pachá",
 "Mosquée Sidi Mahrez (mosquée Mohamed Bey)": "Mezquita Sidi Mahrez (mezquita de Mohamed Bey)",
@@ -73,7 +100,10 @@
 "Mosquée Zitouna": "Mezquita Zitouna",
 "Mosquée de la Kasbah (Tunis)": "Mezquita de la Kasbah (Túnez)",
 "Restauration (1960-1961)": "Restauración (1960-1961)",
+"Source :": "Fuente:",
+"Toutes les histoires des mosquées": "Todas las historias de las mezquitas",
 "Tunis": "Túnez",
-"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "Un edificio otomano del siglo XVII: puerta de mármol, tejados de tejas verdes y tres patios. La sala de oración, de unos 24 × 17 metros, tiene 7 naves sobre 48 columnas; sus muros están revestidos de mármol y yeso tallado, con decoración floral y mármoles de colores de influencia italiana. Algo raro en Túnez: el patio se abre a la calle por anchas ventanas enrejadas. El alminar octogonal está coronado por un balcón y un tejado piramidal."
+"Un édifice ottoman du XVIIe siècle : porte de marbre, toits de tuiles vertes et trois cours. La salle de prière, d'environ 24 × 17 mètres, compte 7 nefs sur 48 colonnes ; ses murs sont revêtus de marbre et de plâtre sculpté, avec un décor de fleurs et de marbres de couleur d'influence italienne. Fait rare à Tunis, la cour s'ouvre sur la rue par de larges fenêtres grillagées. Le minaret octogonal est coiffé d'un balcon et d'un toit pyramidal.": "Un edificio otomano del siglo XVII: puerta de mármol, tejados de tejas verdes y tres patios. La sala de oración, de unos 24 × 17 metros, tiene 7 naves sobre 48 columnas; sus muros están revestidos de mármol y yeso tallado, con decoración floral y mármoles de colores de influencia italiana. Algo raro en Túnez: el patio se abre a la calle por anchas ventanas enrejadas. El alminar octogonal está coronado por un balcón y un tejado piramidal.",
+"Une mosquée et le tombeau de son fondateur": "Una mezquita y la tumba de su fundador"
 });
 })(window.TRADUCTIONS = window.TRADUCTIONS || {});

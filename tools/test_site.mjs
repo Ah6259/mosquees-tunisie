@@ -166,8 +166,9 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const cartes = [...d.querySelectorAll(".mq-grandes a.mq-grande")];
   check(`accueil : les ${GRANDES.length} grandes mosquées en cartes avec photo (fichier présent) et lien vers leur page`, cartes.length === GRANDES.length
     && cartes.every(a => { const i = a.querySelector("img"); return i && existsSync(join(root, i.getAttribute("src"))) && existsSync(join(root, a.getAttribute("href"), "index.html")); }));
-  check("accueil : verset 9:18 en arabe + traduction citée (QuranEnc) ; photo du bandeau créditée (auteur + licence)",
-    /يَعۡمُرُ مَسَٰجِدَ ٱللَّهِ/.test(d.querySelector(".mq-verset-ar").textContent) && !!d.querySelector('.mq-verset-source a[href="https://quranenc.com/"]')
+  check("accueil : versets 72:18 (en haut, demande du 23/10/2026) et 9:18 en arabe + traduction citée (QuranEnc) ; lien vers le Coran de The Message ; photo du bandeau créditée (auteur + licence)",
+    [...d.querySelectorAll(".mq-verset-ar")].some(x => /يَعۡمُرُ مَسَٰجِدَ ٱللَّهِ/.test(x.textContent)) && /وَأَنَّ ٱلۡمَسَٰجِدَ لِلَّهِ/.test(d.querySelector("#verset-jinn .mq-verset-ar").textContent)
+    && d.querySelectorAll('.mq-verset-source a[href="https://quranenc.com/"]').length === 2 && /^https:\/\/message\.clicvia\.com\/\?lang=fr#quran$/.test(d.querySelector("[data-lien-coran]").href)
     && /Z thomas/.test(d.querySelector(".hero figcaption").textContent) && /CC BY-SA 4\.0/.test(d.querySelector(".hero figcaption").textContent));
   const vues = [...d.querySelectorAll(".hero [data-diapo] .diapo-vue")], leg = [...d.querySelectorAll(".hero [data-diapo] .diapo-legende")];
   check(`accueil : la photo du bandeau fait défiler les ${GRANDES.length} grandes mosquées (Kairouan d'abord, fichier présent, lien vers sa page, une légende créditée par photo, une seule visible)`,
@@ -289,7 +290,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const { d } = await page(p);
     if (d.querySelectorAll("header .partager").length !== 1) manque.push(p + " partager");
     if (!d.querySelector('footer a[href$="#avis"]')) manque.push(p + " avis");
-    if (d.querySelectorAll(".menu a").length !== 6 || d.querySelectorAll('.menu a.menu-annuaire[target="_blank"][rel="noopener"] img').length !== 2) manque.push(p + " menu");
+    if (d.querySelectorAll(".menu a").length !== 9 || d.querySelectorAll('.menu a.menu-annuaire[target="_blank"][rel="noopener"] img').length !== 2) manque.push(p + " menu");
     if (d.querySelectorAll("header .rec-bouton").length !== 1) manque.push(p + " récitation");
   }
   check(`toutes les pages : Partager et bouton de récitation dans l'en-tête, « Votre avis », menu ${manque.slice(0, 5).join(" | ")}`, !manque.length);
@@ -305,6 +306,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     for (const p of PAGES_FR) { const h = lire(p); if (h.split(a).length !== h.split(b).length) manque.push(p + " " + b); }
   check(`chaque texte français a sa traduction arabe ET anglaise, sur toutes les pages ${manque.slice(0, 4).join(" | ")}`, !manque.length);
   const NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"];
+  const cle0 = s => String(s).replace(/\s+/g, " ").trim();
   const TR = (() => { const w = {}; new Function("window", lire("assets/langues.js"))(w);
     // on lit les SOURCES des traductions (assets/langues.js, assets/trad/, tools/langues_plus/), pas les fichiers fabriqués
     // assets/l/<langue>.js : sinon une traduction retirée d'une source ne serait pas vue (sabotage « traduction turque manque »)
@@ -312,7 +314,15 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const P = JSON.parse(lire("tools/langues_plus/_francais.json")), frP = [...P.ui, ...P.contenu];
     for (const l of ["it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]) (w.TRADUCTIONS[l] = w.TRADUCTIONS[l] || {}, lire(`tools/langues_plus/${l}.txt`)).split(String.fromCharCode(10)).filter(x => x.trim()).forEach(x => {
       const i = x.indexOf(String.fromCharCode(9)); w.TRADUCTIONS[l][frP[+x.slice(0, i)].replace(/\s+/g, " ").trim()] = x.slice(i + 1); });
-    for (const f of readdirSync(join(root, "assets/trad"))) new Function("window", lire("assets/trad/" + f))(w); return w.TRADUCTIONS || {}; })();
+    for (const f of readdirSync(join(root, "assets/trad"))) new Function("window", lire("assets/trad/" + f))(w);
+    // textes ajoutés le 23/10/2026 : tools/textes/base/<nom>.json (fr, ar, en) + tools/textes/<langue>.json (« nom/clé »)
+    const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    for (const f of readdirSync(join(root, "tools/textes/base")).filter(x => x.endsWith(".json"))) {
+      const base = JSON.parse(lire("tools/textes/base/" + f)), nomF = f.slice(0, -5);
+      for (const l of NOUVELLES) { const T = existsSync(join(root, `tools/textes/${l}.json`)) ? JSON.parse(lire(`tools/textes/${l}.json`)) : {};
+        for (const [k, v] of Object.entries(base)) if (T[nomF + "/" + k]) (w.TRADUCTIONS[l] = w.TRADUCTIONS[l] || {})[cle0(esc(v.fr))] = T[nomF + "/" + k]; }
+    }
+    return w.TRADUCTIONS || {}; })();
   const cle = s => String(s).replace(/\s+/g, " ").trim();
   const textes = new Map(), structure = [];
   const ajouter = (fr, ou) => { fr = cle(fr || ""); if (fr && !textes.has(fr)) textes.set(fr, ou); };
@@ -348,8 +358,9 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const liens = async (p, o) => [...(await page(p, o)).d.querySelectorAll(".menu a")].map(a => a.getAttribute("href"));
     const fr = await liens("index.html"), es = await liens("index.html", { lang: "es" }), tr = await liens("mosquee/kairouan/index.html", { lang: "tr" });
     check("menu : The Message et Points d'eau juste après « Signaler un lieu », avant « À propos » ; ouverts dans la langue du visiteur (anglais si le site ne l'a pas)",
-      /#signaler$/.test(fr[2]) && fr[3] === "https://message.clicvia.com/?lang=fr" && fr[4] === "https://eau.clicvia.com/" && /a-propos\/$/.test(fr[5])
-      && es[3] === "https://message.clicvia.com/?lang=es" && es[4] === "https://eau.clicvia.com/es/" && /^https:\/\/message\.clicvia\.com\/\?lang=/.test(tr[3]) && /^https:\/\/eau\.clicvia\.com\/tr\/$/.test(tr[4]));
+      /#signaler$/.test(fr[5]) && fr[6] === "https://message.clicvia.com/?lang=fr" && fr[7] === "https://eau.clicvia.com/" && /a-propos\/$/.test(fr[8])
+      && /role-de-la-mosquee\/$/.test(fr[2]) && /histoires-des-mosquees\/$/.test(fr[3]) && /construire-une-mosquee\/$/.test(fr[4])
+      && es[6] === "https://message.clicvia.com/?lang=es" && es[7] === "https://eau.clicvia.com/es/" && /^https:\/\/message\.clicvia\.com\/\?lang=/.test(tr[6]) && /^https:\/\/eau\.clicvia\.com\/tr\/$/.test(tr[7]));
   }
   check("CSS : les éléments « en » sont montrés pour tr, id, ur, de, es", NOUVELLES.every(l => lire("assets/style.css").includes(`html[lang="${l}"] [data-l="en"]`)));
   // ---- une adresse par langue : chaque page de langue est écrite dans sa langue, avec sa propre adresse officielle
@@ -531,6 +542,62 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     ["index.html", "a-propos/index.html", "mosquee/zitouna/index.html"].every(p => M.OVERPASS.every(u => csp(p).includes(new URL(u).origin)) && csp(p).includes("https://nominatim.openstreetmap.org")));
   const { d: apr } = await page("a-propos/index.html");
   check("À propos : « Ailleurs dans le monde » (OpenStreetMap en direct) et Nominatim dans les sources", /Ailleurs dans le monde/.test(apr.querySelector('.sources[data-l="fr"]').textContent) && /Nominatim/.test(apr.querySelector('.sources[data-l="fr"]').textContent));
+}
+// ---- 9. ajouts du 23/10/2026 (demandes d'Ahmed) : recherche des grandes mosquées du monde, tri, pages Rôle / Histoires /
+//         Construire / Grandes mosquées du monde, descriptions écrites par nous (Djerba…) — jamais liés aux données du jour
+{
+  const NOUV = ["role-de-la-mosquee/", "histoires-des-mosquees/", "construire-une-mosquee/", "grandes-mosquees-du-monde/"];
+  check("nouvelles pages : Rôle, Histoires, Construire, Grandes mosquées du monde, en 21 langues (adresse par langue)",
+    NOUV.every(c => existsSync(join(root, c, "index.html")) && AUTRES.every(l => existsSync(join(root, l, c, "index.html")))));
+  // recherche : liste tunisienne filtrée, requête Wikidata propre, résultats triables
+  const { w, d, js } = await page("grandes-mosquees/index.html");
+  const R = w.MOSQUEES_RECHERCHE;
+  const n = R.filtrer("kairouan"), visibles = [...d.querySelectorAll(".mq-grande")].filter(a => !a.hidden);
+  check("grandes mosquées : la recherche filtre la liste (Kairouan) et masque le reste", n >= 1 && visibles.length >= 1 && visibles.length < d.querySelectorAll(".mq-grande").length
+    && visibles.every(a => /kairouan/i.test(a.textContent)));
+  R.filtrer("");
+  check("recherche du monde : mot nettoyé (rien qui casse la requête) ; requête = mosquées Wikidata (P31 Q32815) dans la langue de la page",
+    R.nettoyer('Is"tan}bul') === "Is tan bul" && /haswbstatement:P31=Q32815/.test(R.requete("Istanbul", "fr")) && /fr\.wikipedia\.org/.test(R.requete("Istanbul", "fr")));
+  const reponse = { results: { bindings: [
+    { item: { value: "http://www.wikidata.org/entity/Q1" }, label: { value: "Mosquée B" }, liens: { value: "50" }, date: { value: "1609-01-01T00:00:00Z" }, coord: { value: "Point(28.97 41.0)" } },
+    { item: { value: "http://www.wikidata.org/entity/Q1255269" }, label: { value: "Mosquée A" }, liens: { value: "40" }, date: { value: "0670-01-01T00:00:00Z" } }] } };
+  w.__wikidata = async () => reponse;
+  R.chercher("Istanbul", true); await new Promise(r => setTimeout(r, 30));
+  const res = () => [...d.querySelectorAll("#mq-monde-liste-res .mq-monde-res b.mo-nom")].map(b => b.textContent);
+  const sel = d.querySelector("#mq-monde-res select[data-tri]");
+  const avant = res(); sel.value = "ancien"; sel.dispatchEvent(new w.Event("change")); const apres = res();
+  check("recherche du monde : résultats (carte, « Voir sur la carte » ?ll=, « Notre page » pour une mosquée de Tunisie) triables par date",
+    avant.join() === "Mosquée B,Mosquée A" && apres.join() === "Mosquée A,Mosquée B" && !!d.querySelector('#mq-monde-res a[href*="?ll=41.00000,28.97000"]')
+    && !!d.querySelector('#mq-monde-res a[href="../mosquee/kairouan/"]') && js.length === 0);
+  // tri des grandes mosquées de Tunisie (accueil)
+  const { w: wa, d: da } = await page("index.html", { stockage: { langue: "fr", "recitation-mosquees": "non" } });
+  const s = da.querySelector('select[data-tri="mq-grandes-acc"]');
+  const ordre = () => [...da.querySelectorAll("#mq-grandes-acc .mq-grande")].map(a => +a.dataset.an);
+  s.value = "ancien"; s.dispatchEvent(new wa.Event("change")); const anc = ordre();
+  s.value = "recent"; s.dispatchEvent(new wa.Event("change")); const rec = ordre();
+  check("accueil : « Trier » les grandes mosquées (la plus ancienne / la plus récente / A→Z), choix gardé",
+    anc.every((x, i) => i === 0 || anc[i - 1] <= x) && rec.every((x, i) => i === 0 || rec[i - 1] >= x) && wa.localStorage.getItem("tri-mosquees") === "recent"
+    && [...s.options].map(o => o.value).join() === "page,ancien,recent,az");
+  // page du monde : au moins 50 mosquées, triables, nom dans la langue de la page
+  const { w: wm, d: dm } = await page("grandes-mosquees-du-monde/index.html");
+  const cartesM = dm.querySelectorAll("#mo-liste .mo-carte"), sm = dm.querySelector('select[data-tri="mo-liste"]');
+  sm.value = "ancien"; sm.dispatchEvent(new wm.Event("change"));
+  const ansM = [...dm.querySelectorAll("#mo-liste .mo-carte")].map(x => x.dataset.an).filter(Boolean).map(Number);
+  check(`grandes mosquées du monde : au moins 50 mosquées (${cartesM.length}), triées par date (inconnues à la fin), description chargée à la demande`,
+    cartesM.length >= 50 && ansM.length >= 30 && ansM.every((x, i) => i === 0 || ansM[i - 1] <= x) && dm.querySelectorAll("details.mo-desc").length === cartesM.length
+    && existsSync(join(root, "donnees/monde/fr.json")) && existsSync(join(root, "donnees/monde/ja.json")));
+  // histoires sur les pages des grandes mosquées ; versets du Coran : arabe + traduction QuranEnc (jamais la nôtre)
+  check("histoires : Kairouan a sa partie « Histoires et récits » avec la nature de chaque récit et sa source ; la page des histoires a Tamim ad-Dari (récit faible)",
+    /id="histoires"/.test(lire("mosquee/kairouan/index.html")) && /hi-nature/.test(lire("mosquee/kairouan/index.html"))
+    && /Tamim ad-Dari/.test(lire("histoires-des-mosquees/index.html")) && /hi-nature hi-faible/.test(lire("histoires-des-mosquees/index.html")));
+  const c = lire("construire-une-mosquee/index.html");
+  check("Construire une mosquée : versets en arabe + traduction QuranEnc (Rachid Maach) ; hadiths avec référence ; organismes avec avertissement ; démarche tunisienne",
+    /يَعْمُرُ/.test(c) && /Rachid Maach/.test(c) && /bukhari:450/.test(c) && (c.match(/class="cs-org"/g) || []).length >= 5 && /sicad\.gov\.tn/.test(c) && /Nous ne sommes liés à aucun/.test(c));
+  // descriptions écrites par nous : chaque fiche Wikidata a un texte (Wikipédia ou le nôtre) ; Djerba a l'encadré de l'île
+  const sansTexte = fiches.filter(p => { const h = lire(p); return !/class="mq-resume/.test(h) && !/id="notre-presentation"/.test(h); });
+  const djerba = fiches.filter(p => /id="djerba"/.test(lire(p)));
+  check(`descriptions : chaque page de mosquée a un texte (Wikipédia ou le nôtre) ${sansTexte.slice(0, 3).join(" | ")} ; pages de Djerba avec l'encadré de l'île (${djerba.length})`,
+    !sansTexte.length && djerba.length >= 10);
 }
 console.log(`\n${erreurs ? erreurs + " PROBLÈME(S)" : "TOUT PASSE"} (${total} vérifications)`);
 process.exit(erreurs ? 1 : 0);

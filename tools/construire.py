@@ -20,8 +20,9 @@ from contenu_grandes_3 import GRANDES as G3  # noqa: E402
 import pages_langues as PL  # noqa: E402
 import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
+import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
-VERSION = "20261018u"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261023a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
 NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]      # toutes sauf fr, ar, en (écrits dans les pages)
@@ -30,8 +31,8 @@ NOM_LANGUE = {"fr": "Français", "ar": "العربية", "en": "English", "tr": 
               "it": "Italiano", "pt": "Português", "nl": "Nederlands", "zh": "中文", "ja": "日本語", "ko": "한국어", "hi": "हिन्दी",
               "ru": "Русский", "vi": "Tiếng Việt", "th": "ไทย", "tl": "Filipino", "sv": "Svenska", "ro": "Română"}
 CSP = ("default-src 'self'; script-src 'self' https://gc.zgo.at https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; "
-       "font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://thumb.wikimedia.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://cdnjs.cloudflare.com https://prix-eaux-tunisie.goatcounter.com; "
-       "frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com "
+       "font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://thumb.wikimedia.org https://commons.wikimedia.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://cdnjs.cloudflare.com https://prix-eaux-tunisie.goatcounter.com; "
+       "frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com https://query.wikidata.org "
        "https://maps.mail.ru https://overpass-api.de https://overpass.kumi.systems https://overpass.private.coffee https://overpass.openstreetmap.fr https://nominatim.openstreetmap.org; object-src 'none'; base-uri 'self'; "
        "form-action 'self' https://formspree.io https://docs.google.com")
 GRANDES = G1 + G2 + G3
@@ -99,6 +100,16 @@ def S(d, page=None, tag="span", attrs=""):
                 TRAD.setdefault(page, {}).setdefault(l, {})[re.sub(r"\s+", " ", fr).strip()] = esc(iso(d[l], l))
     a = (" " + attrs) if attrs else ""
     return "".join(f'<{tag} data-l="{l}"{a}>{esc(iso(d[l], l))}</{tag}>' for l in ("fr", "ar", "en"))
+
+
+def X(nom, cle, page, tag="span", attrs=""):
+    """Texte de tools/textes/ (21 langues, 23/10/2026) : comme S()."""
+    return S(textes.D(nom, cle), page, tag, attrs)
+
+
+def TXT(nom, cles, page):
+    """Textes lus par un script (assets/recherche.js…) : éléments cachés [data-txt], traduits comme le reste de la page."""
+    return "".join(f'<span hidden data-txt="{c}">{X(nom, c, page)}</span>' for c in cles)
 
 
 def U(fr, ar, en, tag="span"):
@@ -314,6 +325,7 @@ def page_grande(g, photos, wiki_par_qid, r="../../"):
   </section>
   {"".join(blocs)}
   <section class="carte" id="dates"><h2>{U("Dates clés", "تواريخ مهمّة", "Key dates")}</h2><ol class="mq-dates">{dates}</ol></section>
+  {section_histoires(slug, page)}
   <section class="carte" id="visiter"><h2>{U("Visiter", "الزيارة", "Visiting")}</h2>
     <p>{U("C'est d'abord un lieu de prière : venez en tenue correcte, retirez vos chaussures pour entrer dans la salle de prière et évitez les heures de prière. Dans plusieurs grandes mosquées, les visiteurs non musulmans peuvent entrer dans la cour, pas dans la salle de prière. Les horaires changent : renseignez-vous sur place.", "هو أولًا مكان للصلاة: البس لباسًا محتشمًا، واخلع حذاءك لدخول بيت الصلاة، وتجنّب أوقات الصلاة. وفي عدد من الجوامع الكبرى يمكن للزوار غير المسلمين دخول الصحن دون بيت الصلاة. تتغيّر المواعيد: استعلم في عين المكان.", "It is first of all a place of prayer: dress modestly, take off your shoes to enter the prayer hall and avoid prayer times. In several great mosques, non-Muslim visitors may enter the courtyard but not the prayer hall. Opening times change: ask on site.")}</p>
   </section>
@@ -347,6 +359,9 @@ def noms_spans(noms):
 
 def page_fiche(l, chemin, r="../../"):
     f, noms = l["fiche"], l["noms"]
+    page = "f-" + f["qid"]
+    notre = f["qid"] in PN.DESCRIPTIONS                 # description écrite par nous (23/10/2026), 21 langues
+    djerba = PN.a_djerba(l["lat"], l["lon"])
     nom = nom_principal(noms)
     v = l.get("ville") or {}
     ville_fr, ville_ar = v.get("fr", ""), v.get("ar", "")
@@ -391,7 +406,11 @@ def page_fiche(l, chemin, r="../../"):
       <a class="chipbtn" href="{r}?lieu={att(l["id"])}">{U("Voir sur la carte", "اعرض على الخريطة", "See on the map")}</a>
     </div>
   </section>
+  {(f'<section class="carte" id="notre-presentation"><h2>{X("descriptions", "titre", page)}</h2><p>{X("descriptions", f["qid"], page)}</p>'
+     f'<p class="hi-source">{X("histoires", "source", page)} ' + " · ".join(f'<a href="{att(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in PN.DESCRIPTIONS[f["qid"]]) + '</p></section>') if notre else ""}
   {f'<section class="carte" id="presentation"><h2>{U("Présentation", "تقديم", "Overview")}</h2><p class="mq-resume-note" id="mq-resume-note"></p>{resumes}</section>' if resumes else ""}
+  {(f'<section class="carte" id="djerba"><h2>{X("descriptions", "djerba_titre", page)}</h2><p>{X("descriptions", "djerba_intro", page)}</p>'
+     f'<p class="hi-source">{X("histoires", "source", page)} ' + " · ".join(f'<a href="{att(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in PN.DJERBA_SOURCES) + '</p></section>') if djerba else ""}
   <section class="carte" id="noms"><h2>{U("Son nom dans les langues", "اسمه في اللغات", "Its name in other languages")}</h2><ul class="mq-noms-liste">{liste_noms}</ul></section>
   <section class="carte" id="carte-lieu"><h2>{U("Sur la carte", "على الخريطة", "On the map")}</h2>
     <div class="mq-mini" id="mq-mini" data-lat="{l["lat"]}" data-lon="{l["lon"]}" role="region" aria-label="{att(nom)}"></div>
@@ -407,33 +426,45 @@ def page_fiche(l, chemin, r="../../"):
     titre = f"{nom}{(' — ' + ville_fr) if ville_fr else ''} | Mosquées en Tunisie"
     desc = (f.get("resume", {}).get("fr") or f.get("resume", {}).get("en") or f"{nom} : mosquée de Tunisie ({ville_fr}). Photo, histoire, carte et liens.")[:200]
     # autres langues : proposées à Google seulement si Wikidata / Wikipédia donnent un nom ou un résumé dans cette langue
-    INDEX[chemin] = ["fr"] + [x for x in LANGUES[1:] if noms.get(x) or f.get("resume", {}).get(x)]
+    INDEX[chemin] = LANGUES if notre else ["fr"] + [x for x in LANGUES[1:] if noms.get(x) or f.get("resume", {}).get(x)]
     META[chemin] = {}
     for x in LANGUES[1:]:
         vx = (ville_ar or ville_fr) if x in ("ar", "ur") else ville_fr
         nx = noms.get(x) or (noms.get("ar") if x == "ur" else None) or nom
         META[chemin][x] = (f"{nx}{(' — ' + vx) if vx else ''} | {PL.SITE[x]}",
-                           (f.get("resume", {}).get(x) or PL.FICHE_DESC[x].format(nom=nx, ville=f" ({vx})" if vx else ""))[:200])
+                           ((textes.D("descriptions", f["qid"])[x] if notre else None) or f.get("resume", {}).get(x) or PL.FICHE_DESC[x].format(nom=nx, ville=f" ({vx})" if vx else ""))[:200])
     jsonld = [{"@context": "https://schema.org", "@type": "Mosque", "name": nom, "url": BASE + chemin,
                "alternateName": [x for x in (noms.get("ar"), noms.get("en")) if x and x != nom],
                "geo": {"@type": "GeoCoordinates", "latitude": l["lat"], "longitude": l["lon"]},
                "address": {"@type": "PostalAddress", **({"addressLocality": ville_fr} if ville_fr else {}), "addressCountry": "TN"},
                **({"image": ph["url"]} if ph else {}), "sameAs": [f"https://www.wikidata.org/wiki/{f['qid']}"]}]
-    ecrire(chemin + "index.html", document(chemin + "index.html", titre, desc, corps, bas=["assets/fiche.js"], jsonld=jsonld))
+    if notre:
+        desc = textes.D("descriptions", f["qid"])["fr"][:200]
+    if notre or djerba:
+        CLE_TRAD[chemin] = page
+    ecrire(chemin + "index.html", document(chemin + "index.html", titre, desc, corps, tete=[f"trad/{page}.js"] if (notre or djerba) else (),
+                                           bas=["assets/fiche.js"], jsonld=jsonld))
 
 
 # ---------- liste de toutes les pages ----------
-def carte_grande(g, photos, r, page):
+def tri_html(page, cible, options=("t_page", "t_ancien", "t_recent", "t_az")):
+    """Liste « Trier » (demande d'Ahmed du 23/10/2026) : assets/pages.js range les éléments [data-i] de la cible."""
+    return (f'<p class="tri"><label><span class="tri-t">{X("tri", "trier", page)}</span> <select data-tri="{cible}">'
+            + "".join(f'<option value="{o[2:]}">{textes.D("tri", o)["fr"]}</option>' for o in options) + "</select></label>"
+            + "".join(f'<span hidden data-txt="{o}">{X("tri", o, page)}</span>' for o in options) + "</p>")
+
+
+def carte_grande(g, photos, r, page, i=0):
     ph = (photos.get(g["slug"]) or [None])[0]
     img = f'<img src="{r}{ph["fichier"]}" alt="" loading="lazy" width="{ph["w"]}" height="{ph["h"]}">' if ph else ""
-    return (f'<a class="mq-grande" href="{r}mosquee/{g["slug"]}/"><span class="mq-grande-img">{img}</span>'
+    return (f'<a class="mq-grande" href="{r}mosquee/{g["slug"]}/" data-i="{i}" data-an="{PN.ANNEES_GRANDES[g["slug"]]}"><span class="mq-grande-img">{img}</span>'
             f'<span class="mq-grande-txt"><b>{S(g["nom"], page)}</b><small>{S(VILLES[g["ville"]], page)} · {S(g["epoque"], page)}</small></span></a>')
 
 
 def page_liste(lieux, pages, photos):
     page = "liste"
     CLE_TRAD["grandes-mosquees/"] = page
-    grandes = "".join(carte_grande(g, photos, "../", page) for g in GRANDES)
+    grandes = "".join(carte_grande(g, photos, "../", page, i) for i, g in enumerate(GRANDES))
     grandes_chemins = {"mosquee/" + g["slug"] + "/" for g in GRANDES}
     autres = [(l, pages[l["id"]]) for l in lieux if l["id"] in pages and pages[l["id"]] not in grandes_chemins]
     par_ville = {}
@@ -453,6 +484,20 @@ def page_liste(lieux, pages, photos):
             f'{" <i class=" + chr(34) + "mq-pastille" + chr(34) + " title=" + chr(34) + "photo" + chr(34) + "></i>" if l["fiche"].get("photo") else ""}</li>'
             for l, p, v in items)
         groupes.append(f'<section class="mq-groupe"><h3>{h}</h3><ul class="mq-liens mq-noms">{lis}</ul></section>')
+    # recherche (23/10/2026) : liste tunisienne filtrée + grandes mosquées du monde (Wikidata) ; QID -> notre page
+    qids = {g["qid"]: "mosquee/" + g["slug"] + "/" for g in GRANDES}
+    qids.update({l["fiche"]["qid"]: p for l, p in autres})
+    exemples = [("ex_mecque", "Mecca"), ("ex_medine", "Medina"), ("ex_jerusalem", "Jerusalem"), ("ex_istanbul", "Istanbul"),
+                ("ex_caire", "Cairo"), ("ex_maroc", "Morocco"), ("ex_indonesie", "Indonesia")]
+    recherche = (f'<form class="mq-cherche" id="mq-cherche" role="search" data-pages="{att(json.dumps(qids, separators=(",", ":")))}">'
+                 f'<label for="mq-cherche-q">{X("recherche", "etiquette", page)}</label>'
+                 f'<div class="mq-cherche-ligne"><input id="mq-cherche-q" type="search" autocomplete="off" maxlength="50" enterkeyhint="search">'
+                 f'<button type="submit" class="btn-principal">{X("recherche", "bouton", page)}</button></div>'
+                 f'<p class="mq-cherche-ex">{X("recherche", "exemples", page)} '
+                 + "".join(f'<button type="button" class="chipbtn" data-ex="{q}">{X("recherche", c, page)}</button>' for c, q in exemples)
+                 + "</p>" + TXT("recherche", ["ph", "attente", "aucune", "erreur", "court", "voir_carte", "notre_page", "wikipedia", "source", "tunisie_titre", "tunisie_aucune"], page)
+                 + TXT("tri", ["trier", "t_connue", "t_ancien", "t_recent", "t_az", "av_jc"], page)
+                 + "</form>")
     corps = f"""
 <section class="hero">
   <div class="wrap">
@@ -460,10 +505,16 @@ def page_liste(lieux, pages, photos):
     <h1>{U("Grandes mosquées et mosquées historiques de Tunisie", "الجوامع الكبرى والمساجد التاريخية في تونس", "Great and historic mosques of Tunisia")}</h1>
     <p class="intro">{U("Les grandes mosquées racontées en détail, puis toutes les mosquées de Tunisie qui ont une fiche dans Wikidata : photo, histoire et liens.", "الجوامع الكبرى مع شرح مفصّل، ثم كل مساجد تونس التي لها بطاقة في ويكي بيانات: صورة وتاريخ وروابط.", "The great mosques described in detail, then every mosque in Tunisia that has a Wikidata record: photo, history and links.")}</p>
     <span class="maj"><b>{len(GRANDES) + len(autres)}</b>&nbsp;{U("pages de mosquées", "صفحة مساجد", "mosque pages")}</span>
+    {recherche}
   </div>
 </section>
 <main class="wrap chevauche">
-  <section class="carte"><h2>{U("Les grandes mosquées", "الجوامع الكبرى", "The great mosques")}</h2><div class="mq-grandes">{grandes}</div></section>
+  <section class="carte mq-cherche-res" id="mq-cherche-res" hidden aria-live="polite">
+    <h2>{X("recherche", "tunisie_titre", page)}</h2><div id="mq-tunisie-res"></div>
+    <h2>{X("recherche", "monde_titre", page)}</h2><div id="mq-monde-res"></div>
+  </section>
+  <section class="carte" id="mq-liste"><h2>{U("Les grandes mosquées", "الجوامع الكبرى", "The great mosques")}</h2>{tri_html(page, "mq-grandes-liste")}<div class="mq-grandes" id="mq-grandes-liste">{grandes}</div>
+    <p class="mq-voir-aussi"><a class="chipbtn" href="../grandes-mosquees-du-monde/">🌍 {X("tri", "monde_menu", page)} →</a> <a class="chipbtn" href="../histoires-des-mosquees/">{X("recherche", "lien_histoires", page)} →</a> <a class="chipbtn" href="../role-de-la-mosquee/">{X("recherche", "lien_role", page)} →</a></p></section>
   <section class="carte" id="historiques"><h2>{U("Autres mosquées historiques", "مساجد تاريخية أخرى", "Other historic mosques")} <span class="mq-compte">{len(autres)}</span></h2>
     <p class="aide">{U("Classées par ville. Le point vert signale une photo.", "مرتّبة حسب المدينة. النقطة الخضراء تعني وجود صورة.", "Sorted by town. The green dot means there is a photo.")}</p>
     {"".join(groupes)}</section>
@@ -471,8 +522,253 @@ def page_liste(lieux, pages, photos):
     ecrire("grandes-mosquees/index.html", document("grandes-mosquees/index.html",
            "Grandes mosquées et mosquées historiques de Tunisie (photos, histoire) | Mosquées en Tunisie",
            "Zitouna, Grande Mosquée de Kairouan, Sousse, Mahdia, Sfax, Testour… et toutes les mosquées historiques de Tunisie : photos, histoire, architecture et liens. جوامع تونس الكبرى والتاريخية.",
-           corps, tete=[f"trad/{page}.js"], bas=["assets/fiche.js"]))
+           corps, tete=[f"trad/{page}.js"], bas=["assets/fiche.js", "assets/recherche.js", "assets/pages.js"]))
     return len(autres)
+
+
+# ---------- pages ajoutées le 23/10/2026 (demande d'Ahmed) : rôle de la mosquée, construire une mosquée, histoires ----------
+# Photos : liste ci-dessous (fichiers de Wikimedia Commons) ; auteur, licence et vignette lus une fois par
+# `python tools/photos_pages.py` dans donnees/photos_pages.json (la construction n'utilise pas le réseau).
+# Vidéos : identifiant YouTube vérifié (oEmbed : intégrable) ; lue par youtube-nocookie seulement après un appui (assets/pages.js).
+import pages_nouvelles as PN  # noqa: E402
+
+
+def photos_pages():
+    p = os.path.join(RACINE, "donnees", "photos_pages.json")
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+
+
+def figure_commons(fichier, nom, cle, page, credits):
+    c = credits.get(fichier.replace("_", " "))
+    if not c:
+        raise SystemExit(f"donnees/photos_pages.json : pas de crédit pour « {fichier} » (lancer python tools/photos_pages.py)")
+    return (f'<figure class="pg-photo"><span class="cadre-photo"><img src="{att(c["url"])}" alt="" loading="lazy"></span>'
+            f'<figcaption>{X(nom, cle, page)} <small>{U("Photo", "صورة", "Photo")} : <a href="{att(c["page"])}" target="_blank" rel="noopener">{esc(c["auteur"])}</a>, '
+            f'{esc(c["licence"])} — Wikimedia Commons</small></figcaption></figure>')
+
+
+def video_yt(v, nom, page):
+    return (f'<figure class="pg-video"><button type="button" class="pg-video-lire" data-yt="{att(v["id"])}">'
+            f'<span class="pg-video-ico" aria-hidden="true">▶</span><span><b>{X(nom, v["cle"], page)}</b>'
+            f'<small>{esc(v["chaine"])} · {esc(v["langue"])}{(" · " + esc(v["duree"])) if v.get("duree") else ""}</small>'
+            f'<span class="pg-video-txt">{X("role", "lire_video", page)}</span></span></button></figure>')
+
+
+def ecrire_page_libre(chemin, nom, corps, page, bas=("assets/pages.js",), jsonld=None):
+    """Page de tools/textes/ : titre et description de chaque langue tirés des clés meta_titre (sinon titre) et intro."""
+    t = textes.D(nom, "meta_titre" if "meta_titre" in textes.cles(nom) else "titre")
+    d = textes.D(nom, "intro")
+    CLE_TRAD[chemin] = page
+    META[chemin] = {x: (f"{t[x]} | {PL.SITE[x]}", re.sub(r"\s+", " ", d[x])[:200]) for x in LANGUES}
+    ecrire(chemin + "index.html", document(chemin + "index.html", META[chemin]["fr"][0], META[chemin]["fr"][1], corps,
+                                           bas=list(bas), jsonld=jsonld))
+    return chemin
+
+
+def page_role(credits):
+    nom, page, r = "role", "p-role", "../"
+    etapes = []
+    for e in PN.ROLE_ETAPES:
+        k = e["cle"]
+        blocs = []
+        for x in e["contenu"]:
+            if x.startswith("liste:"):
+                blocs.append('<ul class="pg-liste">' + "".join(f"<li>{X(nom, c, page)}</li>" for c in x[6:].split(",")) + "</ul>")
+            else:
+                blocs.append(f"<p>{X(nom, x, page)}</p>")
+        photos = "".join(figure_commons(f, nom, c, page, credits) for f, c in e.get("photos", []))
+        etapes.append(f'<section class="carte pg-etape" id="{k}"><p class="pg-date">{X(nom, k + "_date", page)}</p>'
+                      f'<h2>{X(nom, k + "_titre", page)}</h2>{"".join(blocs)}'
+                      + (f'<div class="pg-photos">{photos}</div>' if photos else "") + "</section>")
+    sommaire = "".join(f'<li><a href="#{e["cle"]}"><b>{X(nom, e["cle"] + "_date", page)}</b> {X(nom, e["cle"] + "_titre", page)}</a></li>' for e in PN.ROLE_ETAPES)
+    videos = "".join(video_yt(v, nom, page) for v in PN.ROLE_VIDEOS)
+    corps = f"""
+<section class="hero">
+  <div class="wrap">
+    <p class="fil"><a href="{r}">{U("Accueil", "الرئيسية", "Home")}</a> › {X(nom, "menu", page)}</p>
+    <h1>{X(nom, "titre", page)}</h1>
+    <p class="intro">{X(nom, "intro", page)}</p>
+  </div>
+</section>
+<main class="wrap chevauche">
+  <nav class="carte pg-sommaire"><h2>{X(nom, "sommaire", page)}</h2><ol>{sommaire}</ol></nav>
+  {"".join(etapes)}
+  {f'<section class="carte" id="videos"><h2>{X(nom, "videos_titre", page)}</h2><div class="pg-videos">{videos}</div><p class="aide">{X(nom, "videos_note", page)}</p></section>' if videos else ""}
+  <section class="carte" id="plus"><h2>{X(nom, "voir_aussi", page)}</h2><ul class="mq-liens">
+    <li><a href="{r}histoires-des-mosquees/">{X(nom, "lien_histoires", page)}</a></li>
+    <li><a href="{r}construire-une-mosquee/">{X(nom, "lien_construire", page)}</a></li>
+    <li><a href="{r}grandes-mosquees/">{X(nom, "lien_grandes", page)}</a></li></ul></section>
+  <section class="carte" id="sources"><h2>{X(nom, "sources_titre", page)}</h2><p class="aide">{X(nom, "sources_txt", page)}</p></section>
+</main>"""
+    jsonld = [{"@context": "https://schema.org", "@type": "Article", "headline": textes.D(nom, "titre")["fr"], "inLanguage": "fr",
+               "datePublished": "2026-10-23", "author": {"@type": "Organization", "name": "Mosquées de Tunisie et du monde"}}]
+    return ecrire_page_libre("role-de-la-mosquee/", nom, corps, page, jsonld=jsonld)
+
+
+def histoire_html(h, page, niveau="h3"):
+    cle, nature, sources = h
+    src = " · ".join(f'<a href="{att(u)}" target="_blank" rel="noopener">{esc(t)}</a>' for t, u in sources)
+    return (f'<article class="hi-histoire"><p class="hi-nature hi-{nature}">{X("histoires", "n_" + nature, page)}</p>'
+            f'<{niveau}>{X("histoires", cle + "_t", page)}</{niveau}><p>{X("histoires", cle + "_r", page)}</p>'
+            f'<p class="hi-source">{X("histoires", "source", page)} {src}</p></article>')
+
+
+def section_histoires(slug, page, r="../../"):
+    """Partie « Histoires et récits » d'une grande mosquée (vide si aucune histoire vérifiée)."""
+    hs = PN.HISTOIRES_TUNISIE.get(slug)
+    if not hs:
+        return ""
+    return (f'<section class="carte" id="histoires"><h2>{X("histoires", "section_page", page)}</h2>'
+            + "".join(histoire_html(h, page) for h in hs)
+            + f'<p><a href="{r}histoires-des-mosquees/">{X("histoires", "toutes", page)} →</a></p></section>')
+
+
+def page_histoires():
+    nom, page, r = "histoires", "p-histoires", "../"
+    saintes = "".join(f'<section class="carte hi-groupe" id="{g[2:]}"><h2>{X(nom, g, page)}</h2>'
+                      + "".join(histoire_html(h, page) for h in hs) + "</section>" for g, hs in PN.HISTOIRES_SAINTES)
+    tunisie = "".join(f'<section class="carte hi-groupe" id="{g["slug"]}"><h2><a href="{r}mosquee/{g["slug"]}/">{S(g["nom"], page)}</a></h2>'
+                      + "".join(histoire_html(h, page) for h in PN.HISTOIRES_TUNISIE[g["slug"]]) + "</section>"
+                      for g in GRANDES if g["slug"] in PN.HISTOIRES_TUNISIE)
+    sommaire = ("".join(f'<li><a href="#{g[2:]}">{X(nom, g, page)}</a></li>' for g, _ in PN.HISTOIRES_SAINTES)
+                + "".join(f'<li><a href="#{g["slug"]}">{S(g["nom"], page)}</a></li>' for g in GRANDES if g["slug"] in PN.HISTOIRES_TUNISIE))
+    corps = f"""
+<section class="hero">
+  <div class="wrap">
+    <p class="fil"><a href="{r}">{U("Accueil", "الرئيسية", "Home")}</a> › {X(nom, "menu", page)}</p>
+    <h1>{X(nom, "titre", page)}</h1>
+    <p class="intro">{X(nom, "intro", page)}</p>
+  </div>
+</section>
+<main class="wrap chevauche">
+  <nav class="carte pg-sommaire"><ol>{sommaire}</ol></nav>
+  <h2 class="hi-titre">{X(nom, "titre_saintes", page)}</h2>
+  {saintes}
+  <h2 class="hi-titre">{X(nom, "titre_tunisie", page)}</h2>
+  {tunisie}
+  <section class="carte"><p class="aide">{X(nom, "note", page)}</p>
+    <ul class="mq-liens"><li><a href="{r}role-de-la-mosquee/">{X("role", "titre", page)}</a></li>
+    <li><a href="{r}construire-une-mosquee/">{X("role", "lien_construire", page)}</a></li></ul></section>
+</main>"""
+    return ecrire_page_libre("histoires-des-mosquees/", nom, corps, page)
+
+
+def page_construire():
+    nom, page, r = "construire", "p-construire", "../"
+    coran = "".join(f'<figure class="cs-texte"><blockquote lang="ar" dir="rtl" class="cs-arabe">{esc(t)}</blockquote>'
+                    f'<figcaption><p class="mq-verset-trad">{X(nom, c, page)}</p><p class="mq-verset-source">{X(nom, c + "_ref", page)} — {X(nom, "traducteur", page)}, '
+                    f'<a href="https://quranenc.com/" target="_blank" rel="noopener">QuranEnc.com</a> · '
+                    f'<a href="https://quran.com/{v.replace(":", "/")}" target="_blank" rel="noopener">{X(nom, "lire_verset", page)}</a></p></figcaption></figure>'
+                    for v, t, c in PN.CORAN)
+    hadiths = "".join(f'<figure class="cs-texte"><blockquote lang="ar" dir="rtl" class="cs-arabe">{esc(t)}</blockquote>'
+                      f'<figcaption><p>{X(nom, k + "_sens", page)}</p><p class="hi-source"><a href="{att(u)}" target="_blank" rel="noopener">{X(nom, k + "_ref", page)}</a></p></figcaption></figure>'
+                      for k, t, u in PN.HADITHS)
+    orgs = "".join(
+        f'<li class="cs-org"><b>{esc(n)}</b><small>{X(nom, "pays", page)} {X(nom, p, page)}</small><p>{X(nom, d, page)}</p>'
+        f'<p class="mq-monde-liens"><a class="chipbtn" href="{att(u)}" target="_blank" rel="noopener">{X(nom, "page_dons", page)} ↗</a>'
+        + "".join(f' <a class="chipbtn" href="{att(au)}" target="_blank" rel="noopener">{X(nom, "appli", page)} : {esc(m)}</a>' for m, au in apps)
+        + "</p></li>" for n, p, d, u, apps in PN.ORGANISMES)
+    corps = f"""
+<section class="hero">
+  <div class="wrap">
+    <p class="fil"><a href="{r}">{U("Accueil", "الرئيسية", "Home")}</a> › {X(nom, "menu", page)}</p>
+    <h1>{X(nom, "titre", page)}</h1>
+    <p class="intro">{X(nom, "intro", page)}</p>
+  </div>
+</section>
+<main class="wrap chevauche">
+  <section class="carte" id="bienfaits"><h2>{X(nom, "bienfaits_titre", page)}</h2>
+    <h3>{X(nom, "coran_titre", page)}</h3>{coran}<p class="aide">{X(nom, "coran_note", page)}</p>
+    <h3>{X(nom, "hadiths_titre", page)}</h3>{hadiths}
+    <h3>{X(nom, "social_titre", page)}</h3><p>{X(nom, "social_p", page)}</p></section>
+  <section class="carte" id="organismes"><h2>{X(nom, "orgs_titre", page)}</h2><p class="cs-avert">{X(nom, "orgs_avert", page)}</p>
+    <ul class="cs-orgs">{orgs}</ul></section>
+  <section class="carte" id="tunisie"><h2>{X(nom, "tunisie_titre", page)}</h2><p>{X(nom, "tunisie_p1", page)}</p><p>{X(nom, "tunisie_p2", page)}</p>
+    <p><a href="{PN.SICAD}" target="_blank" rel="noopener">{X(nom, "tunisie_lien", page)} ↗</a></p></section>
+  <section class="carte" id="aider"><h2>{X(nom, "autres_titre", page)}</h2><p>{X(nom, "autres_p", page)}</p>
+    <p><a class="chipbtn" href="{r}#signaler">{X(nom, "signaler", page)}</a></p></section>
+  <section class="carte"><ul class="mq-liens"><li><a href="{r}role-de-la-mosquee/">{X("role", "titre", page)}</a></li>
+    <li><a href="{r}histoires-des-mosquees/">{X("role", "lien_histoires", page)}</a></li></ul>
+    <h2>{X("role", "sources_titre", page)}</h2><p class="aide">{X(nom, "sources_txt", page)}</p></section>
+</main>"""
+    return ecrire_page_libre("construire-une-mosquee/", nom, corps, page)
+
+
+def nl_spans(d, classe):
+    """Le texte dans chaque langue disponible (assets/fiche.js montre celui de la langue de la page)."""
+    return f'<span class="{classe}">' + "".join(f'<span class="nl" data-nl="{l}" lang="{l}">{esc(d[l])}</span>' for l in LANGUES if d.get(l)) + "</span>"
+
+
+def page_monde():
+    """grandes-mosquees-du-monde/ (demande d'Ahmed du 23/10/2026) : donnees/monde_grandes.json (tools/monde_grandes.py), tri par
+    date, nom ou notoriété ; description (résumé Wikipédia) chargée seulement à l'ouverture, depuis donnees/monde/<langue>.json."""
+    nom, page, r = "tri", "p-monde", "../"
+    src = os.path.join(RACINE, "donnees", "monde_grandes.json")
+    if not os.path.exists(src):
+        return []
+    ms = json.load(open(src, encoding="utf-8"))["mosquees"]
+    tunisie = {g["qid"]: g["slug"] for g in GRANDES}
+    cartes = []
+    for i, m in enumerate(ms):
+        ph = m.get("photo")
+        img = f'<img src="{att(ph["url"])}" alt="" loading="lazy" referrerpolicy="no-referrer">' if ph else ""
+        an = m.get("an")
+        an_txt = (f'{-an} {X(nom, "av_jc", page)}' if an < 0 else str(an)) if an is not None else X(nom, "date_inconnue", page)
+        liens = []
+        if m["q"] in tunisie:
+            liens.append(f'<a class="btn-principal" href="{r}mosquee/{tunisie[m["q"]]}/">{X("recherche", "notre_page", page)}</a>')
+        if m.get("pos"):
+            liens.append(f'<a class="chipbtn" href="{r}?ll={m["pos"][0]},{m["pos"][1]}#carte">{X("recherche", "voir_carte", page)}</a>')
+        cartes.append(
+            f'<article class="mq-monde-res mo-carte" data-i="{i}" data-an="{an if an is not None else ""}" data-n="{m["n"]}" data-q="{m["q"]}">'
+            f'<span class="mq-monde-img">{img}</span><div><b class="mo-an">{an_txt}</b>{nl_spans(m["noms"], "mq-noms mo-nom")}'
+            f'<small>{nl_spans(m["pays"], "mq-noms") if m.get("pays") else ""} · {m["n"]} {X(nom, "articles", page)}</small>'
+            f'<details class="mo-desc"><summary>{X("descriptions", "titre_monde", page)}</summary><div class="mo-desc-txt"></div></details>'
+            + (f'<p class="mq-monde-liens">{" ".join(liens)}</p>' if liens else "")
+            + (f'<small class="mo-credit">{U("Photo", "صورة", "Photo")} : <a href="{att(ph["page"])}" target="_blank" rel="noopener">{esc(ph["auteur"])}</a>, {esc(ph["licence"])}</small>' if ph else "")
+            + "</div></article>")
+    # descriptions par langue : résumé Wikipédia de la langue, sinon anglais, sinon français, sinon arabe, sinon description courte Wikidata
+    for l in LANGUES:
+        out = {}
+        for m in ms:
+            rl = next((x for x in (l, "en", "fr", "ar") if m.get("resume", {}).get(x)), None)
+            dl = next((x for x in (l, "en", "fr") if m.get("desc", {}).get(x)), None)
+            e = {}
+            if rl:
+                e = {"r": m["resume"][rl], "rl": rl, "w": f"https://{rl}.wikipedia.org/wiki/" + m["wiki"][rl].replace(" ", "_")}
+            elif dl:
+                e = {"d": m["desc"][dl]}
+            if e:
+                out[m["q"]] = e
+        ecrire(f"donnees/monde/{l}.json", json.dumps(out, ensure_ascii=False, separators=(",", ":")) + "\n")
+    corps = f"""
+<section class="hero">
+  <div class="wrap">
+    <p class="fil"><a href="{r}">{U("Accueil", "الرئيسية", "Home")}</a> › <a href="{r}grandes-mosquees/">{U("Grandes mosquées", "الجوامع الكبرى", "Great mosques")}</a> › {X(nom, "monde_menu", page)}</p>
+    <h1>{X(nom, "monde_titre", page)}</h1>
+    <p class="intro">{X(nom, "monde_intro", page)}</p>
+    <span class="maj"><b>{len(ms)}</b>&nbsp;{X(nom, "monde_menu", page)}</span>
+  </div>
+</section>
+<main class="wrap chevauche">
+  <section class="carte" id="liste">{tri_html(page, "mo-liste", ("t_connue", "t_ancien", "t_recent", "t_az"))}
+    <div class="mq-monde-grille" id="mo-liste">{"".join(cartes)}</div>
+    {TXT("descriptions", ["wiki_extrait", "pas_de_desc"], page)}
+    <p class="aide">{X(nom, "monde_note", page)}</p>
+    <p class="mq-voir-aussi"><a class="chipbtn" href="{r}grandes-mosquees/">{X("recherche", "etiquette", page)} →</a></p></section>
+</main>"""
+    t = textes.D(nom, "monde_titre"); dd = textes.D(nom, "monde_intro")
+    chemin = "grandes-mosquees-du-monde/"
+    CLE_TRAD[chemin] = page
+    META[chemin] = {x: (f"{t[x]} | {PL.SITE[x]}", dd[x][:200]) for x in LANGUES}
+    ecrire(chemin + "index.html", document(chemin + "index.html", META[chemin]["fr"][0], META[chemin]["fr"][1], corps,
+                                           bas=["assets/fiche.js", "assets/pages.js"]))
+    return [chemin]
+
+
+def PN_construire(credits):
+    """Les nouvelles pages, dans l'ordre du plan du site."""
+    return [page_role(credits), page_histoires(), page_construire()] + page_monde()
 
 
 def diapo_accueil(photos):
@@ -496,7 +792,9 @@ def diapo_accueil(photos):
 
 def grille_accueil(photos):
     """Grille des grandes mosquées de l'accueil (entre les repères <!-- grandes:debut --> et <!-- grandes:fin -->)."""
-    return "".join(carte_grande(g, photos, "", "accueil") for g in GRANDES)
+    return (tri_html("accueil", "mq-grandes-acc") + '<div class="mq-grandes" id="mq-grandes-acc">'
+            + "".join(carte_grande(g, photos, "", "accueil", i) for i, g in enumerate(GRANDES)) + "</div>"
+            + f'<p class="mq-voir-aussi"><a class="chipbtn" href="grandes-mosquees-du-monde/">🌍 {X("tri", "monde_menu", "accueil")} →</a></p>')
 
 
 def ecrire_trad():
@@ -555,9 +853,13 @@ def main():
             ecrire(chemin, document(chemin, meta["titre"], meta["description"], corps,
                                     bas=[s.strip() for s in meta.get("scripts", "").split(",") if s.strip()]))
             gabarits.append(chemin.rsplit("index.html", 1)[0])
+    # pages ajoutées le 23/10/2026 (tools/textes/, 21 langues)
+    credits = photos_pages()
+    gabarits += PN_construire(credits)
     # accueil (écrit à la main) : une seule version ?v=, grille des grandes mosquées
     for g in GRANDES:
         carte_grande(g, photos, "", "accueil")
+    grille_accueil(photos)
     acc = os.path.join(RACINE, "index.html")
     if os.path.exists(acc):
         t = open(acc, encoding="utf-8").read()

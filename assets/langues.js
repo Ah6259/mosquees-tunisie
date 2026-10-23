@@ -210,7 +210,13 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "Carte centrée sur : {l} (recherche Nominatim, © contributeurs OpenStreetMap).": "Harita şuraya ortalandı: {l} (Nominatim araması, © OpenStreetMap katkıcıları).",
  "La recherche de ville ne répond pas pour le moment : réessayez dans un instant.": "Şehir araması şu anda yanıt vermiyor: birazdan tekrar deneyin.",
  "<b>Ailleurs dans le monde</b> : OpenStreetMap est lu en direct pour la zone affichée sur la carte (5 copies d'OpenStreetMap, les serveurs Overpass), chaque pays avec sa couleur. Une ville du monde est trouvée avec <b>Nominatim</b> (© contributeurs OpenStreetMap), seulement quand vous validez la recherche.": "<b>Dünyanın başka yerlerinde</b>: OpenStreetMap, haritada gösterilen bölge için canlı okunur (OpenStreetMap'in 5 kopyası, Overpass sunucuları); her ülkenin kendi rengi vardır. Dünyadaki bir şehir <b>Nominatim</b> ile bulunur (© OpenStreetMap katkıcıları), yalnızca aramayı onayladığınızda.",
- "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Tunus dışında, haritada gösterilen bölge (tam konumunuz değil) camilerini okumak için OpenStreetMap sunucularına gönderilir; dünyada aranan bir şehir Nominatim'e gönderilir."
+ "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Tunus dışında, haritada gösterilen bölge (tam konumunuz değil) camilerini okumak için OpenStreetMap sunucularına gönderilir; dünyada aranan bir şehir Nominatim'e gönderilir.",
+ "Rôle de la mosquée": "Caminin rolü",
+ "Histoires des mosquées": "Camilerin hikâyeleri",
+ "Construire une mosquée": "Cami inşa etmek",
+ "Lire le Coran sur notre site The Message": "Kur'an'ı The Message sitemizde okuyun",
+ "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Mescitler Allah’ındır. O halde Allah ile birlikte başkasına dua/ibadet etmeyin.”",
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Cin Suresi (72), 18. ayet — meal: Rowwad Tercüme Merkezi,"
 });
 window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Mosquées de Tunisie et du monde": "Masjid Tunisia dan dunia",
@@ -416,7 +422,13 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Carte centrée sur : {l} (recherche Nominatim, © contributeurs OpenStreetMap).": "Peta dipusatkan pada: {l} (pencarian Nominatim, © kontributor OpenStreetMap).",
  "La recherche de ville ne répond pas pour le moment : réessayez dans un instant.": "Pencarian kota sedang tidak merespons: coba lagi sebentar lagi.",
  "<b>Ailleurs dans le monde</b> : OpenStreetMap est lu en direct pour la zone affichée sur la carte (5 copies d'OpenStreetMap, les serveurs Overpass), chaque pays avec sa couleur. Une ville du monde est trouvée avec <b>Nominatim</b> (© contributeurs OpenStreetMap), seulement quand vous validez la recherche.": "<b>Di tempat lain di dunia</b>: OpenStreetMap dibaca langsung untuk area yang tampil di peta (5 salinan OpenStreetMap, server Overpass), setiap negara dengan warnanya sendiri. Kota di mana pun di dunia ditemukan dengan <b>Nominatim</b> (© kontributor OpenStreetMap), hanya saat Anda mengonfirmasi pencarian.",
- "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Di luar Tunisia, area yang tampil di peta (bukan posisi tepat Anda) dikirim ke server OpenStreetMap untuk membaca masjid-masjidnya; kota yang dicari di dunia dikirim ke Nominatim."
+ "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Di luar Tunisia, area yang tampil di peta (bukan posisi tepat Anda) dikirim ke server OpenStreetMap untuk membaca masjid-masjidnya; kota yang dicari di dunia dikirim ke Nominatim.",
+ "Rôle de la mosquée": "Peran masjid",
+ "Histoires des mosquées": "Kisah-kisah masjid",
+ "Construire une mosquée": "Membangun masjid",
+ "Lire le Coran sur notre site The Message": "Baca Al-Qur'an di situs kami The Message",
+ "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Dan sesungguhnya masjid-masjid itu adalah untuk Allah. Maka janganlah kamu menyembah apa pun di dalamnya selain Allah.”",
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Surah Al-Jinn (72), ayat 18 — terjemahan makna: Kementerian Agama RI,"
 });
 window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Mosquées de Tunisie et du monde": "تیونس اور دنیا کی مساجد",
@@ -622,7 +634,13 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Carte centrée sur : {l} (recherche Nominatim, © contributeurs OpenStreetMap).": "نقشہ اس پر مرکوز ہے: {l} (Nominatim تلاش، © OpenStreetMap کے معاونین)۔",
  "La recherche de ville ne répond pas pour le moment : réessayez dans un instant.": "شہر کی تلاش اس وقت جواب نہیں دے رہی: تھوڑی دیر بعد دوبارہ کوشش کریں۔",
  "<b>Ailleurs dans le monde</b> : OpenStreetMap est lu en direct pour la zone affichée sur la carte (5 copies d'OpenStreetMap, les serveurs Overpass), chaque pays avec sa couleur. Une ville du monde est trouvée avec <b>Nominatim</b> (© contributeurs OpenStreetMap), seulement quand vous validez la recherche.": "<b>دنیا میں کہیں اور</b>: نقشے پر دکھائے گئے علاقے کے لیے OpenStreetMap براہِ راست پڑھا جاتا ہے (OpenStreetMap کی 5 نقلیں، Overpass سرورز)، ہر ملک اپنے رنگ کے ساتھ۔ دنیا کا کوئی شہر <b>Nominatim</b> (© OpenStreetMap کے معاونین) سے ملتا ہے، صرف جب آپ تلاش کی تصدیق کریں۔",
- "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "تیونس سے باہر، نقشے پر دکھایا گیا علاقہ (آپ کا عین مقام نہیں) اس کی مساجد پڑھنے کے لیے OpenStreetMap کے سرورز کو بھیجا جاتا ہے؛ دنیا میں تلاش کیا گیا شہر Nominatim کو بھیجا جاتا ہے۔"
+ "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "تیونس سے باہر، نقشے پر دکھایا گیا علاقہ (آپ کا عین مقام نہیں) اس کی مساجد پڑھنے کے لیے OpenStreetMap کے سرورز کو بھیجا جاتا ہے؛ دنیا میں تلاش کیا گیا شہر Nominatim کو بھیجا جاتا ہے۔",
+ "Rôle de la mosquée": "مسجد کا کردار",
+ "Histoires des mosquées": "مساجد کی کہانیاں",
+ "Construire une mosquée": "مسجد بنانا",
+ "Lire le Coran sur notre site The Message": "ہماری ویب سائٹ The Message پر قرآن پڑھیں",
+ "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "«اور یہ کہ مسجدیں صرف اللہ ہی کے لئے خاص ہیں پس اللہ تعالیٰ کے ساتھ کسی اور کو نہ پکارو.»",
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "سورۃ الجن (⁦72⁩)، آیت ⁦18⁩ — ترجمہ: مولانا محمد جوناگڑھی،"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Mosquées de Tunisie et du monde": "Moscheen Tunesien & Welt",
@@ -828,7 +846,13 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Carte centrée sur : {l} (recherche Nominatim, © contributeurs OpenStreetMap).": "Karte zentriert auf: {l} (Nominatim-Suche, © OpenStreetMap-Mitwirkende).",
  "La recherche de ville ne répond pas pour le moment : réessayez dans un instant.": "Die Stadtsuche antwortet gerade nicht: Versuchen Sie es gleich noch einmal.",
  "<b>Ailleurs dans le monde</b> : OpenStreetMap est lu en direct pour la zone affichée sur la carte (5 copies d'OpenStreetMap, les serveurs Overpass), chaque pays avec sa couleur. Une ville du monde est trouvée avec <b>Nominatim</b> (© contributeurs OpenStreetMap), seulement quand vous validez la recherche.": "<b>Anderswo auf der Welt</b>: OpenStreetMap wird für das auf der Karte gezeigte Gebiet live gelesen (5 Kopien von OpenStreetMap, die Overpass-Server), jedes Land in seiner eigenen Farbe. Eine Stadt irgendwo auf der Welt wird mit <b>Nominatim</b> gefunden (© OpenStreetMap-Mitwirkende), nur wenn Sie die Suche bestätigen.",
- "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Außerhalb Tunesiens wird das auf der Karte gezeigte Gebiet (nicht Ihre genaue Position) an die OpenStreetMap-Server gesendet, um seine Moscheen zu lesen; eine weltweit gesuchte Stadt wird an Nominatim gesendet."
+ "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Außerhalb Tunesiens wird das auf der Karte gezeigte Gebiet (nicht Ihre genaue Position) an die OpenStreetMap-Server gesendet, um seine Moscheen zu lesen; eine weltweit gesuchte Stadt wird an Nominatim gesendet.",
+ "Rôle de la mosquée": "Rolle der Moschee",
+ "Histoires des mosquées": "Geschichten der Moscheen",
+ "Construire une mosquée": "Eine Moschee bauen",
+ "Lire le Coran sur notre site The Message": "Den Koran auf unserer Website The Message lesen",
+ "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "„Und die Gebetsstätten gehören doch Allah; so ruft neben Allah niemanden an.“",
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Sure Al-Dschinn (72), Vers 18 — Übersetzung der Bedeutung: Frank Bubenheim,"
 });
 window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Mosquées de Tunisie et du monde": "Mezquitas de Túnez y del mundo",
@@ -1034,5 +1058,11 @@ window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Carte centrée sur : {l} (recherche Nominatim, © contributeurs OpenStreetMap).": "Mapa centrado en: {l} (búsqueda Nominatim, © colaboradores de OpenStreetMap).",
  "La recherche de ville ne répond pas pour le moment : réessayez dans un instant.": "La búsqueda de ciudades no responde en este momento: inténtelo de nuevo en un instante.",
  "<b>Ailleurs dans le monde</b> : OpenStreetMap est lu en direct pour la zone affichée sur la carte (5 copies d'OpenStreetMap, les serveurs Overpass), chaque pays avec sa couleur. Une ville du monde est trouvée avec <b>Nominatim</b> (© contributeurs OpenStreetMap), seulement quand vous validez la recherche.": "<b>En el resto del mundo</b>: OpenStreetMap se lee en directo para la zona mostrada en el mapa (5 copias de OpenStreetMap, los servidores Overpass), cada país con su color. Una ciudad de cualquier parte del mundo se encuentra con <b>Nominatim</b> (© colaboradores de OpenStreetMap), solo cuando usted confirma la búsqueda.",
- "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Fuera de Túnez, la zona mostrada en el mapa (no su posición exacta) se envía a los servidores de OpenStreetMap para leer sus mezquitas; una ciudad buscada en el mundo se envía a Nominatim."
+ "Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.": "Fuera de Túnez, la zona mostrada en el mapa (no su posición exacta) se envía a los servidores de OpenStreetMap para leer sus mezquitas; una ciudad buscada en el mundo se envía a Nominatim.",
+ "Rôle de la mosquée": "El papel de la mezquita",
+ "Histoires des mosquées": "Historias de las mezquitas",
+ "Construire une mosquée": "Construir una mezquita",
+ "Lire le Coran sur notre site The Message": "Leer el Corán en nuestro sitio The Message",
+ "« Les mosquées étant exclusivement consacrées au culte d’Allah, n’y vénérez nul autre que Lui. »": "“Los lugares de culto son para adorar solo a Dios, por lo que no deben invocar a nada ni a nadie junto con Dios.”",
+ "Sourate Al-Jinn (72), verset 18 — traduction du sens : Rachid Maach,": "Sura Al-Yinn (72), versículo 18 — traducción del sentido: Isa García,"
 });

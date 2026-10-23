@@ -375,6 +375,10 @@
   function voirDemande() {
     const id = new URLSearchParams(location.search).get("lieu");
     if (id) { const l = LIEUX.find(x => x.i === id || x.p === "mosquee/" + id + "/"); if (l && carte) { carte.setView([l.a, l.o], 17); setTimeout(() => marqueurs[l.i] && marqueurs[l.i].openPopup(), 50); } }
+    // ?ll=lat,lon : une mosquée du monde trouvée par la recherche de la page « Grandes mosquées » (23/10/2026) ; les mosquées
+    // de la zone sont lues en direct comme quand on déplace la carte
+    const ll = /^(-?\d{1,2}(?:\.\d+)?),(-?\d{1,3}(?:\.\d+)?)$/.exec(new URLSearchParams(location.search).get("ll") || "");
+    if (ll && carte && Math.abs(+ll[1]) <= 90 && Math.abs(+ll[2]) <= 180) { carte.setView([+ll[1], +ll[2]], 17); $("mq-carte").scrollIntoView && $("mq-carte").scrollIntoView({ block: "center" }); }
   }
 
   function envoyer(format, marque, lieu) {
@@ -519,7 +523,7 @@
 
   filtres();
   document.addEventListener("langue", () => { filtres(); legende(); if (requete) rechercher(); else proches(); if (carte) dessiner(); if (!pop.hidden) derniers(); });
-  if (new URLSearchParams(location.search).get("lieu")) chargerLeaflet();
+  if (new URLSearchParams(location.search).get("lieu") || new URLSearchParams(location.search).get("ll")) chargerLeaflet();
   else if ("IntersectionObserver" in window) {
     const o = new IntersectionObserver(es => { if (es.some(x => x.isIntersecting)) { o.disconnect(); chargerLeaflet(); } });
     o.observe($("mq-carte"));
