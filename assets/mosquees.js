@@ -330,7 +330,11 @@
       autoursLus.add(g.i);
       try {
         const r = await fetch((document.documentElement.dataset.racine || "") + "donnees/monde/autour/" + g.i.slice(3) + ".json");
-        if (r.ok) { ajouterZone((await r.json()).elements || [], ""); dessiner(); }
+        if (r.ok) {
+          ajouterZone((await r.json()).elements || [], ""); dessiner();
+          const n = MONDE.filter(l => !l.g && zone.contains([l.a, l.o])).length;
+          if (n) zoneTxt(L2("{n} lieux de prière dans cette zone.", "{n} مكان صلاة في هذه المنطقة.", "{n} places of prayer in this area.").replace("{n}", isoN(n)));
+        }
       } catch (x) { /* fichier absent : lecture en direct seulement */ }
     }
     try {
@@ -409,7 +413,7 @@
     // ?ll=lat,lon : une mosquée du monde trouvée par la recherche de la page « Grandes mosquées » (23/10/2026) ; les mosquées
     // de la zone sont lues en direct comme quand on déplace la carte
     const ll = /^(-?\d{1,2}(?:\.\d+)?),(-?\d{1,3}(?:\.\d+)?)$/.exec(new URLSearchParams(location.search).get("ll") || "");
-    if (ll && carte && Math.abs(+ll[1]) <= 90 && Math.abs(+ll[2]) <= 180) { carte.setView([+ll[1], +ll[2]], 17); $("mq-carte").scrollIntoView && $("mq-carte").scrollIntoView({ block: "center" }); }
+    if (ll && carte && Math.abs(+ll[1]) <= 90 && Math.abs(+ll[2]) <= 180) { carte.setView([+ll[1], +ll[2]], 15); $("mq-carte").scrollIntoView && $("mq-carte").scrollIntoView({ block: "center" }); }
   }
 
   function envoyer(format, marque, lieu) {
