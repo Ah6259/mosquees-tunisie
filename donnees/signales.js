@@ -1,2 +1,2 @@
 // GÉNÉRÉ par tools/lieux_priere.py (via signalements_lieux.py, toutes les 2 h) — lieux signalés par les visiteurs
-window.MOSQUEES_SIGNALES = {"maj":"2026-10-17T12:34","points":[{"id":"sig-b569a1901c","type":"mosquee","lat":36.86222,"lon":10.17001,"nom":"Gaza","date":"2026-10-10","ok":1,"ko":0,"statut":"signale"}],"votes":{},"retires":[]};
+window.MOSQUEES_SIGNALES = {"maj":"2026-10-23T18:51","points":[{"id":"sig-b569a1901c","type":"mosquee","lat":36.86222,"lon":10.17001,"nom":"Gaza","date":"2026-10-10","ok":1,"ko":0,"statut":"signale"}],"votes":{"osm-w213908439":[1,0],"osm-w435109729":[1,0],"osm-w990321479":[1,0]},"retires":[]};
