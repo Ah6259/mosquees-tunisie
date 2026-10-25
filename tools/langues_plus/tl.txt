@@ -10,7 +10,7 @@
 9	Sa tinig ni Sheikh Ali El Barrak (surah Al-Fatiha), mula sa kanyang opisyal na channel.
 10	Home
 11	Tungkol dito
-12	Tungkol sa site at pamamaraan
+12	Paano gumagana ang site?
 13	Isang libre at malayang site para makahanap ng moske saanman sa Tunisia at matuklasan ang kasaysayan ng malalaking moske ng bansa.
 14	Saan galing ang mga lugar?
 15	<b>OpenStreetMap</b>, ang malayang mapa na gawa ng mga nag-aambag dito: lahat ng lugar ng pagdarasal ng mga Muslim sa Tunisia, kasama ang lokasyon at pangalan, na muling binabasa ng aming robot tuwing 3 buwan.

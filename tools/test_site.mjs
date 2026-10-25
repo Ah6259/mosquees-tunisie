@@ -616,5 +616,46 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check(`descriptions : chaque page de mosquée a un texte (Wikipédia ou le nôtre) ${sansTexte.slice(0, 3).join(" | ")} ; pages de Djerba avec l'encadré de l'île (${djerba.length})`,
     !sansTexte.length && djerba.length >= 10);
 }
+// ---- 10. RÈGLE d'Ahmed : « la page Comment fonctionne le site doit être mise à jour chaque fois qu'on modifie le site »
+//          (25/10/2026, règle commune § 44) : chaque fonction visible du site (repère dans le code ou les pages) doit être
+//          expliquée dans a-propos/ ; nouvelle fonction = une ligne ici + son explication dans tools/textes/base/apropos.json
+{
+  const ap = lire("a-propos/index.html"), acc = lire("index.html"), pg = lire("assets/page.js"), mq = lire("assets/mosquees.js");
+  const ex = c => existsSync(join(root, c));
+  const FONCTIONS = [
+    ["à quoi sert le site", true, /À quoi sert le site \?/],
+    ["carte des lieux de prière", /id="mq-carte"/.test(acc), /Carte : tous les lieux de prière de Tunisie/],
+    ["page d'une mosquée", ex("mosquee/kairouan/index.html"), /Page d'une mosquée :/],
+    ["recherche d'une mosquée ou d'une ville", /id="mq-q"/.test(acc), /Recherche : tapez le nom d'une mosquée ou d'une ville/],
+    ["filtres", /mq-filtres/.test(acc + mq), /Filtres : mosquées, salles de prière/],
+    ["Autour de moi", /id="mq-autour"/.test(acc), /« Autour de moi »/],
+    ["le monde entier sur la carte", /data-monde-vue/.test(acc), /Le monde entier : cherchez une ville/],
+    ["signaler un lieu", /id="mq-sig-ouvrir"/.test(acc), /Signaler un lieu : ajoutez une mosquée/],
+    ["« C'est vrai » / « N'existe plus »", /data-ok=/.test(mq) && /data-ko=/.test(mq), /« N'existe plus »/],
+    ["grandes mosquées de Tunisie", ex("grandes-mosquees/index.html"), /Grandes mosquées : histoire, architecture/],
+    ["grandes mosquées du monde (recherche, Trier)", ex("grandes-mosquees-du-monde/index.html") && /data-tri/.test(lire("assets/pages.js")), /Grandes mosquées du monde : une recherche[\s\S]*« Trier »/],
+    ["pages Rôle / Histoires / Construire", ["role-de-la-mosquee", "histoires-des-mosquees", "construire-une-mosquee"].some(c => ex(c + "/index.html")), /Rôle de la mosquée, Histoires des mosquées, Construire une mosquée/],
+    ["versets du Coran + lien The Message", /id="verset-jinn"/.test(acc), /Versets du Coran :[^<]*QuranEnc[^<]*The Message/],
+    ["récitation", ex("assets/recitation.js"), /Récitation de cheikh Ali El Barrak : le son ne démarre/],
+    ["21 langues", /langues-bouton/.test(pg), /21 langues : le bouton de langue/],
+    ["bouton Partager", /class="partager"/.test(pg), /Partager : le bouton de l'en-tête/],
+    ["installation sur le téléphone / hors connexion", ex("manifest.webmanifest") && ex("sw.js"), /écran d'accueil[^<]*sans connexion/],
+    ["vidéo de présentation", ex("video/index.html"), /Vidéo de présentation :/],
+    ["Votre avis", /id="avis-form"/.test(acc), /Votre avis : une remarque ou une erreur/],
+    ["d'où viennent les lieux", true, /D'où viennent les lieux \?/],
+    ["vos données (vie privée)", true, /Vos données/],
+    ["mises à jour automatiques", true, /Mises à jour automatiques/],
+    ["site indépendant", true, /Un site indépendant/]];
+  const manque = FONCTIONS.filter(([, sur, re]) => sur && !re.test(ap)).map(([n]) => n);
+  check(`page « Comment fonctionne le site ? » à jour : chaque fonction du site y est expliquée (${FONCTIONS.length} fonctions)` + (manque.length ? " — manque : " + manque.join(", ") : ""),
+    manque.length === 0);
+  const titre = l => ((lire(`${l}a-propos/index.html`).match(/<h1>([\s\S]*?)<\/h1>/) || [])[1] || "").replace(/<[^>]+>/g, "").trim();
+  const sansTrad = AUTRES.filter(l => !existsSync(join(root, l, "a-propos/index.html")) || !titre(l + "/") || titre(l + "/") === titre(""));
+  check(`page « Comment fonctionne le site ? » : titre (h1 + <title>) en français, en arabe « كيف يعمل الموقع؟ », et traduit dans les ${AUTRES.length} autres langues ${sansTrad.join(" ")}`,
+    /<title>Comment fonctionne le site \? \|/.test(ap) && /<h1><span data-l="fr">Comment fonctionne le site \?<\/span><span data-l="ar">كيف يعمل الموقع؟<\/span>/.test(ap) && !sansTrad.length);
+  check("lien « Comment fonctionne le site ? » sur l'accueil (sous le titre) et dans le pied de page de toutes les pages",
+    /<p class="lien-comment"><a href="a-propos\/"><span data-l="fr">Comment fonctionne le site \?<\/span>/.test(acc)
+    && /<a href="\$\{rp\}a-propos\/">\$\{T\("Comment fonctionne le site \?", "كيف يعمل الموقع؟"/.test(pg) && /https:\/\/mosquees\.clicvia\.com\/a-propos\//.test(lire("sitemap.xml")));
+}
 console.log(`\n${erreurs ? erreurs + " PROBLÈME(S)" : "TOUT PASSE"} (${total} vérifications)`);
 process.exit(erreurs ? 1 : 0);

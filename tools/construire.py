@@ -22,7 +22,7 @@ import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
-VERSION = "20261023e"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261025a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
 NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]      # toutes sauf fr, ar, en (écrits dans les pages)
@@ -947,6 +947,11 @@ def main():
         if nom.endswith(".html"):
             meta, corps = lire_gabarit(os.path.join(dossier, nom))
             chemin = nom[:-5].replace("__", "/") + "/index.html"
+            # textes en 21 langues pris dans tools/textes/base/<textes>.json : {{t:clé}} (page « Comment fonctionne le site ? », 25/10/2026)
+            if meta.get("textes"):
+                cle_page = "p-" + nom[:-5]
+                CLE_TRAD[chemin.rsplit("index.html", 1)[0]] = cle_page
+                corps = re.sub(r"\{\{t:(\w+)\}\}", lambda m: X(meta["textes"], m.group(1), cle_page), corps)
             if "{{credits_photos}}" in corps:
                 noms_fr = {g["slug"]: g["nom"]["fr"] for g in GRANDES}
                 corps = corps.replace("{{credits_photos}}", "".join(

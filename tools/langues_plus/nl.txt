@@ -10,7 +10,7 @@
 9	Met de stem van sjeik Ali El Barrak (soera Al-Fatiha), van zijn officiële kanaal.
 10	Home
 11	Over ons
-12	Over ons en methode
+12	Hoe werkt de site?
 13	Een gratis en onafhankelijke site om overal in Tunesië een moskee te vinden en de geschiedenis van de grote moskeeën van het land te ontdekken.
 14	Waar komen de plaatsen vandaan?
 15	<b>OpenStreetMap</b>, de vrije kaart die door haar bijdragers wordt gemaakt: alle islamitische gebedsplaatsen van Tunesië, met hun ligging en naam, elke 3 maanden opnieuw gelezen door onze robot.

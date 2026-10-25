@@ -599,3 +599,7 @@ details.hi-histoire[open] summary::after{content:"−"}
 .mq-etoile-sainte svg{fill:#FFC400;stroke:#5C3D00;stroke-width:1.1}
 .mq-legende-etoile{margin:8px 0 0}
 .mq-etoile-mini{color:#FFC400;-webkit-text-stroke:.6px #7A5300;font-size:17px}
+
+/* ---- lien « Comment fonctionne le site ? » sous le titre de l'accueil (règle commune § 44, 25/10/2026) ---- */
+.hero .lien-comment{grid-column:1 / -1;justify-self:start;margin:12px 0 0;font-size:14px;font-weight:600}
+.hero .lien-comment a{color:#fff;text-decoration:underline;text-underline-offset:3px}

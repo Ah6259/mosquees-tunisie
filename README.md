@@ -3,6 +3,8 @@
 Nom affiché sur le site depuis le 09/10/2026 (avant : « Mosquées en Tunisie ») ; l'adresse ne change pas.
 
 Site gratuit : https://mosquees.clicvia.com/
+
+Page « Comment fonctionne le site ? » : https://mosquees.clicvia.com/a-propos/ (chaque fonction en une ligne ; tenue à jour à chaque modification visible, test `FONCTIONS` de `tools/test_site.mjs`, règle commune § 44).
 - carte de toutes les mosquées et salles de prière de Tunisie (OpenStreetMap + Wikidata + signalements des visiteurs),
   recherche par nom ou par ville, « Autour de moi » ; et les mosquées du monde entier (bandeau « Le monde entier est sur la carte »,
   villes d'exemple, « Voir le monde ») ;

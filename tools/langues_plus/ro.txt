@@ -10,7 +10,7 @@
 9	Cu vocea șeicului Ali El Barrak (sura Al-Fatiha), de pe canalul său oficial.
 10	Acasă
 11	Despre
-12	Despre site și metodă
+12	Cum funcționează site-ul?
 13	Un site gratuit și independent pentru a găsi o moschee oriunde în Tunisia și a descoperi istoria marilor moschei ale țării.
 14	De unde provin locurile?
 15	<b>OpenStreetMap</b>, harta liberă făcută de contribuitorii ei: toate locurile de rugăciune musulmane din Tunisia, cu poziția și numele lor, recitite la fiecare 3 luni de robotul nostru.

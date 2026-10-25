@@ -10,7 +10,7 @@
 9	Med schejk Ali El Barraks röst (suran Al-Fatiha), från hans officiella kanal.
 10	Start
 11	Om
-12	Om webbplatsen och metoden
+12	Hur fungerar webbplatsen?
 13	En gratis och oberoende webbplats för att hitta en moské var som helst i Tunisien och upptäcka historien om landets stora moskéer.
 14	Varifrån kommer platserna?
 15	<b>OpenStreetMap</b>, den fria kartan som görs av sina bidragsgivare: alla muslimska böneplatser i Tunisien, med läge och namn, som vår robot läser om var tredje månad.

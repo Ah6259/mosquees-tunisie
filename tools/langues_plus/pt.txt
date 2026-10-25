@@ -10,7 +10,7 @@
 9	Com a voz do xeque Ali El Barrak (sura Al-Fatiha), do seu canal oficial.
 10	Início
 11	Sobre
-12	Sobre e método
+12	Como funciona o site?
 13	Um site gratuito e independente para encontrar uma mesquita em qualquer lugar da Tunísia e descobrir a história das grandes mesquitas do país.
 14	De onde vêm os locais?
 15	<b>OpenStreetMap</b>, o mapa livre feito pelos seus contribuidores: todos os locais de oração muçulmanos da Tunísia, com a sua posição e o seu nome, relidos de 3 em 3 meses pelo nosso robô.

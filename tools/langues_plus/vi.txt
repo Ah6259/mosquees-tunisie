@@ -10,7 +10,7 @@
 9	Với giọng đọc của sheikh Ali El Barrak (chương Al-Fatiha), từ kênh chính thức của ông.
 10	Trang chủ
 11	Giới thiệu
-12	Giới thiệu và phương pháp
+12	Trang web hoạt động thế nào?
 13	Một trang web miễn phí và độc lập để tìm thánh đường ở khắp Tunisia và khám phá lịch sử các thánh đường lớn của đất nước.
 14	Các địa điểm lấy từ đâu?
 15	<b>OpenStreetMap</b>, bản đồ tự do do cộng đồng đóng góp: mọi nơi cầu nguyện của người Hồi giáo ở Tunisia, cùng vị trí và tên gọi, được robot của chúng tôi đọc lại 3 tháng một lần.

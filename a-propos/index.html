@@ -7,8 +7,8 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://thumb.wikimedia.org https://commons.wikimedia.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://cdnjs.cloudflare.com https://prix-eaux-tunisie.goatcounter.com; frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com https://query.wikidata.org https://maps.mail.ru https://overpass-api.de https://overpass.kumi.systems https://overpass.private.coffee https://overpass.openstreetmap.fr https://nominatim.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io https://docs.google.com">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="noai, noimageai">
-<title>À propos et méthode | Mosquées en Tunisie</title>
-<meta name="description" content="D&#x27;où viennent les mosquées de la carte (OpenStreetMap, Wikidata, visiteurs), les mosquées du monde entier (OpenStreetMap en direct, Nominatim), les textes et les photos, comment un lieu signalé est vérifié, la récitation de cheikh Ali El Barrak, vos données.">
+<title>Comment fonctionne le site ? | Mosquées en Tunisie</title>
+<meta name="description" content="Comment fonctionne le site Mosquées de Tunisie et du monde : à quoi il sert, chaque fonction (carte, recherche, Autour de moi, signaler un lieu, grandes mosquées, récitation, 21 langues…), d&#x27;où viennent les données, vos données, les mises à jour automatiques.">
 <link rel="canonical" href="https://mosquees.clicvia.com/a-propos/">
 <link rel="alternate" hreflang="fr" href="https://mosquees.clicvia.com/a-propos/">
 <link rel="alternate" hreflang="ar" href="https://mosquees.clicvia.com/ar/a-propos/">
@@ -39,8 +39,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Mosquées">
 <meta name="theme-color" content="#0E6B4C">
-<meta property="og:title" content="À propos et méthode | Mosquées en Tunisie">
-<meta property="og:description" content="D&#x27;où viennent les mosquées de la carte (OpenStreetMap, Wikidata, visiteurs), les mosquées du monde entier (OpenStreetMap en direct, Nominatim), les textes et les photos, comment un lieu signalé est vérifié, la récitation de cheikh Ali El Barrak, vos données.">
+<meta property="og:title" content="Comment fonctionne le site ? | Mosquées en Tunisie">
+<meta property="og:description" content="Comment fonctionne le site Mosquées de Tunisie et du monde : à quoi il sert, chaque fonction (carte, recherche, Autour de moi, signaler un lieu, grandes mosquées, récitation, 21 langues…), d&#x27;où viennent les données, vos données, les mises à jour automatiques.">
 <meta property="og:image" content="https://mosquees.clicvia.com/assets/og-image-v1.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -49,21 +49,48 @@
 <meta property="og:url" content="https://mosquees.clicvia.com/a-propos/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Noto+Kufi+Arabic:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=20261023e">
-<script src="../assets/langues.js?v=20261023e"></script>
-<script src="../assets/page.js?v=20261023e"></script>
-<script src="../assets/recitation.js?v=20261023e"></script>
+<link rel="stylesheet" href="../assets/style.css?v=20261025a">
+<script src="../assets/langues.js?v=20261025a"></script>
+<script src="../assets/page.js?v=20261025a"></script>
+<script src="../assets/recitation.js?v=20261025a"></script>
 </head>
 <body>
 <header class="entete" id="entete"></header>
 <section class="hero">
   <div class="wrap">
-    <p class="fil"><a href="../"><span data-l="fr">Accueil</span><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a> › <span data-l="fr">À propos</span><span data-l="ar">من نحن</span><span data-l="en">About</span></p>
-    <h1><span data-l="fr">À propos et méthode</span><span data-l="ar">من نحن والمنهجية</span><span data-l="en">About and method</span></h1>
+    <p class="fil"><a href="../"><span data-l="fr">Accueil</span><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a> › <span data-l="fr">Comment fonctionne le site ?</span><span data-l="ar">كيف يعمل الموقع؟</span><span data-l="en">How does the site work?</span></p>
+    <h1><span data-l="fr">Comment fonctionne le site ?</span><span data-l="ar">كيف يعمل الموقع؟</span><span data-l="en">How does the site work?</span></h1>
     <p class="intro"><span data-l="fr">Un site gratuit et indépendant pour trouver une mosquée partout en Tunisie et découvrir l'histoire des grandes mosquées du pays.</span><span data-l="ar">موقع مجاني ومستقل لإيجاد مسجد في أي مكان من تونس واكتشاف تاريخ جوامع البلاد الكبرى.</span><span data-l="en">A free, independent website to find a mosque anywhere in Tunisia and discover the history of the country's great mosques.</span></p>
   </div>
 </section>
 <main class="wrap chevauche">
+  <section class="carte" id="a-quoi-sert">
+    <h2><span data-l="fr">À quoi sert le site ?</span><span data-l="ar">ما فائدة الموقع؟</span><span data-l="en">What is the site for?</span></h2>
+    <p><span data-l="fr">Trouver une mosquée ou une salle de prière, en Tunisie et partout dans le monde, et découvrir l'histoire des grandes mosquées. Le site est gratuit, sans compte et sans publicité.</span><span data-l="ar">إيجاد مسجد أو مصلّى في تونس وفي كل أنحاء العالم، واكتشاف تاريخ الجوامع الكبرى. الموقع مجاني، دون حساب ودون إشهار.</span><span data-l="en">Find a mosque or a prayer room, in Tunisia and anywhere in the world, and discover the history of the great mosques. The site is free, with no account and no advertising.</span></p>
+  </section>
+  <section class="carte" id="fonctions">
+    <h2><span data-l="fr">Comment s'en servir : chaque fonction en une ligne</span><span data-l="ar">كيف تستعمله: كل وظيفة في سطر</span><span data-l="en">How to use it: each feature in one line</span></h2>
+    <ul class="sources fonctions">
+      <li><span data-l="fr">Carte : tous les lieux de prière de Tunisie. Touchez un point pour voir son nom, l'itinéraire (Google Maps) et sa page.</span><span data-l="ar">الخريطة: كل أماكن الصلاة في تونس. المس نقطة لترى اسمها والطريق إليها (خرائط Google) وصفحتها.</span><span data-l="en">Map: every place of prayer in Tunisia. Tap a point to see its name, directions (Google Maps) and its page.</span></li>
+      <li><span data-l="fr">Page d'une mosquée : photo, noms dans plusieurs langues, résumé de Wikipédia, petite carte et itinéraire.</span><span data-l="ar">صفحة المسجد: صورة، أسماؤه بعدّة لغات، ملخّص ويكيبيديا، خريطة صغيرة والطريق إليه.</span><span data-l="en">A mosque's page: photo, names in several languages, Wikipedia summary, small map and directions.</span></li>
+      <li><span data-l="fr">Recherche : tapez le nom d'une mosquée ou d'une ville ; les écritures proches sont comprises (Jerba = Djerba).</span><span data-l="ar">البحث: اكتب اسم مسجد أو مدينة؛ الكتابات المتقاربة مفهومة (Jerba = Djerba).</span><span data-l="en">Search: type the name of a mosque or a town; similar spellings are understood (Jerba = Djerba).</span></li>
+      <li><span data-l="fr">Filtres : mosquées, salles de prière, ou seulement les lieux qui ont une page d'histoire.</span><span data-l="ar">التصفية: المساجد، المصلّيات، أو الأماكن التي لها صفحة تاريخ فقط.</span><span data-l="en">Filters: mosques, prayer rooms, or only the places that have a history page.</span></li>
+      <li><span data-l="fr">« Autour de moi » : les lieux les plus proches de vous, avec leur distance.</span><span data-l="ar">« حولي »: أقرب الأماكن إليك، مع المسافة.</span><span data-l="en">“Near me”: the places closest to you, with their distance.</span></li>
+      <li><span data-l="fr">Le monde entier : cherchez une ville (La Mecque, Istanbul, Paris…) ou touchez « Voir le monde » ; chaque pays a sa couleur.</span><span data-l="ar">العالم كله: ابحث عن مدينة (مكة، إسطنبول، باريس…) أو المس « شاهد العالم »؛ لكل بلد لونه.</span><span data-l="en">The whole world: search for a town (Mecca, Istanbul, Paris…) or tap “See the world”; each country has its own colour.</span></li>
+      <li><span data-l="fr">Signaler un lieu : ajoutez une mosquée ou une salle de prière qui manque, en plaçant son repère sur la carte.</span><span data-l="ar">أضف مكانًا: أضف مسجدًا أو مصلّى غير موجود بوضع علامته على الخريطة.</span><span data-l="en">Report a place: add a missing mosque or prayer room by placing its marker on the map.</span></li>
+      <li><span data-l="fr">« C'est vrai » ou « N'existe plus » : confirmez un lieu signalé, ou dites qu'il a disparu.</span><span data-l="ar">« صحيح » أو « لم يعد موجودًا »: أكّد مكانًا مُضافًا، أو قل إنه اختفى.</span><span data-l="en">“It's true” or “No longer exists”: confirm a reported place, or say that it has gone.</span></li>
+      <li><span data-l="fr">Grandes mosquées : histoire, architecture, photos, dates et sources des grandes mosquées de Tunisie et des autres mosquées historiques.</span><span data-l="ar">الجوامع الكبرى: تاريخ الجوامع الكبرى في تونس والمساجد التاريخية الأخرى، وعمارتها وصورها وتواريخها ومصادرها.</span><span data-l="en">Great mosques: history, architecture, photos, dates and sources of the great mosques of Tunisia and the other historic mosques.</span></li>
+      <li><span data-l="fr">Grandes mosquées du monde : une recherche (Tunisie et monde) et un bouton « Trier » (la plus ancienne, la plus récente, par ordre alphabétique…).</span><span data-l="ar">الجوامع الكبرى في العالم: بحث (تونس والعالم) وزر « ترتيب » (الأقدم، الأحدث، حسب الترتيب الأبجدي…).</span><span data-l="en">Great mosques of the world: a search (Tunisia and the world) and a “Sort” button (oldest, newest, alphabetical order…).</span></li>
+      <li><span data-l="fr">Trois pages à lire : Rôle de la mosquée, Histoires des mosquées, Construire une mosquée.</span><span data-l="ar">ثلاث صفحات للقراءة: دور المسجد، قصص المساجد، بناء مسجد.</span><span data-l="en">Three pages to read: Role of the mosque, Stories of the mosques, Build a mosque.</span></li>
+      <li><span data-l="fr">Versets du Coran : en arabe, avec une traduction reconnue de leur sens (QuranEnc), et un lien vers le Coran sur notre site The Message.</span><span data-l="ar">آيات القرآن: بالعربية مع ترجمة معتمدة لمعانيها (QuranEnc)، ورابط إلى القرآن على موقعنا The Message.</span><span data-l="en">Quran verses: in Arabic, with a recognised translation of their meaning (QuranEnc), and a link to the Quran on our site The Message.</span></li>
+      <li><span data-l="fr">Récitation de cheikh Ali El Barrak : le son ne démarre qu'après votre choix ; le bouton rond de l'en-tête l'arrête.</span><span data-l="ar">تلاوة الشيخ علي البراق: لا يبدأ الصوت إلا بعد اختيارك، والزر الدائري في أعلى الصفحة يوقفه.</span><span data-l="en">Recitation by Sheikh Ali El Barrak: the sound only starts after your choice; the round button in the header stops it.</span></li>
+      <li><span data-l="fr">21 langues : le bouton de langue de l'en-tête ouvre la même page dans votre langue.</span><span data-l="ar">⁦21⁩ لغة: زر اللغة في أعلى الصفحة يفتح نفس الصفحة بلغتك.</span><span data-l="en">21 languages: the language button in the header opens the same page in your language.</span></li>
+      <li><span data-l="fr">Partager : le bouton de l'en-tête ouvre le menu de partage du téléphone (sinon WhatsApp).</span><span data-l="ar">المشاركة: زر أعلى الصفحة يفتح قائمة المشاركة في الهاتف (وإلا واتساب).</span><span data-l="en">Share: the button in the header opens the phone's share menu (otherwise WhatsApp).</span></li>
+      <li><span data-l="fr">Sur le téléphone : ajoutez le site à l'écran d'accueil comme une application ; les pages déjà ouvertes restent lisibles sans connexion.</span><span data-l="ar">على الهاتف: أضف الموقع إلى الشاشة الرئيسية مثل تطبيق؛ تبقى الصفحات التي فتحتها من قبل مقروءة دون اتصال.</span><span data-l="en">On your phone: add the site to the home screen like an app; pages you have already opened stay readable offline.</span></li>
+      <li><span data-l="fr">Vidéo de présentation : une courte vidéo qui montre le site.</span><span data-l="ar">الفيديو التقديمي: فيديو قصير يعرّف بالموقع.</span><span data-l="en">Presentation video: a short video that shows the site.</span></li>
+      <li><span data-l="fr">Votre avis : une remarque ou une erreur ? Écrivez-nous, chaque message est lu.</span><span data-l="ar">رأيك: ملاحظة أو خطأ؟ اكتب لنا، كل رسالة تُقرأ.</span><span data-l="en">Your feedback: a remark or a mistake? Write to us, every message is read.</span></li>
+    </ul>
+  </section>
   <section class="carte">
     <h2><span data-l="fr">D'où viennent les lieux ?</span><span data-l="ar">من أين تأتي الأماكن؟</span><span data-l="en">Where do the places come from?</span></h2>
     <ul class="sources" data-l="fr">
@@ -115,6 +142,14 @@
     <h2><span data-l="fr">Vos données</span><span data-l="ar">معطياتك</span><span data-l="en">Your data</span></h2>
     <p><span data-l="fr">Votre position sert seulement à afficher les lieux proches, dans votre téléphone : elle n'est envoyée que si vous signalez un lieu (et alors seulement la position du lieu). Un identifiant anonyme du navigateur évite qu'une même personne vote plusieurs fois. Statistiques de visite anonymes, sans cookie. Pas de publicité.</span><span data-l="ar">يُستعمل موقعك فقط لعرض الأماكن القريبة داخل هاتفك: لا يُرسل إلا إذا أضفت مكانًا (وعندها موقع المكان فقط). معرّف مجهول للمتصفح يمنع نفس الشخص من التصويت عدّة مرات. إحصائيات زيارة مجهولة الهوية، دون ملفات تعريف. دون إشهار.</span><span data-l="en">Your position is only used to show nearby places, inside your phone: it is sent only if you report a place (and then only the position of that place). An anonymous browser identifier prevents the same person from voting several times. Anonymous visit statistics, no cookies. No advertising.</span></p>
     <p><span data-l="fr">Hors de Tunisie, la zone affichée sur la carte (pas votre position exacte) est envoyée aux serveurs d'OpenStreetMap pour lire ses mosquées ; une ville cherchée dans le monde est envoyée à Nominatim.</span><span data-l="ar">خارج تونس، تُرسَل المنطقة المعروضة على الخريطة (لا موقعك الدقيق) إلى خوادم OpenStreetMap لقراءة مساجدها، وتُرسَل المدينة التي تبحث عنها في العالم إلى Nominatim.</span><span data-l="en">Outside Tunisia, the area shown on the map (not your exact position) is sent to the OpenStreetMap servers to read its mosques; a town searched for in the world is sent to Nominatim.</span></p>
+  </section>
+  <section class="carte" id="mises-a-jour">
+    <h2><span data-l="fr">Mises à jour automatiques</span><span data-l="ar">تحديث آلي</span><span data-l="en">Automatic updates</span></h2>
+    <p><span data-l="fr">Tout se fait seul, par nos robots : les lieux sont relus tous les 3 mois, les lieux signalés sont publiés toutes les 2 heures environ, et chaque modification du site est testée avant d'être publiée.</span><span data-l="ar">كل شيء يتم آليًا بواسطة روبوتاتنا: تُقرأ الأماكن من جديد كل ⁦3⁩ أشهر، وتُنشر الأماكن المُضافة كل ساعتين تقريبًا، ويُختبر كل تعديل في الموقع قبل نشره.</span><span data-l="en">Everything happens on its own, through our robots: places are re-read every 3 months, reported places are published about every 2 hours, and every change to the site is tested before it is published.</span></p>
+  </section>
+  <section class="carte" id="independant">
+    <h2><span data-l="fr">Un site indépendant</span><span data-l="ar">موقع مستقل</span><span data-l="en">An independent site</span></h2>
+    <p><span data-l="fr">Ce site n'est pas un service officiel et ne dépend d'aucune mosquée ni d'aucune organisation. Les horaires de prière et l'ouverture aux visiteurs changent : renseignez-vous sur place.</span><span data-l="ar">هذا الموقع ليس خدمة رسمية ولا يتبع أي مسجد أو أي منظمة. تتغيّر أوقات الصلاة ومواعيد فتح المساجد للزوار: استعلم في عين المكان.</span><span data-l="en">This site is not an official service and does not depend on any mosque or organisation. Prayer times and opening to visitors change: ask on site.</span></p>
   </section>
   <section class="carte" id="photos">
     <h2><span data-l="fr">Crédits des photos</span><span data-l="ar">حقوق الصور</span><span data-l="en">Photo credits</span></h2>

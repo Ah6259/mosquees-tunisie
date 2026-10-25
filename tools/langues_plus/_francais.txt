@@ -10,7 +10,7 @@
 9	Avec la voix de cheikh Ali El Barrak (sourate Al-Fâtiha), depuis sa chaîne officielle.
 10	Accueil
 11	À propos
-12	À propos et méthode
+12	Comment fonctionne le site ?
 13	Un site gratuit et indépendant pour trouver une mosquée partout en Tunisie et découvrir l'histoire des grandes mosquées du pays.
 14	D'où viennent les lieux ?
 15	<b>OpenStreetMap</b>, la carte libre faite par ses contributeurs : tous les lieux de prière musulmans de Tunisie, avec leur position et leur nom, relus tous les 3 mois par notre robot.

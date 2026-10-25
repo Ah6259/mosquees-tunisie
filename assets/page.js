@@ -127,7 +127,7 @@ function sitesProches(l) {
           <a href="${rp}histoires-des-mosquees/">${T("Histoires des mosquées", "قصص المساجد", "Stories of the mosques")}</a>
           <a href="${rp}construire-une-mosquee/">${T("Construire une mosquée", "بناء مسجد", "Build a mosque")}</a>
           <a href="${rp}#signaler">${T("Signaler une mosquée ou une salle de prière", "أضف مسجدًا أو مصلّى", "Report a mosque or prayer room")}</a>
-          <a href="${rp}a-propos/">${T("À propos et méthode", "من نحن والمنهجية", "About and method")}</a>
+          <a href="${rp}a-propos/">${T("Comment fonctionne le site ?", "كيف يعمل الموقع؟", "How does the site work?")}</a>
           <a href="${rp}#avis">${T("Votre avis", "رأيك", "Your feedback")}</a>
           <a href="${sitesProches(html.lang)[1][0]}" target="_blank" rel="noopener" data-compteur="lien-site/points-eau">${T("Points d'eau Tunisie", "نقاط الماء في تونس", "Water Points Tunisia")}</a>
           <a href="${sitesProches(html.lang)[0][0]}" target="_blank" rel="noopener" data-compteur="lien-site/le-message">${T("The Message : découvrir l'Islam", "الرسالة: اكتشف الإسلام", "The Message: discover Islam")}</a>

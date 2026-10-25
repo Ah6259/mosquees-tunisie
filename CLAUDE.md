@@ -115,3 +115,11 @@
   - **Couleurs de la carte (décision d'Ahmed du 23/10/2026)** : hors de Tunisie, un point garde la COULEUR DE SON PAYS (légende
     « Étoile jaune… la couleur d'un point indique son pays » sous la carte). Grandes mosquées : étoile jaune, plus grande pour
     La Mecque, Médine et al-Aqsa. Ne pas passer tous les points en vert.
+
+- **RÈGLE D'AHMED (25/10/2026, règle commune § 44) : la page « Comment fonctionne le site ? » (`a-propos/`, h1 « Comment fonctionne
+  le site ? » / « كيف يعمل الموقع؟ », 21 langues) est mise à jour à CHAQUE modification visible, dans le même envoi** ; test `FONCTIONS`
+  dans `tools/test_site.mjs` (partie 10 : repère dans le code ou les pages → phrase attendue dans la page ; une fonction présente mais
+  non expliquée = test rouge = publication bloquée). Nouvelle fonction = une ligne dans `FONCTIONS` + une clé dans
+  `tools/textes/base/apropos.json` (fr, ar, en) et sa traduction « apropos/<clé> » dans les 18 `tools/textes/<langue>.json`, puis
+  `<li>{{t:<clé>}}</li>` dans `tools/gabarits/a-propos.html` (méta `textes: apropos` : construire.py remplace `{{t:clé}}`).
+  Liens : sous le titre de l'accueil (`.lien-comment`) et dans le pied de page (`assets/page.js`). Version 20261025a.
