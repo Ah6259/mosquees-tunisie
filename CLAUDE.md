@@ -123,3 +123,9 @@
   `tools/textes/base/apropos.json` (fr, ar, en) et sa traduction « apropos/<clé> » dans les 18 `tools/textes/<langue>.json`, puis
   `<li>{{t:<clé>}}</li>` dans `tools/gabarits/a-propos.html` (méta `textes: apropos` : construire.py remplace `{{t:clé}}`).
   Liens : sous le titre de l'accueil (`.lien-comment`) et dans le pied de page (`assets/page.js`). Version 20261025a.
+
+- **08/11/2026 — plan SEO d'Ahmed appliqué à ce site (phase 2 ; contrôle commun `outils visibilite/controle_seo.mjs` de projets-ahmed ;
+  plan : `consignes des taches/seo-mosquees.md`)** : `titre_seo()` / `desc_seo()` dans `tools/construire.py` (gabarit) et
+  `tools/pages_langues.py` (21 langues) : titre <= 70 caractères en gardant le suffixe « | nom du site dans la langue » (sinon le titre
+  d'une fiche redevenait identique au français : test « titre resté en français »), description <= 165 coupée en fin de phrase (avant :
+  `[:200]`) ; accueil français (index.html, écrit à la main) : titre 93 -> 68, description 325 -> 160. Tests verts (6).

@@ -23,6 +23,37 @@ from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 1
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
 VERSION = "20261025a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+
+
+def titre_seo(t, maxi=70):
+    """SEO (08/11/2026, plan d'Ahmed pour tous les sites) : Google coupe les titres vers 60-70 caractères : le suffixe « | nom du site »
+    saute si le titre dépasse, puis coupe à un séparateur (« : », « — », « (»), sinon au dernier mot entier avec « … »."""
+    if len(t) <= maxi:
+        return t
+    base, _, suffixe = t.rpartition(" | ")          # « Nom de la page | nom du site dans la langue » : le suffixe dit la langue, on le garde
+    if not suffixe or len(suffixe) > 40:
+        base, suffixe = t, ""
+    place = maxi - (len(suffixe) + 3 if suffixe else 0)
+    if len(base) > place:
+        coupe = None
+        for sep in (" : ", ": ", " — ", " (", " – "):
+            i = base.rfind(sep, 0, place)
+            if i >= 25:
+                coupe = base[:i].rstrip(" ,;:—-")
+                break
+        base = coupe if coupe else base[:place - 1].rsplit(" ", 1)[0].rstrip(" ,;:—-(") + "…"
+    return base + (" | " + suffixe if suffixe else "")
+
+
+def desc_seo(d, maxi=165):
+    """Description <= 165 caractères : fin de la dernière phrase entière si possible, sinon dernier mot entier + « … »."""
+    if len(d) <= maxi:
+        return d
+    coupe = d[:maxi]
+    i = max(coupe.rfind(". "), coupe.rfind("۔ "), coupe.rfind("。"))
+    if i >= 60:
+        return coupe[:i + 1]
+    return coupe[:maxi - 1].rsplit(" ", 1)[0].rstrip(" ,;:—-(،") + "…"
 BASE = "https://mosquees.clicvia.com/"
 LANGUES = ["fr", "ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]
 NOUVELLES = ["tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"]      # toutes sauf fr, ar, en (écrits dans les pages)
@@ -146,8 +177,8 @@ def document(chemin, titre, description, corps, tete=(), bas=(), image=None, jso
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="{robots}">
-<title>{att(titre)}</title>
-<meta name="description" content="{att(description)}">
+<title>{att(titre_seo(titre))}</title>
+<meta name="description" content="{att(desc_seo(description))}">
 <link rel="canonical" href="{url}">
 {alt}<link rel="icon" href="{r}assets/logo.svg" type="image/svg+xml">
 <link rel="manifest" href="{r}manifest.webmanifest">

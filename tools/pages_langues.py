@@ -24,6 +24,37 @@ SITE = {"fr": "Mosquées en Tunisie", "ar": "مساجد تونس", "en": "Mosque
         "ru": "Мечети Туниса", "vi": "Thánh đường ở Tunisia", "th": "มัสยิดในตูนิเซีย", "tl": "Mga moske sa Tunisia",
         "sv": "Moskéer i Tunisien", "ro": "Moschei în Tunisia"}
 # accueil : titre, description, titre de partage (le français reste celui de index.html, écrit à la main)
+
+def titre_seo(t, maxi=70):
+    """SEO (08/11/2026, plan d'Ahmed pour tous les sites) : Google coupe les titres vers 60-70 caractères : le suffixe « | nom du site »
+    saute si le titre dépasse, puis coupe à un séparateur (« : », « — », « (»), sinon au dernier mot entier avec « … »."""
+    if len(t) <= maxi:
+        return t
+    base, _, suffixe = t.rpartition(" | ")          # « Nom de la page | nom du site dans la langue » : le suffixe dit la langue, on le garde
+    if not suffixe or len(suffixe) > 40:
+        base, suffixe = t, ""
+    place = maxi - (len(suffixe) + 3 if suffixe else 0)
+    if len(base) > place:
+        coupe = None
+        for sep in (" : ", ": ", " — ", " (", " – "):
+            i = base.rfind(sep, 0, place)
+            if i >= 25:
+                coupe = base[:i].rstrip(" ,;:—-")
+                break
+        base = coupe if coupe else base[:place - 1].rsplit(" ", 1)[0].rstrip(" ,;:—-(") + "…"
+    return base + (" | " + suffixe if suffixe else "")
+
+
+def desc_seo(d, maxi=165):
+    """Description <= 165 caractères : fin de la dernière phrase entière si possible, sinon dernier mot entier + « … »."""
+    if len(d) <= maxi:
+        return d
+    coupe = d[:maxi]
+    i = max(coupe.rfind(". "), coupe.rfind("۔ "), coupe.rfind("。"))
+    if i >= 60:
+        return coupe[:i + 1]
+    return coupe[:maxi - 1].rsplit(" ", 1)[0].rstrip(" ,;:—-(،") + "…"
+
 ACCUEIL = {
     "ar": ("مساجد تونس: خريطة كل المساجد، صور وتاريخ (مجاني)",
            "خريطة مجانية لكل المساجد والمصلّيات في تونس: ابحث بالاسم أو بالمدينة واعثر على الأقرب إليك. تاريخ وصور ووثائق الجوامع الكبرى: الزيتونة، القيروان، سوسة، المهدية، صفاقس، تستور. وأيضًا مساجد العالم كله: ابحث عن مدينة.",
@@ -276,8 +307,8 @@ def variante(page_fr, base, chemin, l, langues, trad, meta=None, indexer=True):
     h1 = premier(racine, lambda e: e.balise == "h1")
     intro = premier(racine, lambda e: e.balise == "p" and "intro" in (e.get("class") or "").split())
     titre, desc, og = (tuple(meta or ()) + (None, None, None))[:3]
-    titre = titre or (texte_propre(h1) + " | " + SITE[l])
-    desc = cle(desc or texte_propre(intro) or titre)[:200]
+    titre = titre_seo(titre or (texte_propre(h1) + " | " + SITE[l]))
+    desc = desc_seo(cle(desc or texte_propre(intro) or titre))
     og = og or titre
     for e in tete.tous():
         if e.balise == "title":
