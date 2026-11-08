@@ -129,3 +129,5 @@
   `tools/pages_langues.py` (21 langues) : titre <= 70 caractères en gardant le suffixe « | nom du site dans la langue » (sinon le titre
   d'une fiche redevenait identique au français : test « titre resté en français »), description <= 165 coupée en fin de phrase (avant :
   `[:200]`) ; accueil français (index.html, écrit à la main) : titre 93 -> 68, description 325 -> 160. Tests verts (6).
+- **08/11/2026 (contrôle SEO en ligne)** : une fiche de mosquée du monde dont la seule description dans une langue est le court texte Wikidata (25 caractères en hindi) reçoit aussi son titre dans la description (`pages_langues.py`, < 50 caractères).
+

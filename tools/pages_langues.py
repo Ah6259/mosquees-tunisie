@@ -309,6 +309,8 @@ def variante(page_fr, base, chemin, l, langues, trad, meta=None, indexer=True):
     titre, desc, og = (tuple(meta or ()) + (None, None, None))[:3]
     titre = titre_seo(titre or (texte_propre(h1) + " | " + SITE[l]))
     desc = desc_seo(cle(desc or texte_propre(intro) or titre))
+    if len(desc) < 50:          # SEO (08/11/2026) : une fiche dont la seule description est le court texte Wikidata (« mosquée à Paris »)
+        desc = desc_seo(desc.rstrip(" .") + " · " + titre)   # reçoit aussi son titre : Google veut au moins ~50 caractères
     og = og or titre
     for e in tete.tous():
         if e.balise == "title":
