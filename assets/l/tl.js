@@ -36,6 +36,8 @@ window.TRADUCTIONS.tl = {
 "Classées par ville. Le point vert signale une photo.": "Nakaayos ayon sa lungsod. Ang berdeng tuldok ay nangangahulugang may larawan.",
 "Comment fonctionne le site ?": "Paano gumagana ang site?",
 "Comment un lieu signalé est vérifié": "Paano sinusuri ang isang iniulat na lugar",
+"Conditions d'utilisation": "Mga tuntunin ng paggamit",
+"Confidentialité": "Privacy",
 "Confirmer cette position": "Kumpirmahin ang lokasyong ito",
 "Confirmé par les visiteurs": "Kinumpirma ng mga bisita",
 "Construire une mosquée": "Magtayo ng moske",

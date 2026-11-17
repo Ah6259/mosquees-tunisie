@@ -584,5 +584,6 @@
  "apropos/maj_titre": "Otomatik güncellemeler",
  "apropos/maj": "Her şey robotlarımız sayesinde kendiliğinden olur: yerler 3 ayda bir yeniden okunur, bildirilen yerler yaklaşık 2 saatte bir yayımlanır ve sitedeki her değişiklik yayımlanmadan önce test edilir.",
  "apropos/indep_titre": "Bağımsız bir site",
- "apropos/indep": "Bu site resmî bir hizmet değildir ve hiçbir camiye ya da kuruluşa bağlı değildir. Namaz vakitleri ve ziyaretçilere açılış saatleri değişir: yerinde sorun."
+ "apropos/indep": "Bu site resmî bir hizmet değildir ve hiçbir camiye ya da kuruluşa bağlı değildir. Namaz vakitleri ve ziyaretçilere açılış saatleri değişir: yerinde sorun.",
+ "apropos/communes": "Tüm sitelerimiz için ortak olan «Gizlilik» ve «Kullanım koşulları» sayfaları her sayfanın altındadır."
 }

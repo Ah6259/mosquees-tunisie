@@ -22,7 +22,7 @@ import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
-VERSION = "20261025a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261117a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 
 
 def titre_seo(t, maxi=70):

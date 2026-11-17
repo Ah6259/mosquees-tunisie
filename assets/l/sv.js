@@ -36,6 +36,8 @@ window.TRADUCTIONS.sv = {
 "Classées par ville. Le point vert signale une photo.": "Ordnade efter stad. Den gröna punkten visar att det finns ett foto.",
 "Comment fonctionne le site ?": "Hur fungerar webbplatsen?",
 "Comment un lieu signalé est vérifié": "Så kontrolleras en rapporterad plats",
+"Conditions d'utilisation": "Användarvillkor",
+"Confidentialité": "Integritet",
 "Confirmer cette position": "Bekräfta den här positionen",
 "Confirmé par les visiteurs": "Bekräftad av besökare",
 "Construire une mosquée": "Bygga en moské",

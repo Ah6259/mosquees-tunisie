@@ -117,6 +117,8 @@ function sitesProches(l) {
         : `<a href="${rp}${h || "./"}"${(h && !h.startsWith("#") ? ici.endsWith("/" + h) : (!h && !rp)) ? ' aria-current="page"' : ""}>${T(fr, ar, en)}</a>`).join("")}</div></nav>`
       + (proposee && proposee !== LANGUE_ADRESSE ? `<p class="autre-langue"><a href="${adresse(proposee)}" data-lang="${proposee}" lang="${proposee}" dir="${DROITE.includes(proposee) ? "rtl" : "ltr"}" hreflang="${proposee}">${LANGUES.find(x => x[0] === proposee)[2]} →</a></p>` : "");
     const p = document.getElementById("pied");
+    // pages communes de clicvia.com (17/11/2026) : Confidentialité / Conditions d'utilisation en français, en arabe (ar/), sinon en anglais (en/)
+    const PAGES_COMMUNES = html.lang === "fr" ? "" : html.lang === "ar" ? "ar/" : "en/";
     if (p) p.innerHTML = `
       <div class="wrap">
         <div class="pied-logo"><img src="${racine}assets/logo.svg" alt="" width="24" height="24"> ${T("Mosquées de Tunisie et du monde", "مساجد تونس والعالم", "Mosques of Tunisia and the world")}</div>
@@ -132,6 +134,8 @@ function sitesProches(l) {
           <a href="${sitesProches(html.lang)[1][0]}" target="_blank" rel="noopener" data-compteur="lien-site/points-eau">${T("Points d'eau Tunisie", "نقاط الماء في تونس", "Water Points Tunisia")}</a>
           <a href="${sitesProches(html.lang)[0][0]}" target="_blank" rel="noopener" data-compteur="lien-site/le-message">${T("The Message : découvrir l'Islam", "الرسالة: اكتشف الإسلام", "The Message: discover Islam")}</a>
         <a href="https://clicvia.com/" rel="noopener" target="_blank">${T("Tous nos services", "كل خدماتنا", "All our services")}</a>
+        <a href="https://clicvia.com/${PAGES_COMMUNES}confidentialite/" rel="noopener" target="_blank">${T("Confidentialité", "الخصوصية", "Privacy")}</a>
+        <a href="https://clicvia.com/${PAGES_COMMUNES}conditions/" rel="noopener" target="_blank">${T("Conditions d'utilisation", "شروط الاستعمال", "Terms of use")}</a>
         </nav>
         <p>${T("Les horaires de prière et l'ouverture aux visiteurs changent : renseignez-vous sur place. Ce site n'est pas un service officiel.",
                "تتغيّر أوقات الصلاة ومواعيد فتح المساجد للزوار: استعلم في عين المكان. هذا الموقع ليس خدمة رسمية.",

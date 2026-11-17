@@ -36,6 +36,8 @@ window.TRADUCTIONS.ja = {
 "Classées par ville. Le point vert signale une photo.": "都市別に並んでいます。緑の点は写真があることを示します。",
 "Comment fonctionne le site ?": "このサイトのしくみ",
 "Comment un lieu signalé est vérifié": "報告された場所の確認方法",
+"Conditions d'utilisation": "利用規約",
+"Confidentialité": "プライバシー",
 "Confirmer cette position": "この位置を確認する",
 "Confirmé par les visiteurs": "訪問者が確認済み",
 "Construire une mosquée": "モスクを建てる",

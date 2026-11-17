@@ -36,6 +36,8 @@ window.TRADUCTIONS.nl = {
 "Classées par ville. Le point vert signale une photo.": "Gerangschikt per stad. De groene stip betekent dat er een foto is.",
 "Comment fonctionne le site ?": "Hoe werkt de site?",
 "Comment un lieu signalé est vérifié": "Hoe een gemelde plaats wordt gecontroleerd",
+"Conditions d'utilisation": "Gebruiksvoorwaarden",
+"Confidentialité": "Privacy",
 "Confirmer cette position": "Deze positie bevestigen",
 "Confirmé par les visiteurs": "Bevestigd door bezoekers",
 "Construire une mosquée": "Een moskee bouwen",

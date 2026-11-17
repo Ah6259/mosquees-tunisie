@@ -36,6 +36,8 @@ window.TRADUCTIONS.id = {
 "Classées par ville. Le point vert signale une photo.": "Diurutkan menurut kota. Titik hijau berarti ada foto.",
 "Comment fonctionne le site ?": "Bagaimana situs ini bekerja?",
 "Comment un lieu signalé est vérifié": "Bagaimana tempat yang dilaporkan diperiksa",
+"Conditions d'utilisation": "Ketentuan penggunaan",
+"Confidentialité": "Privasi",
 "Confirmer cette position": "Konfirmasi lokasi ini",
 "Confirmé par les visiteurs": "Dikonfirmasi pengunjung",
 "Construire une mosquée": "Membangun masjid",

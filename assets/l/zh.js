@@ -36,6 +36,8 @@ window.TRADUCTIONS.zh = {
 "Classées par ville. Le point vert signale une photo.": "按城市排列。绿点表示有照片。",
 "Comment fonctionne le site ?": "本站如何运作？",
 "Comment un lieu signalé est vérifié": "被报告的地点如何核实",
+"Conditions d'utilisation": "使用条款",
+"Confidentialité": "隐私",
 "Confirmer cette position": "确认此位置",
 "Confirmé par les visiteurs": "已由访客确认",
 "Construire une mosquée": "修建清真寺",

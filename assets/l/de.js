@@ -36,6 +36,8 @@ window.TRADUCTIONS.de = {
 "Classées par ville. Le point vert signale une photo.": "Nach Ort sortiert. Der grüne Punkt zeigt ein Foto an.",
 "Comment fonctionne le site ?": "Wie funktioniert die Website?",
 "Comment un lieu signalé est vérifié": "Wie ein gemeldeter Ort geprüft wird",
+"Conditions d'utilisation": "Nutzungsbedingungen",
+"Confidentialité": "Datenschutz",
 "Confirmer cette position": "Diese Position bestätigen",
 "Confirmé par les visiteurs": "Von Besuchern bestätigt",
 "Construire une mosquée": "Eine Moschee bauen",

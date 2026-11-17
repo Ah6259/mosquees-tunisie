@@ -36,6 +36,8 @@ window.TRADUCTIONS.ru = {
 "Classées par ville. Le point vert signale une photo.": "Сгруппированы по городам. Зелёная точка означает, что есть фотография.",
 "Comment fonctionne le site ?": "Как работает сайт?",
 "Comment un lieu signalé est vérifié": "Как проверяется место, о котором сообщили",
+"Conditions d'utilisation": "Условия использования",
+"Confidentialité": "Конфиденциальность",
 "Confirmer cette position": "Подтвердить это местоположение",
 "Confirmé par les visiteurs": "Подтверждено посетителями",
 "Construire une mosquée": "Построить мечеть",

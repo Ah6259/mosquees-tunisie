@@ -36,6 +36,8 @@ window.TRADUCTIONS.vi = {
 "Classées par ville. Le point vert signale une photo.": "Xếp theo thành phố. Chấm xanh lá cho biết có ảnh.",
 "Comment fonctionne le site ?": "Trang web hoạt động thế nào?",
 "Comment un lieu signalé est vérifié": "Một địa điểm được báo sẽ được kiểm tra thế nào",
+"Conditions d'utilisation": "Điều khoản sử dụng",
+"Confidentialité": "Quyền riêng tư",
 "Confirmer cette position": "Xác nhận vị trí này",
 "Confirmé par les visiteurs": "Đã được khách xác nhận",
 "Construire une mosquée": "Xây dựng thánh đường",

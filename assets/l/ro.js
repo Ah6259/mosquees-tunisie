@@ -36,6 +36,8 @@ window.TRADUCTIONS.ro = {
 "Classées par ville. Le point vert signale une photo.": "Ordonate pe orașe. Punctul verde semnalează o fotografie.",
 "Comment fonctionne le site ?": "Cum funcționează site-ul?",
 "Comment un lieu signalé est vérifié": "Cum este verificat un loc semnalat",
+"Conditions d'utilisation": "Condiții de utilizare",
+"Confidentialité": "Confidențialitate",
 "Confirmer cette position": "Confirmă această poziție",
 "Confirmé par les visiteurs": "Confirmat de vizitatori",
 "Construire une mosquée": "Construirea unei moschei",

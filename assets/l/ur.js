@@ -36,6 +36,8 @@ window.TRADUCTIONS.ur = {
 "Classées par ville. Le point vert signale une photo.": "شہر کے لحاظ سے ترتیب۔ سبز نقطہ تصویر کی نشاندہی کرتا ہے۔",
 "Comment fonctionne le site ?": "یہ سائٹ کیسے کام کرتی ہے؟",
 "Comment un lieu signalé est vérifié": "اطلاع دی گئی جگہ کی جانچ کیسے ہوتی ہے",
+"Conditions d'utilisation": "استعمال کی شرائط",
+"Confidentialité": "رازداری",
 "Confirmer cette position": "اس مقام کی تصدیق کریں",
 "Confirmé par les visiteurs": "زائرین نے تصدیق کی",
 "Construire une mosquée": "مسجد بنانا",

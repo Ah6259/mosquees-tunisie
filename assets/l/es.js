@@ -36,6 +36,8 @@ window.TRADUCTIONS.es = {
 "Classées par ville. Le point vert signale une photo.": "Ordenadas por ciudad. El punto verde indica que hay foto.",
 "Comment fonctionne le site ?": "¿Cómo funciona el sitio?",
 "Comment un lieu signalé est vérifié": "Cómo se comprueba un lugar señalado",
+"Conditions d'utilisation": "Condiciones de uso",
+"Confidentialité": "Privacidad",
 "Confirmer cette position": "Confirmar esta posición",
 "Confirmé par les visiteurs": "Confirmado por los visitantes",
 "Construire une mosquée": "Construir una mezquita",

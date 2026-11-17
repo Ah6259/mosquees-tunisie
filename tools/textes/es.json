@@ -584,5 +584,6 @@
  "apropos/maj_titre": "Actualizaciones automáticas",
  "apropos/maj": "Todo se hace solo, mediante nuestros robots: los lugares se vuelven a leer cada 3 meses, los lugares señalados se publican cada 2 horas aproximadamente y cada cambio del sitio se prueba antes de publicarse.",
  "apropos/indep_titre": "Un sitio independiente",
- "apropos/indep": "Este sitio no es un servicio oficial y no depende de ninguna mezquita ni organización. Los horarios de oración y la apertura a visitantes cambian: infórmese en el lugar."
+ "apropos/indep": "Este sitio no es un servicio oficial y no depende de ninguna mezquita ni organización. Los horarios de oración y la apertura a visitantes cambian: infórmese en el lugar.",
+ "apropos/communes": "Las páginas «Privacidad» y «Condiciones de uso», comunes a todos nuestros sitios, están al pie de cada página."
 }

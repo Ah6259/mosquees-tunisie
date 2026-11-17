@@ -36,6 +36,8 @@ window.TRADUCTIONS.th = {
 "Classées par ville. Le point vert signale une photo.": "จัดเรียงตามเมือง จุดสีเขียวหมายถึงมีภาพถ่าย",
 "Comment fonctionne le site ?": "เว็บไซต์นี้ทำงานอย่างไร",
 "Comment un lieu signalé est vérifié": "สถานที่ที่ถูกแจ้งได้รับการตรวจสอบอย่างไร",
+"Conditions d'utilisation": "ข้อกำหนดการใช้งาน",
+"Confidentialité": "ความเป็นส่วนตัว",
 "Confirmer cette position": "ยืนยันตำแหน่งนี้",
 "Confirmé par les visiteurs": "ผู้เยี่ยมชมยืนยันแล้ว",
 "Construire une mosquée": "การสร้างมัสยิด",

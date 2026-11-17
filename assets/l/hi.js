@@ -36,6 +36,8 @@ window.TRADUCTIONS.hi = {
 "Classées par ville. Le point vert signale une photo.": "शहर के अनुसार क्रमबद्ध। हरा बिंदु तस्वीर होने का संकेत है।",
 "Comment fonctionne le site ?": "यह साइट कैसे काम करती है?",
 "Comment un lieu signalé est vérifié": "सूचित की गई जगह की जाँच कैसे होती है",
+"Conditions d'utilisation": "उपयोग की शर्तें",
+"Confidentialité": "गोपनीयता",
 "Confirmer cette position": "इस स्थिति की पुष्टि करें",
 "Confirmé par les visiteurs": "आगंतुकों द्वारा पुष्ट",
 "Construire une mosquée": "मस्जिद बनाना",

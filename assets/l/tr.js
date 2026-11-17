@@ -36,6 +36,8 @@ window.TRADUCTIONS.tr = {
 "Classées par ville. Le point vert signale une photo.": "Şehre göre sıralı. Yeşil nokta fotoğraf olduğunu gösterir.",
 "Comment fonctionne le site ?": "Site nasıl çalışır?",
 "Comment un lieu signalé est vérifié": "Bildirilen bir yer nasıl kontrol edilir",
+"Conditions d'utilisation": "Kullanım koşulları",
+"Confidentialité": "Gizlilik",
 "Confirmer cette position": "Bu konumu onayla",
 "Confirmé par les visiteurs": "Ziyaretçiler doğruladı",
 "Construire une mosquée": "Cami inşa etmek",

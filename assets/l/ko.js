@@ -36,6 +36,8 @@ window.TRADUCTIONS.ko = {
 "Classées par ville. Le point vert signale une photo.": "도시별로 정리했습니다. 초록색 점은 사진이 있다는 뜻입니다.",
 "Comment fonctionne le site ?": "사이트는 어떻게 작동하나요?",
 "Comment un lieu signalé est vérifié": "제보된 장소는 어떻게 확인하나요",
+"Conditions d'utilisation": "이용약관",
+"Confidentialité": "개인정보 보호",
 "Confirmer cette position": "이 위치 확인",
 "Confirmé par les visiteurs": "방문자가 확인함",
 "Construire une mosquée": "모스크 짓기",
