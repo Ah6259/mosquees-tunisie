@@ -173,9 +173,13 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const vues = [...d.querySelectorAll(".hero [data-diapo] .diapo-vue")], leg = [...d.querySelectorAll(".hero [data-diapo] .diapo-legende")];
   check(`accueil : la photo du bandeau fait défiler les ${GRANDES.length} grandes mosquées (Kairouan d'abord, fichier présent, lien vers sa page, une légende créditée par photo, une seule visible)`,
     vues.length === GRANDES.length && leg.length === vues.length && /kairouan/.test(vues[0].getAttribute("href"))
-    && vues.every(a => existsSync(join(root, a.querySelector("img").getAttribute("src"))) && existsSync(join(root, a.getAttribute("href"), "index.html")))
+    && vues.every(a => { const im = a.querySelector("img"); return existsSync(join(root, im.getAttribute("data-src") || im.getAttribute("src"))) && existsSync(join(root, a.getAttribute("href"), "index.html")); })
     && leg.every(f => /CC BY|CC0|domaine public|Public domain/i.test(f.textContent) && f.querySelector('a[href^="https://commons.wikimedia.org/"]'))
     && leg.filter(f => !f.hidden).length === 1 && vues.filter(a => a.classList.contains("actif")).length === 1);
+  // 19/11/2026 (CV.3b) : seule la 1re photo du bandeau a un src au départ ; les autres (data-src) arrivent juste avant leur tour
+  { const html = lire("index.html"), diapo = (html.match(/<figure class="illus diapo"[\s\S]*?<\/figure>/) || [""])[0];
+    check("accueil léger : une seule photo du diaporama téléchargée à l'ouverture (les autres en data-src, chargées avant leur tour par page.js)",
+      (diapo.match(/<img src="(?!data:)/g) || []).length === 1 && (diapo.match(/<img src="data:image\/gif;base64,[^"]+" data-src=/g) || []).length === GRANDES.length - 1 && /function charger\(k\)/.test(lire("assets/page.js"))); }
   check("lien vers The Message (découvrir l'Islam) : carte de l'accueil + pied de page", !!d.querySelector('main a[href="https://message.clicvia.com/"]')
     && !!d.querySelector('footer a[href^="https://message.clicvia.com/"]'));
   check("lien vers Points d'eau Tunisie (Le Coran et l'eau) : carte de l'accueil + pied de page", !!d.querySelector('main a[href="https://eau.clicvia.com/coran-et-eau/"]')
@@ -372,7 +376,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     if (!h.includes(`<link rel="canonical" href="${url}">`) || !h.includes(`<meta property="og:url" content="${url}">`)) pbL.push(p + " adresse officielle");
     const garde = ["ar", "en"].includes(l) ? l : "en";
     if (["fr", "ar", "en"].some(x => x !== garde && h.includes(`data-l="${x}"`))) pbL.push(p + " reste d'une autre langue");
-    if ([...h.matchAll(/(?:src|href)="((?:\.\.\/)*)(?:assets|donnees)\//g)].some(m => m[1] !== "../".repeat(p.split("/").length - 1))) pbL.push(p + " chemin des fichiers communs");
+    if ([...h.matchAll(/(?:data-src|src|href)="((?:\.\.\/)*)(?:assets|donnees)\//g)].some(m => m[1] !== "../".repeat(p.split("/").length - 1))) pbL.push(p + " chemin des fichiers communs");
     if (!sansIndex(p) && !h.includes(`hreflang="${l}" href="${url}"`)) pbL.push(p + " hreflang vers elle-même");
     if (sansIndex(p) && /hreflang=/.test(h)) pbL.push(p + " noindex avec hreflang");
     if (h.match(/<title>([^<]*)<\/title>/)[1] === lire(fr).match(/<title>([^<]*)<\/title>/)[1] && l !== "en") pbL.push(p + " titre resté en français");

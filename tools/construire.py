@@ -22,7 +22,8 @@ import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
-VERSION = "20261117a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+PIXEL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"   # 1 pixel transparent (diaporama, 19/11/2026)
+VERSION = "20261119a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 
 
 def titre_seo(t, maxi=70):
@@ -916,9 +917,13 @@ def diapo_accueil(photos):
         ph = photos[g["slug"]][0]
         actif = ' actif' if i == 0 else ''
         cache = '' if i == 0 else ' aria-hidden="true"'
-        lent = '' if i == 0 else ' loading="lazy"'
+        # 19/11/2026 (Ahmed, CV.3b) : les 15 photos étaient empilées dans le bandeau, donc toutes « à l'écran » pour le navigateur :
+        # 1,7 Mo téléchargés à l'ouverture (35 s sur un téléphone moyen). Seule la 1re a un src ; les autres un data-src que
+        # page.js transforme en src juste avant leur tour (la suivante seulement) ; sans JavaScript, seule la 1re est montrée.
+        # (image transparente de 1 pixel en attendant : une image sans adresse passe pour « cassée »)
+        source = f'src="{ph["fichier"]}"' if i == 0 else f'src="{PIXEL}" data-src="{ph["fichier"]}"'
         vues.append(f'<a class="diapo-vue{actif}" href="mosquee/{g["slug"]}/" tabindex="{0 if i == 0 else -1}"{cache}>'
-                    f'<img src="{ph["fichier"]}" alt="" width="{ph["w"]}" height="{ph["h"]}"{lent}></a>')
+                    f'<img {source} alt="" width="{ph["w"]}" height="{ph["h"]}"></a>')
         legendes.append(f'<figcaption class="diapo-legende{actif}"{"" if i == 0 else " hidden"}><b>{S(g["nom"], "accueil")}</b> '
                         f'{U("Photo", "صورة", "Photo")} : <a href="{att(ph["source"])}" rel="noopener" target="_blank">{esc(ph["auteur"])}</a>, '
                         f'{esc(ph["licence"])}</figcaption>')

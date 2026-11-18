@@ -131,3 +131,7 @@
   `[:200]`) ; accueil français (index.html, écrit à la main) : titre 93 -> 68, description 325 -> 160. Tests verts (6).
 - **08/11/2026 (contrôle SEO en ligne)** : une fiche de mosquée du monde dont la seule description dans une langue est le court texte Wikidata (25 caractères en hindi) reçoit aussi son titre dans la description (`pages_langues.py`, < 50 caractères).
 
+- **19/11/2026 — ACCUEIL LÉGER (Ahmed, CV.3b)** : les 15 photos du diaporama du bandeau étaient empilées dans la page, donc toutes « à l'écran » :
+  1,7 Mo téléchargés à l'ouverture (35 s sur un téléphone moyen). Seule la 1re a un `src` ; les autres ont `src` = 1 pixel transparent (`PIXEL`,
+  sinon « image cassée » pour le visiteur simulé) + `data-src`, que page.js (`charger(k)`) transforme juste avant leur tour. `pages_langues.py`
+  recalcule aussi `data-src` (sinon photos introuvables dans les 20 langues : vu par le test). VERSION 20261119a. Test « accueil léger ».

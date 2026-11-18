@@ -286,7 +286,11 @@ document.addEventListener("click", e => {
     var vues = fig.querySelectorAll(".diapo-vue"), legendes = fig.querySelectorAll(".diapo-legende"), n = 0, pause = false;
     if (vues.length < 2) return;
     try { if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return; } catch (e) {}
+    // photo chargée seulement juste avant son tour (19/11/2026 : les 15 se téléchargeaient à l'ouverture)
+    function charger(k) { var im = vues[k] && vues[k].querySelector("img[data-src]"); if (im) { im.src = im.getAttribute("data-src"); im.removeAttribute("data-src"); } }
+    if (document.readyState === "complete") charger(1); else window.addEventListener("load", function () { charger(1); });
     function montrer(k) {
+      charger(k); charger((k + 1) % vues.length);
       for (var i = 0; i < vues.length; i++) {
         var oui = i === k;
         vues[i].classList.toggle("actif", oui);

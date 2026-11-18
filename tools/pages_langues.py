@@ -277,7 +277,7 @@ def variante(page_fr, base, chemin, l, langues, trad, meta=None, indexer=True):
     h.poser("data-racine", "../" * (prof + 1)); h.poser("data-racine-pages", "../" * prof)
     # liens : les fichiers communs à la racine du site, la page vidéo (une seule, avec ?lang=) ; le reste reste dans la langue
     for e in racine.tous():
-        for nom in ("href", "src", "poster"):
+        for nom in ("href", "src", "data-src", "poster"):          # data-src : photos du diaporama chargées avant leur tour (19/11/2026)
             u = e.get(nom)
             if not u or re.match(r"^([a-zA-Z][a-zA-Z0-9+.-]*:|//|#|\?)", u) or (e.balise == "link" and e.get("rel") in ("canonical", "alternate")):
                 continue
