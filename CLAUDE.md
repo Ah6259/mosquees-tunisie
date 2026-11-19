@@ -135,3 +135,10 @@
   1,7 Mo téléchargés à l'ouverture (35 s sur un téléphone moyen). Seule la 1re a un `src` ; les autres ont `src` = 1 pixel transparent (`PIXEL`,
   sinon « image cassée » pour le visiteur simulé) + `data-src`, que page.js (`charger(k)`) transforme juste avant leur tour. `pages_langues.py`
   recalcule aussi `data-src` (sinon photos introuvables dans les 20 langues : vu par le test). VERSION 20261119a. Test « accueil léger ».
+- **19/11/2026 — CV.3c (« ok » d'Ahmed)** : (1) grille des grandes mosquées en VIGNETTES WebP 480 px (`assets/photos/vignettes/`, faites une fois avec
+  Pillow sur le PC ; `carte_grande()` prend la vignette si elle existe) : 1,7 Mo -> 280 Ko ; (2) les données de la carte (lieux.js, signales.js,
+  monde_carte.js) et mosquees.js ne sont plus des <script> de l'accueil : `assets/charge-carte.js` (attribut `data-scripts`, chemins relatifs à ce
+  fichier, même ?v=) les ajoute dans l'ordre au 1er geste (défiler, toucher, touche) ou quand la carte approche de l'écran, tout de suite pour
+  ?lieu= / ?ll= / #ancre. Test : `page()` remplace le chargeur par ses 4 fichiers (toutes les vérifications de la carte tournent) + contrôle
+  « accueil léger » des 21 accueils. Téléphone moyen (local, sans compression) : prête 9-14 s -> 3,1-4,8 s. VERSION 20261119b. Le visiteur
+  simulé sur le PC demande `PYTHONUTF8=1` (sinon il s'arrête sur un texte arabe).

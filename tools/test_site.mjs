@@ -38,7 +38,10 @@ async function page(chemin = "index.html", { stockage = { langue: "fr", "recitat
   const parAdresse = lang && AUTRES.includes(lang) && !chemin.startsWith("video/") && !adresseFr;
   if (parAdresse) { chemin = lang + "/" + chemin; lang = ""; }
   const dossier = dirname(chemin);
-  const html = lire(chemin).replace(/<script[^>]*gc\.zgo\.at[^>]*><\/script>/, "")
+  // 19/11/2026 (CV.3c) : le chargeur de la carte (assets/charge-carte.js, au 1er geste dans la vraie page) est remplacé ici par ses fichiers
+  const html = lire(chemin).replace(/<script src="((?:\.\.\/)*)assets\/charge-carte\.js[^"]*" data-scripts="([^"]+)"><\/script>/,
+      (_, r, liste) => liste.split("|").map(f => `<script src="${r}assets/${f}"></script>`).join("\n"))
+    .replace(/<script[^>]*gc\.zgo\.at[^>]*><\/script>/, "")
     .replace(/<script( defer)? src="((?:\.\.\/)*(?:assets|donnees)\/[^"?]+)(\?[^"]*)?"><\/script>/g, (_, d, f) => `<script>${lire(join(dossier, f).replace(/\\/g, "/"))}</script>`);
   const vc = new VirtualConsole(), js = [];
   vc.on("jsdomError", e => { if (!/Not implemented/.test(e.message)) js.push(e.message); });
@@ -176,6 +179,11 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     && vues.every(a => { const im = a.querySelector("img"); return existsSync(join(root, im.getAttribute("data-src") || im.getAttribute("src"))) && existsSync(join(root, a.getAttribute("href"), "index.html")); })
     && leg.every(f => /CC BY|CC0|domaine public|Public domain/i.test(f.textContent) && f.querySelector('a[href^="https://commons.wikimedia.org/"]'))
     && leg.filter(f => !f.hidden).length === 1 && vues.filter(a => a.classList.contains("actif")).length === 1);
+  // 19/11/2026 (CV.3c) : la carte (données + script) arrive au 1er geste : plus aucun <script src="…donnees/lieux.js"> dans les accueils
+  check("accueil léger : données de la carte chargées au 1er geste (charge-carte.js, 4 fichiers dans l'ordre), vignettes légères dans la grille",
+    ["index.html", ...AUTRES.map(l => l + "/index.html")].every(f => { const h = lire(f); return !/<script src="[^"]*donnees\/lieux\.js/.test(h)
+      && /<script src="(\.\.\/)?assets\/charge-carte\.js\?v=[^"]+" data-scripts="\.\.\/donnees\/lieux\.js\|\.\.\/donnees\/signales\.js\|\.\.\/donnees\/monde_carte\.js\|mosquees\.js"><\/script>/.test(h); })
+    && /async = false/.test(lire("assets/charge-carte.js")) && /assets\/photos\/vignettes\/[a-z-]+-1\.webp/.test(lire("index.html")));
   // 19/11/2026 (CV.3b) : seule la 1re photo du bandeau a un src au départ ; les autres (data-src) arrivent juste avant leur tour
   { const html = lire("index.html"), diapo = (html.match(/<figure class="illus diapo"[\s\S]*?<\/figure>/) || [""])[0];
     check("accueil léger : une seule photo du diaporama téléchargée à l'ouverture (les autres en data-src, chargées avant leur tour par page.js)",
@@ -444,7 +452,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const lv = c.getElementById("lien-video");
     check("adresse es/ : liens du menu et du pied dans la langue, lien vers la vidéo (?lang=es), liens des grandes mosquées dans es/",
       c.querySelector('.menu a[href="grandes-mosquees/"]') && c.querySelector('footer a[href="a-propos/"]') && !!lv && lv.querySelector("a").getAttribute("href") === "/video/?lang=es"
-      && /href="mosquee\/kairouan\/"/.test(lire("es/index.html")) && /src="\.\.\/donnees\/lieux\.js/.test(lire("es/index.html")));
+      && /href="mosquee\/kairouan\/"/.test(lire("es/index.html")) && /src="\.\.\/assets\/charge-carte\.js[^"]*" data-scripts="\.\.\/donnees\/lieux\.js/.test(lire("es/index.html")));   // 19/11/2026 : carte au 1er geste
   }
 }
 // ---- page vidéo : sans son ; Al-Fâtiha (chaîne officielle) démarre et s'arrête avec la vidéo, sans écran d'entrée (09/10/2026)

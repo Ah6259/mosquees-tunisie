@@ -23,7 +23,7 @@ from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 1
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
 PIXEL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"   # 1 pixel transparent (diaporama, 19/11/2026)
-VERSION = "20261119a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261119b"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 
 
 def titre_seo(t, maxi=70):
@@ -488,7 +488,11 @@ def tri_html(page, cible, options=("t_page", "t_ancien", "t_recent", "t_az")):
 
 def carte_grande(g, photos, r, page, i=0):
     ph = (photos.get(g["slug"]) or [None])[0]
-    img = f'<img src="{r}{ph["fichier"]}" alt="" loading="lazy" width="{ph["w"]}" height="{ph["h"]}">' if ph else ""
+    # 19/11/2026 (Ahmed, CV.3c) : la grille montrait des photos de 1 000 px dans des cartes de ~170 à 300 px (≈ 130 Ko chacune) :
+    # vignette WebP de 480 px (assets/photos/vignettes/, fabriquée une fois avec Pillow sur le PC) quand elle existe, sinon la photo.
+    vig = ph and "assets/photos/vignettes/" + os.path.basename(ph["fichier"]).rsplit(".", 1)[0] + ".webp"
+    src = vig if vig and os.path.exists(os.path.join(RACINE, vig)) else (ph or {}).get("fichier")
+    img = f'<img src="{r}{src}" alt="" loading="lazy" decoding="async" width="{ph["w"]}" height="{ph["h"]}">' if ph else ""
     return (f'<a class="mq-grande" href="{r}mosquee/{g["slug"]}/" data-i="{i}" data-an="{PN.ANNEES_GRANDES[g["slug"]]}"><span class="mq-grande-img">{img}</span>'
             f'<span class="mq-grande-txt"><b>{S(g["nom"], page)}</b><small>{S(VILLES[g["ville"]], page)} · {S(g["epoque"], page)}</small></span></a>')
 
