@@ -142,3 +142,9 @@
   ?lieu= / ?ll= / #ancre. Test : `page()` remplace le chargeur par ses 4 fichiers (toutes les vérifications de la carte tournent) + contrôle
   « accueil léger » des 21 accueils. Téléphone moyen (local, sans compression) : prête 9-14 s -> 3,1-4,8 s. VERSION 20261119b. Le visiteur
   simulé sur le PC demande `PYTHONUTF8=1` (sinon il s'arrête sur un texte arabe).
+
+## 21/11/2026 — mode sombre lisible (signalé par Ahmed, tous les sites)
+- En sombre, la couleur principale `--vert` devient claire (#6CD3A4) : le texte blanc posé dessus (« Carte », « Autour de moi », « Envoyer »,
+  filtres et boutons actifs) était illisible (contraste 1,8). Nouvelle variable `--sur-vert` (blanc en clair, `--bg` foncé en sombre) dans
+  assets/style.css pour tout texte posé sur `--vert` / `--avis-c` / `--p` ; bouton « Partager » de la vidéo sur `--carte` ; boutons
+  « C'est vrai » des bulles avec une couleur de texte fixe. Contrôle : 0 texte sous 3 (clair et sombre). VERSION 20261121a, pages refaites.
