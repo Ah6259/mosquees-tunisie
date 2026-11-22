@@ -148,3 +148,9 @@
   filtres et boutons actifs) était illisible (contraste 1,8). Nouvelle variable `--sur-vert` (blanc en clair, `--bg` foncé en sombre) dans
   assets/style.css pour tout texte posé sur `--vert` / `--avis-c` / `--p` ; bouton « Partager » de la vidéo sur `--carte` ; boutons
   « C'est vrai » des bulles avec une couleur de texte fixe. Contrôle : 0 texte sous 3 (clair et sombre). VERSION 20261121a, pages refaites.
+
+## 22/11/2026 — Google + IA (demande d'Ahmed : « que Google et les IA indexent nos sites »)
+- État Search Console (21/11) : accueil et grandes-mosquees/ « Discovered - currently not indexed » (jamais visités par Google), aucune requête.
+- Accueil (index.html, recopié dans les 21 langues par pages_langues.py) : JSON-LD WebSite (nom, autres noms, 21 langues) + éditeur
+  `Organization` Clicvia (@id https://clicvia.com/#organisation, page Facebook) ; description « … trouvez la plus proche ».
+- robots.txt et llms.txt déjà bons : inchangés. Pas de nouvelle phrase dans « Comment fonctionne le site ? » (21 langues : l'éditeur est dans le JSON-LD).
