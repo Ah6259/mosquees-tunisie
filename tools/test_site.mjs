@@ -273,7 +273,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   }
   check(`les ${GRANDES.length} grandes mosquées : photo locale créditée (Commons), histoire, architecture, ≥ 3 dates, carte en Tunisie, documents, sources Wikidata, itinéraire ${manque.join(" | ")}`, !manque.length);
   const { d } = await page("mosquee/zitouna/index.html");
-  check("Zitouna : reconstruite en 864, rôle d'université (Ibn Arafa), minaret de 1894", /864/.test(d.getElementById("histoire").textContent) && /Ibn Arafa/.test(d.getElementById("role").textContent) && /1894/.test(d.getElementById("dates").textContent));
+  check("Zitouna : reconstruite en 863 (selon Discover Islamic Art), rôle d'université (Ibn Arafa), minaret de 1894", /863/.test(d.getElementById("histoire").textContent) && /Ibn Arafa/.test(d.getElementById("role").textContent) && /1894/.test(d.getElementById("dates").textContent));
   const { d: k } = await page("mosquee/kairouan/index.html");
   check("Kairouan : fondée en 670 par Okba ibn Nafi, minbar le plus ancien, lien UNESCO 499", /670/.test(k.getElementById("histoire").textContent) && /Okba ibn Nafi/.test(k.getElementById("histoire").textContent)
     && /plus ancien minbar/.test(k.getElementById("architecture").textContent) && !!k.querySelector('#documents a[href="https://whc.unesco.org/fr/list/499"]'));
@@ -471,7 +471,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const { d: u } = await page("mosquee/kairouan/index.html", { lang: "ur" });
   check("page Kairouan en ourdou : de droite à gauche, histoire traduite (trad/g-kairouan.js)", u.documentElement.dir === "rtl" && /عقبہ بن نافع/.test(u.querySelector('#histoire p [data-l="en"]').textContent));
   const { d: a } = await page("mosquee/sousse/index.html", { lang: "ar" });
-  check("page Sousse en arabe : nombres isolés (U+2066) et texte arabe", a.documentElement.dir === "rtl" && /⁦850-851⁩/.test(a.querySelector('#histoire p [data-l="ar"]').textContent));
+  check("page Sousse en arabe : nombres isolés (U+2066) et texte arabe", a.documentElement.dir === "rtl" && /⁦851-862⁩/.test(a.querySelector('#histoire p [data-l="ar"]').textContent));
 }
 {
   const { w, d, js } = await page("index.html");

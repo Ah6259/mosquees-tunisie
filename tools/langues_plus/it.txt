@@ -257,9 +257,9 @@
 256	Djerba (Midoun)
 257	Monastir
 258	Moschea Zitouna
-259	698 · ricostruita nell'864
+259	704 · ricostruita nell'863
 260	La grande moschea della medina di Tunisi, la più antica e la più vasta della capitale. Per oltre mille anni è stata anche una grande università dell'islam.
-261	Secondo la tradizione, il luogo di preghiera fu fondato nel 698 da Hassan ibn al-Nu'man, dopo la presa di Cartagine; altre fonti attribuiscono la fondazione al governatore omayyade Ubayd Allah ibn al-Habhab, verso il 732. Di quel primo edificio non resta quasi nulla: la moschea fu interamente ricostruita nell'864 dall'emiro aghlabide Abu Ibrahim Ahmad. Ogni dinastia la abbellì in seguito: cupola del «bahu» sotto gli Ziridi (verso il 990), cisterne e porte sotto gli Hafsidi, galleria orientale nel 1637. Il minareto attuale, in stile almohade, risale al 1894.
+261	Secondo la tradizione, il luogo di preghiera fu fondato nel 704 da Hassan ibn al-Nu'man, dopo la presa di Cartagine; altre fonti attribuiscono la fondazione al governatore omayyade Abd Allah ibn al-Habhab, verso il 734. Di quel primo edificio non resta quasi nulla: la moschea fu interamente ricostruita nell'863 dall'emiro aghlabide Abu Ibrahim Ahmad. Ogni dinastia la abbellì in seguito: cupola del «bahu» sotto gli Ziridi (verso il 990), cisterne e porte sotto gli Hafsidi, galleria orientale nel 1637. Il minareto attuale, in stile almohade, risale al 1894.
 262	Come a Kairouan e a Cordova, un cortile circondato da gallerie precede una sala di preghiera «ipostila»: circa 160 colonne antiche, in gran parte provenienti da Cartagine, vi formano 15 navate. La navata centrale, più larga, conduce al mihrab, coperto da una cupola del IX secolo. La cupola del bahu, all'ingresso della sala, alterna pietra ocra e mattone rosso. Il minareto del 1894 riprende la decorazione a losanghe di quello della moschea della Kasbah.
 263	La Zitouna è stata uno dei più antichi centri d'insegnamento del mondo musulmano: ogni sapiente si appoggiava a una colonna, con gli allievi seduti in cerchio intorno a lui. Ha formato grandi giuristi malikiti come Ibn Arafa, contemporaneo di Ibn Khaldun. Nel 1958 l'insegnamento lasciò la moschea; prosegue oggi all'Università Ez-Zitouna. Si dice che la preghiera non vi sia mai stata interrotta.
 264	Fondazione secondo la tradizione (Hassan ibn al-Nu'man)
@@ -280,23 +280,23 @@
 279	Maqsura di legno di al-Mu'izz ibn Badis (intorno a questa data)
 280	Kairouan iscritta nel patrimonio mondiale dell'UNESCO
 281	Grande Moschea di Susa
-282	850-851 · Aghlabidi
-283	All'ingresso della medina, una moschea dall'aspetto di fortezza, costruita nell'850-851 vicino al ribat che proteggeva la costa. Sobria e possente, fa parte della medina di Susa, patrimonio mondiale dell'UNESCO.
-284	Fu eretta nell'850-851 dall'emiro aghlabide Abu al-Abbas Muhammad, una trentina d'anni dopo il ribat di Susa; un'iscrizione in cufico, sulle gallerie del cortile, ne ricorda la costruzione. Fu ampliata sotto l'emiro Ibrahim II (875-902), quando Susa divenne la seconda città dell'Ifriqiya.
+282	851-862 · Aghlabidi
+283	All'ingresso della medina, una moschea dall'aspetto di fortezza, costruita nell'851-862 vicino al ribat che proteggeva la costa. Sobria e possente, fa parte della medina di Susa, patrimonio mondiale dell'UNESCO.
+284	Fu eretta nell'851-862 dall'emiro aghlabide Abu al-Abbas Muhammad, una trentina d'anni dopo il ribat di Susa; un'iscrizione in cufico, sulle gallerie del cortile, ne ricorda la costruzione. Fu ampliata sotto l'emiro Ibrahim II (875-902), quando Susa divenne la seconda città dell'Ifriqiya.
 285	Mura merlate, torri d'angolo sormontate da piccole cupole: la moschea somiglia a una fortezza e non ha un vero minareto, probabilmente perché la torre di guardia del vicino ribat svolgeva questo ruolo. La sala di preghiera conta 13 navate; la navata centrale e la campata del mihrab, più larghe, formano una «T», segnata da due cupole.
 286	Il vicino ribat di Susa è terminato
-287	Costruzione della moschea (850-851)
+287	Costruzione della moschea (851-862)
 288	Ampliamento sotto Ibrahim II (875-902)
 289	Medina di Susa iscritta nel patrimonio mondiale dell'UNESCO
 290	Grande Moschea di Mahdia
 291	916 · Fatimidi
 292	Costruita nel 916 dal primo califfo fatimide nella sua nuova capitale, in riva al mare. Il suo grande portale sporgente, ispirato agli archi di trionfo, è una novità assoluta nell'architettura delle moschee.
-293	Quando Ubayd Allah al-Mahdi fonda Mahdia nel 909, fa costruire la moschea vicino al palazzo califfale, su una piattaforma strappata al mare. Dopo la distruzione della città da parte degli spagnoli nel 1554, l'edificio viene più volte rimaneggiato. Tra il 1961 e il 1965 è quasi interamente ricostruito secondo la pianta del X secolo; il grande portale e il portico nord sono originali.
-294	Un quadrilatero di circa 85 × 55 metri, dalle mura massicce, affiancato da due torri quadrate che servivano da serbatoi d'acqua piovana. La moschea non ha mai avuto un minareto. Il portale monumentale apriva una «via d'onore» verso il mihrab, in fondo a una sala di 9 navate la cui navata centrale, più alta, conduce a una cupola.
+293	Quando Ubayd Allah al-Mahdi fonda Mahdia nel 909, fa costruire la moschea vicino al palazzo califfale, su una piattaforma strappata al mare. Dopo la distruzione della città da parte degli spagnoli nel 1554, l'edificio viene più volte rimaneggiato. Tra il 1961 e il 1968 è quasi interamente ricostruito secondo la pianta del X secolo; il grande portale e il portico nord sono originali.
+294	Un quadrilatero di circa 75 × 55 metri, dalle mura massicce, affiancato da due torri rotonde che servivano da serbatoi d'acqua piovana. La moschea non ha mai avuto un minareto. Il portale monumentale apriva una «via d'onore» verso il mihrab, in fondo a una sala di 9 navate la cui navata centrale, più alta, conduce a una cupola.
 295	Fondazione di Mahdia da parte di Ubayd Allah al-Mahdi
 296	Costruzione della Grande Moschea
 297	La città viene distrutta dagli spagnoli
-298	Ricostruzione secondo la pianta originale (1961-1965)
+298	Ricostruzione secondo la pianta originale (1961-1968)
 299	Grande Moschea di Sfax
 300	verso l'850 · Aghlabidi
 301	Nel cuore della medina di Sfax, una moschea del IX secolo la cui facciata orientale, scolpita in epoca ziride, e il minareto a immagine di quello di Kairouan sono capolavori dell'arte dell'Ifriqiya.
@@ -329,12 +329,12 @@
 328	Costruzione da parte di Hammouda Pacha Bey
 329	Restauro (1960-1961)
 330	Moschea Sidi Mahrez (moschea Mohamed Bey)
-331	1692-1697 · Muraditi
+331	1692-1699 · Muraditi
 332	Con le sue cupole bianche, che si ritrovano sull'emblema della città di Tunisi, è l'unica moschea tunisina costruita sul modello delle grandi moschee di Istanbul. Sorge di fronte alla zawiya di Sidi Mahrez, santo patrono della medina.
-333	Mohamed Bey el-Mouradi ne avvia la costruzione tra il 1692 e il 1697, in onore di Sidi Mahrez (Mahrez ibn Khalaf, X secolo), nel quartiere di Bab Souika. I disordini politici della fine del XVII secolo impediscono di terminare i lavori: la moschea non ha mai ricevuto un minareto. Viene restaurata a partire dal 1984, insieme al quartiere di Bab Souika.
+333	Mohamed Bey el-Mouradi ne avviò la costruzione nel 1692, in onore di Sidi Mahrez (Mahrez ibn Khalaf, X secolo), nel quartiere di Bab Souika; i lavori durarono fino al 1699. I disordini politici della fine del XVII secolo impedirono di completare il progetto: il minareto ottagonale previsto non fu mai costruito e la moschea si accontenta del minareto quadrato di un'antica moschea annessa al complesso. È restaurata dal 1984, insieme al quartiere di Bab Souika.
 334	Posta su una piattaforma, la sala di preghiera quadrata (28 metri di lato) è coperta da una grande cupola centrale di quasi 16 metri di diametro, circondata da semicupole e da piccole cupole d'angolo, come la moschea Sultan Ahmet di Istanbul. Piastrelle di ceramica di Iznik, nei colori blu, verde e «rosso pomodoro», ornano i pilastri e la parete del mihrab.
 335	Inizio della costruzione da parte di Mohamed Bey el-Mouradi
-336	Fine dei lavori, senza minareto
+336	Fine dei lavori; il minareto ottagonale previsto non viene mai costruito
 337	Restauro insieme al quartiere di Bab Souika
 338	Zawiya di Sidi Sahbi (mausoleo del Barbiere)
 339	XVII secolo · Muraditi

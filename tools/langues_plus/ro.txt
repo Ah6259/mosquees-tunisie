@@ -257,9 +257,9 @@
 256	Djerba (Midoun)
 257	Monastir
 258	Moscheea Zitouna
-259	698 · reconstruită în 864
+259	704 · reconstruită în 863
 260	Marea moschee a medinei din Tunis, cea mai veche și cea mai întinsă din capitală. Timp de peste o mie de ani a fost și o mare universitate a islamului.
-261	Potrivit tradiției, locul de rugăciune este întemeiat în 698 de Hassan ibn al-Numan, după cucerirea Cartaginei; alte surse atribuie întemeierea guvernatorului omeiad Ubayd Allah ibn al-Habhab, în jurul anului 732. Din acest prim edificiu nu a rămas aproape nimic: moscheea este reconstruită în întregime în 864 de emirul aghlabid Abu Ibrahim Ahmad. Fiecare dinastie o înfrumusețează apoi: cupola „bahou” sub ziriți (în jurul anului 990), cisterne și porți sub hafsizi, galeria de est în 1637. Minaretul actual, în stil almohad, datează din 1894.
+261	Potrivit tradiției, locul de rugăciune este întemeiat în 704 de Hassan ibn al-Numan, după cucerirea Cartaginei; alte surse atribuie întemeierea guvernatorului omeiad Abd Allah ibn al-Habhab, în jurul anului 734. Din acest prim edificiu nu a rămas aproape nimic: moscheea este reconstruită în întregime în 863 de emirul aghlabid Abu Ibrahim Ahmad. Fiecare dinastie o înfrumusețează apoi: cupola „bahou” sub ziriți (în jurul anului 990), cisterne și porți sub hafsizi, galeria de est în 1637. Minaretul actual, în stil almohad, datează din 1894.
 262	Ca la Kairouan și la Córdoba, o curte înconjurată de galerii precedă o sală de rugăciune „hipostilă”: circa 160 de coloane antice, aduse în mare parte din Cartagina, formează 15 nave. Nava centrală, mai largă, duce la mihrab, acoperit de o cupolă din secolul al IX-lea. Cupola bahou, la intrarea în sală, alternează piatra ocru cu cărămida roșie. Minaretul din 1894 reia decorul în romburi al minaretului moscheii Kasbah.
 263	Zitouna a fost unul dintre cele mai vechi centre de învățământ din lumea musulmană: fiecare învățat se rezema de o coloană, cu elevii așezați în cerc în jurul lui. Aici s-au format mari juriști malikiți, precum Ibn Arafa, contemporan cu Ibn Khaldun. În 1958, învățământul părăsește moscheea; el continuă astăzi la universitatea Ez-Zitouna. Se spune că rugăciunea nu a fost niciodată întreruptă aici.
 264	Întemeiere potrivit tradiției (Hassan ibn al-Numan)
@@ -280,23 +280,23 @@
 279	Maqsura de lemn a lui al-Muizz ibn Badis (în jurul acestei date)
 280	Kairouan înscris în patrimoniul mondial UNESCO
 281	Marea Moschee din Sousse
-282	850-851 · aghlabizi
-283	La intrarea în medină, o moschee cu înfățișare de fortăreață, ridicată în 850-851 lângă ribatul care apăra coasta. Sobră și puternică, ea face parte din medina din Sousse, patrimoniu mondial UNESCO.
-284	Este ridicată în 850-851 de emirul aghlabid Abu al-Abbas Muhammad, la vreo treizeci de ani după ribatul din Sousse; o inscripție cufică, pe galeriile curții, amintește construirea ei. Este mărită sub emirul Ibrahim al II-lea (875-902), când Sousse devine al doilea oraș al Ifriqiyei.
+282	851-862 · aghlabizi
+283	La intrarea în medină, o moschee cu înfățișare de fortăreață, ridicată în 851-862 lângă ribatul care apăra coasta. Sobră și puternică, ea face parte din medina din Sousse, patrimoniu mondial UNESCO.
+284	Este ridicată în 851-862 de emirul aghlabid Abu al-Abbas Muhammad, la vreo treizeci de ani după ribatul din Sousse; o inscripție cufică, pe galeriile curții, amintește construirea ei. Este mărită sub emirul Ibrahim al II-lea (875-902), când Sousse devine al doilea oraș al Ifriqiyei.
 285	Ziduri crenelate, turnuri de colț încununate de mici cupole: moscheea seamănă cu o fortăreață și nu are un minaret adevărat, fără îndoială pentru că turnul de veghe al ribatului vecin juca acest rol. Sala de rugăciune are 13 nave; nava centrală și traveea mihrabului, mai largi, formează un „T”, marcat de două cupole.
 286	Ribatul din Sousse, aflat alături, este terminat
-287	Construirea moscheii (850-851)
+287	Construirea moscheii (851-862)
 288	Mărire sub Ibrahim al II-lea (875-902)
 289	Medina din Sousse înscrisă în patrimoniul mondial UNESCO
 290	Marea Moschee din Mahdia
 291	916 · fatimizi
 292	Construită în 916 de primul calif fatimid în noua sa capitală, pe malul mării. Marele ei portal ieșit în afară, inspirat de arcurile de triumf, este o premieră în arhitectura moscheilor.
-293	Când Ubayd Allah al-Mahdi întemeiază Mahdia, în 909, el pune să se construiască moscheea lângă palatul califal, pe o platformă câștigată de la mare. După distrugerea orașului de către spanioli în 1554, edificiul este adesea refăcut. Între 1961 și 1965 este reconstruit aproape în întregime după planul din secolul al X-lea; marele portal și porticul de nord sunt originale.
-294	Un patrulater de circa 85 × 55 de metri, cu ziduri masive, flancat de două turnuri pătrate care serveau drept rezervoare de apă de ploaie. Moscheea nu a avut niciodată minaret. Portalul monumental deschidea un „drum de onoare” spre mihrab, în fundul unei săli cu 9 nave, a cărei navă centrală, mai înaltă, duce la o cupolă.
+293	Când Ubayd Allah al-Mahdi întemeiază Mahdia, în 909, el pune să se construiască moscheea lângă palatul califal, pe o platformă câștigată de la mare. După distrugerea orașului de către spanioli în 1554, edificiul este adesea refăcut. Între 1961 și 1968 este reconstruit aproape în întregime după planul din secolul al X-lea; marele portal și porticul de nord sunt originale.
+294	Un patrulater de circa 75 × 55 de metri, cu ziduri masive, flancat de două turnuri rotunde care serveau drept rezervoare de apă de ploaie. Moscheea nu a avut niciodată minaret. Portalul monumental deschidea un „drum de onoare” spre mihrab, în fundul unei săli cu 9 nave, a cărei navă centrală, mai înaltă, duce la o cupolă.
 295	Întemeierea Mahdiei de către Ubayd Allah al-Mahdi
 296	Construirea Marii Moschei
 297	Orașul este distrus de spanioli
-298	Reconstrucție după planul de origine (1961-1965)
+298	Reconstrucție după planul de origine (1961-1968)
 299	Marea Moschee din Sfax
 300	pe la 850 · aghlabizi
 301	În inima medinei din Sfax, o moschee din secolul al IX-lea, a cărei fațadă de est, sculptată în epoca zirită, și al cărei minaret, după chipul celui din Kairouan, sunt capodopere ale artei din Ifriqiya.
@@ -329,12 +329,12 @@
 328	Construire de către Hammouda Pacha Bey
 329	Restaurare (1960-1961)
 330	Moscheea Sidi Mahrez (moscheea Mohamed Bey)
-331	1692-1697 · muradizi
+331	1692-1699 · muradizi
 332	Cu cupolele ei albe, care se regăsesc pe emblema orașului Tunis, este singura moschee tunisiană construită după modelul marilor moschei din Istanbul. Ea se află în fața zawiei lui Sidi Mahrez, sfântul ocrotitor al medinei.
-333	Mohamed Bey el-Mouradi îi începe construirea între 1692 și 1697, în cinstea lui Sidi Mahrez (Mahrez ibn Khalaf, secolul al X-lea), în cartierul Bab Souika. Tulburările politice de la sfârșitul secolului al XVII-lea împiedică încheierea lucrărilor: moscheea nu a primit niciodată minaret. Este restaurată începând din 1984, împreună cu cartierul Bab Souika.
+333	Mohamed Bey el-Mouradi a început construcția în 1692, în cinstea lui Sidi Mahrez (Mahrez ibn Khalaf, secolul al X-lea), în cartierul Bab Souika; lucrările au durat până în 1699. Tulburările politice de la sfârșitul secolului al XVII-lea au împiedicat terminarea proiectului: minaretul octogonal prevăzut nu a fost construit niciodată, iar moscheea se mulțumește cu minaretul pătrat al unei vechi moschei alipite ansamblului. Este restaurată din 1984, împreună cu cartierul Bab Souika.
 334	Așezată pe o platformă, sala de rugăciune pătrată (cu latura de 28 de metri) este acoperită de o mare cupolă centrală cu diametrul de aproape 16 metri, înconjurată de semicupole și de mici cupole de colț, ca moscheea Sultan Ahmet din Istanbul. Plăci de ceramică de Iznik, în culorile albastru, verde și „roșu-tomată”, împodobesc stâlpii și peretele mihrabului.
 335	Începutul construirii de către Mohamed Bey el-Mouradi
-336	Sfârșitul lucrărilor, fără minaret
+336	Sfârșitul lucrărilor; minaretul octogonal prevăzut nu este construit niciodată
 337	Restaurare împreună cu cartierul Bab Souika
 338	Zawia Sidi Sahbi (mausoleul Bărbierului)
 339	Secolul al XVII-lea · muradizi

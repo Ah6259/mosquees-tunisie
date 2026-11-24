@@ -13,7 +13,7 @@ SABOTAGES = [
     ("assets/recitation.js", 'const ORIGINE_YT = "https://www.youtube-nocookie.com";', 'const ORIGINE_YT = "https://www.youtube.com";', "lecteur YouTube avec cookies (pas nocookie)", SITE),
     ("assets/recitation.js", "if (c === null) ecran();", "if (false) ecran();", "plus d'écran d'entrée à la première visite", SITE),
     ("assets/page.js", '<button class="partager"', '<button class="x-partager"', "bouton Partager retiré", SITE),
-    ("mosquee/zitouna/index.html", "reconstruite en 864", "reconstruite en 964", "date fausse dans la page de la Zitouna", SITE),
+    ("mosquee/zitouna/index.html", "reconstruite en 863", "reconstruite en 963", "date fausse dans la page de la Zitouna", SITE),
     ("assets/langues.js", '"Autour de moi": "Yakınımda",', "", "une traduction turque manque", SITE),
     ("tr/index.html", '<html lang="tr"', '<html lang="fr"', "page turque (tr/) déclarée en français", SITE),
     ("ar/index.html", 'rel="canonical" href="https://mosquees.clicvia.com/ar/"', 'rel="canonical" href="https://mosquees.clicvia.com/"', "page arabe (ar/) qui se dit copie de la page française", SITE),
