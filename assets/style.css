@@ -604,3 +604,18 @@ details.hi-histoire[open] summary::after{content:"−"}
 /* ---- lien « Comment fonctionne le site ? » sous le titre de l'accueil (règle commune § 44, 25/10/2026) ---- */
 .hero .lien-comment{grid-column:1 / -1;justify-self:start;margin:12px 0 0;font-size:14px;font-weight:600}
 .hero .lien-comment a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* 24/11/2026 : prière du vendredi et lectures du Coran (assets/infos.js). Dans une bulle de la carte (fond blanc de Leaflet,
+   comme .mq-voix) : couleurs fixes lisibles ; sur la fiche : couleurs du thème (clair et sombre). */
+.mq-infos{margin-top:8px;padding-top:8px;border-top:1px solid var(--ligne)}
+.mq-infos p{margin:.35em 0}
+.mq-info-vide{color:var(--doux);font-style:italic}
+.mq-voix-info{display:inline-flex;flex-wrap:wrap;margin:4px 0 0}
+.mq-info-ouvrir{margin-top:6px}
+.mq-info-form{display:grid;gap:8px;margin-top:8px}
+.mq-info-form label{display:grid;gap:4px;font-weight:600;font-size:14px}
+.mq-info-form select,.mq-info-form input{font:inherit;font-size:15px;padding:7px 8px;border:1px solid var(--ligne);border-radius:10px;background:var(--carte);color:var(--texte);max-width:100%}
+.mq-info-form .btn-principal{justify-self:start}
+.leaflet-popup .mq-infos{border-top-color:#DDE7E0}
+.leaflet-popup .mq-info-vide{color:#4F6158}
+.leaflet-popup .mq-info-form select,.leaflet-popup .mq-info-form input{background:#fff;color:#14261E;border-color:#CFDCDC}
+.leaflet-popup .mq-infos a{color:#0E6B4C}

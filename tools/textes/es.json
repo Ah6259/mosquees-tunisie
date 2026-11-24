@@ -586,5 +586,6 @@
  "apropos/indep_titre": "Un sitio independiente",
  "apropos/indep": "Este sitio no es un servicio oficial y no depende de ninguna mezquita ni organización. Los horarios de oración y la apertura a visitantes cambian: infórmese en el lugar.",
  "apropos/communes": "Las páginas «Privacidad» y «Condiciones de uso», comunes a todos nuestros sitios, están al pie de cada página.",
- "apropos/f_mwnf": "«En detalle» y fotos del museo: en las grandes mezquitas, una sección «En detalle» y fotos y planos de Discover Islamic Art, el museo virtual de Museum With No Frontiers (MWNF), con su autorización; el crédito figura bajo cada foto y el enlace a su ficha se abre en su idioma cuando existe."
+ "apropos/f_mwnf": "«En detalle» y fotos del museo: en las grandes mezquitas, una sección «En detalle» y fotos y planos de Discover Islamic Art, el museo virtual de Museum With No Frontiers (MWNF), con su autorización; el crédito figura bajo cada foto y el enlace a su ficha se abre en su idioma cuando existe.",
+ "apropos/f_vendredi": "Oración del viernes y lectura del Corán: para cada mezquita (ventana del mapa y ficha), la hora de la oración del viernes (13:00, justo antes del Asr u otra hora) y las lecturas del Corán (cada día tras una oración, o una jatma una vez al mes); los visitantes las indican y confirman («Indicar o corregir», «Es cierto», «Ya no es cierto»), ninguna hora es inventada; en el mapa, los botones «Viernes» y «Corán» muestran solo esas mezquitas y el color indica la hora del viernes."
 }

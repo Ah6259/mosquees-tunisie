@@ -215,171 +215,203 @@
 214	În detaliu
 215	Plan
 216	Secțiunea „În detaliu” și fotografiile marcate Discover Islamic Art: după Museum With No Frontiers (MWNF), cu acordul său.
-217	Tunis
-218	Kairouan
-219	Sousse
-220	Mahdia
-221	Sfax
-222	Testour
-223	Cartagina
-224	Djerba (Midoun)
-225	Monastir
-226	Moscheea Zitouna
-227	698 · reconstruită în 864
-228	Marea moschee a medinei din Tunis, cea mai veche și cea mai întinsă din capitală. Timp de peste o mie de ani a fost și o mare universitate a islamului.
-229	Potrivit tradiției, locul de rugăciune este întemeiat în 698 de Hassan ibn al-Numan, după cucerirea Cartaginei; alte surse atribuie întemeierea guvernatorului omeiad Ubayd Allah ibn al-Habhab, în jurul anului 732. Din acest prim edificiu nu a rămas aproape nimic: moscheea este reconstruită în întregime în 864 de emirul aghlabid Abu Ibrahim Ahmad. Fiecare dinastie o înfrumusețează apoi: cupola „bahou” sub ziriți (în jurul anului 990), cisterne și porți sub hafsizi, galeria de est în 1637. Minaretul actual, în stil almohad, datează din 1894.
-230	Ca la Kairouan și la Córdoba, o curte înconjurată de galerii precedă o sală de rugăciune „hipostilă”: circa 160 de coloane antice, aduse în mare parte din Cartagina, formează 15 nave. Nava centrală, mai largă, duce la mihrab, acoperit de o cupolă din secolul al IX-lea. Cupola bahou, la intrarea în sală, alternează piatra ocru cu cărămida roșie. Minaretul din 1894 reia decorul în romburi al minaretului moscheii Kasbah.
-231	Zitouna a fost unul dintre cele mai vechi centre de învățământ din lumea musulmană: fiecare învățat se rezema de o coloană, cu elevii așezați în cerc în jurul lui. Aici s-au format mari juriști malikiți, precum Ibn Arafa, contemporan cu Ibn Khaldun. În 1958, învățământul părăsește moscheea; el continuă astăzi la universitatea Ez-Zitouna. Se spune că rugăciunea nu a fost niciodată întreruptă aici.
-232	Întemeiere potrivit tradiției (Hassan ibn al-Numan)
-233	Reconstrucție completă sub aghlabizi
-234	Cupola bahou (ziriți)
-235	Minaret nou în stil almohad
-236	Învățământul trece de la moschee la universitate
-237	Medina din Tunis înscrisă în patrimoniul mondial UNESCO
-238	Marea Moschee din Kairouan (moscheea Uqba)
-239	670 · forma actuală din 836
-240	Cea mai veche moschee din Maghreb, întemeiată în 670 odată cu orașul Kairouan. A servit drept model tuturor moscheilor din Africa de Nord și face parte din patrimoniul mondial UNESCO.
-241	În 670, cuceritorul Uqba ibn Nafi întemeiază Kairouanul și își așază moscheea în centrul orașului. Mărită și reconstruită în secolele al VIII-lea și al IX-lea, ea își capătă forma actuală în 836, sub emirul aghlabid Ziyadat Allah I. Pe la 862-863, Abu Ibrahim Ahmad prelungește sala de rugăciune și dăruiește minbarul și decorul mihrabului. În secolul al XI-lea, prințul zirit al-Muizz ibn Badis adaugă maqsura de lemn. Kairouanul a fost mult timp socotit al patrulea oraș sfânt al islamului.
-242	Un vast patrulater de circa 9 000 m²: o mare curte pavată, galerii și o sală de rugăciune cu 17 nave, susținută de sute de coloane antice de marmură, granit și porfir, toate diferite. Minaretul, înalt de aproximativ 31 de metri, datează din prima jumătate a secolului al IX-lea: este unul dintre cele mai vechi minarete aflate încă în picioare. Mihrabul din secolul al IX-lea este împodobit cu plăci de ceramică cu reflexe metalice; alături, minbarul de lemn sculptat este cel mai vechi minbar păstrat din lumea musulmană.
-243	Kairouanul a fost capitala religioasă și cărturărească a Ifriqiyei: aici a redactat imamul Sahnun, în secolul al IX-lea, Mudawwana, lucrare fondatoare a ritului malikit urmat în Tunisia și în tot Maghrebul. Biblioteca moscheii a păstrat manuscrise foarte vechi, între care file din celebrul „Coran albastru”.
-244	Întemeiere de către Uqba ibn Nafi, odată cu orașul
-245	Reconstrucție de către Ziyadat Allah I: forma actuală
-246	Minbarul și decorul mihrabului (Abu Ibrahim Ahmad)
-247	Maqsura de lemn a lui al-Muizz ibn Badis (în jurul acestei date)
-248	Kairouan înscris în patrimoniul mondial UNESCO
-249	Marea Moschee din Sousse
-250	850-851 · aghlabizi
-251	La intrarea în medină, o moschee cu înfățișare de fortăreață, ridicată în 850-851 lângă ribatul care apăra coasta. Sobră și puternică, ea face parte din medina din Sousse, patrimoniu mondial UNESCO.
-252	Este ridicată în 850-851 de emirul aghlabid Abu al-Abbas Muhammad, la vreo treizeci de ani după ribatul din Sousse; o inscripție cufică, pe galeriile curții, amintește construirea ei. Este mărită sub emirul Ibrahim al II-lea (875-902), când Sousse devine al doilea oraș al Ifriqiyei.
-253	Ziduri crenelate, turnuri de colț încununate de mici cupole: moscheea seamănă cu o fortăreață și nu are un minaret adevărat, fără îndoială pentru că turnul de veghe al ribatului vecin juca acest rol. Sala de rugăciune are 13 nave; nava centrală și traveea mihrabului, mai largi, formează un „T”, marcat de două cupole.
-254	Ribatul din Sousse, aflat alături, este terminat
-255	Construirea moscheii (850-851)
-256	Mărire sub Ibrahim al II-lea (875-902)
-257	Medina din Sousse înscrisă în patrimoniul mondial UNESCO
-258	Marea Moschee din Mahdia
-259	916 · fatimizi
-260	Construită în 916 de primul calif fatimid în noua sa capitală, pe malul mării. Marele ei portal ieșit în afară, inspirat de arcurile de triumf, este o premieră în arhitectura moscheilor.
-261	Când Ubayd Allah al-Mahdi întemeiază Mahdia, în 909, el pune să se construiască moscheea lângă palatul califal, pe o platformă câștigată de la mare. După distrugerea orașului de către spanioli în 1554, edificiul este adesea refăcut. Între 1961 și 1965 este reconstruit aproape în întregime după planul din secolul al X-lea; marele portal și porticul de nord sunt originale.
-262	Un patrulater de circa 85 × 55 de metri, cu ziduri masive, flancat de două turnuri pătrate care serveau drept rezervoare de apă de ploaie. Moscheea nu a avut niciodată minaret. Portalul monumental deschidea un „drum de onoare” spre mihrab, în fundul unei săli cu 9 nave, a cărei navă centrală, mai înaltă, duce la o cupolă.
-263	Întemeierea Mahdiei de către Ubayd Allah al-Mahdi
-264	Construirea Marii Moschei
-265	Orașul este distrus de spanioli
-266	Reconstrucție după planul de origine (1961-1965)
-267	Marea Moschee din Sfax
-268	pe la 850 · aghlabizi
-269	În inima medinei din Sfax, o moschee din secolul al IX-lea, a cărei fațadă de est, sculptată în epoca zirită, și al cărei minaret, după chipul celui din Kairouan, sunt capodopere ale artei din Ifriqiya.
-270	Prima clădire este construită pe la 850, sub aghlabizi, în același timp cu zidurile cetății Sfax. Moscheea este înfrumusețată în epoca zirită: două inscripții de pe fațadă poartă datele 988 și 1085. Modificată în secolul al XII-lea, ea își recapătă dimensiunile de origine în secolul al XVIII-lea, în timpul unor mari lucrări.
-271	Fațada de est este ritmată de uși și ferestre cu arcuri în potcoavă, de nișe și de o cornișă dantelată; o placă bizantină pe care sunt sculptați doi păuni este refolosită aici. Minaretul pătrat, de vreo cincisprezece metri, amintește de cel din Kairouan, dar are un decor mai fin: discuri sculptate și o frumoasă scriere cufică înflorită. Sala de rugăciune, în formă de echer, are 9 nave.
-272	Prima clădire, sub aghlabizi (în jurul acestei date)
-273	Înfrumusețare zirită (inscripție pe fațadă)
-274	A doua inscripție datată de pe fațadă
-275	Clasată monument istoric
-276	Moscheea celor Trei Porți
-277	866 · minaret pe la 1440
-278	Un mic oratoriu din medina Kairouanului, cunoscut în lumea întreagă pentru fațada sa din 866: cea mai veche fațadă de moschee sculptată și decorată din lumea islamică.
-279	Pe la 866, un negustor andaluz stabilit la Kairouan, Muhammad ibn Khayrun al-Maafiri, pune să se construiască acest oratoriu de cartier; inscripția de pe fațadă îi dă numele și data. Pe la 1440, în epoca hafsidă, moscheea este restaurată și primește un mic minaret: o bandă de pe fațadă amintește acest lucru.
-280	Fațada, înaltă de circa șapte metri, se deschide prin trei arcuri pe coloane antice; deasupra, benzi de scriere cufică în relief citează Coranul (sura 33, versetele 70-71) și întemeierea, între frize de rozete și de frunze de viță. În interior, o sală de rugăciune de circa 9 × 9 metri, fără curte, cu trei nave pe coloane antice.
-281	Construire de către Muhammad ibn Khayrun
-282	Restaurare hafsidă și mic minaret (pe la 1440-1441)
-283	Moscheea Youssef Dey
-284	1612 · otomani
-285	Prima moschee de rit hanefit din Tunis, ridicată de deiul otoman Youssef lângă Kasbah. Minaretul ei octogonal, primul din Tunis, semnalează ritul otomanilor.
-286	O inscripție din interior îi datează construirea din 1612, la porunca lui Youssef Dey, care a cârmuit Tunisul din 1610 până în 1637. Restaurată la sfârșitul secolului al XIX-lea, sub Ali Bey, ea devine în 1926 o anexă a universității Zitouna. Deiul odihnește aici într-un mausoleu, primul exemplu din Tunis de moschee funerară.
-287	Sala de rugăciune, înconjurată de curți pe trei laturi, are 9 nave și 7 travee; o cupolă se înalță în fața mihrabului. Minbarul este din zidărie îmbrăcată în marmură colorată, în vreme ce moscheile malikite au un minbar de lemn. Minaretul octogonal se încheie cu un balcon acoperit și un acoperiș piramidal de țigle verzi, ca și mausoleul.
-288	Construire de către Youssef Dey (inscripție)
-289	Moartea lui Youssef Dey, înmormântat în mausoleul său
-290	Anexă a universității Zitouna
-291	Moscheea Hammouda Pacha
-292	1655 · muradizi
-293	A doua moschee hanefită din Tunis, ridicată în 1655 de beiul Hammouda Pacha. Minaretul ei octogonal și zvelt domină strada Sidi Ben Arous, în medină.
-294	Hammouda Pacha, bei din dinastia muradidă, pune să se construiască moscheea în 1655, la colțul străzii Sidi Ben Arous cu strada Kasbah. Ca și Youssef Dey înaintea lui, el își amenajează aici propriul mausoleu, în curte: se spune că acest mormânt l-a inspirat, mult mai târziu, pe cel al președintelui Bourguiba de la Monastir.
-295	Un edificiu otoman din secolul al XVII-lea: poartă de marmură, acoperișuri de țigle verzi și trei curți. Sala de rugăciune, de circa 24 × 17 metri, are 7 nave pe 48 de coloane; zidurile ei sunt îmbrăcate în marmură și ipsos sculptat, cu un decor de flori și de marmură colorată de influență italiană. Lucru rar la Tunis, curtea se deschide spre stradă prin ferestre largi cu grilaj. Minaretul octogonal este încununat de un balcon și de un acoperiș piramidal.
-296	Construire de către Hammouda Pacha Bey
-297	Restaurare (1960-1961)
-298	Moscheea Sidi Mahrez (moscheea Mohamed Bey)
-299	1692-1697 · muradizi
-300	Cu cupolele ei albe, care se regăsesc pe emblema orașului Tunis, este singura moschee tunisiană construită după modelul marilor moschei din Istanbul. Ea se află în fața zawiei lui Sidi Mahrez, sfântul ocrotitor al medinei.
-301	Mohamed Bey el-Mouradi îi începe construirea între 1692 și 1697, în cinstea lui Sidi Mahrez (Mahrez ibn Khalaf, secolul al X-lea), în cartierul Bab Souika. Tulburările politice de la sfârșitul secolului al XVII-lea împiedică încheierea lucrărilor: moscheea nu a primit niciodată minaret. Este restaurată începând din 1984, împreună cu cartierul Bab Souika.
-302	Așezată pe o platformă, sala de rugăciune pătrată (cu latura de 28 de metri) este acoperită de o mare cupolă centrală cu diametrul de aproape 16 metri, înconjurată de semicupole și de mici cupole de colț, ca moscheea Sultan Ahmet din Istanbul. Plăci de ceramică de Iznik, în culorile albastru, verde și „roșu-tomată”, împodobesc stâlpii și peretele mihrabului.
-303	Începutul construirii de către Mohamed Bey el-Mouradi
-304	Sfârșitul lucrărilor, fără minaret
-305	Restaurare împreună cu cartierul Bab Souika
-306	Zawia Sidi Sahbi (mausoleul Bărbierului)
-307	Secolul al XVII-lea · muradizi
-308	Mausoleul lui Abu Zamaa al-Balawi, companion al Profetului ﷺ, pe care locuitorii Kairouanului îl numesc „Sidi Sahbi”: sfântul ocrotitor al Kairouanului. Curțile sale acoperite cu ceramică și ipsos sculptat fac din el unul dintre cele mai frumoase monumente ale orașului.
-309	Abu Zamaa al-Balawi moare în luptă în 654 (anul 34 al Hegirei). Se povestește că purta asupra lui câteva fire din barba Profetului ﷺ, de unde numele de „mausoleul Bărbierului”. Vechiul edificiu este renovat în întregime în secolul al XVII-lea de beii muradizi: Hammouda Pacha reconstruiește zawia, medresa și minaretul pe la 1662, apoi Mohamed Bey reface cupola mausoleului pe la 1681-1685.
-310	Un vast ansamblu în afara zidurilor medinei: curte de intrare și minaret în stil andaluz, patio cu coloane, sală cu cupolă, apoi o curte cu zidurile acoperite de ceramică policromă și de ipsos fin sculptat, care precedă camera funerară. O medresă, cu camerele studenților și sala ei de rugăciune, completează complexul.
-311	Este unul dintre locurile cele mai vizitate de tunisieni, mai ales la sărbătoarea Mawlid; aici se încheie și contracte de căsătorie și se fac circumcizii. Odinioară, caravanele Maghrebului se adunau aici înainte de a pleca în pelerinaj la Mecca.
-312	Moartea lui Abu Zamaa al-Balawi (anul 34 al Hegirei)
-313	Zawia, medresa și minaretul lui Hammouda Pacha (în jurul acestei date)
-314	Cupola nouă a mausoleului, de Mohamed Bey (1681-1685)
-315	Marea Moschee din Testour
-316	pe la 1630 · andaluzi
-317	Ridicată de andaluzii alungați din Spania la începutul secolului al XVII-lea, ea îmbină tradițiile tunisiene cu arta hispano-maură. Minaretul ei poartă un ceas ale cărui ace se învârt invers.
-318	După expulzarea moriscilor din Spania (1609-1614), mulți se așază în valea Medjerdei și reîntemeiază Testourul. Moscheea este ridicată în prima treime a secolului al XVII-lea, probabil înainte de 1631, de Mohamed Tagharinou, un andaluz stabilit în oraș. O a doua curte și o sală de abluțiuni sunt adăugate în secolul al XVIII-lea. În 2014, locuitori și asociații repun în funcțiune ceasul minaretului, oprit de aproape trei secole.
-319	Planul sălii de rugăciune (9 nave) urmează tradiția Kairouanului, dar acoperișurile de țiglă, decorul de stuc și minaretul sunt andaluze. Înalt de 22,50 de metri, minaretul suprapune un turn pătrat din cărămidă și piatră, în maniera din Toledo, și un turn octogonal împodobit cu ceramică: el amintește de clopotnițele din Aragon. În curte, un cadran solar din 1761 arăta ora rugăciunilor.
-320	Moriscii, alungați din Spania (1609-1614), sosesc în Tunisia
-321	Moschee încheiată (probabil înainte de această dată)
-322	Cadranul solar din curte
-323	Ceasul minaretului repus în funcțiune
-324	Moscheea Malik ibn Anas (Cartagina)
-325	2003 · contemporană
-326	O mare moschee modernă ridicată pe o colină a Cartaginei, în inima sitului arheologic. Minaretul ei de 55 de metri se vede de departe; ea apare pe bancnota de zece dinari.
-327	Construită din 2000 până în 2003 după planurile arhitectului Ayad Sriha, ea se numea la început „El Abidine”. În noiembrie 2012 primește numele imamului Malik ibn Anas (mort în 795), întemeietorul școlii malikite urmate în Tunisia. Radio Zitouna FM transmite de aici cele cinci rugăciuni zilnice.
-328	Ea se inspiră din marile moschei tunisiene: esplanadă, curte de 1 500 m² și sală de rugăciune hipostilă cu 64 de coloane, care poate primi 1 000 de credincioși. Mihrabul de marmură albă încrustată cu verde și roșu este încununat de o cupolă cu diametrul de zece metri. Zidurile sunt acoperite cu piatră de Kedhel, stuc sculptat și ceramică cu motive andaluze; podeaua este așternută cu covoare de Kairouan.
-329	Punerea primei pietre
-330	Inaugurare
-331	Primește numele imamului Malik ibn Anas
-332	Moscheea Fadhloun și moscheile ibadite din Djerba
-333	Secolul al XIV-lea · Djerba
-334	La ieșirea din Midoun, o moschee albă cu înfățișare de mică fortăreață, tipică pentru insula Djerba, unde trăiește o comunitate musulmană ibadită. Este clasată monument din 2022 și face parte dintre locurile din Djerba înscrise în patrimoniul mondial în 2023.
-335	Ridicată în secolul al XIV-lea, moscheea Fadhloun aparține bogatului ansamblu al moscheilor din Djerba, adesea ibadite, construite pe câmpuri și pe coastă. Cu zidurile lor groase și micile lor minarete, multe serveau și ca posturi de veghe: ele alcătuiau o a doua linie de apărare în spatele forturilor de pe litoral.
-336	Sala de rugăciune pătrată, cu latura de circa 7,5 metri, este acoperită de nouă mici cupole purtate de patru coloane; mihrabul este o simplă nișă, iar minbarul, de piatră, are doar trei trepte. Un minaret scund, pe două niveluri, domină acoperișul. În jur: o curte cu un „mihrab de vară”, o cisternă de apă de ploaie, două săli pentru învățarea Coranului, o brutărie subterană și o moară de grâne.
-337	Aceste moschei erau mici centre de viață: rugăciune, învățarea Coranului, pâine și grâne pentru cartier. Arhitectura lor albă și lipsită de podoabe este unul dintre chipurile Djerbei recunoscute de UNESCO în 2023.
-338	sec. XIV
-339	Construirea moscheii Fadhloun (secolul al XIV-lea)
-340	Clasată monument (ordin din 15 martie 2022)
-341	Djerba înscrisă în patrimoniul mondial UNESCO
-342	Moscheea Kasbah (Tunis)
-343	1231-1235 · hafsizi
-344	Construită de întemeietorul dinastiei hafside în piața Kasbah, ea are unul dintre cele mai frumoase minarete din Tunis, în stilul almohad din Marrakech și Sevilla.
-345	Este ridicată din 1231 până în 1235 la porunca lui Abu Zakariya Yahya, întemeietorul dinastiei hafside, care fusese guvernator al Sevillei. Mai întâi moschee a curții suveranilor stabiliți la Kasbah, ea devine apoi una dintre moscheile de vineri ale orașului; este prima ridicată la Tunis după Zitouna. În epoca otomană, aici se făcea rugăciunea după ritul hanefit.
-346	Sala de rugăciune, mai adâncă decât lată, are 7 nave și 9 travee pe coloane de marmură cu capiteluri hafside; mihrabul este încununat de o cupolă cu stalactite din ipsos sculptat. Minaretul pătrat, construit încă din 1233, este acoperit de o rețea de romburi din piatră ocru: el a servit drept model minaretului actual al Zitounei.
-347	Începutul construirii (Abu Zakariya Yahya)
-348	Minaretul este terminat
-349	Sfârșitul construirii moscheii
-350	Marea Moschee din Monastir
-351	Secolul al IX-lea · mărită până în secolul al XVIII-lea
-352	Cu fața spre mare, lângă celebrul ribat, o moschee de piatră sobră și elegantă, mărită în fiecare epocă începând din secolul al IX-lea.
-353	Sala de rugăciune actuală este rodul a patru etape: un mic oratoriu boltit în secolul al IX-lea, o mărire în secolul al XI-lea (epoca zirită) cu mihrabul, apoi, în epoca hafsidă, un minaret pătrat și încă două nave. O galerie exterioară este adăugată în secolul al XVIII-lea. În octombrie 2013, două cutremure fac să se prăbușească în parte vârful minaretului.
-354	Fațade din piatră cioplită, însuflețite de ancadramentele ușilor și ferestrelor și de arcurile unei galerii. Moscheea nu are curte în fața sălii de rugăciune. Mihrabul din secolul al XI-lea, cu decor zirit și scriere cufică înflorită, nu este încununat de o cupolă, lucru rar în Ifriqiya medievală.
-355	sec. IX
-356	Primul oratoriu boltit (secolul al IX-lea)
-357	sec. XI
-358	Mărire zirită și mihrab (secolul al XI-lea)
-359	sec. XVIII
-360	Galerie exterioară (secolul al XVIII-lea)
-361	Vârful minaretului se prăbușește în parte după două cutremure
-362	Cercetările au confirmat că moscheea a fost construită pe resturile unei bazilici creștine, ceea ce se potrivește cu o relatare a istoricului Ibn Abi Dinar. O inscripție de la baza cupolei mihrabului îl numește pe Nusair, slujitor al califului abbasid, care a condus lucrările, precum și pe arhitectul Fathallah. Clădirea era și un post de apărare orientat spre mare: două turnuri de veghe se înalță încă în colțurile de nord-est și de sud-est. Sala de rugăciune măsoară 56 pe 24 de metri, adică 1.344 m²; nava centrală și nava transversală, late de 4,80 metri față de 3 metri cât au celelalte, se întretaie în fața mihrabului. La mijlocul secolului al XIX-lea, sub ministrul Khaznadar, trei galerii ale curții au primit coloane de marmură albă aduse din Italia. Minaretul are 43 de metri, iar douăsprezece porți se deschid spre souk-uri, printre ele poarta imamului, încadrată de marmură romană sculptată.
-363	Înainte de marea reconstrucție din 836, primul loc de rugăciune al lui Uqba a fost renovat de Hassan ibn al-Nu'man în 703, extins sub guvernatorul omeiad Bishr ibn Safwan (722-728) și renovat din nou de Yazid ibn Hatim în 772. Ansamblul formează un dreptunghi de aproximativ 125 pe 75 de metri, iar sala de rugăciune are 8 travee. Coloanele și capitelurile sale antice alcătuiesc cea mai mare colecție de capiteluri romane și bizantine reunită într-un monument musulman. Tavanul de lemn păstrează încă grinzi frumoase din secolul al IX-lea, decorate cu fructe și frunze de palmier în stil elenistic. În mihrab, nișa este îmbrăcată cu 28 de panouri de marmură traforată sau sculptată, sub o semicupolă de lemn pictat; plăcile sale cu luciu metalic provin probabil din Irak. Minbarul este făcut din peste 300 de panouri de lemn de tec din India. Minaretul, înalt de 32 de metri, are trei niveluri încununate de o cupolă cu caneluri; forma sa robustă amintește de farurile romane.
-364	Fondatorul, Muhammad Tagharinu, se stabilise la Testour în 1609. Moscheea are două curți: cea mai mare, la nord, măsoară circa 17,70 pe 26,20 de metri, iar cealaltă se află la vest de sala de rugăciune. Curtea mare este mărginită de portice cu arce în plin cintru pe coloane antice și pavată cu dale de piatră antice refolosite. Cadranul solar poartă numele meșterului său, Ahmed al-Harrar. Minaretul pornește dintr-un turn pătrat cu latura de 4,50 metri, cu mici pinacluri în cele patru colțuri, și se încheie cu un lanternou cu acoperiș de lemn în formă de piramidă. Cadranul ceasului este încastrat sub una dintre ferestrele geminate ale turnului octogonal, un caz unic printre minaretele acelei epoci. Sala de rugăciune, de 25,85 pe 19,12 metri, este acoperită cu bolți în cruce și are șapte travee; culoarul central poartă două cupole, iar mihrabul este încununat de un fronton triunghiular.
-365	Potrivit muzeului, lucrările au durat din 851 până în 862 și au fost supravegheate de Mudam, un libert al emirului. Numele lui apare în lunga inscripție cufică sculptată în relief pe fațadă: este cea mai veche friză scrisă păstrată pe fațada unui monument. Curtea, mai lată decât adâncă (41 pe 26 de metri), era mărginită de portice pe trei laturi; al patrulea, în fața sălii de rugăciune, a fost adăugat probabil în secolul al XI-lea. Chemarea la rugăciune se făcea din vârful turnului de colț de nord-est al moscheii, încununat de un mic pavilion cu cupolă și accesibil pe o scară din curte. Sala de rugăciune, de 59 pe 51 de metri, are 6 travee și este acoperită cu bolți semicilindrice sprijinite pe stâlpi în formă de cruce. Mihrabul însuși datează din epoca ziridă, după cum arată decorul nișei și inelele sale cu inscripții în cufic înflorat.
-366	Fațada este sculptată într-o piatră moale și reunește întregul repertoriu decorativ al Kairouanului din epoca aghlabidă. Cele trei arce în potcoavă ale sale se sprijină pe capiteluri antice refolosite; cel din mijloc este mai mare decât celelalte două. Vrejurile cu frunze de viță din timpane amintesc de semicupola de lemn pictat a mihrabului Marii Moschei. În benzile cu scriere cufică, hastele literelor sunt teșite, iar mici motive vegetale umplu golurile: ele anunță cuficul înflorat de la sfârșitul secolului al X-lea. Banda centrală înșiră plăci de piatră sculptate: rozete cu opt brațe, flori în formă de stea cu opt petale și șiruri de flori mici deschise sau pliate. Minaretul hafsid, cu bază dreptunghiulară, are ferestre geminate încadrate de plăci de ceramică, semn al unei influențe andaluze. În interior, cele trei nave sunt paralele cu zidul qiblei, iar două coloane susțin arce în potcoavă.
-367	Construcția a fost începută de Mohamed Bey și continuată de fratele său, Romdhane Bey. Proiectul, inspirat de moscheile turcești, prevedea un minaret octogonal în colțul de nord-vest al curții și două mausolee de familie, dar moartea lui Mohamed Bey și apoi asasinarea fratelui său l-au lăsat neterminat. Sala de rugăciune este înconjurată pe trei laturi de galerii care se deschid spre trei curți în formă de U, sprijinite pe coloane de marmură cu capiteluri în stil turcesc. În interior, patru stâlpi masivi susțin cupola centrală, care se înalță la 29 de metri deasupra pardoselii pe doi tamburi, unul rotund și unul octogonal. Decorul inițial era sobru; marmura verde de pe pereți și stucul sculptat din cupole au fost adăugate mai târziu. Minbarul, placat cu marmură colorată, poartă o inscripție datată 1704.
-368	Meșterul constructor a fost Ali ibn Mohamed ibn Kacem. Abu Zakariya a ridicat moscheea lângă palatul pe care l-a construit în Kasbah, sediul guvernului, după ce și-a proclamat independența față de almohazii din Marrakech. Sala de rugăciune, mai adâncă decât lată, se abate de la modelul obișnuit din Ifriqiya; este acoperită cu bolți în cruce despărțite de arcuri în formă de potcoavă. Mihrabul este placat cu marmură și încadrat de colonete cu capiteluri sculptate și aurite cu foiță de aur. Când moscheea a trecut la ritul hanafit, minbarul de lemn a fost înlocuit cu un minbar de zidărie placat cu marmură. Decorul minaretului urmează pe cel al minaretului Kasbahului din Marrakech, mai vechi cu vreo cincizeci de ani, dar este din piatră, nu din cărămidă; două romburi de pe fața de est poartă inscripția care datează clădirea.
-369	Probabil că la șantier au lucrat și prizonieri italieni. Moscheea aparține tipului de moschei funerare, care reunesc mormântul fondatorului și locul de rugăciune. Pe latura de est, o galerie cu coloane are un mihrab exterior, astfel încât credincioșii se pot ruga acolo vara. Minaretul, în colțul de nord-vest al curții de vest, este construit din gresie cu scoici de un ocru intens. În colțul opus, mausoleul lui Hammouda Pacha și al familiei sale are latura de 8,20 metri; pe fațadele sale alternează asize de marmură neagră și albă. Sala de rugăciune are patru travee, acoperite cu bolți semicilindrice sprijinite pe coloane cu capiteluri cu volute. O cupolă cu inscripția de fondare precedă mihrabul, al cărui arc din bolțari bicolori se sprijină pe două colonete din piatră neagră; minbarul este placat cu marmură albă.
-370	Ansamblul a fost construit de doi meșteri, Ahmed și Moustafa al-Andalousi; Mohamed Bey, care a refăcut cupola mausoleului, era nepotul lui Hammouda Pacha. Poarta principală se deschide spre o curte mare pavată cu cărămidă locală și înconjurată de portice unde erau adăpostite animalele de călărie. În stânga, un depozit primea produsele bunurilor habus ale sfântului și darurile; deasupra, niște apartamente îl găzduiau pe funcționarul însărcinat cu strângerea impozitelor din regiune, iar mai târziu pe oaspeții de seamă. Madrasa, considerată prototipul madrasei tunisiene, are o sală de rugăciune cu doar două nave; minaretul ei amintește de cele ale Marii Moschei din Tlemcen și ale moscheii Kasbah din Tunis. În patio, capitelurile poartă semilune sculptate, emblema otomanilor.
-371	Meșterul constructor a fost Ibn Ghaleb al-Andalousi. După anexarea Ifriqiyei la Imperiul Otoman, numărul turcilor de rit hanafit a crescut mereu: mai întâi li s-au atribuit două moschei malikite, moscheea Kasbah și moscheea el-Qsar, apoi Youssef Dey a înzestrat Tunisul cu prima sa moschee turcească. De-a lungul fațadei de nord, un portic ține locul galeriei de intrare a moscheilor locale. Minaretul octogonal a servit apoi drept model pentru moscheile Hammouda Pacha, el-Jedid și Youssef Sahib et-Tabaa. În sala de rugăciune, nava centrală și traveea de-a lungul zidului qibla, mai largi decât celelalte, se încrucișează în formă de T în fața mihrabului. Coloanele, de proveniențe diverse, au capiteluri hafside, cu excepția câtorva antice. Mausoleul este datat printr-o inscripție pe marele său arc central.
-372	Fișa muzeului virtual Discover Islamic Art aduce și alte detalii. Ctitorul ar fi fost Ali ibn Salim, frate de lapte al marelui jurist din Kairouan Sahnun. Decorul fațadei aparține aceluiași repertoriu fatimid-zirid ca portalul Marii Moschei din Mahdia. Sondajele au arătat că minaretul aghlabid original a fost învelit, în epoca fatimid-ziridă, într-o cămașă de zidărie sculptată. Curtea mică este înconjurată de galerii pe stâlpi cruciformi, acoperite cu bolți în cruce; galeria qiblei iese în față ca un portic sub o cupolă. Zece uși duc în sala de rugăciune, ale cărei bolți se sprijină pe coloane cu capiteluri antice. O cupolă scoasă din ax marchează locul mihrabului din secolul al XII-lea; mihrabul actual datează din secolul al XVIII-lea.
-373	Potrivit fișei muzeului virtual Discover Islamic Art, prăbușirea zidului qiblei a dus la lucrări importante în epoca ziridă, urmate de altele în secolul al XVII-lea, sub otomani. Neavând minaret, chemarea la rugăciune se făcea probabil din vârful unuia dintre turnuri. Porticul de la intrare, primul cunoscut în arhitectura religioasă a Maghrebului, are sus nișe în formă de mihrab și jos nișe cu fund plat: acest decor a servit drept model monumentelor fatimide. Curtea este înconjurată de patru galerii, cu câte o încăpere în fiecare colț. În sala de rugăciune, nava centrală și travea qiblei formează un T; mihrabul actual îl reproduce pe cel din secolul al XI-lea, cu caneluri terminate fiecare printr-o scoică. Această moschee a inspirat, la Cairo, moscheile al-Hakim și al-Aqmar.
-374	Moscheea Sahib et-Tabaa
-375	1808-1814 · Husseiniții
-376	Dominând piața Halfaouine, la nord de medina din Tunis, această moschee de la începutul secolului al XIX-lea este ultima mare moschee construită în Tunis înainte de protectoratul francez. Coloanele și zidurile de marmură italiană fac din ea lăcașul de rugăciune tunisian cel mai marcat de influența europeană.
-377	Poartă numele lui Youssef Sahib et-Tabaa, născut pe la 1765 în Moldova, robit în copilărie și intrat în 1781 în slujba prințului Hammouda Pacha, al cărui păstrător al sigiliului (sahib et-tabaa) a devenit în 1782, apoi prim-ministru. A construit moscheea între 1808 și 1814 sub conducerea meșterului Hadj Sassi ibn Frija și a inaugurat-o în 1814. Rănit într-un atentat la Bardo în septembrie 1814, a murit în ianuarie 1815: minaretul a rămas neterminat până în anii 1970.
-378	Ridicată deasupra unor prăvălii și depozite, pe o temelie de piatră cioplită adusă din ruinele Cartaginei, moscheea domină piața. O scară în cot urcă spre galeria de est, cu dublă colonadă și cinci arcade deschise spre piață; minaretul octogonal se înalță la capătul ei. Trei galerii încadrează sala de rugăciune, cu 9 nave și 7 travee, acoperită cu bolți în leagăn. Cele două travee de la capete, de-a lungul zidului qiblei și al zidului opus, au fiecare câte trei cupole: una în centru și câte una în fiecare colț.
-379	Potrivit fișei muzeului virtual Discover Islamic Art, niciun alt lăcaș de rugăciune tunisian nu arată o influență occidentală atât de clară. Marmura, mai abundentă decât în alte părți, a venit direct de la Carrara, în Italia. Coloanele zvelte și canelate poartă capiteluri compozite, o interpretare italiană a modelului tunisian din epoca turcă; arcele, abia depășite, părăsesc potcoava clasică, iar buiandrugii poartă basoreliefuri neobaroce. Plăcilor de ceramică le rămân doar părțile de sus ale zidurilor. Mihrabul și minbarul fix, din marmură policromă, îmbină arcaturi pseudogotice, flori și tușe de aurire. Galeria de est are un mihrab exterior pentru rugăciune pe vreme caldă.
-380	Moscheea era inima unui vast ansamblu întemeiat de ministru în slujba cartierului Halfaouine: două madrasa, un suk, un hammam, o fântână publică (sabil), un fondouk, palatul și mormântul său, în care se intră, ca și în madrasa, prin fațada de nord.
-381	Ministrul Youssef Sahib et-Tabaa începe lucrările
-382	Inaugurarea moscheii de către ctitorul ei
-383	Moartea ctitorului, rănit la Bardo cu un an înainte
-384	Minaretul primește în sfârșit felinarul (anii 1970)
+217	Fajr
+218	Dhuhr
+219	Asr
+220	Maghrib
+221	Isha
+222	în prima {j} din lună
+223	în ultima {j} din lună
+224	o {j} pe lună
+225	chiar înainte de Asr
+226	aici nu există rugăciunea de vineri
+227	fără lectură zilnică
+228	în fiecare zi, după rugăciunea: {p}
+229	fără khatma lunară
+230	khatma Coranului (lectură completă)
+231	Sursă
+232	Nu mai e adevărat
+233	încă nicio informație — adăugați-o
+234	Rugăciunea de vineri
+235	oră necunoscută — indicați-o
+236	Lectura Coranului
+237	Indicați sau corectați
+238	— nu schimbați —
+239	Ora rugăciunii de vineri
+240	Altă oră
+241	Lectura zilnică a Coranului, după rugăciunea
+242	Khatma Coranului o dată pe lună
+243	Alegeți cel puțin o informație.
+244	Vineri
+245	Coran
+246	Rugăciunea de vineri: culoare = oră.
+247	Rugăciunea de vineri și lectura Coranului
+248	Informații date și confirmate de vizitatori sau preluate dintr-o sursă publică citată. Nicio oră nu este inventată.
+249	Tunis
+250	Kairouan
+251	Sousse
+252	Mahdia
+253	Sfax
+254	Testour
+255	Cartagina
+256	Djerba (Midoun)
+257	Monastir
+258	Moscheea Zitouna
+259	698 · reconstruită în 864
+260	Marea moschee a medinei din Tunis, cea mai veche și cea mai întinsă din capitală. Timp de peste o mie de ani a fost și o mare universitate a islamului.
+261	Potrivit tradiției, locul de rugăciune este întemeiat în 698 de Hassan ibn al-Numan, după cucerirea Cartaginei; alte surse atribuie întemeierea guvernatorului omeiad Ubayd Allah ibn al-Habhab, în jurul anului 732. Din acest prim edificiu nu a rămas aproape nimic: moscheea este reconstruită în întregime în 864 de emirul aghlabid Abu Ibrahim Ahmad. Fiecare dinastie o înfrumusețează apoi: cupola „bahou” sub ziriți (în jurul anului 990), cisterne și porți sub hafsizi, galeria de est în 1637. Minaretul actual, în stil almohad, datează din 1894.
+262	Ca la Kairouan și la Córdoba, o curte înconjurată de galerii precedă o sală de rugăciune „hipostilă”: circa 160 de coloane antice, aduse în mare parte din Cartagina, formează 15 nave. Nava centrală, mai largă, duce la mihrab, acoperit de o cupolă din secolul al IX-lea. Cupola bahou, la intrarea în sală, alternează piatra ocru cu cărămida roșie. Minaretul din 1894 reia decorul în romburi al minaretului moscheii Kasbah.
+263	Zitouna a fost unul dintre cele mai vechi centre de învățământ din lumea musulmană: fiecare învățat se rezema de o coloană, cu elevii așezați în cerc în jurul lui. Aici s-au format mari juriști malikiți, precum Ibn Arafa, contemporan cu Ibn Khaldun. În 1958, învățământul părăsește moscheea; el continuă astăzi la universitatea Ez-Zitouna. Se spune că rugăciunea nu a fost niciodată întreruptă aici.
+264	Întemeiere potrivit tradiției (Hassan ibn al-Numan)
+265	Reconstrucție completă sub aghlabizi
+266	Cupola bahou (ziriți)
+267	Minaret nou în stil almohad
+268	Învățământul trece de la moschee la universitate
+269	Medina din Tunis înscrisă în patrimoniul mondial UNESCO
+270	Marea Moschee din Kairouan (moscheea Uqba)
+271	670 · forma actuală din 836
+272	Cea mai veche moschee din Maghreb, întemeiată în 670 odată cu orașul Kairouan. A servit drept model tuturor moscheilor din Africa de Nord și face parte din patrimoniul mondial UNESCO.
+273	În 670, cuceritorul Uqba ibn Nafi întemeiază Kairouanul și își așază moscheea în centrul orașului. Mărită și reconstruită în secolele al VIII-lea și al IX-lea, ea își capătă forma actuală în 836, sub emirul aghlabid Ziyadat Allah I. Pe la 862-863, Abu Ibrahim Ahmad prelungește sala de rugăciune și dăruiește minbarul și decorul mihrabului. În secolul al XI-lea, prințul zirit al-Muizz ibn Badis adaugă maqsura de lemn. Kairouanul a fost mult timp socotit al patrulea oraș sfânt al islamului.
+274	Un vast patrulater de circa 9 000 m²: o mare curte pavată, galerii și o sală de rugăciune cu 17 nave, susținută de sute de coloane antice de marmură, granit și porfir, toate diferite. Minaretul, înalt de aproximativ 31 de metri, datează din prima jumătate a secolului al IX-lea: este unul dintre cele mai vechi minarete aflate încă în picioare. Mihrabul din secolul al IX-lea este împodobit cu plăci de ceramică cu reflexe metalice; alături, minbarul de lemn sculptat este cel mai vechi minbar păstrat din lumea musulmană.
+275	Kairouanul a fost capitala religioasă și cărturărească a Ifriqiyei: aici a redactat imamul Sahnun, în secolul al IX-lea, Mudawwana, lucrare fondatoare a ritului malikit urmat în Tunisia și în tot Maghrebul. Biblioteca moscheii a păstrat manuscrise foarte vechi, între care file din celebrul „Coran albastru”.
+276	Întemeiere de către Uqba ibn Nafi, odată cu orașul
+277	Reconstrucție de către Ziyadat Allah I: forma actuală
+278	Minbarul și decorul mihrabului (Abu Ibrahim Ahmad)
+279	Maqsura de lemn a lui al-Muizz ibn Badis (în jurul acestei date)
+280	Kairouan înscris în patrimoniul mondial UNESCO
+281	Marea Moschee din Sousse
+282	850-851 · aghlabizi
+283	La intrarea în medină, o moschee cu înfățișare de fortăreață, ridicată în 850-851 lângă ribatul care apăra coasta. Sobră și puternică, ea face parte din medina din Sousse, patrimoniu mondial UNESCO.
+284	Este ridicată în 850-851 de emirul aghlabid Abu al-Abbas Muhammad, la vreo treizeci de ani după ribatul din Sousse; o inscripție cufică, pe galeriile curții, amintește construirea ei. Este mărită sub emirul Ibrahim al II-lea (875-902), când Sousse devine al doilea oraș al Ifriqiyei.
+285	Ziduri crenelate, turnuri de colț încununate de mici cupole: moscheea seamănă cu o fortăreață și nu are un minaret adevărat, fără îndoială pentru că turnul de veghe al ribatului vecin juca acest rol. Sala de rugăciune are 13 nave; nava centrală și traveea mihrabului, mai largi, formează un „T”, marcat de două cupole.
+286	Ribatul din Sousse, aflat alături, este terminat
+287	Construirea moscheii (850-851)
+288	Mărire sub Ibrahim al II-lea (875-902)
+289	Medina din Sousse înscrisă în patrimoniul mondial UNESCO
+290	Marea Moschee din Mahdia
+291	916 · fatimizi
+292	Construită în 916 de primul calif fatimid în noua sa capitală, pe malul mării. Marele ei portal ieșit în afară, inspirat de arcurile de triumf, este o premieră în arhitectura moscheilor.
+293	Când Ubayd Allah al-Mahdi întemeiază Mahdia, în 909, el pune să se construiască moscheea lângă palatul califal, pe o platformă câștigată de la mare. După distrugerea orașului de către spanioli în 1554, edificiul este adesea refăcut. Între 1961 și 1965 este reconstruit aproape în întregime după planul din secolul al X-lea; marele portal și porticul de nord sunt originale.
+294	Un patrulater de circa 85 × 55 de metri, cu ziduri masive, flancat de două turnuri pătrate care serveau drept rezervoare de apă de ploaie. Moscheea nu a avut niciodată minaret. Portalul monumental deschidea un „drum de onoare” spre mihrab, în fundul unei săli cu 9 nave, a cărei navă centrală, mai înaltă, duce la o cupolă.
+295	Întemeierea Mahdiei de către Ubayd Allah al-Mahdi
+296	Construirea Marii Moschei
+297	Orașul este distrus de spanioli
+298	Reconstrucție după planul de origine (1961-1965)
+299	Marea Moschee din Sfax
+300	pe la 850 · aghlabizi
+301	În inima medinei din Sfax, o moschee din secolul al IX-lea, a cărei fațadă de est, sculptată în epoca zirită, și al cărei minaret, după chipul celui din Kairouan, sunt capodopere ale artei din Ifriqiya.
+302	Prima clădire este construită pe la 850, sub aghlabizi, în același timp cu zidurile cetății Sfax. Moscheea este înfrumusețată în epoca zirită: două inscripții de pe fațadă poartă datele 988 și 1085. Modificată în secolul al XII-lea, ea își recapătă dimensiunile de origine în secolul al XVIII-lea, în timpul unor mari lucrări.
+303	Fațada de est este ritmată de uși și ferestre cu arcuri în potcoavă, de nișe și de o cornișă dantelată; o placă bizantină pe care sunt sculptați doi păuni este refolosită aici. Minaretul pătrat, de vreo cincisprezece metri, amintește de cel din Kairouan, dar are un decor mai fin: discuri sculptate și o frumoasă scriere cufică înflorită. Sala de rugăciune, în formă de echer, are 9 nave.
+304	Prima clădire, sub aghlabizi (în jurul acestei date)
+305	Înfrumusețare zirită (inscripție pe fațadă)
+306	A doua inscripție datată de pe fațadă
+307	Clasată monument istoric
+308	Moscheea celor Trei Porți
+309	866 · minaret pe la 1440
+310	Un mic oratoriu din medina Kairouanului, cunoscut în lumea întreagă pentru fațada sa din 866: cea mai veche fațadă de moschee sculptată și decorată din lumea islamică.
+311	Pe la 866, un negustor andaluz stabilit la Kairouan, Muhammad ibn Khayrun al-Maafiri, pune să se construiască acest oratoriu de cartier; inscripția de pe fațadă îi dă numele și data. Pe la 1440, în epoca hafsidă, moscheea este restaurată și primește un mic minaret: o bandă de pe fațadă amintește acest lucru.
+312	Fațada, înaltă de circa șapte metri, se deschide prin trei arcuri pe coloane antice; deasupra, benzi de scriere cufică în relief citează Coranul (sura 33, versetele 70-71) și întemeierea, între frize de rozete și de frunze de viță. În interior, o sală de rugăciune de circa 9 × 9 metri, fără curte, cu trei nave pe coloane antice.
+313	Construire de către Muhammad ibn Khayrun
+314	Restaurare hafsidă și mic minaret (pe la 1440-1441)
+315	Moscheea Youssef Dey
+316	1612 · otomani
+317	Prima moschee de rit hanefit din Tunis, ridicată de deiul otoman Youssef lângă Kasbah. Minaretul ei octogonal, primul din Tunis, semnalează ritul otomanilor.
+318	O inscripție din interior îi datează construirea din 1612, la porunca lui Youssef Dey, care a cârmuit Tunisul din 1610 până în 1637. Restaurată la sfârșitul secolului al XIX-lea, sub Ali Bey, ea devine în 1926 o anexă a universității Zitouna. Deiul odihnește aici într-un mausoleu, primul exemplu din Tunis de moschee funerară.
+319	Sala de rugăciune, înconjurată de curți pe trei laturi, are 9 nave și 7 travee; o cupolă se înalță în fața mihrabului. Minbarul este din zidărie îmbrăcată în marmură colorată, în vreme ce moscheile malikite au un minbar de lemn. Minaretul octogonal se încheie cu un balcon acoperit și un acoperiș piramidal de țigle verzi, ca și mausoleul.
+320	Construire de către Youssef Dey (inscripție)
+321	Moartea lui Youssef Dey, înmormântat în mausoleul său
+322	Anexă a universității Zitouna
+323	Moscheea Hammouda Pacha
+324	1655 · muradizi
+325	A doua moschee hanefită din Tunis, ridicată în 1655 de beiul Hammouda Pacha. Minaretul ei octogonal și zvelt domină strada Sidi Ben Arous, în medină.
+326	Hammouda Pacha, bei din dinastia muradidă, pune să se construiască moscheea în 1655, la colțul străzii Sidi Ben Arous cu strada Kasbah. Ca și Youssef Dey înaintea lui, el își amenajează aici propriul mausoleu, în curte: se spune că acest mormânt l-a inspirat, mult mai târziu, pe cel al președintelui Bourguiba de la Monastir.
+327	Un edificiu otoman din secolul al XVII-lea: poartă de marmură, acoperișuri de țigle verzi și trei curți. Sala de rugăciune, de circa 24 × 17 metri, are 7 nave pe 48 de coloane; zidurile ei sunt îmbrăcate în marmură și ipsos sculptat, cu un decor de flori și de marmură colorată de influență italiană. Lucru rar la Tunis, curtea se deschide spre stradă prin ferestre largi cu grilaj. Minaretul octogonal este încununat de un balcon și de un acoperiș piramidal.
+328	Construire de către Hammouda Pacha Bey
+329	Restaurare (1960-1961)
+330	Moscheea Sidi Mahrez (moscheea Mohamed Bey)
+331	1692-1697 · muradizi
+332	Cu cupolele ei albe, care se regăsesc pe emblema orașului Tunis, este singura moschee tunisiană construită după modelul marilor moschei din Istanbul. Ea se află în fața zawiei lui Sidi Mahrez, sfântul ocrotitor al medinei.
+333	Mohamed Bey el-Mouradi îi începe construirea între 1692 și 1697, în cinstea lui Sidi Mahrez (Mahrez ibn Khalaf, secolul al X-lea), în cartierul Bab Souika. Tulburările politice de la sfârșitul secolului al XVII-lea împiedică încheierea lucrărilor: moscheea nu a primit niciodată minaret. Este restaurată începând din 1984, împreună cu cartierul Bab Souika.
+334	Așezată pe o platformă, sala de rugăciune pătrată (cu latura de 28 de metri) este acoperită de o mare cupolă centrală cu diametrul de aproape 16 metri, înconjurată de semicupole și de mici cupole de colț, ca moscheea Sultan Ahmet din Istanbul. Plăci de ceramică de Iznik, în culorile albastru, verde și „roșu-tomată”, împodobesc stâlpii și peretele mihrabului.
+335	Începutul construirii de către Mohamed Bey el-Mouradi
+336	Sfârșitul lucrărilor, fără minaret
+337	Restaurare împreună cu cartierul Bab Souika
+338	Zawia Sidi Sahbi (mausoleul Bărbierului)
+339	Secolul al XVII-lea · muradizi
+340	Mausoleul lui Abu Zamaa al-Balawi, companion al Profetului ﷺ, pe care locuitorii Kairouanului îl numesc „Sidi Sahbi”: sfântul ocrotitor al Kairouanului. Curțile sale acoperite cu ceramică și ipsos sculptat fac din el unul dintre cele mai frumoase monumente ale orașului.
+341	Abu Zamaa al-Balawi moare în luptă în 654 (anul 34 al Hegirei). Se povestește că purta asupra lui câteva fire din barba Profetului ﷺ, de unde numele de „mausoleul Bărbierului”. Vechiul edificiu este renovat în întregime în secolul al XVII-lea de beii muradizi: Hammouda Pacha reconstruiește zawia, medresa și minaretul pe la 1662, apoi Mohamed Bey reface cupola mausoleului pe la 1681-1685.
+342	Un vast ansamblu în afara zidurilor medinei: curte de intrare și minaret în stil andaluz, patio cu coloane, sală cu cupolă, apoi o curte cu zidurile acoperite de ceramică policromă și de ipsos fin sculptat, care precedă camera funerară. O medresă, cu camerele studenților și sala ei de rugăciune, completează complexul.
+343	Este unul dintre locurile cele mai vizitate de tunisieni, mai ales la sărbătoarea Mawlid; aici se încheie și contracte de căsătorie și se fac circumcizii. Odinioară, caravanele Maghrebului se adunau aici înainte de a pleca în pelerinaj la Mecca.
+344	Moartea lui Abu Zamaa al-Balawi (anul 34 al Hegirei)
+345	Zawia, medresa și minaretul lui Hammouda Pacha (în jurul acestei date)
+346	Cupola nouă a mausoleului, de Mohamed Bey (1681-1685)
+347	Marea Moschee din Testour
+348	pe la 1630 · andaluzi
+349	Ridicată de andaluzii alungați din Spania la începutul secolului al XVII-lea, ea îmbină tradițiile tunisiene cu arta hispano-maură. Minaretul ei poartă un ceas ale cărui ace se învârt invers.
+350	După expulzarea moriscilor din Spania (1609-1614), mulți se așază în valea Medjerdei și reîntemeiază Testourul. Moscheea este ridicată în prima treime a secolului al XVII-lea, probabil înainte de 1631, de Mohamed Tagharinou, un andaluz stabilit în oraș. O a doua curte și o sală de abluțiuni sunt adăugate în secolul al XVIII-lea. În 2014, locuitori și asociații repun în funcțiune ceasul minaretului, oprit de aproape trei secole.
+351	Planul sălii de rugăciune (9 nave) urmează tradiția Kairouanului, dar acoperișurile de țiglă, decorul de stuc și minaretul sunt andaluze. Înalt de 22,50 de metri, minaretul suprapune un turn pătrat din cărămidă și piatră, în maniera din Toledo, și un turn octogonal împodobit cu ceramică: el amintește de clopotnițele din Aragon. În curte, un cadran solar din 1761 arăta ora rugăciunilor.
+352	Moriscii, alungați din Spania (1609-1614), sosesc în Tunisia
+353	Moschee încheiată (probabil înainte de această dată)
+354	Cadranul solar din curte
+355	Ceasul minaretului repus în funcțiune
+356	Moscheea Malik ibn Anas (Cartagina)
+357	2003 · contemporană
+358	O mare moschee modernă ridicată pe o colină a Cartaginei, în inima sitului arheologic. Minaretul ei de 55 de metri se vede de departe; ea apare pe bancnota de zece dinari.
+359	Construită din 2000 până în 2003 după planurile arhitectului Ayad Sriha, ea se numea la început „El Abidine”. În noiembrie 2012 primește numele imamului Malik ibn Anas (mort în 795), întemeietorul școlii malikite urmate în Tunisia. Radio Zitouna FM transmite de aici cele cinci rugăciuni zilnice.
+360	Ea se inspiră din marile moschei tunisiene: esplanadă, curte de 1 500 m² și sală de rugăciune hipostilă cu 64 de coloane, care poate primi 1 000 de credincioși. Mihrabul de marmură albă încrustată cu verde și roșu este încununat de o cupolă cu diametrul de zece metri. Zidurile sunt acoperite cu piatră de Kedhel, stuc sculptat și ceramică cu motive andaluze; podeaua este așternută cu covoare de Kairouan.
+361	Punerea primei pietre
+362	Inaugurare
+363	Primește numele imamului Malik ibn Anas
+364	Moscheea Fadhloun și moscheile ibadite din Djerba
+365	Secolul al XIV-lea · Djerba
+366	La ieșirea din Midoun, o moschee albă cu înfățișare de mică fortăreață, tipică pentru insula Djerba, unde trăiește o comunitate musulmană ibadită. Este clasată monument din 2022 și face parte dintre locurile din Djerba înscrise în patrimoniul mondial în 2023.
+367	Ridicată în secolul al XIV-lea, moscheea Fadhloun aparține bogatului ansamblu al moscheilor din Djerba, adesea ibadite, construite pe câmpuri și pe coastă. Cu zidurile lor groase și micile lor minarete, multe serveau și ca posturi de veghe: ele alcătuiau o a doua linie de apărare în spatele forturilor de pe litoral.
+368	Sala de rugăciune pătrată, cu latura de circa 7,5 metri, este acoperită de nouă mici cupole purtate de patru coloane; mihrabul este o simplă nișă, iar minbarul, de piatră, are doar trei trepte. Un minaret scund, pe două niveluri, domină acoperișul. În jur: o curte cu un „mihrab de vară”, o cisternă de apă de ploaie, două săli pentru învățarea Coranului, o brutărie subterană și o moară de grâne.
+369	Aceste moschei erau mici centre de viață: rugăciune, învățarea Coranului, pâine și grâne pentru cartier. Arhitectura lor albă și lipsită de podoabe este unul dintre chipurile Djerbei recunoscute de UNESCO în 2023.
+370	sec. XIV
+371	Construirea moscheii Fadhloun (secolul al XIV-lea)
+372	Clasată monument (ordin din 15 martie 2022)
+373	Djerba înscrisă în patrimoniul mondial UNESCO
+374	Moscheea Kasbah (Tunis)
+375	1231-1235 · hafsizi
+376	Construită de întemeietorul dinastiei hafside în piața Kasbah, ea are unul dintre cele mai frumoase minarete din Tunis, în stilul almohad din Marrakech și Sevilla.
+377	Este ridicată din 1231 până în 1235 la porunca lui Abu Zakariya Yahya, întemeietorul dinastiei hafside, care fusese guvernator al Sevillei. Mai întâi moschee a curții suveranilor stabiliți la Kasbah, ea devine apoi una dintre moscheile de vineri ale orașului; este prima ridicată la Tunis după Zitouna. În epoca otomană, aici se făcea rugăciunea după ritul hanefit.
+378	Sala de rugăciune, mai adâncă decât lată, are 7 nave și 9 travee pe coloane de marmură cu capiteluri hafside; mihrabul este încununat de o cupolă cu stalactite din ipsos sculptat. Minaretul pătrat, construit încă din 1233, este acoperit de o rețea de romburi din piatră ocru: el a servit drept model minaretului actual al Zitounei.
+379	Începutul construirii (Abu Zakariya Yahya)
+380	Minaretul este terminat
+381	Sfârșitul construirii moscheii
+382	Marea Moschee din Monastir
+383	Secolul al IX-lea · mărită până în secolul al XVIII-lea
+384	Cu fața spre mare, lângă celebrul ribat, o moschee de piatră sobră și elegantă, mărită în fiecare epocă începând din secolul al IX-lea.
+385	Sala de rugăciune actuală este rodul a patru etape: un mic oratoriu boltit în secolul al IX-lea, o mărire în secolul al XI-lea (epoca zirită) cu mihrabul, apoi, în epoca hafsidă, un minaret pătrat și încă două nave. O galerie exterioară este adăugată în secolul al XVIII-lea. În octombrie 2013, două cutremure fac să se prăbușească în parte vârful minaretului.
+386	Fațade din piatră cioplită, însuflețite de ancadramentele ușilor și ferestrelor și de arcurile unei galerii. Moscheea nu are curte în fața sălii de rugăciune. Mihrabul din secolul al XI-lea, cu decor zirit și scriere cufică înflorită, nu este încununat de o cupolă, lucru rar în Ifriqiya medievală.
+387	sec. IX
+388	Primul oratoriu boltit (secolul al IX-lea)
+389	sec. XI
+390	Mărire zirită și mihrab (secolul al XI-lea)
+391	sec. XVIII
+392	Galerie exterioară (secolul al XVIII-lea)
+393	Vârful minaretului se prăbușește în parte după două cutremure
+394	Cercetările au confirmat că moscheea a fost construită pe resturile unei bazilici creștine, ceea ce se potrivește cu o relatare a istoricului Ibn Abi Dinar. O inscripție de la baza cupolei mihrabului îl numește pe Nusair, slujitor al califului abbasid, care a condus lucrările, precum și pe arhitectul Fathallah. Clădirea era și un post de apărare orientat spre mare: două turnuri de veghe se înalță încă în colțurile de nord-est și de sud-est. Sala de rugăciune măsoară 56 pe 24 de metri, adică 1.344 m²; nava centrală și nava transversală, late de 4,80 metri față de 3 metri cât au celelalte, se întretaie în fața mihrabului. La mijlocul secolului al XIX-lea, sub ministrul Khaznadar, trei galerii ale curții au primit coloane de marmură albă aduse din Italia. Minaretul are 43 de metri, iar douăsprezece porți se deschid spre souk-uri, printre ele poarta imamului, încadrată de marmură romană sculptată.
+395	Înainte de marea reconstrucție din 836, primul loc de rugăciune al lui Uqba a fost renovat de Hassan ibn al-Nu'man în 703, extins sub guvernatorul omeiad Bishr ibn Safwan (722-728) și renovat din nou de Yazid ibn Hatim în 772. Ansamblul formează un dreptunghi de aproximativ 125 pe 75 de metri, iar sala de rugăciune are 8 travee. Coloanele și capitelurile sale antice alcătuiesc cea mai mare colecție de capiteluri romane și bizantine reunită într-un monument musulman. Tavanul de lemn păstrează încă grinzi frumoase din secolul al IX-lea, decorate cu fructe și frunze de palmier în stil elenistic. În mihrab, nișa este îmbrăcată cu 28 de panouri de marmură traforată sau sculptată, sub o semicupolă de lemn pictat; plăcile sale cu luciu metalic provin probabil din Irak. Minbarul este făcut din peste 300 de panouri de lemn de tec din India. Minaretul, înalt de 32 de metri, are trei niveluri încununate de o cupolă cu caneluri; forma sa robustă amintește de farurile romane.
+396	Fondatorul, Muhammad Tagharinu, se stabilise la Testour în 1609. Moscheea are două curți: cea mai mare, la nord, măsoară circa 17,70 pe 26,20 de metri, iar cealaltă se află la vest de sala de rugăciune. Curtea mare este mărginită de portice cu arce în plin cintru pe coloane antice și pavată cu dale de piatră antice refolosite. Cadranul solar poartă numele meșterului său, Ahmed al-Harrar. Minaretul pornește dintr-un turn pătrat cu latura de 4,50 metri, cu mici pinacluri în cele patru colțuri, și se încheie cu un lanternou cu acoperiș de lemn în formă de piramidă. Cadranul ceasului este încastrat sub una dintre ferestrele geminate ale turnului octogonal, un caz unic printre minaretele acelei epoci. Sala de rugăciune, de 25,85 pe 19,12 metri, este acoperită cu bolți în cruce și are șapte travee; culoarul central poartă două cupole, iar mihrabul este încununat de un fronton triunghiular.
+397	Potrivit muzeului, lucrările au durat din 851 până în 862 și au fost supravegheate de Mudam, un libert al emirului. Numele lui apare în lunga inscripție cufică sculptată în relief pe fațadă: este cea mai veche friză scrisă păstrată pe fațada unui monument. Curtea, mai lată decât adâncă (41 pe 26 de metri), era mărginită de portice pe trei laturi; al patrulea, în fața sălii de rugăciune, a fost adăugat probabil în secolul al XI-lea. Chemarea la rugăciune se făcea din vârful turnului de colț de nord-est al moscheii, încununat de un mic pavilion cu cupolă și accesibil pe o scară din curte. Sala de rugăciune, de 59 pe 51 de metri, are 6 travee și este acoperită cu bolți semicilindrice sprijinite pe stâlpi în formă de cruce. Mihrabul însuși datează din epoca ziridă, după cum arată decorul nișei și inelele sale cu inscripții în cufic înflorat.
+398	Fațada este sculptată într-o piatră moale și reunește întregul repertoriu decorativ al Kairouanului din epoca aghlabidă. Cele trei arce în potcoavă ale sale se sprijină pe capiteluri antice refolosite; cel din mijloc este mai mare decât celelalte două. Vrejurile cu frunze de viță din timpane amintesc de semicupola de lemn pictat a mihrabului Marii Moschei. În benzile cu scriere cufică, hastele literelor sunt teșite, iar mici motive vegetale umplu golurile: ele anunță cuficul înflorat de la sfârșitul secolului al X-lea. Banda centrală înșiră plăci de piatră sculptate: rozete cu opt brațe, flori în formă de stea cu opt petale și șiruri de flori mici deschise sau pliate. Minaretul hafsid, cu bază dreptunghiulară, are ferestre geminate încadrate de plăci de ceramică, semn al unei influențe andaluze. În interior, cele trei nave sunt paralele cu zidul qiblei, iar două coloane susțin arce în potcoavă.
+399	Construcția a fost începută de Mohamed Bey și continuată de fratele său, Romdhane Bey. Proiectul, inspirat de moscheile turcești, prevedea un minaret octogonal în colțul de nord-vest al curții și două mausolee de familie, dar moartea lui Mohamed Bey și apoi asasinarea fratelui său l-au lăsat neterminat. Sala de rugăciune este înconjurată pe trei laturi de galerii care se deschid spre trei curți în formă de U, sprijinite pe coloane de marmură cu capiteluri în stil turcesc. În interior, patru stâlpi masivi susțin cupola centrală, care se înalță la 29 de metri deasupra pardoselii pe doi tamburi, unul rotund și unul octogonal. Decorul inițial era sobru; marmura verde de pe pereți și stucul sculptat din cupole au fost adăugate mai târziu. Minbarul, placat cu marmură colorată, poartă o inscripție datată 1704.
+400	Meșterul constructor a fost Ali ibn Mohamed ibn Kacem. Abu Zakariya a ridicat moscheea lângă palatul pe care l-a construit în Kasbah, sediul guvernului, după ce și-a proclamat independența față de almohazii din Marrakech. Sala de rugăciune, mai adâncă decât lată, se abate de la modelul obișnuit din Ifriqiya; este acoperită cu bolți în cruce despărțite de arcuri în formă de potcoavă. Mihrabul este placat cu marmură și încadrat de colonete cu capiteluri sculptate și aurite cu foiță de aur. Când moscheea a trecut la ritul hanafit, minbarul de lemn a fost înlocuit cu un minbar de zidărie placat cu marmură. Decorul minaretului urmează pe cel al minaretului Kasbahului din Marrakech, mai vechi cu vreo cincizeci de ani, dar este din piatră, nu din cărămidă; două romburi de pe fața de est poartă inscripția care datează clădirea.
+401	Probabil că la șantier au lucrat și prizonieri italieni. Moscheea aparține tipului de moschei funerare, care reunesc mormântul fondatorului și locul de rugăciune. Pe latura de est, o galerie cu coloane are un mihrab exterior, astfel încât credincioșii se pot ruga acolo vara. Minaretul, în colțul de nord-vest al curții de vest, este construit din gresie cu scoici de un ocru intens. În colțul opus, mausoleul lui Hammouda Pacha și al familiei sale are latura de 8,20 metri; pe fațadele sale alternează asize de marmură neagră și albă. Sala de rugăciune are patru travee, acoperite cu bolți semicilindrice sprijinite pe coloane cu capiteluri cu volute. O cupolă cu inscripția de fondare precedă mihrabul, al cărui arc din bolțari bicolori se sprijină pe două colonete din piatră neagră; minbarul este placat cu marmură albă.
+402	Ansamblul a fost construit de doi meșteri, Ahmed și Moustafa al-Andalousi; Mohamed Bey, care a refăcut cupola mausoleului, era nepotul lui Hammouda Pacha. Poarta principală se deschide spre o curte mare pavată cu cărămidă locală și înconjurată de portice unde erau adăpostite animalele de călărie. În stânga, un depozit primea produsele bunurilor habus ale sfântului și darurile; deasupra, niște apartamente îl găzduiau pe funcționarul însărcinat cu strângerea impozitelor din regiune, iar mai târziu pe oaspeții de seamă. Madrasa, considerată prototipul madrasei tunisiene, are o sală de rugăciune cu doar două nave; minaretul ei amintește de cele ale Marii Moschei din Tlemcen și ale moscheii Kasbah din Tunis. În patio, capitelurile poartă semilune sculptate, emblema otomanilor.
+403	Meșterul constructor a fost Ibn Ghaleb al-Andalousi. După anexarea Ifriqiyei la Imperiul Otoman, numărul turcilor de rit hanafit a crescut mereu: mai întâi li s-au atribuit două moschei malikite, moscheea Kasbah și moscheea el-Qsar, apoi Youssef Dey a înzestrat Tunisul cu prima sa moschee turcească. De-a lungul fațadei de nord, un portic ține locul galeriei de intrare a moscheilor locale. Minaretul octogonal a servit apoi drept model pentru moscheile Hammouda Pacha, el-Jedid și Youssef Sahib et-Tabaa. În sala de rugăciune, nava centrală și traveea de-a lungul zidului qibla, mai largi decât celelalte, se încrucișează în formă de T în fața mihrabului. Coloanele, de proveniențe diverse, au capiteluri hafside, cu excepția câtorva antice. Mausoleul este datat printr-o inscripție pe marele său arc central.
+404	Fișa muzeului virtual Discover Islamic Art aduce și alte detalii. Ctitorul ar fi fost Ali ibn Salim, frate de lapte al marelui jurist din Kairouan Sahnun. Decorul fațadei aparține aceluiași repertoriu fatimid-zirid ca portalul Marii Moschei din Mahdia. Sondajele au arătat că minaretul aghlabid original a fost învelit, în epoca fatimid-ziridă, într-o cămașă de zidărie sculptată. Curtea mică este înconjurată de galerii pe stâlpi cruciformi, acoperite cu bolți în cruce; galeria qiblei iese în față ca un portic sub o cupolă. Zece uși duc în sala de rugăciune, ale cărei bolți se sprijină pe coloane cu capiteluri antice. O cupolă scoasă din ax marchează locul mihrabului din secolul al XII-lea; mihrabul actual datează din secolul al XVIII-lea.
+405	Potrivit fișei muzeului virtual Discover Islamic Art, prăbușirea zidului qiblei a dus la lucrări importante în epoca ziridă, urmate de altele în secolul al XVII-lea, sub otomani. Neavând minaret, chemarea la rugăciune se făcea probabil din vârful unuia dintre turnuri. Porticul de la intrare, primul cunoscut în arhitectura religioasă a Maghrebului, are sus nișe în formă de mihrab și jos nișe cu fund plat: acest decor a servit drept model monumentelor fatimide. Curtea este înconjurată de patru galerii, cu câte o încăpere în fiecare colț. În sala de rugăciune, nava centrală și travea qiblei formează un T; mihrabul actual îl reproduce pe cel din secolul al XI-lea, cu caneluri terminate fiecare printr-o scoică. Această moschee a inspirat, la Cairo, moscheile al-Hakim și al-Aqmar.
+406	Moscheea Sahib et-Tabaa
+407	1808-1814 · Husseiniții
+408	Dominând piața Halfaouine, la nord de medina din Tunis, această moschee de la începutul secolului al XIX-lea este ultima mare moschee construită în Tunis înainte de protectoratul francez. Coloanele și zidurile de marmură italiană fac din ea lăcașul de rugăciune tunisian cel mai marcat de influența europeană.
+409	Poartă numele lui Youssef Sahib et-Tabaa, născut pe la 1765 în Moldova, robit în copilărie și intrat în 1781 în slujba prințului Hammouda Pacha, al cărui păstrător al sigiliului (sahib et-tabaa) a devenit în 1782, apoi prim-ministru. A construit moscheea între 1808 și 1814 sub conducerea meșterului Hadj Sassi ibn Frija și a inaugurat-o în 1814. Rănit într-un atentat la Bardo în septembrie 1814, a murit în ianuarie 1815: minaretul a rămas neterminat până în anii 1970.
+410	Ridicată deasupra unor prăvălii și depozite, pe o temelie de piatră cioplită adusă din ruinele Cartaginei, moscheea domină piața. O scară în cot urcă spre galeria de est, cu dublă colonadă și cinci arcade deschise spre piață; minaretul octogonal se înalță la capătul ei. Trei galerii încadrează sala de rugăciune, cu 9 nave și 7 travee, acoperită cu bolți în leagăn. Cele două travee de la capete, de-a lungul zidului qiblei și al zidului opus, au fiecare câte trei cupole: una în centru și câte una în fiecare colț.
+411	Potrivit fișei muzeului virtual Discover Islamic Art, niciun alt lăcaș de rugăciune tunisian nu arată o influență occidentală atât de clară. Marmura, mai abundentă decât în alte părți, a venit direct de la Carrara, în Italia. Coloanele zvelte și canelate poartă capiteluri compozite, o interpretare italiană a modelului tunisian din epoca turcă; arcele, abia depășite, părăsesc potcoava clasică, iar buiandrugii poartă basoreliefuri neobaroce. Plăcilor de ceramică le rămân doar părțile de sus ale zidurilor. Mihrabul și minbarul fix, din marmură policromă, îmbină arcaturi pseudogotice, flori și tușe de aurire. Galeria de est are un mihrab exterior pentru rugăciune pe vreme caldă.
+412	Moscheea era inima unui vast ansamblu întemeiat de ministru în slujba cartierului Halfaouine: două madrasa, un suk, un hammam, o fântână publică (sabil), un fondouk, palatul și mormântul său, în care se intră, ca și în madrasa, prin fațada de nord.
+413	Ministrul Youssef Sahib et-Tabaa începe lucrările
+414	Inaugurarea moscheii de către ctitorul ei
+415	Moartea ctitorului, rănit la Bardo cu un an înainte
+416	Minaretul primește în sfârșit felinarul (anii 1970)

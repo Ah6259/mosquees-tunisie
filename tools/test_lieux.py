@@ -102,6 +102,38 @@ with tempfile.TemporaryDirectory() as tmp:
 check("robot des données : 5 serveurs OpenStreetMap, erreurs cachées lues (remark), minimums", len(M.SERVEURS) == 5 and M.MIN_OSM >= 1000 and M.MIN_WD >= 50)
 check("robot des données : noms génériques écartés (« Mosque », « مسجد »), vrais noms gardés", M.generique("Mosque") and M.generique("مسجد") and not M.generique("Mosquée Zitouna"))
 
+# 8 bis. prière du vendredi et lectures du Coran (24/11/2026) : valeurs d'une liste, statut, votes, garde-fous
+def info(f, lid, cle, val, j):
+    return {"format": f, "marque": f"{lid}|{cle}|{val}", "lieu": f"|{j}", "date": "2026-11-24"}
+IDS = {"osm-n1", "osm-w95130047"}
+inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "13h00", J[0])], IDS)
+check("vendredi : « 13h00 » d'un visiteur publié « signalé » (1 voix)", inf.get("osm-n1", {}).get("joumoua", [None])[:3] == ["13h00", "signale", 1] and not rej)
+inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "13h00", J[0]), info("LIEU-PRIERE-INFO-OK", "osm-n1", "joumoua", "13h00", J[1])], IDS)
+check("vendredi : 2 visiteurs -> « confirmé »", inf["osm-n1"]["joumoua"][:3] == ["13h00", "confirme", 2])
+inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "13h00", J[0])] + [info("LIEU-PRIERE-INFO-KO", "osm-n1", "joumoua", "13h00", j) for j in J[1:3]], IDS)
+check("vendredi : 2 « n'est plus vrai » contre 1 -> valeur écartée", "osm-n1" not in inf)
+inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "13h00", J[0]), info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "asr", J[1]),
+                             info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "asr", J[2])], IDS)
+check("vendredi : deux réponses différentes -> la plus confirmée gagne (« juste avant l'Asr », 2 contre 1)", inf["osm-n1"]["joumoua"][:2] == ["asr", "confirme"])
+inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "13h00", J[0]), info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "12:30", J[0])], IDS)
+check("vendredi : un navigateur qui change d'avis -> sa dernière réponse compte (12:30)", inf["osm-n1"]["joumoua"][:3] == ["12:30", "signale", 1])
+mauvais = [info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "appelez 98765432", J[0]), info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "09:00", J[0]),
+           info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "13:07", J[0]), info("LIEU-PRIERE-INFO", "osm-n1", "coran-jour", "www.pub.tn", J[0]),
+           info("LIEU-PRIERE-INFO", "osm-n1", "coran-mois", "sam-troisieme", J[0]), info("LIEU-PRIERE-INFO", "osm-n1", "autre", "x", J[0]),
+           info("LIEU-PRIERE-INFO", "osm-n999", "joumoua", "13h00", J[0]), info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "13h00", "")]
+inf, rej = P.calculer_infos(mauvais, IDS)
+check("garde-fous : texte libre, téléphone, heure hors 11h-16h ou pas multiple de 5 min, clé inconnue, lieu inconnu, sans jeton -> tout refusé", not inf and len(rej) == len(mauvais))
+inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO", "osm-n1", "coran-jour", "asr", J[0]), info("LIEU-PRIERE-INFO", "osm-n1", "coran-mois", "ven-premier", J[0])], IDS)
+check("Coran : « chaque jour après l'Asr » et « le premier vendredi du mois » acceptés", inf["osm-n1"].get("coran-jour", [""])[0] == "asr" and inf["osm-n1"].get("coran-mois", [""])[0] == "ven-premier")
+src = P.sources()
+inf, rej = P.calculer_infos([], IDS, src)
+check("source de départ : Sidi Mahrez = khatma le dernier samedi du mois, statut « source » avec le lien Facebook (aucune heure inventée)",
+      inf.get("osm-w95130047", {}).get("coran-mois", [None])[:2] == ["sam-dernier", "source"] and "facebook.com" in inf["osm-w95130047"]["coran-mois"][3]
+      and not any(s.get("cle") == "joumoua" for s in src))
+inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO-OK", "osm-w95130047", "coran-mois", "sam-dernier", J[0])], IDS, src)
+check("source + 1 visiteur qui confirme -> « confirmé »", inf["osm-w95130047"]["coran-mois"][1] == "confirme")
+check("le robot des lieux ignore les lignes LIEU-PRIERE-INFO (pas de faux lieu)", P.calculer([info("LIEU-PRIERE-INFO", "osm-n1", "joumoua", "13h00", J[0])], OSM)[0] == [])
+
 # 9. les données publiées : minimums (jamais des nombres exacts : le robot peut en ajouter)
 d = json.loads((P.ROOT / "donnees" / "mosquees.json").read_text(encoding="utf-8"))
 L = d["lieux"]

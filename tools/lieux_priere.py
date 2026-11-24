@@ -129,6 +129,89 @@ def calculer(reponses, connus):
     return sorted(points, key=lambda p: p["id"]), votes, sorted(retires), rejets
 
 
+# ---------- Prière du vendredi et lectures du Coran (24/11/2026, demande d'Ahmed) ----------
+# Même Google Forms, format commençant par « LIEU-PRIERE » (le robot du site Prix des Eaux ignore tout ce qui commence ainsi) :
+#   - information : format = LIEU-PRIERE-INFO,    marque = « id du lieu|clé|valeur », lieu = « |jeton »
+#   - c'est vrai  : format = LIEU-PRIERE-INFO-OK, même marque ;  n'est plus vrai : LIEU-PRIERE-INFO-KO
+# Valeurs choisies dans une LISTE (aucun texte libre) ; une voix par navigateur, par lieu et par clé (la dernière compte).
+# Statut : « confirmé » (2 voix ou plus), « signalé » (1) ; une valeur est écartée si au moins 2 personnes disent
+# « n'est plus vrai » et qu'elles sont plus nombreuses que les confirmations. Une source publique (donnees/infos_sources.json)
+# compte comme une confirmation de départ, avec son lien.
+FORMATS_INFO = ("LIEU-PRIERE-INFO", "LIEU-PRIERE-INFO-OK", "LIEU-PRIERE-INFO-KO")
+SOURCES = ROOT / "donnees" / "infos_sources.json"
+JOURS = ("lun", "mar", "mer", "jeu", "ven", "sam", "dim")
+PRIERES = ("fajr", "dhohr", "asr", "maghreb", "icha")
+MAX_INFOS_PAR_JETON = 30
+
+
+def valeur_valide(cle, v):
+    v = (v or "").strip().lower()
+    if cle == "joumoua":
+        if v in ("13h00", "asr", "non"):
+            return v
+        m = re.fullmatch(r"(\d{1,2})[:h](\d{2})", v)
+        if m and 11 <= int(m.group(1)) <= 16 and int(m.group(2)) < 60 and int(m.group(2)) % 5 == 0:
+            return f"{int(m.group(1)):02d}:{m.group(2)}"
+        return None
+    if cle == "coran-jour":
+        return v if v in PRIERES + ("non",) else None
+    if cle == "coran-mois":
+        return v if v == "non" or re.fullmatch(r"(%s)(-premier|-dernier)?" % "|".join(JOURS), v) else None
+    return None
+
+
+def calculer_infos(reponses, ids_connus, sources=()):
+    """Renvoie ({id du lieu: {clé: [valeur, statut, nombre de confirmations, lien de la source ou ""]}}, rejets)."""
+    voix, rejets, par_jeton = {}, [], {}            # (lieu, clé) -> {jeton: (valeur, +1 / -1)}
+    for s in sources:
+        v = valeur_valide(s.get("cle"), s.get("valeur"))
+        if v and s.get("lieu") in ids_connus:
+            voix.setdefault((s["lieu"], s["cle"]), {})["source:" + s["lieu"]] = (v, 1, s.get("source", ""))
+    for r in reponses:
+        f = (r.get("format") or "").strip().upper()
+        if f not in FORMATS_INFO:
+            continue
+        lid, _, reste = (r.get("marque") or "").strip().partition("|")
+        cle, _, val = reste.partition("|")
+        j = (r.get("lieu") or "").partition("|")[2].strip()
+        if not re.fullmatch(r"lp:[a-z0-9]{6,40}", j):
+            rejets.append("jeton absent"); continue
+        if lid not in ids_connus:
+            rejets.append("lieu inconnu"); continue
+        v = valeur_valide(cle, val)
+        if not v:
+            rejets.append(f"valeur refusée « {cle}|{val[:20]} »"); continue
+        if f == "LIEU-PRIERE-INFO":
+            if (lid, cle) not in {k for k, d in voix.items() if j in d}:
+                if par_jeton.get(j, 0) >= MAX_INFOS_PAR_JETON:
+                    rejets.append("trop d'informations pour ce navigateur"); continue
+                par_jeton[j] = par_jeton.get(j, 0) + 1
+            voix.setdefault((lid, cle), {})[j] = (v, 1, "")
+        else:
+            voix.setdefault((lid, cle), {})[j] = (v, 1 if f.endswith("-OK") else -1, "")
+    infos = {}
+    for (lid, cle), d in voix.items():
+        par_valeur = {}
+        for v, s, src in d.values():
+            pv = par_valeur.setdefault(v, {"ok": 0, "ko": 0, "src": ""})
+            pv["ok" if s > 0 else "ko"] += 1
+            pv["src"] = pv["src"] or src
+        garde = {v: x for v, x in par_valeur.items() if x["ok"] and not (x["ko"] >= 2 and x["ko"] > x["ok"])}
+        if not garde:
+            continue
+        v = max(garde, key=lambda k: (garde[k]["ok"] - garde[k]["ko"], garde[k]["ok"]))
+        x = garde[v]
+        infos.setdefault(lid, {})[cle] = [v, "confirme" if x["ok"] >= 2 else ("source" if x["src"] else "signale"), x["ok"], x["src"]]
+    return infos, rejets
+
+
+def sources():
+    try:
+        return json.loads(SOURCES.read_text(encoding="utf-8")).get("infos", [])
+    except (FileNotFoundError, ValueError):
+        return []
+
+
 def connus():
     if not BASE.exists():
         return []
@@ -158,14 +241,18 @@ def doit_ecrire(texte, aujourdhui=None):
 
 
 def ecrire(reponses, maintenant=None):
-    points, votes, retires, rejets = calculer(reponses, connus())
+    base = connus()
+    points, votes, retires, rejets = calculer(reponses, base)
+    infos, rejets_i = calculer_infos(reponses, {c["id"] for c in base} | {p["id"] for p in points}, sources())
+    infos = {k: v for k, v in infos.items() if k not in retires}
     texte = ("// GÉNÉRÉ par tools/lieux_priere.py (via signalements_lieux.py, toutes les 2 h) — lieux signalés par les visiteurs\n"
                       "window.MOSQUEES_SIGNALES = " + json.dumps({"maj": maintenant or datetime.now().isoformat(timespec="minutes"),
-                                                                  "points": points, "votes": votes, "retires": retires},
+                                                                  "points": points, "votes": votes, "retires": retires, "infos": infos},
                                                                  ensure_ascii=False, separators=(",", ":")) + ";\n")
     if doit_ecrire(texte):
         SORTIE.write_text(texte, encoding="utf-8", newline="\n")
     else:
         print("Aucun changement : fichier non réécrit (pas de commit).")
     print(f"Lieux de prière signalés : {len(points)} publiés, {len(votes)} lieux connus avec des votes, {len(retires)} retirés, {len(rejets)} rejet(s)")
+    print(f"Prière du vendredi / Coran : {sum(len(v) for v in infos.values())} information(s) sur {len(infos)} lieu(x), {len(rejets_i)} rejet(s)")
     return points, votes, retires

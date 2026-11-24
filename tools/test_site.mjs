@@ -183,9 +183,9 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
       || (/© MWNF/.test(f.textContent) && f.querySelector('a[href^="https://islamicart.museumwnf.org/"]')))   // 24/11/2026 : photos MWNF (accord)
     && leg.filter(f => !f.hidden).length === 1 && vues.filter(a => a.classList.contains("actif")).length === 1);
   // 19/11/2026 (CV.3c) : la carte (données + script) arrive au 1er geste : plus aucun <script src="…donnees/lieux.js"> dans les accueils
-  check("accueil léger : données de la carte chargées au 1er geste (charge-carte.js, 4 fichiers dans l'ordre), vignettes légères dans la grille",
+  check("accueil léger : données de la carte chargées au 1er geste (charge-carte.js, 5 fichiers dans l'ordre), vignettes légères dans la grille",
     ["index.html", ...AUTRES.map(l => l + "/index.html")].every(f => { const h = lire(f); return !/<script src="[^"]*donnees\/lieux\.js/.test(h)
-      && /<script src="(\.\.\/)?assets\/charge-carte\.js\?v=[^"]+" data-scripts="\.\.\/donnees\/lieux\.js\|\.\.\/donnees\/signales\.js\|\.\.\/donnees\/monde_carte\.js\|mosquees\.js"><\/script>/.test(h); })
+      && /<script src="(\.\.\/)?assets\/charge-carte\.js\?v=[^"]+" data-scripts="\.\.\/donnees\/lieux\.js\|\.\.\/donnees\/signales\.js\|\.\.\/donnees\/monde_carte\.js\|infos\.js\|mosquees\.js"><\/script>/.test(h); })
     && /async = false/.test(lire("assets/charge-carte.js")) && /assets\/photos\/vignettes\/[a-z-]+-1\.webp/.test(lire("index.html")));
   // 19/11/2026 (CV.3b) : seule la 1re photo du bandeau a un src au départ ; les autres (data-src) arrivent juste avant leur tour
   { const html = lire("index.html"), diapo = (html.match(/<figure class="illus diapo"[\s\S]*?<\/figure>/) || [""])[0];
@@ -288,6 +288,44 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check("« En détail » (Discover Islamic Art, MWNF) : section sur les grandes mosquées, photos MWNF créditées, lien vers la fiche dans la langue (ar -> ;ar)",
     /id="details"/.test(s) && /id="details"/.test(lire("mosquee/kairouan/index.html")) && /© MWNF — Discover Islamic Art/.test(s)
     && /Mon01;7;ar"/.test(z) && /Mon01;7;en"/.test(lire("zh/mosquee/sahib-ettabaa/index.html")) && /Mon01;7;fr"/.test(s));
+}
+// ---- 24/11/2026 : prière du vendredi et lectures du Coran (assets/infos.js, données des visiteurs + source publique)
+{
+  const { w, d, js } = await page();
+  const I = w.MQ_INFOS, sm = "osm-w95130047";                 // mosquée Sidi Mahrez
+  const lieu = (w.MOSQUEES_LIEUX || []).find(l => l.i === sm);
+  const b = lieu ? w.MOSQUEES_BULLE(lieu) : "";
+  check("Coran : bulle de Sidi Mahrez = khatma du Coran le dernier samedi du mois, source citée (Facebook), « Prière du vendredi : heure inconnue — indiquez-la »",
+    !!I && /khatma du Coran : le dernier samedi du mois/.test(b) && /facebook\.com\/profile\.php\?id=100082340236282/.test(b) && /heure inconnue — indiquez-la/.test(b) && !js.length);
+  const chips = () => [...d.querySelectorAll("#mq-filtres [data-mode]")].map(x => x.dataset.mode + ":" + x.querySelector("b").textContent);
+  check("filtres : « Coran 1 » présent, « Vendredi » absent tant qu'aucune heure n'est connue (jamais un filtre à 0)", chips().join(",") === "coran:1");
+  w.MOSQUEES_SIGNALES.infos[lieu.i] = Object.assign(w.MOSQUEES_SIGNALES.infos[lieu.i] || {}, { joumoua: ["13h00", "signale", 1, ""] });
+  d.dispatchEvent(new w.Event("langue"));
+  d.querySelector('#mq-filtres [data-mode="vendredi"]') && d.querySelector('#mq-filtres [data-mode="vendredi"]').click();
+  check("filtre « Vendredi » : apparaît dès qu'une heure est connue, s'active au clic, légende des couleurs affichée ; couleur 13:00 ≠ avant l'Asr ≠ autre",
+    chips().includes("vendredi:1") && d.querySelector('#mq-filtres [data-mode="vendredi"]').getAttribute("aria-pressed") === "true"
+    && !d.getElementById("mq-legende-vendredi").hidden && I.vendredi(sm) === "13h00" && new Set(Object.values(I.COULEURS)).size === 3);
+  const box = d.createElement("div"); box.innerHTML = I.html(sm); d.body.appendChild(box);
+  box.querySelector("[data-info-ouvrir]").click();
+  const f = box.querySelector("form[data-info-form]");
+  const ch = n => f.querySelector(`[name="${n}"]`);
+  ch("joumoua").value = "autre"; ch("joumoua").dispatchEvent(new w.Event("change", { bubbles: true }));
+  const heureVisible = !ch("heure").hidden; ch("heure").value = "12:30";
+  ch("coran-jour").value = "asr"; ch("coran-mois").value = "ven"; ch("rang").value = "premier";
+  w.__envois.length = 0; f.dispatchEvent(new w.Event("submit", { bubbles: true, cancelable: true }));
+  await new Promise(r => setTimeout(r, 20));
+  const env = w.__envois.map(e => e["entry.1939823394"] + " " + e["entry.897098257"] + " " + e["entry.506707149"]);
+  check("formulaire « Indiquer ou corriger » : envoie LIEU-PRIERE-INFO (12:30, Coran après l'Asr, premier vendredi du mois) avec le jeton anonyme, rien d'autre",
+    heureVisible && env.length === 3 && env.every(x => /^LIEU-PRIERE-INFO osm-w95130047\|/.test(x) && /\|lp:[a-z0-9]{6,40}$/.test(x))
+    && env.some(x => x.includes("|joumoua|12:30 ")) && env.some(x => x.includes("|coran-jour|asr ")) && env.some(x => x.includes("|coran-mois|ven-premier ")));
+  w.__envois.length = 0; box.innerHTML = I.html(sm); box.querySelector("[data-iko]").click();
+  await new Promise(r => setTimeout(r, 20));
+  check("vote « N'est plus vrai » : envoie LIEU-PRIERE-INFO-KO sur la valeur affichée", w.__envois.length === 1 && w.__envois[0]["entry.1939823394"] === "LIEU-PRIERE-INFO-KO");
+  const fi = await page("mosquee/sidi-mahrez/index.html");
+  const ar = await page("ar/mosquee/sidi-mahrez/index.html");
+  check("fiche de Sidi Mahrez : partie « Prière du vendredi et lecture du Coran » remplie (khatma, source), aussi en arabe ; fiche d'une autre mosquée : partie présente",
+    /khatma du Coran : le dernier samedi du mois/.test(fi.d.getElementById("mq-infos").textContent) && /ختم القرآن/.test(ar.d.getElementById("mq-infos").textContent)
+    && !fi.js.length && /id="vendredi-coran"/.test(lire(fiches[0])) && /data-lieu="osm-/.test(lire(fiches[0])));
 }
 // ---- 6. autres pages de mosquées (fiche Wikidata) : jamais vides, résumé Wikipédia cité, langue de repli annoncée
 {
@@ -657,6 +695,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     ["Autour de moi", /id="mq-autour"/.test(acc), /« Autour de moi »/],
     ["le monde entier sur la carte", /data-monde-vue/.test(acc), /Le monde entier : cherchez une ville/],
     ["signaler un lieu", /id="mq-sig-ouvrir"/.test(acc), /Signaler un lieu : ajoutez une mosquée/],
+    ["prière du vendredi et lecture du Coran (visiteurs, filtres Vendredi / Coran)", ex("assets/infos.js"), /Prière du vendredi et lecture du Coran :[^<]*« Vendredi »/],
     ["« C'est vrai » / « N'existe plus »", /data-ok=/.test(mq) && /data-ko=/.test(mq), /« N'existe plus »/],
     ["grandes mosquées de Tunisie", ex("grandes-mosquees/index.html"), /Grandes mosquées : histoire, architecture/],
     ["« En détail » et photos du musée (Discover Islamic Art, MWNF)", ex("assets/photos/mwnf/kairouan-plan-1.jpg"), /« En détail » et photos du musée[^<]*Museum With No Frontiers/],

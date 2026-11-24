@@ -1,0 +1,9 @@
+{
+ "_lisezmoi": "Informations de départ (prière du vendredi, lectures du Coran) trouvées dans des sources publiques, vérifiées à la date indiquée. Les visiteurs les confirment ou les corrigent (format LIEU-PRIERE-INFO du même Google Forms). Clés : joumoua (13h00 | asr | HH:MM | non), coran-jour (fajr | dhohr | asr | maghreb | icha | non), coran-mois (lun..dim, -premier ou -dernier possibles | non). Aucune heure inventée.",
+ "infos": [
+  {"lieu": "osm-w95130047", "nom": "Mosquée Sidi Mahrez (Tunis)", "cle": "coran-mois", "valeur": "sam-dernier",
+   "detail": "Khatma mensuelle du Coran, 10e saison : séances le samedi 31/10/2026 et le samedi 28/11/2026 (un samedi par mois, le dernier d'après les annonces). Heure non indiquée.",
+   "source": "https://www.facebook.com/profile.php?id=100082340236282", "source_nom": "Page Facebook « الختم الشهري للقرآن الكريم »",
+   "verifie": "2026-11-24"}
+ ]
+}

@@ -93,16 +93,29 @@
   // ---- filtres (jamais un filtre à 0, règle commune)
   const actifs = new Set(["m", "s"]);
   let seulementPages = false, requete = "", ici = null, carte = null, calque = null;
+  // 24/11/2026 (Ahmed) : « Vendredi » = seulement les mosquées dont l'heure de la prière du vendredi est connue (couleur = heure) ;
+  // « Coran » = celles où une lecture du Coran est connue. Données : assets/infos.js (window.MQ_INFOS).
+  let mode = "";
+  const INF = () => window.MQ_INFOS || { vendredi: () => null, coran: () => false, html: () => "", COULEURS: {} };
   const marqueurs = {};
   function visibles() {
     const trouves = requete ? chercher(requete) || [] : LIEUX.concat(MONDE);
-    return trouves.filter(l => actifs.has(l.t) && (!seulementPages || l.p));
+    return trouves.filter(l => actifs.has(l.t) && (!seulementPages || l.p) && (mode !== "vendredi" || INF().vendredi(l.i)) && (mode !== "coran" || INF().coran(l.i)));
   }
   function filtres() {
     const n = t => LIEUX.filter(l => l.t === t).length, np = LIEUX.filter(l => l.p).length;
+    const nv = LIEUX.filter(l => INF().vendredi(l.i)).length, nc = LIEUX.filter(l => INF().coran(l.i)).length;
+    if ((mode === "vendredi" && !nv) || (mode === "coran" && !nc)) mode = "";
     $("mq-filtres").innerHTML = Object.entries(TYPES).filter(([k]) => n(k) > 0).map(([k, t]) =>
       `<button type="button" class="chipbtn" data-type="${k}" aria-pressed="${actifs.has(k)}"><i style="background:${t.c}"></i>${nomT(k)} <b>${n(k)}</b></button>`).join("")
-      + (np ? `<button type="button" class="chipbtn" data-pages aria-pressed="${seulementPages}"><i class="or"></i>${L2("Avec page d'histoire", "لها صفحة تاريخ", "With a history page")} <b>${np}</b></button>` : "");
+      + (np ? `<button type="button" class="chipbtn" data-pages aria-pressed="${seulementPages}"><i class="or"></i>${L2("Avec page d'histoire", "لها صفحة تاريخ", "With a history page")} <b>${np}</b></button>` : "")
+      // jamais un filtre à 0 (règle commune) : chaque bouton n'apparaît qu'avec au moins une mosquée
+      + (nv ? `<button type="button" class="chipbtn" data-mode="vendredi" aria-pressed="${mode === "vendredi"}"><i style="background:${INF().COULEURS["13h00"]}"></i>${L2("Vendredi", "الجمعة", "Friday")} <b>${nv}</b></button>` : "")
+      + (nc ? `<button type="button" class="chipbtn" data-mode="coran" aria-pressed="${mode === "coran"}"><i style="background:${INF().COULEURS.autre}"></i>${L2("Coran", "القرآن", "Quran")} <b>${nc}</b></button>` : "");
+    const lg = $("mq-legende-vendredi");
+    if (lg) { lg.hidden = mode !== "vendredi"; lg.innerHTML = `${L2("Prière du vendredi : couleur = heure.", "صلاة الجمعة: اللون = الوقت.", "Friday prayer: colour = time.")} `
+      + [["13h00", "13:00"], ["asr", INF().libelle ? INF().libelle("joumoua", "asr") : "Asr"], ["autre", L2("Autre heure", "وقت آخر", "Other time")]]
+        .map(([k, t]) => `<span class="mq-pays-chip"><i style="background:${INF().COULEURS[k]}"></i>${esc(t)}</span>`).join(" "); }
     const n0 = LIEUX.length.toLocaleString("fr-FR").replace(/ | /g, " ");
     $("mq-total").textContent = typeof iso === "function" ? iso(n0) : n0;      // nombre isolé dans un texte arabe
   }
@@ -122,6 +135,7 @@
       ${l.vis ? `<br><small>${L2(...(STATUT[l.statut] || STATUT.signale))}</small>` : ""}
       ${l.p ? `<br><a class="mq-bulle-page" href="${racine}${esc(l.p)}">${L2("Histoire, photos et documents", "التاريخ والصور والوثائق", "History, photos and documents")} →</a>` : ""}
       <br><a href="${itineraire(l)}" target="_blank" rel="noopener">${L2("Itinéraire (Google Maps)", "الطريق (خرائط Google)", "Directions (Google Maps)")}</a>${osm ? ` · <a href="${osm}" target="_blank" rel="noopener">OpenStreetMap</a>` : ""}
+      ${INF().html(l.i)}
       <div class="mq-voix"><button type="button" data-ok="${esc(l.i)}">✓ ${L2("C'est vrai", "صحيح", "It's true")}</button><button type="button" data-ko="${esc(l.i)}">✗ ${L2("N'existe plus", "لم يعد موجودًا", "No longer exists")}</button></div></div>`;
   }
   window.MOSQUEES_BULLE = bulle;
@@ -141,14 +155,15 @@
     calque.clearLayers();
     const v = visibles();
     v.forEach(l => {
-      if (estGrande(l)) { marqueurs[l.i] = etoile(l).bindPopup(() => bulle(l)).addTo(calque); return; }
+      if (estGrande(l) && !(mode === "vendredi" && !l.g)) { marqueurs[l.i] = etoile(l).bindPopup(() => bulle(l)).addTo(calque); return; }
       if (l.monde) {                        // ailleurs dans le monde : la couleur du pays
         marqueurs[l.i] = L.circleMarker([l.a, l.o], { radius: l.t === "s" ? 4 : 5, color: "#fff", weight: 1.2, fillColor: l.c, fillOpacity: .92 })
           .bindPopup(() => bulle(l)).addTo(calque);
         return;
       }
-      marqueurs[l.i] = L.circleMarker([l.a, l.o], { radius: l.p ? 7 : (l.vis ? 6 : 5), color: l.p ? "#F2B33D" : "#fff", weight: l.p ? 3 : 1.5,
-        fillColor: l.vis ? "#D9822B" : TYPES[l.t].c, fillOpacity: l.statut === "signale" ? .6 : .92 }).bindPopup(() => bulle(l)).addTo(calque);
+      const vf = mode === "vendredi" ? INF().vendredi(l.i) : null;          // mode « Vendredi » : la couleur dit l'heure
+      marqueurs[l.i] = L.circleMarker([l.a, l.o], { radius: vf ? 8 : l.p ? 7 : (l.vis ? 6 : 5), color: l.p ? "#F2B33D" : "#fff", weight: l.p ? 3 : 1.5,
+        fillColor: vf ? INF().COULEURS[vf] : l.vis ? "#D9822B" : TYPES[l.t].c, fillOpacity: l.statut === "signale" ? .6 : .92 }).bindPopup(() => bulle(l)).addTo(calque);
     });
     if (ajuster && v.length && v.length < LIEUX.length) {
       const b = L.latLngBounds(v.map(l => [l.a, l.o]));
@@ -431,6 +446,8 @@
   document.addEventListener("click", e => {
     const f = e.target.closest("#mq-filtres [data-type]");
     if (f) { const t = f.dataset.type; if (actifs.has(t) && actifs.size === 1) return; actifs.has(t) ? actifs.delete(t) : actifs.add(t); filtres(); dessiner(); if (requete) rechercher(); else proches(); return; }
+    const md = e.target.closest("#mq-filtres [data-mode]");
+    if (md) { mode = mode === md.dataset.mode ? "" : md.dataset.mode; filtres(); chargerLeaflet(() => dessiner(!!mode)); if (requete) rechercher(); else proches(); return; }
     if (e.target.closest("#mq-filtres [data-pages]")) { seulementPages = !seulementPages; filtres(); dessiner(); if (requete) rechercher(); else proches(); return; }
     const v = e.target.closest("[data-ok],[data-ko]");
     if (v) {

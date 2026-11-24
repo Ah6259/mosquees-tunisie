@@ -154,3 +154,15 @@
 - Accueil (index.html, recopié dans les 21 langues par pages_langues.py) : JSON-LD WebSite (nom, autres noms, 21 langues) + éditeur
   `Organization` Clicvia (@id https://clicvia.com/#organisation, page Facebook) ; description « … trouvez la plus proche ».
 - robots.txt et llms.txt déjà bons : inchangés. Pas de nouvelle phrase dans « Comment fonctionne le site ? » (21 langues : l'éditeur est dans le JSON-LD).
+
+## 24/11/2026 — Discover Islamic Art (MWNF) + Sahib et-Tabaa (16e grande mosquée) ; prière du vendredi et lectures du Coran (demandes d'Ahmed)
+- MWNF (accord d'Ahmed avec le musée, preuve : `../preuves conditions d'utilisation/2026-11-24/`) : section « En détail » (`tools/contenu_details.py`),
+  photos/plans `assets/photos/mwnf/` (`"mwnf": true` dans donnees/photos_grandes.json, crédit « © MWNF — Discover Islamic Art »), lien de la fiche
+  dans la langue du visiteur (`data-mwnf`, pages_langues.py). Sahib et-Tabaa : `tools/contenu_grandes_4.py` ; ancienne adresse
+  `mosquee/mosquee-saheb-ettabaa-q3324882/` = page de redirection noindex (`REDIRECTIONS` de construire.py).
+- **Prière du vendredi / Coran** : `assets/infos.js` (bulle de la carte + partie `#vendredi-coran` des fiches, formulaire « Indiquer ou corriger »,
+  votes) ; même Google Forms, format `LIEU-PRIERE-INFO` (-OK / -KO), marque « id|clé|valeur » (clés joumoua, coran-jour, coran-mois ; valeurs d'une
+  LISTE, heure 11:00-16:30 par 5 min), calcul `calculer_infos()` de tools/lieux_priere.py -> `infos` de donnees/signales.js. Le format commence par
+  « LIEU-PRIERE » : le robot de Prix des Eaux l'ignore (`autre_usage`). Sources publiques de départ : `donnees/infos_sources.json` (Sidi Mahrez :
+  khatma le dernier samedi du mois, page Facebook, essai Apify du 24/11). Filtres « Vendredi » (couleur = heure) et « Coran » : affichés seulement
+  s'il y a au moins une mosquée (jamais un filtre à 0). VERSION 20261124b.

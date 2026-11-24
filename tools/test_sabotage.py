@@ -24,6 +24,8 @@ SABOTAGES = [
     ("assets/mosquees.js", "if (valide === true && !v.length) chercherVille", "if (!v.length) chercherVille", "Nominatim appelé à chaque frappe", SITE),
     ("tools/lieux_priere.py", "if ko >= seuil and ko > ok:", "if False:", "le robot ne retire plus un lieu « n'existe plus »", ROBOT),
     ("tools/lieux_priere.py", 'TUNISIE = (30.1, 37.6, 7.4, 11.7)', 'TUNISIE = (-90, 90, -180, 180)', "le robot accepte un lieu hors de Tunisie", ROBOT),
+    ("tools/lieux_priere.py", "if m and 11 <= int(m.group(1)) <= 16 and", "if m and", "le robot accepte n'importe quelle heure du vendredi (09:00, 13:07)", ROBOT),
+    ("assets/infos.js", 'corps.append(CH.lieu, "|" + jeton);', 'corps.append(CH.lieu, "|");', "prière du vendredi / Coran envoyés sans le jeton anonyme", SITE),
 ]
 IGNORER = shutil.ignore_patterns(".git", "_icone", "__pycache__", "node_modules")
 

@@ -25,7 +25,7 @@ from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 1
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
 PIXEL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"   # 1 pixel transparent (diaporama, 19/11/2026)
-VERSION = "20261124a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261124b"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 
 
 def titre_seo(t, maxi=70):
@@ -328,6 +328,18 @@ def liens_wiki(wiki):
     return "".join(out)
 
 
+LIEU_DE_QID = {}   # QID Wikidata -> id du lieu sur la carte (rempli par main) : bloc « Prière du vendredi et lecture du Coran »
+
+
+def section_infos(lid):
+    """24/11/2026 (Ahmed) : prière du vendredi et lectures du Coran, données des visiteurs (assets/infos.js remplit #mq-infos)."""
+    if not lid:
+        return ""
+    return (f'<section class="carte" id="vendredi-coran"><h2>{U("Prière du vendredi et lecture du Coran", "صلاة الجمعة وقراءة القرآن", "Friday prayer and Quran recitation")}</h2>'
+            f'<div id="mq-infos" data-lieu="{att(lid)}"></div>'
+            f'<p class="aide">{U("Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.", "معلومات يقدّمها الزوار ويؤكّدونها، أو مأخوذة من مصدر عمومي مذكور. لا يُخترع أي توقيت.", "Information given and confirmed by visitors, or taken from a cited public source. No time is ever made up.")}</p></section>')
+
+
 def page_grande(g, photos, wiki_par_qid, r="../../"):
     slug, page = g["slug"], "g-" + g["slug"]
     nom = g["nom"]
@@ -371,6 +383,7 @@ def page_grande(g, photos, wiki_par_qid, r="../../"):
   {"".join(blocs)}
   <section class="carte" id="dates"><h2>{U("Dates clés", "تواريخ مهمّة", "Key dates")}</h2><ol class="mq-dates">{dates}</ol></section>
   {section_histoires(slug, page)}
+  {section_infos(LIEU_DE_QID.get(g["qid"]))}
   <section class="carte" id="visiter"><h2>{U("Visiter", "الزيارة", "Visiting")}</h2>
     <p>{U("C'est d'abord un lieu de prière : venez en tenue correcte, retirez vos chaussures pour entrer dans la salle de prière et évitez les heures de prière. Dans plusieurs grandes mosquées, les visiteurs non musulmans peuvent entrer dans la cour, pas dans la salle de prière. Les horaires changent : renseignez-vous sur place.", "هو أولًا مكان للصلاة: البس لباسًا محتشمًا، واخلع حذاءك لدخول بيت الصلاة، وتجنّب أوقات الصلاة. وفي عدد من الجوامع الكبرى يمكن للزوار غير المسلمين دخول الصحن دون بيت الصلاة. تتغيّر المواعيد: استعلم في عين المكان.", "It is first of all a place of prayer: dress modestly, take off your shoes to enter the prayer hall and avoid prayer times. In several great mosques, non-Muslim visitors may enter the courtyard but not the prayer hall. Opening times change: ask on site.")}</p>
   </section>
@@ -393,7 +406,7 @@ def page_grande(g, photos, wiki_par_qid, r="../../"):
     CLE_TRAD[f"mosquee/{slug}/"] = page
     META[f"mosquee/{slug}/"] = {x: (f"{nom[x]} ({ville[x]}){PL.SUITE_GRANDE[x]} | {PL.SITE[x]}", re.sub(r"\s+", " ", g["intro"][x])[:200]) for x in LANGUES}
     ecrire(f"mosquee/{slug}/index.html", document(f"mosquee/{slug}/index.html", titre, desc, corps, tete=[f"trad/{page}.js"],
-                                                   bas=["assets/fiche.js"], image=image, jsonld=jsonld))
+                                                   bas=["assets/fiche.js"] + (["donnees/signales.js", "assets/infos.js"] if LIEU_DE_QID.get(g["qid"]) else []), image=image, jsonld=jsonld))
 
 
 # ---------- pages des autres mosquées (fiche Wikidata) ----------
@@ -457,6 +470,7 @@ def page_fiche(l, chemin, r="../../"):
   {(f'<section class="carte" id="djerba"><h2>{X("descriptions", "djerba_titre", page)}</h2><p>{X("descriptions", "djerba_intro", page)}</p>'
      f'<p class="hi-source">{X("histoires", "source", page)} ' + " · ".join(f'<a href="{att(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in PN.DJERBA_SOURCES) + '</p></section>') if djerba else ""}
   <section class="carte" id="noms"><h2>{U("Son nom dans les langues", "اسمه في اللغات", "Its name in other languages")}</h2><ul class="mq-noms-liste">{liste_noms}</ul></section>
+  {section_infos(l["id"])}
   <section class="carte" id="carte-lieu"><h2>{U("Sur la carte", "على الخريطة", "On the map")}</h2>
     <div class="mq-mini" id="mq-mini" data-lat="{l["lat"]}" data-lon="{l["lon"]}" role="region" aria-label="{att(nom)}"></div>
     {f'<p class="aide">{esc(ville_fr)}{(" — " + esc(region)) if region and region != ville_fr else ""}</p>' if ville_fr else ""}
@@ -488,7 +502,7 @@ def page_fiche(l, chemin, r="../../"):
     if notre or djerba:
         CLE_TRAD[chemin] = page
     ecrire(chemin + "index.html", document(chemin + "index.html", titre, desc, corps, tete=[f"trad/{page}.js"] if (notre or djerba) else (),
-                                           bas=["assets/fiche.js"], jsonld=jsonld))
+                                           bas=["assets/fiche.js", "donnees/signales.js", "assets/infos.js"], jsonld=jsonld))
 
 
 # ---------- liste de toutes les pages ----------
@@ -984,6 +998,10 @@ def main():
     for l in d["lieux"]:
         if l.get("fiche"):
             wiki_par_qid.setdefault(l["fiche"]["qid"], l["fiche"].get("wiki", {}))
+    for l in d["lieux"]:
+        q = (l.get("fiche") or {}).get("qid") or l.get("wikidata")
+        if q and q not in LIEU_DE_QID:
+            LIEU_DE_QID[q] = l["id"]
     for g in GRANDES:
         page_grande(g, photos, wiki_par_qid)
     grandes_chemins = {"mosquee/" + g["slug"] + "/" for g in GRANDES}
