@@ -137,7 +137,7 @@ def a_djerba(lat, lon):
 
 # Année de construction des 15 grandes mosquées de Tunisie (tri « la plus ancienne / la plus récente », 23/10/2026) : la date de
 # fondation donnée sur leur page (siècle seul : milieu du siècle).
-ANNEES_GRANDES = {"zitouna": 698, "kairouan": 670, "sousse": 851, "mahdia": 916, "sfax": 849, "trois-portes": 866, "youssef-dey": 1612,
+ANNEES_GRANDES = {"sahib-ettabaa": 1808, "zitouna": 698, "kairouan": 670, "sousse": 851, "mahdia": 916, "sfax": 849, "trois-portes": 866, "youssef-dey": 1612,
                   "hammouda-pacha": 1655, "sidi-mahrez": 1692, "sidi-sahbi": 1629, "testour": 1630, "malik-ibn-anas": 2003,
                   "fadhloun": 1350, "kasbah": 1231, "monastir": 850}
 # Grandes mosquées du monde : seulement les vraies mosquées (P31 mosquée) + ces trois lieux saints qui n'ont pas ce P31

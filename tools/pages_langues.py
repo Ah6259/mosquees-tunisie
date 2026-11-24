@@ -288,6 +288,11 @@ def variante(page_fr, base, chemin, l, langues, trad, meta=None, indexer=True):
                 e.poser(nom, "../" * (prof + 1) + cible + m.group(2))
             elif cible.startswith("video/"):
                 e.poser(nom, "../" * (prof + 1) + cible + "?lang=" + l + re.sub(r"^\?[^#]*", "", m.group(2)))
+    # 24/11/2026 : fiche Discover Islamic Art (Museum With No Frontiers) ouverte dans la langue du visiteur quand elle existe (fr, ar, en, es)
+    for e in racine.tous():
+        if e.get("data-mwnf") is not None and e.get("href"):
+            lm = l if l in ("fr", "ar", "en", "es") else "en"
+            e.poser("href", re.sub(r";(fr|ar|en|es)$", ";" + lm, e.get("href"))); e.poser("lang", lm)
     # dictionnaires : une page de langue ne charge que le sien (assets/l/<langue>.js) ; l'arabe et l'anglais sont écrits dans la
     # page (aucun dictionnaire) ; les traductions de la page elle-même (assets/trad/…) sont déjà écrites dans le texte.
     for parent in [racine] + list(racine.tous()):

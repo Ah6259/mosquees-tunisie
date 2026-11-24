@@ -26,6 +26,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "Wildtunis",
    "commons": "باب الإمام بجامع الزيتونة.jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/zitouna-photo-2.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;1;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/zitouna-photo-3.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;1;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/zitouna-photo-4.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;1;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/zitouna-photo-5.jpg",
+   "w": 844,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;1;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/zitouna-plan-1.jpg",
+   "w": 806,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;1;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "kairouan": [
@@ -55,6 +101,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "Z thomas",
    "commons": "Große Moschee Kairouan 20260719 14.jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/kairouan-photo-1.jpg",
+   "w": 1000,
+   "h": 835,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;2;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/kairouan-photo-2.jpg",
+   "w": 1000,
+   "h": 821,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;2;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/kairouan-photo-3.jpg",
+   "w": 1000,
+   "h": 716,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;2;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/kairouan-photo-4.jpg",
+   "w": 1000,
+   "h": 738,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;2;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/kairouan-plan-1.jpg",
+   "w": 696,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;2;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "sousse": [
@@ -84,6 +176,52 @@
    "licence": "CC BY-SA 3.0",
    "auteur": "Habib M'henni",
    "commons": "Grande Mosquée de Sousse, 30 septembre 2013, (42).jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/sousse-photo-2.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;5;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sousse-photo-3.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;5;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sousse-photo-4.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;5;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sousse-photo-5.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;5;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sousse-plan-1.jpg",
+   "w": 904,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;5;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "mahdia": [
@@ -113,6 +251,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "Wildtunis",
    "commons": "Grande Mosquée Mahdia.jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/mahdia-photo-1.jpg",
+   "w": 1000,
+   "h": 738,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;21;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/mahdia-photo-3.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;21;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/mahdia-photo-4.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;21;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/mahdia-photo-5.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;21;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/mahdia-plan-1.jpg",
+   "w": 756,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;21;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "sfax": [
@@ -142,6 +326,52 @@
    "licence": "CC BY-SA 2.0",
    "auteur": "Dennis G. Jarvis",
    "commons": "Inscription, Grande Mosquée de Sfax.jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/sfax-photo-2.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;18;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sfax-photo-3.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;18;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sfax-photo-4.jpg",
+   "w": 792,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;18;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sfax-photo-5.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;18;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sfax-plan-1.jpg",
+   "w": 714,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;18;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "trois-portes": [
@@ -171,6 +401,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "IssamBarhoumi",
    "commons": "Mosquée des Trois Portes 02.JPG"
+  },
+  {
+   "fichier": "assets/photos/mwnf/trois-portes-photo-2.jpg",
+   "w": 750,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;26;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/trois-portes-photo-3.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;26;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/trois-portes-photo-4.jpg",
+   "w": 1000,
+   "h": 809,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;26;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/trois-portes-photo-5.jpg",
+   "w": 750,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;26;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/trois-portes-plan-1.jpg",
+   "w": 816,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;26;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "youssef-dey": [
@@ -200,6 +476,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "Noomen9",
    "commons": "Mosquée Sidi Youssef 46.jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/youssef-dey-photo-2.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;33;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/youssef-dey-photo-3.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;33;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/youssef-dey-photo-4.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;33;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/youssef-dey-photo-5.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;33;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/youssef-dey-plan-1.jpg",
+   "w": 912,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;33;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "hammouda-pacha": [
@@ -229,6 +551,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "Noomen9",
    "commons": "Les arabesques de la mosquée hamouda pacha.JPG"
+  },
+  {
+   "fichier": "assets/photos/mwnf/hammouda-pacha-photo-2.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;8;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/hammouda-pacha-photo-3.jpg",
+   "w": 667,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;8;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/hammouda-pacha-photo-4.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;8;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/hammouda-pacha-photo-5.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;8;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/hammouda-pacha-plan-1.jpg",
+   "w": 683,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;8;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "sidi-mahrez": [
@@ -258,6 +626,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "Noomen9",
    "commons": "La porte d'entrée de la mosquée.jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-mahrez-photo-2.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;4;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-mahrez-photo-3.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;4;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-mahrez-photo-4.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;4;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-mahrez-photo-5.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;4;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-mahrez-plan-1.jpg",
+   "w": 1000,
+   "h": 691,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;4;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "sidi-sahbi": [
@@ -287,6 +701,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "Habib M'henni",
    "commons": "Kairouan, 4 février 2024, ZVE04355.jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-sahbi-photo-2.jpg",
+   "w": 750,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;10;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-sahbi-photo-3.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;10;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-sahbi-photo-4.jpg",
+   "w": 801,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;10;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-sahbi-photo-5.jpg",
+   "w": 1000,
+   "h": 750,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;10;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sidi-sahbi-plan-1.jpg",
+   "w": 865,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;10;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "testour": [
@@ -316,6 +776,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "IssamBarhoumi",
    "commons": "Grande Mosquée de Testour 08.JPG"
+  },
+  {
+   "fichier": "assets/photos/mwnf/testour-photo-2.jpg",
+   "w": 1000,
+   "h": 798,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;3;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/testour-photo-3.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;3;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/testour-photo-4.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;3;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/testour-photo-5.jpg",
+   "w": 725,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;3;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/testour-plan-1.jpg",
+   "w": 751,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;3;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "malik-ibn-anas": [
@@ -394,6 +900,52 @@
    "licence": "CC BY-SA 4.0",
    "auteur": "IssamBarhoumi",
    "commons": "Mosquée de la Kasbah avec son drapeau blanc.jpg"
+  },
+  {
+   "fichier": "assets/photos/mwnf/kasbah-photo-2.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;6;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/kasbah-photo-3.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;6;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/kasbah-photo-4.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;6;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/kasbah-photo-5.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;6;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/kasbah-plan-1.jpg",
+   "w": 1000,
+   "h": 707,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;6;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ],
  "fadhloun": [
@@ -405,6 +957,63 @@
    "licence": "CC0",
    "auteur": "M.Rais",
    "commons": "Tunisie Jemaâ Fadhloun 5.jpg"
+  }
+ ],
+ "sahib-ettabaa": [
+  {
+   "fichier": "assets/photos/mwnf/sahib-ettabaa-photo-2.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;7;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sahib-ettabaa-photo-3.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;7;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sahib-ettabaa-photo-4.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;7;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sahib-ettabaa-photo-5.jpg",
+   "w": 1000,
+   "h": 666,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;7;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sahib-ettabaa-photo-6.jpg",
+   "w": 666,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;7;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true
+  },
+  {
+   "fichier": "assets/photos/mwnf/sahib-ettabaa-plan-1.jpg",
+   "w": 836,
+   "h": 1000,
+   "source": "https://islamicart.museumwnf.org/database_item.php?id=monument;ISL;tn;Mon01;7;fr",
+   "licence": "© MWNF",
+   "auteur": "Museum With No Frontiers (MWNF)",
+   "mwnf": true,
+   "plan": true
   }
  ]
 }

@@ -27,6 +27,7 @@
 "Votre avis : une remarque ou une erreur ? Écrivez-nous, chaque message est lu.": "Görüşünüz: bir not ya da hata mı? Bize yazın, her mesaj okunur.",
 "« Autour de moi » : les lieux les plus proches de vous, avec leur distance.": "« Yakınımda »: size en yakın yerler, mesafeleriyle birlikte.",
 "« C'est vrai » ou « N'existe plus » : confirmez un lieu signalé, ou dites qu'il a disparu.": "« Doğru » veya « Artık yok »: bildirilen bir yeri onaylayın ya da kaybolduğunu söyleyin.",
+"« En détail » et photos du musée : sur les grandes mosquées, une partie « En détail » et des photos et plans de Discover Islamic Art, le musée virtuel de Museum With No Frontiers (MWNF), avec son accord ; le crédit est sous chaque photo et le lien vers sa fiche s'ouvre dans votre langue quand elle existe.": "« Ayrıntılı olarak » ve müze fotoğrafları: büyük camilerde, Museum With No Frontiers'ın (MWNF) sanal müzesi Discover Islamic Art'tan, onun izniyle « Ayrıntılı olarak » bölümü, fotoğraflar ve planlar; kaynak her fotoğrafın altında yazılıdır ve kaydının bağlantısı varsa sizin dilinizde açılır.",
 "À quoi sert le site ?": "Site ne işe yarar?"
 });
   Object.assign(T.id = T.id || {}, {
@@ -55,6 +56,7 @@
 "Votre avis : une remarque ou une erreur ? Écrivez-nous, chaque message est lu.": "Pendapat Anda: ada catatan atau kesalahan? Tulis kepada kami, setiap pesan dibaca.",
 "« Autour de moi » : les lieux les plus proches de vous, avec leur distance.": "« Di sekitar saya »: tempat-tempat terdekat dengan Anda, beserta jaraknya.",
 "« C'est vrai » ou « N'existe plus » : confirmez un lieu signalé, ou dites qu'il a disparu.": "« Benar » atau « Sudah tidak ada »: konfirmasi tempat yang dilaporkan, atau katakan bahwa tempat itu sudah hilang.",
+"« En détail » et photos du musée : sur les grandes mosquées, une partie « En détail » et des photos et plans de Discover Islamic Art, le musée virtuel de Museum With No Frontiers (MWNF), avec son accord ; le crédit est sous chaque photo et le lien vers sa fiche s'ouvre dans votre langue quand elle existe.": "« Secara rinci » dan foto museum: di halaman masjid agung ada bagian « Secara rinci » serta foto dan denah dari Discover Islamic Art, museum virtual Museum With No Frontiers (MWNF), dengan izinnya; sumber tertulis di bawah setiap foto dan tautan ke halamannya terbuka dalam bahasa Anda bila tersedia.",
 "À quoi sert le site ?": "Untuk apa situs ini?"
 });
   Object.assign(T.ur = T.ur || {}, {
@@ -83,6 +85,7 @@
 "Votre avis : une remarque ou une erreur ? Écrivez-nous, chaque message est lu.": "آپ کی رائے: کوئی تبصرہ یا غلطی؟ ہمیں لکھیں، ہر پیغام پڑھا جاتا ہے۔",
 "« Autour de moi » : les lieux les plus proches de vous, avec leur distance.": "« میرے قریب »: آپ کے سب سے قریب جگہیں، فاصلے کے ساتھ۔",
 "« C'est vrai » ou « N'existe plus » : confirmez un lieu signalé, ou dites qu'il a disparu.": "« درست ہے » یا « اب موجود نہیں »: بتائی گئی جگہ کی تصدیق کریں، یا بتائیں کہ وہ ختم ہو گئی ہے۔",
+"« En détail » et photos du musée : sur les grandes mosquées, une partie « En détail » et des photos et plans de Discover Islamic Art, le musée virtuel de Museum With No Frontiers (MWNF), avec son accord ; le crédit est sous chaque photo et le lien vers sa fiche s'ouvre dans votre langue quand elle existe.": "« تفصیل سے » اور عجائب گھر کی تصاویر: بڑی مساجد کے صفحات پر « تفصیل سے » کا حصہ اور Discover Islamic Art کی تصاویر اور نقشے، جو Museum With No Frontiers (MWNF) کا ورچوئل عجائب گھر ہے، اس کی اجازت سے؛ ہر تصویر کے نیچے حوالہ ہے اور اس کے صفحے کا ربط دستیاب ہو تو آپ کی زبان میں کھلتا ہے۔",
 "À quoi sert le site ?": "یہ سائٹ کس کام کی ہے؟"
 });
   Object.assign(T.de = T.de || {}, {
@@ -111,6 +114,7 @@
 "Votre avis : une remarque ou une erreur ? Écrivez-nous, chaque message est lu.": "Ihre Meinung: eine Anmerkung oder ein Fehler? Schreiben Sie uns, jede Nachricht wird gelesen.",
 "« Autour de moi » : les lieux les plus proches de vous, avec leur distance.": "„In meiner Nähe“: die Orte, die Ihnen am nächsten sind, mit Entfernung.",
 "« C'est vrai » ou « N'existe plus » : confirmez un lieu signalé, ou dites qu'il a disparu.": "„Stimmt“ oder „Gibt es nicht mehr“: Bestätigen Sie einen gemeldeten Ort oder melden Sie, dass er verschwunden ist.",
+"« En détail » et photos du musée : sur les grandes mosquées, une partie « En détail » et des photos et plans de Discover Islamic Art, le musée virtuel de Museum With No Frontiers (MWNF), avec son accord ; le crédit est sous chaque photo et le lien vers sa fiche s'ouvre dans votre langue quand elle existe.": "„Im Detail“ und Museumsfotos: Auf den Seiten der großen Moscheen gibt es einen Abschnitt „Im Detail“ sowie Fotos und Grundrisse von Discover Islamic Art, dem virtuellen Museum von Museum With No Frontiers (MWNF), mit dessen Erlaubnis; die Quelle steht unter jedem Foto, und der Link zum Eintrag öffnet sich, wenn vorhanden, in Ihrer Sprache.",
 "À quoi sert le site ?": "Wozu dient die Website?"
 });
   Object.assign(T.es = T.es || {}, {
@@ -139,6 +143,7 @@
 "Votre avis : une remarque ou une erreur ? Écrivez-nous, chaque message est lu.": "Su opinión: ¿un comentario o un error? Escríbanos, leemos cada mensaje.",
 "« Autour de moi » : les lieux les plus proches de vous, avec leur distance.": "« Cerca de mí »: los lugares más cercanos a usted, con su distancia.",
 "« C'est vrai » ou « N'existe plus » : confirmez un lieu signalé, ou dites qu'il a disparu.": "« Es cierto » o « Ya no existe »: confirme un lugar señalado o indique que ha desaparecido.",
+"« En détail » et photos du musée : sur les grandes mosquées, une partie « En détail » et des photos et plans de Discover Islamic Art, le musée virtuel de Museum With No Frontiers (MWNF), avec son accord ; le crédit est sous chaque photo et le lien vers sa fiche s'ouvre dans votre langue quand elle existe.": "«En detalle» y fotos del museo: en las grandes mezquitas, una sección «En detalle» y fotos y planos de Discover Islamic Art, el museo virtual de Museum With No Frontiers (MWNF), con su autorización; el crédito figura bajo cada foto y el enlace a su ficha se abre en su idioma cuando existe.",
 "À quoi sert le site ?": "¿Para qué sirve el sitio?"
 });
 })(window.TRADUCTIONS = window.TRADUCTIONS || {});

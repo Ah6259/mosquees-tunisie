@@ -17,13 +17,15 @@ sys.path.insert(0, ICI)
 from contenu_grandes_1 import GRANDES as G1, L  # noqa: E402
 from contenu_grandes_2 import GRANDES as G2  # noqa: E402
 from contenu_grandes_3 import GRANDES as G3  # noqa: E402
+from contenu_grandes_4 import GRANDES as G4  # noqa: E402  (Sahib et-Tabaa, 24/11/2026)
+from contenu_details import DETAILS  # noqa: E402  (« En détail », Discover Islamic Art / MWNF, 24/11/2026)
 import pages_langues as PL  # noqa: E402
 import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
 PIXEL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"   # 1 pixel transparent (diaporama, 19/11/2026)
-VERSION = "20261121a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261124a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 
 
 def titre_seo(t, maxi=70):
@@ -67,7 +69,12 @@ CSP = ("default-src 'self'; script-src 'self' https://gc.zgo.at https://cdnjs.cl
        "frame-src https://www.youtube-nocookie.com; connect-src 'self' https://prix-eaux-tunisie.goatcounter.com https://formspree.io https://docs.google.com https://query.wikidata.org "
        "https://maps.mail.ru https://overpass-api.de https://overpass.kumi.systems https://overpass.private.coffee https://overpass.openstreetmap.fr https://nominatim.openstreetmap.org; object-src 'none'; base-uri 'self'; "
        "form-action 'self' https://formspree.io https://docs.google.com")
-GRANDES = G1 + G2 + G3
+GRANDES = G1 + G2 + G3 + G4
+for _g in GRANDES:
+    if _g["slug"] in DETAILS:
+        _g["details"] = DETAILS[_g["slug"]]
+# ancienne adresse d'une fiche devenue grande mosquée -> page de redirection (noindex), jamais une page introuvable
+REDIRECTIONS = {"mosquee/mosquee-saheb-ettabaa-q3324882/": "sahib-ettabaa"}
 VILLES = {
     "tunis": L("Tunis", "تونس", "Tunis", "Tunus", "Tunis", "تونس", "Tunis", "Túnez"),
     "kairouan": L("Kairouan", "القيروان", "Kairouan", "Kayrevan", "Kairouan", "قیروان", "Kairouan", "Cairuán"),
@@ -299,14 +306,18 @@ TITRES = {
     "histoire": ("Histoire", "التاريخ", "History"),
     "architecture": ("Architecture", "العمارة", "Architecture"),
     "role": ("Rôle et rayonnement", "الدور والإشعاع", "Role and influence"),
+    # 24/11/2026 (Ahmed) : faits tirés de Discover Islamic Art (Museum With No Frontiers, avec son accord), réécrits par nous, 21 langues
+    "details": ("En détail", "بالتفصيل", "In detail"),
 }
 
 
 def figure_photo(p, r, nom_fr, classe="", principale=False):
+    # 24/11/2026 : photos et plans de Discover Islamic Art (« mwnf »), reproduits avec l'accord de Museum With No Frontiers, crédit sous chacun
+    quoi = U("Plan", "مخطط", "Plan") if p.get("plan") else U("Photo", "صورة", "Photo")
     return (f'<figure class="mq-photo {classe}" data-source="{att(p["source"])}"><span class="cadre-photo"><img src="{r}{p["fichier"]}" alt="{att(nom_fr)}" '
             f'width="{p["w"]}" height="{p["h"]}"{"" if principale else " loading=" + chr(34) + "lazy" + chr(34)}></span>'
-            f'<figcaption>{U("Photo", "صورة", "Photo")} : <a href="{att(p["source"])}" target="_blank" rel="noopener">{esc(p["auteur"])}</a>, '
-            f'{esc(p["licence"])} — Wikimedia Commons</figcaption></figure>')
+            f'<figcaption>{quoi} : <a href="{att(p["source"])}" target="_blank" rel="noopener">{esc(p["auteur"])}</a>, '
+            f'{esc(p["licence"])} — {"Discover Islamic Art" if p.get("mwnf") else "Wikimedia Commons"}</figcaption></figure>')
 
 
 def liens_wiki(wiki):
@@ -323,7 +334,7 @@ def page_grande(g, photos, wiki_par_qid, r="../../"):
     ville = VILLES[g["ville"]]
     ph = photos.get(slug, [])
     blocs = []
-    for cle in ("intro", "histoire", "architecture", "role"):
+    for cle in ("intro", "histoire", "architecture", "details", "role"):
         if g.get(cle):
             t = TITRES[cle]
             blocs.append(f'<section class="carte mq-texte" id="{cle}"><h2>{U(*t)}</h2><p>{S(g[cle], page)}</p></section>')
@@ -333,11 +344,13 @@ def page_grande(g, photos, wiki_par_qid, r="../../"):
     dates = "".join(
         f'<li><b>{S(d[0], page) if isinstance(d[0], dict) else esc(d[0])}</b><span>{S(d[1], page)}</span></li>' for d in g["dates"])
     wiki = wiki_par_qid.get(g["qid"], {})
-    liens = liens_wiki(wiki) + "".join(f'<li><a href="{att(u)}" target="_blank" rel="noopener" lang="fr">{esc(t)}</a></li>' for t, u in g["liens"])
+    # lien Discover Islamic Art (MWNF) : data-mwnf -> pages_langues.py l'ouvre dans la langue du visiteur (fr, ar, en, es ; sinon en)
+    liens = liens_wiki(wiki) + "".join(f'<li><a href="{att(u)}" target="_blank" rel="noopener" lang="fr"{" data-mwnf" if re.search(r"museumwnf|discoverislamicart", u) else ""}>{esc(t)}</a></li>' for t, u in g["liens"])
     sources = (f'<li>{U("Textes rédigés par Mosquées en Tunisie à partir des documents ci-dessus (Wikipédia, Qantara, Discover Islamic Art, UNESCO), vérifiés le 09/10/2026.", "نصوص كتبها موقع مساجد تونس اعتمادًا على الوثائق أعلاه (ويكيبيديا، قنطرة، اكتشف الفن الإسلامي، اليونسكو)، رُوجعت في 09/10/2026.", "Texts written by Mosques in Tunisia from the documents above (Wikipedia, Qantara, Discover Islamic Art, UNESCO), checked on 09/10/2026.")}</li>'
                f'<li>Wikidata : <a href="https://www.wikidata.org/wiki/{g["qid"]}" target="_blank" rel="noopener">{g["qid"]}</a> (CC0)</li>'
                f'<li>{U("Photos : Wikimedia Commons, auteur et licence sous chaque photo.", "الصور: ويكيميديا كومنز، المؤلف والرخصة تحت كل صورة.", "Photos: Wikimedia Commons, author and licence under each photo.")}</li>'
-               f'<li>{U("Position : OpenStreetMap (ODbL) et Wikidata.", "الموقع: OpenStreetMap ‏(ODbL) وويكي بيانات.", "Location: OpenStreetMap (ODbL) and Wikidata.")}</li>')
+               + (f'<li>{U("Section « En détail » et photos marquées Discover Islamic Art : d’après Museum With No Frontiers (MWNF), avec son accord.", "قسم «بالتفصيل» والصور المشار إليها بـ Discover Islamic Art: نقلًا عن متحف بلا حدود (MWNF)، بموافقته.", "“In detail” section and photos marked Discover Islamic Art: from Museum With No Frontiers (MWNF), with its permission.")}</li>' if g.get("details") or any(p.get("mwnf") for p in ph) else "")
+               + f'<li>{U("Position : OpenStreetMap (ODbL) et Wikidata.", "الموقع: OpenStreetMap ‏(ODbL) وويكي بيانات.", "Location: OpenStreetMap (ODbL) and Wikidata.")}</li>')
     autres = [x for x in GRANDES if x["slug"] != slug and x["ville"] == g["ville"]][:4] or [x for x in GRANDES if x["slug"] != slug][:3]
     voisins = "".join(f'<li><a href="../{x["slug"]}/">{S(x["nom"], page)}</a></li>' for x in autres)
     corps = f"""
@@ -1024,7 +1037,14 @@ def main():
     chemins = [""] + ["grandes-mosquees/"] + gabarits + sorted(grandes_chemins) + sorted(p for p in set(pages.values()) if p not in grandes_chemins)
     # pages devenues vides ou disparues (le robot trimestriel a changé les données) : supprimées, jamais de page orpheline
     import shutil
-    garder = set(grandes_chemins) | set(pages.values())
+    garder = set(grandes_chemins) | set(pages.values()) | set(REDIRECTIONS)
+    for ancien, slug in REDIRECTIONS.items():
+        g = next(x for x in GRANDES if x["slug"] == slug)
+        corps = f'<main class="wrap"><section class="carte"><p><a href="../{slug}/">{S(g["nom"], "g-" + slug)} →</a></p></section></main>'
+        html = document(ancien + "index.html", g["nom"]["fr"], g["intro"]["fr"], corps, tete=[f"trad/g-{slug}.js"], index=False)
+        html = html.replace('<meta name="robots"', f'<meta http-equiv="refresh" content="0; url=../{slug}/">' + chr(10) + '<meta name="robots"', 1)
+        ecrire(ancien + "index.html", html)
+        INDEX[ancien] = []; CLE_TRAD[ancien] = "g-" + slug; chemins.append(ancien)
     for nom in sorted(os.listdir(os.path.join(RACINE, "mosquee"))):
         if "mosquee/" + nom + "/" not in garder:
             shutil.rmtree(os.path.join(RACINE, "mosquee", nom))
@@ -1049,7 +1069,8 @@ def main():
     for c in chemins:
         fr = open(os.path.join(RACINE, c, "index.html"), encoding="utf-8").read()
         langues = INDEX.get(c, LANGUES)
-        adresses.append(c)
+        if c not in REDIRECTIONS:                    # une page de redirection n'est jamais proposée à Google
+            adresses.append(c)
         for l in LANGUES[1:]:
             trad = {**langues_js.get(l, {}), **TRAD.get(CLE_TRAD.get(c, ""), {}).get(l, {})}
             texte, m = PL.variante(fr, BASE, c, l, langues, trad, META.get(c, {}).get(l), indexer=l in langues)

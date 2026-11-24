@@ -16,7 +16,7 @@ const lire = f => readFileSync(join(root, f), "utf8");
 let erreurs = 0, total = 0;
 const check = (d, ok) => { total++; if (ok) console.log("OK   " + d); else { erreurs++; console.log("FAIL " + d); } };
 const BASE = "https://mosquees.clicvia.com/";
-const GRANDES = ["zitouna", "kairouan", "sousse", "mahdia", "sfax", "trois-portes", "youssef-dey", "hammouda-pacha", "sidi-mahrez", "sidi-sahbi", "testour", "malik-ibn-anas", "fadhloun", "kasbah", "monastir"];
+const GRANDES = ["zitouna", "kairouan", "sousse", "mahdia", "sfax", "trois-portes", "youssef-dey", "hammouda-pacha", "sidi-mahrez", "sidi-sahbi", "testour", "malik-ibn-anas", "fadhloun", "kasbah", "monastir", "sahib-ettabaa"];
 
 const PAGES = [];
 (function parcourir(d) {
@@ -57,7 +57,9 @@ async function page(chemin = "index.html", { stockage = { langue: "fr", "recitat
 
 // ---- 1. toutes les pages : sécurité, installation, référencement
 const grandesPages = GRANDES.map(s => `mosquee/${s}/index.html`);
-const fiches = PAGES.filter(p => p.startsWith("mosquee/") && !grandesPages.includes(p));
+// 24/11/2026 : une page de redirection (ancienne adresse d'une fiche devenue grande mosquée) n'est pas une fiche
+const redirection = p => /<meta http-equiv="refresh" content="0; url=\.\.\/[a-z-]+\/">/.test(lire(p));
+const fiches = PAGES.filter(p => p.startsWith("mosquee/") && !grandesPages.includes(p) && !redirection(p));
 check(`pages : accueil, À propos, liste, les ${GRANDES.length} grandes mosquées, au moins 80 autres pages de mosquées (${fiches.length})`,
   ["index.html", "a-propos/index.html", "grandes-mosquees/index.html", ...grandesPages].every(p => PAGES.includes(p)) && fiches.length >= 80);
 const pb = [], versions = new Set();
@@ -177,7 +179,8 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check(`accueil : la photo du bandeau fait défiler les ${GRANDES.length} grandes mosquées (Kairouan d'abord, fichier présent, lien vers sa page, une légende créditée par photo, une seule visible)`,
     vues.length === GRANDES.length && leg.length === vues.length && /kairouan/.test(vues[0].getAttribute("href"))
     && vues.every(a => { const im = a.querySelector("img"); return existsSync(join(root, im.getAttribute("data-src") || im.getAttribute("src"))) && existsSync(join(root, a.getAttribute("href"), "index.html")); })
-    && leg.every(f => /CC BY|CC0|domaine public|Public domain/i.test(f.textContent) && f.querySelector('a[href^="https://commons.wikimedia.org/"]'))
+    && leg.every(f => (/CC BY|CC0|domaine public|Public domain/i.test(f.textContent) && f.querySelector('a[href^="https://commons.wikimedia.org/"]'))
+      || (/© MWNF/.test(f.textContent) && f.querySelector('a[href^="https://islamicart.museumwnf.org/"]')))   // 24/11/2026 : photos MWNF (accord)
     && leg.filter(f => !f.hidden).length === 1 && vues.filter(a => a.classList.contains("actif")).length === 1);
   // 19/11/2026 (CV.3c) : la carte (données + script) arrive au 1er geste : plus aucun <script src="…donnees/lieux.js"> dans les accueils
   check("accueil léger : données de la carte chargées au 1er geste (charge-carte.js, 4 fichiers dans l'ordre), vignettes légères dans la grille",
@@ -260,7 +263,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const imgs = [...d.querySelectorAll("figure.mq-photo img")];
     if (js.length) manque.push(s + " erreur JS");
     if (!imgs.length || !imgs.every(i => existsSync(join(root, "mosquee", s, i.getAttribute("src"))))) manque.push(s + " photo");
-    if (![...d.querySelectorAll("figure.mq-photo figcaption a")].every(a => /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(a.href))) manque.push(s + " crédit");
+    if (![...d.querySelectorAll("figure.mq-photo figcaption a")].every(a => /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(a.href) || (/^https:\/\/islamicart\.museumwnf\.org\/database_item\.php/.test(a.href) && /© MWNF — Discover Islamic Art/.test(a.parentNode.textContent)))) manque.push(s + " crédit");
     if (!d.querySelector("#histoire p") || !d.querySelector("#architecture p") || d.querySelectorAll(".mq-dates li").length < 3) manque.push(s + " textes");
     if (!d.querySelector('#sources a[href^="https://www.wikidata.org/wiki/Q"]') || d.querySelectorAll("#documents li a").length < 2) manque.push(s + " sources");
     const m = d.getElementById("mq-mini");
@@ -274,6 +277,17 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const { d: k } = await page("mosquee/kairouan/index.html");
   check("Kairouan : fondée en 670 par Okba ibn Nafi, minbar le plus ancien, lien UNESCO 499", /670/.test(k.getElementById("histoire").textContent) && /Okba ibn Nafi/.test(k.getElementById("histoire").textContent)
     && /plus ancien minbar/.test(k.getElementById("architecture").textContent) && !!k.querySelector('#documents a[href="https://whc.unesco.org/fr/list/499"]'));
+}
+// ---- 24/11/2026 : Sahib et-Tabaa devenue grande mosquée : l'ancienne adresse redirige (21 langues), jamais proposée à Google
+{
+  const anc = "mosquee/mosquee-saheb-ettabaa-q3324882/index.html";
+  const ok = ["", ...AUTRES.map(l => l + "/")].every(l => existsSync(join(root, l + anc)) && redirection(l + anc) && /url=\.\.\/sahib-ettabaa\//.test(lire(l + anc))
+    && /noindex/.test(lire(l + anc)) && existsSync(join(root, l + "mosquee/sahib-ettabaa/index.html")));
+  check("ancienne adresse de Sahib et-Tabaa : redirige vers sa page de grande mosquée dans les 21 langues, noindex, hors plan du site", ok && !/saheb-ettabaa-q3324882/.test(lire("sitemap.xml")));
+  const s = lire("mosquee/sahib-ettabaa/index.html"), z = lire("ar/mosquee/sahib-ettabaa/index.html");
+  check("« En détail » (Discover Islamic Art, MWNF) : section sur les grandes mosquées, photos MWNF créditées, lien vers la fiche dans la langue (ar -> ;ar)",
+    /id="details"/.test(s) && /id="details"/.test(lire("mosquee/kairouan/index.html")) && /© MWNF — Discover Islamic Art/.test(s)
+    && /Mon01;7;ar"/.test(z) && /Mon01;7;en"/.test(lire("zh/mosquee/sahib-ettabaa/index.html")) && /Mon01;7;fr"/.test(s));
 }
 // ---- 6. autres pages de mosquées (fiche Wikidata) : jamais vides, résumé Wikipédia cité, langue de repli annoncée
 {
@@ -392,7 +406,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check(`une adresse par langue : ${PAGES_LANGUE.length} pages (${AUTRES.length} langues × ${PAGES_FR.filter(p => !p.startsWith("video/")).length}), chacune dans sa langue (lang, sens, titre, adresse officielle, fichiers communs) ${pbL.slice(0, 4).join(" | ")}`,
     PAGES_LANGUE.length === AUTRES.length * PAGES_FR.filter(p => !p.startsWith("video/")).length && !pbL.length);
   const pbH = [];
-  for (const p of PAGES_FR.filter(x => !x.startsWith("video/"))) {
+  for (const p of PAGES_FR.filter(x => !x.startsWith("video/") && !redirection(x))) {
     const h = lire(p), dossier = p.replace(/index\.html$/, "");
     const liens = Object.fromEntries([...h.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)].map(m => [m[1], m[2]]));
     const attendues = ["fr", ...AUTRES.filter(l => !sansIndex(l + "/" + p))];
@@ -406,7 +420,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   {
     const sans = PAGES_LANGUE.filter(sansIndex), fr0 = fiches.find(p => sansIndex("de/" + p));
     check(`autres mosquées : une version sans nom ni résumé dans la langue n'est pas proposée à Google (${sans.length} versions « noindex », hors plan du site)`,
-      sans.length > 100 && sans.every(p => fiches.includes(p.slice(p.indexOf("/") + 1)) || p.slice(p.indexOf("/") + 1).startsWith("mosquee-monde/")) && !!fr0 && !lire(fr0).includes('hreflang="de"'));
+      sans.length > 100 && sans.every(p => fiches.includes(p.slice(p.indexOf("/") + 1)) || p.slice(p.indexOf("/") + 1).startsWith("mosquee-monde/") || redirection(p)) && !!fr0 && !lire(fr0).includes('hreflang="de"'));
   }
 }
 {
@@ -645,6 +659,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     ["signaler un lieu", /id="mq-sig-ouvrir"/.test(acc), /Signaler un lieu : ajoutez une mosquée/],
     ["« C'est vrai » / « N'existe plus »", /data-ok=/.test(mq) && /data-ko=/.test(mq), /« N'existe plus »/],
     ["grandes mosquées de Tunisie", ex("grandes-mosquees/index.html"), /Grandes mosquées : histoire, architecture/],
+    ["« En détail » et photos du musée (Discover Islamic Art, MWNF)", ex("assets/photos/mwnf/kairouan-plan-1.jpg"), /« En détail » et photos du musée[^<]*Museum With No Frontiers/],
     ["grandes mosquées du monde (recherche, Trier)", ex("grandes-mosquees-du-monde/index.html") && /data-tri/.test(lire("assets/pages.js")), /Grandes mosquées du monde : une recherche[\s\S]*« Trier »/],
     ["pages Rôle / Histoires / Construire", ["role-de-la-mosquee", "histoires-des-mosquees", "construire-une-mosquee"].some(c => ex(c + "/index.html")), /Rôle de la mosquée, Histoires des mosquées, Construire une mosquée/],
     ["versets du Coran + lien The Message", /id="verset-jinn"/.test(acc), /Versets du Coran :[^<]*QuranEnc[^<]*The Message/],

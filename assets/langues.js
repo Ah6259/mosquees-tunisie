@@ -220,7 +220,10 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "Bu bölgede {n} ibadet yeri (kayıtlı tarama; canlı okuma şu anda yanıt vermiyor).",
  "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Sarı yıldız: büyük cami (Mekke, Medine ve Mescid-i Aksa için daha büyük). Tunus dışında bir noktanın rengi ülkesini gösterir.",
  "Confidentialité": "Gizlilik",
- "Conditions d'utilisation": "Kullanım koşulları"
+ "Conditions d'utilisation": "Kullanım koşulları",
+ "En détail": "Ayrıntılı olarak",
+ "Plan": "Plan",
+ "Section « En détail » et photos marquées Discover Islamic Art : d’après Museum With No Frontiers (MWNF), avec son accord.": "« Ayrıntılı olarak » bölümü ve Discover Islamic Art işaretli fotoğraflar: Museum With No Frontiers'ın (MWNF) izniyle, ondan alınmıştır."
 });
 window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Mosquées de Tunisie et du monde": "Masjid Tunisia dan dunia",
@@ -436,7 +439,10 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} tempat salat di area ini (data tersimpan; pembacaan langsung sedang tidak merespons).",
  "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Bintang kuning: masjid besar (lebih besar untuk Makkah, Madinah, dan Al-Aqsa). Di luar Tunisia, warna titik menunjukkan negaranya.",
  "Confidentialité": "Privasi",
- "Conditions d'utilisation": "Ketentuan penggunaan"
+ "Conditions d'utilisation": "Ketentuan penggunaan",
+ "En détail": "Secara rinci",
+ "Plan": "Denah",
+ "Section « En détail » et photos marquées Discover Islamic Art : d’après Museum With No Frontiers (MWNF), avec son accord.": "Bagian « Secara rinci » dan foto bertanda Discover Islamic Art: dari Museum With No Frontiers (MWNF), dengan izinnya."
 });
 window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Mosquées de Tunisie et du monde": "تیونس اور دنیا کی مساجد",
@@ -652,7 +658,10 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "اس علاقے میں {n} عبادت گاہیں (محفوظ شدہ سروے؛ براہِ راست پڑھائی اس وقت جواب نہیں دے رہی)۔",
  "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "پیلا ستارہ: بڑی مسجد (مکہ، مدینہ اور مسجد اقصیٰ کے لیے بڑا)۔ تیونس سے باہر کسی نقطے کا رنگ اس کا ملک بتاتا ہے۔",
  "Confidentialité": "رازداری",
- "Conditions d'utilisation": "استعمال کی شرائط"
+ "Conditions d'utilisation": "استعمال کی شرائط",
+ "En détail": "تفصیل سے",
+ "Plan": "نقشہ",
+ "Section « En détail » et photos marquées Discover Islamic Art : d’après Museum With No Frontiers (MWNF), avec son accord.": "« تفصیل سے » والا حصہ اور Discover Islamic Art کے نشان والی تصاویر: Museum With No Frontiers (MWNF) سے، اس کی اجازت کے ساتھ۔"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Mosquées de Tunisie et du monde": "Moscheen Tunesien & Welt",
@@ -868,7 +877,10 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} Gebetsorte in diesem Gebiet (gespeicherte Erfassung; die Live-Abfrage antwortet gerade nicht).",
  "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Gelber Stern: große Moschee (größer für Mekka, Medina und al-Aqsa). Außerhalb Tunesiens zeigt die Farbe eines Punktes sein Land.",
  "Confidentialité": "Datenschutz",
- "Conditions d'utilisation": "Nutzungsbedingungen"
+ "Conditions d'utilisation": "Nutzungsbedingungen",
+ "En détail": "Im Detail",
+ "Plan": "Grundriss",
+ "Section « En détail » et photos marquées Discover Islamic Art : d’après Museum With No Frontiers (MWNF), avec son accord.": "Abschnitt „Im Detail“ und mit Discover Islamic Art gekennzeichnete Fotos: nach Museum With No Frontiers (MWNF), mit dessen Erlaubnis."
 });
 window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Mosquées de Tunisie et du monde": "Mezquitas de Túnez y del mundo",
@@ -1084,5 +1096,8 @@ window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "{n} lieux de prière dans cette zone (relevé enregistré ; la lecture en direct ne répond pas pour le moment).": "{n} lugares de oración en esta zona (registro guardado; la lectura en directo no responde por ahora).",
  "Étoile jaune : grande mosquée (plus grande pour La Mecque, Médine et al-Aqsa). Hors de Tunisie, la couleur d'un point indique son pays.": "Estrella amarilla: gran mezquita (más grande para La Meca, Medina y al-Aqsa). Fuera de Túnez, el color de un punto indica su país.",
  "Confidentialité": "Privacidad",
- "Conditions d'utilisation": "Condiciones de uso"
+ "Conditions d'utilisation": "Condiciones de uso",
+ "En détail": "En detalle",
+ "Plan": "Plano",
+ "Section « En détail » et photos marquées Discover Islamic Art : d’après Museum With No Frontiers (MWNF), avec son accord.": "Sección «En detalle» y fotos marcadas Discover Islamic Art: según Museum With No Frontiers (MWNF), con su autorización."
 });
