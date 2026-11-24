@@ -255,7 +255,9 @@ window.TRADUCTIONS.tr = Object.assign(window.TRADUCTIONS.tr || {}, {
  "Coran": "Kur'an",
  "Prière du vendredi : couleur = heure.": "Cuma namazı: renk = saat.",
  "Prière du vendredi et lecture du Coran": "Cuma namazı ve Kur'an okuma",
- "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "Bilgiler ziyaretçiler tarafından verilip onaylanır ya da belirtilen açık bir kaynaktan alınır. Hiçbir saat uydurulmaz."
+ "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "Bilgiler ziyaretçiler tarafından verilip onaylanır ya da belirtilen açık bir kaynaktan alınır. Hiçbir saat uydurulmaz.",
+ "khatma du Coran le {d}": "{d} tarihinde Kur'an hatmi",
+ "Khatma du Coran à une date précise": "Belirli bir tarihte Kur'an hatmi"
 });
 window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Mosquées de Tunisie et du monde": "Masjid Tunisia dan dunia",
@@ -506,7 +508,9 @@ window.TRADUCTIONS.id = Object.assign(window.TRADUCTIONS.id || {}, {
  "Coran": "Al-Qur'an",
  "Prière du vendredi : couleur = heure.": "Salat Jumat: warna = waktu.",
  "Prière du vendredi et lecture du Coran": "Salat Jumat dan pembacaan Al-Qur'an",
- "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "Informasi diberikan dan dikonfirmasi oleh pengunjung, atau diambil dari sumber publik yang disebutkan. Tidak ada waktu yang dikarang."
+ "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "Informasi diberikan dan dikonfirmasi oleh pengunjung, atau diambil dari sumber publik yang disebutkan. Tidak ada waktu yang dikarang.",
+ "khatma du Coran le {d}": "khatam Al-Qur'an pada {d}",
+ "Khatma du Coran à une date précise": "Khatam Al-Qur'an pada tanggal tertentu"
 });
 window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Mosquées de Tunisie et du monde": "تیونس اور دنیا کی مساجد",
@@ -757,7 +761,9 @@ window.TRADUCTIONS.ur = Object.assign(window.TRADUCTIONS.ur || {}, {
  "Coran": "قرآن",
  "Prière du vendredi : couleur = heure.": "نمازِ جمعہ: رنگ = وقت۔",
  "Prière du vendredi et lecture du Coran": "نمازِ جمعہ اور قرآن کی تلاوت",
- "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "معلومات زائرین دیتے اور ان کی تصدیق کرتے ہیں، یا یہ کسی مذکورہ عوامی ماخذ سے لی جاتی ہیں۔ کوئی وقت گھڑا نہیں جاتا۔"
+ "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "معلومات زائرین دیتے اور ان کی تصدیق کرتے ہیں، یا یہ کسی مذکورہ عوامی ماخذ سے لی جاتی ہیں۔ کوئی وقت گھڑا نہیں جاتا۔",
+ "khatma du Coran le {d}": "{d} کو ختمِ قرآن",
+ "Khatma du Coran à une date précise": "کسی مقررہ تاریخ کو ختمِ قرآن"
 });
 window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Mosquées de Tunisie et du monde": "Moscheen Tunesien & Welt",
@@ -1008,7 +1014,9 @@ window.TRADUCTIONS.de = Object.assign(window.TRADUCTIONS.de || {}, {
  "Coran": "Koran",
  "Prière du vendredi : couleur = heure.": "Freitagsgebet: Farbe = Uhrzeit.",
  "Prière du vendredi et lecture du Coran": "Freitagsgebet und Koranlesung",
- "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "Angaben von Besuchern gemacht und bestätigt oder aus einer genannten öffentlichen Quelle. Keine Uhrzeit wird erfunden."
+ "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "Angaben von Besuchern gemacht und bestätigt oder aus einer genannten öffentlichen Quelle. Keine Uhrzeit wird erfunden.",
+ "khatma du Coran le {d}": "Koran-Khatma am {d}",
+ "Khatma du Coran à une date précise": "Koran-Khatma an einem bestimmten Datum"
 });
 window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Mosquées de Tunisie et du monde": "Mezquitas de Túnez y del mundo",
@@ -1259,5 +1267,7 @@ window.TRADUCTIONS.es = Object.assign(window.TRADUCTIONS.es || {}, {
  "Coran": "Corán",
  "Prière du vendredi : couleur = heure.": "Oración del viernes: color = hora.",
  "Prière du vendredi et lecture du Coran": "Oración del viernes y lectura del Corán",
- "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "Información dada y confirmada por los visitantes, o tomada de una fuente pública citada. Ninguna hora es inventada."
+ "Informations données et confirmées par les visiteurs, ou tirées d’une source publique citée. Aucune heure n’est inventée.": "Información dada y confirmada por los visitantes, o tomada de una fuente pública citada. Ninguna hora es inventada.",
+ "khatma du Coran le {d}": "jatma del Corán el {d}",
+ "Khatma du Coran à une date précise": "Jatma del Corán en una fecha concreta"
 });

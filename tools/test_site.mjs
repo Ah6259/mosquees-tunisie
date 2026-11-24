@@ -311,12 +311,12 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   const ch = n => f.querySelector(`[name="${n}"]`);
   ch("joumoua").value = "autre"; ch("joumoua").dispatchEvent(new w.Event("change", { bubbles: true }));
   const heureVisible = !ch("heure").hidden; ch("heure").value = "12:30";
-  ch("coran-jour").value = "asr"; ch("coran-mois").value = "ven"; ch("rang").value = "premier";
+  ch("coran-jour").value = "asr"; ch("coran-mois").value = "ven"; ch("rang").value = "premier"; const demain = new Date(Date.now() + 86400000 * 30).toISOString().slice(0, 10); ch("coran-date").value = demain;
   w.__envois.length = 0; f.dispatchEvent(new w.Event("submit", { bubbles: true, cancelable: true }));
   await new Promise(r => setTimeout(r, 20));
   const env = w.__envois.map(e => e["entry.1939823394"] + " " + e["entry.897098257"] + " " + e["entry.506707149"]);
   check("formulaire « Indiquer ou corriger » : envoie LIEU-PRIERE-INFO (12:30, Coran après l'Asr, premier vendredi du mois) avec le jeton anonyme, rien d'autre",
-    heureVisible && env.length === 3 && env.every(x => /^LIEU-PRIERE-INFO osm-w95130047\|/.test(x) && /\|lp:[a-z0-9]{6,40}$/.test(x))
+    heureVisible && env.length === 4 && env.some(x => x.includes("|coran-date|" + demain + " ")) && env.every(x => /^LIEU-PRIERE-INFO osm-w95130047\|/.test(x) && /\|lp:[a-z0-9]{6,40}$/.test(x))
     && env.some(x => x.includes("|joumoua|12:30 ")) && env.some(x => x.includes("|coran-jour|asr ")) && env.some(x => x.includes("|coran-mois|ven-premier ")));
   w.__envois.length = 0; box.innerHTML = I.html(sm); box.querySelector("[data-iko]").click();
   await new Promise(r => setTimeout(r, 20));
@@ -698,6 +698,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     ["prière du vendredi et lecture du Coran (visiteurs, filtres Vendredi / Coran)", ex("assets/infos.js"), /Prière du vendredi et lecture du Coran :[^<]*« Vendredi »/],
     ["« C'est vrai » / « N'existe plus »", /data-ok=/.test(mq) && /data-ko=/.test(mq), /« N'existe plus »/],
     ["grandes mosquées de Tunisie", ex("grandes-mosquees/index.html"), /Grandes mosquées : histoire, architecture/],
+    ["khatma à une date précise", /coran-date/.test(lire("assets/infos.js")), /Khatma à une date précise :/],
     ["« En détail » et photos du musée (Discover Islamic Art, MWNF)", ex("assets/photos/mwnf/kairouan-plan-1.jpg"), /« En détail » et photos du musée[^<]*Museum With No Frontiers/],
     ["grandes mosquées du monde (recherche, Trier)", ex("grandes-mosquees-du-monde/index.html") && /data-tri/.test(lire("assets/pages.js")), /Grandes mosquées du monde : une recherche[\s\S]*« Trier »/],
     ["pages Rôle / Histoires / Construire", ["role-de-la-mosquee", "histoires-des-mosquees", "construire-une-mosquee"].some(c => ex(c + "/index.html")), /Rôle de la mosquée, Histoires des mosquées, Construire une mosquée/],

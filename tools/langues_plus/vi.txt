@@ -247,171 +247,173 @@
 246	Lễ thứ Sáu: màu = giờ.
 247	Lễ thứ Sáu và đọc Kinh Qur'an
 248	Thông tin do khách truy cập cung cấp và xác nhận, hoặc lấy từ một nguồn công khai được dẫn. Không có giờ nào bị bịa ra.
-249	Tunis
-250	Kairouan
-251	Sousse
-252	Mahdia
-253	Sfax
-254	Testour
-255	Carthage
-256	Djerba (Midoun)
-257	Monastir
-258	Thánh đường Zitouna
-259	704 · xây lại năm 863
-260	Đại thánh đường của khu phố cổ Tunis, lâu đời nhất và rộng nhất thủ đô. Trong hơn một nghìn năm, đây cũng là một đại học lớn của Hồi giáo.
-261	Theo truyền thống, nơi cầu nguyện này do Hassan ibn al-Nu'man lập năm 704, sau khi chiếm Carthage; các nguồn khác cho rằng người sáng lập là thống đốc triều Umayyad Abd Allah ibn al-Habhab, khoảng năm 734. Công trình đầu tiên hầu như không còn gì: thánh đường được tiểu vương triều Aghlabid Abu Ibrahim Ahmad xây lại hoàn toàn năm 863. Sau đó mỗi triều đại đều tô điểm thêm: mái vòm «bahou» thời Zirid (khoảng năm 990), bể chứa nước và cổng thời Hafsid, hành lang phía đông năm 1637. Tháp hiện nay, theo phong cách Almohad, có từ năm 1894.
-262	Giống như ở Kairouan và Córdoba, một sân có hành lang bao quanh nằm trước phòng cầu nguyện kiểu «nhiều cột»: khoảng 160 cột cổ, phần lớn lấy từ Carthage, tạo thành 15 gian. Gian giữa, rộng hơn, dẫn đến mihrab, bên trên là mái vòm thế kỷ 9. Mái vòm bahou, ở lối vào phòng, xen kẽ đá màu đất son và gạch đỏ. Tháp năm 1894 lặp lại hoa văn hình thoi của tháp thánh đường Kasbah.
-263	Zitouna từng là một trong những trung tâm giảng dạy lâu đời nhất của thế giới Hồi giáo: mỗi học giả tựa lưng vào một cây cột, học trò ngồi thành vòng tròn xung quanh. Nơi đây đã đào tạo những luật gia Maliki lớn như Ibn Arafa, người cùng thời với Ibn Khaldun. Năm 1958, việc giảng dạy rời khỏi thánh đường; ngày nay nó tiếp tục tại Đại học Ez-Zitouna. Người ta nói rằng việc cầu nguyện ở đây chưa bao giờ gián đoạn.
-264	Thành lập theo truyền thống (Hassan ibn al-Nu'man)
-265	Triều Aghlabid xây lại hoàn toàn
-266	Mái vòm bahou (triều Zirid)
-267	Tháp mới theo phong cách Almohad
-268	Việc giảng dạy chuyển từ thánh đường sang đại học
-269	Khu phố cổ Tunis được ghi vào danh sách Di sản Thế giới của UNESCO
-270	Đại thánh đường Kairouan (thánh đường Uqba)
-271	670 · hình dáng hiện nay từ năm 836
-272	Thánh đường lâu đời nhất vùng Maghreb, thành lập năm 670 cùng với thành phố Kairouan. Đây là hình mẫu cho mọi thánh đường ở Bắc Phi và là Di sản Thế giới của UNESCO.
-273	Năm 670, nhà chinh phục Uqba ibn Nafi lập nên Kairouan và đặt thánh đường của mình ở trung tâm thành phố. Được mở rộng và xây lại vào thế kỷ 8 và 9, thánh đường có hình dáng hiện nay vào năm 836 dưới thời tiểu vương Aghlabid Ziyadat Allah I. Khoảng năm 862-863, Abu Ibrahim Ahmad kéo dài phòng cầu nguyện và tặng minbar cùng phần trang trí mihrab. Vào thế kỷ 11, vị vương triều Zirid al-Mu'izz ibn Badis thêm maqsura bằng gỗ. Kairouan từ lâu được coi là thành phố thiêng thứ tư của Hồi giáo.
-274	Một khu hình tứ giác rộng khoảng 9 000 m²: một sân lát đá lớn, các hành lang, và một phòng cầu nguyện 17 gian được đỡ bởi hàng trăm cột cổ bằng cẩm thạch, granit và đá porphyr, không cột nào giống cột nào. Tháp cao khoảng 31 mét, có từ nửa đầu thế kỷ 9: đây là một trong những tháp giáo đường lâu đời nhất còn đứng vững. Mihrab thế kỷ 9 được trang trí bằng gạch gốm ánh kim; bên cạnh, minbar bằng gỗ chạm là minbar lâu đời nhất còn được lưu giữ trong thế giới Hồi giáo.
-275	Kairouan từng là thủ đô tôn giáo và học thuật của Ifriqiya: chính tại đây, vào thế kỷ 9, imam Sahnun đã soạn bộ Mudawwana, tác phẩm nền tảng của trường phái Maliki được theo ở Tunisia và khắp Maghreb. Thư viện của thánh đường đã lưu giữ những bản chép tay rất cổ, trong đó có các tờ của «Qur'an Xanh» nổi tiếng.
-276	Uqba ibn Nafi thành lập, cùng với thành phố
-277	Ziyadat Allah I xây lại: hình dáng hiện nay
-278	Minbar và phần trang trí mihrab (Abu Ibrahim Ahmad)
-279	Maqsura gỗ của al-Mu'izz ibn Badis (khoảng thời gian này)
-280	Kairouan được ghi vào danh sách Di sản Thế giới của UNESCO
-281	Đại thánh đường Sousse
-282	851-862 · triều Aghlabid
-283	Ở lối vào khu phố cổ, một thánh đường mang dáng pháo đài, xây năm 851-862 gần ribat bảo vệ bờ biển. Giản dị và vững chãi, thánh đường thuộc khu phố cổ Sousse, Di sản Thế giới của UNESCO.
-284	Thánh đường do tiểu vương Aghlabid Abu al-Abbas Muhammad dựng năm 851-862, khoảng ba mươi năm sau ribat Sousse; một dòng chữ Kufic trên các hành lang của sân ghi lại việc xây dựng. Thánh đường được mở rộng dưới thời tiểu vương Ibrahim II (875-902), khi Sousse trở thành thành phố thứ hai của Ifriqiya.
-285	Tường có lỗ châu mai, tháp góc đội những mái vòm nhỏ: thánh đường trông như một pháo đài và không có tháp giáo đường thực sự, có lẽ vì tháp canh của ribat bên cạnh đã đảm nhận vai trò đó. Phòng cầu nguyện có 13 gian; gian giữa và nhịp trước mihrab, rộng hơn, tạo thành hình chữ «T», được đánh dấu bằng hai mái vòm.
-286	Ribat Sousse, ngay bên cạnh, hoàn thành
-287	Xây dựng thánh đường (851-862)
-288	Mở rộng dưới thời Ibrahim II (875-902)
-289	Khu phố cổ Sousse được ghi vào danh sách Di sản Thế giới của UNESCO
-290	Đại thánh đường Mahdia
-291	916 · triều Fatimid
-292	Do vị khalip Fatimid đầu tiên xây năm 916 tại kinh đô mới của ông, bên bờ biển. Cổng lớn nhô ra phía trước, lấy cảm hứng từ các khải hoàn môn, là điều chưa từng có trong kiến trúc thánh đường.
-293	Khi Ubayd Allah al-Mahdi lập nên Mahdia năm 909, ông cho xây thánh đường gần cung điện khalip, trên một nền lấn ra biển. Sau khi thành phố bị người Tây Ban Nha phá hủy năm 1554, công trình nhiều lần bị sửa đổi. Từ năm 1961 đến 1968, thánh đường được xây lại gần như hoàn toàn theo mặt bằng thế kỷ 10; cổng lớn và hàng hiên phía bắc là nguyên bản.
-294	Một khu hình tứ giác khoảng 75 × 55 mét, tường dày, hai bên có hai tháp tròn từng dùng làm bể chứa nước mưa. Thánh đường chưa bao giờ có tháp giáo đường. Cổng đồ sộ mở ra một «lối danh dự» dẫn đến mihrab, ở cuối một phòng 9 gian mà gian giữa, cao hơn, dẫn đến một mái vòm.
-295	Ubayd Allah al-Mahdi thành lập Mahdia
-296	Xây dựng Đại thánh đường
-297	Thành phố bị người Tây Ban Nha phá hủy
-298	Xây lại theo mặt bằng ban đầu (1961-1968)
-299	Đại thánh đường Sfax
-300	khoảng 850 · triều Aghlabid
-301	Giữa lòng khu phố cổ Sfax, một thánh đường thế kỷ 9 có mặt tiền phía đông được chạm khắc vào thời Zirid và tháp theo hình mẫu tháp Kairouan — những kiệt tác của nghệ thuật Ifriqiya.
-302	Công trình đầu tiên được xây khoảng năm 850, dưới triều Aghlabid, cùng lúc với tường thành Sfax. Thánh đường được tô điểm vào thời Zirid: hai dòng chữ trên mặt tiền ghi năm 988 và 1085. Bị sửa đổi vào thế kỷ 12, thánh đường lấy lại kích thước ban đầu vào thế kỷ 18, trong một đợt đại tu.
-303	Mặt tiền phía đông nhịp nhàng với các cửa ra vào và cửa sổ vòm hình móng ngựa, các hốc tường và một gờ mái răng cưa; một tấm đá Byzantine chạm hai con công được tái sử dụng ở đây. Tháp vuông, cao chừng mười lăm mét, gợi nhớ tháp Kairouan nhưng trang trí tinh xảo hơn: các đĩa chạm và chữ Kufic hoa mỹ rất đẹp. Phòng cầu nguyện, hình thước thợ, có 9 gian.
-304	Công trình đầu tiên, dưới triều Aghlabid (khoảng thời gian này)
-305	Tô điểm thời Zirid (dòng chữ trên mặt tiền)
-306	Dòng chữ thứ hai có ghi năm trên mặt tiền
-307	Được xếp hạng di tích lịch sử
-308	Thánh đường Ba Cửa
-309	866 · tháp khoảng năm 1440
-310	Một nhà nguyện nhỏ trong khu phố cổ Kairouan, nổi tiếng khắp thế giới nhờ mặt tiền năm 866: mặt tiền thánh đường được chạm khắc và trang trí lâu đời nhất trong thế giới Hồi giáo.
-311	Khoảng năm 866, một thương nhân người Andalusia định cư ở Kairouan, Muhammad ibn Khayrun al-Ma'afiri, cho xây nhà nguyện khu phố này; dòng chữ trên mặt tiền ghi tên ông và năm xây. Khoảng năm 1440, vào thời Hafsid, thánh đường được trùng tu và có thêm một tháp nhỏ: một dải chữ trên mặt tiền ghi lại điều đó.
-312	Mặt tiền, cao khoảng bảy mét, mở ba vòm trên các cột cổ; phía trên, những dải chữ Kufic chạm nổi trích kinh Qur'an (chương 33, câu 70-71) và ghi việc thành lập, xen giữa các dải hoa văn hình hoa thị và lá nho. Bên trong là một phòng cầu nguyện khoảng 9 × 9 mét, không có sân, gồm ba gian trên các cột cổ.
-313	Muhammad ibn Khayrun xây dựng
-314	Trùng tu thời Hafsid và tháp nhỏ (khoảng 1440-1441)
-315	Thánh đường Youssef Dey
-316	1612 · Ottoman
-317	Thánh đường đầu tiên theo trường phái Hanafi ở Tunis, do dey Ottoman Youssef xây gần Kasbah. Tháp hình bát giác, đầu tiên ở Tunis, cho thấy trường phái của người Ottoman.
-318	Một dòng chữ bên trong ghi năm xây là 1612, theo lệnh của Youssef Dey, người cai trị Tunis từ 1610 đến 1637. Được trùng tu cuối thế kỷ 19 dưới thời Ali Bey, năm 1926 thánh đường trở thành một cơ sở phụ của đại học Zitouna. Vị dey yên nghỉ tại đây trong một lăng mộ, ví dụ đầu tiên ở Tunis về một thánh đường có lăng mộ.
-319	Phòng cầu nguyện, có sân bao quanh ba mặt, gồm 9 gian và 7 nhịp; một mái vòm vươn lên trước mihrab. Minbar xây bằng đá ốp cẩm thạch màu, trong khi các thánh đường Maliki có minbar bằng gỗ. Tháp bát giác kết thúc bằng một ban công có mái che và mái hình chóp lợp ngói xanh lá, giống như lăng mộ.
-320	Youssef Dey xây dựng (dòng chữ khắc)
-321	Youssef Dey qua đời, được an táng trong lăng mộ của mình
-322	Cơ sở phụ của đại học Zitouna
-323	Thánh đường Hammouda Pacha
-324	1655 · triều Muradid
-325	Thánh đường Hanafi thứ hai của Tunis, do bey Hammouda Pacha dựng năm 1655. Tháp bát giác thanh mảnh vươn cao trên phố Sidi Ben Arous, trong khu phố cổ.
-326	Hammouda Pacha, bey của triều Muradid, cho xây thánh đường năm 1655, ở góc phố Sidi Ben Arous và phố Kasbah. Giống Youssef Dey trước đó, ông cho xây lăng mộ của chính mình trong sân: người ta cho rằng ngôi mộ này, rất lâu về sau, đã gợi cảm hứng cho lăng của tổng thống Bourguiba ở Monastir.
-327	Một công trình Ottoman thế kỷ 17: cổng cẩm thạch, mái ngói xanh lá và ba sân. Phòng cầu nguyện, khoảng 24 × 17 mét, có 7 gian trên 48 cột; tường ốp cẩm thạch và thạch cao chạm, với hoa văn hoa lá và cẩm thạch màu chịu ảnh hưởng Ý. Hiếm thấy ở Tunis: sân mở ra phố qua những cửa sổ rộng có chấn song. Tháp bát giác đội một ban công và mái hình chóp.
-328	Hammouda Pacha Bey xây dựng
-329	Trùng tu (1960-1961)
-330	Thánh đường Sidi Mahrez (thánh đường Mohamed Bey)
-331	1692-1699 · triều Muradid
-332	Với những mái vòm trắng, có trên biểu tượng của thành phố Tunis, đây là thánh đường duy nhất ở Tunisia xây theo hình mẫu các đại thánh đường Istanbul. Thánh đường nằm đối diện zawiya của Sidi Mahrez, vị thánh bảo hộ của khu phố cổ.
-333	Mohamed Bey el-Mouradi khởi công xây dựng năm 1692 để tôn vinh Sidi Mahrez (Mahrez ibn Khalaf, thế kỷ 10), tại khu Bab Souika; công việc kéo dài đến năm 1699. Những bất ổn chính trị cuối thế kỷ 17 khiến dự án không hoàn thành: tháp giáo đường hình bát giác dự kiến chưa bao giờ được xây, và thánh đường dùng tạm tháp vuông của một thánh đường cũ được sáp nhập vào quần thể. Từ năm 1984, công trình được trùng tu cùng khu Bab Souika.
-334	Đặt trên một nền cao, phòng cầu nguyện hình vuông (mỗi cạnh 28 mét) được che bởi một mái vòm trung tâm lớn đường kính gần 16 mét, xung quanh là các nửa mái vòm và mái vòm nhỏ ở góc, giống thánh đường Sultan Ahmet ở Istanbul. Gạch gốm Iznik, màu xanh lam, xanh lá và «đỏ cà chua», trang trí các trụ và bức tường mihrab.
-335	Mohamed Bey el-Mouradi khởi công
-336	Kết thúc thi công; tháp bát giác dự kiến chưa bao giờ được xây
-337	Trùng tu cùng với khu Bab Souika
-338	Zawiya Sidi Sahbi (lăng Người Thợ Cạo)
-339	Thế kỷ 17 · triều Muradid
-340	Lăng mộ của Abu Zama'a al-Balawi, bạn đồng hành của Nhà Tiên tri ﷺ, người mà dân Kairouan gọi là «Sidi Sahbi»: vị thánh bảo hộ của Kairouan. Những khoảng sân phủ gốm và thạch cao chạm khiến nơi đây trở thành một trong những công trình đẹp nhất thành phố.
-341	Abu Zama'a al-Balawi tử trận năm 654 (năm 34 theo lịch Hijri). Người ta kể rằng ông luôn giữ bên mình vài sợi râu của Nhà Tiên tri ﷺ, từ đó có tên «lăng Người Thợ Cạo». Công trình cũ được các bey triều Muradid làm mới hoàn toàn vào thế kỷ 17: Hammouda Pacha xây lại zawiya, trường madrasa và tháp khoảng năm 1662, rồi Mohamed Bey làm lại mái vòm lăng khoảng năm 1681-1685.
-342	Một quần thể rộng nằm ngoài tường thành khu phố cổ: sân vào và tháp kiểu Andalusia, sân trong có hàng cột, phòng có mái vòm, rồi một sân có tường phủ gốm nhiều màu và thạch cao chạm tinh xảo, nằm trước phòng mộ. Một trường madrasa, với các phòng học trò và phòng cầu nguyện, hoàn thiện quần thể.
-343	Đây là một trong những nơi người Tunisia đến thăm nhiều nhất, nhất là vào lễ Mawlid; người ta cũng làm lễ ký hôn ước và lễ cắt bao quy đầu ở đây. Ngày xưa, các đoàn lữ hành Maghreb tập trung tại đây trước khi lên đường hành hương đến Mecca.
-344	Abu Zama'a al-Balawi qua đời (năm 34 theo lịch Hijri)
-345	Zawiya, madrasa và tháp của Hammouda Pacha (khoảng thời gian này)
-346	Mái vòm mới của lăng do Mohamed Bey xây (1681-1685)
-347	Đại thánh đường Testour
-348	khoảng 1630 · người Andalusia
-349	Do những người Andalusia bị trục xuất khỏi Tây Ban Nha đầu thế kỷ 17 xây dựng, thánh đường hòa trộn truyền thống Tunisia và nghệ thuật Tây Ban Nha–Moor. Tháp có một chiếc đồng hồ mà kim quay ngược chiều.
-350	Sau khi người Morisco bị trục xuất khỏi Tây Ban Nha (1609-1614), nhiều người đến định cư ở thung lũng Medjerda và tái lập Testour. Thánh đường được dựng trong một phần ba đầu thế kỷ 17, có lẽ trước năm 1631, bởi Mohamed Tagharinou, một người Andalusia định cư trong thành phố. Sân thứ hai và phòng tẩy rửa được thêm vào thế kỷ 18. Năm 2014, người dân và các hội đoàn đã cho chiếc đồng hồ trên tháp chạy lại, sau gần ba thế kỷ ngừng hoạt động.
-351	Mặt bằng phòng cầu nguyện (9 gian) theo truyền thống Kairouan, nhưng mái ngói, trang trí vữa stucco và tháp là kiểu Andalusia. Cao 22,50 mét, tháp gồm một tháp vuông bằng gạch và đá, theo kiểu Toledo, bên trên là một tháp bát giác trang trí gốm: nó gợi nhớ các tháp chuông vùng Aragon. Trong sân, một đồng hồ mặt trời năm 1761 từng chỉ giờ cầu nguyện.
-352	Người Morisco, bị trục xuất khỏi Tây Ban Nha (1609-1614), đến Tunisia
-353	Thánh đường hoàn thành (có lẽ trước thời điểm này)
-354	Đồng hồ mặt trời trong sân
-355	Đồng hồ trên tháp chạy lại
-356	Thánh đường Malik ibn Anas (Carthage)
-357	2003 · đương đại
-358	Một thánh đường lớn hiện đại xây trên một ngọn đồi ở Carthage, giữa khu khảo cổ. Tháp cao 55 mét nhìn thấy từ xa; thánh đường được in trên tờ tiền mười dinar.
-359	Xây từ năm 2000 đến 2003 theo thiết kế của kiến trúc sư Ayad Sriha, ban đầu thánh đường mang tên «El Abidine». Tháng 11 năm 2012, thánh đường mang tên imam Malik ibn Anas (mất năm 795), người sáng lập trường phái Maliki được theo ở Tunisia. Đài Zitouna FM phát lại năm lễ nguyện hằng ngày từ đây.
-360	Thánh đường lấy cảm hứng từ các thánh đường lớn của Tunisia: quảng trường, sân rộng 1 500 m² và phòng cầu nguyện nhiều cột với 64 cột, có thể đón 1 000 tín đồ. Mihrab bằng cẩm thạch trắng khảm xanh lá và đỏ, bên trên là mái vòm đường kính mười mét. Tường phủ đá Kedhel, vữa stucco chạm và gốm hoa văn Andalusia; sàn trải thảm Kairouan.
-361	Đặt viên đá đầu tiên
-362	Khánh thành
-363	Thánh đường mang tên imam Malik ibn Anas
-364	Thánh đường Fadhloun và các thánh đường Ibadi ở Djerba
-365	Thế kỷ 14 · Djerba
-366	Ở lối ra khỏi Midoun, một thánh đường trắng mang dáng pháo đài nhỏ, đặc trưng của đảo Djerba, nơi có một cộng đồng Hồi giáo Ibadi sinh sống. Thánh đường được xếp hạng di tích từ năm 2022 và nằm trong số các địa điểm của Djerba được ghi vào danh sách Di sản Thế giới năm 2023.
-367	Xây vào thế kỷ 14, thánh đường Fadhloun thuộc quần thể phong phú các thánh đường Djerba, thường là Ibadi, dựng giữa đồng ruộng và ven biển. Với tường dày và tháp nhỏ, nhiều thánh đường còn dùng làm chốt canh: chúng tạo thành tuyến phòng thủ thứ hai phía sau các pháo đài ven biển.
-368	Phòng cầu nguyện hình vuông, mỗi cạnh khoảng 7,5 mét, được che bởi chín mái vòm nhỏ đặt trên bốn cột; mihrab là một hốc tường đơn giản và minbar bằng đá chỉ có ba bậc. Một tháp thấp, chắc, hai tầng nhô lên trên mái. Xung quanh: một sân có «mihrab mùa hè», một bể chứa nước mưa, hai phòng dạy kinh Qur'an, một lò bánh mì dưới lòng đất và một cối xay ngũ cốc.
-369	Những thánh đường này là những trung tâm nhỏ của đời sống: cầu nguyện, dạy kinh Qur'an, bánh mì và ngũ cốc cho khu phố. Kiến trúc trắng và giản dị của chúng là một trong những gương mặt của Djerba được UNESCO công nhận năm 2023.
-370	TK 14
-371	Xây dựng thánh đường Fadhloun (thế kỷ 14)
-372	Được xếp hạng di tích (quyết định ngày 15 tháng 3 năm 2022)
-373	Djerba được ghi vào danh sách Di sản Thế giới của UNESCO
-374	Thánh đường Kasbah (Tunis)
-375	1231-1235 · triều Hafsid
-376	Do người sáng lập triều Hafsid xây trên quảng trường Kasbah, thánh đường có một trong những tháp đẹp nhất Tunis, theo phong cách Almohad của Marrakech và Sevilla.
-377	Thánh đường được dựng từ năm 1231 đến 1235 theo lệnh của Abu Zakariya Yahya, người sáng lập triều Hafsid, từng là thống đốc Sevilla. Ban đầu là thánh đường của triều đình các vị vua ở Kasbah, sau đó nó trở thành một trong những thánh đường thứ Sáu của thành phố; đây là thánh đường đầu tiên được dựng ở Tunis sau Zitouna. Vào thời Ottoman, người ta cầu nguyện ở đây theo trường phái Hanafi.
-378	Phòng cầu nguyện, sâu hơn rộng, có 7 gian và 9 nhịp trên các cột cẩm thạch với đầu cột kiểu Hafsid; mihrab đội một mái vòm thạch nhũ bằng thạch cao chạm. Tháp vuông, xây ngay từ năm 1233, phủ một mạng hình thoi bằng đá màu đất son: nó là hình mẫu cho tháp hiện nay của Zitouna.
-379	Khởi công (Abu Zakariya Yahya)
-380	Tháp hoàn thành
-381	Hoàn thành việc xây thánh đường
-382	Đại thánh đường Monastir
-383	Thế kỷ 9 · mở rộng đến thế kỷ 18
-384	Hướng ra biển, cạnh ribat nổi tiếng, một thánh đường bằng đá giản dị và thanh nhã, được mở rộng qua từng thời kỳ kể từ thế kỷ 9.
-385	Phòng cầu nguyện hiện nay là kết quả của bốn giai đoạn: một nhà nguyện nhỏ có mái vòm cuốn vào thế kỷ 9, một lần mở rộng vào thế kỷ 11 (thời Zirid) cùng với mihrab, rồi vào thời Hafsid thêm một tháp vuông và hai gian nữa. Một hành lang bên ngoài được thêm vào thế kỷ 18. Tháng 10 năm 2013, hai trận rung chấn làm sập một phần đỉnh tháp.
-386	Các mặt tiền bằng đá đẽo, sinh động nhờ khung cửa ra vào, cửa sổ và các vòm của một hành lang. Thánh đường không có sân trước phòng cầu nguyện. Mihrab thế kỷ 11, với trang trí kiểu Zirid và chữ Kufic hoa mỹ, không có mái vòm bên trên, điều hiếm thấy ở Ifriqiya thời trung cổ.
-387	TK 9
-388	Nhà nguyện có mái vòm cuốn đầu tiên (thế kỷ 9)
-389	TK 11
-390	Mở rộng thời Zirid và mihrab (thế kỷ 11)
-391	TK 18
-392	Hành lang bên ngoài (thế kỷ 18)
-393	Đỉnh tháp sập một phần sau hai trận động đất
-394	Các nghiên cứu đã xác nhận nhà thờ Hồi giáo được xây trên tàn tích của một vương cung thánh đường Kitô giáo, phù hợp với một câu chuyện do sử gia Ibn Abi Dinar ghi lại. Một dòng chữ khắc ở chân mái vòm phía trên mihrab ghi tên Nusair, người hầu của khalip nhà Abbas, người chỉ huy công trình, cùng kiến trúc sư Fathallah. Công trình cũng là một vị trí phòng thủ hướng ra biển: hai tháp canh vẫn còn đứng ở góc đông bắc và đông nam. Phòng cầu nguyện rộng 56 mét x 24 mét, tức 1.344 m²; lối giữa và lối ngang, rộng 4,80 mét so với 3 mét của các lối khác, giao nhau trước mihrab. Giữa thế kỷ 19, dưới thời bộ trưởng Khaznadar, ba hành lang của sân được dựng cột bằng đá cẩm thạch trắng đưa từ Ý sang. Tháp minaret cao 43 mét, và mười hai cửa mở ra các khu chợ, trong đó có cửa của imam, được viền bằng đá cẩm thạch La Mã chạm khắc.
-395	Trước đợt xây dựng lại lớn năm 836, nơi cầu nguyện đầu tiên của Uqba đã được Hassan ibn al-Nu'man tu sửa năm 703, mở rộng dưới thời thống đốc Umayyad Bishr ibn Safwan (722-728), rồi được Yazid ibn Hatim tu sửa lại năm 772. Toàn bộ công trình là một hình chữ nhật khoảng 125 x 75 mét, và phòng cầu nguyện có 8 gian ngang. Các cột và đầu cột cổ ở đây tạo thành bộ sưu tập đầu cột La Mã và Byzantine lớn nhất từng được tập hợp trong một công trình Hồi giáo. Trần gỗ vẫn giữ những thanh xà đẹp từ thế kỷ 9, trang trí quả và lá cọ theo phong cách Hy Lạp hóa. Trong mihrab, hốc tường được ốp 28 tấm đá cẩm thạch chạm thủng hoặc chạm nổi, bên dưới nửa mái vòm bằng gỗ sơn; các viên gạch men ánh kim của nó có lẽ đến từ Iraq. Minbar được làm từ hơn 300 tấm gỗ tếch Ấn Độ. Tháp minaret cao 32 mét gồm ba tầng, trên đỉnh là mái vòm có rãnh; dáng vững chãi của nó gợi nhớ những ngọn hải đăng La Mã.
-396	Người sáng lập, Muhammad Tagharinu, đã định cư ở Testour từ năm 1609. Nhà thờ Hồi giáo có hai sân: sân lớn hơn ở phía bắc, rộng khoảng 17,70 x 26,20 mét, sân còn lại nằm ở phía tây phòng cầu nguyện. Sân lớn được bao quanh bởi hành lang có vòm bán nguyệt đặt trên các cột cổ, và được lát bằng những phiến đá cổ tái sử dụng. Đồng hồ mặt trời mang tên người thợ làm ra nó, Ahmed al-Harrar. Tháp minaret mọc lên từ một tháp vuông mỗi cạnh 4,50 mét, bốn góc có những chóp nhọn nhỏ, và kết thúc bằng một lầu đèn mái gỗ hình kim tự tháp. Mặt đồng hồ được gắn bên dưới một trong các cửa sổ đôi của tháp bát giác, một trường hợp duy nhất trong các tháp minaret thời ấy. Phòng cầu nguyện rộng 25,85 x 19,12 mét, được phủ bằng vòm chữ thập và có bảy gian ngang; lối đi giữa mang hai mái vòm, và phía trên mihrab là một trán tường hình tam giác.
-397	Theo bảo tàng, công trình kéo dài từ năm 851 đến năm 862 và do Mudam, một nô lệ được vị emir trả tự do, giám sát. Tên ông có trong dòng chữ Kufic dài được chạm nổi trên mặt tiền: đây là dải chữ trang trí cổ nhất còn lại trên mặt tiền của một công trình. Sân, rộng hơn sâu (41 x 26 mét), có hành lang bao quanh ba phía; hành lang thứ tư, trước phòng cầu nguyện, có lẽ được thêm vào thế kỷ 11. Lời gọi cầu nguyện được cất lên từ đỉnh tháp góc đông bắc của nhà thờ Hồi giáo, nơi có một đình nhỏ mái vòm và có cầu thang đi lên từ sân. Phòng cầu nguyện rộng 59 x 51 mét, có 6 gian ngang và được phủ bằng vòm cuốn đặt trên các trụ hình chữ thập. Bản thân mihrab có từ thời nhà Zirid, như cách trang trí hốc tường và các vòng chữ Kufic hoa lá của nó cho thấy.
-398	Mặt tiền được chạm từ một loại đá mềm và tập hợp toàn bộ kho họa tiết trang trí của Kairouan thời Aghlabid. Ba vòm hình móng ngựa của nó đặt trên những đầu cột cổ được tái sử dụng; vòm giữa lớn hơn hai vòm bên. Những dây lá nho ở các góc giữa vòm gợi nhớ nửa mái vòm bằng gỗ sơn của mihrab Đại Thánh đường. Trong các dải chữ Kufic, nét đứng của các chữ cái được vát xiên, và những họa tiết cây cỏ nhỏ lấp các khoảng trống: chúng báo trước kiểu chữ Kufic hoa lá của cuối thế kỷ 10. Dải giữa xếp những tấm đá chạm khắc: hoa hồng tám nhánh, hoa hình sao tám cánh và những hàng hoa nhỏ nở hoặc khép. Tháp minaret thời Hafsid, có chân đế hình chữ nhật, mang những cửa sổ đôi viền gạch men, dấu hiệu của ảnh hưởng Andalus. Bên trong, ba gian chạy song song với bức tường qibla, và hai cột đỡ những vòm hình móng ngựa.
-399	Việc xây dựng do Mohamed Bey khởi công và em trai ông là Romdhane Bey tiếp tục. Đồ án, lấy cảm hứng từ các nhà thờ Hồi giáo Thổ Nhĩ Kỳ, dự kiến có một tháp minaret hình bát giác ở góc tây bắc của sân và hai lăng mộ gia đình, nhưng cái chết của Mohamed Bey rồi vụ ám sát em trai ông đã khiến công trình dang dở. Phòng cầu nguyện được bao quanh ba mặt bởi các hành lang mở ra ba sân hình chữ U, dựa trên các cột đá cẩm thạch có đầu cột kiểu Thổ Nhĩ Kỳ. Bên trong, bốn trụ lớn đỡ mái vòm trung tâm, cao 29 mét so với mặt sàn, đặt trên hai tầng cổ vòm, một tròn và một bát giác. Trang trí ban đầu giản dị; đá cẩm thạch xanh trên tường và thạch cao chạm khắc trên các mái vòm được thêm vào sau này. Bục giảng minbar, ốp đá cẩm thạch nhiều màu, mang một dòng chữ khắc ghi năm 1704.
-400	Người chỉ huy thi công là Ali ibn Mohamed ibn Kacem. Abu Zakariya cho xây nhà thờ Hồi giáo này bên cạnh cung điện ông dựng trong Kasbah, nơi đặt chính quyền, sau khi tuyên bố độc lập khỏi nhà Almohad ở Marrakesh. Phòng cầu nguyện, sâu hơn rộng, khác với kiểu mẫu thường thấy ở Ifriqiya; mái được che bằng vòm giao nhau, ngăn cách bởi các vòm cuốn hình móng ngựa. Mihrab được ốp đá cẩm thạch và đóng khung bởi các cột nhỏ có đầu cột chạm khắc, thếp vàng lá. Khi nhà thờ chuyển sang nghi thức Hanafi, minbar bằng gỗ được thay bằng một minbar xây ốp đá cẩm thạch. Trang trí của tháp minaret theo mẫu tháp Kasbah ở Marrakesh, cổ hơn khoảng năm mươi năm, nhưng làm bằng đá chứ không bằng gạch; hai ô hình thoi ở mặt phía đông mang dòng chữ khắc ghi niên đại công trình.
-401	Nhiều khả năng các tù binh người Ý đã tham gia xây dựng. Nhà thờ thuộc kiểu nhà thờ Hồi giáo có lăng mộ, kết hợp mộ của người sáng lập với nơi cầu nguyện. Ở phía đông, một hành lang có hàng cột có mihrab ngoài trời để tín đồ có thể cầu nguyện tại đó vào mùa hè. Tháp minaret, ở góc tây bắc của sân phía tây, được xây bằng sa thạch lẫn vỏ sò màu đất son đậm. Ở góc đối diện, lăng của Hammouda Pacha và gia đình có mỗi cạnh dài 8,20 mét; mặt ngoài xen kẽ các lớp đá cẩm thạch đen và trắng. Phòng cầu nguyện có bốn gian ngang, lợp vòm bán trụ đặt trên các cột có đầu cột hình xoắn ốc. Trước mihrab là một mái vòm mang dòng chữ khắc ghi việc xây dựng; vòm cuốn của mihrab bằng đá hai màu đặt trên hai cột nhỏ bằng đá đen, còn minbar được ốp đá cẩm thạch trắng.
-402	Quần thể do hai người thợ cả, Ahmed và Moustafa al-Andalousi, xây dựng; Mohamed Bey, người làm lại mái vòm lăng, là cháu nội của Hammouda Pacha. Cổng chính mở ra một sân rộng lát gạch địa phương, bao quanh bởi các hành lang có cột, nơi giữ ngựa và gia súc để cưỡi. Bên trái, một nhà kho nhận sản vật từ tài sản hiến tặng (habous) của vị thánh và các đồ dâng cúng; phía trên là các phòng ở dành cho viên chức thu thuế của vùng, về sau dành cho khách quý. Trường madrasa, được xem là nguyên mẫu của madrasa Tunisia, có phòng cầu nguyện chỉ gồm hai gian dọc; tháp minaret của trường gợi nhớ các tháp của Đại thánh đường Tlemcen và nhà thờ Hồi giáo Kasbah ở Tunis. Trong sân trong, các đầu cột chạm hình trăng lưỡi liềm, biểu tượng của người Ottoman.
-403	Người chỉ huy thi công là Ibn Ghaleb al-Andalousi. Sau khi Ifriqiya sáp nhập vào Đế quốc Ottoman, số người Thổ theo trường phái Hanafi ngày càng đông: trước tiên họ được giao hai nhà thờ theo trường phái Maliki là nhà thờ Kasbah và nhà thờ el-Qsar, rồi Youssef Dey mới xây cho Tunis nhà thờ Hồi giáo kiểu Thổ đầu tiên. Dọc mặt tiền phía bắc, một hành lang cột thay cho hành lang lối vào của các nhà thờ địa phương. Tháp minaret bát giác sau này trở thành hình mẫu cho các nhà thờ Hammouda Pacha, el-Jedid và Youssef Sahib et-Tabaa. Trong phòng cầu nguyện, gian giữa và gian ngang dọc theo bức tường qibla, rộng hơn các gian khác, giao nhau thành hình chữ T trước mihrab. Các cột có nguồn gốc khác nhau và mang đầu cột kiểu Hafsid, trừ một vài đầu cột cổ đại. Lăng mộ được xác định niên đại nhờ dòng chữ khắc trên vòm cuốn lớn ở giữa.
-404	Mục từ của bảo tàng ảo Discover Islamic Art cho biết thêm nhiều chi tiết. Người đứng ra xây dựng được cho là Ali ibn Salim, anh em cùng sữa với nhà luật học lớn Sahnun của Kairouan. Trang trí mặt tiền thuộc cùng phong cách Fatimid - Zirid với cổng hiên của Đại thánh đường Mahdia. Các cuộc thăm dò cho thấy ngọn tháp gốc thời Aghlabid đã được bọc, vào thời Fatimid - Zirid, trong một lớp vỏ đá xây chạm khắc. Khoảng sân nhỏ có các dãy hành lang trên trụ hình chữ thập, lợp vòm giao nhau; hành lang phía qibla nhô ra thành cổng hiên dưới một mái vòm. Mười cửa dẫn vào gian cầu nguyện, nơi các vòm tựa trên những cột có đầu cột cổ. Một mái vòm lệch trục đánh dấu chỗ của mihrab thế kỷ 12; mihrab hiện nay có từ thế kỷ 18.
-405	Theo mục từ của bảo tàng ảo Discover Islamic Art, việc bức tường qibla sụp đổ đã dẫn đến những công trình lớn thời Zirid, rồi thêm các đợt sửa chữa khác vào thế kỷ 17 dưới thời Ottoman. Vì không có tháp minaret, lời gọi cầu nguyện có lẽ được xướng từ đỉnh một trong hai tòa tháp. Cổng hiên lối vào, cổng hiên đầu tiên được biết đến trong kiến trúc tôn giáo Maghreb, có các hốc hình mihrab ở phía trên và các hốc đáy phẳng ở phía dưới: lối trang trí này trở thành khuôn mẫu cho các công trình Fatimid. Sân được bao quanh bởi bốn dãy hành lang, mỗi góc có một gian phòng. Trong gian cầu nguyện, gian giữa và dãy song song với bức tường qibla tạo thành hình chữ T; mihrab hiện nay mô phỏng mihrab thế kỷ 11, với các đường rãnh đều kết thúc bằng hình vỏ sò. Thánh đường này đã truyền cảm hứng cho các thánh đường al-Hakim và al-Aqmar ở Cairo.
-406	Thánh đường Sahib et-Tabaa
-407	1808-1814 · nhà Husseinite
-408	Nhìn xuống quảng trường Halfaouine, ở phía bắc khu phố cổ Tunis, thánh đường đầu thế kỷ 19 này là thánh đường lớn cuối cùng được xây ở Tunis trước thời bảo hộ của Pháp. Những cột và bức tường bằng đá cẩm thạch Ý khiến nơi đây trở thành nơi cầu nguyện ở Tunisia chịu ảnh hưởng châu Âu rõ nhất.
-409	Thánh đường mang tên Youssef Sahib et-Tabaa, sinh khoảng năm 1765 ở Moldavia, bị bắt làm nô lệ từ nhỏ, rồi năm 1781 vào phục vụ hoàng tử Hammouda Pacha; năm 1782 ông trở thành quan giữ ấn (sahib et-tabaa), rồi tể tướng của hoàng tử. Ông cho xây thánh đường từ 1808 đến 1814 dưới sự chỉ huy của người thợ cả Hadj Sassi ibn Frija, và khánh thành năm 1814. Bị thương trong một vụ ám sát ở Bardo vào tháng 9 năm 1814, ông qua đời vào tháng 1 năm 1815: ngọn tháp minaret vẫn dang dở cho đến thập niên 1970.
-410	Được xây trên các cửa hàng và kho, trên một nền đá đẽo lấy từ phế tích Carthage, thánh đường vươn cao trên quảng trường. Một cầu thang gấp khúc dẫn lên hành lang phía đông, có hai hàng cột và năm vòm cung mở ra quảng trường; ngọn tháp bát giác đứng ở đầu hành lang. Ba dãy hành lang bao quanh gian cầu nguyện gồm 9 gian dọc và 7 gian ngang, lợp vòm bán trụ. Hai gian ngang ở hai đầu, dọc theo bức tường qibla và bức tường đối diện, mỗi gian có ba mái vòm: một ở giữa và một ở mỗi góc.
-411	Theo mục từ của bảo tàng ảo Discover Islamic Art, không nơi cầu nguyện nào khác ở Tunisia cho thấy ảnh hưởng phương Tây rõ rệt như vậy. Đá cẩm thạch, nhiều hơn mọi nơi khác, được đưa thẳng từ Carrara ở Ý. Những cột thanh mảnh có rãnh mang đầu cột kiểu hỗn hợp, một cách diễn giải kiểu Ý của mẫu Tunisia thời Thổ Nhĩ Kỳ; các vòm chỉ hơi vượt nửa tròn đã rời bỏ hình móng ngựa cổ điển, và các lanh tô mang phù điêu tân baroque. Gạch men chỉ còn ở phần trên của tường. Mihrab và minbar cố định bằng đá cẩm thạch nhiều màu kết hợp những dãy vòm giả Gothic với hoa lá và những nét thếp vàng. Hành lang phía đông có một mihrab ngoài trời để cầu nguyện khi trời nóng.
-412	Thánh đường là trung tâm của một quần thể lớn do vị tể tướng lập ra để phục vụ khu Halfaouine: hai trường madrasa, một khu chợ, một nhà tắm hammam, một vòi nước công cộng (sabil), một nhà trọ fondouk, cung điện và lăng mộ của ông; lăng mộ, cũng như các trường madrasa, có lối vào từ mặt tiền phía bắc.
-413	Tể tướng Youssef Sahib et-Tabaa khởi công xây dựng
-414	Người sáng lập khánh thành thánh đường
-415	Người sáng lập qua đời, sau khi bị thương ở Bardo năm trước
-416	Ngọn tháp cuối cùng có được đỉnh đèn lồng (thập niên 1970)
+249	khatma Kinh Qur'an ngày {d}
+250	Khatma Kinh Qur'an vào một ngày cụ thể
+251	Tunis
+252	Kairouan
+253	Sousse
+254	Mahdia
+255	Sfax
+256	Testour
+257	Carthage
+258	Djerba (Midoun)
+259	Monastir
+260	Thánh đường Zitouna
+261	704 · xây lại năm 863
+262	Đại thánh đường của khu phố cổ Tunis, lâu đời nhất và rộng nhất thủ đô. Trong hơn một nghìn năm, đây cũng là một đại học lớn của Hồi giáo.
+263	Theo truyền thống, nơi cầu nguyện này do Hassan ibn al-Nu'man lập năm 704, sau khi chiếm Carthage; các nguồn khác cho rằng người sáng lập là thống đốc triều Umayyad Abd Allah ibn al-Habhab, khoảng năm 734. Công trình đầu tiên hầu như không còn gì: thánh đường được tiểu vương triều Aghlabid Abu Ibrahim Ahmad xây lại hoàn toàn năm 863. Sau đó mỗi triều đại đều tô điểm thêm: mái vòm «bahou» thời Zirid (khoảng năm 990), bể chứa nước và cổng thời Hafsid, hành lang phía đông năm 1637. Tháp hiện nay, theo phong cách Almohad, có từ năm 1894.
+264	Giống như ở Kairouan và Córdoba, một sân có hành lang bao quanh nằm trước phòng cầu nguyện kiểu «nhiều cột»: khoảng 160 cột cổ, phần lớn lấy từ Carthage, tạo thành 15 gian. Gian giữa, rộng hơn, dẫn đến mihrab, bên trên là mái vòm thế kỷ 9. Mái vòm bahou, ở lối vào phòng, xen kẽ đá màu đất son và gạch đỏ. Tháp năm 1894 lặp lại hoa văn hình thoi của tháp thánh đường Kasbah.
+265	Zitouna từng là một trong những trung tâm giảng dạy lâu đời nhất của thế giới Hồi giáo: mỗi học giả tựa lưng vào một cây cột, học trò ngồi thành vòng tròn xung quanh. Nơi đây đã đào tạo những luật gia Maliki lớn như Ibn Arafa, người cùng thời với Ibn Khaldun. Năm 1958, việc giảng dạy rời khỏi thánh đường; ngày nay nó tiếp tục tại Đại học Ez-Zitouna. Người ta nói rằng việc cầu nguyện ở đây chưa bao giờ gián đoạn.
+266	Thành lập theo truyền thống (Hassan ibn al-Nu'man)
+267	Triều Aghlabid xây lại hoàn toàn
+268	Mái vòm bahou (triều Zirid)
+269	Tháp mới theo phong cách Almohad
+270	Việc giảng dạy chuyển từ thánh đường sang đại học
+271	Khu phố cổ Tunis được ghi vào danh sách Di sản Thế giới của UNESCO
+272	Đại thánh đường Kairouan (thánh đường Uqba)
+273	670 · hình dáng hiện nay từ năm 836
+274	Thánh đường lâu đời nhất vùng Maghreb, thành lập năm 670 cùng với thành phố Kairouan. Đây là hình mẫu cho mọi thánh đường ở Bắc Phi và là Di sản Thế giới của UNESCO.
+275	Năm 670, nhà chinh phục Uqba ibn Nafi lập nên Kairouan và đặt thánh đường của mình ở trung tâm thành phố. Được mở rộng và xây lại vào thế kỷ 8 và 9, thánh đường có hình dáng hiện nay vào năm 836 dưới thời tiểu vương Aghlabid Ziyadat Allah I. Khoảng năm 862-863, Abu Ibrahim Ahmad kéo dài phòng cầu nguyện và tặng minbar cùng phần trang trí mihrab. Vào thế kỷ 11, vị vương triều Zirid al-Mu'izz ibn Badis thêm maqsura bằng gỗ. Kairouan từ lâu được coi là thành phố thiêng thứ tư của Hồi giáo.
+276	Một khu hình tứ giác rộng khoảng 9 000 m²: một sân lát đá lớn, các hành lang, và một phòng cầu nguyện 17 gian được đỡ bởi hàng trăm cột cổ bằng cẩm thạch, granit và đá porphyr, không cột nào giống cột nào. Tháp cao khoảng 31 mét, có từ nửa đầu thế kỷ 9: đây là một trong những tháp giáo đường lâu đời nhất còn đứng vững. Mihrab thế kỷ 9 được trang trí bằng gạch gốm ánh kim; bên cạnh, minbar bằng gỗ chạm là minbar lâu đời nhất còn được lưu giữ trong thế giới Hồi giáo.
+277	Kairouan từng là thủ đô tôn giáo và học thuật của Ifriqiya: chính tại đây, vào thế kỷ 9, imam Sahnun đã soạn bộ Mudawwana, tác phẩm nền tảng của trường phái Maliki được theo ở Tunisia và khắp Maghreb. Thư viện của thánh đường đã lưu giữ những bản chép tay rất cổ, trong đó có các tờ của «Qur'an Xanh» nổi tiếng.
+278	Uqba ibn Nafi thành lập, cùng với thành phố
+279	Ziyadat Allah I xây lại: hình dáng hiện nay
+280	Minbar và phần trang trí mihrab (Abu Ibrahim Ahmad)
+281	Maqsura gỗ của al-Mu'izz ibn Badis (khoảng thời gian này)
+282	Kairouan được ghi vào danh sách Di sản Thế giới của UNESCO
+283	Đại thánh đường Sousse
+284	851-862 · triều Aghlabid
+285	Ở lối vào khu phố cổ, một thánh đường mang dáng pháo đài, xây năm 851-862 gần ribat bảo vệ bờ biển. Giản dị và vững chãi, thánh đường thuộc khu phố cổ Sousse, Di sản Thế giới của UNESCO.
+286	Thánh đường do tiểu vương Aghlabid Abu al-Abbas Muhammad dựng năm 851-862, khoảng ba mươi năm sau ribat Sousse; một dòng chữ Kufic trên các hành lang của sân ghi lại việc xây dựng. Thánh đường được mở rộng dưới thời tiểu vương Ibrahim II (875-902), khi Sousse trở thành thành phố thứ hai của Ifriqiya.
+287	Tường có lỗ châu mai, tháp góc đội những mái vòm nhỏ: thánh đường trông như một pháo đài và không có tháp giáo đường thực sự, có lẽ vì tháp canh của ribat bên cạnh đã đảm nhận vai trò đó. Phòng cầu nguyện có 13 gian; gian giữa và nhịp trước mihrab, rộng hơn, tạo thành hình chữ «T», được đánh dấu bằng hai mái vòm.
+288	Ribat Sousse, ngay bên cạnh, hoàn thành
+289	Xây dựng thánh đường (851-862)
+290	Mở rộng dưới thời Ibrahim II (875-902)
+291	Khu phố cổ Sousse được ghi vào danh sách Di sản Thế giới của UNESCO
+292	Đại thánh đường Mahdia
+293	916 · triều Fatimid
+294	Do vị khalip Fatimid đầu tiên xây năm 916 tại kinh đô mới của ông, bên bờ biển. Cổng lớn nhô ra phía trước, lấy cảm hứng từ các khải hoàn môn, là điều chưa từng có trong kiến trúc thánh đường.
+295	Khi Ubayd Allah al-Mahdi lập nên Mahdia năm 909, ông cho xây thánh đường gần cung điện khalip, trên một nền lấn ra biển. Sau khi thành phố bị người Tây Ban Nha phá hủy năm 1554, công trình nhiều lần bị sửa đổi. Từ năm 1961 đến 1968, thánh đường được xây lại gần như hoàn toàn theo mặt bằng thế kỷ 10; cổng lớn và hàng hiên phía bắc là nguyên bản.
+296	Một khu hình tứ giác khoảng 75 × 55 mét, tường dày, hai bên có hai tháp tròn từng dùng làm bể chứa nước mưa. Thánh đường chưa bao giờ có tháp giáo đường. Cổng đồ sộ mở ra một «lối danh dự» dẫn đến mihrab, ở cuối một phòng 9 gian mà gian giữa, cao hơn, dẫn đến một mái vòm.
+297	Ubayd Allah al-Mahdi thành lập Mahdia
+298	Xây dựng Đại thánh đường
+299	Thành phố bị người Tây Ban Nha phá hủy
+300	Xây lại theo mặt bằng ban đầu (1961-1968)
+301	Đại thánh đường Sfax
+302	khoảng 850 · triều Aghlabid
+303	Giữa lòng khu phố cổ Sfax, một thánh đường thế kỷ 9 có mặt tiền phía đông được chạm khắc vào thời Zirid và tháp theo hình mẫu tháp Kairouan — những kiệt tác của nghệ thuật Ifriqiya.
+304	Công trình đầu tiên được xây khoảng năm 850, dưới triều Aghlabid, cùng lúc với tường thành Sfax. Thánh đường được tô điểm vào thời Zirid: hai dòng chữ trên mặt tiền ghi năm 988 và 1085. Bị sửa đổi vào thế kỷ 12, thánh đường lấy lại kích thước ban đầu vào thế kỷ 18, trong một đợt đại tu.
+305	Mặt tiền phía đông nhịp nhàng với các cửa ra vào và cửa sổ vòm hình móng ngựa, các hốc tường và một gờ mái răng cưa; một tấm đá Byzantine chạm hai con công được tái sử dụng ở đây. Tháp vuông, cao chừng mười lăm mét, gợi nhớ tháp Kairouan nhưng trang trí tinh xảo hơn: các đĩa chạm và chữ Kufic hoa mỹ rất đẹp. Phòng cầu nguyện, hình thước thợ, có 9 gian.
+306	Công trình đầu tiên, dưới triều Aghlabid (khoảng thời gian này)
+307	Tô điểm thời Zirid (dòng chữ trên mặt tiền)
+308	Dòng chữ thứ hai có ghi năm trên mặt tiền
+309	Được xếp hạng di tích lịch sử
+310	Thánh đường Ba Cửa
+311	866 · tháp khoảng năm 1440
+312	Một nhà nguyện nhỏ trong khu phố cổ Kairouan, nổi tiếng khắp thế giới nhờ mặt tiền năm 866: mặt tiền thánh đường được chạm khắc và trang trí lâu đời nhất trong thế giới Hồi giáo.
+313	Khoảng năm 866, một thương nhân người Andalusia định cư ở Kairouan, Muhammad ibn Khayrun al-Ma'afiri, cho xây nhà nguyện khu phố này; dòng chữ trên mặt tiền ghi tên ông và năm xây. Khoảng năm 1440, vào thời Hafsid, thánh đường được trùng tu và có thêm một tháp nhỏ: một dải chữ trên mặt tiền ghi lại điều đó.
+314	Mặt tiền, cao khoảng bảy mét, mở ba vòm trên các cột cổ; phía trên, những dải chữ Kufic chạm nổi trích kinh Qur'an (chương 33, câu 70-71) và ghi việc thành lập, xen giữa các dải hoa văn hình hoa thị và lá nho. Bên trong là một phòng cầu nguyện khoảng 9 × 9 mét, không có sân, gồm ba gian trên các cột cổ.
+315	Muhammad ibn Khayrun xây dựng
+316	Trùng tu thời Hafsid và tháp nhỏ (khoảng 1440-1441)
+317	Thánh đường Youssef Dey
+318	1612 · Ottoman
+319	Thánh đường đầu tiên theo trường phái Hanafi ở Tunis, do dey Ottoman Youssef xây gần Kasbah. Tháp hình bát giác, đầu tiên ở Tunis, cho thấy trường phái của người Ottoman.
+320	Một dòng chữ bên trong ghi năm xây là 1612, theo lệnh của Youssef Dey, người cai trị Tunis từ 1610 đến 1637. Được trùng tu cuối thế kỷ 19 dưới thời Ali Bey, năm 1926 thánh đường trở thành một cơ sở phụ của đại học Zitouna. Vị dey yên nghỉ tại đây trong một lăng mộ, ví dụ đầu tiên ở Tunis về một thánh đường có lăng mộ.
+321	Phòng cầu nguyện, có sân bao quanh ba mặt, gồm 9 gian và 7 nhịp; một mái vòm vươn lên trước mihrab. Minbar xây bằng đá ốp cẩm thạch màu, trong khi các thánh đường Maliki có minbar bằng gỗ. Tháp bát giác kết thúc bằng một ban công có mái che và mái hình chóp lợp ngói xanh lá, giống như lăng mộ.
+322	Youssef Dey xây dựng (dòng chữ khắc)
+323	Youssef Dey qua đời, được an táng trong lăng mộ của mình
+324	Cơ sở phụ của đại học Zitouna
+325	Thánh đường Hammouda Pacha
+326	1655 · triều Muradid
+327	Thánh đường Hanafi thứ hai của Tunis, do bey Hammouda Pacha dựng năm 1655. Tháp bát giác thanh mảnh vươn cao trên phố Sidi Ben Arous, trong khu phố cổ.
+328	Hammouda Pacha, bey của triều Muradid, cho xây thánh đường năm 1655, ở góc phố Sidi Ben Arous và phố Kasbah. Giống Youssef Dey trước đó, ông cho xây lăng mộ của chính mình trong sân: người ta cho rằng ngôi mộ này, rất lâu về sau, đã gợi cảm hứng cho lăng của tổng thống Bourguiba ở Monastir.
+329	Một công trình Ottoman thế kỷ 17: cổng cẩm thạch, mái ngói xanh lá và ba sân. Phòng cầu nguyện, khoảng 24 × 17 mét, có 7 gian trên 48 cột; tường ốp cẩm thạch và thạch cao chạm, với hoa văn hoa lá và cẩm thạch màu chịu ảnh hưởng Ý. Hiếm thấy ở Tunis: sân mở ra phố qua những cửa sổ rộng có chấn song. Tháp bát giác đội một ban công và mái hình chóp.
+330	Hammouda Pacha Bey xây dựng
+331	Trùng tu (1960-1961)
+332	Thánh đường Sidi Mahrez (thánh đường Mohamed Bey)
+333	1692-1699 · triều Muradid
+334	Với những mái vòm trắng, có trên biểu tượng của thành phố Tunis, đây là thánh đường duy nhất ở Tunisia xây theo hình mẫu các đại thánh đường Istanbul. Thánh đường nằm đối diện zawiya của Sidi Mahrez, vị thánh bảo hộ của khu phố cổ.
+335	Mohamed Bey el-Mouradi khởi công xây dựng năm 1692 để tôn vinh Sidi Mahrez (Mahrez ibn Khalaf, thế kỷ 10), tại khu Bab Souika; công việc kéo dài đến năm 1699. Những bất ổn chính trị cuối thế kỷ 17 khiến dự án không hoàn thành: tháp giáo đường hình bát giác dự kiến chưa bao giờ được xây, và thánh đường dùng tạm tháp vuông của một thánh đường cũ được sáp nhập vào quần thể. Từ năm 1984, công trình được trùng tu cùng khu Bab Souika.
+336	Đặt trên một nền cao, phòng cầu nguyện hình vuông (mỗi cạnh 28 mét) được che bởi một mái vòm trung tâm lớn đường kính gần 16 mét, xung quanh là các nửa mái vòm và mái vòm nhỏ ở góc, giống thánh đường Sultan Ahmet ở Istanbul. Gạch gốm Iznik, màu xanh lam, xanh lá và «đỏ cà chua», trang trí các trụ và bức tường mihrab.
+337	Mohamed Bey el-Mouradi khởi công
+338	Kết thúc thi công; tháp bát giác dự kiến chưa bao giờ được xây
+339	Trùng tu cùng với khu Bab Souika
+340	Zawiya Sidi Sahbi (lăng Người Thợ Cạo)
+341	Thế kỷ 17 · triều Muradid
+342	Lăng mộ của Abu Zama'a al-Balawi, bạn đồng hành của Nhà Tiên tri ﷺ, người mà dân Kairouan gọi là «Sidi Sahbi»: vị thánh bảo hộ của Kairouan. Những khoảng sân phủ gốm và thạch cao chạm khiến nơi đây trở thành một trong những công trình đẹp nhất thành phố.
+343	Abu Zama'a al-Balawi tử trận năm 654 (năm 34 theo lịch Hijri). Người ta kể rằng ông luôn giữ bên mình vài sợi râu của Nhà Tiên tri ﷺ, từ đó có tên «lăng Người Thợ Cạo». Công trình cũ được các bey triều Muradid làm mới hoàn toàn vào thế kỷ 17: Hammouda Pacha xây lại zawiya, trường madrasa và tháp khoảng năm 1662, rồi Mohamed Bey làm lại mái vòm lăng khoảng năm 1681-1685.
+344	Một quần thể rộng nằm ngoài tường thành khu phố cổ: sân vào và tháp kiểu Andalusia, sân trong có hàng cột, phòng có mái vòm, rồi một sân có tường phủ gốm nhiều màu và thạch cao chạm tinh xảo, nằm trước phòng mộ. Một trường madrasa, với các phòng học trò và phòng cầu nguyện, hoàn thiện quần thể.
+345	Đây là một trong những nơi người Tunisia đến thăm nhiều nhất, nhất là vào lễ Mawlid; người ta cũng làm lễ ký hôn ước và lễ cắt bao quy đầu ở đây. Ngày xưa, các đoàn lữ hành Maghreb tập trung tại đây trước khi lên đường hành hương đến Mecca.
+346	Abu Zama'a al-Balawi qua đời (năm 34 theo lịch Hijri)
+347	Zawiya, madrasa và tháp của Hammouda Pacha (khoảng thời gian này)
+348	Mái vòm mới của lăng do Mohamed Bey xây (1681-1685)
+349	Đại thánh đường Testour
+350	khoảng 1630 · người Andalusia
+351	Do những người Andalusia bị trục xuất khỏi Tây Ban Nha đầu thế kỷ 17 xây dựng, thánh đường hòa trộn truyền thống Tunisia và nghệ thuật Tây Ban Nha–Moor. Tháp có một chiếc đồng hồ mà kim quay ngược chiều.
+352	Sau khi người Morisco bị trục xuất khỏi Tây Ban Nha (1609-1614), nhiều người đến định cư ở thung lũng Medjerda và tái lập Testour. Thánh đường được dựng trong một phần ba đầu thế kỷ 17, có lẽ trước năm 1631, bởi Mohamed Tagharinou, một người Andalusia định cư trong thành phố. Sân thứ hai và phòng tẩy rửa được thêm vào thế kỷ 18. Năm 2014, người dân và các hội đoàn đã cho chiếc đồng hồ trên tháp chạy lại, sau gần ba thế kỷ ngừng hoạt động.
+353	Mặt bằng phòng cầu nguyện (9 gian) theo truyền thống Kairouan, nhưng mái ngói, trang trí vữa stucco và tháp là kiểu Andalusia. Cao 22,50 mét, tháp gồm một tháp vuông bằng gạch và đá, theo kiểu Toledo, bên trên là một tháp bát giác trang trí gốm: nó gợi nhớ các tháp chuông vùng Aragon. Trong sân, một đồng hồ mặt trời năm 1761 từng chỉ giờ cầu nguyện.
+354	Người Morisco, bị trục xuất khỏi Tây Ban Nha (1609-1614), đến Tunisia
+355	Thánh đường hoàn thành (có lẽ trước thời điểm này)
+356	Đồng hồ mặt trời trong sân
+357	Đồng hồ trên tháp chạy lại
+358	Thánh đường Malik ibn Anas (Carthage)
+359	2003 · đương đại
+360	Một thánh đường lớn hiện đại xây trên một ngọn đồi ở Carthage, giữa khu khảo cổ. Tháp cao 55 mét nhìn thấy từ xa; thánh đường được in trên tờ tiền mười dinar.
+361	Xây từ năm 2000 đến 2003 theo thiết kế của kiến trúc sư Ayad Sriha, ban đầu thánh đường mang tên «El Abidine». Tháng 11 năm 2012, thánh đường mang tên imam Malik ibn Anas (mất năm 795), người sáng lập trường phái Maliki được theo ở Tunisia. Đài Zitouna FM phát lại năm lễ nguyện hằng ngày từ đây.
+362	Thánh đường lấy cảm hứng từ các thánh đường lớn của Tunisia: quảng trường, sân rộng 1 500 m² và phòng cầu nguyện nhiều cột với 64 cột, có thể đón 1 000 tín đồ. Mihrab bằng cẩm thạch trắng khảm xanh lá và đỏ, bên trên là mái vòm đường kính mười mét. Tường phủ đá Kedhel, vữa stucco chạm và gốm hoa văn Andalusia; sàn trải thảm Kairouan.
+363	Đặt viên đá đầu tiên
+364	Khánh thành
+365	Thánh đường mang tên imam Malik ibn Anas
+366	Thánh đường Fadhloun và các thánh đường Ibadi ở Djerba
+367	Thế kỷ 14 · Djerba
+368	Ở lối ra khỏi Midoun, một thánh đường trắng mang dáng pháo đài nhỏ, đặc trưng của đảo Djerba, nơi có một cộng đồng Hồi giáo Ibadi sinh sống. Thánh đường được xếp hạng di tích từ năm 2022 và nằm trong số các địa điểm của Djerba được ghi vào danh sách Di sản Thế giới năm 2023.
+369	Xây vào thế kỷ 14, thánh đường Fadhloun thuộc quần thể phong phú các thánh đường Djerba, thường là Ibadi, dựng giữa đồng ruộng và ven biển. Với tường dày và tháp nhỏ, nhiều thánh đường còn dùng làm chốt canh: chúng tạo thành tuyến phòng thủ thứ hai phía sau các pháo đài ven biển.
+370	Phòng cầu nguyện hình vuông, mỗi cạnh khoảng 7,5 mét, được che bởi chín mái vòm nhỏ đặt trên bốn cột; mihrab là một hốc tường đơn giản và minbar bằng đá chỉ có ba bậc. Một tháp thấp, chắc, hai tầng nhô lên trên mái. Xung quanh: một sân có «mihrab mùa hè», một bể chứa nước mưa, hai phòng dạy kinh Qur'an, một lò bánh mì dưới lòng đất và một cối xay ngũ cốc.
+371	Những thánh đường này là những trung tâm nhỏ của đời sống: cầu nguyện, dạy kinh Qur'an, bánh mì và ngũ cốc cho khu phố. Kiến trúc trắng và giản dị của chúng là một trong những gương mặt của Djerba được UNESCO công nhận năm 2023.
+372	TK 14
+373	Xây dựng thánh đường Fadhloun (thế kỷ 14)
+374	Được xếp hạng di tích (quyết định ngày 15 tháng 3 năm 2022)
+375	Djerba được ghi vào danh sách Di sản Thế giới của UNESCO
+376	Thánh đường Kasbah (Tunis)
+377	1231-1235 · triều Hafsid
+378	Do người sáng lập triều Hafsid xây trên quảng trường Kasbah, thánh đường có một trong những tháp đẹp nhất Tunis, theo phong cách Almohad của Marrakech và Sevilla.
+379	Thánh đường được dựng từ năm 1231 đến 1235 theo lệnh của Abu Zakariya Yahya, người sáng lập triều Hafsid, từng là thống đốc Sevilla. Ban đầu là thánh đường của triều đình các vị vua ở Kasbah, sau đó nó trở thành một trong những thánh đường thứ Sáu của thành phố; đây là thánh đường đầu tiên được dựng ở Tunis sau Zitouna. Vào thời Ottoman, người ta cầu nguyện ở đây theo trường phái Hanafi.
+380	Phòng cầu nguyện, sâu hơn rộng, có 7 gian và 9 nhịp trên các cột cẩm thạch với đầu cột kiểu Hafsid; mihrab đội một mái vòm thạch nhũ bằng thạch cao chạm. Tháp vuông, xây ngay từ năm 1233, phủ một mạng hình thoi bằng đá màu đất son: nó là hình mẫu cho tháp hiện nay của Zitouna.
+381	Khởi công (Abu Zakariya Yahya)
+382	Tháp hoàn thành
+383	Hoàn thành việc xây thánh đường
+384	Đại thánh đường Monastir
+385	Thế kỷ 9 · mở rộng đến thế kỷ 18
+386	Hướng ra biển, cạnh ribat nổi tiếng, một thánh đường bằng đá giản dị và thanh nhã, được mở rộng qua từng thời kỳ kể từ thế kỷ 9.
+387	Phòng cầu nguyện hiện nay là kết quả của bốn giai đoạn: một nhà nguyện nhỏ có mái vòm cuốn vào thế kỷ 9, một lần mở rộng vào thế kỷ 11 (thời Zirid) cùng với mihrab, rồi vào thời Hafsid thêm một tháp vuông và hai gian nữa. Một hành lang bên ngoài được thêm vào thế kỷ 18. Tháng 10 năm 2013, hai trận rung chấn làm sập một phần đỉnh tháp.
+388	Các mặt tiền bằng đá đẽo, sinh động nhờ khung cửa ra vào, cửa sổ và các vòm của một hành lang. Thánh đường không có sân trước phòng cầu nguyện. Mihrab thế kỷ 11, với trang trí kiểu Zirid và chữ Kufic hoa mỹ, không có mái vòm bên trên, điều hiếm thấy ở Ifriqiya thời trung cổ.
+389	TK 9
+390	Nhà nguyện có mái vòm cuốn đầu tiên (thế kỷ 9)
+391	TK 11
+392	Mở rộng thời Zirid và mihrab (thế kỷ 11)
+393	TK 18
+394	Hành lang bên ngoài (thế kỷ 18)
+395	Đỉnh tháp sập một phần sau hai trận động đất
+396	Các nghiên cứu đã xác nhận nhà thờ Hồi giáo được xây trên tàn tích của một vương cung thánh đường Kitô giáo, phù hợp với một câu chuyện do sử gia Ibn Abi Dinar ghi lại. Một dòng chữ khắc ở chân mái vòm phía trên mihrab ghi tên Nusair, người hầu của khalip nhà Abbas, người chỉ huy công trình, cùng kiến trúc sư Fathallah. Công trình cũng là một vị trí phòng thủ hướng ra biển: hai tháp canh vẫn còn đứng ở góc đông bắc và đông nam. Phòng cầu nguyện rộng 56 mét x 24 mét, tức 1.344 m²; lối giữa và lối ngang, rộng 4,80 mét so với 3 mét của các lối khác, giao nhau trước mihrab. Giữa thế kỷ 19, dưới thời bộ trưởng Khaznadar, ba hành lang của sân được dựng cột bằng đá cẩm thạch trắng đưa từ Ý sang. Tháp minaret cao 43 mét, và mười hai cửa mở ra các khu chợ, trong đó có cửa của imam, được viền bằng đá cẩm thạch La Mã chạm khắc.
+397	Trước đợt xây dựng lại lớn năm 836, nơi cầu nguyện đầu tiên của Uqba đã được Hassan ibn al-Nu'man tu sửa năm 703, mở rộng dưới thời thống đốc Umayyad Bishr ibn Safwan (722-728), rồi được Yazid ibn Hatim tu sửa lại năm 772. Toàn bộ công trình là một hình chữ nhật khoảng 125 x 75 mét, và phòng cầu nguyện có 8 gian ngang. Các cột và đầu cột cổ ở đây tạo thành bộ sưu tập đầu cột La Mã và Byzantine lớn nhất từng được tập hợp trong một công trình Hồi giáo. Trần gỗ vẫn giữ những thanh xà đẹp từ thế kỷ 9, trang trí quả và lá cọ theo phong cách Hy Lạp hóa. Trong mihrab, hốc tường được ốp 28 tấm đá cẩm thạch chạm thủng hoặc chạm nổi, bên dưới nửa mái vòm bằng gỗ sơn; các viên gạch men ánh kim của nó có lẽ đến từ Iraq. Minbar được làm từ hơn 300 tấm gỗ tếch Ấn Độ. Tháp minaret cao 32 mét gồm ba tầng, trên đỉnh là mái vòm có rãnh; dáng vững chãi của nó gợi nhớ những ngọn hải đăng La Mã.
+398	Người sáng lập, Muhammad Tagharinu, đã định cư ở Testour từ năm 1609. Nhà thờ Hồi giáo có hai sân: sân lớn hơn ở phía bắc, rộng khoảng 17,70 x 26,20 mét, sân còn lại nằm ở phía tây phòng cầu nguyện. Sân lớn được bao quanh bởi hành lang có vòm bán nguyệt đặt trên các cột cổ, và được lát bằng những phiến đá cổ tái sử dụng. Đồng hồ mặt trời mang tên người thợ làm ra nó, Ahmed al-Harrar. Tháp minaret mọc lên từ một tháp vuông mỗi cạnh 4,50 mét, bốn góc có những chóp nhọn nhỏ, và kết thúc bằng một lầu đèn mái gỗ hình kim tự tháp. Mặt đồng hồ được gắn bên dưới một trong các cửa sổ đôi của tháp bát giác, một trường hợp duy nhất trong các tháp minaret thời ấy. Phòng cầu nguyện rộng 25,85 x 19,12 mét, được phủ bằng vòm chữ thập và có bảy gian ngang; lối đi giữa mang hai mái vòm, và phía trên mihrab là một trán tường hình tam giác.
+399	Theo bảo tàng, công trình kéo dài từ năm 851 đến năm 862 và do Mudam, một nô lệ được vị emir trả tự do, giám sát. Tên ông có trong dòng chữ Kufic dài được chạm nổi trên mặt tiền: đây là dải chữ trang trí cổ nhất còn lại trên mặt tiền của một công trình. Sân, rộng hơn sâu (41 x 26 mét), có hành lang bao quanh ba phía; hành lang thứ tư, trước phòng cầu nguyện, có lẽ được thêm vào thế kỷ 11. Lời gọi cầu nguyện được cất lên từ đỉnh tháp góc đông bắc của nhà thờ Hồi giáo, nơi có một đình nhỏ mái vòm và có cầu thang đi lên từ sân. Phòng cầu nguyện rộng 59 x 51 mét, có 6 gian ngang và được phủ bằng vòm cuốn đặt trên các trụ hình chữ thập. Bản thân mihrab có từ thời nhà Zirid, như cách trang trí hốc tường và các vòng chữ Kufic hoa lá của nó cho thấy.
+400	Mặt tiền được chạm từ một loại đá mềm và tập hợp toàn bộ kho họa tiết trang trí của Kairouan thời Aghlabid. Ba vòm hình móng ngựa của nó đặt trên những đầu cột cổ được tái sử dụng; vòm giữa lớn hơn hai vòm bên. Những dây lá nho ở các góc giữa vòm gợi nhớ nửa mái vòm bằng gỗ sơn của mihrab Đại Thánh đường. Trong các dải chữ Kufic, nét đứng của các chữ cái được vát xiên, và những họa tiết cây cỏ nhỏ lấp các khoảng trống: chúng báo trước kiểu chữ Kufic hoa lá của cuối thế kỷ 10. Dải giữa xếp những tấm đá chạm khắc: hoa hồng tám nhánh, hoa hình sao tám cánh và những hàng hoa nhỏ nở hoặc khép. Tháp minaret thời Hafsid, có chân đế hình chữ nhật, mang những cửa sổ đôi viền gạch men, dấu hiệu của ảnh hưởng Andalus. Bên trong, ba gian chạy song song với bức tường qibla, và hai cột đỡ những vòm hình móng ngựa.
+401	Việc xây dựng do Mohamed Bey khởi công và em trai ông là Romdhane Bey tiếp tục. Đồ án, lấy cảm hứng từ các nhà thờ Hồi giáo Thổ Nhĩ Kỳ, dự kiến có một tháp minaret hình bát giác ở góc tây bắc của sân và hai lăng mộ gia đình, nhưng cái chết của Mohamed Bey rồi vụ ám sát em trai ông đã khiến công trình dang dở. Phòng cầu nguyện được bao quanh ba mặt bởi các hành lang mở ra ba sân hình chữ U, dựa trên các cột đá cẩm thạch có đầu cột kiểu Thổ Nhĩ Kỳ. Bên trong, bốn trụ lớn đỡ mái vòm trung tâm, cao 29 mét so với mặt sàn, đặt trên hai tầng cổ vòm, một tròn và một bát giác. Trang trí ban đầu giản dị; đá cẩm thạch xanh trên tường và thạch cao chạm khắc trên các mái vòm được thêm vào sau này. Bục giảng minbar, ốp đá cẩm thạch nhiều màu, mang một dòng chữ khắc ghi năm 1704.
+402	Người chỉ huy thi công là Ali ibn Mohamed ibn Kacem. Abu Zakariya cho xây nhà thờ Hồi giáo này bên cạnh cung điện ông dựng trong Kasbah, nơi đặt chính quyền, sau khi tuyên bố độc lập khỏi nhà Almohad ở Marrakesh. Phòng cầu nguyện, sâu hơn rộng, khác với kiểu mẫu thường thấy ở Ifriqiya; mái được che bằng vòm giao nhau, ngăn cách bởi các vòm cuốn hình móng ngựa. Mihrab được ốp đá cẩm thạch và đóng khung bởi các cột nhỏ có đầu cột chạm khắc, thếp vàng lá. Khi nhà thờ chuyển sang nghi thức Hanafi, minbar bằng gỗ được thay bằng một minbar xây ốp đá cẩm thạch. Trang trí của tháp minaret theo mẫu tháp Kasbah ở Marrakesh, cổ hơn khoảng năm mươi năm, nhưng làm bằng đá chứ không bằng gạch; hai ô hình thoi ở mặt phía đông mang dòng chữ khắc ghi niên đại công trình.
+403	Nhiều khả năng các tù binh người Ý đã tham gia xây dựng. Nhà thờ thuộc kiểu nhà thờ Hồi giáo có lăng mộ, kết hợp mộ của người sáng lập với nơi cầu nguyện. Ở phía đông, một hành lang có hàng cột có mihrab ngoài trời để tín đồ có thể cầu nguyện tại đó vào mùa hè. Tháp minaret, ở góc tây bắc của sân phía tây, được xây bằng sa thạch lẫn vỏ sò màu đất son đậm. Ở góc đối diện, lăng của Hammouda Pacha và gia đình có mỗi cạnh dài 8,20 mét; mặt ngoài xen kẽ các lớp đá cẩm thạch đen và trắng. Phòng cầu nguyện có bốn gian ngang, lợp vòm bán trụ đặt trên các cột có đầu cột hình xoắn ốc. Trước mihrab là một mái vòm mang dòng chữ khắc ghi việc xây dựng; vòm cuốn của mihrab bằng đá hai màu đặt trên hai cột nhỏ bằng đá đen, còn minbar được ốp đá cẩm thạch trắng.
+404	Quần thể do hai người thợ cả, Ahmed và Moustafa al-Andalousi, xây dựng; Mohamed Bey, người làm lại mái vòm lăng, là cháu nội của Hammouda Pacha. Cổng chính mở ra một sân rộng lát gạch địa phương, bao quanh bởi các hành lang có cột, nơi giữ ngựa và gia súc để cưỡi. Bên trái, một nhà kho nhận sản vật từ tài sản hiến tặng (habous) của vị thánh và các đồ dâng cúng; phía trên là các phòng ở dành cho viên chức thu thuế của vùng, về sau dành cho khách quý. Trường madrasa, được xem là nguyên mẫu của madrasa Tunisia, có phòng cầu nguyện chỉ gồm hai gian dọc; tháp minaret của trường gợi nhớ các tháp của Đại thánh đường Tlemcen và nhà thờ Hồi giáo Kasbah ở Tunis. Trong sân trong, các đầu cột chạm hình trăng lưỡi liềm, biểu tượng của người Ottoman.
+405	Người chỉ huy thi công là Ibn Ghaleb al-Andalousi. Sau khi Ifriqiya sáp nhập vào Đế quốc Ottoman, số người Thổ theo trường phái Hanafi ngày càng đông: trước tiên họ được giao hai nhà thờ theo trường phái Maliki là nhà thờ Kasbah và nhà thờ el-Qsar, rồi Youssef Dey mới xây cho Tunis nhà thờ Hồi giáo kiểu Thổ đầu tiên. Dọc mặt tiền phía bắc, một hành lang cột thay cho hành lang lối vào của các nhà thờ địa phương. Tháp minaret bát giác sau này trở thành hình mẫu cho các nhà thờ Hammouda Pacha, el-Jedid và Youssef Sahib et-Tabaa. Trong phòng cầu nguyện, gian giữa và gian ngang dọc theo bức tường qibla, rộng hơn các gian khác, giao nhau thành hình chữ T trước mihrab. Các cột có nguồn gốc khác nhau và mang đầu cột kiểu Hafsid, trừ một vài đầu cột cổ đại. Lăng mộ được xác định niên đại nhờ dòng chữ khắc trên vòm cuốn lớn ở giữa.
+406	Mục từ của bảo tàng ảo Discover Islamic Art cho biết thêm nhiều chi tiết. Người đứng ra xây dựng được cho là Ali ibn Salim, anh em cùng sữa với nhà luật học lớn Sahnun của Kairouan. Trang trí mặt tiền thuộc cùng phong cách Fatimid - Zirid với cổng hiên của Đại thánh đường Mahdia. Các cuộc thăm dò cho thấy ngọn tháp gốc thời Aghlabid đã được bọc, vào thời Fatimid - Zirid, trong một lớp vỏ đá xây chạm khắc. Khoảng sân nhỏ có các dãy hành lang trên trụ hình chữ thập, lợp vòm giao nhau; hành lang phía qibla nhô ra thành cổng hiên dưới một mái vòm. Mười cửa dẫn vào gian cầu nguyện, nơi các vòm tựa trên những cột có đầu cột cổ. Một mái vòm lệch trục đánh dấu chỗ của mihrab thế kỷ 12; mihrab hiện nay có từ thế kỷ 18.
+407	Theo mục từ của bảo tàng ảo Discover Islamic Art, việc bức tường qibla sụp đổ đã dẫn đến những công trình lớn thời Zirid, rồi thêm các đợt sửa chữa khác vào thế kỷ 17 dưới thời Ottoman. Vì không có tháp minaret, lời gọi cầu nguyện có lẽ được xướng từ đỉnh một trong hai tòa tháp. Cổng hiên lối vào, cổng hiên đầu tiên được biết đến trong kiến trúc tôn giáo Maghreb, có các hốc hình mihrab ở phía trên và các hốc đáy phẳng ở phía dưới: lối trang trí này trở thành khuôn mẫu cho các công trình Fatimid. Sân được bao quanh bởi bốn dãy hành lang, mỗi góc có một gian phòng. Trong gian cầu nguyện, gian giữa và dãy song song với bức tường qibla tạo thành hình chữ T; mihrab hiện nay mô phỏng mihrab thế kỷ 11, với các đường rãnh đều kết thúc bằng hình vỏ sò. Thánh đường này đã truyền cảm hứng cho các thánh đường al-Hakim và al-Aqmar ở Cairo.
+408	Thánh đường Sahib et-Tabaa
+409	1808-1814 · nhà Husseinite
+410	Nhìn xuống quảng trường Halfaouine, ở phía bắc khu phố cổ Tunis, thánh đường đầu thế kỷ 19 này là thánh đường lớn cuối cùng được xây ở Tunis trước thời bảo hộ của Pháp. Những cột và bức tường bằng đá cẩm thạch Ý khiến nơi đây trở thành nơi cầu nguyện ở Tunisia chịu ảnh hưởng châu Âu rõ nhất.
+411	Thánh đường mang tên Youssef Sahib et-Tabaa, sinh khoảng năm 1765 ở Moldavia, bị bắt làm nô lệ từ nhỏ, rồi năm 1781 vào phục vụ hoàng tử Hammouda Pacha; năm 1782 ông trở thành quan giữ ấn (sahib et-tabaa), rồi tể tướng của hoàng tử. Ông cho xây thánh đường từ 1808 đến 1814 dưới sự chỉ huy của người thợ cả Hadj Sassi ibn Frija, và khánh thành năm 1814. Bị thương trong một vụ ám sát ở Bardo vào tháng 9 năm 1814, ông qua đời vào tháng 1 năm 1815: ngọn tháp minaret vẫn dang dở cho đến thập niên 1970.
+412	Được xây trên các cửa hàng và kho, trên một nền đá đẽo lấy từ phế tích Carthage, thánh đường vươn cao trên quảng trường. Một cầu thang gấp khúc dẫn lên hành lang phía đông, có hai hàng cột và năm vòm cung mở ra quảng trường; ngọn tháp bát giác đứng ở đầu hành lang. Ba dãy hành lang bao quanh gian cầu nguyện gồm 9 gian dọc và 7 gian ngang, lợp vòm bán trụ. Hai gian ngang ở hai đầu, dọc theo bức tường qibla và bức tường đối diện, mỗi gian có ba mái vòm: một ở giữa và một ở mỗi góc.
+413	Theo mục từ của bảo tàng ảo Discover Islamic Art, không nơi cầu nguyện nào khác ở Tunisia cho thấy ảnh hưởng phương Tây rõ rệt như vậy. Đá cẩm thạch, nhiều hơn mọi nơi khác, được đưa thẳng từ Carrara ở Ý. Những cột thanh mảnh có rãnh mang đầu cột kiểu hỗn hợp, một cách diễn giải kiểu Ý của mẫu Tunisia thời Thổ Nhĩ Kỳ; các vòm chỉ hơi vượt nửa tròn đã rời bỏ hình móng ngựa cổ điển, và các lanh tô mang phù điêu tân baroque. Gạch men chỉ còn ở phần trên của tường. Mihrab và minbar cố định bằng đá cẩm thạch nhiều màu kết hợp những dãy vòm giả Gothic với hoa lá và những nét thếp vàng. Hành lang phía đông có một mihrab ngoài trời để cầu nguyện khi trời nóng.
+414	Thánh đường là trung tâm của một quần thể lớn do vị tể tướng lập ra để phục vụ khu Halfaouine: hai trường madrasa, một khu chợ, một nhà tắm hammam, một vòi nước công cộng (sabil), một nhà trọ fondouk, cung điện và lăng mộ của ông; lăng mộ, cũng như các trường madrasa, có lối vào từ mặt tiền phía bắc.
+415	Tể tướng Youssef Sahib et-Tabaa khởi công xây dựng
+416	Người sáng lập khánh thành thánh đường
+417	Người sáng lập qua đời, sau khi bị thương ở Bardo năm trước
+418	Ngọn tháp cuối cùng có được đỉnh đèn lồng (thập niên 1970)

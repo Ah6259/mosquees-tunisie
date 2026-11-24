@@ -138,5 +138,10 @@
   "fr": "Prière du vendredi et lecture du Coran : sur chaque mosquée (bulle de la carte et fiche), l'heure de la prière du vendredi (13:00, juste avant l'Asr ou une autre heure) et les lectures du Coran (chaque jour après une prière, ou une khatma une fois par mois) ; les visiteurs les indiquent et les confirment (« Indiquer ou corriger », « C'est vrai », « N'est plus vrai »), aucune heure n'est inventée ; sur la carte, les boutons « Vendredi » et « Coran » ne montrent que ces mosquées, la couleur indique l'heure du vendredi.",
   "ar": "صلاة الجمعة وقراءة القرآن: لكل مسجد (في نافذة الخريطة وفي بطاقته) وقت صلاة الجمعة (13:00 أو قبيل العصر أو وقت آخر) وقراءة القرآن (كل يوم بعد صلاة، أو ختم مرة في الشهر)؛ يضيفها الزوار ويؤكّدونها («أضِف أو صحّح»، «صحيح»، «لم يعد صحيحًا»)، ولا يُخترع أي توقيت؛ وعلى الخريطة يعرض زرّا «الجمعة» و«القرآن» هذه المساجد وحدها، ويدلّ اللون على وقت الجمعة.",
   "en": "Friday prayer and Quran recitation: for each mosque (map pop-up and page), the Friday prayer time (13:00, just before Asr or another time) and Quran recitations (every day after a prayer, or a khatma once a month); visitors add and confirm them (“Add or correct”, “It's true”, “No longer true”), no time is ever made up; on the map, the “Friday” and “Quran” buttons show only those mosques, and the colour shows the Friday time."
+ },
+ "f_khatma_date": {
+  "fr": "Khatma à une date précise : une khatma du Coran peut aussi être indiquée pour un jour donné (calendrier) ; elle s'affiche jusqu'à ce jour, puis disparaît seule.",
+  "ar": "ختم في تاريخ محدّد: يمكن أيضًا إضافة ختم للقرآن في يوم معيّن (من الرزنامة)؛ يظهر حتى ذلك اليوم ثم يختفي وحده.",
+  "en": "Khatma on a specific date: a Quran khatma can also be added for a given day (calendar); it is shown until that day, then disappears by itself."
  }
 }

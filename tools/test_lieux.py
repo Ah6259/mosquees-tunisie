@@ -125,6 +125,14 @@ inf, rej = P.calculer_infos(mauvais, IDS)
 check("garde-fous : texte libre, téléphone, heure hors 11h-16h ou pas multiple de 5 min, clé inconnue, lieu inconnu, sans jeton -> tout refusé", not inf and len(rej) == len(mauvais))
 inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO", "osm-n1", "coran-jour", "asr", J[0]), info("LIEU-PRIERE-INFO", "osm-n1", "coran-mois", "ven-premier", J[0])], IDS)
 check("Coran : « chaque jour après l'Asr » et « le premier vendredi du mois » acceptés", inf["osm-n1"].get("coran-jour", [""])[0] == "asr" and inf["osm-n1"].get("coran-mois", [""])[0] == "ven-premier")
+# 24/11/2026 : khatma à une date précise (AAAA-MM-JJ) : de aujourd'hui à 2 ans, jamais une date passée ni un texte
+from datetime import date as _d
+P.AUJOURDHUI = _d(2026, 11, 24)
+inf, rej = P.calculer_infos([info("LIEU-PRIERE-INFO", "osm-n1", "coran-date", "2027-03-27", J[0]), info("LIEU-PRIERE-INFO", "osm-w95130047", "coran-date", "2026-11-01", J[0]),
+                             info("LIEU-PRIERE-INFO", "osm-w95130047", "coran-date", "2029-01-01", J[0]), info("LIEU-PRIERE-INFO", "osm-w95130047", "coran-date", "27 mars", J[0])], IDS)
+check("khatma à une date précise : 2027-03-27 acceptée ; date passée, date à plus de 2 ans et texte libre refusés",
+      inf.get("osm-n1", {}).get("coran-date", [""])[0] == "2027-03-27" and "coran-date" not in inf.get("osm-w95130047", {}) and len(rej) == 3 and all(r.startswith("valeur refusée") for r in rej))
+P.AUJOURDHUI = None
 src = P.sources()
 inf, rej = P.calculer_infos([], IDS, src)
 check("source de départ : Sidi Mahrez = khatma le dernier samedi du mois, statut « source » avec le lien Facebook (aucune heure inventée)",

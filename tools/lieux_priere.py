@@ -19,7 +19,7 @@ Garde-fous (un robot ne peut pas prouver qu'une mosquée existe, il écarte l'in
     « n'existe plus » et qu'elles sont plus nombreuses que les confirmations (3 pour un lieu OpenStreetMap / Wikidata).
 Sortie : donnees/signales.js (window.MOSQUEES_SIGNALES : points des visiteurs, votes sur les lieux connus, lieux retirés)."""
 import hashlib, json, math, re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -142,6 +142,7 @@ SOURCES = ROOT / "donnees" / "infos_sources.json"
 JOURS = ("lun", "mar", "mer", "jeu", "ven", "sam", "dim")
 PRIERES = ("fajr", "dhohr", "asr", "maghreb", "icha")
 MAX_INFOS_PAR_JETON = 30
+AUJOURDHUI = None          # tests : date du jour imposée (sinon date.today())
 
 
 def valeur_valide(cle, v):
@@ -157,6 +158,13 @@ def valeur_valide(cle, v):
         return v if v in PRIERES + ("non",) else None
     if cle == "coran-mois":
         return v if v == "non" or re.fullmatch(r"(%s)(-premier|-dernier)?" % "|".join(JOURS), v) else None
+    if cle == "coran-date":      # khatma à une date précise (24/11/2026) : de aujourd'hui à 2 ans ; une date passée disparaît seule
+        try:
+            d = date.fromisoformat(v)
+        except ValueError:
+            return None
+        auj = AUJOURDHUI or date.today()
+        return v if re.fullmatch(r"\d{4}-\d{2}-\d{2}", v) and auj <= d <= auj + timedelta(days=731) else None
     return None
 
 

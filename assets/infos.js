@@ -3,7 +3,8 @@
    Données : window.MOSQUEES_SIGNALES.infos (donnees/signales.js, publié toutes les 2 h par tools/lieux_priere.py) :
      { id du lieu: { clé: [valeur, statut, confirmations, lien de la source] } }
    clés : joumoua (13h00 | asr | HH:MM | non), coran-jour (fajr | dhohr | asr | maghreb | icha | non),
-          coran-mois (lun … dim, avec -premier / -dernier | non).
+          coran-mois (lun … dim, avec -premier / -dernier | non),
+          coran-date (AAAA-MM-JJ : khatma à une date précise, 24/11/2026 ; une date passée n'est plus affichée).
    Envoi : même Google Forms que les signalements, format LIEU-PRIERE-INFO (-OK / -KO), marque « id|clé|valeur », lieu « |jeton ».
    Valeurs choisies dans une liste : aucun texte libre, aucune donnée personnelle ; aucune heure n'est inventée. */
 (function () {
@@ -24,6 +25,13 @@
     maghreb: () => L2("Maghreb", "المغرب", "Maghrib"), icha: () => L2("Icha", "العشاء", "Isha")
   };
   const infos = () => ((window.MOSQUEES_SIGNALES || {}).infos || {});
+  // khatma à une date précise : AAAA-MM-JJ, affichée tant qu'elle n'est pas passée (jour même compris)
+  const aujourdhui = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); };
+  const dansDeuxAns = () => { const d = new Date(); d.setFullYear(d.getFullYear() + 2); return d.toISOString().slice(0, 10); };
+  const aVenir = v => /^\d{4}-\d{2}-\d{2}$/.test(v || "") && v >= aujourdhui();
+  function dateLongue(v) {
+    try { return new Date(v + "T12:00:00Z").toLocaleDateString(document.documentElement.lang || "fr", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }); } catch (e) { return v; }
+  }
   // nom du jour dans la langue de la page (Intl) : lundi 23/11/2026 = 1er jour de la liste
   function jour(k) {
     const i = JOURS.indexOf(k), lg = document.documentElement.lang || "fr";
@@ -40,6 +48,7 @@
       : v === "non" ? L2("pas de prière du vendredi ici", "لا تُقام صلاة الجمعة هنا", "no Friday prayer here") : v;
     if (cle === "coran-jour") return v === "non" ? L2("pas de lecture quotidienne", "لا توجد قراءة يومية", "no daily recitation")
       : L2("chaque jour, après la prière : {p}", "كل يوم بعد صلاة {p}", "every day, after the prayer: {p}").replace("{p}", PRIERES[v] ? PRIERES[v]() : v);
+    if (cle === "coran-date") return L2("khatma du Coran le {d}", "ختم القرآن يوم {d}", "Quran khatma on {d}").replace("{d}", dateLongue(v));
     if (cle === "coran-mois") return v === "non" ? L2("pas de khatma mensuelle", "لا يوجد ختم شهري", "no monthly khatma")
       : L2("khatma du Coran", "ختم القرآن", "Quran khatma (complete reading)") + " : " + mois(v);
     return v;
@@ -50,7 +59,7 @@
     if (!x || x[0] === "non") return null;
     return x[0] === "13h00" || x[0] === "asr" ? x[0] : "autre";
   }
-  const coran = id => ["coran-jour", "coran-mois"].some(k => ((infos()[id] || {})[k] || [])[0] && infos()[id][k][0] !== "non");
+  const coran = id => ["coran-jour", "coran-mois", "coran-date"].some(k => { const v = ((infos()[id] || {})[k] || [])[0]; return v && v !== "non" && (k !== "coran-date" || aVenir(v)); });
 
   function statut(x) {
     if (x[1] === "confirme") return L2("Confirmé par les visiteurs", "أكّده الزوار", "Confirmed by visitors");
@@ -65,7 +74,7 @@
   function html(id) {
     const d = infos()[id] || {};
     const vide = `<span class="mq-info-vide">${L2("pas encore d'information — indiquez-la", "لا توجد معلومة بعد — أضِفها", "no information yet — add it")}</span>`;
-    const c = ["coran-jour", "coran-mois"].filter(k => d[k]);
+    const c = ["coran-jour", "coran-mois", "coran-date"].filter(k => d[k] && (k !== "coran-date" || aVenir(d[k][0])));
     return `<div class="mq-infos" data-infos="${esc(id)}">
       <p><b>${L2("Prière du vendredi", "صلاة الجمعة", "Friday prayer")} :</b> ${d.joumoua ? ligne(id, "joumoua", d.joumoua) : `<span class="mq-info-vide">${L2("heure inconnue — indiquez-la", "الوقت غير معروف — أضِفه", "time unknown — add it")}</span>`}</p>
       <p><b>${L2("Lecture du Coran", "قراءة القرآن", "Quran recitation")} :</b> ${c.length ? c.map(k => ligne(id, k, d[k])).join(" ") : vide}</p>
@@ -83,6 +92,8 @@
       <label>${L2("Khatma du Coran une fois par mois", "ختم القرآن مرة في الشهر", "Quran khatma once a month")}
         <select name="coran-mois">${rien}${JOURS.map(k => o(k, jour(k))).join("")}${o("non", libelle("coran-mois", "non"))}</select>
         <select name="rang">${o("", modele("x"))}${o("premier", modele("x-premier"))}${o("dernier", modele("x-dernier"))}</select></label>
+      <label>${L2("Khatma du Coran à une date précise", "ختم القرآن في تاريخ محدّد", "Quran khatma on a specific date")}
+        <input name="coran-date" type="date" min="${aujourdhui()}" max="${dansDeuxAns()}"></label>
       <button type="submit" class="btn-principal">${L2("Envoyer", "إرسال", "Send")}</button> <small class="mq-info-etat" role="status"></small></form>`;
   }
 
@@ -119,6 +130,8 @@
     if (val("coran-jour")) envois.push(["coran-jour", val("coran-jour")]);
     const m = val("coran-mois");
     if (m) envois.push(["coran-mois", m === "non" || !val("rang") ? m : m + "-" + val("rang")]);
+    const dt = val("coran-date");
+    if (dt && aVenir(dt) && dt <= dansDeuxAns()) envois.push(["coran-date", dt]);
     if (!envois.length) { etat.textContent = L2("Choisissez au moins une information.", "اختر معلومة واحدة على الأقل.", "Choose at least one item."); return; }
     Promise.all(envois.map(([k, val]) => envoyer("LIEU-PRIERE-INFO", id + "|" + k + "|" + val))).then(() => { f.outerHTML = merci(); }, () => {});
   });

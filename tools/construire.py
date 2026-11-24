@@ -25,7 +25,7 @@ from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 1
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 
 PIXEL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"   # 1 pixel transparent (diaporama, 19/11/2026)
-VERSION = "20261124c"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261124d"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 
 
 def titre_seo(t, maxi=70):

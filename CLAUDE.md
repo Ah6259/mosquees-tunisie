@@ -166,3 +166,8 @@
   « LIEU-PRIERE » : le robot de Prix des Eaux l'ignore (`autre_usage`). Sources publiques de départ : `donnees/infos_sources.json` (Sidi Mahrez :
   khatma le dernier samedi du mois, page Facebook, essai Apify du 24/11). Filtres « Vendredi » (couleur = heure) et « Coran » : affichés seulement
   s'il y a au moins une mosquée (jamais un filtre à 0). VERSION 20261124b.
+- **24/11/2026 (soir) — khatma à une date précise** (demande d'Ahmed, capture du formulaire) : clé `coran-date` (AAAA-MM-JJ, de aujourd'hui à 2 ans ;
+  `valeur_valide()` de tools/lieux_priere.py, `AUJOURDHUI` pour les tests) ; champ calendrier dans « Indiquer ou corriger » (assets/infos.js) ; une date
+  passée n'est plus affichée ni comptée dans le filtre « Coran » ; « Comment fonctionne le site ? » (f_khatma_date) ; sabotage du garde-fou. VERSION 20261124d.
+- **24/11/2026 — textes corrigés selon Discover Islamic Art** (« corrige selon musée ») : Zitouna 704 / 734 / 863, Sousse 851-862, Mahdia 75 × 55 m,
+  tours rondes, 1961-1968, Sidi Mahrez 1692-1699 + minaret carré d'une ancienne mosquée ; ancre du sabotage Zitouna = « reconstruite en 863 ».
