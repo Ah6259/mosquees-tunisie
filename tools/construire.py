@@ -23,6 +23,7 @@ import pages_langues as PL  # noqa: E402
 import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
+import lastmod  # noqa: E402  (dates honnêtes du plan du site, outil commun, 25/11/2026)
 
 PIXEL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"   # 1 pixel transparent (diaporama, 19/11/2026)
 VERSION = "20261124d"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
@@ -75,6 +76,43 @@ for _g in GRANDES:
         _g["details"] = DETAILS[_g["slug"]]
 # ancienne adresse d'une fiche devenue grande mosquée -> page de redirection (noindex), jamais une page introuvable
 REDIRECTIONS = {"mosquee/mosquee-saheb-ettabaa-q3324882/": "sahib-ettabaa"}
+
+# ---------- PAGES MAIGRES (plan Google d'Ahmed du 25/11/2026, B.1) ----------
+# Une version de langue d'une fiche (mosquée de Tunisie ou grande mosquée du monde) n'est proposée à Google que si elle a un contenu
+# PROPRE suffisant : au moins SEUIL_MAIGRE mots dans SA langue (notre présentation + résumé Wikipédia de la langue), ou des histoires
+# vérifiées, ou des informations sur la prière (donnees/infos_sources.json). Exception prudente : le français et l'arabe (langues du
+# site) restent proposés quand la fiche a une photo de la mosquée. Les autres versions restent en ligne pour le visiteur mais sont
+# « noindex » et hors du plan du site (avant : 21 versions d'une fiche d'une phrase = « peu de valeur propre » pour Google).
+SEUIL_MAIGRE = 150
+MAIGRES = {"fiches": [0, 0], "monde": [0, 0]}      # [versions de langue candidates, versions gardées pour Google]
+
+
+def mots(t, lg):
+    """Nombre de mots d'un texte dans sa langue (chinois : 2 signes par mot ; japonais et thaï : 3)."""
+    t = re.sub(r"<[^>]+>", " ", t or "")
+    if lg == "zh":
+        return len(re.sub(r"[\s\W\d_]", "", t)) // 2
+    if lg in ("ja", "th"):
+        return len(re.sub(r"[\s\W\d_]", "", t)) // 3
+    return len(re.findall(r"[^\W\d_][^\W_]*", t))
+
+
+def _ids_infos():
+    try:
+        return {i["lieu"] for i in json.load(open(os.path.join(RACINE, "donnees", "infos_sources.json"), encoding="utf-8")).get("infos", [])}
+    except (OSError, ValueError):
+        return set()
+
+
+IDS_INFOS = _ids_infos()
+
+
+def langues_indexees(candidates, propres, photo, tout, groupe):
+    """Langues où la fiche est proposée à Google. propres(x) = mots propres dans la langue x ; tout = histoires / infos (tout garder)."""
+    garder = [x for x in candidates if tout or propres(x) >= SEUIL_MAIGRE or (photo and x in ("fr", "ar"))]
+    MAIGRES[groupe][0] += len(candidates)
+    MAIGRES[groupe][1] += len(garder)
+    return garder
 VILLES = {
     "tunis": L("Tunis", "تونس", "Tunis", "Tunus", "Tunis", "تونس", "Tunis", "Túnez"),
     "kairouan": L("Kairouan", "القيروان", "Kairouan", "Kayrevan", "Kairouan", "قیروان", "Kairouan", "Cairuán"),
@@ -485,7 +523,10 @@ def page_fiche(l, chemin, r="../../"):
     titre = f"{nom}{(' — ' + ville_fr) if ville_fr else ''} | Mosquées en Tunisie"
     desc = (f.get("resume", {}).get("fr") or f.get("resume", {}).get("en") or f"{nom} : mosquée de Tunisie ({ville_fr}). Photo, histoire, carte et liens.")[:200]
     # autres langues : proposées à Google seulement si Wikidata / Wikipédia donnent un nom ou un résumé dans cette langue
-    INDEX[chemin] = LANGUES if notre else ["fr"] + [x for x in LANGUES[1:] if noms.get(x) or f.get("resume", {}).get(x)]
+    candidates = LANGUES if notre else ["fr"] + [x for x in LANGUES[1:] if noms.get(x) or f.get("resume", {}).get(x)]
+    desc_notre = textes.D("descriptions", f["qid"]) if notre else {}
+    INDEX[chemin] = langues_indexees(candidates, lambda x: mots(desc_notre.get(x), x) + mots(f.get("resume", {}).get(x), x),
+                                     bool(ph), l["id"] in IDS_INFOS, "fiches")
     META[chemin] = {}
     for x in LANGUES[1:]:
         vx = (ville_ar or ville_fr) if x in ("ar", "ur") else ville_fr
@@ -502,7 +543,8 @@ def page_fiche(l, chemin, r="../../"):
     if notre or djerba:
         CLE_TRAD[chemin] = page
     ecrire(chemin + "index.html", document(chemin + "index.html", titre, desc, corps, tete=[f"trad/{page}.js"] if (notre or djerba) else (),
-                                           bas=["assets/fiche.js", "donnees/signales.js", "assets/infos.js"], jsonld=jsonld))
+                                           bas=["assets/fiche.js", "donnees/signales.js", "assets/infos.js"], jsonld=jsonld,
+                                           index="fr" in INDEX[chemin]))
 
 
 # ---------- liste de toutes les pages ----------
@@ -836,7 +878,8 @@ def page_mosquee_monde(m, r="../../"):
     <p class="aide">{X("tri", "monde_note", page)}</p>
     <p><a href="{r}grandes-mosquees-du-monde/">{X("tri", "monde_menu", page)} →</a></p></section>
 </main>"""
-    INDEX[chemin] = ["fr"] + [x for x in LANGUES[1:] if noms.get(x) or m.get("resume", {}).get(x)]
+    candidates = ["fr"] + [x for x in LANGUES[1:] if noms.get(x) or m.get("resume", {}).get(x)]
+    INDEX[chemin] = langues_indexees(candidates, lambda x: mots(m.get("resume", {}).get(x), x), bool(ph), bool(hs), "monde")
     META[chemin] = {}
     for x in LANGUES:
         nx = noms.get(x) or noms.get("en") or nom
@@ -847,7 +890,8 @@ def page_mosquee_monde(m, r="../../"):
     jsonld = [{"@context": "https://schema.org", "@type": "Mosque", "name": nom, "url": BASE + chemin, "sameAs": [f"https://www.wikidata.org/wiki/{m['q']}"],
                **({"geo": {"@type": "GeoCoordinates", "latitude": pos[0], "longitude": pos[1]}} if pos else {})}]
     ecrire(chemin + "index.html", document(chemin + "index.html", META[chemin]["fr"][0], META[chemin]["fr"][1], corps,
-                                           tete=[f"trad/{page}.js"], bas=["assets/fiche.js", "assets/pages.js"], jsonld=jsonld))
+                                           tete=[f"trad/{page}.js"], bas=["assets/fiche.js", "assets/pages.js"], jsonld=jsonld,
+                                           index="fr" in INDEX[chemin]))
     return chemin
 
 
@@ -1087,7 +1131,7 @@ def main():
     for c in chemins:
         fr = open(os.path.join(RACINE, c, "index.html"), encoding="utf-8").read()
         langues = INDEX.get(c, LANGUES)
-        if c not in REDIRECTIONS:                    # une page de redirection n'est jamais proposée à Google
+        if c not in REDIRECTIONS and "fr" in langues:     # une redirection ou une page maigre n'est jamais proposée à Google
             adresses.append(c)
         for l in LANGUES[1:]:
             trad = {**langues_js.get(l, {}), **TRAD.get(CLE_TRAD.get(c, ""), {}).get(l, {})}
@@ -1101,6 +1145,15 @@ def main():
     if os.path.exists(os.path.join(ICI, "page_video.json")):
         from page_video import pages_video
         pages_video(RACINE)
+    # plan Google du 25/11/2026 (B.2) : date du dernier VRAI changement de chaque page (empreinte gardée dans donnees/lastmod.json,
+    # outil commun tools/lastmod.py) au lieu de la date de VERSION pour toutes ; une page noindex sort du plan
+    sm = os.path.join(RACINE, "sitemap.xml")
+    xml = open(sm, encoding="utf-8").read()
+    xml2 = lastmod.honnete(xml, RACINE, BASE, "donnees/lastmod.json")
+    if xml2 != xml:
+        open(sm, "w", encoding="utf-8", newline="\n").write(xml2)
+    print(f"pages maigres (moins de {SEUIL_MAIGRE} mots propres) : mosquées de Tunisie {MAIGRES['fiches'][1]}/{MAIGRES['fiches'][0]} versions "
+          f"proposées à Google, mosquées du monde {MAIGRES['monde'][1]}/{MAIGRES['monde'][0]}")
     print(f"{len(GRANDES)} grandes mosquées, {n_fiches} autres pages de mosquées, {len(adresses)} adresses dans le sitemap "
           f"({len(chemins)} pages en {len(LANGUES)} langues, moins les versions sans contenu propre), {manque} texte(s) resté(s) en anglais, version {VERSION}")
 

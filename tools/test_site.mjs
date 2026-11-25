@@ -447,10 +447,12 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   for (const p of PAGES_FR.filter(x => !x.startsWith("video/") && !redirection(x))) {
     const h = lire(p), dossier = p.replace(/index\.html$/, "");
     const liens = Object.fromEntries([...h.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)].map(m => [m[1], m[2]]));
-    const attendues = ["fr", ...AUTRES.filter(l => !sansIndex(l + "/" + p))];
-    if (liens.fr !== BASE + dossier || !liens["x-default"] || /[?]lang=/.test(Object.values(liens).join(" "))) pbH.push(p + " français / x-default");
+    // 25/11/2026 (plan Google, B.1) : une fiche maigre en français (noindex) n'a pas de lien hreflang « fr » ; maigre partout : aucun lien
+    const frIndex = !sansIndex(p), attendues = [...(frIndex ? ["fr"] : []), ...AUTRES.filter(l => !sansIndex(l + "/" + p))];
+    if (!attendues.length) { if (Object.keys(liens).length) pbH.push(p + " maigre partout mais avec des liens hreflang"); continue; }
+    if ((frIndex ? liens.fr !== BASE + dossier : "fr" in liens) || !liens["x-default"] || /[?]lang=/.test(Object.values(liens).join(" "))) pbH.push(p + " français / x-default");
     if (attendues.some(l => l !== "fr" && liens[l] !== BASE + l + "/" + dossier) || Object.keys(liens).length !== attendues.length + 1) pbH.push(p + " langues");
-    for (const l of attendues.slice(1)) if ([...lire(l + "/" + p).matchAll(/<link rel="alternate"[^>]*>/g)].join("") !== [...h.matchAll(/<link rel="alternate"[^>]*>/g)].join("")) pbH.push(l + "/" + p + " liens différents de la page française");
+    for (const l of attendues.filter(x => x !== "fr")) if ([...lire(l + "/" + p).matchAll(/<link rel="alternate"[^>]*>/g)].join("") !== [...h.matchAll(/<link rel="alternate"[^>]*>/g)].join("")) pbH.push(l + "/" + p + " liens différents de la page française");
   }
   check(`hreflang : chaque page française et ses versions de langue portent les MÊMES liens (ar/, en/, tr/…), plus aucun « ?lang= » ${pbH.slice(0, 4).join(" | ")}`, !pbH.length);
   check("accueil, À propos, liste et grandes mosquées : proposés à Google dans les 8 langues ; x-default = anglais",
@@ -459,6 +461,17 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const sans = PAGES_LANGUE.filter(sansIndex), fr0 = fiches.find(p => sansIndex("de/" + p));
     check(`autres mosquées : une version sans nom ni résumé dans la langue n'est pas proposée à Google (${sans.length} versions « noindex », hors plan du site)`,
       sans.length > 100 && sans.every(p => fiches.includes(p.slice(p.indexOf("/") + 1)) || p.slice(p.indexOf("/") + 1).startsWith("mosquee-monde/") || redirection(p)) && !!fr0 && !lire(fr0).includes('hreflang="de"'));
+  }
+  {
+    // 25/11/2026 (plan Google d'Ahmed, B.1) : une version de langue d'une fiche avec moins de 150 mots PROPRES dans sa langue n'est plus
+    // proposée à Google (français et arabe gardés si la fiche a une photo) ; jamais les pages principales ; aucune page noindex dans le plan
+    const plan = lire("sitemap.xml"), locs = [...plan.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].slice(BASE.length));
+    const maigre = "zh/mosquee/mosquee-chorfa-q135193509/index.html", gardee = "mosquee/mosquee-chorfa-q135193509/index.html";
+    const enPlan = p => locs.includes(p.replace(/index\.html$/, ""));
+    const noindexEnPlan = locs.filter(c => existsSync(join(root, c + "index.html")) && sansIndex(c + "index.html"));
+    check(`pages maigres : version chinoise d'une fiche d'une phrase « noindex » et hors du plan, version française (avec photo) gardée ; aucune page noindex dans le plan (${noindexEnPlan.length}) ; ${locs.length} adresses`,
+      sansIndex(maigre) && !enPlan(maigre) && !sansIndex(gardee) && enPlan(gardee) && !noindexEnPlan.length && locs.length > 1000 && locs.length < 2000
+      && ["", "a-propos/", "grandes-mosquees/", "ar/", "en/"].every(c => locs.includes(c) && !sansIndex(c + "index.html")));
   }
 }
 {

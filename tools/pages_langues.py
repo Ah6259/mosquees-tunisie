@@ -107,7 +107,9 @@ def adresse(base, chemin, l):
 
 def liens_hreflang(base, chemin, langues):
     """Les mêmes lignes sur les 8 versions d'une page ; x-default = anglais (visiteurs d'une autre langue), sinon français."""
-    defaut = "en" if "en" in langues else "fr"
+    if not langues:                                   # page maigre dans toutes les langues (25/11/2026) : aucun lien
+        return ""
+    defaut = "en" if "en" in langues else "fr" if "fr" in langues else langues[0]
     return ("".join(f'<link rel="alternate" hreflang="{l}" href="{adresse(base, chemin, l)}">\n' for l in LANGUES if l in langues)
             + f'<link rel="alternate" hreflang="x-default" href="{adresse(base, chemin, defaut)}">\n')
 
@@ -332,6 +334,8 @@ def variante(page_fr, base, chemin, l, langues, trad, meta=None, indexer=True):
             e.poser("href", adresse(base, chemin, l))
         elif e.balise == "meta" and e.get("name") == "robots" and not indexer:
             e.poser("content", "noindex, " + (e.get("content") or "").replace("noindex, ", ""))
+        elif e.balise == "meta" and e.get("name") == "robots":       # version proposée à Google alors que la page française est
+            e.poser("content", (e.get("content") or "").replace("noindex, ", ""))   # maigre (25/11/2026) : pas de noindex hérité
     sortie = racine.ecrire()
     # mêmes liens hreflang que la page française (déjà au bon format) : rien à changer ; version sans contenu propre : pas de lien
     if not indexer:

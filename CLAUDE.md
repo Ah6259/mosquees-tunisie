@@ -180,3 +180,17 @@
   passée n'est plus affichée ni comptée dans le filtre « Coran » ; « Comment fonctionne le site ? » (f_khatma_date) ; sabotage du garde-fou. VERSION 20261124d.
 - **24/11/2026 — textes corrigés selon Discover Islamic Art** (« corrige selon musée ») : Zitouna 704 / 734 / 863, Sousse 851-862, Mahdia 75 × 55 m,
   tours rondes, 1961-1968, Sidi Mahrez 1692-1699 + minaret carré d'une ancienne mosquée ; ancre du sabotage Zitouna = « reconstruite en 863 ».
+
+## 25/11/2026 — plan Google (B.1 + B.2, « fais » d'Ahmed après la chute Google d'octobre)
+- **Pages maigres** (tools/construire.py, `SEUIL_MAIGRE` = 150, `langues_indexees()`) : une version de langue d'une fiche (mosquée de Tunisie
+  ou grande mosquée du monde) n'est proposée à Google que si elle a au moins 150 mots PROPRES dans SA langue (notre présentation + résumé
+  Wikipédia de la langue ; chinois 2 signes par mot, japonais / thaï 3), ou des histoires vérifiées, ou des infos de prière
+  (donnees/infos_sources.json) ; exception prudente : français et arabe gardés quand la fiche a une photo. Les autres versions restent en
+  ligne pour le visiteur, en « noindex » (liens suivis) et hors du plan du site. Jamais : accueil, listes, À propos, grandes mosquées,
+  pages de rubrique. Plan du site : **3 524 -> 1 261 adresses** (fiches de Tunisie 1 052 -> 219 versions, mosquées du monde 1 988 -> 558).
+  Une version indexée dont la page française est maigre ne garde pas le « noindex » français (tools/pages_langues.py, `variante`) ;
+  hreflang sans « fr » pour une fiche maigre en français, aucun lien si maigre partout. Test : bloc « pages maigres » de test_site.mjs.
+- **lastmod HONNÊTE** : à la fin de tools/construire.py, le plan passe par `tools/lastmod.py` (outil COMMUN, copié tel quel) : date du
+  dernier VRAI changement de chaque page (empreinte sans menus, pied, scripts, ?v= ni dates, gardée dans `donnees/lastmod.json`, enregistré
+  par donnees.yml avec `donnees`) au lieu de la date de VERSION pour toutes ; 1re fois : histoire git de chaque page. Test :
+  `python tools/test_lastmod.py donnees/lastmod.json` (tests.yml ; données inventées + vrai plan ; aucune page noindex dans le plan).
