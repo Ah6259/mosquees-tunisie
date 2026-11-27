@@ -1023,6 +1023,19 @@ def ecrire_trad():
         ecrire(f"assets/trad/{page}.js", texte)
 
 
+# PLAN DU SITE RÉDUIT (VIS.3 point 2, 27/11/2026 ; « fais tout le plan » d'Ahmed du 26/11 ; règle commune § 72) : Google n'avait encore
+# enregistré AUCUNE page du site (accueil « détectée, non indexée ») sur 1 261 adresses. Le plan ne garde que les pages principales, dans
+# les 21 langues (chaque hreflang pointe vers une page du plan) ; les fiches des mosquées restent EN LIGNE, sans noindex, trouvées par
+# les liens ; elles reviendront dans le plan par lots quand Google aura pris les pages principales (bilan d'indexation du week-end).
+PLAN_PRINCIPALES = ("", "a-propos/", "grandes-mosquees/", "grandes-mosquees-du-monde/", "role-de-la-mosquee/", "histoires-des-mosquees/",
+                    "construire-une-mosquee/")
+
+
+def plan_reduit(adresses):
+    sans_langue = lambda a: a[len(a.split("/")[0]) + 1:] if a.split("/")[0] in LANGUES[1:] else a
+    return [a for a in adresses if sans_langue(a) in PLAN_PRINCIPALES]
+
+
 def sitemap(chemins):
     maj = f"{VERSION[:4]}-{VERSION[4:6]}-{VERSION[6:8]}"   # date de la dernière modification (tirée de VERSION) : aide Google à repasser
     lignes = "".join(f"  <url><loc>{BASE}{c}</loc><lastmod>{maj}</lastmod></url>\n" for c in chemins)
@@ -1140,6 +1153,7 @@ def main():
             manque += m
             if l in langues:
                 adresses.append(f"{l}/{c}")
+    adresses = plan_reduit(adresses)      # VIS.3 (27/11/2026) : pages principales seulement, 21 langues
     sitemap(adresses)
     # page vidéo (video/) tirée de la page À propos (mêmes en-tête, CSP, ?v=) : outil vidéos d'Ahmed ; s'ajoute au sitemap
     if os.path.exists(os.path.join(ICI, "page_video.json")):

@@ -126,9 +126,13 @@ check("installation : manifeste (id unique), icônes, service worker, aperçu < 
   return m.id === "/" && ["assets/icons/icon-192.png", "assets/icons/icon-512.png", "assets/icons/icon-maskable-512.png", "assets/apple-touch-icon.png", "sw.js", "favicon.ico", "assets/og-image-v1.jpg"]
     .every(f => existsSync(join(root, f))) && statSync(join(root, "assets/og-image-v1.jpg")).size < 250 * 1024; })());
 {
+  const LANGS_PLAN = ["ar", "en", "tr", "id", "ur", "de", "es", "it", "pt", "nl", "zh", "ja", "ko", "hi", "ru", "vi", "th", "tl", "sv", "ro"];
   const sm = lire("sitemap.xml"), dans = p => sm.includes(`<loc>${BASE}${p.replace(/index\.html$/, "")}</loc>`),
-    manque = PAGES.filter(p => !p.startsWith("video/") && dans(p) === sansIndex(p));
-  check(`robots.txt (IA refusées, Google accepté, sitemap) ; sitemap avec TOUTES les pages ${manque.slice(0, 3).join(" ")} ; LICENSE`, /GPTBot/.test(lire("robots.txt")) && /ClaudeBot/.test(lire("robots.txt"))
+    // VIS.3 (27/11/2026) : plan RÉDUIT aux pages principales (21 langues) ; une page hors du plan reste ouverte à Google (pas de noindex)
+    PRINC = ["", "a-propos/", "grandes-mosquees/", "grandes-mosquees-du-monde/", "role-de-la-mosquee/", "histoires-des-mosquees/", "construire-une-mosquee/"],
+    estPrinc = p => { const c = p.replace(/index\.html$/, ""), s = c.split("/")[0]; return PRINC.includes(LANGS_PLAN.includes(s) ? c.slice(s.length + 1) : c); },
+    manque = PAGES.filter(p => !p.startsWith("video/") && (estPrinc(p) ? !sansIndex(p) && !dans(p) : dans(p) || (sansIndex(p) && estPrinc(p))));
+  check(`robots.txt (IA refusées, Google accepté, sitemap) ; plan du site RÉDUIT (VIS.3) : toutes les pages principales des 21 langues, aucune fiche ${manque.slice(0, 3).join(" ")} ; LICENSE`, /GPTBot/.test(lire("robots.txt")) && /ClaudeBot/.test(lire("robots.txt"))
     && /User-agent: Googlebot[\s\S]*?Allow: \//.test(lire("robots.txt")) && /mosquees\.clicvia\.com\/sitemap\.xml/.test(lire("robots.txt")) && !manque.length && /Tous droits réservés/.test(lire("LICENSE")));
 }
 check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_|sk-[A-Za-z0-9]{20}/.test(PAGES.map(lire).join("") + readdirSync(join(root, "assets")).filter(f => f.endsWith(".js")).map(f => lire("assets/" + f)).join("")));
@@ -469,8 +473,8 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     const maigre = "zh/mosquee/mosquee-chorfa-q135193509/index.html", gardee = "mosquee/mosquee-chorfa-q135193509/index.html";
     const enPlan = p => locs.includes(p.replace(/index\.html$/, ""));
     const noindexEnPlan = locs.filter(c => existsSync(join(root, c + "index.html")) && sansIndex(c + "index.html"));
-    check(`pages maigres : version chinoise d'une fiche d'une phrase « noindex » et hors du plan, version française (avec photo) gardée ; aucune page noindex dans le plan (${noindexEnPlan.length}) ; ${locs.length} adresses`,
-      sansIndex(maigre) && !enPlan(maigre) && !sansIndex(gardee) && enPlan(gardee) && !noindexEnPlan.length && locs.length > 1000 && locs.length < 2000
+    check(`pages maigres : version chinoise d'une fiche d'une phrase « noindex » et hors du plan, version française (avec photo) ouverte à Google mais hors du plan réduit (VIS.3) ; aucune page noindex dans le plan (${noindexEnPlan.length}) ; ${locs.length} adresses`,
+      sansIndex(maigre) && !enPlan(maigre) && !sansIndex(gardee) && !enPlan(gardee) && !noindexEnPlan.length && locs.length >= 140 && locs.length <= 160
       && ["", "a-propos/", "grandes-mosquees/", "ar/", "en/"].every(c => locs.includes(c) && !sansIndex(c + "index.html")));
   }
 }
