@@ -588,5 +588,14 @@
  "apropos/communes": "Paginile „Confidențialitate” și „Condiții de utilizare”, comune tuturor site-urilor noastre, se află în partea de jos a fiecărei pagini.",
  "apropos/f_mwnf": "„În detaliu” și fotografiile muzeului: la marile moschei, o secțiune „În detaliu” și fotografii și planuri din Discover Islamic Art, muzeul virtual al Museum With No Frontiers (MWNF), cu acordul său; sursa apare sub fiecare fotografie, iar linkul către fișă se deschide în limba dvs. când există.",
  "apropos/f_vendredi": "Rugăciunea de vineri și lectura Coranului: pentru fiecare moschee (fereastra hărții și pagina ei), ora rugăciunii de vineri (13:00, chiar înainte de Asr sau altă oră) și lecturile Coranului (în fiecare zi după o rugăciune sau o khatma o dată pe lună); vizitatorii le indică și le confirmă („Indicați sau corectați”, „E adevărat”, „Nu mai e adevărat”), nicio oră nu este inventată; pe hartă, butoanele „Vineri” și „Coran” arată doar acele moschei, iar culoarea indică ora de vineri.",
- "apropos/f_khatma_date": "Khatma la o dată anume: o khatma a Coranului poate fi indicată și pentru o anumită zi (calendar); apare până în acea zi, apoi dispare singură."
+ "apropos/f_khatma_date": "Khatma la o dată anume: o khatma a Coranului poate fi indicată și pentru o anumită zi (calendar); apare până în acea zi, apoi dispare singură.",
+ "chiffres/titre": "Moscheile de pe hartă în cifre",
+ "chiffres/total": "{n} locuri de rugăciune în Tunisia pe hartă: {m} moschei și {s} săli de rugăciune. Sursa: OpenStreetMap și Wikidata, date din {date}; locurile semnalate de vizitatori se adaugă.",
+ "chiffres/par_gouv": "Pe guvernorate",
+ "chiffres/col_gouv": "Guvernorat",
+ "chiffres/col_n": "Locuri de rugăciune",
+ "chiffres/non_classe": "Neclasificat",
+ "chiffres/methode": "Guvernoratul fiecărui loc este calculat după poziția sa: punctul se află în interiorul granițelor oficiale ale guvernoratului (OpenStreetMap).",
+ "chiffres/monde": "În afara Tunisiei: {g} mari moschei ale lumii sunt mereu pe hartă; celelalte moschei ale lumii sunt citite direct din OpenStreetMap când vă uitați la o țară sau un oraș.",
+ "apropos/f_chiffres": "În cifre: sub hartă, numărul locurilor de rugăciune din Tunisia de pe hartă, un tabel pe guvernorate (calculat după poziția fiecărui loc) și data datelor."
 }

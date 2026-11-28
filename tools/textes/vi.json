@@ -588,5 +588,14 @@
  "apropos/communes": "Các trang «Quyền riêng tư» và «Điều khoản sử dụng», chung cho tất cả các trang web của chúng tôi, nằm ở cuối mỗi trang.",
  "apropos/f_mwnf": "« Chi tiết » và ảnh của bảo tàng: ở các đại thánh đường có phần « Chi tiết » cùng ảnh và mặt bằng từ Discover Islamic Art, bảo tàng ảo của Museum With No Frontiers (MWNF), với sự cho phép của bảo tàng; nguồn ghi dưới mỗi ảnh và liên kết đến trang mô tả mở bằng ngôn ngữ của bạn nếu có.",
  "apropos/f_vendredi": "Lễ thứ Sáu và đọc Kinh Qur'an: với mỗi thánh đường (khung trên bản đồ và trang riêng), giờ lễ thứ Sáu (13:00, ngay trước Asr hoặc giờ khác) và các buổi đọc Kinh Qur'an (hằng ngày sau một lễ cầu nguyện, hoặc khatma mỗi tháng một lần); khách truy cập cung cấp và xác nhận (« Thêm hoặc sửa », « Đúng vậy », « Không còn đúng »), không có giờ nào bị bịa ra; trên bản đồ, nút « Thứ Sáu » và « Kinh Qur'an » chỉ hiện các thánh đường đó, màu cho biết giờ lễ thứ Sáu.",
- "apropos/f_khatma_date": "Khatma vào ngày cụ thể: cũng có thể ghi một buổi khatma Kinh Qur'an cho một ngày nhất định (lịch); thông tin hiển thị đến ngày đó rồi tự biến mất."
+ "apropos/f_khatma_date": "Khatma vào ngày cụ thể: cũng có thể ghi một buổi khatma Kinh Qur'an cho một ngày nhất định (lịch); thông tin hiển thị đến ngày đó rồi tự biến mất.",
+ "chiffres/titre": "Các nhà thờ Hồi giáo trên bản đồ qua những con số",
+ "chiffres/total": "{n} nơi cầu nguyện ở Tunisia trên bản đồ: {m} nhà thờ Hồi giáo và {s} phòng cầu nguyện. Nguồn: OpenStreetMap và Wikidata, dữ liệu ngày {date}; các nơi do khách báo thêm được cộng vào.",
+ "chiffres/par_gouv": "Theo tỉnh",
+ "chiffres/col_gouv": "Tỉnh",
+ "chiffres/col_n": "Nơi cầu nguyện",
+ "chiffres/non_classe": "Chưa phân loại",
+ "chiffres/methode": "Tỉnh của mỗi nơi được tính theo vị trí: điểm nằm trong ranh giới chính thức của tỉnh (OpenStreetMap).",
+ "chiffres/monde": "Ngoài Tunisia: {g} nhà thờ Hồi giáo lớn của thế giới luôn có trên bản đồ; các nhà thờ Hồi giáo khác trên thế giới được đọc trực tiếp từ OpenStreetMap khi bạn xem một nước hay một thành phố.",
+ "apropos/f_chiffres": "Qua những con số: dưới bản đồ là số nơi cầu nguyện của Tunisia trên bản đồ, một bảng theo tỉnh (tính theo vị trí của mỗi nơi) và ngày của dữ liệu."
 }

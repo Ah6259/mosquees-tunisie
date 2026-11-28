@@ -588,5 +588,14 @@
  "apropos/communes": "Die Seiten „Datenschutz“ und „Nutzungsbedingungen“, die für alle unsere Websites gelten, stehen unten auf jeder Seite.",
  "apropos/f_mwnf": "„Im Detail“ und Museumsfotos: Auf den Seiten der großen Moscheen gibt es einen Abschnitt „Im Detail“ sowie Fotos und Grundrisse von Discover Islamic Art, dem virtuellen Museum von Museum With No Frontiers (MWNF), mit dessen Erlaubnis; die Quelle steht unter jedem Foto, und der Link zum Eintrag öffnet sich, wenn vorhanden, in Ihrer Sprache.",
  "apropos/f_vendredi": "Freitagsgebet und Koranlesung: für jede Moschee (Kartenfenster und Seite) die Uhrzeit des Freitagsgebets (13:00, kurz vor dem Asr oder eine andere Uhrzeit) und Koranlesungen (täglich nach einem Gebet oder eine Khatma einmal im Monat); Besucher tragen sie ein und bestätigen sie („Angeben oder korrigieren“, „Stimmt“, „Stimmt nicht mehr“), keine Uhrzeit wird erfunden; auf der Karte zeigen die Knöpfe „Freitag“ und „Koran“ nur diese Moscheen, die Farbe zeigt die Freitagszeit.",
- "apropos/f_khatma_date": "Khatma an einem bestimmten Datum: Eine Koran-Khatma kann auch für einen bestimmten Tag (Kalender) angegeben werden; sie wird bis zu diesem Tag angezeigt und verschwindet dann von selbst."
+ "apropos/f_khatma_date": "Khatma an einem bestimmten Datum: Eine Koran-Khatma kann auch für einen bestimmten Tag (Kalender) angegeben werden; sie wird bis zu diesem Tag angezeigt und verschwindet dann von selbst.",
+ "chiffres/titre": "Die Moscheen auf der Karte in Zahlen",
+ "chiffres/total": "{n} Gebetsorte in Tunesien auf der Karte: {m} Moscheen und {s} Gebetsräume. Quelle: OpenStreetMap und Wikidata, Daten vom {date}; von Besuchern gemeldete Orte kommen hinzu.",
+ "chiffres/par_gouv": "Nach Gouvernement",
+ "chiffres/col_gouv": "Gouvernement",
+ "chiffres/col_n": "Gebetsorte",
+ "chiffres/non_classe": "Nicht zugeordnet",
+ "chiffres/methode": "Das Gouvernement jedes Ortes wird aus seiner Lage berechnet: Der Punkt liegt innerhalb der offiziellen Grenze des Gouvernements (OpenStreetMap).",
+ "chiffres/monde": "Außerhalb Tunesiens: {g} große Moscheen der Welt sind immer auf der Karte; die anderen Moscheen der Welt werden live aus OpenStreetMap gelesen, wenn Sie ein Land oder eine Stadt ansehen.",
+ "apropos/f_chiffres": "In Zahlen: unter der Karte die Zahl der Gebetsorte Tunesiens auf der Karte, eine Tabelle nach Gouvernement (aus der Lage jedes Ortes berechnet) und das Datum der Daten."
 }

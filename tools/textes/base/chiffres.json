@@ -1,0 +1,42 @@
+{
+ "titre": {
+  "fr": "Les mosquées sur la carte en chiffres",
+  "ar": "المساجد على الخريطة بالأرقام",
+  "en": "The mosques on the map in figures"
+ },
+ "total": {
+  "fr": "{n} lieux de prière en Tunisie sur la carte : {m} mosquées et {s} salles de prière. Source : OpenStreetMap et Wikidata, données du {date} ; les lieux signalés par les visiteurs s'y ajoutent.",
+  "ar": "{n} مكان صلاة في تونس على الخريطة: {m} مسجدًا و{s} مصلّى. المصدر: أوبن ستريت ماب وويكي بيانات، بيانات يوم {date}؛ وتُضاف إليها الأماكن التي يضيفها الزوار.",
+  "en": "{n} places of prayer in Tunisia on the map: {m} mosques and {s} prayer rooms. Source: OpenStreetMap and Wikidata, data of {date}; places reported by visitors are added to them."
+ },
+ "par_gouv": {
+  "fr": "Par gouvernorat",
+  "ar": "حسب الولاية",
+  "en": "By governorate"
+ },
+ "col_gouv": {
+  "fr": "Gouvernorat",
+  "ar": "الولاية",
+  "en": "Governorate"
+ },
+ "col_n": {
+  "fr": "Lieux de prière",
+  "ar": "أماكن الصلاة",
+  "en": "Places of prayer"
+ },
+ "non_classe": {
+  "fr": "Non classé",
+  "ar": "غير مصنّف",
+  "en": "Not classified"
+ },
+ "methode": {
+  "fr": "Le gouvernorat de chaque lieu est calculé d'après sa position : le point est dans le contour officiel du gouvernorat (OpenStreetMap).",
+  "ar": "تُحسب ولاية كل مكان حسب موقعه: النقطة داخل الحدود الرسمية للولاية (أوبن ستريت ماب).",
+  "en": "The governorate of each place is calculated from its position: the point is inside the official boundary of the governorate (OpenStreetMap)."
+ },
+ "monde": {
+  "fr": "Hors de Tunisie : {g} grandes mosquées du monde sont toujours sur la carte ; les autres mosquées du monde sont lues en direct dans OpenStreetMap quand vous regardez un pays ou une ville.",
+  "ar": "خارج تونس: {g} جامعًا كبيرًا من العالم موجودة دائمًا على الخريطة؛ وتُقرأ مساجد العالم الأخرى مباشرة من أوبن ستريت ماب عندما تنظر إلى بلد أو مدينة.",
+  "en": "Outside Tunisia: {g} great mosques of the world are always on the map; the other mosques of the world are read live from OpenStreetMap when you look at a country or a town."
+ }
+}

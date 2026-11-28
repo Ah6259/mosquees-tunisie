@@ -588,5 +588,14 @@
  "apropos/communes": "Halaman «Privasi» dan «Ketentuan penggunaan», yang sama untuk semua situs kami, ada di bagian bawah setiap halaman.",
  "apropos/f_mwnf": "« Secara rinci » dan foto museum: di halaman masjid agung ada bagian « Secara rinci » serta foto dan denah dari Discover Islamic Art, museum virtual Museum With No Frontiers (MWNF), dengan izinnya; sumber tertulis di bawah setiap foto dan tautan ke halamannya terbuka dalam bahasa Anda bila tersedia.",
  "apropos/f_vendredi": "Salat Jumat dan pembacaan Al-Qur'an: untuk setiap masjid (jendela peta dan halamannya), waktu salat Jumat (13:00, tepat sebelum Asar, atau waktu lain) dan pembacaan Al-Qur'an (setiap hari setelah salat, atau khatam sebulan sekali); pengunjung menambah dan mengonfirmasinya (« Tambah atau perbaiki », « Benar », « Tidak benar lagi »), tidak ada waktu yang dikarang; di peta, tombol « Jumat » dan « Al-Qur'an » hanya menampilkan masjid tersebut, warnanya menunjukkan waktu Jumat.",
- "apropos/f_khatma_date": "Khatam pada tanggal tertentu: khatam Al-Qur'an juga bisa dicantumkan untuk hari tertentu (kalender); ditampilkan sampai hari itu, lalu hilang dengan sendirinya."
+ "apropos/f_khatma_date": "Khatam pada tanggal tertentu: khatam Al-Qur'an juga bisa dicantumkan untuk hari tertentu (kalender); ditampilkan sampai hari itu, lalu hilang dengan sendirinya.",
+ "chiffres/titre": "Masjid di peta dalam angka",
+ "chiffres/total": "{n} tempat salat di Tunisia di peta: {m} masjid dan {s} musala. Sumber: OpenStreetMap dan Wikidata, data tanggal {date}; tempat yang dilaporkan pengunjung ditambahkan.",
+ "chiffres/par_gouv": "Per kegubernuran",
+ "chiffres/col_gouv": "Kegubernuran",
+ "chiffres/col_n": "Tempat salat",
+ "chiffres/non_classe": "Tidak terklasifikasi",
+ "chiffres/methode": "Kegubernuran setiap tempat dihitung dari posisinya: titiknya berada di dalam batas resmi kegubernuran (OpenStreetMap).",
+ "chiffres/monde": "Di luar Tunisia: {g} masjid besar dunia selalu ada di peta; masjid lain di dunia dibaca langsung dari OpenStreetMap saat Anda melihat suatu negara atau kota.",
+ "apropos/f_chiffres": "Dalam angka: di bawah peta, jumlah tempat salat di Tunisia pada peta, tabel per kegubernuran (dihitung dari posisi setiap tempat) dan tanggal data."
 }

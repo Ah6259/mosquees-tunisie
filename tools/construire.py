@@ -24,9 +24,10 @@ import langues_plus  # noqa: E402
 from mosquees_donnees import vignette  # noqa: E402  (photo de 960 px, VS.7 du 18/10/2026)
 import textes  # noqa: E402  (textes ajoutés le 23/10/2026, 21 langues : tools/textes/)
 import lastmod  # noqa: E402  (dates honnêtes du plan du site, outil commun, 25/11/2026)
+import gouvernorats  # noqa: E402  (gouvernorat de chaque lieu d'après sa position, 28/11/2026)
 
 PIXEL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"   # 1 pixel transparent (diaporama, 19/11/2026)
-VERSION = "20261124d"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
+VERSION = "20261128a"          # à changer à chaque modification des fichiers assets/ (le test vérifie une seule version)
 
 
 def titre_seo(t, maxi=70):
@@ -335,7 +336,61 @@ def donnees_carte(d, pages):
     texte = ("// GÉNÉRÉ par tools/construire.py depuis donnees/mosquees.json (robot tools/mosquees_donnees.py, tous les 3 mois) — ne pas modifier à la main\n"
              "window.MOSQUEES = " + json.dumps({"maj": d["maj"], "lieux": sortie}, ensure_ascii=False, separators=(",", ":")) + ";\n")
     ecrire("donnees/lieux.js", texte)
+    CARTE.update(lieux=sortie, maj=d["maj"])
     return sortie
+
+
+# ---------- « Les mosquées sur la carte en chiffres » (28/11/2026, plan VIS.3 point 5 d'Ahmed) ----------
+# Google et les assistants d'IA ne lisent que le TEXTE d'une page, pas la carte (Leaflet + donnees/lieux.js chargés par JavaScript au
+# 1er geste) : sous la carte de l'accueil, un bloc écrit à la construction (entre <!-- chiffres:debut --> et <!-- chiffres:fin -->)
+# donne les MÊMES nombres que la carte : les lieux de donnees/lieux.js (OpenStreetMap + Wikidata, sans les lieux signalés par les
+# visiteurs, publiés à part toutes les 2 h), leur gouvernorat calculé d'après leur POSITION (tools/gouvernorats.py : le point est dans
+# le contour officiel du gouvernorat, rien n'est deviné d'après un nom), la date des données et les grandes mosquées du monde toujours
+# sur la carte (même filtre que assets/mosquees.js : pages hors de Tunisie). Tableau replié (règle commune § 66), 21 langues.
+CARTE = {"lieux": [], "maj": "", "monde": 0}
+
+
+def nombre(n):
+    return f"{n:,}".replace(",", "\u202f")     # espace fine insécable (une espace insécable ordinaire change la clé de traduction)
+
+
+def avec_nombres(d, **v):
+    """Texte de tools/textes/ (21 langues) avec ses nombres ({n}, {m}…) : la clé de traduction est le texte français rempli."""
+    return {l: re.sub(r"\{(\w+)\}", lambda m: str(v[m.group(1)]), t) for l, t in d.items()}
+
+
+def comptes_gouvernorats(lieux):
+    """{code ISO ou None: nombre de lieux} : chaque lieu de la carte compté une fois, dans le gouvernorat qui contient son point."""
+    c = {}
+    for e in lieux:
+        g = gouvernorats.gouvernorat(e["a"], e["o"])
+        c[g] = c.get(g, 0) + 1
+    return c
+
+
+def chiffres_accueil():
+    nom, page = "chiffres", "accueil"
+    lieux = CARTE["lieux"]
+    n, ns = len(lieux), sum(1 for e in lieux if e["t"] == "s")
+    c = comptes_gouvernorats(lieux)
+    noms = {iso: (fr, ar) for iso, fr, ar in gouvernorats.GOUVERNORATS}
+    lignes = sorted(((k, v) for k, v in c.items() if k), key=lambda x: (-x[1], noms[x[0]][0]))
+    def nom_g(iso):           # nom officiel en lettres latines, nom arabe en arabe ; traduction déjà écrite sur l'accueil (villes) si elle existe
+        fr, ar = noms[iso]
+        deja = {l: html.unescape(TRAD.get(page, {}).get(l, {}).get(esc(fr), "")) for l in NOUVELLES}
+        return S({**{l: deja.get(l) or fr for l in LANGUES}, "ar": ar}, page)
+    corps = "".join(f'<tr data-gouv="{iso}"><th scope="row">{nom_g(iso)}</th><td>{nombre(v)}</td></tr>' for iso, v in lignes)
+    if c.get(None):
+        corps += f'<tr data-gouv=""><th scope="row">{X(nom, "non_classe", page)}</th><td>{nombre(c[None])}</td></tr>'
+    total = S(avec_nombres(textes.D(nom, "total"), n=nombre(n), m=nombre(n - ns), s=nombre(ns), date=CARTE["maj"]), page)
+    monde = S(avec_nombres(textes.D(nom, "monde"), g=nombre(CARTE["monde"])), page) if CARTE["monde"] else ""
+    return (f'<section class="carte mq-chiffres" id="chiffres" data-total="{n}" data-maj="{CARTE["maj"]}">'
+            f'<h2>{X(nom, "titre", page)}</h2><p class="mq-chiffres-total">{total}</p>'
+            f'<details class="mq-chiffres-gouv"><summary><span>{X(nom, "par_gouv", page)} <span class="mq-badge">{len(lignes)}</span></span></summary>'
+            f'<div class="mq-chiffres-defile"><table class="mq-chiffres-table"><thead><tr><th scope="col">{X(nom, "col_gouv", page)}</th>'
+            f'<th scope="col">{X(nom, "col_n", page)}</th></tr></thead><tbody>{corps}</tbody></table></div>'
+            f'<p class="aide">{X(nom, "methode", page)}</p></details>'
+            + (f'<p class="aide">{monde}</p>' if monde else "") + "</section>")
 
 
 # ---------- pages des grandes mosquées ----------
@@ -947,6 +1002,7 @@ def page_monde():
                "pn": m.get("pays", {}), "p": chemin_monde(m), "an": m.get("an"), "f": (m.get("photo") or {}).get("fichier", ""), "k": m["n"],
                "d": {l: m["desc"][l] for l in ("fr", "en", "ar") if m.get("desc", {}).get(l)}}
               for m in ms if m.get("pos")]
+    CARTE["monde"] = sum(1 for p in points if not p["p"].startswith("mosquee/"))     # même filtre que assets/mosquees.js
     ecrire("donnees/monde_carte.js", "// GÉNÉRÉ par tools/construire.py (donnees/monde_grandes.json) : grandes mosquées du monde, toujours sur la carte\n"
            "window.MOSQUEES_MONDE_GRANDES = " + json.dumps(points, ensure_ascii=False, separators=(",", ":")) + ";\n"
            "// les 15 grandes mosquées de Tunisie (étoile jaune sur la carte) et les trois mosquées saintes (étoile plus grande)\n"
@@ -1097,6 +1153,7 @@ def main():
     for g in GRANDES:
         carte_grande(g, photos, "", "accueil")
     grille_accueil(photos)
+    chiffres = chiffres_accueil()
     acc = os.path.join(RACINE, "index.html")
     if os.path.exists(acc):
         t = open(acc, encoding="utf-8").read()
@@ -1105,6 +1162,9 @@ def main():
         t2 = re.sub(r'<html lang="fr" dir="ltr" translate="no"[^>]*>', '<html lang="fr" dir="ltr" translate="no" data-racine="" data-chemin="" data-fixe>', t2, count=1)
         t2 = re.sub(r'(?:<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n)+', lambda m: PL.liens_hreflang(BASE, "", LANGUES), t2, count=1)
         t2 = re.sub(r"<!-- grandes:debut -->.*?<!-- grandes:fin -->", lambda m: "<!-- grandes:debut -->" + grille_accueil(photos) + "<!-- grandes:fin -->", t2, flags=re.S)
+        if "<!-- chiffres:debut -->" not in t2:
+            raise SystemExit("index.html : repères <!-- chiffres:debut --> / <!-- chiffres:fin --> introuvables (sous la carte)")
+        t2 = re.sub(r"<!-- chiffres:debut -->.*?<!-- chiffres:fin -->", lambda m: "<!-- chiffres:debut -->" + chiffres + "<!-- chiffres:fin -->", t2, flags=re.S)
         t2 = re.sub(r"<!-- diapo:debut -->.*?<!-- diapo:fin -->", lambda m: "<!-- diapo:debut -->" + diapo_accueil(photos) + "<!-- diapo:fin -->", t2, flags=re.S)
         if t2 != t:
             open(acc, "w", encoding="utf-8", newline="\n").write(t2)

@@ -412,8 +412,18 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     }
     for (const m of js.matchAll(/\bfr:\s*"((?:[^"\\]|\\.)*)"[^}]*?\ben:\s*"/g)) ajouter(lit(m[1]), f);
   }
+  // 28/11/2026 (« en chiffres ») : un texte avec des nombres ({n}, {m}…) de tools/textes/ est traduit par son MODÈLE ; les noms des
+  // 24 gouvernorats (tools/gouvernorats.py) restent leur nom officiel en lettres latines quand la langue n'a pas de traduction déjà écrite
+  const MODELES = [];
+  for (const f of readdirSync(join(root, "tools/textes/base")).filter(x => x.endsWith(".json"))) {
+    const base = JSON.parse(lire("tools/textes/base/" + f)), nomF = f.slice(0, -5);
+    for (const [k, v] of Object.entries(base)) if (/\{\w+\}/.test(v.fr)) MODELES.push({ re: new RegExp("^" + cle0(v.fr).replace(/[.*+?^$()|[\]\\]/g, "\\$&").replace(/\\?\{\w+\\?\}/g, "[\\d\\s-]+") + "$"),
+      ok: l => { const T = existsSync(join(root, `tools/textes/${l}.json`)) ? JSON.parse(lire(`tools/textes/${l}.json`)) : {}; return !!String(T[nomF + "/" + k] || "").trim(); } });
+  }
+  const GOUV_NOMS = new Set([...lire("tools/gouvernorats.py").matchAll(/\("TN-\d\d", "([^"]+)", "[^"]+"\)/g)].map(m => m[1]));
+  const traduit = (fr, l) => String((TR[l] || {})[fr] || "").trim() || GOUV_NOMS.has(fr) || MODELES.some(m => m.re.test(fr) && m.ok(l));
   const absents = [];
-  for (const [fr, ou] of textes) for (const l of NOUVELLES) if (!String((TR[l] || {})[fr] || "").trim()) absents.push(`${l} « ${fr.slice(0, 50)} » (${ou})`);
+  for (const [fr, ou] of textes) for (const l of NOUVELLES) if (!traduit(fr, l)) absents.push(`${l} « ${fr.slice(0, 50)} » (${ou})`);
   check(`(a) 8 langues : les ${textes.size} textes français (pages + scripts) ont une traduction en ${NOUVELLES.join(", ")}`
     + (absents.length ? ` — MANQUE ${absents.length} : ${absents.slice(0, 6).join(" | ")}` : ""), textes.size >= 250 && !absents.length);
   check("(a) chaque texte « en » suit ses textes « fr » et « ar » " + structure.slice(0, 3).join(" | "), !structure.length);
@@ -697,6 +707,44 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
   check(`descriptions : chaque page de mosquée a un texte (Wikipédia ou le nôtre) ${sansTexte.slice(0, 3).join(" | ")} ; pages de Djerba avec l'encadré de l'île (${djerba.length})`,
     !sansTexte.length && djerba.length >= 10);
 }
+// ---- 28/11/2026 (plan VIS.3 point 5 d'Ahmed) : « Les mosquées sur la carte en chiffres » : texte ÉCRIT dans les 21 accueils (Google et
+//      les IA ne lisent pas la carte), sous la carte, avec les MÊMES nombres que la carte (donnees/lieux.js), le gouvernorat recalculé
+//      ici d'après la position (contours de tools/gouvernorats_tn.json), la date des données et les grandes mosquées du monde
+{
+  const w0 = {}; new Function("window", lire("donnees/lieux.js"))(w0); new Function("window", lire("donnees/monde_carte.js"))(w0);
+  const D = w0.MOSQUEES, n = D.lieux.length, ns = D.lieux.filter(l => l.t === "s").length;
+  const nMonde = w0.MOSQUEES_MONDE_GRANDES.filter(g => !/^mosquee\//.test(g.p)).length;      // même filtre que assets/mosquees.js
+  const C = JSON.parse(lire("tools/gouvernorats_tn.json")).gouvernorats;
+  const dans = (x, y, r) => { let c = false; for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const [xi, yi] = r[i], [xj, yj] = r[j];
+    if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c; } return c; };
+  const attendu = {};
+  for (const l of D.lieux) { const g = C.filter(z => z.polygones.some(p => dans(l.o, l.a, p[0]) && !p.slice(1).some(h => dans(l.o, l.a, h)))).map(z => z.iso).sort()[0] || "";
+    attendu[g] = (attendu[g] || 0) + 1; }
+  const num = t => +String(t).replace(/[^0-9]/g, "");
+  const ko = [];
+  for (const f of ["index.html", ...AUTRES.map(l => l + "/index.html")]) {
+    const h = lire(f), d = new JSDOM(h).window.document, sec = d.getElementById("chiffres");
+    if (!sec) { ko.push(f + " absente"); continue; }
+    const lignes = [...sec.querySelectorAll("tbody tr")], somme = lignes.reduce((a, tr) => a + num(tr.querySelector("td").textContent), 0);
+    const total = sec.querySelector(".mq-chiffres-total"), txt = sec.textContent;
+    const parG = Object.fromEntries(lignes.map(tr => [tr.dataset.gouv, num(tr.querySelector("td").textContent)]));
+    if (h.indexOf('id="chiffres"') < h.indexOf('id="mq-carte"')) ko.push(f + " pas sous la carte");
+    if (+sec.dataset.total !== n || num(total.textContent.match(/\d[\d\s\u202f]*\d|\d/)[0]) !== n) ko.push(f + ` total ${sec.dataset.total} ≠ ${n}`);
+    if (somme !== n) ko.push(f + ` somme du tableau ${somme} ≠ ${n}`);
+    if (Object.keys(attendu).some(g => parG[g] !== attendu[g]) || lignes.length !== Object.keys(attendu).length) ko.push(f + " gouvernorats ≠ position des lieux");
+    if (lignes.filter(tr => tr.dataset.gouv).length !== 24 && !attendu[""]) ko.push(f + " pas 24 gouvernorats");
+    if (sec.dataset.maj !== D.maj || !txt.includes(D.maj)) ko.push(f + " date des données");
+    if (!new RegExp("(^|\\D)" + nMonde + "(\\D|$)").test(sec.querySelector(":scope > p.aide").textContent)) ko.push(f + " grandes mosquées du monde");
+    if (/NaN|undefined|\{[a-z]+\}/.test(txt)) ko.push(f + " NaN / undefined / {…}");
+    if (!sec.querySelector("details.mq-chiffres-gouv > summary .mq-badge") || sec.querySelector("details").open) ko.push(f + " tableau replié avec pastille");
+    const lg = f.split("/")[1] ? f.split("/")[0] : "fr";
+    if (lg === "ar" && !/صفاقس/.test(txt)) ko.push(f + " noms arabes");
+    if (lg !== "ar" && !/Ben Arous|بن عروس/.test(txt) ) ko.push(f + " noms des gouvernorats");
+    if (/<script src="[^"]*donnees\/lieux\.js/.test(h)) ko.push(f + " accueil plus léger");
+  }
+  check(`accueil (21 langues) : « Les mosquées sur la carte en chiffres » écrit dans la page sous la carte : total = donnees/lieux.js (${n}, dont ${ns} salles), `
+    + `somme du tableau = total, gouvernorats = position des lieux, date ${D.maj}, ${nMonde} grandes mosquées du monde, tableau replié ${ko.slice(0, 4).join(" | ")}`, !ko.length);
+}
 // ---- 10. RÈGLE d'Ahmed : « la page Comment fonctionne le site doit être mise à jour chaque fois qu'on modifie le site »
 //          (25/10/2026, règle commune § 44) : chaque fonction visible du site (repère dans le code ou les pages) doit être
 //          expliquée dans a-propos/ ; nouvelle fonction = une ligne ici + son explication dans tools/textes/base/apropos.json
@@ -707,6 +755,7 @@ check("aucun secret ni clé dans les fichiers publiés", !/AIza|ghp_|github_pat_
     ["à quoi sert le site", true, /À quoi sert le site \?/],
     ["carte des lieux de prière", /id="mq-carte"/.test(acc), /Carte : tous les lieux de prière de Tunisie/],
     ["page d'une mosquée", ex("mosquee/kairouan/index.html"), /Page d'une mosquée :/],
+    ["les mosquées sur la carte en chiffres (par gouvernorat)", /id="chiffres"/.test(acc), /En chiffres : sous la carte, le nombre de lieux de prière[^<]*par gouvernorat/],
     ["recherche d'une mosquée ou d'une ville", /id="mq-q"/.test(acc), /Recherche : tapez le nom d'une mosquée ou d'une ville/],
     ["filtres", /mq-filtres/.test(acc + mq), /Filtres : mosquées, salles de prière/],
     ["Autour de moi", /id="mq-autour"/.test(acc), /« Autour de moi »/],

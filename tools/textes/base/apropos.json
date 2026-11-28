@@ -143,5 +143,10 @@
   "fr": "Khatma à une date précise : une khatma du Coran peut aussi être indiquée pour un jour donné (calendrier) ; elle s'affiche jusqu'à ce jour, puis disparaît seule.",
   "ar": "ختم في تاريخ محدّد: يمكن أيضًا إضافة ختم للقرآن في يوم معيّن (من الرزنامة)؛ يظهر حتى ذلك اليوم ثم يختفي وحده.",
   "en": "Khatma on a specific date: a Quran khatma can also be added for a given day (calendar); it is shown until that day, then disappears by itself."
+ },
+ "f_chiffres": {
+  "fr": "En chiffres : sous la carte, le nombre de lieux de prière de Tunisie sur la carte, un tableau par gouvernorat (calculé d'après la position de chaque lieu) et la date des données.",
+  "ar": "بالأرقام: تحت الخريطة، عدد أماكن الصلاة في تونس على الخريطة، وجدول حسب الولاية (يُحسب حسب موقع كل مكان)، وتاريخ البيانات.",
+  "en": "In figures: under the map, the number of places of prayer in Tunisia on the map, a table by governorate (calculated from the position of each place) and the date of the data."
  }
 }

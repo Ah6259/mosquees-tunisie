@@ -588,5 +588,14 @@
  "apropos/communes": "As páginas «Privacidade» e «Termos de utilização», comuns a todos os nossos sites, estão no fundo de cada página.",
  "apropos/f_mwnf": "«Em detalhe» e fotos do museu: nas grandes mesquitas, uma secção «Em detalhe» e fotos e plantas de Discover Islamic Art, o museu virtual do Museum With No Frontiers (MWNF), com a sua autorização; o crédito está sob cada foto e a ligação para a ficha abre-se na sua língua quando existe.",
  "apropos/f_vendredi": "Oração de sexta-feira e leitura do Alcorão: para cada mesquita (janela do mapa e ficha), a hora da oração de sexta-feira (13:00, pouco antes do Asr ou outra hora) e as leituras do Alcorão (todos os dias depois de uma oração, ou uma khatma uma vez por mês); os visitantes indicam-nas e confirmam-nas («Indicar ou corrigir», «É verdade», «Já não é verdade»), nenhuma hora é inventada; no mapa, os botões «Sexta-feira» e «Alcorão» mostram só essas mesquitas e a cor indica a hora de sexta-feira.",
- "apropos/f_khatma_date": "Khatma numa data precisa: também se pode indicar uma khatma do Alcorão para um dia determinado (calendário); aparece até esse dia e depois desaparece sozinha."
+ "apropos/f_khatma_date": "Khatma numa data precisa: também se pode indicar uma khatma do Alcorão para um dia determinado (calendário); aparece até esse dia e depois desaparece sozinha.",
+ "chiffres/titre": "As mesquitas do mapa em números",
+ "chiffres/total": "{n} locais de oração na Tunísia no mapa: {m} mesquitas e {s} salas de oração. Fonte: OpenStreetMap e Wikidata, dados de {date}; os locais indicados pelos visitantes são acrescentados.",
+ "chiffres/par_gouv": "Por governadoria",
+ "chiffres/col_gouv": "Governadoria",
+ "chiffres/col_n": "Locais de oração",
+ "chiffres/non_classe": "Não classificado",
+ "chiffres/methode": "A governadoria de cada local é calculada pela sua posição: o ponto está dentro do limite oficial da governadoria (OpenStreetMap).",
+ "chiffres/monde": "Fora da Tunísia: {g} grandes mesquitas do mundo estão sempre no mapa; as outras mesquitas do mundo são lidas em direto no OpenStreetMap quando olha para um país ou uma cidade.",
+ "apropos/f_chiffres": "Em números: por baixo do mapa, o número de locais de oração da Tunísia no mapa, uma tabela por governadoria (calculada pela posição de cada local) e a data dos dados."
 }

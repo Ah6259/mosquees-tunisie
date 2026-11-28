@@ -588,5 +588,14 @@
  "apropos/communes": "Tüm sitelerimiz için ortak olan «Gizlilik» ve «Kullanım koşulları» sayfaları her sayfanın altındadır.",
  "apropos/f_mwnf": "« Ayrıntılı olarak » ve müze fotoğrafları: büyük camilerde, Museum With No Frontiers'ın (MWNF) sanal müzesi Discover Islamic Art'tan, onun izniyle « Ayrıntılı olarak » bölümü, fotoğraflar ve planlar; kaynak her fotoğrafın altında yazılıdır ve kaydının bağlantısı varsa sizin dilinizde açılır.",
  "apropos/f_vendredi": "Cuma namazı ve Kur'an okuma: her camide (harita penceresi ve sayfası) cuma namazı saati (13:00, ikindiden hemen önce veya başka bir saat) ve Kur'an okumaları (her gün bir namazdan sonra ya da ayda bir hatim); ziyaretçiler ekler ve onaylar (« Ekle veya düzelt », « Doğru », « Artık doğru değil »), hiçbir saat uydurulmaz; haritada « Cuma » ve « Kur'an » düğmeleri yalnızca bu camileri gösterir, renk cuma saatini belirtir.",
- "apropos/f_khatma_date": "Belirli bir tarihte hatim: Kur'an hatmi belirli bir gün için de (takvimden) eklenebilir; o güne kadar görünür, sonra kendiliğinden kaybolur."
+ "apropos/f_khatma_date": "Belirli bir tarihte hatim: Kur'an hatmi belirli bir gün için de (takvimden) eklenebilir; o güne kadar görünür, sonra kendiliğinden kaybolur.",
+ "chiffres/titre": "Haritadaki camiler rakamlarla",
+ "chiffres/total": "Haritada Tunus'ta {n} ibadet yeri: {m} cami ve {s} mescit. Kaynak: OpenStreetMap ve Wikidata, {date} tarihli veriler; ziyaretçilerin bildirdiği yerler bunlara eklenir.",
+ "chiffres/par_gouv": "Vilayete göre",
+ "chiffres/col_gouv": "Vilayet",
+ "chiffres/col_n": "İbadet yerleri",
+ "chiffres/non_classe": "Sınıflandırılmamış",
+ "chiffres/methode": "Her yerin vilayeti konumuna göre hesaplanır: nokta, vilayetin resmî sınırının içindedir (OpenStreetMap).",
+ "chiffres/monde": "Tunus dışında: dünyanın {g} büyük camisi her zaman haritadadır; dünyadaki diğer camiler, bir ülkeye veya şehre baktığınızda OpenStreetMap'ten canlı olarak okunur.",
+ "apropos/f_chiffres": "Rakamlarla: haritanın altında, haritadaki Tunus ibadet yerlerinin sayısı, vilayete göre bir tablo (her yerin konumuna göre hesaplanır) ve verilerin tarihi."
 }

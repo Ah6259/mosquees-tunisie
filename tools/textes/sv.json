@@ -588,5 +588,14 @@
  "apropos/communes": "Sidorna ”Integritet” och ”Användarvillkor”, gemensamma för alla våra webbplatser, finns längst ned på varje sida.",
  "apropos/f_mwnf": "”I detalj” och museets foton: på de stora moskéerna finns avsnittet ”I detalj” samt foton och planritningar från Discover Islamic Art, det virtuella museet hos Museum With No Frontiers (MWNF), med dess tillstånd; källan står under varje foto och länken till posten öppnas på ditt språk när den finns.",
  "apropos/f_vendredi": "Fredagsbön och koranläsning: för varje moské (kartans ruta och sidan) tiden för fredagsbönen (13:00, strax före Asr eller en annan tid) och koranläsningar (varje dag efter en bön, eller en khatma en gång i månaden); besökare anger och bekräftar dem (”Ange eller rätta”, ”Det stämmer”, ”Stämmer inte längre”), ingen tid hittas på; på kartan visar knapparna ”Fredag” och ”Koranen” bara dessa moskéer, och färgen visar fredagstiden.",
- "apropos/f_khatma_date": "Khatma ett bestämt datum: en Koran-khatma kan också anges för en viss dag (kalender); den visas fram till den dagen och försvinner sedan av sig själv."
+ "apropos/f_khatma_date": "Khatma ett bestämt datum: en Koran-khatma kan också anges för en viss dag (kalender); den visas fram till den dagen och försvinner sedan av sig själv.",
+ "chiffres/titre": "Moskéerna på kartan i siffror",
+ "chiffres/total": "{n} böneplatser i Tunisien på kartan: {m} moskéer och {s} böneplatser i lokaler. Källa: OpenStreetMap och Wikidata, data från {date}; platser som besökare har rapporterat läggs till.",
+ "chiffres/par_gouv": "Per guvernement",
+ "chiffres/col_gouv": "Guvernement",
+ "chiffres/col_n": "Böneplatser",
+ "chiffres/non_classe": "Ej klassificerad",
+ "chiffres/methode": "Varje plats guvernement beräknas utifrån dess läge: punkten ligger innanför guvernementets officiella gräns (OpenStreetMap).",
+ "chiffres/monde": "Utanför Tunisien: {g} stora moskéer i världen finns alltid på kartan; världens övriga moskéer läses direkt från OpenStreetMap när du tittar på ett land eller en stad.",
+ "apropos/f_chiffres": "I siffror: under kartan antalet böneplatser i Tunisien på kartan, en tabell per guvernement (beräknad utifrån varje plats läge) och datum för uppgifterna."
 }

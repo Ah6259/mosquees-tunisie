@@ -588,5 +588,14 @@
  "apropos/communes": "Le pagine «Privacy» e «Condizioni d'uso», comuni a tutti i nostri siti, sono in fondo a ogni pagina.",
  "apropos/f_mwnf": "«Nel dettaglio» e foto del museo: nelle grandi moschee, una sezione «Nel dettaglio» e foto e piante di Discover Islamic Art, il museo virtuale di Museum With No Frontiers (MWNF), con il suo consenso; il credito è sotto ogni foto e il link alla scheda si apre nella tua lingua quando esiste.",
  "apropos/f_vendredi": "Preghiera del venerdì e lettura del Corano: per ogni moschea (finestra della mappa e scheda), l'orario della preghiera del venerdì (13:00, poco prima dell'Asr o un altro orario) e le letture del Corano (ogni giorno dopo una preghiera, o una khatma una volta al mese); i visitatori le indicano e le confermano («Indica o correggi», «È vero», «Non è più vero»), nessun orario è inventato; sulla mappa i pulsanti «Venerdì» e «Corano» mostrano solo queste moschee e il colore indica l'orario del venerdì.",
- "apropos/f_khatma_date": "Khatma in una data precisa: si può indicare anche una khatma del Corano per un giorno preciso (calendario); resta visibile fino a quel giorno, poi scompare da sola."
+ "apropos/f_khatma_date": "Khatma in una data precisa: si può indicare anche una khatma del Corano per un giorno preciso (calendario); resta visibile fino a quel giorno, poi scompare da sola.",
+ "chiffres/titre": "Le moschee sulla mappa in cifre",
+ "chiffres/total": "{n} luoghi di preghiera in Tunisia sulla mappa: {m} moschee e {s} sale di preghiera. Fonte: OpenStreetMap e Wikidata, dati del {date}; i luoghi segnalati dai visitatori si aggiungono.",
+ "chiffres/par_gouv": "Per governatorato",
+ "chiffres/col_gouv": "Governatorato",
+ "chiffres/col_n": "Luoghi di preghiera",
+ "chiffres/non_classe": "Non classificato",
+ "chiffres/methode": "Il governatorato di ogni luogo è calcolato dalla sua posizione: il punto si trova dentro il confine ufficiale del governatorato (OpenStreetMap).",
+ "chiffres/monde": "Fuori dalla Tunisia: {g} grandi moschee del mondo sono sempre sulla mappa; le altre moschee del mondo sono lette in diretta da OpenStreetMap quando guardi un paese o una città.",
+ "apropos/f_chiffres": "In cifre: sotto la mappa, il numero di luoghi di preghiera della Tunisia sulla mappa, una tabella per governatorato (calcolata dalla posizione di ogni luogo) e la data dei dati."
 }

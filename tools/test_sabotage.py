@@ -26,6 +26,8 @@ SABOTAGES = [
     ("tools/lieux_priere.py", "auj <= d <= auj + timedelta(days=731)", "True", "le robot accepte une khatma à une date passée ou lointaine", ROBOT),
     ("tools/lieux_priere.py", 'TUNISIE = (30.1, 37.6, 7.4, 11.7)', 'TUNISIE = (-90, 90, -180, 180)', "le robot accepte un lieu hors de Tunisie", ROBOT),
     ("tools/lieux_priere.py", "if m and 11 <= int(m.group(1)) <= 16 and", "if m and", "le robot accepte n'importe quelle heure du vendredi (09:00, 13:07)", ROBOT),
+    ("ar/index.html", '<tr data-gouv="TN-61"><th scope="row"><span data-l="ar">صفاقس</span></th><td>', '<tr data-gouv="TN-61"><th scope="row"><span data-l="ar">صفاقس</span></th><td>1',
+     "« en chiffres » : nombre faux pour Sfax dans l'accueil arabe (somme ≠ total de la carte)", SITE),
     ("assets/infos.js", 'corps.append(CH.lieu, "|" + jeton);', 'corps.append(CH.lieu, "|");', "prière du vendredi / Coran envoyés sans le jeton anonyme", SITE),
 ]
 IGNORER = shutil.ignore_patterns(".git", "_icone", "__pycache__", "node_modules")

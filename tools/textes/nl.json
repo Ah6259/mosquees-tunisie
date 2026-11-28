@@ -588,5 +588,14 @@
  "apropos/communes": "De pagina's „Privacy” en „Gebruiksvoorwaarden”, die voor al onze sites gelden, staan onderaan elke pagina.",
  "apropos/f_mwnf": "„In detail” en museumfoto's: bij de grote moskeeën een onderdeel „In detail” en foto's en plattegronden van Discover Islamic Art, het virtuele museum van Museum With No Frontiers (MWNF), met zijn toestemming; de bron staat onder elke foto en de link naar de fiche opent in uw taal als die bestaat.",
  "apropos/f_vendredi": "Vrijdaggebed en Koranlezing: voor elke moskee (kaartvenster en pagina) de tijd van het vrijdaggebed (13:00, vlak voor het Asr of een andere tijd) en Koranlezingen (elke dag na een gebed, of een khatma eens per maand); bezoekers vullen ze in en bevestigen ze („Invullen of verbeteren”, „Het klopt”, „Klopt niet meer”), er wordt geen tijd verzonnen; op de kaart tonen de knoppen „Vrijdag” en „Koran” alleen die moskeeën, de kleur geeft de vrijdagtijd aan.",
- "apropos/f_khatma_date": "Khatma op een vaste datum: een khatma van de Koran kan ook voor een bepaalde dag worden opgegeven (kalender); ze blijft zichtbaar tot die dag en verdwijnt daarna vanzelf."
+ "apropos/f_khatma_date": "Khatma op een vaste datum: een khatma van de Koran kan ook voor een bepaalde dag worden opgegeven (kalender); ze blijft zichtbaar tot die dag en verdwijnt daarna vanzelf.",
+ "chiffres/titre": "De moskeeën op de kaart in cijfers",
+ "chiffres/total": "{n} gebedsplaatsen in Tunesië op de kaart: {m} moskeeën en {s} gebedsruimtes. Bron: OpenStreetMap en Wikidata, gegevens van {date}; door bezoekers gemelde plaatsen komen erbij.",
+ "chiffres/par_gouv": "Per gouvernement",
+ "chiffres/col_gouv": "Gouvernement",
+ "chiffres/col_n": "Gebedsplaatsen",
+ "chiffres/non_classe": "Niet ingedeeld",
+ "chiffres/methode": "Het gouvernement van elke plaats wordt berekend uit de ligging: het punt ligt binnen de officiële grens van het gouvernement (OpenStreetMap).",
+ "chiffres/monde": "Buiten Tunesië: {g} grote moskeeën van de wereld staan altijd op de kaart; de andere moskeeën van de wereld worden rechtstreeks uit OpenStreetMap gelezen als u naar een land of een stad kijkt.",
+ "apropos/f_chiffres": "In cijfers: onder de kaart het aantal gebedsplaatsen van Tunesië op de kaart, een tabel per gouvernement (berekend uit de ligging van elke plaats) en de datum van de gegevens."
 }

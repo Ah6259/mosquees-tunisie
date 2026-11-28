@@ -194,3 +194,24 @@
   dernier VRAI changement de chaque page (empreinte sans menus, pied, scripts, ?v= ni dates, gardée dans `donnees/lastmod.json`, enregistré
   par donnees.yml avec `donnees`) au lieu de la date de VERSION pour toutes ; 1re fois : histoire git de chaque page. Test :
   `python tools/test_lastmod.py donnees/lastmod.json` (tests.yml ; données inventées + vrai plan ; aucune page noindex dans le plan).
+
+## 28/11/2026 — « Les mosquées sur la carte en chiffres » (plan VIS.3 point 5 d'Ahmed : Google et les IA ne lisent que le TEXTE, pas la carte)
+- Sous la carte de l'accueil (21 langues), bloc ÉCRIT à la construction entre `<!-- chiffres:debut -->` et `<!-- chiffres:fin -->` d'index.html
+  (`chiffres_accueil()` de tools/construire.py ; ne pas l'écrire à la main) : nombre de lieux de prière de `donnees/lieux.js` (OpenStreetMap +
+  Wikidata, mosquées / salles de prière), date des données (`maj`), tableau PAR GOUVERNORAT replié (§ 66 : `details` + pastille 24) et
+  « N grandes mosquées du monde toujours sur la carte » (même filtre que assets/mosquees.js : points de monde_carte.js hors `mosquee/`).
+  Les lieux signalés par les visiteurs (donnees/signales.js, toutes les 2 h, sans reconstruction) ne sont PAS comptés : la phrase le dit
+  (« s'y ajoutent ») — c'est pourquoi le compteur en direct de la carte (#mq-total) peut avoir 1 ou 2 lieux de plus.
+- **Gouvernorat** : les données n'ont AUCUN champ gouvernorat (ville la plus proche seulement, souvent une délégation). Il est calculé d'après la
+  POSITION : `tools/gouvernorats.py` (point dans le contour officiel ; contours `tools/gouvernorats_tn.json` = geoBoundaries TUN ADM1, tirés
+  d'OpenStreetMap, ODbL, simplifiés à ~20 m). Le 28/11 : chacun des 2 256 lieux dans un et un seul gouvernorat (contours complets ET simplifiés
+  donnent le même résultat). Hors de tout contour (bord de mer) : le plus proche à moins de 3 km, sinon ligne « Non classé ». Rien n'est deviné
+  d'après un nom de ville. Overpass ne répondait pas ce jour-là (504) : contours pris sur geoboundaries.org (`python tools/gouvernorats.py <geojson>`).
+- Chiffres du 28/11 (données du 13/10/2026) : 2 256 lieux (2 254 mosquées, 2 salles) ; Sfax 315, Médenine 315, Tunis 187, Nabeul 131,
+  Monastir 121, Sousse 121… Tozeur 26 ; 129 grandes mosquées du monde.
+- Textes : `tools/textes/base/chiffres.json` (+ 18 langues ; nombres en `{n}`, `{m}`, `{s}`, `{date}`, `{g}` : la clé de traduction est le texte
+  français rempli ; nombres avec une espace FINE insécable U+202F, jamais U+00A0 qui change la clé). Noms des gouvernorats : traduction déjà écrite
+  sur l'accueil (villes : Tunis, Sfax, Sousse…), sinon nom officiel en lettres latines ; arabe en arabe. « Comment fonctionne le site ? » :
+  `apropos/f_chiffres` ; FONCTIONS. Tests : bloc « en chiffres » de test_site.mjs (21 accueils : sous la carte, total = lieux.js, somme du tableau,
+  gouvernorats RECALCULÉS en JS d'après la position, date, monde, pas de NaN, replié, accueil toujours léger) ; le test des traductions accepte un
+  texte à nombres par son modèle et les noms officiels des gouvernorats ; sabotage « nombre faux pour Sfax » dans test_sabotage.py. VERSION 20261128a.

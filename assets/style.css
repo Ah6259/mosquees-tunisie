@@ -619,3 +619,16 @@ details.hi-histoire[open] summary::after{content:"−"}
 .leaflet-popup .mq-info-vide{color:#4F6158}
 .leaflet-popup .mq-info-form select,.leaflet-popup .mq-info-form input{background:#fff;color:#14261E;border-color:#CFDCDC}
 .leaflet-popup .mq-infos a{color:#0E6B4C}
+/* « Les mosquées sur la carte en chiffres » (28/11/2026, VIS.3 point 5) : texte lisible sans JavaScript, tableau replié (§ 66) */
+.mq-chiffres h2{margin-bottom:6px}
+.mq-chiffres-total{margin:0 0 10px;line-height:1.5}
+.mq-chiffres-gouv{border:1px solid var(--ligne);border-radius:12px;padding:10px 12px;margin:8px 0}
+.mq-chiffres-gouv summary>span{display:inline-flex;align-items:center;gap:8px}
+.mq-badge{display:inline-block;min-width:24px;padding:1px 8px;border-radius:999px;background:var(--vert);color:var(--sur-vert);font-size:13px;font-weight:800;text-align:center}
+.mq-chiffres-defile{overflow-x:auto}
+.mq-chiffres-table{width:100%;border-collapse:collapse;font-size:15px}
+.mq-chiffres-table th,.mq-chiffres-table td{padding:6px 8px;border-bottom:1px solid var(--ligne);text-align:start}
+.mq-chiffres-table td{text-align:end;font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.mq-chiffres-table thead th{font-size:13px}
+.mq-chiffres-table thead th:last-child{text-align:end}
+.mq-chiffres-table tbody th{font-weight:400}
